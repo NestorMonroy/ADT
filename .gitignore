@@ -1,0 +1,100 @@
+###############################################################################
+# 1. PYTHON (API & SCRIPTS)
+###############################################################################
+# Archivos compilados y caché
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.python-version
+
+# Entornos virtuales (MUY IMPORTANTE)
+.venv/
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Django específico
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+api/callcentersite/logs/*.log
+*.log
+
+###############################################################################
+# 2. UI / FRONTEND (NODE.JS & REACT)
+###############################################################################
+# Dependencias (NUNCA SUBIR)
+node_modules/
+ui/node_modules/
+
+# Producción
+ui/build/
+ui/dist/
+ui/out/
+
+# Logs de npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Variables de entorno locales
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+###############################################################################
+# 3. DOCUMENTACIÓN (SPHINX)
+###############################################################################
+# Carpeta de salida de la documentación
+_build/
+docs/_build/
+# Caché de Sphinx
+.doctrees/
+
+###############################################################################
+# 4. TEMPORALES Y BACKUPS (DETECTADOS EN TU ÁRBOL)
+###############################################################################
+# Archivos de respaldo que vimos en tu estructura
+*.backup
+*.tmp
+*.temp
+*~
+\#*#
+.#*
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+###############################################################################
+# 5. IDEs Y HERRAMIENTAS
+###############################################################################
+# Editores de código
+.idea/
+.vscode/
+*.iml
+*.workspace
+*.sublime-project
+*.sublime-workspace
+
+# Vagrant
+.vagrant/

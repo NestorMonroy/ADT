@@ -1,0 +1,322 @@
+{
+  "seccion": "08",
+  "analisis_originales": {
+    "total_archivos": 12,
+    "agrupacion_por_tipo": {
+      "tip": 10,
+      "ejemplo": 1,
+      "otro": 1
+    },
+    "estadisticas_globales": {
+      "total_archivos": 12,
+      "total_palabras": 2092,
+      "total_lineas": 472,
+      "archivos_con_imagenes": 5,
+      "total_imagenes": 5,
+      "archivos_con_codigo": 2,
+      "archivos_con_tablas": 1,
+      "archivos_con_listas": 6,
+      "promedio_palabras": 174.33333333333334,
+      "promedio_lineas": 39.333333333333336
+    },
+    "estadisticas_por_tipo": {
+      "tip": {
+        "total_archivos": 10,
+        "total_palabras": 1400,
+        "total_lineas": 354,
+        "archivos_con_imagenes": 3,
+        "total_imagenes": 3,
+        "archivos_con_codigo": 2,
+        "archivos_con_tablas": 1,
+        "archivos_con_listas": 4,
+        "promedio_palabras": 140.0,
+        "promedio_lineas": 35.4
+      },
+      "ejemplo": {
+        "total_archivos": 1,
+        "total_palabras": 259,
+        "total_lineas": 43,
+        "archivos_con_imagenes": 1,
+        "total_imagenes": 1,
+        "archivos_con_codigo": 0,
+        "archivos_con_tablas": 0,
+        "archivos_con_listas": 1,
+        "promedio_palabras": 259.0,
+        "promedio_lineas": 43.0
+      },
+      "otro": {
+        "total_archivos": 1,
+        "total_palabras": 433,
+        "total_lineas": 75,
+        "archivos_con_imagenes": 1,
+        "total_imagenes": 1,
+        "archivos_con_codigo": 0,
+        "archivos_con_tablas": 0,
+        "archivos_con_listas": 1,
+        "promedio_palabras": 433.0,
+        "promedio_lineas": 75.0
+      }
+    },
+    "front_matter_analysis": {
+      "keys_unicos": [
+        "category",
+        "layout",
+        "order",
+        "permalink",
+        "tags",
+        "title"
+      ],
+      "frecuencias": {
+        "order": 1,
+        "layout": 12,
+        "title": 12,
+        "category": 11,
+        "permalink": 12,
+        "tags": 11
+      },
+      "total_archivos": 12
+    },
+    "imagenes_analysis": {
+      "total_imagenes": 5,
+      "con_site_imageurl": 5,
+      "con_http": 0,
+      "relativas": 0,
+      "ejemplos_site_imageurl": [
+        "{{ site.imageurl}}/8-concepts/08-concepts-EN.drawio.png",
+        "{{ site.imageurl }}/08-hospital-domain-EN.png",
+        "{{ site.imageurl }}/05-concepts-instead.webp"
+      ],
+      "ejemplos_http": [],
+      "ejemplos_relativas": []
+    },
+    "archivos_individuales": [
+      {
+        "nombre": "2016-03-01-t-8-6.md",
+        "tipo": "tip",
+        "lineas": 16,
+        "palabras": 53,
+        "tiene_imagenes": false,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2016-03-01-t-8-1.md",
+        "tipo": "tip",
+        "lineas": 20,
+        "palabras": 81,
+        "tiene_imagenes": true,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2016-03-01-t-8-7.md",
+        "tipo": "tip",
+        "lineas": 114,
+        "palabras": 277,
+        "tiene_imagenes": true,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2016-03-01-t-8-4.md",
+        "tipo": "tip",
+        "lineas": 21,
+        "palabras": 53,
+        "tiene_imagenes": false,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2016-03-01-t-8-3.md",
+        "tipo": "tip",
+        "lineas": 19,
+        "palabras": 74,
+        "tiene_imagenes": false,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2016-03-01-t-8-9.md",
+        "tipo": "tip",
+        "lineas": 21,
+        "palabras": 57,
+        "tiene_imagenes": false,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2016-03-01-t-8-5.md",
+        "tipo": "tip",
+        "lineas": 38,
+        "palabras": 253,
+        "tiene_imagenes": false,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2022-07-01-t-8-11.md",
+        "tipo": "ejemplo",
+        "lineas": 43,
+        "palabras": 259,
+        "tiene_imagenes": true,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2016-03-01-t-8-8.md",
+        "tipo": "tip",
+        "lineas": 35,
+        "palabras": 208,
+        "tiene_imagenes": false,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "section-8.md",
+        "tipo": "otro",
+        "lineas": 75,
+        "palabras": 433,
+        "tiene_imagenes": true,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2016-03-01-t-8-2.md",
+        "tipo": "tip",
+        "lineas": 21,
+        "palabras": 83,
+        "tiene_imagenes": false,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2016-03-02-t-8-10.md",
+        "tipo": "tip",
+        "lineas": 49,
+        "palabras": 261,
+        "tiene_imagenes": true,
+        "tiene_tablas": true
+      }
+    ]
+  },
+  "verificacion_traducciones": {
+    "total_originales": 12,
+    "total_traducciones": 12,
+    "traducciones_faltantes": [],
+    "comparaciones": [
+      {
+        "archivo": "2016-03-01-t-8-6.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:that works well with tools tha",
+          "parrafo:in the concept you can focus o",
+          "parrafo:you can include a graphical ov"
+        ]
+      },
+      {
+        "archivo": "2016-03-01-t-8-1.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:they provide **stereotypical**",
+          "parrafo:find a few _potential_ topics ",
+          "parrafo:>concepts often contain the mo"
+        ]
+      },
+      {
+        "archivo": "2016-03-01-t-8-7.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:>yes - we know that ddd is way",
+          "parrafo:![brief example for a data mod",
+          "heading:plantuml source"
+        ]
+      },
+      {
+        "archivo": "2016-03-01-t-8-4.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:you can refer to existing code",
+          "parrafo:you should document or specify",
+          "lista:[tip 8-8 (explain co"
+        ]
+      },
+      {
+        "archivo": "2016-03-01-t-8-3.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:therefore you should tackle th",
+          "parrafo:1. select those that are absol",
+          "parrafo:arc42 contains a list of more "
+        ]
+      },
+      {
+        "archivo": "2016-03-01-t-8-9.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:even from a decision (in arc42",
+          "parrafo:you can interpret concepts as ",
+          "parrafo:```\nif (extensive-explanation-"
+        ]
+      },
+      {
+        "archivo": "2016-03-01-t-8-5.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:in case you follow a <a target",
+          "parrafo:### domain model and simple al",
+          "heading:domain model and simple alternatives"
+        ]
+      },
+      {
+        "archivo": "2022-07-01-t-8-11.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "heading:building blocks might apply several concepts",
+          "parrafo:## assign a unique name to imp",
+          "heading:assign a unique name to important concepts"
+        ]
+      },
+      {
+        "archivo": "2016-03-01-t-8-8.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:### show selected unit tests\nu",
+          "parrafo:the most concrete way to answe",
+          "heading:don't copy/paste!"
+        ]
+      },
+      {
+        "archivo": "section-8.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "lista:the technical and or",
+          "lista:within a system, a c",
+          "heading:background"
+        ]
+      },
+      {
+        "archivo": "2016-03-01-t-8-2.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "lista:tactics",
+          "lista:aspects",
+          "parrafo:* approaches\n* aspects: like i"
+        ]
+      },
+      {
+        "archivo": "2016-03-02-t-8-10.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:![crosscutting concepts struct",
+          "parrafo:| category  | topic | explanat"
+        ]
+      }
+    ],
+    "estadisticas_completitud": {
+      "completas": 0,
+      "incompletas": 12,
+      "similitud_promedio": "0.00%"
+    }
+  }
+}

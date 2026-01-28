@@ -1,0 +1,36 @@
+# Requirements para scripts Python de ADT
+# ========================================
+
+# YAML parsing (para front matter de archivos markdown)
+PyYAML>=6.0.1
+
+# Markdown parsing avanzado (opcional, para análisis más profundo)
+markdown>=3.5.1
+markdown-it-py>=3.0.0
+
+# Utilidades de texto
+python-frontmatter>=1.1.0
+
+# Validación y conversión
+# pandoc>=2.3  # Si se necesita convertir formatos
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Linting y formateo (desarrollo)
+black>=23.12.0
+flake8>=6.1.0
+mypy>=1.7.0
+
+# Documentación
+# sphinx>=7.2.0  # Ya está instalado en el sistema
+
+# Progress bars (opcional, para scripts largos)
+tqdm>=4.66.0
+
+# Colores en terminal
+colorama>=0.4.6
+
+# Análisis de texto
+# nltk>=3.8.1  # Si necesitamos NLP avanzado

@@ -1,0 +1,335 @@
+════════════════════════════════════════════════════════════════════
+PLAN DE TRADUCCIÓN - SECCIÓN 03 arc42
+════════════════════════════════════════════════════════════════════
+
+Sección: 03 - Context and Scope (Contexto y Alcance)
+Workflow: v1.6.0
+Fecha análisis: 2026-01-27
+Estado: FASES 0 y 1 COMPLETADAS
+
+════════════════════════════════════════════════════════════════════
+ANÁLISIS COMPLETADO
+════════════════════════════════════════════════════════════════════
+
+✅ FASE 0: VERIFICACIÓN INICIAL
+────────────────────────────────────────────────────────────────────
+• Ubicación: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope
+• Archivos originales MD: 26
+• Carpeta traduccion/: VACÍA
+• Estado: SIN TRADUCIR
+
+✅ FASE 1: PREPARACIÓN
+────────────────────────────────────────────────────────────────────
+
+ESPECIFICACIÓN OFICIAL arc42:
+  Archivo: section-3.md
+  
+  Estructura:
+  3. Context and Scope
+  ├─ 3.1 Business Context
+  │   ├─ Content
+  │   ├─ Motivation
+  │   ├─ Form
+  │   └─ Template
+  └─ 3.2 Technical Context
+      ├─ Contents
+      ├─ Motivation
+      ├─ Form
+      └─ Template
+
+ARCHIVOS ADICIONALES:
+  • 4 Ejemplos Business
+  • 2 Ejemplos Technical
+  • 19 Tips (t-3-1 a t-3-19)
+
+════════════════════════════════════════════════════════════════════
+ARCHIVOS A CREAR (28 TOTAL)
+════════════════════════════════════════════════════════════════════
+
+1. SUBSECCIONES DE PLANTILLA arc42 (3):
+   ├─ seccion_03_contexto_alcance.rst
+   ├─ seccion_3_1_contexto_negocio.rst
+   └─ seccion_3_2_contexto_tecnico.rst
+
+2. EJEMPLOS (6):
+   BUSINESS (4):
+   ├─ contexto_ejemplo_negocio_1.rst
+   ├─ contexto_ejemplo_negocio_2.rst
+   ├─ contexto_ejemplo_negocio_3.rst
+   └─ contexto_ejemplo_negocio_4.rst
+   
+   TECHNICAL (2):
+   ├─ contexto_ejemplo_tecnico_1.rst
+   └─ contexto_ejemplo_tecnico_4.rst
+
+3. TIPS (19):
+   ├─ contexto_tip_1.rst
+   ├─ contexto_tip_2.rst
+   ├─ contexto_tip_3.rst
+   ├─ contexto_tip_4.rst
+   ├─ contexto_tip_5.rst
+   ├─ contexto_tip_6.rst
+   ├─ contexto_tip_7.rst
+   ├─ contexto_tip_8.rst
+   ├─ contexto_tip_9.rst
+   ├─ contexto_tip_10.rst
+   ├─ contexto_tip_11.rst
+   ├─ contexto_tip_12.rst
+   ├─ contexto_tip_13.rst
+   ├─ contexto_tip_14.rst
+   ├─ contexto_tip_15.rst
+   ├─ contexto_tip_16.rst
+   ├─ contexto_tip_17.rst
+   ├─ contexto_tip_18.rst
+   └─ contexto_tip_19.rst
+
+════════════════════════════════════════════════════════════════════
+ORGANIZACIÓN EN LOTES
+════════════════════════════════════════════════════════════════════
+
+LOTE 1: Subsecciones + Ejemplos (9 archivos)
+────────────────────────────────────────────────────────────────────
+Archivos:
+  1. seccion_03_contexto_alcance.rst
+  2. seccion_3_1_contexto_negocio.rst
+  3. seccion_3_2_contexto_tecnico.rst
+  4. contexto_ejemplo_negocio_1.rst
+  5. contexto_ejemplo_negocio_2.rst
+  6. contexto_ejemplo_negocio_3.rst
+  7. contexto_ejemplo_negocio_4.rst
+  8. contexto_ejemplo_tecnico_1.rst
+  9. contexto_ejemplo_tecnico_4.rst
+
+Tiempo estimado: ~3 horas
+Método: Peshitta + Paso 3.4 (Traducción Arquitectónica)
+Prioridad: ALTA (subsecciones plantilla son críticas)
+
+LOTE 2: Tips 1-10 (10 archivos)
+────────────────────────────────────────────────────────────────────
+Archivos:
+  1. contexto_tip_1.rst
+  2. contexto_tip_2.rst
+  3. contexto_tip_3.rst
+  4. contexto_tip_4.rst
+  5. contexto_tip_5.rst
+  6. contexto_tip_6.rst
+  7. contexto_tip_7.rst
+  8. contexto_tip_8.rst
+  9. contexto_tip_9.rst
+  10. contexto_tip_10.rst
+
+Tiempo estimado: ~3 horas
+Método: Peshitta + Paso 3.4
+Prioridad: MEDIA
+
+LOTE 3: Tips 11-19 (9 archivos)
+────────────────────────────────────────────────────────────────────
+Archivos:
+  1. contexto_tip_11.rst
+  2. contexto_tip_12.rst
+  3. contexto_tip_13.rst
+  4. contexto_tip_14.rst
+  5. contexto_tip_15.rst
+  6. contexto_tip_16.rst
+  7. contexto_tip_17.rst
+  8. contexto_tip_18.rst
+  9. contexto_tip_19.rst
+
+Tiempo estimado: ~2.5 horas
+Método: Peshitta + Paso 3.4
+Prioridad: MEDIA
+
+TOTAL: 28 archivos en 3 lotes
+TIEMPO TOTAL ESTIMADO: ~8.5 horas
+
+════════════════════════════════════════════════════════════════════
+TÉRMINOS ARQUITECTÓNICOS CLAVE (Paso 3.4)
+════════════════════════════════════════════════════════════════════
+
+TRADUCCIONES CORRECTAS:
+
+┌──────────────────────────┬──────────────────────────────────┐
+│ Término EN               │ Traducción ES                    │
+├──────────────────────────┼──────────────────────────────────┤
+│ Context                  │ Contexto                         │
+│ Scope                    │ Alcance                          │
+│ Business context         │ Contexto de negocio              │
+│ Technical context        │ Contexto técnico                 │
+│ System boundary          │ Límite del sistema               │
+│ External interface       │ Interfaz externa                 │
+│ Communication partner    │ Socio de comunicación            │
+│ Neighboring system       │ Sistema vecino                   │
+│ Domain interface         │ Interfaz de dominio              │
+│ Technical interface      │ Interfaz técnica                 │
+│ Channel                  │ Canal                            │
+│ Protocol                 │ Protocolo                        │
+│ Transmission media       │ Medio de transmisión             │
+│ Black box                │ Caja negra                       │
+│ Input/Output             │ Entrada/Salida                   │
+│ Deployment diagram       │ Diagrama de despliegue           │
+│ UML                      │ UML (preserved)                  │
+│ Stakeholder              │ Stakeholder (preserved)          │
+└──────────────────────────┴──────────────────────────────────┘
+
+TRADUCCIONES A EVITAR (literales incorrectas):
+  ❌ "alcance del sistema" → ✅ "límite del sistema"
+  ❌ "socio de comunicaciones" → ✅ "socio de comunicación"
+  ❌ "caja negra" como título → ✅ usar contexto apropiado
+
+════════════════════════════════════════════════════════════════════
+WORKFLOW v1.6.0 - FASES PENDIENTES
+════════════════════════════════════════════════════════════════════
+
+⏳ FASE 2: Análisis Estructural
+────────────────────────────────────────────────────────────────────
+Por cada lote:
+  • Identificar jerarquía de archivos
+  • Mapear elementos especiales (figuras, enlaces, etc.)
+  • Detectar inconsistencias en originales
+
+Herramienta: scripts/analizar_seccion.py (si disponible)
+
+⏳ FASE 3: Traducción Inicial
+────────────────────────────────────────────────────────────────────
+CRÍTICO: Aplicar Paso 3.4 desde el INICIO
+
+Paso 3.1: Segmentación
+  • Nivel: Sección completa
+  • Mantener estructura 1:1
+
+Paso 3.2: Rendición (Método Peshitta)
+  • Comando por comando MD → RST
+  • Preservar significado
+
+Paso 3.3: Preferencia Signifié
+  • Traducir significado, no palabras
+  • Contexto arquitectónico
+
+Paso 3.4: Traducción Arquitectónica ★★★
+  • Aplicar tabla de términos
+  • Verificar coherencia
+  • Documentar decisiones
+
+⏳ FASE 3.5: Revisión de Literalidad
+────────────────────────────────────────────────────────────────────
+  • Buscar traducciones literales incorrectas
+  • Verificar términos arquitectónicos
+  • Aplicar correcciones
+
+⏳ FASE 4: Aplicación de Tácticas
+────────────────────────────────────────────────────────────────────
+  • Ajustes contextuales si necesarios
+  • Domesticación apropiada
+
+⏳ FASE 5: Validación
+────────────────────────────────────────────────────────────────────
+  • Compilar con Sphinx: make html
+  • Verificar HTML generado
+  • Preservación semántica
+  • Calidad visual
+
+⏳ FASE 5.5: Documentación de Sección ★ (NUEVA)
+────────────────────────────────────────────────────────────────────
+
+Paso 5.5.1: Verificación de Completitud ★★★
+  • Comparar contra section-3.md original COMPLETO
+  • Verificar que TODO está traducido:
+    ✓ 3 subsecciones plantilla
+    ✓ 6 ejemplos
+    ✓ 19 tips
+  • Si falta algo → Regresar a FASE 3
+
+Paso 5.5.2: Creación de section-3.txt
+  • Contenido completo en texto plano
+  • Plantillas copiables
+  • Referencia independiente de Sphinx
+
+Paso 5.5.3: Creación de section-3.json
+  • Metadata estructurada
+  • JSON parseable
+  • Para automatización
+
+Paso 5.5.4: Actualización de Archivo Principal
+  • Toctree completo con TODOS los archivos
+  • Metadata actualizada
+  • Nota de estado (100% completado)
+
+Paso 5.5.5: Checklist Final
+  • Verificar completitud
+  • Verificar archivos obligatorios
+  • Verificar calidad
+
+⏳ FASE 6: Revisión y Mejora
+────────────────────────────────────────────────────────────────────
+  • Revisar enlaces
+  • Optimizar redacción
+  • Aplicar feedback
+
+⏳ FASE 7: Publicación
+────────────────────────────────────────────────────────────────────
+  • Compilación final
+  • Control de calidad
+  • Despliegue
+
+════════════════════════════════════════════════════════════════════
+LECCIONES APRENDIDAS (de Sección 01)
+════════════════════════════════════════════════════════════════════
+
+✅ APLICAR DESDE EL INICIO:
+  • Workflow v1.5.0+ con Paso 3.4 → 70% más eficiente
+  • Enfoque por lotes → mejor control de calidad
+  • Estructura 1:1 → trazabilidad clara
+
+❌ EVITAR:
+  • Asumir completitud sin verificar contra original
+  • No crear archivos de referencia (txt/json)
+  • Omitir subsecciones de plantilla arc42
+
+🎯 RECOMENDACIONES:
+  • Leer especificación oficial COMPLETA antes de empezar
+  • Aplicar Paso 3.4 desde Lote 1
+  • Ejecutar FASE 5.5 al final (OBLIGATORIA)
+  • Mantener glosario incremental
+
+════════════════════════════════════════════════════════════════════
+PRÓXIMOS PASOS
+════════════════════════════════════════════════════════════════════
+
+OPCIÓN A: Comenzar Lote 1 (9 archivos)
+  • Subsecciones 3, 3.1, 3.2
+  • 6 ejemplos
+  • Tiempo: ~3 horas
+  • Prioridad: ALTA
+
+OPCIÓN B: Guardar plan y continuar después
+  • Plan completo documentado
+  • Listo para ejecutar
+
+OPCIÓN C: Solo subsecciones plantilla (3 archivos)
+  • Lo más crítico primero
+  • Tiempo: ~45 min
+  • Ejemplos y tips después
+
+════════════════════════════════════════════════════════════════════
+UBICACIÓN DE ARCHIVOS
+════════════════════════════════════════════════════════════════════
+
+Original (MD):
+  /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/
+    sections/03_context_scope/original/
+
+Traducción (RST):
+  /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/
+    sections/03_context_scope/traduccion/
+
+Especificación oficial:
+  /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/
+    original/_pages/section-3.md
+
+════════════════════════════════════════════════════════════════════
+FIN DEL PLAN - SECCIÓN 03
+════════════════════════════════════════════════════════════════════
+
+Plan creado: 2026-01-27
+Workflow: v1.6.0
+Estado: LISTO PARA EJECUTAR

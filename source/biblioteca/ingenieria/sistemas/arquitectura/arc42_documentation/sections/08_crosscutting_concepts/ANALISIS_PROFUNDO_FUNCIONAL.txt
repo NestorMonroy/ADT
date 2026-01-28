@@ -1,0 +1,55 @@
+================================================================================
+ANÁLISIS PROFUNDO - SECCIÓN 08
+Programación Funcional en Python
+================================================================================
+
+📊 RESUMEN GENERAL
+--------------------------------------------------------------------------------
+Total de archivos analizados: 12
+
+Agrupación por tipo:
+  • tip: 10 archivos
+  • ejemplo: 1 archivos
+  • otro: 1 archivos
+
+📈 ESTADÍSTICAS GLOBALES
+--------------------------------------------------------------------------------
+  total_archivos: 12
+  total_palabras: 2092
+  total_lineas: 472
+  archivos_con_imagenes: 5
+  total_imagenes: 5
+  archivos_con_codigo: 2
+  archivos_con_tablas: 1
+  archivos_con_listas: 6
+  promedio_palabras: 174.33333333333334
+  promedio_lineas: 39.333333333333336
+
+🏷️  ANÁLISIS FRONT MATTER
+--------------------------------------------------------------------------------
+Keys únicos: category, layout, order, permalink, tags, title
+
+Frecuencias:
+  order: 1 archivos
+  layout: 12 archivos
+  title: 12 archivos
+  category: 11 archivos
+  permalink: 12 archivos
+  tags: 11 archivos
+
+🖼️  ANÁLISIS DE IMÁGENES
+--------------------------------------------------------------------------------
+  total_imagenes: 5
+  con_site_imageurl: 5
+  con_http: 0
+  relativas: 0
+
+🔄 VERIFICACIÓN DE TRADUCCIONES
+--------------------------------------------------------------------------------
+Total originales: 12
+Total traducciones: 12
+Similitud promedio: 0.00%
+
+================================================================================
+FIN DEL REPORTE
+================================================================================

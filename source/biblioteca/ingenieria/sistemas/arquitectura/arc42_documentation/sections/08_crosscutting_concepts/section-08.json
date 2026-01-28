@@ -1,0 +1,183 @@
+{
+  "seccion": "08",
+  "titulo": "Conceptos Transversales",
+  "titulo_original": "Crosscutting Concepts",
+  "fecha_inicio": "2026-01-27",
+  "fecha_finalizacion": "2026-01-28",
+  "workflow_version": "1.7.2",
+  "primer_uso_workflow": true,
+  
+  "estadisticas": {
+    "archivos_originales": 12,
+    "archivos_traducidos": 12,
+    "completitud": "100%",
+    "palabras_totales": 2092,
+    "lineas_totales": 472,
+    "imagenes": 5,
+    "archivos_con_codigo": 2,
+    "archivos_con_tablas": 1
+  },
+  
+  "archivos": {
+    "principal": {
+      "original": "section-8.md",
+      "traducido": "seccion_08_conceptos_transversales.rst",
+      "lineas": 74,
+      "secciones": [
+        "Content",
+        "Motivation",
+        "Form",
+        "Structure of this section",
+        "Background"
+      ]
+    },
+    "tips": [
+      {
+        "numero": 1,
+        "original": "2016-03-01-t-8-1.md",
+        "traducido": "crosscutting_tip_1.rst",
+        "titulo": "Explique los Conceptos"
+      },
+      {
+        "numero": 2,
+        "original": "2016-03-01-t-8-2.md",
+        "traducido": "crosscutting_tip_2.rst",
+        "titulo": "Los Conceptos son enfoques, reglas, principios..."
+      },
+      {
+        "numero": 3,
+        "original": "2016-03-01-t-8-3.md",
+        "traducido": "crosscutting_tip_3.rst",
+        "titulo": "Restrinja documentación a temas más importantes"
+      },
+      {
+        "numero": 4,
+        "original": "2016-03-01-t-8-4.md",
+        "traducido": "crosscutting_tip_4.rst",
+        "titulo": "Explique CÓMO funciona"
+      },
+      {
+        "numero": 5,
+        "original": "2016-03-01-t-8-5.md",
+        "traducido": "crosscutting_tip_5.rst",
+        "titulo": "Documente modelos de negocio o dominio"
+      },
+      {
+        "numero": 6,
+        "original": "2016-03-01-t-8-6.md",
+        "traducido": "crosscutting_tip_6.rst",
+        "titulo": "Combine modelos con glosario"
+      },
+      {
+        "numero": 7,
+        "original": "2016-03-01-t-8-7.md",
+        "traducido": "crosscutting_tip_7.rst",
+        "titulo": "Documente modelo de datos",
+        "nota": "Tip más largo, incluye código PlantUML"
+      },
+      {
+        "numero": 8,
+        "original": "2016-03-01-t-8-8.md",
+        "traducido": "crosscutting_tip_8.rst",
+        "titulo": "Documente conceptos con código fuente"
+      },
+      {
+        "numero": 9,
+        "original": "2016-03-01-t-8-9.md",
+        "traducido": "crosscutting_tip_9.rst",
+        "titulo": "Documente decisiones en lugar de conceptos"
+      },
+      {
+        "numero": 10,
+        "original": "2016-03-02-t-8-10.md",
+        "traducido": "crosscutting_tip_10.rst",
+        "titulo": "Use colección de arc42 como checklist"
+      },
+      {
+        "numero": 11,
+        "original": "2022-07-01-t-8-11.md",
+        "traducido": "crosscutting_tip_11.rst",
+        "titulo": "Enlace entre Bloques de Construcción y Conceptos"
+      }
+    ]
+  },
+  
+  "workflow_v1.7.2": {
+    "paso_0": {
+      "ejecutado": true,
+      "tiempo_minutos": 25,
+      "archivos_generados": [
+        "ANALISIS_PROFUNDO_FUNCIONAL.json",
+        "ANALISIS_PROFUNDO_FUNCIONAL.txt",
+        "INVENTARIO_SECCION_08.txt",
+        "CHECKLIST_PRE_TRADUCCION_SECCION_08.txt"
+      ],
+      "script_usado": true,
+      "inventario_completo": true
+    },
+    "fase_3_7": {
+      "ejecutado": true,
+      "tiempo_minutos": 30,
+      "iteraciones": 2,
+      "iteracion_1": {
+        "archivos_faltantes": 10,
+        "decision": "BUCLE ACTIVADO"
+      },
+      "iteracion_2": {
+        "archivos_faltantes": 0,
+        "decision": "BUCLE CERRADO"
+      },
+      "archivo_generado": "VERIFICACION_COMPLETITUD_SECCION_08.txt",
+      "bucle_funciono": true
+    }
+  },
+  
+  "validacion": {
+    "compilacion_sphinx": {
+      "exitosa": true,
+      "fecha": "2026-01-28",
+      "tamanho_html": "26K",
+      "errores": 0,
+      "warnings": 0
+    },
+    "preservacion_semantica": "verificada",
+    "calidad_visual": "verificada",
+    "referencias_cruzadas": "funcionando"
+  },
+  
+  "metodologia": {
+    "traduccion_literal": true,
+    "mapeo_1_a_1": true,
+    "preferencia_signifie": true,
+    "terminologia_arc42": true,
+    "enriquecimiento_opcional": true,
+    "revision_literalidad": true,
+    "tacticas_adicionales": false
+  },
+  
+  "notas": [
+    "Primera sección traducida con Workflow v1.7.2 completo",
+    "PASO 0 funcionó perfectamente - previno omisiones",
+    "FASE 3.7 con bucle funcionó como diseñado - detectó 10 faltantes",
+    "Script de análisis funcional ahorro ~40 minutos",
+    "Cero omisiones de contenido",
+    "Documentación completa generada",
+    "Modelo para futuras traducciones de arc42"
+  ],
+  
+  "lecciones_aprendidas": [
+    "PASO 0 es crítico - leer plantilla completa ANTES de traducir",
+    "Script automático mejora precisión y ahorra tiempo",
+    "FASE 3.7 previene declarar 'completo' prematuramente",
+    "Bucle de verificación es efectivo con 2 iteraciones",
+    "Documentar cada iteración del bucle es valioso",
+    "Invertir tiempo en inventario previene retrabajo"
+  ],
+  
+  "proximos_pasos": [
+    "Usar como modelo para Sección 06",
+    "Usar como modelo para otras secciones de arc42",
+    "Refinar script de análisis si es necesario",
+    "Mantener Workflow v1.7.2 actualizado"
+  ]
+}

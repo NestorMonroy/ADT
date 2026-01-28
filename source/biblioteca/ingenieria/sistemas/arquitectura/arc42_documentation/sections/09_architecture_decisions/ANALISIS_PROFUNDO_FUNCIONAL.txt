@@ -1,0 +1,55 @@
+================================================================================
+ANÁLISIS PROFUNDO - SECCIÓN 09
+Programación Funcional en Python
+================================================================================
+
+📊 RESUMEN GENERAL
+--------------------------------------------------------------------------------
+Total de archivos analizados: 14
+
+Agrupación por tipo:
+  • ejemplo: 6 archivos
+  • tip: 7 archivos
+  • otro: 1 archivos
+
+📈 ESTADÍSTICAS GLOBALES
+--------------------------------------------------------------------------------
+  total_archivos: 14
+  total_palabras: 2347
+  total_lineas: 408
+  archivos_con_imagenes: 0
+  total_imagenes: 0
+  archivos_con_codigo: 2
+  archivos_con_tablas: 2
+  archivos_con_listas: 4
+  promedio_palabras: 167.64285714285714
+  promedio_lineas: 29.142857142857142
+
+🏷️  ANÁLISIS FRONT MATTER
+--------------------------------------------------------------------------------
+Keys únicos: category, layout, order, permalink, tags, title
+
+Frecuencias:
+  title: 14 archivos
+  order: 1 archivos
+  tags: 13 archivos
+  permalink: 14 archivos
+  category: 13 archivos
+  layout: 14 archivos
+
+🖼️  ANÁLISIS DE IMÁGENES
+--------------------------------------------------------------------------------
+  total_imagenes: 0
+  con_site_imageurl: 0
+  con_http: 0
+  relativas: 0
+
+🔄 VERIFICACIÓN DE TRADUCCIONES
+--------------------------------------------------------------------------------
+Total originales: 14
+Total traducciones: 14
+Similitud promedio: 0.00%
+
+================================================================================
+FIN DEL REPORTE
+================================================================================

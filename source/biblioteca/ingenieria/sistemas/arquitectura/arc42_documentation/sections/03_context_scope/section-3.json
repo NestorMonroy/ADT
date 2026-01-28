@@ -1,0 +1,331 @@
+{
+  "section": {
+    "number": "03",
+    "title_en": "Context and Scope",
+    "title_es": "Contexto y Alcance",
+    "completion_date": "2026-01-27",
+    "workflow_version": "v1.6.0",
+    "translation_method": "Peshitta + Paso 3.4",
+    "status": "completed",
+    "completion_percentage": 100
+  },
+  "statistics": {
+    "total_files": 28,
+    "subsections": 3,
+    "examples": 6,
+    "tips": 19,
+    "translation_time_hours": 8,
+    "average_time_per_file_minutes": 17,
+    "corrections_needed": 0
+  },
+  "quality_metrics": {
+    "terminology_consistency": 100,
+    "literal_translations_incorrect": 0,
+    "rst_syntax_errors": 0,
+    "cross_references": "complete",
+    "one_to_one_structure": true
+  },
+  "files": [
+    {
+      "filename": "seccion_03_contexto_alcance.rst",
+      "type": "main_section",
+      "title_es": "3. Contexto y Alcance",
+      "title_en": "3. Context and Scope",
+      "size_kb": 1.9,
+      "includes_toctree": true,
+      "status": "completed"
+    },
+    {
+      "filename": "seccion_3_1_contexto_negocio.rst",
+      "type": "subsection",
+      "title_es": "3.1 Contexto de Negocio",
+      "title_en": "3.1 Business Context",
+      "size_kb": 2.4,
+      "includes_template": true,
+      "status": "completed"
+    },
+    {
+      "filename": "seccion_3_2_contexto_tecnico.rst",
+      "type": "subsection",
+      "title_es": "3.2 Contexto Técnico",
+      "title_en": "3.2 Technical Context",
+      "size_kb": 2.9,
+      "includes_template": true,
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_ejemplo_negocio_1.rst",
+      "type": "example",
+      "category": "business_context",
+      "system": "HTML Sanity Checker",
+      "size_kb": 2.2,
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_ejemplo_negocio_2.rst",
+      "type": "example",
+      "category": "business_context",
+      "system": "MaMa",
+      "size_kb": 1.6,
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_ejemplo_negocio_3.rst",
+      "type": "example",
+      "category": "business_context",
+      "system": "TrafficPursuitUnit",
+      "size_kb": 1.4,
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_ejemplo_negocio_4.rst",
+      "type": "example",
+      "category": "business_context",
+      "system": "status.arc42.org",
+      "size_kb": 1.3,
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_ejemplo_tecnico_1.rst",
+      "type": "example",
+      "category": "technical_context",
+      "system": "HTML Sanity Checker",
+      "size_kb": 2.3,
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_ejemplo_tecnico_4.rst",
+      "type": "example",
+      "category": "technical_context",
+      "system": "TrafficPursuitUnit",
+      "size_kb": 1.6,
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_1.rst",
+      "type": "tip",
+      "tip_number": "3-1",
+      "title_es": "¡Demarca explícitamente tu sistema de su entorno!",
+      "title_en": "Explicitly demarcate your system from its environment!",
+      "theme": "Demarcación del sistema",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_2.rst",
+      "type": "tip",
+      "tip_number": "3-2",
+      "title_es": "¡Muestra el contexto como diagrama!",
+      "title_en": "Show the context as diagram!",
+      "theme": "Diagrama de contexto",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_3.rst",
+      "type": "tip",
+      "tip_number": "3-3",
+      "title_es": "¡Combina el diagrama de contexto con una tabla!",
+      "title_en": "Combine the context diagram with a table!",
+      "theme": "Diagrama + Tabla",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_4.rst",
+      "type": "tip",
+      "tip_number": "3-4",
+      "title_es": "¡Indica explícitamente los riesgos en el contexto!",
+      "title_en": "Explicitly indicate risks in the context!",
+      "theme": "Riesgos en el contexto",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_5.rst",
+      "type": "tip",
+      "tip_number": "3-5",
+      "title_es": "¡Restringe el contexto a una visión general, evita demasiados detalles!",
+      "title_en": "Restrict the context to an overview, avoid too many details!",
+      "theme": "Visión general vs detalles",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_6.rst",
+      "type": "tip",
+      "tip_number": "3-6",
+      "title_es": "¡Simplifica el contexto mediante categorización!",
+      "title_en": "Simplify the context by categorization!",
+      "theme": "Categorización para simplificar",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_7.rst",
+      "type": "tip",
+      "tip_number": "3-7",
+      "title_es": "¡Si hay muchos sistemas externos involucrados, agrégalos por criterios explícitos!",
+      "title_en": "If many external systems are involved, aggregate (cluster) them by explicit criteria!",
+      "theme": "Agregación por criterios",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_8.rst",
+      "type": "tip",
+      "tip_number": "3-8",
+      "title_es": "¡Agrega sistemas vecinos similares con puertos!",
+      "title_en": "Aggregate (cluster) similar neighbour systems with ports!",
+      "theme": "Puertos UML para agrupar",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_9.rst",
+      "type": "tip",
+      "tip_number": "3-9",
+      "title_es": "¡Muestra todas las interfaces externas!",
+      "title_en": "Show all (all!) external interfaces!",
+      "theme": "Completitud de interfaces externas",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_10.rst",
+      "type": "tip",
+      "tip_number": "3-10",
+      "title_es": "¡Diferencia el contexto de negocio y técnico!",
+      "title_en": "Differentiate business and technical context!",
+      "theme": "Diferenciación business/technical",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_11.rst",
+      "type": "tip",
+      "tip_number": "3-11",
+      "title_es": "¡En el contexto de negocio, muestra flujos de datos!",
+      "title_en": "In the business context, show data flows (instead of dependencies)!",
+      "theme": "Flujos de datos en contexto de negocio",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_12.rst",
+      "type": "tip",
+      "tip_number": "3-12",
+      "title_es": "¡Muestra influencias externas en el contexto!",
+      "title_en": "Show external influences in the context!",
+      "theme": "Influencias externas",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_13.rst",
+      "type": "tip",
+      "tip_number": "3-13",
+      "title_es": "¡Muestra dependencias transitivas en el contexto!",
+      "title_en": "Show transitive dependencies in the context!",
+      "theme": "Dependencias transitivas",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_14.rst",
+      "type": "tip",
+      "tip_number": "3-14",
+      "title_es": "¡Presta atención a los requisitos de calidad en las interfaces externas!",
+      "title_en": "Pay attention to quality requirements at external interfaces!",
+      "theme": "Requisitos de calidad en interfaces",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_15.rst",
+      "type": "tip",
+      "tip_number": "3-15",
+      "title_es": "¡Muestra el contexto técnico si el hardware es central!",
+      "title_en": "Show the technical context (in case hardware is central to your system)!",
+      "theme": "Contexto técnico para hardware",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_16.rst",
+      "type": "tip",
+      "tip_number": "3-16",
+      "title_es": "¡Usa el contexto técnico para describir protocolos o canales!",
+      "title_en": "Use the technical context to describe protocols or channels!",
+      "theme": "Protocolos y canales",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_17.rst",
+      "type": "tip",
+      "tip_number": "3-17",
+      "title_es": "¡Combina el contexto de negocio con información técnica!",
+      "title_en": "Combine business context with technical information!",
+      "theme": "Combinación de contextos",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_18.rst",
+      "type": "tip",
+      "tip_number": "3-18",
+      "title_es": "¡Explica la relación entre interfaces de dominio y su realización técnica!",
+      "title_en": "Explain the relationship between domain interfaces and their technical realization!",
+      "theme": "Mapeo de interfaces dominio-técnicas",
+      "status": "completed"
+    },
+    {
+      "filename": "contexto_tip_19.rst",
+      "type": "tip",
+      "tip_number": "3-19",
+      "title_es": "¡Difiere el contexto técnico a la vista de despliegue!",
+      "title_en": "Defer technical context to the deployment view!",
+      "theme": "Contexto técnico vs vista de despliegue",
+      "status": "completed"
+    }
+  ],
+  "architectural_terms": {
+    "paso_3_4_applied": true,
+    "consistency": 100,
+    "key_translations": {
+      "Context": "Contexto",
+      "Scope": "Alcance",
+      "Business context": "Contexto de negocio",
+      "Technical context": "Contexto técnico",
+      "Communication partner": "Socio de comunicación",
+      "Neighbor": "Vecino",
+      "Domain interface": "Interfaz de dominio",
+      "Technical interface": "Interfaz técnica",
+      "External interface": "Interfaz externa",
+      "Black box": "Caja negra",
+      "Channel": "Canal",
+      "Node": "Nodo",
+      "Deployment": "Despliegue",
+      "Protocol": "Protocolo",
+      "Artifact": "Artefacto"
+    }
+  },
+  "batches": {
+    "batch_1": {
+      "name": "Subsecciones + Ejemplos",
+      "files": 9,
+      "status": "completed",
+      "completion_date": "2026-01-27"
+    },
+    "batch_2": {
+      "name": "Tips 1-10",
+      "files": 10,
+      "status": "completed",
+      "completion_date": "2026-01-27"
+    },
+    "batch_3": {
+      "name": "Tips 11-19",
+      "files": 9,
+      "status": "completed",
+      "completion_date": "2026-01-27"
+    }
+  },
+  "phases_completed": [
+    "FASE 0: Verificación Inicial",
+    "FASE 1: Preparación",
+    "FASE 2: Análisis Estructural",
+    "FASE 3: Traducción Inicial",
+    "FASE 3.5: Revisión de Literalidad",
+    "FASE 4: Aplicación de Tácticas",
+    "FASE 5: Validación",
+    "FASE 5.5: Documentación de Sección"
+  ],
+  "next_steps": [
+    "FASE 6: Revisión y Mejora",
+    "FASE 7: Publicación"
+  ]
+}

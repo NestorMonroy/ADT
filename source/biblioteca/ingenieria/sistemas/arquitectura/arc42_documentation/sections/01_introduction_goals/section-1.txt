@@ -1,0 +1,94 @@
+================================================================================
+SECTION 1: INTRODUCTION AND GOALS
+================================================================================
+arc42 Architecture Documentation Template
+Translated to Spanish | Método Peshitta + Workflow v1.5.0
+================================================================================
+
+SOURCE DOCUMENT: section-1
+TRANSLATION DATE: 2026-01-27
+WORKFLOW VERSION: v1.5.0 (with Step 3.4 - Architectural Translation)
+STATUS: ✅ COMPLETE
+
+================================================================================
+TRANSLATED FILES
+================================================================================
+
+Total Files: 32
+
+SUBSECTIONS:
+  • seccion_1_1_requisitos.rst - 
+  • seccion_1_2_quality_goals.rst - 
+  • seccion_1_3_stakeholders.rst - 
+
+EXAMPLES:
+  • introduccion_ejemplo-3.rst
+  • requisitos_calidad_ejemplo-1.rst
+  • requisitos_calidad_ejemplo-3.rst
+  • introduccion_ejemplo-htmlsc-1.rst
+
+TIPS:
+  • Tip 1: introduccion_tip-1.rst
+  • Tip 2: introduccion_tip-2.rst
+  • Tip 3: introduccion_tip-3.rst
+  • Tip 4: introduccion_tip-4.rst
+  • Tip 5: introduccion_tip-5.rst
+  • Tip 6: introduccion_tip-6.rst
+  • Tip 7: introduccion_tip-7.rst
+  • Tip 8: introduccion_tip-8.rst
+  • Tip 9: introduccion_tip-9.rst
+  • Tip 10: introduccion_tip-10.rst
+  • Tip 11: introduccion_tip-11.rst
+  • Tip 12: introduccion_tip-12.rst
+  • Tip 13: introduccion_tip-13.rst
+  • Tip 14: introduccion_tip-14.rst
+  • Tip 15: introduccion_tip-15.rst
+  • Tip 16: introduccion_tip-16.rst
+  • Tip 17: introduccion_tip-17.rst
+  • Tip 18: introduccion_tip-18.rst
+  • Tip 19: introduccion_tip-19.rst
+  • Tip 20: introduccion_tip-20.rst
+  • Tip 21: introduccion_tip-21.rst
+  • Tip 22: introduccion_tip-22.rst
+  • Tip 23: introduccion_tip-23.rst
+  • Tip 24: introduccion_tip-24.rst
+
+================================================================================
+ARCHITECTURAL TERMINOLOGY (Step 3.4 Applied)
+================================================================================
+
+driving_forces:
+  ✅ Translation: factores determinantes
+  ❌ Incorrect: fuerzas impulsoras
+  📊 Occurrences: 9
+
+quality_goals:
+  ✅ Translation: atributos de calidad objetivo
+  ❌ Incorrect: objetivos de calidad
+  📊 Occurrences: 45
+
+stakeholder:
+  ✅ Translation: stakeholder
+  📊 Occurrences: 101
+
+================================================================================
+STATISTICS
+================================================================================
+
+Original lines (approx): 795
+Translated lines: 2263
+Expansion ratio: 2.85
+
+Figures: 12
+Tables: 9
+Code blocks: 4
+
+================================================================================
+LICENSE
+================================================================================
+Original content: CC BY-SA 4.0
+Translation: CC BY-SA 4.0
+
+================================================================================
+END OF SECTION 1 CONTENT
+================================================================================

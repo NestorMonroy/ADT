@@ -1,0 +1,34 @@
+@startuml contexto_categorizacion
+!theme plain
+skinparam componentStyle rectangle
+
+title Ejemplo Tip 3-6: Simplificación por Categorización
+
+component "Sistema\nPrincipal" as system #lightblue
+
+' Versión categorizada
+package "Interfaces Categorizadas" {
+  component "<<category>>\nReportes" as reports #lightgreen
+}
+
+' Versión detallada (comentada)
+package "Interfaces Detalladas (alternativa)" #line.dashed {
+  component "Reporte\nFinanciero" as report1 #lightyellow
+  component "Reporte\nOperacional" as report2 #lightyellow
+}
+
+system --> reports : Genera
+
+note right of reports
+  Una sola categoría "Reportes"
+  simplifica el diagrama
+end note
+
+note right of report1
+  En nivel-1 se pueden
+  desglosar en:
+  - Reporte Financiero
+  - Reporte Operacional
+end note
+
+@enduml

@@ -1,0 +1,93 @@
+###############################################################################
+# 1. COMPORTAMIENTO GLOBAL Y NORMALIZACIÓN
+###############################################################################
+# Forzamos que Git trate todo como texto y lo normalice a LF (Unix) por defecto.
+# Esto previene los avisos de "CRLF will be replaced by LF" de raíz.
+* text=auto eol=lf
+
+###############################################################################
+# 2. CÓDIGO FUENTE (PYTHON, JS, TS)
+###############################################################################
+# API Django y Scripts de traducción
+*.py                text eol=lf
+*.pyi               text eol=lf
+*.pyw               text eol=lf
+
+# UI (React/Frontend) y Scrapers JS
+*.js                text eol=lf
+*.jsx               text eol=lf
+*.ts                text eol=lf
+*.tsx               text eol=lf
+
+###############################################################################
+# 3. DOCUMENTACIÓN ESTRUCTURADA (SPHINX, RST, MD)
+###############################################################################
+# Tu proyecto es principalmente documentación técnica; esto es crítico:
+*.rst               text eol=lf
+*.md                text eol=lf
+*.txt               text eol=lf
+*.xml               text eol=lf
+# Manejo de backups detectados en tu árbol de directorios
+*.backup            text eol=lf
+LICENSE             text eol=lf
+
+###############################################################################
+# 4. SCRIPTS DE AUTOMATIZACIÓN Y SHELL
+###############################################################################
+# Scripts de Linux (DEBEN ser LF para no romperse en servidores o contenedores)
+*.sh                text eol=lf
+Makefile            text eol=lf
+
+# Scripts de Windows (PowerShell y Batch)
+# Forzamos LF en PS1 para consistencia, pero mantenemos CRLF en .bat por compatibilidad con CMD
+*.ps1               text eol=lf
+*.bat               text eol=crlf
+*.cmd               text eol=crlf
+make.bat            text eol=crlf
+
+###############################################################################
+# 5. CONFIGURACIÓN, LOGS Y DATOS
+###############################################################################
+*.json              text eol=lf
+*.yml               text eol=lf
+*.yaml              text eol=lf
+*.toml              text eol=lf
+*.conf              text eol=lf
+*.ini               text eol=lf
+.env* text eol=lf
+.gitignore          text eol=lf
+.gitattributes      text eol=lf
+.editorconfig       text eol=lf
+
+# Archivos de logs detectados en tu estructura de API
+*.log               text eol=lf
+api/callcentersite/logs/*.log text eol=lf
+
+# Requisitos de dependencias
+requirements.txt    text eol=lf
+*.txt               text eol=lf
+
+###############################################################################
+# 6. ARCHIVOS BINARIOS (NO TOCAR)
+###############################################################################
+# Evita que Git intente "corregir" archivos que no son texto
+*.jar               binary
+*.png               binary
+*.jpg               binary
+*.jpeg              binary
+*.gif               binary
+*.ico               binary
+*.pdf               binary
+*.woff              binary
+*.woff2             binary
+*.ttf               binary
+*.pyc               binary
+*.pyo               binary
+
+###############################################################################
+# 7. REGLAS ESPECÍFICAS DE TU ESTRUCTURA
+###############################################################################
+# Archivos de migraciones (donde tuviste la mayoría de los warnings)
+api/**/migrations/*.py text eol=lf
+# Archivos de la biblioteca y biblioteca arc42
+source/biblioteca/**/*.rst text eol=lf

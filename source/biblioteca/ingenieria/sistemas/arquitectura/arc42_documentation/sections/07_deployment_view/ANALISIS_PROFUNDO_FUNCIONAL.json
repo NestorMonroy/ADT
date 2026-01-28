@@ -1,0 +1,326 @@
+{
+  "seccion": "07",
+  "analisis_originales": {
+    "total_archivos": 13,
+    "agrupacion_por_tipo": {
+      "tip": 10,
+      "ejemplo": 3
+    },
+    "estadisticas_globales": {
+      "total_archivos": 13,
+      "total_palabras": 1693,
+      "total_lineas": 383,
+      "archivos_con_imagenes": 9,
+      "total_imagenes": 12,
+      "archivos_con_codigo": 2,
+      "archivos_con_tablas": 3,
+      "archivos_con_listas": 5,
+      "promedio_palabras": 130.23076923076923,
+      "promedio_lineas": 29.46153846153846
+    },
+    "estadisticas_por_tipo": {
+      "tip": {
+        "total_archivos": 10,
+        "total_palabras": 1175,
+        "total_lineas": 250,
+        "archivos_con_imagenes": 6,
+        "total_imagenes": 6,
+        "archivos_con_codigo": 1,
+        "archivos_con_tablas": 2,
+        "archivos_con_listas": 3,
+        "promedio_palabras": 117.5,
+        "promedio_lineas": 25.0
+      },
+      "ejemplo": {
+        "total_archivos": 3,
+        "total_palabras": 518,
+        "total_lineas": 133,
+        "archivos_con_imagenes": 3,
+        "total_imagenes": 6,
+        "archivos_con_codigo": 1,
+        "archivos_con_tablas": 1,
+        "archivos_con_listas": 2,
+        "promedio_palabras": 172.66666666666666,
+        "promedio_lineas": 44.333333333333336
+      }
+    },
+    "front_matter_analysis": {
+      "keys_unicos": [
+        "category",
+        "layout",
+        "permalink",
+        "tags",
+        "title"
+      ],
+      "frecuencias": {
+        "layout": 13,
+        "tags": 13,
+        "category": 13,
+        "title": 13,
+        "permalink": 13
+      },
+      "total_archivos": 13
+    },
+    "imagenes_analysis": {
+      "total_imagenes": 12,
+      "con_site_imageurl": 12,
+      "con_http": 0,
+      "relativas": 0,
+      "ejemplos_site_imageurl": [
+        "{{ site.imageurl}}/07-deployment-overview.png",
+        "{{ site.imageurl}}/07-deployment-options.webp",
+        "{{ site.imageurl}}/examples/tpu/72-VideoCards.webp"
+      ],
+      "ejemplos_http": [],
+      "ejemplos_relativas": []
+    },
+    "archivos_individuales": [
+      {
+        "nombre": "2016-03-01-t-7-3.md",
+        "tipo": "tip",
+        "lineas": 20,
+        "palabras": 88,
+        "tiene_imagenes": true,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2016-03-01-t-7-5.md",
+        "tipo": "tip",
+        "lineas": 24,
+        "palabras": 130,
+        "tiene_imagenes": true,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "07-deployment-sample-tpu-2.md",
+        "tipo": "ejemplo",
+        "lineas": 27,
+        "palabras": 94,
+        "tiene_imagenes": true,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2016-03-01-t-7-8.md",
+        "tipo": "tip",
+        "lineas": 19,
+        "palabras": 70,
+        "tiene_imagenes": false,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "07-deployment-sample-htmlsc-1.md",
+        "tipo": "ejemplo",
+        "lineas": 42,
+        "palabras": 134,
+        "tiene_imagenes": true,
+        "tiene_tablas": true
+      },
+      {
+        "nombre": "2016-03-01-t-7-4.md",
+        "tipo": "tip",
+        "lineas": 15,
+        "palabras": 53,
+        "tiene_imagenes": true,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2016-03-01-t-7-2.md",
+        "tipo": "tip",
+        "lineas": 22,
+        "palabras": 114,
+        "tiene_imagenes": false,
+        "tiene_tablas": true
+      },
+      {
+        "nombre": "2016-03-02-t-7-10.md",
+        "tipo": "tip",
+        "lineas": 22,
+        "palabras": 114,
+        "tiene_imagenes": false,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2016-03-01-t-7-1.md",
+        "tipo": "tip",
+        "lineas": 27,
+        "palabras": 136,
+        "tiene_imagenes": true,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "07-deployment-example-tpu-1.md",
+        "tipo": "ejemplo",
+        "lineas": 64,
+        "palabras": 290,
+        "tiene_imagenes": true,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2016-03-01-t-7-6.md",
+        "tipo": "tip",
+        "lineas": 16,
+        "palabras": 33,
+        "tiene_imagenes": true,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2016-03-01-t-7-9.md",
+        "tipo": "tip",
+        "lineas": 58,
+        "palabras": 327,
+        "tiene_imagenes": false,
+        "tiene_tablas": false
+      },
+      {
+        "nombre": "2016-03-01-t-7-7.md",
+        "tipo": "tip",
+        "lineas": 27,
+        "palabras": 110,
+        "tiene_imagenes": true,
+        "tiene_tablas": true
+      }
+    ]
+  },
+  "verificacion_traducciones": {
+    "total_originales": 13,
+    "total_traducciones": 13,
+    "traducciones_faltantes": [],
+    "comparaciones": [
+      {
+        "archivo": "2016-03-01-t-7-3.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:in case the system is develope",
+          "parrafo:the stereotype &laquo;executio",
+          "parrafo:![deployment overview]({{ site"
+        ]
+      },
+      {
+        "archivo": "2016-03-01-t-7-5.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:remember to explain these depl",
+          "parrafo:in case your system requires d",
+          "parrafo:document or specify the mappin"
+        ]
+      },
+      {
+        "archivo": "07-deployment-sample-tpu-2.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "heading:video cards (details)",
+          "parrafo:### video cards (details)",
+          "heading:7.2 deployment view level 2 (videocards)"
+        ]
+      },
+      {
+        "archivo": "2016-03-01-t-7-8.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:the arc42 template (section 7)",
+          "parrafo:several of your nodes (i.e. ha",
+          "parrafo:in such cases you should expla"
+        ]
+      },
+      {
+        "archivo": "07-deployment-sample-htmlsc-1.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "lista:htmlsc users need a ",
+          "parrafo:## 7. deployment view",
+          "parrafo:<p></p>"
+        ]
+      },
+      {
+        "archivo": "2016-03-01-t-7-4.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:like in the building block vie",
+          "parrafo:the diagram below gives an exa",
+          "parrafo:![hierarchical deployment view"
+        ]
+      },
+      {
+        "archivo": "2016-03-01-t-7-2.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:if hardware plays an important",
+          "parrafo:#### node &lt;node-name>",
+          "parrafo:|responsibility| what is the r"
+        ]
+      },
+      {
+        "archivo": "2016-03-02-t-7-10.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:>i (gernot) worked in several ",
+          "parrafo:in case you are primarily conc",
+          "parrafo:include only such information "
+        ]
+      },
+      {
+        "archivo": "2016-03-01-t-7-1.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:describe the technical infrast",
+          "lista:nodes, i",
+          "parrafo:you could either use uml deplo"
+        ]
+      },
+      {
+        "archivo": "07-deployment-example-tpu-1.md",
+        "completo": false,
+        "similitud": "5.88%",
+        "elementos_faltantes": [
+          "parrafo:## 7.1 deployment level 1\nthe ",
+          "parrafo:## 7.1 deployment view level 1",
+          "heading:2. pc-board"
+        ]
+      },
+      {
+        "archivo": "2016-03-01-t-7-6.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:* structure of the hardware in",
+          "parrafo:![deployment diagram]({{ site.",
+          "parrafo:in (uml) deployment diagrams y"
+        ]
+      },
+      {
+        "archivo": "2016-03-01-t-7-9.md",
+        "completo": false,
+        "similitud": "4.35%",
+        "elementos_faltantes": [
+          "heading:automate (almost) everything",
+          "lista:setup and configurat",
+          "lista:installing and confi"
+        ]
+      },
+      {
+        "archivo": "2016-03-01-t-7-7.md",
+        "completo": false,
+        "similitud": "0.00%",
+        "elementos_faltantes": [
+          "parrafo:|server| artifact |remark|\n|--",
+          "parrafo:as a (simple) alternative to g",
+          "parrafo:![deployment diagram]({{ site."
+        ]
+      }
+    ],
+    "estadisticas_completitud": {
+      "completas": 0,
+      "incompletas": 13,
+      "similitud_promedio": "0.79%"
+    }
+  }
+}

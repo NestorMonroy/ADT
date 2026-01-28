@@ -1,0 +1,130 @@
+PLAN DE TRADUCCIÓN - SECCIÓN 08: CROSSCUTTING CONCEPTS
+
+Workflow: v1.7.2
+Fecha inicio: 2026-01-27
+Total archivos: 12
+
+═══════════════════════════════════════════════════════════════════════════════
+
+FASE 3: TRADUCCIÓN INICIAL (Orden de ejecución)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PRIORIDAD 1: Archivo Principal
+───────────────────────────────────────────────────────────────────────────────
+
+1. ✅ section-8.md → seccion_08_conceptos_transversales.rst
+   - Orden: PRIMERO (base de la sección)
+   - Líneas: 74
+   - Complejidad: ALTA
+   - Incluye: Front matter, Content, Motivation, Form, Structure, Background
+   - Tiempo estimado: 45-60 min
+
+PRIORIDAD 2: Tips (Traducir en orden numérico)
+───────────────────────────────────────────────────────────────────────────────
+
+2. ⬜ 2016-03-01-t-8-1.md → crosscutting_tip_1.rst
+   - Líneas: 28, Palabras: 201
+   - Elementos: listas
+   - Tiempo estimado: 15 min
+
+3. ⬜ 2016-03-01-t-8-2.md → crosscutting_tip_2.rst
+   - Líneas: 44, Palabras: 193
+   - Elementos: imágenes (1), listas
+   - Tiempo estimado: 20 min
+
+4. ⬜ 2016-03-01-t-8-3.md → crosscutting_tip_3.rst
+   - Líneas: 23, Palabras: 138
+   - Elementos: listas
+   - Tiempo estimado: 12 min
+
+5. ⬜ 2016-03-01-t-8-4.md → crosscutting_tip_4.rst
+   - Líneas: 30, Palabras: 174
+   - Elementos: listas
+   - Tiempo estimado: 15 min
+
+6. ⬜ 2016-03-01-t-8-5.md → crosscutting_tip_5.rst
+   - Líneas: 28, Palabras: 170
+   - Elementos: imágenes (1)
+   - Tiempo estimado: 15 min
+
+7. ⬜ 2016-03-01-t-8-6.md → crosscutting_tip_6.rst
+   - Líneas: 24, Palabras: 133
+   - Elementos: listas
+   - Tiempo estimado: 12 min
+
+8. ⬜ 2016-03-01-t-8-7.md → crosscutting_tip_7.rst
+   - Líneas: 43, Palabras: 178
+   - Elementos: imágenes (1)
+   - Tiempo estimado: 20 min
+
+9. ⬜ 2016-03-01-t-8-8.md → crosscutting_tip_8.rst
+   - Líneas: 64, Palabras: 258
+   - Elementos: listas, código
+   - Tiempo estimado: 25 min
+
+10. ⬜ 2016-03-01-t-8-9.md → crosscutting_tip_9.rst
+    - Líneas: 118, Palabras: 431 ⚠️ MÁS LARGO
+    - Elementos: listas, código, tablas (1)
+    - Complejidad: ALTA
+    - Tiempo estimado: 40 min
+
+11. ⬜ 2016-03-02-t-8-10.md → crosscutting_tip_10.rst
+    - Líneas: 37, Palabras: 142
+    - Elementos: imágenes (1)
+    - Tiempo estimado: 18 min
+
+12. ⬜ 2022-07-01-t-8-11.md → crosscutting_tip_11.rst
+    - Líneas: 33, Palabras: 174
+    - Elementos: imágenes (1)
+    - Tiempo estimado: 15 min
+
+═══════════════════════════════════════════════════════════════════════════════
+
+RESUMEN DE TIEMPOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Archivo principal:    45-60 min
+Tips 1-11:           227 min (~3.8 horas)
+─────────────────────────────────
+TOTAL TRADUCCIÓN:    ~4.5 horas
+
+FASE 3.7 (Verificación con script): 15-20 min
+Validación y ajustes: 30 min
+─────────────────────────────────
+TOTAL GENERAL:       ~5.5 horas
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ESTRATEGIA DE TRADUCCIÓN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Traducir archivo principal COMPLETO primero
+2. Traducir tips en orden numérico (1→11)
+3. Archivos con elementos especiales:
+   - Imágenes: Mantener referencias {{ site.imageurl }}
+   - Código: Mantener formato exacto
+   - Tablas: Verificar formato RST
+4. Aplicar FASE 3.7 al terminar TODOS los archivos
+5. Usar script de verificación automática
+
+═══════════════════════════════════════════════════════════════════════════════
+
+METODOLOGÍA ADT POR ARCHIVO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Para cada archivo:
+  1. Leer original completo
+  2. Identificar estructura (headings, listas, código, etc.)
+  3. Traducir literal (Paso 3.1)
+  4. Aplicar mapeo 1:1 (Paso 3.2)
+  5. Preferir Signifié (Paso 3.3)
+  6. Aplicar terminología arquitectónica (Paso 3.4)
+  7. Enriquecimiento opcional si aplica (Paso 3.5)
+  8. Revisar literalidad (Paso 3.6)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Estado actual: LISTO PARA EMPEZAR
+Próximo archivo: section-8.md (archivo principal)
+
+═══════════════════════════════════════════════════════════════════════════════
