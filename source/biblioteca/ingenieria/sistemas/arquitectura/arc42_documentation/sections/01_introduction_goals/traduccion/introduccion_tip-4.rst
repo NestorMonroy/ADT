@@ -1,15 +1,15 @@
+.. _introduccion-tip-4:
+
+===================================================================
+Consejo 1-4: ¡Crea una vista general agrupando requisitos!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-4: ¡Crea una vista general agrupando o clusterizando requisitos!
    :tags: requirement cluster functional-requirement
    :category: requirements
    :permalink: /tips/1-4/
-
-.. _introduccion-tip-4:
-
-===================================================================
-Consejo 1-4: ¡Crea una vista general agrupando requisitos!
-===================================================================
 
 :Tema: Agrupación de requisitos
 :Categoría: Requisitos

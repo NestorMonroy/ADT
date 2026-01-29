@@ -1,13 +1,13 @@
+===============================================
+Tip 8-8: ¡Documente conceptos con código fuente!
+===============================================
+
 .. meta::
    :layout: post
    :title: Tip 8-8: ¡Documente conceptos con código fuente!
    :tags: concepto
    :category: conceptos
    :permalink: /tips/8-8/
-
-===============================================
-Tip 8-8: ¡Documente conceptos con código fuente!
-===============================================
 
 El código fuente puede ser una excelente documentación de conceptos, especialmente
 para aspectos técnicos.

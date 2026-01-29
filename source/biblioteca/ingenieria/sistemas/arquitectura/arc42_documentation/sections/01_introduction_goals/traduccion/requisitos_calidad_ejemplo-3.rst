@@ -1,15 +1,15 @@
+.. _requisitos-calidad-ejemplo-3:
+
+===================================================================
+Ejemplo de Requisitos de Calidad: Unidad de Persecución de Tráfico
+===================================================================
+
 .. meta::
    :layout: post
    :title: Ejemplo de Requisitos de Calidad: Unidad de Persecución de Tráfico
    :tags: quality-requirements example 
    :category: quality-goals
    :permalink: /examples/quality-requirements-3/
-
-.. _requisitos-calidad-ejemplo-3:
-
-===================================================================
-Ejemplo de Requisitos de Calidad: Unidad de Persecución de Tráfico
-===================================================================
 
 .. note::
    **Ejemplo de arc42:**

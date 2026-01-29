@@ -1,13 +1,13 @@
+=======================================================================================
+Tip 8-2: Los Conceptos son enfoques, reglas, principios, tácticas, estrategias, etc...
+=======================================================================================
+
 .. meta::
    :layout: post
    :title: Tip 8-2: Los Conceptos son enfoques, reglas, principios, tácticas, estrategias, etc...
    :tags: concepto
    :category: conceptos
    :permalink: /tips/8-2/
-
-=======================================================================================
-Tip 8-2: Los Conceptos son enfoques, reglas, principios, tácticas, estrategias, etc...
-=======================================================================================
 
 Algunas personas prefieren llamar a los aspectos *transversales* con diferentes nombres. En la práctica,
 hemos encontrado los siguientes términos:

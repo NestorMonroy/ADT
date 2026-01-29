@@ -1,15 +1,15 @@
+.. _introduccion-tip-8:
+
+===================================================================
+Consejo 1-8: ¡Usa una lista numerada!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-8: ¡Usa una lista numerada para describir requisitos funcionales!
    :tags: requirement functional-requirement
    :category: requirements
    :permalink: /tips/1-8/
-
-.. _introduccion-tip-8:
-
-===================================================================
-Consejo 1-8: ¡Usa una lista numerada!
-===================================================================
 
 :Subtítulo: Para describir requisitos funcionales
 :Tema: Listas numeradas como alternativa simple

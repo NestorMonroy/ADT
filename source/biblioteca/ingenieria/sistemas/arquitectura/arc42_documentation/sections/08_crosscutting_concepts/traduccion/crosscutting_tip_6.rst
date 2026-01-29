@@ -1,13 +1,13 @@
+================================================================
+Tip 8-6: ¡Combine modelos de negocio o dominio con el glosario!
+================================================================
+
 .. meta::
    :layout: post
    :title: Tip 8-6: ¡Combine modelos de negocio o dominio con el glosario!
    :tags: concepto, glosario
    :category: conceptos
    :permalink: /tips/8-6/
-
-================================================================
-Tip 8-6: ¡Combine modelos de negocio o dominio con el glosario!
-================================================================
 
 El glosario (Sección 12 de arc42) y los modelos de dominio son complementarios:
 

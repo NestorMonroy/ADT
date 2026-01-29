@@ -1,13 +1,13 @@
+=====================================
+Tip 9-8: ¡Use herramientas de ADR!
+=====================================
+
 .. meta::
    :layout: post
    :title: Tip 9-8: ¡Use herramientas de ADR!
    :tags: decisión, ADR, herramientas
    :category: decisiones
    :permalink: /tips/9-8/
-
-=====================================
-Tip 9-8: ¡Use herramientas de ADR!
-=====================================
 
 Existen herramientas que facilitan la gestión de ADRs:
 

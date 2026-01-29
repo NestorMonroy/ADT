@@ -1,15 +1,15 @@
+.. _introduccion-tip-6:
+
+===================================================================
+Consejo 1-6: ¡Usa diagramas de actividad!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-6: ¡Usa diagramas de actividad para describir requisitos funcionales!
    :tags: requirement activity-diagram functional-requirement
    :category: requirements
    :permalink: /tips/1-6/
-
-.. _introduccion-tip-6:
-
-===================================================================
-Consejo 1-6: ¡Usa diagramas de actividad!
-===================================================================
 
 :Subtítulo: Para describir requisitos funcionales
 :Tema: Diagramas UML de actividad

@@ -1,15 +1,15 @@
+.. _introduccion-ejemplo-htmlsc-1:
+
+===================================================================
+Ejemplo de Vista General: HTML Sanity Checker
+===================================================================
+
 .. meta::
    :layout: post
    :title: Ejemplo de Vista General: HTML Sanity Checker
    :tags: overview example 
    :category: overview
    :permalink: /examples/overview-example-htmlsc-1/
-
-.. _introduccion-ejemplo-htmlsc-1:
-
-===================================================================
-Ejemplo de Vista General: HTML Sanity Checker
-===================================================================
 
 .. note::
    **Ejemplo de arc42:**

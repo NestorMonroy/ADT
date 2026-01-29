@@ -1,13 +1,13 @@
+===================================================
+Tip 9-9: ¡Integre ADRs en su flujo de trabajo!
+===================================================
+
 .. meta::
    :layout: post
    :title: Tip 9-9: ¡Integre ADRs en su flujo de trabajo!
    :tags: decisión, ADR, proceso
    :category: decisiones
    :permalink: /tips/9-9/
-
-===================================================
-Tip 9-9: ¡Integre ADRs en su flujo de trabajo!
-===================================================
 
 Haga que documentar decisiones sea parte del proceso normal:
 

@@ -1,13 +1,13 @@
+========================================================
+Tip 8-9: ¡Documente decisiones en lugar de conceptos!
+========================================================
+
 .. meta::
    :layout: post
    :title: Tip 8-9: ¡Documente decisiones en lugar de conceptos!
    :tags: concepto, lean
    :category: conceptos
    :permalink: /tips/8-9/
-
-========================================================
-Tip 8-9: ¡Documente decisiones en lugar de conceptos!
-========================================================
 
 Puede interpretar los conceptos como casos especiales de decisiones de arquitectura y/o diseño
 (ver :ref:`seccion-9`).

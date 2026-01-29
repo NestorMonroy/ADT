@@ -1,15 +1,15 @@
+.. _seccion-9:
+
+================================
+9. Decisiones de Arquitectura
+================================
+
 .. meta::
    :category: arc42-doc-section
    :layout: seccion
    :title: 9 - Decisiones
    :permalink: /seccion-9/
    :order: 13
-
-.. _seccion-9:
-
-================================
-9. Decisiones de Arquitectura
-================================
 
 .. rst-class:: arc42-help
 

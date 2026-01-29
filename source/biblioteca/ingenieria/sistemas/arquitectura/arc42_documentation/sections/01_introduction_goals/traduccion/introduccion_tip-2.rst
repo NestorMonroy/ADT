@@ -1,15 +1,15 @@
+.. _introduccion-tip-2:
+
+===================================================================
+Consejo 1-2: ¡Limítate a las tareas y casos de uso esenciales!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-2: ¡Limítate a las tareas y casos de uso esenciales!
    :tags: requirement
    :category: requirements
    :permalink: /tips/1-2/
-
-.. _introduccion-tip-2:
-
-===================================================================
-Consejo 1-2: ¡Limítate a las tareas y casos de uso esenciales!
-===================================================================
 
 :Tema: Requisitos funcionales
 :Categoría: Requisitos

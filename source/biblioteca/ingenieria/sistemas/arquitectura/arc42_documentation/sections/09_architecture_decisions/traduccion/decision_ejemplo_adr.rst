@@ -1,13 +1,13 @@
+=====================================================
+Ejemplo de Decisión: Usar ADRs en formato Nygard
+=====================================================
+
 .. meta::
    :layout: post
    :title: Ejemplo de Decisión: Usar ADRs en formato Nygard
    :tags: decisión, ejemplo
    :category: decisiones
    :permalink: /examples/decision-use-adrs/
-
-=====================================================
-Ejemplo de Decisión: Usar ADRs en formato Nygard
-=====================================================
 
 .. note::
    Este ejemplo ha sido tomado del `sitio adr-tools de Nat Pryce <https://github.com/npryce/adr-tools/tree/master/doc/adr>`_

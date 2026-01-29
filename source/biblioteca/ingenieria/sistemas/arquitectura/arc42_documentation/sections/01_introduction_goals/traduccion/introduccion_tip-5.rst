@@ -1,15 +1,15 @@
+.. _introduccion-tip-5:
+
+===================================================================
+Consejo 1-5: ¡Asegúrate de poder referenciar requisitos!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-5: ¡Asegúrate de poder referenciar requisitos existentes!
    :tags: requirement thorough
    :category: requirements
    :permalink: /tips/1-5/
-
-.. _introduccion-tip-5:
-
-===================================================================
-Consejo 1-5: ¡Asegúrate de poder referenciar requisitos!
-===================================================================
 
 :Tema: Referencias a requisitos
 :Categoría: Requisitos

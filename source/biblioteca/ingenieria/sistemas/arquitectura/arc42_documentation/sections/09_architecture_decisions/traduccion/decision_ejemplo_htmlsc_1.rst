@@ -1,13 +1,13 @@
+=====================================================
+Ejemplo de Decisión: HTML Sanity Checker
+=====================================================
+
 .. meta::
    :layout: post
    :title: Ejemplo de Decisión: HTML Sanity Checker
    :tags: decisión, ejemplo
    :category: decisiones
    :permalink: /examples/decision-htmlsc/
-
-=====================================================
-Ejemplo de Decisión: HTML Sanity Checker
-=====================================================
 
 9. Decisiones de Arquitectura
 ==============================

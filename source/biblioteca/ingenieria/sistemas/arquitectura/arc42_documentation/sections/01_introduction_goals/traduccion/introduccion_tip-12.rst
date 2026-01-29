@@ -1,15 +1,15 @@
+.. _introduccion-tip-12:
+
+===================================================================
+Consejo 1-12: ¡Explica requisitos mediante escenarios!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-12: ¡Explica los requisitos de calidad mediante escenarios!
    :tags: requirement quality scenario essential 
    :category: requirements
    :permalink: /tips/1-12/
-
-.. _introduccion-tip-12:
-
-===================================================================
-Consejo 1-12: ¡Explica requisitos mediante escenarios!
-===================================================================
 
 :Subtítulo: Requisitos de calidad mediante escenarios
 :Tema: Escenarios de calidad

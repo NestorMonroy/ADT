@@ -1,15 +1,15 @@
+.. _introduccion-ejemplo-3:
+
+===================================================================
+Ejemplo de Vista General: Unidad de Persecución de Tráfico
+===================================================================
+
 .. meta::
    :layout: post
    :title: Ejemplo de Vista General: Unidad de Persecución de Tráfico
    :tags: overview example 
    :category: overview
    :permalink: /examples/overview-example-3/
-
-.. _introduccion-ejemplo-3:
-
-===================================================================
-Ejemplo de Vista General: Unidad de Persecución de Tráfico
-===================================================================
 
 .. note::
    **Ejemplo de arc42:**

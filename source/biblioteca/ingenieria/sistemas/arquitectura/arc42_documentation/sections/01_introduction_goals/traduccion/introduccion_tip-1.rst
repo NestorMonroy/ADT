@@ -1,15 +1,15 @@
+.. _introduccion-tip-1:
+
+===================================================================
+Consejo 1-1: ¡Proporciona un resumen compacto de requisitos!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-1: ¡Proporciona un resumen compacto de requisitos y factores determinantes!
    :tags: requirement
    :category: requirements
    :permalink: /tips/1-1/
-
-.. _introduccion-tip-1:
-
-===================================================================
-Consejo 1-1: ¡Proporciona un resumen compacto de requisitos!
-===================================================================
 
 :Subtítulo: Requisitos y factores determinantes
 :Categoría: Requisitos

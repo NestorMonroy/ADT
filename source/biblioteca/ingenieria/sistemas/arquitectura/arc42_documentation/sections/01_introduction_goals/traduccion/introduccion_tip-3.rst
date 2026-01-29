@@ -1,15 +1,15 @@
+.. _introduccion-tip-3:
+
+===================================================================
+Consejo 1-3: ¡Destaca los objetivos de negocio del sistema!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-3: ¡Destaca los objetivos de negocio del sistema!
    :tags: requirement goal
    :category: requirements
    :permalink: /tips/1-3/
-
-.. _introduccion-tip-3:
-
-===================================================================
-Consejo 1-3: ¡Destaca los objetivos de negocio del sistema!
-===================================================================
 
 :Tema: Objetivos de negocio
 :Categoría: Requisitos

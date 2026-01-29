@@ -1,15 +1,15 @@
+.. _introduccion-tip-20:
+
+===================================================================
+Consejo 1-20: ¡Describe las expectativas de stakeholders!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-20: ¡Describe las expectativas de los stakeholders!
    :tags: requirement stakeholder essential
    :category: requirements
    :permalink: /tips/1-20/
-
-.. _introduccion-tip-20:
-
-===================================================================
-Consejo 1-20: ¡Describe las expectativas de stakeholders!
-===================================================================
 
 :Tema: Gestión de expectativas
 :Categoría: Requisitos

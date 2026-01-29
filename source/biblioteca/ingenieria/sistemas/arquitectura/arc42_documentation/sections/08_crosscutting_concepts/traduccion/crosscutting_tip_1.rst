@@ -1,13 +1,13 @@
+=====================================
+Tip 8-1: ¡Explique los Conceptos!
+=====================================
+
 .. meta::
    :layout: post
    :title: Tip 8-1: ¡Explique los Conceptos!
    :tags: concepto, lean, esencial
    :category: conceptos
    :permalink: /tips/8-1/
-
-=====================================
-Tip 8-1: ¡Explique los Conceptos!
-=====================================
 
 .. epigraph::
 

@@ -1,15 +1,15 @@
+.. _introduccion-tip-9:
+
+===================================================================
+Consejo 1-9: ¡Usa texto (semi) formal!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-9: ¡Usa texto (semi) formal para describir requisitos funcionales!
    :tags: requirement plantUML activity-diagram functional-requirement
    :category: requirements
    :permalink: /tips/1-9/
-
-.. _introduccion-tip-9:
-
-===================================================================
-Consejo 1-9: ¡Usa texto (semi) formal!
-===================================================================
 
 :Subtítulo: Para describir requisitos funcionales
 :Tema: PlantUML y notación semi-formal

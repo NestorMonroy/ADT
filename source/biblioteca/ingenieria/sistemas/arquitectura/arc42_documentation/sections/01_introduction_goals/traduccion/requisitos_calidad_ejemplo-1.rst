@@ -1,15 +1,15 @@
+.. _requisitos-calidad-ejemplo-1:
+
+===================================================================
+Ejemplo de Requisitos de Calidad: HTML Sanity Checker
+===================================================================
+
 .. meta::
    :layout: post
    :title: Ejemplo de Requisitos de Calidad: HTML Sanity Checker
    :tags: quality-requirements example 
    :category: quality-goals
    :permalink: /examples/quality-requirements-1/
-
-.. _requisitos-calidad-ejemplo-1:
-
-===================================================================
-Ejemplo de Requisitos de Calidad: HTML Sanity Checker
-===================================================================
 
 .. note::
    **Ejemplo de arc42:**

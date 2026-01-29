@@ -1,13 +1,13 @@
+==============================================
+Tip 9-5: ¡Documente alternativas rechazadas!
+==============================================
+
 .. meta::
    :layout: post
    :title: Tip 9-5: ¡Documente alternativas rechazadas!
    :tags: decisión, alternativas
    :category: decisiones
    :permalink: /tips/9-5/
-
-==============================================
-Tip 9-5: ¡Documente alternativas rechazadas!
-==============================================
 
 Al documentar una decisión, también documente las alternativas que se consideraron y rechazaron.
 

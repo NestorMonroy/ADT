@@ -1,13 +1,13 @@
+====================================================
+Tip 8-5: ¡Documente modelos de negocio o dominio!
+====================================================
+
 .. meta::
    :layout: post
    :title: Tip 8-5: ¡Documente modelos de negocio o dominio!
    :tags: concepto, dominio, esencial
    :category: conceptos
    :permalink: /tips/8-5/
-
-====================================================
-Tip 8-5: ¡Documente modelos de negocio o dominio!
-====================================================
 
 El modelo de dominio proporciona una vista estructurada de los conceptos de negocio
 centrales de su sistema.

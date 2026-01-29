@@ -1,13 +1,13 @@
+=================================================================
+Tip 8-10: ¡Use la colección de arc42 como checklist para conceptos!
+=================================================================
+
 .. meta::
    :layout: post
    :title: Tip 8-10: ¡Use la colección de arc42 como checklist para conceptos!
    :tags: concepto
    :category: conceptos
    :permalink: /tips/8-10/
-
-=================================================================
-Tip 8-10: ¡Use la colección de arc42 como checklist para conceptos!
-=================================================================
 
 arc42 proporciona una lista extensa de conceptos transversales potenciales:
 

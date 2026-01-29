@@ -1,15 +1,15 @@
+.. _introduccion-tip-10:
+
+===================================================================
+Consejo 1-10: ¡Usa modelos de procesos ejemplares!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-10: ¡Usa modelos de procesos de negocio ejemplares para describir requisitos funcionales!
    :category: requirements
    :tags: requirement functional-requirement
    :permalink: /tips/1-10/
-
-.. _introduccion-tip-10:
-
-===================================================================
-Consejo 1-10: ¡Usa modelos de procesos ejemplares!
-===================================================================
 
 :Subtítulo: Para describir requisitos funcionales
 :Tema: Modelos de procesos de negocio ejemplares

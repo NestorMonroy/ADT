@@ -1,13 +1,13 @@
+====================================================================
+Tip 8-11: ¡(Hiper)Enlace entre Bloques de Construcción y Conceptos!
+====================================================================
+
 .. meta::
    :layout: post
    :title: Tip 8-11: ¡(Hiper)Enlace entre Bloques de Construcción y Conceptos!
    :tags: concepto
    :category: conceptos
    :permalink: /tips/8-11/
-
-====================================================================
-Tip 8-11: ¡(Hiper)Enlace entre Bloques de Construcción y Conceptos!
-====================================================================
 
 Los conceptos transversales y los bloques de construcción están íntimamente relacionados.
 

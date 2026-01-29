@@ -1,13 +1,13 @@
+===============================================
+Tip 9-6: ¡Enlace decisiones con requisitos!
+===============================================
+
 .. meta::
    :layout: post
    :title: Tip 9-6: ¡Enlace decisiones con requisitos!
    :tags: decisión, requisitos
    :category: decisiones
    :permalink: /tips/9-6/
-
-===============================================
-Tip 9-6: ¡Enlace decisiones con requisitos!
-===============================================
 
 Conecte cada decisión arquitectónica con los requisitos que la impulsan.
 

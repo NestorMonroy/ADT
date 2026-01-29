@@ -1,13 +1,13 @@
+=====================================
+Tip 9-2: ¡Use un formato consistente!
+=====================================
+
 .. meta::
    :layout: post
    :title: Tip 9-2: ¡Use un formato consistente!
    :tags: decisión, ADR
    :category: decisiones
    :permalink: /tips/9-2/
-
-=====================================
-Tip 9-2: ¡Use un formato consistente!
-=====================================
 
 Mantenga la misma estructura para todas las decisiones.
 

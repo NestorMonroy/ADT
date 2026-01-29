@@ -1,15 +1,15 @@
+.. _introduccion-tip-19:
+
+===================================================================
+Consejo 1-19: ¡Busca ampliamente stakeholders!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-19: ¡Busca ampliamente stakeholders!
    :tags: requirement stakeholder essential
    :category: requirements
    :permalink: /tips/1-19/
-
-.. _introduccion-tip-19:
-
-===================================================================
-Consejo 1-19: ¡Busca ampliamente stakeholders!
-===================================================================
 
 :Tema: Identificación de stakeholders
 :Categoría: Requisitos

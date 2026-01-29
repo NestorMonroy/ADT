@@ -1,13 +1,13 @@
+=========================================
+Tip 9-10: ¡Haga las decisiones visibles!
+=========================================
+
 .. meta::
    :layout: post
    :title: Tip 9-10: ¡Haga las decisiones visibles!
    :tags: decisión, comunicación
    :category: decisiones
    :permalink: /tips/9-10/
-
-=========================================
-Tip 9-10: ¡Haga las decisiones visibles!
-=========================================
 
 Las decisiones arquitectónicas deben ser fácilmente accesibles para todos los stakeholders.
 

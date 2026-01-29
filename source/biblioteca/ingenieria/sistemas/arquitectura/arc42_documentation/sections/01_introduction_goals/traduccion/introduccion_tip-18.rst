@@ -1,15 +1,15 @@
+.. _introduccion-tip-18:
+
+===================================================================
+Consejo 1-18: ¡Difiere detalles a la sección 10!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-18: ¡Difiere los requisitos de calidad detallados y completos a la sección 10 de arc42!
    :tags: requirement quality-goal thorough quality
    :category: requirements
    :permalink: /tips/1-18/
-
-.. _introduccion-tip-18:
-
-===================================================================
-Consejo 1-18: ¡Difiere detalles a la sección 10!
-===================================================================
 
 :Subtítulo: Requisitos de calidad detallados
 :Tema: Organización de requisitos de calidad

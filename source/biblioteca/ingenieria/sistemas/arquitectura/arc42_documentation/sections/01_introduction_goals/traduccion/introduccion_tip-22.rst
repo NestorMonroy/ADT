@@ -1,15 +1,15 @@
+.. _introduccion-tip-22:
+
+===================================================================
+Consejo 1-22: ¡Omite duplicar si ya existe!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-22: ¡Omite la tabla de stakeholders si tu gestión ya la mantiene!
    :category: requirements
    :tags: requirement stakeholder lean
    :permalink: /tips/1-22/
-
-.. _introduccion-tip-22:
-
-===================================================================
-Consejo 1-22: ¡Omite duplicar si ya existe!
-===================================================================
 
 :Subtítulo: Tabla de stakeholders
 :Tema: Evitar duplicación de información

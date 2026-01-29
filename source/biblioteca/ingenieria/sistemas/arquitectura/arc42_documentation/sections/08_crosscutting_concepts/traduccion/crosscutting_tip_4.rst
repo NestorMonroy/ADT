@@ -1,13 +1,13 @@
+===================================================
+Tip 8-4: ¡En los conceptos, explique CÓMO funciona!
+===================================================
+
 .. meta::
    :layout: post
    :title: Tip 8-4: ¡En los conceptos, explique CÓMO funciona!
    :tags: concepto, lean
    :category: conceptos
    :permalink: /tips/8-4/
-
-===================================================
-Tip 8-4: ¡En los conceptos, explique CÓMO funciona!
-===================================================
 
 Los conceptos deben explicar **cómo** funcionan las cosas, no solo **qué** son.
 

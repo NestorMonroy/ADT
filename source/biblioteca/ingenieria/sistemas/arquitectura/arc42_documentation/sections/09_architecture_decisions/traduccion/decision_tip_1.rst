@@ -1,13 +1,13 @@
+====================================================================
+Tip 9-1: ¡Documente solo decisiones arquitectónicamente relevantes!
+====================================================================
+
 .. meta::
    :layout: post
    :title: Tip 9-1: ¡Documente solo decisiones arquitectónicamente relevantes!
    :tags: decisión, calidad, stakeholder, lean
    :category: decisiones
    :permalink: /tips/9-1/
-
-====================================================================
-Tip 9-1: ¡Documente solo decisiones arquitectónicamente relevantes!
-====================================================================
 
 .. epigraph::
 

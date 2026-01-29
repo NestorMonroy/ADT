@@ -1,13 +1,13 @@
+==============================================================================
+Tip 8-3: ¡Restrinja la documentación de conceptos a los temas más importantes!
+==============================================================================
+
 .. meta::
    :layout: post
    :title: Tip 8-3: ¡Restrinja la documentación de conceptos a los temas más importantes!
    :tags: concepto, lean
    :category: conceptos
    :permalink: /tips/8-3/
-
-==============================================================================
-Tip 8-3: ¡Restrinja la documentación de conceptos a los temas más importantes!
-==============================================================================
 
 Cree conceptos solo para aquellos temas que realmente necesitan explicaciones adicionales
 y que son relevantes para múltiples bloques de construcción.

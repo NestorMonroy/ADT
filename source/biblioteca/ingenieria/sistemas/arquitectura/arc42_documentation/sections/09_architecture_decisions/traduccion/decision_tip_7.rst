@@ -1,13 +1,13 @@
+============================================
+Tip 9-7: ¡Mantenga las decisiones actualizadas!
+============================================
+
 .. meta::
    :layout: post
    :title: Tip 9-7: ¡Mantenga las decisiones actualizadas!
    :tags: decisión, mantenimiento
    :category: decisiones
    :permalink: /tips/9-7/
-
-============================================
-Tip 9-7: ¡Mantenga las decisiones actualizadas!
-============================================
 
 Las decisiones pueden cambiar con el tiempo.
 

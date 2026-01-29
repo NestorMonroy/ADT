@@ -1,15 +1,15 @@
+.. _introduccion-tip-14:
+
+===================================================================
+Consejo 1-14: ¡Usa checklists para requisitos de calidad!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-14: ¡Usa checklists para requisitos de calidad!
    :tags: requirement quality quality-tree iso-25010 thorough
    :category: requirements
    :permalink: /tips/1-14/
-
-.. _introduccion-tip-14:
-
-===================================================================
-Consejo 1-14: ¡Usa checklists para requisitos de calidad!
-===================================================================
 
 :Tema: Checklists y modelos de calidad
 :Categoría: Requisitos

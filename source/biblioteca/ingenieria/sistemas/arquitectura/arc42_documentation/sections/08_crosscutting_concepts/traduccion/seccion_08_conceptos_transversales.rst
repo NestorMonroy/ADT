@@ -1,15 +1,15 @@
+.. _seccion-8:
+
+================================
+8. Conceptos Transversales
+================================
+
 .. meta::
    :category: arc42-doc-section
    :layout: seccion
    :title: 8 - Conceptos
    :permalink: /seccion-8/
    :order: 12
-
-.. _seccion-8:
-
-================================
-8. Conceptos Transversales
-================================
 
 .. rst-class:: arc42-help
 

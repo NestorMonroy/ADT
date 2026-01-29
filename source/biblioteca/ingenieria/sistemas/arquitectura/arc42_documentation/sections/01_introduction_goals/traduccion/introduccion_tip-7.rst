@@ -1,15 +1,15 @@
+.. _introduccion-tip-7:
+
+===================================================================
+Consejo 1-7: ¡Usa diagramas BPMN!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-7: ¡Usa diagramas BPMN para describir requisitos funcionales!
    :tags: requirement bpmn functional-requirement
    :category: requirements
    :permalink: /tips/1-7/
-
-.. _introduccion-tip-7:
-
-===================================================================
-Consejo 1-7: ¡Usa diagramas BPMN!
-===================================================================
 
 :Subtítulo: Para describir requisitos funcionales
 :Tema: Business Process Model Notation

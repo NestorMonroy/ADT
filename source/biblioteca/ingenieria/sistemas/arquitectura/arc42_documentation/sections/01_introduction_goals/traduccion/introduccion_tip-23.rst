@@ -1,15 +1,15 @@
+.. _introduccion-tip-23:
+
+===================================================================
+Consejo 1-23: ¡Clasifica por interés e influencia!
+===================================================================
+
 .. meta::
    :layout: post
    :title: Consejo 1-23: ¡Clasifica tus stakeholders por interés e influencia!
    :tags: stakeholder lean
    :category: requirements
    :permalink: /tips/1-23/
-
-.. _introduccion-tip-23:
-
-===================================================================
-Consejo 1-23: ¡Clasifica por interés e influencia!
-===================================================================
 
 :Subtítulo: Stakeholders
 :Tema: Priorización de stakeholders

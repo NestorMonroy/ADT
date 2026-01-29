@@ -1,13 +1,13 @@
+=====================================================
+Ejemplo de Decisión: TrafficPursuitUnit
+=====================================================
+
 .. meta::
    :layout: post
    :title: Ejemplo de Decisión: TrafficPursuitUnit
    :tags: decisión, ejemplo
    :category: decisiones
    :permalink: /examples/decision-tpu-1/
-
-=====================================================
-Ejemplo de Decisión: TrafficPursuitUnit
-=====================================================
 
 9. Decisiones de Arquitectura
 ==============================

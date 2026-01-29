@@ -1,13 +1,13 @@
+=========================================================================
+Tip 8-7: ¡Documente (al menos) el modelo de datos (de negocio o dominio)!
+=========================================================================
+
 .. meta::
    :layout: post
    :title: Tip 8-7: ¡Documente (al menos) el modelo de datos (de negocio o dominio)!
    :tags: concepto, dominio, esencial, plantUML
    :category: conceptos
    :permalink: /tips/8-7/
-
-=========================================================================
-Tip 8-7: ¡Documente (al menos) el modelo de datos (de negocio o dominio)!
-=========================================================================
 
 .. epigraph::
 
