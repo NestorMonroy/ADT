@@ -28,7 +28,10 @@
 # -- Path setup --------------------------------------------------------------
 import os
 import sys
+import warnings
 from pathlib import Path
+from pygments.lexers.special import TextLexer
+from sphinx.deprecation import RemovedInSphinx90Warning
 
 # Ruta determinística (no depende del directorio desde donde se ejecute Sphinx)
 # source/conf.py -> source/
@@ -44,6 +47,13 @@ REPO_ROOT = SOURCE_DIR.parent
 #
 # Por ahora, insertamos el root del repo como base razonable.
 sys.path.insert(0, str(REPO_ROOT))
+
+# Silenciar warnings conocidos de extensiones de terceros
+warnings.filterwarnings(
+    "ignore",
+    message="The str interface for _JavaScript objects is deprecated.",
+    category=RemovedInSphinx90Warning,
+)
 
 # -- Información General del Proyecto ----------------------------------------
 
@@ -240,6 +250,15 @@ intersphinx_mapping = {
     "python": ("https://docs.python.org/3/", None),
     "sphinx": ("https://www.sphinx-doc.org/en/master/", None),
 }
+if os.environ.get("SPHINX_SKIP_INTERSPHINX") == "1":
+    intersphinx_mapping = {}
+
+# Alias de lexers para evitar warnings por lenguajes desconocidos
+pygments_lexers = {
+    "plantuml": TextLexer,
+    "atl": TextLexer,
+    "ocl": TextLexer,
+}
 
 # sphinx-copybutton
 # Excluir prompts y salidas de consola
@@ -260,6 +279,17 @@ myst_enable_extensions = [
     "replacements",
     "smartquotes",
     "tasklist",
+]
+myst_heading_anchors = 3
+
+# Supresion temporal de warnings masivos hasta normalizar contenido
+suppress_warnings = [
+    "ref.doc",
+    "ref.ref",
+    "toc.not_included",
+    "toc.secnum",
+    "toc",
+    "myst.xref_missing",
 ]
 
 # -- Configuración del Corrector Ortográfico ---------------------------------

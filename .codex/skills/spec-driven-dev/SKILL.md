@@ -21,7 +21,7 @@ OBJETIVO: Definir QUE se necesita
 
 DIRECTORIO: `.mywork/changes/YYYY-MM-DD-brief-desc/`
 
-ARCHIVO: `requirements.md`
+ARCHIVO: `YYYY-MM-DD-HH-MM-titulo.md`
 
 CONTENIDO:
 ```markdown
@@ -79,7 +79,7 @@ RNF-001: [Descripcion]
 
 PROCESO:
 1. Crear directorio de trabajo
-2. Generar requirements.md
+2. Generar archivo `YYYY-MM-DD-HH-MM-titulo.md`
 3. **SOLICITAR APROBACION AL USUARIO**
 4. **NO CONTINUAR SIN APROBACION EXPLICITA**
 
@@ -87,13 +87,13 @@ PROCESO:
 
 OBJETIVO: Definir COMO se implementara
 
-ARCHIVO: `design.md`
+ARCHIVO: `YYYY-MM-DD-HH-MM-titulo.md`
 
 CONTENIDO:
 ```markdown
 # Design: [Titulo]
 
-Basado en: requirements.md
+Basado en: archivo de requirements (YYYY-MM-DD-HH-MM-titulo.md)
 Fecha: YYYY-MM-DD
 Estado: Draft
 
@@ -160,11 +160,11 @@ TC-001: [Descripcion]
 
 ## 10. Referencias
 
-- DA-001 -> requirements.md RF-003
+- DA-001 -> requirements (YYYY-MM-DD-HH-MM-titulo.md) RF-003
 ```
 
 PROCESO:
-1. Generar design.md
+1. Generar archivo `YYYY-MM-DD-HH-MM-titulo.md`
 2. **SOLICITAR APROBACION AL USUARIO**
 3. **NO CONTINUAR SIN APROBACION EXPLICITA**
 
@@ -172,13 +172,13 @@ PROCESO:
 
 OBJETIVO: Definir pasos EXACTOS de implementacion
 
-ARCHIVO: `tasks.md`
+ARCHIVO: `YYYY-MM-DD-HH-MM-titulo.md`
 
 CONTENIDO:
 ```markdown
 # Tasks: [Titulo]
 
-Basado en: design.md
+Basado en: archivo de design (YYYY-MM-DD-HH-MM-titulo.md)
 Fecha: YYYY-MM-DD
 
 ## Resumen
@@ -189,7 +189,7 @@ Estimacion total: 8 horas
 ## Fase Preparacion (1h)
 
 TASK-001: Crear estructura de directorios
-- Descripcion: Crear directorios segun design.md
+- Descripcion: Crear directorios segun design (YYYY-MM-DD-HH-MM-titulo.md)
 - Archivos afectados: [Ninguno, solo mkdir]
 - Comandos:
  ```bash
@@ -266,7 +266,7 @@ Si falla TASK-005:
 ```
 
 PROCESO:
-1. Generar tasks.md detallado
+1. Generar archivo `YYYY-MM-DD-HH-MM-titulo.md` detallado
 2. **SOLICITAR APROBACION AL USUARIO**
 3. **NO CONTINUAR SIN APROBACION EXPLICITA**
 
@@ -282,7 +282,7 @@ PROCESO:
 
 1. Anunciar: "EJECUTANDO TASK-XXX: [nombre]"
 
-2. Seguir pasos EXACTOS de tasks.md
+2. Seguir pasos EXACTOS de tasks (YYYY-MM-DD-HH-MM-titulo.md)
 
 3. Validar criterios de exito
 
@@ -290,7 +290,7 @@ PROCESO:
  git add [archivos]
  git commit -m "feat(scope): implement TASK-XXX - [nombre]"
 
-5. Marcar como completada en tasks.md:
+5. Marcar como completada en tasks (YYYY-MM-DD-HH-MM-titulo.md):
  - [x] TASK-XXX: [nombre]
 
 # Al finalizar:
@@ -312,9 +312,9 @@ Si tarea falla:
 Si design insuficiente:
 1. Pausar implementacion
 2. Volver a FASE 2
-3. Actualizar design.md
+3. Actualizar design (YYYY-MM-DD-HH-MM-titulo.md)
 4. Re-aprobar design
-5. Actualizar tasks.md
+5. Actualizar tasks (YYYY-MM-DD-HH-MM-titulo.md)
 6. Continuar implementacion
 
 ## Convenciones
@@ -324,6 +324,10 @@ Si design insuficiente:
 DIRECTORIO: `YYYY-MM-DD-brief-description`
 - YYYY-MM-DD: Fecha de inicio
 - brief-description: Kebab-case, max 30 chars
+
+ARCHIVOS: `YYYY-MM-DD-HH-MM-titulo.md`
+- HH-MM: hora/minuto de creacion
+- titulo: kebab-case, max 50 chars (debe indicar fase: requirements/design/tasks)
 
 EJEMPLOS:
 - 2026-01-28-traducir-arc42-section-10
@@ -343,13 +347,13 @@ Incluir en cada documento:
 ```markdown
 Basado en: [archivo anterior]
 Referencias:
-- RF-001 (requirements.md)
-- DA-003 (design.md)
+- RF-001 (requirements YYYY-MM-DD-HH-MM-titulo.md)
+- DA-003 (design YYYY-MM-DD-HH-MM-titulo.md)
 ```
 
 ## Ejemplo Completo
 
-### requirements.md
+### 2026-01-28-09-10-requirements-traducir-arc42-sec-10.md
 ```markdown
 # Requirements: Traducir arc42 Section 10
 
@@ -369,11 +373,11 @@ RF-002: Generar metadata completa
 ...
 ```
 
-### design.md
+### 2026-01-28-10-00-design-traducir-arc42-sec-10.md
 ```markdown
 # Design: Traducir arc42 Section 10
 
-Basado en: requirements.md
+Basado en: archivo de requirements (YYYY-MM-DD-HH-MM-titulo.md)
 
 ## Decisiones
 
@@ -395,7 +399,7 @@ sections/10_quality_requirements/
 ```
 ```
 
-### tasks.md
+### 2026-01-28-10-30-tasks-traducir-arc42-sec-10.md
 ```markdown
 # Tasks: Traducir arc42 Section 10
 
@@ -415,9 +419,9 @@ python scripts/traduccion/arc42_scraper_python.py --section 10
 ## Templates
 
 Ver:
-- templates/requirements.md.template
-- templates/design.md.template
-- templates/tasks.md.template
+- templates/requirements.md.template (si aplica)
+- templates/design.md.template (si aplica)
+- templates/tasks.md.template (si aplica)
 
 ## Referencias
 
