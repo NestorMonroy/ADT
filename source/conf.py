@@ -33,6 +33,62 @@ from pathlib import Path
 from pygments.lexers.special import TextLexer
 from sphinx.deprecation import RemovedInSphinx90Warning
 
+
+def _normalize_inventory_path(value):
+    if value is None:
+        return None
+    normalized = value.strip()
+    if not normalized:
+        return None
+    if normalized.lower() in {"none", "null"}:
+        return None
+    return str(Path(normalized).expanduser())
+
+
+def _resolve_inventory_path(env, downloads_dir, filenames, env_key):
+    env_value = _normalize_inventory_path(env.get(env_key))
+    if env_value:
+        return env_value
+    if downloads_dir is None:
+        return None
+    for filename in filenames:
+        candidate = Path(downloads_dir) / filename
+        if candidate.exists():
+            return str(candidate)
+    return None
+
+
+def resolve_intersphinx_mapping(env, downloads_dir):
+    if env.get("SPHINX_SKIP_INTERSPHINX") == "1":
+        return {}
+
+    python_base = env.get(
+        "SPHINX_INTERSPHINX_PYTHON",
+        "https://docs.python.org/3/",
+    )
+    sphinx_base = env.get(
+        "SPHINX_INTERSPHINX_SPHINX",
+        "https://www.sphinx-doc.org/en/master/",
+    )
+
+    python_inv = _resolve_inventory_path(
+        env,
+        downloads_dir,
+        ("python-objects.inv", "cpython/Doc/objects.inv"),
+        "SPHINX_INTERSPHINX_PYTHON_INV",
+    )
+    sphinx_inv = _resolve_inventory_path(
+        env,
+        downloads_dir,
+        ("sphinx-objects.inv", "sphinx/doc/objects.inv"),
+        "SPHINX_INTERSPHINX_SPHINX_INV",
+    )
+
+    return {
+        "python": (python_base, python_inv),
+        "sphinx": (sphinx_base, sphinx_inv),
+    }
+
 # Ruta determinística (no depende del directorio desde donde se ejecute Sphinx)
 # source/conf.py -> source/
 SOURCE_DIR = Path(__file__).resolve().parent
@@ -246,12 +302,17 @@ autosectionlabel_maxdepth = 3
 todo_include_todos = True
 
 # sphinx.ext.intersphinx
-intersphinx_mapping = {
-    "python": ("https://docs.python.org/3/", None),
-    "sphinx": ("https://www.sphinx-doc.org/en/master/", None),
-}
-if os.environ.get("SPHINX_SKIP_INTERSPHINX") == "1":
-    intersphinx_mapping = {}
+# Variables disponibles:
+# - SPHINX_INTERSPHINX_PYTHON / SPHINX_INTERSPHINX_SPHINX (URL base)
+# - SPHINX_INTERSPHINX_PYTHON_INV / SPHINX_INTERSPHINX_SPHINX_INV (ruta local)
+# - Inventarios detectados en tools/_downloads:
+#   - python-objects.inv o cpython/Doc/objects.inv
+#   - sphinx-objects.inv o sphinx/doc/objects.inv
+# - SPHINX_SKIP_INTERSPHINX=1 para deshabilitar el mapping
+intersphinx_mapping = resolve_intersphinx_mapping(
+    os.environ,
+    REPO_ROOT / "tools" / "_downloads",
+)
 
 # Alias de lexers para evitar warnings por lenguajes desconocidos
 pygments_lexers = {
