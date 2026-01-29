@@ -1,0 +1,47 @@
+{# ============================================================================
+   sidebar/navigation.html — ADT / ADT42 (Furo / Sphinx)
+   Objetivo:
+   - Renderizar navegación (toctree) dentro del sidebar
+   - Mantener clases esperadas por Furo para estilos/JS:
+       .sidebar-tree, .toctree-l1.., .reference
+   - WCAG: landmark + aria-label
+   - Sin estilos inline ni colores hardcodeados
+   Notas:
+   - Usa el helper `toctree()` de Sphinx para generar el árbol.
+   - Si algo no existe (p.ej. variables de theme), usamos defaults seguros.
+============================================================================ #}
+
+{# Profundidad de navegación (si el theme expone alguna variable) #}
+{% set _nav_depth = 4 %}
+{% if theme_navigation_depth is defined and theme_navigation_depth %}
+  {% set _nav_depth = theme_navigation_depth %}
+{% elif theme_sidebar_navigation_depth is defined and theme_sidebar_navigation_depth %}
+  {% set _nav_depth = theme_sidebar_navigation_depth %}
+{% endif %}
+
+{# Incluir títulos/captions del toctree (si procede) #}
+{% set _include_titles = true %}
+{% if theme_sidebar_includehidden is defined and theme_sidebar_includehidden is not none %}
+  {# Furo suele incluir hidden = true para mostrar secciones ocultas si se desea #}
+{% endif %}
+
+<nav class="sidebar-tree" role="navigation" aria-label="Tabla de contenidos">
+  {{ toctree(
+      maxdepth=_nav_depth,
+      collapse=false,
+      includehidden=true,
+      titles_only=false
+  ) }}
+
+  {# Enlaces auxiliares (opcionales, útiles en docs grandes) #}
+  <div class="sidebar-tree__aux">
+    <ul class="sidebar-tree__auxList">
+      <li class="sidebar-tree__auxItem">
+        <a class="reference internal" href="{{ pathto('genindex') }}">Índice</a>
+      </li>
+      <li class="sidebar-tree__auxItem">
+        <a class="reference internal" href="{{ pathto('search') }}">Búsqueda</a>
+      </li>
+    </ul>
+  </div>
+</nav>

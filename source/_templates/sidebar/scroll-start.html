@@ -1,0 +1,13 @@
+{# ============================================================================
+   sidebar/scroll-start.html — ADT / ADT42 (Furo / Sphinx)
+   Objetivo:
+   - Envolver el área “scrollable” del sidebar sin romper Furo.
+   - Mantener clases esperadas por Furo:
+       .sidebar-scroll
+   - NO agregar colores ni estilos inline (WCAG via theme/CSS).
+   Nota:
+   - Este archivo abre contenedores que se cierran en sidebar/scroll-end.html
+============================================================================ #}
+
+<div class="sidebar-scroll" role="navigation" aria-label="Navegación principal">
+  <div class="sidebar-scroll__inner">

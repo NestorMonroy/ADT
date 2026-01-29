@@ -1,610 +1,644 @@
-/*!* ============================================*/
-/*   ADT / ADT42 - Custom CSS para Sphinx + Furo*/
-/*   (Alineado a WCAG 2.1 AA según expediente)*/
-/*   ============================================ *!*/
-
-/*!* =========================================================*/
-/*   1) Design Tokens ADT (base)*/
-/*   ========================================================= *!*/
-/*:root {*/
-/*    !* Tokens oficiales (según expediente WCAG) *!*/
-/*    --adt-color-bg: #F2F6F8;              !* Fondo base *!*/
-/*    --adt-color-text: #2A2F33;            !* Texto principal *!*/
-/*    --adt-color-primary-text: #104E5E;    !* Texto destacado / links en modo claro (permitido) *!*/
-/*    --adt-color-petroleum-800: #0B3C49;   !* Fondo estructural *!*/
-/*    --adt-color-accent-600: #2F7F8F;      !* Acento medio (NO texto en claro) *!*/
-/*    --adt-color-accent-500: #6FAEC7;      !* Acento claro (NO texto en claro; OK en oscuro) *!*/
-
-/*    !* Compatibilidad con extensiones (sphinx-design, etc.) *!*/
-/*    --sd-color-success: #2F7F8F;          !* no textual recomendado *!*/
-/*    --sd-color-success-text: #ffffff;*/
-/*}*/
-
-/*!* =========================================================*/
-/*   2) Furo Theme Variables*/
-/*   ========================================================= *!*/
-
-/*!* --- Modo claro --- *!*/
-/*:root,*/
-/*.light {*/
-/*    !* Base *!*/
-/*    --color-background-primary: var(--adt-color-bg);*/
-/*    --color-foreground-primary: var(--adt-color-text);*/
-
-/*    !* Brand + links (texto) — usar SOLO colores permitidos para texto en claro *!*/
-/*    --color-brand-primary: var(--adt-color-primary-text);*/
-/*    --color-brand-content: var(--adt-color-primary-text);*/
-/*    --color-link: var(--adt-color-primary-text);*/
-/*    --color-link--hover: #0B3C49; !* petróleo oscuro para hover (alto contraste sobre bg claro) *!*/
-
-/*    !* Bordes/superficies *!*/
-/*    --color-background-border: rgba(11, 60, 73, 0.20);*/
-/*}*/
-
-/*!* --- Modo oscuro --- *!*/
-/*.dark {*/
-/*    !* Base *!*/
-/*    --color-background-primary: var(--adt-color-petroleum-800);*/
-/*    --color-foreground-primary: var(--adt-color-bg);*/
-
-/*    !* Brand + links (texto) — aquí sí es válido el acento claro *!*/
-/*    --color-brand-primary: var(--adt-color-accent-500);*/
-/*    --color-brand-content: var(--adt-color-accent-500);*/
-/*    --color-link: var(--adt-color-accent-500);*/
-/*    --color-link--hover: #FFFFFF;*/
-
-/*    !* Bordes/superficies *!*/
-/*    --color-background-border: rgba(111, 174, 199, 0.25);*/
-/*}*/
-
-/*!* =========================================================*/
-/*   3) Header / Navegación Superior*/
-/*   ========================================================= *!*/
-/*.sidebar-brand-text {*/
-/*    color: var(--color-brand-primary) !important;*/
-/*    font-weight: 600;*/
-/*}*/
-
-/*!* =========================================================*/
-/*   4) Enlaces en el contenido*/
-/*   ========================================================= *!*/
-/*.content a {*/
-/*    transition: all 0.2s ease;*/
-/*}*/
-
-/*.content a:hover {*/
-/*    text-decoration: underline;*/
-/*    color: var(--color-link--hover);*/
-/*}*/
-
-/*!* =========================================================*/
-/*   5) Botones y elementos interactivos*/
-/*   ========================================================= *!*/
-/*button, .btn {*/
-/*    transition: all 0.3s ease;*/
-/*}*/
-
-/*button:hover, .btn:hover {*/
-/*    transform: translateY(-2px);*/
-/*}*/
-
-/*!* =========================================================*/
-/*   6) Tablas*/
-/*   ========================================================= *!*/
-/*table.docutils {*/
-/*    border-collapse: collapse;*/
-/*    margin: 1.5em 0;*/
-/*}*/
-
-/*table.docutils th {*/
-/*    !* Fondo estructural (oscuro) + texto claro (alto contraste) *!*/
-/*    background-color: var(--adt-color-petroleum-800);*/
-/*    color: var(--adt-color-bg);*/
-/*    padding: 0.75em;*/
-/*    text-align: left;*/
-/*}*/
-
-/*table.docutils td {*/
-/*    padding: 0.75em;*/
-/*    border-bottom: 1px solid rgba(42, 47, 51, 0.15);*/
-/*}*/
-
-/*table.docutils tr:hover {*/
-/*    !* Hover no textual: usar acento medio como tinte *!*/
-/*    background-color: rgba(47, 127, 143, 0.08);*/
-/*}*/
-
-/*!* =========================================================*/
-/*   7) Admonitions (Notas, Advertencias, etc.)*/
-/*   ========================================================= *!*/
-/*.admonition {*/
-/*    border-left: 4px solid var(--color-brand-primary);*/
-/*}*/
-
-/*.admonition.note {*/
-/*    border-left-color: var(--color-brand-primary);*/
-/*}*/
-
-/*.admonition.warning {*/
-/*    border-left-color: #f39c12;*/
-/*}*/
-
-/*.admonition.important {*/
-/*    border-left-color: var(--adt-color-petroleum-800);*/
-/*}*/
-
-/*.admonition.tip {*/
-/*    border-left-color: #27ae60;*/
-/*}*/
-
-/*!* =========================================================*/
-/*   8) Bloques de Código*/
-/*   ========================================================= *!*/
-/*.highlight {*/
-/*    border-radius: 4px;*/
-/*    margin: 1em 0;*/
-/*}*/
-
-/*div.highlight pre {*/
-/*    border-left: 3px solid var(--color-brand-primary);*/
-/*}*/
-
-/*!* =========================================================*/
-/*   9) Botón de Copiar Código*/
-/*   ========================================================= *!*/
-/*.copybtn {*/
-/*    background-color: var(--color-brand-primary);*/
-/*    opacity: 0.7;*/
-/*    transition: opacity 0.3s ease;*/
-/*}*/
-
-/*.copybtn:hover {*/
-/*    opacity: 1;*/
-/*}*/
-
-/*!* =========================================================*/
-/*   10) Barra de Búsqueda*/
-/*   ========================================================= *!*/
-/*.search-button {*/
-/*    transition: all 0.3s ease;*/
-/*}*/
-
-/*.search-button:hover {*/
-/*    background-color: rgba(47, 127, 143, 0.10);*/
-/*}*/
-
-/*!* =========================================================*/
-/*   11) Navegación TOC (Tabla de Contenidos)*/
-/*   ========================================================= *!*/
-/*.toc-tree li.scroll-current > .reference {*/
-/*    border-left: 3px solid var(--color-brand-primary);*/
-/*    padding-left: 1rem;*/
-/*}*/
-
-/*!* =========================================================*/
-/*   12) Footer*/
-/*   ========================================================= *!*/
-/*.footer {*/
-/*    border-top: 2px solid var(--color-brand-primary);*/
-/*}*/
-
-/*!* Estilo para el footer personalizado ADT *!*/
-/*.adt-custom-footer {*/
-/*    color: #888;*/
-/*    font-size: 0.9em;*/
-/*    padding: 1em 0;*/
-/*}*/
-
-/*!* =========================================================*/
-/*   13) Cards de sphinx-design*/
-/*   ========================================================= *!*/
-/*.sd-card {*/
-/*    transition: all 0.3s ease;*/
-/*    border-left: 3px solid transparent;*/
-/*    will-change: opacity, transform;*/
-/*}*/
-
-/*.sd-card:hover {*/
-/*    border-left-color: var(--color-brand-primary);*/
-/*    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);*/
-/*    transform: translateY(-2px);*/
-/*}*/
-
-/*!* =========================================================*/
-/*   14) Tabs de sphinx-tabs*/
-/*   ========================================================= *!*/
-/*.sphinx-tabs-tab {*/
-/*    transition: all 0.2s ease;*/
-/*}*/
-
-/*.sphinx-tabs-tab[aria-selected="true"] {*/
-/*    border-bottom: 3px solid var(--color-brand-primary);*/
-/*    color: var(--color-brand-primary);*/
-/*}*/
-
-/*!* =========================================================*/
-/*   15) Scrollbar personalizado (solo webkit)*/
-/*   ========================================================= *!*/
-/*::-webkit-scrollbar {*/
-/*    width: 10px;*/
-/*    height: 10px;*/
-/*}*/
-
-/*::-webkit-scrollbar-track {*/
-/*    background: #f1f1f1;*/
-/*}*/
-
-/*.dark ::-webkit-scrollbar-track {*/
-/*    background: rgba(242, 246, 248, 0.08);*/
-/*}*/
-
-/*::-webkit-scrollbar-thumb {*/
-/*    background: rgba(42, 47, 51, 0.35);*/
-/*    border-radius: 5px;*/
-/*}*/
-
-/*::-webkit-scrollbar-thumb:hover {*/
-/*    background: var(--color-brand-primary);*/
-/*}*/
-
-/*!* =========================================================*/
-/*   16) Accesibilidad (focus visible)*/
-/*   ========================================================= *!*/
-/*a:focus, button:focus, input:focus {*/
-/*    outline: 2px solid var(--color-brand-primary);*/
-/*    outline-offset: 2px;*/
-/*}*/
-
-/*!* =========================================================*/
-/*   17) Responsive*/
-/*   ========================================================= *!*/
-/*@media (max-width: 768px) {*/
-/*    .sidebar-brand-text {*/
-/*        font-size: 1.2em;*/
-/*    }*/
-
-/*    table.docutils {*/
-/*        font-size: 0.9em;*/
-/*    }*/
-/*}*/
-
-/*!* ============================================*/
-/*   Estilos Existentes del Proyecto (conservados)*/
-/*   ============================================ *!*/
-
-/*!* -- Logo en Sidebar -- *!*/
-/*.sidebar-logo {*/
-/*    margin-top: 16px;*/
-/*    height: 45px;*/
-/*}*/
-
-/*!* -- Announcement (Banner) -- *!*/
-/*!* Mover announcement al bottom y permitir wrapping *!*/
-/*.announcement {*/
-/*    position: fixed;*/
-/*    bottom: 0;*/
-/*    height: auto;*/
-/*    width: 100%;*/
-/*    z-index: 100;*/
-/*    text-align: center;*/
-/*}*/
-
-/*.announcement-content {*/
-/*    white-space: normal;*/
-/*    line-height: 1.5;*/
-/*}*/
-
-/*!* Evitar que el announcement cubra contenido *!*/
-/*.main {*/
-/*    padding-bottom: 60px;*/
-/*}*/
-
-/*.sidebar-drawer {*/
-/*    padding-bottom: 62px;*/
-/*}*/
-
-/*!* Deshabilitar ancho problemático de Furo en pantallas medianas *!*/
-/*@media (max-width: 82em) {*/
-/*    .sidebar-drawer {*/
-/*        width: auto !important;*/
-/*    }*/
-/*}*/
-
-/*!* Deshabilitar ancho fijo del contenido principal *!*/
-/*.content {*/
-/*    width: auto !important;*/
-/*    max-width: 100% !important;*/
-/*}*/
-
-/*!* Ocultar botones de tema y TOC *!*/
-/*.content-icon-container {*/
-/*    display: none !important;*/
-/*}*/
-
-/*!* Ocultar left-details completo del footer *!*/
-/*.bottom-of-page .left-details {*/
-/*    display: none !important;*/
-/*}*/
-
-/*!* Mostrar copyright en right-details *!*/
-/*.bottom-of-page .right-details {*/
-/*    width: 100% !important;*/
-/*}*/
-
-/*!* -- Pantallas de Dispositivos -- *!*/
-/*.device-screen-vertical {*/
-/*    width: 365px;*/
-/*}*/
-
-/*.central-partial-screen {*/
-/*    width: 400px;*/
-/*}*/
-
-/*!* -- Tablas de Schema -- *!*/
-/*table.schema-table-wrap {*/
-/*    width: 100%;*/
-/*}*/
-
-/*table.schema-table-wrap td:last-child,*/
-/*table.schema-table-wrap td:first-child {*/
-/*    border: none;*/
-/*}*/
-
-/*table.schema-table {*/
-/*    width: 100%;*/
-/*}*/
-
-/*table.schema-table td:last-child,*/
-/*table.schema-table td:first-child {*/
-/*    border: 1px solid #303335;*/
-/*}*/
-
-/*!* -- Dropdowns Anidados -- *!*/
-/*details.sd-dropdown details.nested-schema > summary:first-of-type {*/
-/*    list-style: inside disclosure-closed;*/
-/*}*/
-
-/*details.sd-dropdown details.nested-schema[open] > summary:first-of-type {*/
-/*    list-style: inside disclosure-open;*/
-/*}*/
-
-/*!* -- Menu Selection -- *!*/
-/*.menuselection {*/
-/*    border: 1px solid var(--color-guilabel-border);*/
-/*    background: var(--color-guilabel-background);*/
-/*    font-weight: 500;*/
-/*    border-radius: 4px;*/
-/*    padding: 4px 6px;*/
-/*}*/
-
-/*!* -- Reactions (Feedback) -- *!*/
-/*.reactions {*/
-/*    margin: 3em auto 1em auto;*/
-/*    padding: 0.5em 1.5em;*/
-/*    display: table;*/
-/*    border: 1px solid #ccc;*/
-/*    border-radius: 0.5em;*/
-/*    text-align: center;*/
-/*}*/
-
-/*.reactions-subtext {*/
-/*    font-size: smaller;*/
-/*    color: #878787;*/
-/*    margin-top: -1em;*/
-/*}*/
-
-/*.reaction {*/
-/*    margin: 0px 1em;*/
-/*}*/
-
-/*!* -- Widget de AI (Kapa) -- *!*/
-/*#kapa-widget-container {*/
-/*    z-index: 10000 !important;*/
-/*    position: absolute !important;*/
-/*}*/
-
-/*.mantine-Modal-root {*/
-/*    z-index: 10000;*/
-/*    position: absolute;*/
-/*}*/
-
-/*#custom-ask-ai-button {*/
-/*    text-align: left;*/
-/*}*/
-
-/*!* ============================================*/
-/*   Estilos para Funcionalidades JS Adicionales*/
-/*   ============================================ *!*/
-
-/*!* -- Elemento Resaltado (cuando se navega con hash) -- *!*/
-/*.adt-highlighted {*/
-/*    animation: highlight-pulse 2s ease;*/
-/*    background-color: rgba(47, 127, 143, 0.15) !important; !* no textual *!*/
-/*}*/
-
-/*@keyframes highlight-pulse {*/
-/*    0%, 100% {*/
-/*        background-color: transparent;*/
-/*    }*/
-/*    50% {*/
-/*        background-color: rgba(47, 127, 143, 0.15);*/
-/*    }*/
-/*}*/
-
-/*!* -- Efecto Ripple para Tabs -- *!*/
-/*.ripple-effect {*/
-/*    position: absolute;*/
-/*    border-radius: 50%;*/
-/*    background-color: rgba(47, 127, 143, 0.5);*/
-/*    width: 20px;*/
-/*    height: 20px;*/
-/*    animation: ripple-animation 0.6s ease-out;*/
-/*    pointer-events: none;*/
-/*}*/
-
-/*@keyframes ripple-animation {*/
-/*    from {*/
-/*        transform: scale(0);*/
-/*        opacity: 1;*/
-/*    }*/
-/*    to {*/
-/*        transform: scale(4);*/
-/*        opacity: 0;*/
-/*    }*/
-/*}*/
-
-/*!* -- Transiciones suaves para Admonitions -- *!*/
-/*.admonition {*/
-/*    transition: border-left-width 0.2s ease;*/
-/*}*/
-
-/*!* -- Transiciones para bloques de código -- *!*/
-/*div.highlight pre {*/
-/*    transition: border-left-width 0.2s ease;*/
-/*}*/
-
-/*!* -- Botón Back to Top (estilos adicionales) -- *!*/
-/*#back-to-top:active {*/
-/*    transform: scale(0.95) !important;*/
-/*}*/
-
-/*!* -- Progress Bar de Lectura (estilos adicionales si necesarios) -- *!*/
-/*#reading-progress-bar {*/
-/*    box-shadow: 0 2px 4px rgba(47, 127, 143, 0.3);*/
-/*}*/
-
-/*!* -- Mejoras visuales para modo oscuro personalizado -- *!*/
-/*.adt-dark-mode .admonition {*/
-/*    background-color: rgba(111, 174, 199, 0.05);*/
-/*}*/
-
-/*.adt-dark-mode .sd-card {*/
-/*    background-color: rgba(56, 68, 82, 0.2);*/
-/*}*/
-
-/*.visually-hidden {*/
-/*  position: absolute !important;*/
-/*  width: 1px !important;*/
-/*  height: 1px !important;*/
-/*  padding: 0 !important;*/
-/*  margin: -1px !important;*/
-/*  overflow: hidden !important;*/
-/*  clip: rect(0, 0, 0, 0) !important;*/
-/*  white-space: nowrap !important;*/
-/*  border: 0 !important;*/
-/*}*/
-
-
-/*!* =========================*/
-/*   ADT 404 page styles*/
-/*   ========================= *!*/
-/*.adt-404 {*/
-/*  max-width: 72rem;*/
-/*  margin: 0 auto;*/
-/*  padding: 2rem 1rem;*/
-/*}*/
-
-/*.adt-404__kicker {*/
-/*  margin: 0 0 0.25rem 0;*/
-/*  font-weight: 600;*/
-/*  color: var(--color-brand-primary);*/
-/*}*/
-
-/*.adt-404__title {*/
-/*  margin: 0 0 0.5rem 0;*/
-/*}*/
-
-/*.adt-404__lead {*/
-/*  margin: 0 0 1.5rem 0;*/
-/*  color: var(--color-foreground-secondary, var(--color-foreground-primary));*/
-/*}*/
-
-/*.adt-404__grid {*/
-/*  display: grid;*/
-/*  gap: 1rem;*/
-/*  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));*/
-/*}*/
-
-/*.adt-404__card {*/
-/*  border: 1px solid var(--color-background-border, rgba(0,0,0,0.15));*/
-/*  border-radius: 0.75rem;*/
-/*  padding: 1rem;*/
-/*  background: var(--color-background-secondary, var(--color-background-primary));*/
-/*}*/
-
-/*.adt-404__cardTitle {*/
-/*  margin: 0 0 0.25rem 0;*/
-/*}*/
-
-/*.adt-404__cardText {*/
-/*  margin: 0 0 0.75rem 0;*/
-/*}*/
-
-/*.adt-404__primaryLink {*/
-/*  font-weight: 600;*/
-/*}*/
-
-/*.adt-404__search {*/
-/*  display: grid;*/
-/*  grid-template-columns: 1fr auto;*/
-/*  gap: 0.5rem;*/
-/*  align-items: center;*/
-/*  margin-top: 0.5rem;*/
-/*}*/
-
-/*.adt-404__searchInput {*/
-/*  width: 100%;*/
-/*  padding: 0.6rem 0.75rem;*/
-/*  border: 1px solid var(--color-background-border, rgba(0,0,0,0.15));*/
-/*  border-radius: 0.5rem;*/
-/*  background: var(--color-background-primary);*/
-/*  color: var(--color-foreground-primary);*/
-/*}*/
-
-/*.adt-404__searchButton {*/
-/*  padding: 0.6rem 0.9rem;*/
-/*  border-radius: 0.5rem;*/
-/*  border: 1px solid var(--color-background-border, rgba(0,0,0,0.15));*/
-/*  background: var(--color-brand-primary);*/
-/*  color: var(--color-background-primary);*/
-/*  cursor: pointer;*/
-/*}*/
-
-/*.adt-404__hint {*/
-/*  margin: 0.75rem 0 0 0;*/
-/*  font-size: 0.95em;*/
-/*}*/
-
-/*.adt-404__sectionTitle {*/
-/*  margin: 1.75rem 0 0.75rem 0;*/
-/*}*/
-
-/*.adt-404__list {*/
-/*  margin: 0;*/
-/*  padding-left: 1.2rem;*/
-/*}*/
-
-/*.adt-404__detailsBox {*/
-/*  margin-top: 1.5rem;*/
-/*  border: 1px solid var(--color-background-border, rgba(0,0,0,0.15));*/
-/*  border-radius: 0.75rem;*/
-/*  padding: 0.75rem 1rem;*/
-/*}*/
-
-/*.adt-404__summary {*/
-/*  font-weight: 600;*/
-/*  cursor: pointer;*/
-/*}*/
-
-/*!* Asegurar label accesible si no existe *!*/
-/*.visually-hidden {*/
-/*  position: absolute !important;*/
-/*  width: 1px !important;*/
-/*  height: 1px !important;*/
-/*  padding: 0 !important;*/
-/*  margin: -1px !important;*/
-/*  overflow: hidden !important;*/
-/*  clip: rect(0, 0, 0, 0) !important;*/
-/*  white-space: nowrap !important;*/
-/*  border: 0 !important;*/
-/*}*/
+/* ============================================================
+   ADT / ADT42 — custom.css
+   Regla de oro:
+   - html_theme_options define el sistema de color (WCAG)
+   - custom.css SOLO consume variables del theme
+   ============================================================ */
+
+/* ============================================================
+   1) :root — TOKENS ADT (respaldo / utilidades)
+   NO redefinen variables Furo
+   ============================================================ */
+:root {
+  /* Paleta ADT (documental) */
+  --adt-color-bg: #F2F6F8;
+  --adt-color-text: #2A2F33;
+  --adt-color-primary-text: #104E5E;
+  --adt-color-petroleum-800: #0B3C49;
+  --adt-color-accent-600: #2F7F8F;
+  --adt-color-accent-500: #6FAEC7;
+
+  /* Radios */
+  --adt-radius-sm: 0.375rem;
+  --adt-radius-md: 0.5rem;
+  --adt-radius-lg: 0.75rem;
+
+  /* Sombras neutras */
+  --adt-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --adt-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.10);
+
+  /* Transiciones */
+  --adt-transition-fast: 0.15s ease;
+  --adt-transition-base: 0.2s ease;
+
+  /* sphinx-design (compat) */
+  --sd-color-primary: var(--adt-color-primary-text);
+  --sd-color-secondary: var(--adt-color-petroleum-800);
+  --sd-color-success: var(--adt-color-accent-600); /* no textual */
+  --sd-color-success-text: #ffffff;
+}
+
+/* ============================================================
+   2) Accesibilidad base
+   ============================================================ */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--color-brand-primary, var(--adt-color-primary-text));
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* ============================================================
+   3) MOBILE HEADER (burger / TOC / theme) — FIX DE CONTRASTE
+   ============================================================ */
+.mobile-header {
+  color: var(--color-foreground-primary);
+  background: var(--color-background-primary);
+}
+
+.mobile-header svg {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+.mobile-header button,
+.mobile-header label {
+  color: inherit !important;
+  background: transparent;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.mobile-header button:hover,
+.mobile-header label:hover,
+.mobile-header button:active,
+.mobile-header label:active {
+  background-color: rgba(47, 127, 143, 0.10); /* tinte no textual */
+}
+
+html[data-theme="dark"] .mobile-header button:hover,
+html[data-theme="dark"] .mobile-header label:hover {
+  background-color: rgba(242, 246, 248, 0.08);
+}
+
+/* Nunca mover el burger */
+.mobile-header button,
+.mobile-header label {
+  transform: none !important;
+}
+
+/* ============================================================
+   4) Enlaces (contenido)
+   ============================================================ */
+.content a {
+  text-decoration-thickness: from-font;
+  text-underline-offset: 0.15em;
+  transition: color var(--adt-transition-base);
+}
+
+.content a:hover {
+  color: var(--color-brand-primary);
+  text-decoration: underline;
+}
+
+/* ============================================================
+   5) Sidebar brand
+   ============================================================ */
+.sidebar-brand-text {
+  color: var(--color-brand-primary) !important;
+  font-weight: 600;
+}
+
+/* ============================================================
+   6) Tablas
+   ============================================================ */
+table.docutils {
+  border-collapse: collapse;
+  margin: 1.5em 0;
+}
+
+table.docutils th {
+  background-color: var(--adt-color-petroleum-800);
+  color: var(--adt-color-bg);
+  padding: 0.75em;
+  text-align: left;
+}
+
+table.docutils td {
+  padding: 0.75em;
+  border-bottom: 1px solid rgba(42, 47, 51, 0.15);
+}
+
+table.docutils tr:hover {
+  background-color: rgba(47, 127, 143, 0.08);
+}
+
+/* ============================================================
+   7) Admonitions
+   ============================================================ */
+.admonition {
+  border-left: 4px solid var(--color-brand-primary);
+}
+
+.admonition.note { border-left-color: var(--color-brand-primary); }
+.admonition.important { border-left-color: var(--adt-color-petroleum-800); }
+.admonition.warning { border-left-color: #f39c12; }
+.admonition.tip { border-left-color: #27ae60; }
+
+/* ============================================================
+   8) Código + copybutton
+   ============================================================ */
+div.highlight pre {
+  border-left: 3px solid var(--color-brand-primary);
+}
+
+.copybtn {
+  background-color: var(--color-brand-primary);
+  opacity: 0.75;
+  transition: opacity var(--adt-transition-fast);
+}
+
+.copybtn:hover { opacity: 1; }
+
+.adt-copy-success {
+  background-color: var(--color-brand-primary) !important;
+  opacity: 1 !important;
+}
+
+/* ============================================================
+   9) TOC activo
+   ============================================================ */
+.toc-tree li.scroll-current > .reference {
+  border-left: 3px solid var(--color-brand-primary);
+  padding-left: 1rem;
+}
+
+/* ============================================================
+   10) Footer
+   ============================================================ */
+.footer {
+  border-top: 2px solid var(--color-brand-primary);
+}
+
+.adt-custom-footer,
+.iact-custom-footer {
+  color: #888;
+  font-size: 0.9em;
+  padding: 1em 0;
+}
+
+/* ============================================================
+   11) sphinx-design cards
+   ============================================================ */
+.sd-card {
+  border-left: 3px solid transparent;
+  border-radius: var(--adt-radius-lg);
+  transition: transform var(--adt-transition-base),
+              box-shadow var(--adt-transition-base),
+              border-color var(--adt-transition-base);
+}
+
+.sd-card:hover {
+  border-left-color: var(--color-brand-primary);
+  box-shadow: var(--adt-shadow-md);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .sd-card:hover { transform: none; }
+}
+
+/* ============================================================
+   12) sphinx-tabs
+   ============================================================ */
+.sphinx-tabs-tab[aria-selected="true"] {
+  border-bottom: 3px solid var(--color-brand-primary);
+  color: var(--color-brand-primary);
+}
+
+/* ============================================================
+   13) Announcement
+   ============================================================ */
+.announcement {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.main { padding-bottom: 60px; }
+.sidebar-drawer { padding-bottom: 62px; }
+
+/* ============================================================
+   14) 404 (ADT)
+   ============================================================ */
+.adt-404 {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.adt-404__kicker {
+  font-weight: 600;
+  color: var(--color-brand-primary);
+}
+
+.adt-404__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.adt-404__card {
+  border: 1px solid var(--color-background-border);
+  border-radius: var(--adt-radius-lg);
+  padding: 1rem;
+  background: var(--color-background-secondary, var(--color-background-primary));
+}
+
+/* ============================================================
+   15) Responsive
+   ============================================================ */
+@media (max-width: 768px) {
+  .sidebar-brand-text { font-size: 1.2em; }
+  table.docutils { font-size: 0.95em; }
+}
+
+/* ============================================================
+   Sidebar — Brand (logo + nombre del proyecto)
+   Compatible con Furo + WCAG 2.1 AA
+   ============================================================ */
+
+/* Contenedor del brand */
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  /* Área táctil accesible */
+  min-height: 44px;
+  padding: 0.75rem 0.5rem;
+
+  text-decoration: none;
+  color: var(--color-brand-primary);
+}
+
+/* Hover / focus sin romper contraste */
+.sidebar-brand:hover,
+.sidebar-brand:focus-visible {
+  text-decoration: none;
+  background-color: rgba(47, 127, 143, 0.08); /* tinte no textual */
+  border-radius: var(--adt-radius-md);
+}
+
+/* Logo del proyecto */
+.sidebar-logo {
+  height: 40px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+/* Texto principal del brand */
+.sidebar-brand-text {
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-brand-primary);
+  white-space: nowrap;
+}
+
+/* Versión (si se muestra) */
+.sidebar-brand-version {
+  margin-left: 0.25rem;
+  font-size: 0.85em;
+  font-weight: 500;
+  color: var(--color-foreground-secondary, var(--color-foreground-primary));
+}
+
+/* ============================================================
+   Modo oscuro — ajustes finos
+   ============================================================ */
+html[data-theme="dark"] .sidebar-brand:hover,
+html[data-theme="dark"] .sidebar-brand:focus-visible {
+  background-color: rgba(242, 246, 248, 0.08);
+}
+
+/* ============================================================
+   Mobile — header / drawer
+   ============================================================ */
+@media (max-width: 768px) {
+  .sidebar-brand {
+    padding: 0.75rem;
+  }
+
+  .sidebar-logo {
+    height: 36px;
+  }
+
+  .sidebar-brand-text {
+    font-size: 1.05em;
+  }
+}
+
+/* ============================================================
+   Sidebar — Search (sidebar/search.html)
+   Compatible con Furo + WCAG 2.1 AA
+   ============================================================ */
+
+/* Contenedor del formulario (en sidebar) */
+.sidebar-search-container {
+  display: block;
+  margin: 0.5rem 0 0.75rem 0;
+}
+
+/* Campo de búsqueda */
+.sidebar-search {
+  width: 100%;
+  min-height: 44px; /* tap target WCAG/UX */
+  padding: 0.6rem 0.75rem;
+
+  border-radius: var(--adt-radius-md);
+  border: 1px solid var(--color-background-border, rgba(42, 47, 51, 0.15));
+
+  background: var(--color-background-primary, var(--adt-color-bg));
+  color: var(--color-foreground-primary, var(--adt-color-text));
+
+  /* Evita estilos de UA que bajan contraste */
+  outline: none;
+
+  transition:
+    border-color var(--adt-transition-fast),
+    box-shadow var(--adt-transition-fast),
+    background-color var(--adt-transition-fast);
+}
+
+/* Placeholder (no debe “desaparecer”) */
+.sidebar-search::placeholder {
+  color: var(--color-foreground-secondary, rgba(42, 47, 51, 0.65));
+  opacity: 1;
+}
+
+/* Hover: solo borde (no cambia texto) */
+.sidebar-search:hover {
+  border-color: var(--color-brand-primary, var(--adt-color-primary-text));
+}
+
+/* Focus: visible y consistente con tu regla global */
+.sidebar-search:focus,
+.sidebar-search:focus-visible {
+  border-color: var(--color-brand-primary, var(--adt-color-primary-text));
+  box-shadow: 0 0 0 3px rgba(16, 78, 94, 0.18);
+}
+
+/* Dark mode: placeholder y shadow adaptados (sin romper contraste) */
+html[data-theme="dark"] .sidebar-search::placeholder {
+  color: rgba(242, 246, 248, 0.70);
+}
+
+html[data-theme="dark"] .sidebar-search:focus,
+html[data-theme="dark"] .sidebar-search:focus-visible {
+  box-shadow: 0 0 0 3px rgba(111, 174, 199, 0.22);
+}
+
+/* Opcional: reduce movimiento/zoom en iOS al enfocar */
+@media (max-width: 768px) {
+  .sidebar-search {
+    font-size: 16px;
+  }
+}
+/* ============================================================
+   Sidebar — Search (sidebar/search.html)
+   Compatible con Furo + WCAG 2.1 AA
+   ============================================================ */
+
+/* Contenedor del formulario (en sidebar) */
+.sidebar-search-container {
+  display: block;
+  margin: 0.5rem 0 0.75rem 0;
+}
+
+/* Campo de búsqueda */
+.sidebar-search {
+  width: 100%;
+  min-height: 44px; /* tap target WCAG/UX */
+  padding: 0.6rem 0.75rem;
+
+  border-radius: var(--adt-radius-md);
+  border: 1px solid var(--color-background-border, rgba(42, 47, 51, 0.15));
+
+  background: var(--color-background-primary, var(--adt-color-bg));
+  color: var(--color-foreground-primary, var(--adt-color-text));
+
+  /* Evita estilos de UA que bajan contraste */
+  outline: none;
+
+  transition:
+    border-color var(--adt-transition-fast),
+    box-shadow var(--adt-transition-fast),
+    background-color var(--adt-transition-fast);
+}
+
+/* Placeholder (no debe “desaparecer”) */
+.sidebar-search::placeholder {
+  color: var(--color-foreground-secondary, rgba(42, 47, 51, 0.65));
+  opacity: 1;
+}
+
+/* Hover: solo borde (no cambia texto) */
+.sidebar-search:hover {
+  border-color: var(--color-brand-primary, var(--adt-color-primary-text));
+}
+
+/* Focus: visible y consistente con tu regla global */
+.sidebar-search:focus,
+.sidebar-search:focus-visible {
+  border-color: var(--color-brand-primary, var(--adt-color-primary-text));
+  box-shadow: 0 0 0 3px rgba(16, 78, 94, 0.18);
+}
+
+/* Dark mode: placeholder y shadow adaptados (sin romper contraste) */
+html[data-theme="dark"] .sidebar-search::placeholder {
+  color: rgba(242, 246, 248, 0.70);
+}
+
+html[data-theme="dark"] .sidebar-search:focus,
+html[data-theme="dark"] .sidebar-search:focus-visible {
+  box-shadow: 0 0 0 3px rgba(111, 174, 199, 0.22);
+}
+
+/* Opcional: reduce movimiento/zoom en iOS al enfocar */
+@media (max-width: 768px) {
+  .sidebar-search {
+    font-size: 16px;
+  }
+}
+
+
+/* ============================================================
+   Sidebar — Scroll wrappers (sidebar/scroll-start.html / scroll-end.html)
+   Objetivo:
+   - Brand + Search quedan arriba (fuera del scroll)
+   - Navigation queda dentro del scroll
+   - No romper mobile/burger ni layout Furo
+   ============================================================ */
+
+/* El contenedor scrollable del sidebar */
+.sidebar-scroll {
+  /* Furo suele manejar alturas/overflow, pero esto refuerza el comportamiento */
+  overflow: auto;
+  overscroll-behavior: contain; /* evita “scroll bleed” hacia el body */
+  -webkit-overflow-scrolling: touch; /* iOS smooth */
+}
+
+/* Wrapper interno (nuestro) para controlar padding y flujo */
+.sidebar-scroll__inner {
+  display: block;
+  padding-top: 0.25rem;
+  padding-bottom: 0.75rem;
+}
+
+/* Navegación dentro del scroll (árbol) */
+.sidebar-scroll__inner .sidebar-tree {
+  margin-top: 0.25rem;
+}
+
+/* Separación suave entre search y navigation */
+.sidebar-search-container + .sidebar-scroll {
+  margin-top: 0.25rem;
+}
+
+/* Ajuste: evita que el scroll quede tapado si hay announcement fijo abajo */
+.sidebar-drawer .sidebar-scroll {
+  padding-bottom: 0.75rem;
+}
+
+/* Mobile: sidebar suele ser overlay; mantener scroll estable */
+@media (max-width: 768px) {
+  .sidebar-scroll__inner {
+    padding-bottom: 1rem;
+  }
+}
+
+/* ============================================================
+   Sidebar — Navigation (sidebar/navigation.html)
+   Objetivo:
+   - Legibilidad y jerarquía del árbol
+   - Estados activos claros sin romper WCAG
+   - Hover/focus consistentes en light/dark
+   ============================================================ */
+
+.sidebar-tree {
+  margin: 0.25rem 0 0.5rem 0;
+}
+
+/* El toctree generado por Sphinx suele usar ul/li con .toctree-l* */
+.sidebar-tree ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.sidebar-tree li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Links internos */
+.sidebar-tree a.reference {
+  display: block;
+  padding: 0.35rem 0.5rem;
+  border-radius: var(--adt-radius-md);
+
+  color: var(--color-foreground-primary, var(--adt-color-text));
+  text-decoration: none;
+
+  transition: background-color var(--adt-transition-fast),
+              color var(--adt-transition-fast);
+}
+
+/* Hover: solo fondo (tinte), no cambia a un color no permitido */
+.sidebar-tree a.reference:hover {
+  background-color: rgba(47, 127, 143, 0.08); /* tinte no textual */
+}
+
+/* Focus visible: consistente */
+.sidebar-tree a.reference:focus-visible {
+  outline: 2px solid var(--color-brand-primary, var(--adt-color-primary-text));
+  outline-offset: 2px;
+}
+
+/* Item actual (Sphinx suele marcar con .current en li o a) */
+.sidebar-tree li.current > a.reference,
+.sidebar-tree a.reference.current {
+  font-weight: 600;
+  color: var(--color-brand-primary, var(--adt-color-primary-text));
+  background-color: rgba(47, 127, 143, 0.10); /* tinte */
+  border-left: 3px solid var(--color-brand-primary, var(--adt-color-primary-text));
+}
+
+/* Si Furo marca scroll-current (como en TOC), lo soportamos también */
+.sidebar-tree li.scroll-current > a.reference {
+  font-weight: 600;
+  border-left: 3px solid var(--color-brand-primary, var(--adt-color-primary-text));
+  background-color: rgba(47, 127, 143, 0.10);
+}
+
+/* Jerarquía por niveles (indentación progresiva) */
+.sidebar-tree .toctree-l1 > a.reference { padding-left: 0.5rem; }
+.sidebar-tree .toctree-l2 > a.reference { padding-left: 1.15rem; }
+.sidebar-tree .toctree-l3 > a.reference { padding-left: 1.8rem; }
+.sidebar-tree .toctree-l4 > a.reference { padding-left: 2.45rem; }
+.sidebar-tree .toctree-l5 > a.reference { padding-left: 3.1rem; }
+
+/* Aux links (Índice / Búsqueda) */
+.sidebar-tree__aux {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--color-background-border, rgba(42, 47, 51, 0.15));
+}
+
+.sidebar-tree__auxList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.sidebar-tree__auxItem a.reference {
+  font-size: 0.95em;
+}
+
+/* Dark mode: hover/fondo más suave */
+html[data-theme="dark"] .sidebar-tree a.reference:hover {
+  background-color: rgba(242, 246, 248, 0.08);
+}
+
+html[data-theme="dark"] .sidebar-tree li.current > a.reference,
+html[data-theme="dark"] .sidebar-tree a.reference.current,
+html[data-theme="dark"] .sidebar-tree li.scroll-current > a.reference {
+  background-color: rgba(242, 246, 248, 0.10);
+}
+
+/* Mobile: aumenta legibilidad y tap targets */
+@media (max-width: 768px) {
+  .sidebar-tree a.reference {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+}

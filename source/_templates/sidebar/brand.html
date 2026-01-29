@@ -1,0 +1,47 @@
+{# ============================================================================
+   sidebar/brand.html — ADT / ADT42 (Furo / Sphinx)
+   Objetivo:
+   - Renderizar el bloque "brand" del sidebar (logo + nombre + enlace a inicio)
+   - Mantener clases esperadas por Furo para que el layout no se rompa:
+       .sidebar-brand, .sidebar-logo, .sidebar-brand-text
+   - WCAG: no forzar colores aquí (los define html_theme_options + custom.css)
+   - Sin dependencias de sphinx-jinja (Sphinx ya usa Jinja2 internamente)
+============================================================================ #}
+
+{# URL al documento raíz del sitio #}
+{% set home_url = pathto(master_doc) %}
+
+{# Intento de localizar logo (depende de config) #}
+{% set _logo = None %}
+{% if logo_url is defined and logo_url %}
+  {% set _logo = logo_url %}
+{% elif theme_logo is defined and theme_logo %}
+  {# theme_logo suele ser un filename dentro de _static #}
+  {% set _logo = pathto('_static/' ~ theme_logo, 1) %}
+{% elif html_logo is defined and html_logo %}
+  {# html_logo puede venir como ruta relativa; tratamos de resolverlo desde _static #}
+  {% set _logo = pathto('_static/' ~ html_logo, 1) %}
+{% endif %}
+
+<a class="sidebar-brand"
+   href="{{ home_url }}"
+   aria-label="Ir al inicio de {{ project | e }}">
+
+  {# Logo opcional #}
+  {% if _logo %}
+    <img class="sidebar-logo"
+         src="{{ _logo }}"
+         alt="{{ project | e }}">
+  {% endif %}
+
+  {# Texto del proyecto (Furo lo usa como brand) #}
+  <span class="sidebar-brand-text">{{ project | e }}</span>
+
+  {# Versión opcional (si la config la expone) #}
+  {% if version is defined and version %}
+    <span class="sidebar-brand-version"
+          aria-label="Versión {{ version | e }}">
+      {{ version | e }}
+    </span>
+  {% endif %}
+</a>

@@ -146,37 +146,32 @@ html_theme = "furo"
 
 html_theme_options = {
     "light_css_variables": {
-        # Base
-        "color-background-primary": "#F2F6F8",   # --adt-color-bg
-        "color-foreground-primary": "#2A2F33",   # --adt-color-text
+        "color-background-primary": "#F2F6F8",  # --adt-color-bg
+        "color-foreground-primary": "#2A2F33",  # --adt-color-text
 
-        # Brand / enlaces (único protagonista en claro)
-        "color-brand-primary":  "#104E5E",       # --adt-color-primary-text
-        "color-brand-content":  "#104E5E",
+        "color-brand-primary": "#104E5E",       # --adt-color-primary-text (permitido para texto)
+        "color-brand-content": "#104E5E",
 
-        # Bordes y divisores (neutros, no estructurales)
         "color-background-border": "rgba(42, 47, 51, 0.15)",
-
-        # Superficies secundarias (opcional, armonía)
         "color-background-secondary": "#E8EFF3",
-    },
 
+        # IMPORTANTE: fuera el verde-lima
+        "color-code-background": "rgba(11, 60, 73, 0.06)",
+        "color-code-foreground": "#2A2F33",
+    },
     "dark_css_variables": {
-        # Base dark (estructura)
-        "color-background-primary": "#0B3C49",   # --adt-color-petroleum-800
-        "color-foreground-primary": "#F2F6F8",   # texto claro técnico
+        "color-background-primary": "#0B3C49",  # --adt-color-petroleum-800
+        "color-foreground-primary": "#F2F6F8",
 
-        # Brand / enlaces (protagonista en oscuro)
-        "color-brand-primary":  "#6FAEC7",       # --adt-color-accent-500
-        "color-brand-content":  "#6FAEC7",
+        "color-brand-primary": "#6FAEC7",       # --adt-color-accent-500 (OK en oscuro)
+        "color-brand-content": "#6FAEC7",
 
-        # Bordes (derivados del acento, no texto)
         "color-background-border": "rgba(111, 174, 199, 0.35)",
-
-        # Superficie secundaria
         "color-background-secondary": "rgba(255, 255, 255, 0.04)",
-    },
 
+        "color-code-background": "rgba(242, 246, 248, 0.08)",
+        "color-code-foreground": "#F2F6F8",
+    },
     "sidebar_hide_name": False,
     "navigation_with_keys": True,
 }
@@ -216,6 +211,11 @@ html_sidebars = {
     ]
 }
 
+
+
+notfound_urls_prefix = ""  # o el prefijo real si publicas en /repo/
+notfound_template = "404.html"
+notfound_no_urls_prefix = False
 # Mostrar información de Sphinx
 html_show_sphinx = True
 

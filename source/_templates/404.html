@@ -1,102 +1,101 @@
-{# ============================================
-   404.html — ADT / ADT42 (Sphinx + Furo)
-   - Usado por sphinx-notfound-page
-   - Extiende page.html del theme para heredar layout completo
-   - Evita romper wrappers internos del theme
-   ============================================ #}
+{# ============================================================================
+  ADT / ADT42 — 404.html (Sphinx + Furo)
+  - Template para sphinx-notfound-page
+  - Usa layout del theme (Furo) extendiendo page.html
+  - WCAG: label accesible, estructura semántica, sin colores hardcodeados
+============================================================================ #}
 
-{% extends "!page.html" %}
+{% extends "page.html" %}
 
-{# Título del documento (pestaña del navegador) #}
+{# Opcional: título del documento #}
 {% block htmltitle %}
-  <title>404 — Página no encontrada — {{ docstitle|e }}</title>
-{% endblock %}
+  <title>404 · No encontrado — {{ project }}</title>
+{% endblock htmltitle %}
 
-{# Contenido principal #}
 {% block content %}
-  <article class="adt-404" role="main" aria-labelledby="adt-404-title">
-    <header class="adt-404__header">
-      <p class="adt-404__kicker">ADT / ADT42</p>
-      <h1 id="adt-404-title" class="adt-404__title">404 — Página no encontrada</h1>
-      <p class="adt-404__lead">
-        El recurso que buscas no existe, fue movido o el enlace está desactualizado.
+<main id="furo-main-content" class="adt-404" role="main">
+  <p class="adt-404__kicker">404 · No encontrado</p>
+
+  <h1 class="adt-404__title">La página que buscas no existe</h1>
+
+  <p class="adt-404__lead">
+    Puede que el enlace esté mal, que el contenido se haya movido, o que aún no haya sido publicado.
+  </p>
+
+  <section class="adt-404__grid" aria-label="Acciones rápidas">
+    <div class="adt-404__card">
+      <h2 class="adt-404__cardTitle">Ir al inicio</h2>
+      <p class="adt-404__cardText">
+        Vuelve a la portada de la documentación para retomar navegación por secciones.
       </p>
-    </header>
+      <p class="adt-404__cardText">
+        <a class="adt-404__primaryLink" href="{{ pathto('index') }}">Abrir Inicio</a>
+      </p>
+    </div>
 
-    <section class="adt-404__actions" aria-label="Acciones de recuperación">
-      <div class="adt-404__grid">
-        <div class="adt-404__card" role="region" aria-label="Ir al inicio">
-          <h2 class="adt-404__cardTitle">Volver al inicio</h2>
-          <p class="adt-404__cardText">
-            Regresa a la portada y navega desde el índice principal.
-          </p>
-          <p class="adt-404__cardCta">
-            <a class="reference internal adt-404__primaryLink" href="{{ pathto(master_doc) }}">
-              Ir al inicio
-            </a>
-          </p>
-        </div>
+    <div class="adt-404__card">
+      <h2 class="adt-404__cardTitle">Buscar</h2>
+      <p class="adt-404__cardText">
+        Escribe un término y te llevamos a la página de resultados.
+      </p>
 
-        <div class="adt-404__card" role="region" aria-label="Buscar en la documentación">
-          <h2 class="adt-404__cardTitle">Buscar</h2>
-          <p class="adt-404__cardText">
-            Usa el buscador para localizar la sección correcta.
-          </p>
+      <form class="adt-404__search" method="get" action="{{ pathto('search') }}" role="search">
+        <label class="visually-hidden" for="adt-404-search-input">Buscar en la documentación</label>
 
-          <form class="adt-404__search"
-                method="get"
-                action="{{ pathto('search') }}"
-                role="search"
-                aria-label="Búsqueda del sitio">
-            <label for="adt-404-search" class="visually-hidden">Buscar en la documentación</label>
-            <input id="adt-404-search"
-                   class="adt-404__searchInput"
-                   type="search"
-                   name="q"
-                   placeholder="Buscar…"
-                   aria-label="Buscar"
-                   autocomplete="off"
-                   spellcheck="false"
-                   inputmode="search" />
-            <input type="hidden" name="check_keywords" value="yes" />
-            <input type="hidden" name="area" value="default" />
-            <button class="adt-404__searchButton" type="submit">Buscar</button>
-          </form>
+        <input
+          id="adt-404-search-input"
+          class="adt-404__searchInput"
+          type="search"
+          name="q"
+          placeholder="Ej: trazabilidad, tokens, WCAG"
+          autocomplete="off"
+          spellcheck="false"
+        >
 
-          <p class="adt-404__hint">
-            Tip: prueba con el nombre del artefacto, por ejemplo <code>RST_ACC_001</code> o <code>WCAG</code>.
-          </p>
-        </div>
-      </div>
-    </section>
+        <button class="adt-404__searchButton" type="submit">Buscar</button>
 
-    <section class="adt-404__links" aria-label="Rutas sugeridas">
-      <h2 class="adt-404__sectionTitle">Rutas sugeridas</h2>
-      <ul class="adt-404__list">
-        <li><a class="reference internal" href="{{ pathto(master_doc) }}">Inicio</a></li>
-        <li><a class="reference internal" href="{{ pathto('genindex') }}">Índice alfabético</a></li>
-        <li><a class="reference internal" href="{{ pathto('search') }}">Página de búsqueda</a></li>
-      </ul>
-    </section>
+        <input type="hidden" name="check_keywords" value="yes">
+        <input type="hidden" name="area" value="default">
+      </form>
 
-    <section class="adt-404__details" aria-label="Información técnica">
-      <details class="adt-404__detailsBox">
-        <summary class="adt-404__summary">Detalles técnicos</summary>
-        <div class="adt-404__detailsBody">
-          <p>
-            Si llegaste aquí desde un enlace interno, puede existir un cambio de ruta o un artefacto renombrado.
-          </p>
-          <p class="adt-404__meta">
-            <strong>Ruta solicitada:</strong>
-            <code>{{ pagename|e }}</code>
-          </p>
-        </div>
-      </details>
-    </section>
-  </article>
-{% endblock %}
+      <p class="adt-404__hint">
+        Tip: usa términos técnicos exactos (ej. <span class="menuselection">RST_ACC_001</span>).
+      </p>
+    </div>
+  </section>
 
-{# Footer: conservar el del theme y tu footer adicional (si existe) #}
-{% block footer %}
-  {{ super() }}
-{% endblock %}
+  <h2 class="adt-404__sectionTitle">Rutas útiles</h2>
+  <ul class="adt-404__list">
+    <li><a href="{{ pathto('genindex') }}">Índice alfabético</a></li>
+    <li><a href="{{ pathto('search') }}">Búsqueda</a></li>
+    {# Si tienes una sección “inicio” real, puedes ponerla aquí #}
+    {% if hasdoc('index') %}
+    <li><a href="{{ pathto('index') }}">Inicio</a></li>
+    {% endif %}
+  </ul>
+
+  <details class="adt-404__detailsBox">
+    <summary class="adt-404__summary">Detalles técnicos</summary>
+    <div class="adt-404__detailsContent">
+      <p class="adt-404__cardText">
+        <strong>Ruta solicitada:</strong> <code id="adt-404-path">(desconocida)</code>
+      </p>
+      <p class="adt-404__cardText">
+        Si esto proviene de un enlace interno, levanta un issue indicando:
+        <code>from</code>, <code>to</code>, y el contexto.
+      </p>
+    </div>
+  </details>
+</main>
+
+<script>
+  (function () {
+    try {
+      var el = document.getElementById("adt-404-path");
+      if (el && window && window.location) {
+        el.textContent = window.location.pathname || window.location.href || "(desconocida)";
+      }
+    } catch (e) { /* no-op */ }
+  })();
+</script>
+{% endblock content %}

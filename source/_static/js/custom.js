@@ -1,401 +1,311 @@
-/**
- * IACT - Custom JavaScript para Sphinx + Furo
- */
+/* ============================================
+ * ADT / ADT42 — custom.js (Sphinx + Furo)
+ * Objetivo:
+ *  - Respetar WCAG 2.1 AA
+ *  - No romper header móvil (burger / TOC)
+ *  - Consumir variables CSS del theme
+ * ============================================ */
 
-(function() {
-    'use strict';
+(function () {
+  "use strict";
 
-    // Esperar a que el DOM esté completamente cargado
-    document.addEventListener('DOMContentLoaded', function() {
-        
-        // 1. Mejorar enlaces externos
-        addExternalLinkIcons();
-        
-        // 2. Smooth scroll para enlaces internos
-        enableSmoothScroll();
-        
-        // 3. Mejorar accesibilidad de tablas
-        enhanceTableAccessibility();
-        
-        // 4. Agregar comportamiento a botones de copiado
-        enhanceCopyButtons();
-        
-        // 5. Agregar tooltips a abreviaciones
-        addTooltipsToAbbreviations();
+  /* =========================================================
+   * Utilidades
+   * ========================================================= */
+
+  function cssVar(name, fallback = "") {
+    const value = getComputedStyle(document.documentElement)
+      .getPropertyValue(name)
+      .trim();
+    return value || fallback;
+  }
+
+  function onReady(fn) {
+    if (document.readyState !== "loading") {
+      fn();
+    } else {
+      document.addEventListener("DOMContentLoaded", fn);
+    }
+  }
+
+  /* =========================================================
+   * 1) Barra de progreso de lectura (segura en mobile)
+   * ========================================================= */
+
+  function initReadingProgress() {
+    const bar = document.createElement("div");
+    bar.id = "reading-progress-bar";
+
+    bar.style.cssText = `
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      background: ${cssVar("--color-brand-primary", "#104E5E")};
+      z-index: 50;
+      transition: width 0.15s ease;
+    `;
+
+    document.body.appendChild(bar);
+
+    function update() {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const docHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+      if (docHeight <= 0) return;
+
+      const percent = (scrollTop / docHeight) * 100;
+      bar.style.width = `${Math.min(100, Math.max(0, percent))}%`;
+    }
+
+    window.addEventListener("scroll", update, { passive: true });
+    update();
+  }
+
+  /* =========================================================
+   * 2) Botón Back-to-Top (WCAG friendly)
+   * ========================================================= */
+
+  function initBackToTop() {
+    const btn = document.createElement("button");
+    btn.id = "back-to-top";
+    btn.type = "button";
+    btn.setAttribute("aria-label", "Volver arriba");
+
+    btn.textContent = "↑";
+
+    btn.style.cssText = `
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      display: none;
+      background: ${cssVar("--color-brand-primary", "#104E5E")};
+      color: ${cssVar("--color-background-primary", "#F2F6F8")};
+      z-index: 60;
+      font-size: 1.2rem;
+    `;
+
+    btn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    /**
-     * Agregar iconos a enlaces externos
-     */
-    function addExternalLinkIcons() {
-        const links = document.querySelectorAll('.content a[href^="http"]');
-        links.forEach(function(link) {
-            // No agregar a imágenes
-            if (link.querySelector('img')) return;
-            
-            // Verificar si es enlace externo
-            if (!link.href.includes(window.location.hostname)) {
-                link.setAttribute('target', '_blank');
-                link.setAttribute('rel', 'noopener noreferrer');
-                link.setAttribute('title', 'Abre en nueva pestaña');
-            }
-        });
-    }
+    window.addEventListener("scroll", function () {
+      btn.style.display = window.scrollY > 300 ? "block" : "none";
+    });
 
-    /**
-     * Habilitar smooth scroll para enlaces internos
-     */
-    function enableSmoothScroll() {
-        const links = document.querySelectorAll('a[href^="#"]');
-        links.forEach(function(link) {
-            link.addEventListener('click', function(e) {
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    e.preventDefault();
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Actualizar URL sin saltar
-                    history.pushState(null, null, targetId);
-                }
-            });
-        });
-    }
+    document.body.appendChild(btn);
+  }
 
-    /**
-     * Mejorar accesibilidad de tablas
-     */
-    function enhanceTableAccessibility() {
-        const tables = document.querySelectorAll('table.docutils');
-        tables.forEach(function(table) {
-            // Agregar role si no existe
-            if (!table.getAttribute('role')) {
-                table.setAttribute('role', 'table');
-            }
-            
-            // Envolver tabla en contenedor responsive
-            if (!table.parentElement.classList.contains('table-wrapper')) {
-                const wrapper = document.createElement('div');
-                wrapper.classList.add('table-wrapper');
-                wrapper.style.overflowX = 'auto';
-                table.parentNode.insertBefore(wrapper, table);
-                wrapper.appendChild(table);
-            }
-        });
-    }
+  /* =========================================================
+   * 3) Enlaces externos (icono accesible)
+   * ========================================================= */
 
-    /**
-     * Mejorar botones de copiado
-     */
-    function enhanceCopyButtons() {
-        // Observar cuando se agregan nuevos botones de copiar
-        const observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                mutation.addedNodes.forEach(function(node) {
-                    if (node.classList && node.classList.contains('copybtn')) {
-                        addCopyFeedback(node);
-                    }
-                });
-            });
-        });
+  function markExternalLinks() {
+    const links = document.querySelectorAll(
+      ".content a[href^='http']:not([href*='" + location.host + "'])"
+    );
 
-        // Observar el documento
-        observer.observe(document.body, {
-            childList: true,
-            subtree: true
-        });
+    links.forEach(function (link) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+      link.setAttribute(
+        "aria-label",
+        (link.textContent || "Enlace externo") + " (abre en nueva pestaña)"
+      );
+    });
+  }
 
-        // Aplicar a botones existentes
-        document.querySelectorAll('.copybtn').forEach(addCopyFeedback);
-    }
+  /* =========================================================
+   * 4) Abreviaturas (tooltip sin romper contraste)
+   * ========================================================= */
 
-    /**
-     * Agregar feedback visual al copiar
-     */
-    function addCopyFeedback(button) {
-        button.addEventListener('click', function() {
-            const originalTitle = this.getAttribute('title') || 'Copiar';
-            this.setAttribute('title', 'Copiado!');
-            this.style.backgroundColor = '#27ae60';
-            
-            setTimeout(() => {
-                this.setAttribute('title', originalTitle);
-                this.style.backgroundColor = '';
-            }, 2000);
-        });
-    }
+  function enhanceAbbr() {
+    const abbrs = document.querySelectorAll("abbr[title]");
 
-    /**
-     * Agregar tooltips a abreviaciones
-     */
-    function addTooltipsToAbbreviations() {
-        const abbrs = document.querySelectorAll('abbr[title]');
-        abbrs.forEach(function(abbr) {
-            abbr.style.cursor = 'help';
-            abbr.style.borderBottom = '1px dotted #199cd7';
-        });
-    }
+    abbrs.forEach(function (abbr) {
+      abbr.style.cursor = "help";
+      abbr.style.textDecoration = "none";
+      abbr.style.borderBottom = "1px dotted currentColor";
+    });
+  }
 
-    /**
-     * Utilidad: Debounce para optimizar eventos
-     */
-    function debounce(func, wait) {
-        let timeout;
-        return function executedFunction(...args) {
-            const later = () => {
-                clearTimeout(timeout);
-                func(...args);
-            };
-            clearTimeout(timeout);
-            timeout = setTimeout(later, wait);
-        };
-    }
+  /* =========================================================
+   * 5) Copy-button feedback (sin colores hardcodeados)
+   * ========================================================= */
 
-    /**
-     * Detección de scroll para efectos adicionales (opcional)
-     */
-    let lastScrollTop = 0;
-    window.addEventListener('scroll', debounce(function() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        // Aquí puedes agregar efectos basados en scroll
-        // Ejemplo: mostrar/ocultar botón "volver arriba"
-        
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    }, 100));
+  function enhanceCopyButtons() {
+    document.addEventListener("click", function (ev) {
+      const btn = ev.target.closest(".copybtn");
+      if (!btn) return;
 
-    /**
-     * Mejorar animaciones de Cards al hacer scroll
-     */
-    function animateCardsOnScroll() {
-        const cards = document.querySelectorAll('.sd-card');
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
-        
-        cards.forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-            observer.observe(card);
-        });
-    }
+      btn.classList.add("adt-copy-success");
+      setTimeout(() => btn.classList.remove("adt-copy-success"), 900);
+    });
+  }
 
-    /**
-     * Sincronizar tema oscuro con preferencias del sistema
-     */
-    function syncThemeWithSystem() {
-        // Furo ya maneja el tema, pero podemos agregar efectos personalizados
-        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        
-        function handleThemeChange(e) {
-            // Agregar clase personalizada si se necesita
-            if (e.matches) {
-                document.body.classList.add('iact-dark-mode');
-            } else {
-                document.body.classList.remove('iact-dark-mode');
-            }
-        }
-        
-        // Aplicar al cargar
-        handleThemeChange(mediaQuery);
-        
-        // Escuchar cambios
-        mediaQuery.addEventListener('change', handleThemeChange);
-    }
+  /* =========================================================
+   * 6) Resaltado al navegar por hash (#)
+   * ========================================================= */
 
-    /**
-     * Agregar efecto de resaltado a elementos referenciados
-     */
-    function highlightReferencedElements() {
-        // Si la URL tiene un hash (ej: #seccion-id)
-        if (window.location.hash) {
-            const targetElement = document.querySelector(window.location.hash);
-            if (targetElement) {
-                // Agregar clase temporal de highlight
-                targetElement.classList.add('iact-highlighted');
-                
-                // Remover después de 2 segundos
-                setTimeout(() => {
-                    targetElement.classList.remove('iact-highlighted');
-                }, 2000);
-            }
-        }
-    }
+  function highlightHashTarget() {
+    if (!location.hash) return;
 
-    /**
-     * Mejorar interacción con tabs de sphinx-tabs
-     */
-    function enhanceTabInteraction() {
-        const tabs = document.querySelectorAll('.sphinx-tabs-tab');
-        
-        tabs.forEach(tab => {
-            tab.addEventListener('click', function() {
-                // Agregar efecto de ripple
-                const ripple = document.createElement('span');
-                ripple.classList.add('ripple-effect');
-                this.appendChild(ripple);
-                
-                setTimeout(() => {
-                    ripple.remove();
-                }, 600);
-            });
-        });
-    }
+    const id = location.hash.slice(1);
+    const el = document.getElementById(id);
+    if (!el) return;
 
-    /**
-     * Mejorar visualización de admonitions colapsables
-     */
-    function enhanceAdmonitions() {
-        const admonitions = document.querySelectorAll('.admonition');
-        
-        admonitions.forEach(admonition => {
-            // Agregar animación al hacer hover
-            admonition.addEventListener('mouseenter', function() {
-                this.style.borderLeftWidth = '6px';
-            });
-            
-            admonition.addEventListener('mouseleave', function() {
-                this.style.borderLeftWidth = '4px';
-            });
-        });
-    }
+    el.classList.add("adt-highlighted");
+    setTimeout(() => el.classList.remove("adt-highlighted"), 2000);
+  }
 
-    /**
-     * Progress bar de lectura en la parte superior
-     */
-    function addReadingProgressBar() {
-        // Crear barra de progreso
-        const progressBar = document.createElement('div');
-        progressBar.id = 'reading-progress-bar';
-        progressBar.style.cssText = `
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #199cd7, #0276ba);
-            width: 0%;
-            z-index: 9999;
-            transition: width 0.2s ease;
-        `;
-        document.body.appendChild(progressBar);
-        
-        // Actualizar progreso al hacer scroll
-        window.addEventListener('scroll', debounce(function() {
-            const windowHeight = window.innerHeight;
-            const documentHeight = document.documentElement.scrollHeight - windowHeight;
-            const scrolled = window.scrollY;
-            const progress = (scrolled / documentHeight) * 100;
-            
-            progressBar.style.width = progress + '%';
-        }, 50));
-    }
+  /* =========================================================
+   * Inicialización
+   * ========================================================= */
 
-    /**
-     * Mejorar código con números de línea
-     */
-    function enhanceCodeBlocks() {
-        const codeBlocks = document.querySelectorAll('div.highlight pre');
-        
-        codeBlocks.forEach(block => {
-            // Agregar efecto hover en bloques de código
-            block.addEventListener('mouseenter', function() {
-                this.style.borderLeftWidth = '5px';
-            });
-            
-            block.addEventListener('mouseleave', function() {
-                this.style.borderLeftWidth = '3px';
-            });
-        });
-    }
-
-    /**
-     * Botón "Volver Arriba" flotante
-     */
-    function addBackToTopButton() {
-        const button = document.createElement('button');
-        button.id = 'back-to-top';
-        button.innerHTML = '↑';
-        button.setAttribute('aria-label', 'Volver arriba');
-        button.style.cssText = `
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: #199cd7;
-            color: white;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            z-index: 1000;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        `;
-        
-        document.body.appendChild(button);
-        
-        // Mostrar/ocultar botón según scroll
-        window.addEventListener('scroll', debounce(function() {
-            if (window.pageYOffset > 300) {
-                button.style.opacity = '1';
-                button.style.visibility = 'visible';
-            } else {
-                button.style.opacity = '0';
-                button.style.visibility = 'hidden';
-            }
-        }, 100));
-        
-        // Funcionalidad del botón
-        button.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Efecto hover
-        button.addEventListener('mouseenter', function() {
-            this.style.backgroundColor = '#0276ba';
-            this.style.transform = 'scale(1.1)';
-        });
-        
-        button.addEventListener('mouseleave', function() {
-            this.style.backgroundColor = '#199cd7';
-            this.style.transform = 'scale(1)';
-        });
-    }
-
-    /**
-     * Inicializar todas las funcionalidades adicionales
-     */
-    function initIACTEnhancements() {
-        animateCardsOnScroll();
-        syncThemeWithSystem();
-        highlightReferencedElements();
-        enhanceTabInteraction();
-        enhanceAdmonitions();
-        addReadingProgressBar();
-        enhanceCodeBlocks();
-        addBackToTopButton();
-    }
-
-    // Ejecutar mejoras IACT
-    initIACTEnhancements();
-
+  onReady(function () {
+    initReadingProgress();
+    initBackToTop();
+    markExternalLinks();
+    enhanceAbbr();
+    enhanceCopyButtons();
+    highlightHashTarget();
+  });
 })();
+
+/* ============================================================
+   Sidebar Search — Enhancements (WCAG/UX)
+   Para template: sidebar/search.html  (input#sidebar-search-input)
+   ============================================================ */
+
+(function () {
+  "use strict";
+
+  function onReady(fn) {
+    if (document.readyState !== "loading") fn();
+    else document.addEventListener("DOMContentLoaded", fn);
+  }
+
+  onReady(function () {
+    const input = document.getElementById("sidebar-search-input");
+    if (!input) return;
+
+    // 1) Atajo "/" para enfocar (cuando no estás escribiendo en un input/textarea)
+    document.addEventListener("keydown", function (ev) {
+      if (ev.defaultPrevented) return;
+
+      const key = ev.key;
+      const target = ev.target;
+
+      const isTypingContext =
+        target &&
+        (target.tagName === "INPUT" ||
+          target.tagName === "TEXTAREA" ||
+          target.isContentEditable);
+
+      // "/" enfoca búsqueda (sin interferir si ya estás escribiendo)
+      if (!isTypingContext && key === "/") {
+        ev.preventDefault();
+        input.focus();
+        // Selecciona texto si ya hay algo (útil para reemplazar rápido)
+        if (input.value) input.select();
+      }
+
+      // 2) Esc limpia búsqueda si está enfocada
+      if (key === "Escape" && document.activeElement === input) {
+        input.value = "";
+        input.blur();
+      }
+    });
+
+    // 3) Evita que el navegador autocompletar “rompa” UX si no lo quieres
+    // (ya pones autocomplete="off" en HTML, esto es extra defensivo)
+    input.setAttribute("autocomplete", "off");
+    input.setAttribute("autocapitalize", "off");
+    input.setAttribute("autocorrect", "off");
+
+    // 4) UX: al enfocar, si hay contenido, seleccionar para reemplazar rápido
+    input.addEventListener("focus", function () {
+      if (input.value) input.select();
+    });
+  });
+})();
+
+/* ============================================================
+   Sidebar Scroll Wrappers — Enhancements
+   Para templates: sidebar/scroll-start.html / sidebar/scroll-end.html
+   Objetivo:
+   - Evitar scroll del body cuando el sidebar overlay está abierto (mobile)
+   - No interferir con Furo ni con accesibilidad
+   ============================================================ */
+
+(function () {
+  "use strict";
+
+  function onReady(fn) {
+    if (document.readyState !== "loading") fn();
+    else document.addEventListener("DOMContentLoaded", fn);
+  }
+
+  onReady(function () {
+    const navToggle = document.getElementById("__navigation");
+    if (!navToggle) return;
+
+    let lastScrollY = 0;
+
+    function lockBodyScroll() {
+      // Guardar posición
+      lastScrollY = window.scrollY || document.documentElement.scrollTop || 0;
+
+      // Bloquear scroll del body sin “brincos”
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${lastScrollY}px`;
+      document.body.style.left = "0";
+      document.body.style.right = "0";
+      document.body.style.width = "100%";
+    }
+
+    function unlockBodyScroll() {
+      // Restaurar scroll
+      const top = document.body.style.top;
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      document.body.style.width = "";
+
+      // Volver a la posición previa
+      const y = top ? Math.abs(parseInt(top, 10)) : lastScrollY;
+      window.scrollTo(0, y);
+    }
+
+    function apply() {
+      // Solo bloquear en pantallas pequeñas (overlay)
+      const isMobile = window.matchMedia("(max-width: 768px)").matches;
+      const isOpen = !!navToggle.checked;
+
+      if (isMobile && isOpen) lockBodyScroll();
+      else unlockBodyScroll();
+    }
+
+    // Cambio al abrir/cerrar
+    navToggle.addEventListener("change", apply);
+
+    // Si rota o cambia tamaño
+    window.addEventListener("resize", function () {
+      // Si ya está bloqueado y deja de ser mobile, liberar
+      apply();
+    });
+
+    // Estado inicial
+    apply();
+  });
+})();
+
