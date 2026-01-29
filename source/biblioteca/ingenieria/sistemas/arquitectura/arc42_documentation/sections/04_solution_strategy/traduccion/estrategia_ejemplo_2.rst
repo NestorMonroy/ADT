@@ -14,6 +14,7 @@ Ejemplo de Estrategia de Solución: MaMa
 ----
 
 4. Estrategia de Solución
+
 ==========================
 
 Por favor nota:

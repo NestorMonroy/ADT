@@ -12,6 +12,7 @@ Ejemplo de Contexto de Negocio: MaMa
 ----
 
 3. Vista de Contexto
+
 ====================
 
 3.1 Contexto de Negocio

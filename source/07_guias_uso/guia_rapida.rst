@@ -300,19 +300,19 @@ Ejercicio Práctico
 
  * - Aspecto
    - Simple
- - Complejo
+   - Complejo
  * - Entendimiento
    - Rápido (< 1 hora)
- - Lento (días)
+   - Lento (días)
  * - Mantenimiento
    - Fácil
- - Difícil
+   - Difícil
  * - Errores
    - Pocos
- - Muchos
+   - Muchos
  * - Onboarding
    - Rápido
- - Lento
+   - Lento
 
  Ejemplos
  ========
@@ -348,8 +348,8 @@ Ejercicio Práctico
  Referencias
  ===========
 
- - KISS Principle
- - YAGNI (You Aren't Gonna Need It)
+   - KISS Principle
+   - YAGNI (You Aren't Gonna Need It)
 
 **Paso 4 (2 minutos): Verificar**
 

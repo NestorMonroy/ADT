@@ -22,4 +22,5 @@ hemos encontrado los siguientes términos:
 * tácticas: como en `design tactics <https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6593>`_, 
   un término acuñado en 2003 por el Software Engineering Institute. Definen las tácticas como 
   "decisiones arquitectónicas que se pueden usar para lograr los requisitos deseados de atributos de calidad"
+
 * estrategias

@@ -2,6 +2,7 @@
 
 ====================================================
 1. Introducción y Objetivos (Introduction & Goals)
+
 ====================================================
 
 :Sección: 01 - Introducción y Objetivos
@@ -17,6 +18,7 @@ de software y el equipo de desarrollo deben considerar. Estos incluyen:
 
 - Objetivos de negocio subyacentes, características esenciales y requisitos funcionales
  para el sistema
+
 - **Atributos de calidad objetivo** para la arquitectura
 - Stakeholders relevantes y sus expectativas
 

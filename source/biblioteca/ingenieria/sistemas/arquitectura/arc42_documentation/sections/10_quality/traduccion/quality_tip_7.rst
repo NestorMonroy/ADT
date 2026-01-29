@@ -82,12 +82,15 @@ Ejemplos
    Respuesta: 
      - Marcar transacción como "pendiente"
      - Cambiar a proveedor de pagos secundario
+
    Notificación:
      - Usuario: "Procesando pago, puede tardar más de lo usual"
      - Admin: Email con detalles del proveedor caído
+
    Logging:
      - Timestamp, proveedor, código de error, ID de transacción
      - NO incluir datos de tarjeta de crédito
+
    Recuperación:
      - Monitoreo cada 60s del proveedor primario
      - Volver automáticamente cuando esté disponible

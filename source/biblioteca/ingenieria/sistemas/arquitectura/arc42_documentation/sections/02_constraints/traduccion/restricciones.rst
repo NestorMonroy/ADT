@@ -2,6 +2,7 @@
 
 ====================================
 2. Restricciones (Constraints)
+
 ====================================
 
 :Sección: 02 - Restricciones

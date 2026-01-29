@@ -14,6 +14,7 @@ Ejemplo de Estrategia de Solución: HTML Sanity Checker
 ----
 
 4. Estrategia de Solución
+
 ==========================
 
 1. Implementar HtmlSC principalmente en el lenguaje de programación Groovy y parcialmente en Java con dependencias externas mínimas.

@@ -12,6 +12,7 @@ Ejemplo de Contexto de Negocio: status.arc42.org
 ----
 
 3. Vista de Contexto de Negocio
+
 ================================
 
 La siguiente figura muestra las principales entradas y salidas del sitio web `status.arc42.org <https://status.arc42.org>`_.

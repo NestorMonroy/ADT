@@ -72,6 +72,7 @@ Cambios Detallados
 ==================
 
 1. Versión Actualizada
+
 ----------------------
 
 .. code-block:: rst
@@ -80,6 +81,7 @@ Cambios Detallados
  AHORA: :Versión: 1.5.0
 
 2. Registro de Cambios Actualizado
+
 -----------------------------------
 
 **Agregado:**
@@ -92,6 +94,7 @@ Cambios Detallados
  - Tabla de términos y ejemplos literal vs contextual
 
 3. Nuevo Paso 3.4: Traducción Arquitectónica
+
 ---------------------------------------------
 
 **Ubicación:** Entre Paso 3.3 y FASE 3.5
@@ -137,6 +140,7 @@ Cambios Detallados
 **Tabla completa incluye:** 13 términos arquitectónicos esenciales
 
 4. FASE 3.5 Actualizada
+
 -----------------------
 
 **Cambios:**

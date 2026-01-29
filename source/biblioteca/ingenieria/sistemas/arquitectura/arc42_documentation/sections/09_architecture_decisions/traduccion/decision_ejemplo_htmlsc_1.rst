@@ -10,6 +10,7 @@ Ejemplo de Decisión: HTML Sanity Checker
    :permalink: /examples/decision-htmlsc/
 
 9. Decisiones de Arquitectura
+
 ==============================
 
 9.1 Verificación de enlaces externos pospuesta

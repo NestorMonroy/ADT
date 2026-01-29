@@ -1182,14 +1182,17 @@ Paso 3.2: Rendición (Comando por Comando)
    - Notas
  * - ``\section{X}``
    - | ``X``
+
  | ``===``
    - Nivel 1
  * - ``\subsection{X}``
    - | ``X``
+
  | ``---``
    - Nivel 2
  * - ``\subsubsection{X}``
    - | ``X``
+
  | ``~~~``
    - Nivel 3
  * - ``\textbf{X}``
@@ -1762,10 +1765,10 @@ Criterios de Decisión
 
  * - Criterio
    - Nivel 2
- - Nivel 3
+   - Nivel 3
  * - Complejidad
    - Media
- - Alta
+   - Alta
 
 **[ERROR] NO AGREGAR cuando:**
 
@@ -2020,13 +2023,13 @@ Ejemplos de Enriquecimiento Apropiado
 
  * - Nivel
    - Cuándo usar
- - Cuándo evitar
+   - Cuándo evitar
  * - Nivel 2
    - Complejidad media
- - Sistema muy simple
+   - Sistema muy simple
  * - Nivel 3
    - Complejidad alta
- - Complejidad baja/media
+   - Complejidad baja/media
 
 Regla de Oro del Enriquecimiento
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -4603,10 +4606,12 @@ Referencias
  - Patrones comunes de literalidad a detectar
  - Proceso de ajustes prioritizados y documentados
  - Regla: "Si no revisaste literalidad, no terminaste FASE 3"
+
 **Actualizaciones v1.3.0:**
  - Estructura 1:1 explícita en Paso 3.1 (un archivo original -> un archivo traducido)
  - Checklist de revisión Signifié en Paso 3.3 (evitar traducciones literales)
  - Ejemplos de qué evitar (traducciones demasiado literales)
+
 **Actualizaciones v1.2.0:**
  - Herramientas Python de análisis automatizado
  - FASE 2 actualizada con método automatizado

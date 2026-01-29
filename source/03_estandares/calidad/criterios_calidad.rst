@@ -142,16 +142,16 @@ Criterio 2: Precisión Técnica (100%)
 
  * - **Aspecto**
    - **Correcto**
- - **Incorrecto**
+   - **Incorrecto**
  * - Mismo término siempre igual
    - "Stakeholder" en todo el doc
- - "Stakeholder" / "Interesado" mezclados
+   - "Stakeholder" / "Interesado" mezclados
  * - Términos técnicos conservados
    - "API", "Microservicio", "ATAM"
- - "IPA", "Micro-servicio", "MTAA"
+   - "IPA", "Micro-servicio", "MTAA"
  * - Traducciones normativas
    - "Building Block" -> "Bloque de Construcción"
- - "Building Block" -> "Módulo" / "Componente"
+   - "Building Block" -> "Módulo" / "Componente"
 
 2. **Conceptos Traducidos Correctamente**
 

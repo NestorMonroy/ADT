@@ -12,6 +12,7 @@ Ejemplo de Contexto de Negocio: HTML Sanity Checker
 ----
 
 3. Vista de Contexto
+
 ====================
 
 .. figure:: ../figuras/3-hsc-business-context.png

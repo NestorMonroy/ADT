@@ -35,6 +35,7 @@ El siguiente diagrama UML muestra esta estructura de **hardware**.
    Diagrama UML de infraestructura TPU
 
 1. Nodo MeasuringUnit
+
 ----------------------
 
 Este **nodo** consiste principalmente de un PCB base en el cual el MU-CPU-BOARD, el módulo receptor GPS y el multiplexor están montados.
@@ -55,6 +56,7 @@ Transforma la señal de la antena GPS en información de ubicación reenviada al
 * Protocolo binario SIRF o protocolo NMEA
 
 2. PC-Board
+
 -----------
 
 Es el procesador central del TPU, principalmente controlando todas las funciones de video del sistema y almacenando resultados relevantes.
@@ -64,6 +66,7 @@ Es el procesador central del TPU, principalmente controlando todas las funciones
 * Múltiples líneas RS232 con velocidades hasta 115Kbaud
 
 3. Video Cards
+
 --------------
 
 Este **nodo** contiene todo el **hardware** para procesamiento de video. Sus detalles son descritos en el siguiente capítulo.

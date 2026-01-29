@@ -65,6 +65,7 @@ Correcciones Aplicadas
 =======================
 
 1. Driving Forces -> Factores Determinantes
+
 -------------------------------------------
 
 **Término original:** ``driving forces``
@@ -110,6 +111,7 @@ arquitectura. "Factores determinantes" es el término arquitectónico correcto.
 ----
 
 2. Quality Goals -> Atributos de Calidad Objetivo
+
 -------------------------------------------------
 
 **Término original:** ``quality goals``
@@ -160,6 +162,7 @@ medibles. "Atributos de calidad objetivo" refleja mejor esta naturaleza.
 ----
 
 3. Stakeholder -> Preservado
+
 ----------------------------
 
 **Término original:** ``stakeholder``

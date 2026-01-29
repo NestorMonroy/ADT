@@ -13,9 +13,11 @@ Ejemplo de Decisión: Usar ADRs en formato Nygard
    Este ejemplo ha sido tomado del `sitio adr-tools de Nat Pryce <https://github.com/npryce/adr-tools/tree/master/doc/adr>`_
 
 9. Decisiones de Arquitectura
+
 ==============================
 
 001. Registrar decisiones de arquitectura
+
 ------------------------------------------
 
 **Fecha:** 2022-01-30 (¡proponemos usar siempre una marca de tiempo!)

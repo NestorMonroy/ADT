@@ -324,10 +324,10 @@ Tablas no se ven correctamente
 
  * - Columna 1
    - Columna 2
- - Columna 3
+   - Columna 3
  * - Dato A
    - Dato B
- - Dato C
+   - Dato C
 
 **Ventajas de list-table:**
 - Más fácil de escribir

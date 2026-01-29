@@ -20,19 +20,19 @@ Procesos de Requisitos
 
 * [ERROR] **Requisitos ambiguos o contradictorios**
 
- *Ejemplo: "El sistema debe ser rápido y seguro" sin métricas*
+ Ejemplo: "El sistema debe ser rápido y seguro" sin métricas
 
 * [ERROR] **Cambios de requisitos sin control**
 
- *Ejemplo: Scope creep sin evaluación de impacto*
+ Ejemplo: Scope creep sin evaluación de impacto
 
 * [ERROR] **Falta de priorización**
 
- *Ejemplo: Todo es "urgente y crítico"*
+ Ejemplo: Todo es "urgente y crítico"
 
 * [ERROR] **Stakeholders no identificados**
 
- *Ejemplo: Descubrir usuario clave en fase de testing*
+ Ejemplo: Descubrir usuario clave en fase de testing
 
 **Mitigaciones:**
 

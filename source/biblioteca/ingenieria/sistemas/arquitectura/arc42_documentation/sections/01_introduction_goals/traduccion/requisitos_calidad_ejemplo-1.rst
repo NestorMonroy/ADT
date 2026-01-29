@@ -36,6 +36,7 @@ Ejemplo de Requisitos de Calidad: HTML Sanity Checker
      - Corrección
      - Cada error semántico potencial es encontrado y reportado. En caso de 
        duda [#duda]_, reportar y dejar que el usuario decida.
+
    * - 1
      - Seguridad
      - El contenido de los archivos a verificar *nunca* es alterado.
@@ -43,10 +44,12 @@ Ejemplo de Requisitos de Calidad: HTML Sanity Checker
      - Flexibilidad
      - Múltiples algoritmos de verificación, formatos de informe y clientes. 
        Al menos Gradle y línea de comandos deben ser soportados.
+
    * - 2
      - Corrección
      - La corrección de cada verificador es probada automáticamente para 
        casos positivos Y negativos.
+
    * - 3
      - Rendimiento
      - Verificación de archivo html de 100kB realizada en menos de 10 

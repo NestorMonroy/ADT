@@ -28,10 +28,12 @@ El diagrama de arriba fue renderizado por PlantUML con el siguiente código:
    partition Checker {
      (*)  -> "check input"
        -->If "verbose?" then
+
      }
    
      partition Verbalizer {
         -> [Yes] "turn on\n verbosity"
+
      }
    
      partition Runner 
@@ -41,6 +43,7 @@ El diagrama de arriba fue renderizado por PlantUML con el siguiente código:
       else
         ->  [no] "run\n command"
         -> "finalize"
+
       Endif
         ->(*)
    

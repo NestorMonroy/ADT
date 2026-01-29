@@ -23,6 +23,7 @@ Arquitectura Documental: Biblioteca de Traducción Técnica IACT v2.0.0
 ----
 
 1. Propósito
+
 ============
 
 Este documento establece la arquitectura completa de la **Biblioteca de 
@@ -40,6 +41,7 @@ IACT v2.0.0.
 ----
 
 2. Alcance
+
 ==========
 
 La arquitectura define:
@@ -55,6 +57,7 @@ La arquitectura define:
 ----
 
 3. Conformidad con Estándares
+
 ==============================
 
 3.1. Cumplimiento NOM_001 v2.0.0
@@ -86,6 +89,7 @@ La arquitectura define:
 ----
 
 4. Estructura de Carpetas
+
 ==========================
 
 4.1. Vista General
@@ -146,6 +150,7 @@ La arquitectura define:
 ----
 
 5. Definición de Prefijos
+
 ==========================
 
 5.1. Prefijos de Procedimientos (30 prefijos)
@@ -294,6 +299,7 @@ La arquitectura define:
 ----
 
 6. Sección 1: Fundamentos
+
 ==========================
 
 6.1. Estructura de ``fundamentos/``
@@ -385,6 +391,7 @@ La arquitectura define:
 ----
 
 7. Sección 2: Procedimientos
+
 =============================
 
 7.1. Estructura de ``procedimientos/``
@@ -433,6 +440,7 @@ La arquitectura define:
 ----
 
 8. Sección 3: Estándares
+
 ========================
 
 8.1. Estructura de ``estandares/``
@@ -456,6 +464,7 @@ La arquitectura define:
 ----
 
 9. Sección 4: Reglas Operativas
+
 ================================
 
 9.1. Estructura de ``reglas_operativas/``
@@ -491,6 +500,7 @@ La arquitectura define:
 ----
 
 10. Sección 5: Biblioteca (NUEVA v2.0.0)
+
 =========================================
 
 10.1. Estructura de ``biblioteca/``
@@ -700,6 +710,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 ----
 
 11. Catálogos de Biblioteca
+
 ============================
 
 11.1. CAT_001: Índice Alfabético
@@ -756,6 +767,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 ----
 
 12. Mapeo de Contenido Existente
+
 =================================
 
 12.1. Documentos de Sesión Previa → v2.0.0
@@ -799,6 +811,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 ----
 
 13. Base en Estándares ISO
+
 ===========================
 
 13.1. Fundamentos Teóricos
@@ -843,6 +856,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 ----
 
 14. Versionado Semántico
+
 =========================
 
 14.1. Reglas de Versionado
@@ -898,6 +912,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 ----
 
 15. Ventajas de la Arquitectura v2.0.0
+
 =======================================
 
 15.1. Ventajas Técnicas
@@ -932,6 +947,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 ----
 
 16. Próximos Pasos
+
 ==================
 
 16.1. Implementación Inmediata
@@ -964,6 +980,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 ----
 
 17. Referencias
+
 ===============
 
 17.1. Estándares IACT
@@ -991,6 +1008,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 ----
 
 18. Apéndices
+
 =============
 
 18.1. Ejemplo Completo: Modern Full-Stack Development

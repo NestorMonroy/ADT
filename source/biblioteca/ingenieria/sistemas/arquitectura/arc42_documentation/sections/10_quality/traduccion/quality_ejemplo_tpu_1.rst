@@ -15,6 +15,7 @@ Este ejemplo muestra **requisitos de calidad** completos para TrafficPursuitUnit
 ----
 
 10. Requisitos de Calidad
+
 ==========================
 
 10.1 Quality Tree
@@ -37,7 +38,7 @@ Quality Tree Completo
  * - **Usability (Usabilidad)**
    - Ease of Use (3)
    - Facilidad de uso por el policía, especialmente en el caso de uso de perseguir otro coche
- -
+   -
  * -
    - Ease of Learning
    - Las funciones estándar deben ser tan fáciles e intuitivas de usar como sea posible sin necesidad de instrucción previa prolongada
@@ -45,19 +46,19 @@ Quality Tree Completo
  * - **Performance (Rendimiento)**
    - Accuracy (1)
    - Las mediciones y cálculos deben ser correctos y precisos dentro del rango de desviación especificado
- -
+   -
  * -
    - Comprehensiveness
    - Los algoritmos usados deben ser tan legalmente herméticos como sea posible y comprensibles
- -
+   -
  * -
    - Precision & Accuracy
    - Si es posible, las inserciones de video deben hacerse con la granularidad de un frame de video
- -
+   -
  * -
    - Robustness (2)
    - El sistema debe trabajar de manera confiable bajo todas las condiciones de entorno y operación especificadas
- -
+   -
  * - **Operational & Environmental**
    - Temperature Range
    - El rango de temperatura en el cual se asegura el funcionamiento correcto del dispositivo debe estar entre -25 grados y +85 grados
@@ -65,11 +66,11 @@ Quality Tree Completo
  * - **Maintainability & Support**
    - Maintenance & Repair
    - Debe ser posible reemplazar componentes fuera de la caja de medición sin afectar la medición correcta dentro de la caja de medición
- -
+   -
  * - **Security (Seguridad)**
    - Integrity
    - La verificabilidad de la autenticidad de los archivos de video debe estar asegurada con un código de verificación
- -
+   -
  * - **Cultural and Regional**
    - Multilanguage
    - Los textos de la interfaz de usuario deben poder convertirse mediante un archivo de traducción a diferentes idiomas con conjunto de caracteres ASCII
@@ -77,11 +78,11 @@ Quality Tree Completo
  * -
    - Local Time Adaptability
    - La diferencia de tiempo con Greenwich debe ser ajustable con una granularidad de 1 minuto
- -
+   -
  * -
    - Local Legal Rules Adaptability
    - El procedimiento de medición debe ser adaptable a la legislación regional
- -
+   -
  * - **Legal (Legal)**
    - Legal Compliance
    - Implementación y aplicación correcta de todos los requisitos legales en la evaluación para los diferentes tipos de persecuciones

@@ -33,8 +33,10 @@ En lugar de escribir explicaciones largas, considere:
        def create_user(user_type, data):
            if user_type == "admin":
                return AdminUser(data)
+
            elif user_type == "regular":
                return RegularUser(data)
+
            else:
                raise ValueError(f"Tipo de usuario desconocido: {user_type}")
 

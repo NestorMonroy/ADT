@@ -2,6 +2,7 @@
 
 ================================
 8. Conceptos Transversales
+
 ================================
 
 .. meta::
@@ -65,6 +66,7 @@ Algunos ejemplos de la vida real:
 
 * Dentro de un sistema, se debe establecer un formato común para los mensajes de log, combinado con una convención común para elegir el destino de log apropiado.
   Estas decisiones, junto con ejemplos de implementación, podrían describirse como "concepto de logging".
+
 * Un sistema tiene numerosos servicios backend, que se comunican entre sí basándose en llamadas a procedimientos remotos o REST basado en https.
 
   * Los servicios llamantes ("consumidores") siempre necesitan autenticarse ante el servicio llamado ("proveedor").

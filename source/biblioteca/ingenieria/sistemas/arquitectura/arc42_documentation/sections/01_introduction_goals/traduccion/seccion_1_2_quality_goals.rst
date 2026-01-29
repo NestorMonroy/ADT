@@ -81,18 +81,21 @@ Plantilla
 
  * - Prioridad
    - Atributo de Calidad
- - Escenario / Descripción
+   - Escenario / Descripción
  * - 1
    - [Ej: Performance]
- - [Escenario concreto: El sistema debe procesar 1000 transacciones
+   - [Escenario concreto: El sistema debe procesar 1000 transacciones
+
  por segundo con un tiempo de respuesta < 2 segundos]
  * - 2
    - [Ej: Disponibilidad]
- - [Escenario concreto: El sistema debe tener 99.9% uptime,
+   - [Escenario concreto: El sistema debe tener 99.9% uptime,
+
  permitiendo máximo 8.76 horas de inactividad al año]
  * - 3
    - [Ej: Mantenibilidad]
- - [Escenario concreto: Un desarrollador experimentado puede
+   - [Escenario concreto: Un desarrollador experimentado puede
+
  implementar cambios funcionales típicos en < 4 horas]
 
 ----

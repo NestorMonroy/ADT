@@ -512,7 +512,7 @@ Métricas de Progreso
  * - **TOTAL**
    - **56+**
    - **~100h**
- -
+   -
    - **0% completo**
 
 Recomendaciones

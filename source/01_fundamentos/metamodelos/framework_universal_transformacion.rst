@@ -35,6 +35,7 @@ El Framework en 5 Componentes
 ==============================
 
 1. Entrada (Source)
+
 -------------------
 
 **Definición:**
@@ -69,6 +70,7 @@ El Framework en 5 Componentes
    - Código antes de refactorizar
 
 2. Salida (Target)
+
 ------------------
 
 **Definición:**
@@ -103,6 +105,7 @@ El Framework en 5 Componentes
    - Código después de refactorizar
 
 3. Método por Defecto
+
 ---------------------
 
 **Definición:**
@@ -147,6 +150,7 @@ c) **Preferencia:**
    - Comportamiento
 
 4. Objetivos (Goals)
+
 --------------------
 
 **Definición:**
@@ -184,6 +188,7 @@ c) **Preferencia:**
    - Omitir ``\vspace{}`` (no semántico en RST)
 
 5. Tácticas (Tactics)
+
 ---------------------
 
 **Definición:**

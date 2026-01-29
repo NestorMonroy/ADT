@@ -29,6 +29,7 @@ Los Tres Pilares del Método
 ============================
 
 1. Segmentación
+
 ---------------
 
 **Definición:**
@@ -100,6 +101,7 @@ Los Tres Pilares del Método
 5. etc.
 
 2. Rendición
+
 ------------
 
 **Definición:**
@@ -150,6 +152,7 @@ Los Tres Pilares del Método
  NO copiamos texto literal NI reescribimos completamente.
 
 3. Preferencia
+
 --------------
 
 **Definición:**

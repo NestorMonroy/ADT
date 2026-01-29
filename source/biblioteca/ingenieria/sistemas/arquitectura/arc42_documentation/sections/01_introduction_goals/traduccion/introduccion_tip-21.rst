@@ -41,6 +41,7 @@ las expectativas o artefactos requeridos.
    - Vista general de despliegue, detalles de instalación y operaciones, firewalls
  * - Departamento de QA
    - Descripción de las interfaces para pruebas de carga, posibles puntos de
+
  medición para pruebas de rendimiento, concepto técnico para seguridad y
  confiabilidad
 

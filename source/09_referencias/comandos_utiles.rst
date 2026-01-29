@@ -378,6 +378,7 @@ Scripts Útiles
    #!/bin/bash
    for file in source/*.rst; do
        echo "$(wc -l < $file) $file"
+
    done | sort -rn
 
 **Compilador con notificación:**
@@ -482,6 +483,7 @@ Pre-commit Hooks
    if [ $? -ne 0 ]; then
        echo "Build falló. Commit abortado."
        exit 1
+
    fi
    
    echo "Build exitoso."

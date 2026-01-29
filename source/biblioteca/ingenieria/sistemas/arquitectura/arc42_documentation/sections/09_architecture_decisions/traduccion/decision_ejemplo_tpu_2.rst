@@ -10,6 +10,7 @@ Ejemplo de Decisión: TrafficPursuitUnit
    :permalink: /examples/decision-tpu-1/
 
 9. Decisiones de Arquitectura
+
 ==============================
 
 Cálculo eficiente

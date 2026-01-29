@@ -12,6 +12,7 @@ Ejemplo de Contexto de Negocio: TrafficPursuitUnit
 ----
 
 3. Vista de Contexto de Negocio
+
 ================================
 
 La siguiente figura muestra las principales entradas y salidas de la unidad de persecución de tráfico - tanto los usuarios humanos como el entorno técnico (sensores, cámaras, ...).

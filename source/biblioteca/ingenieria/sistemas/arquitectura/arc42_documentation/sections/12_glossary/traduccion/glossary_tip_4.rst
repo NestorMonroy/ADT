@@ -112,17 +112,17 @@ Casos de Uso para Glosario Multi-idioma
    - Purchase transaction with items, shipping, payment
    - Pedido
    - Bestellung
- -
+   -
  * - Customer
    - Registered user who makes purchases
    - Cliente
    - Kunde
- -
+   -
  * - Checkout
    - Process to finalize purchase
    - Pago
    - Kasse
- -
+   -
 
 **Opción 2: Múltiples Definiciones (para matices)**
 

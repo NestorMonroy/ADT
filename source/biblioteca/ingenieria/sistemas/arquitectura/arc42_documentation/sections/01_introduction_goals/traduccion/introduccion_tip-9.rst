@@ -38,11 +38,14 @@ Dada la siguiente descripción de actividad, puede crear una versión gráfica:
    
      if (private customer?) then (yes)
        :add\\nVAT;
+
      else (no)
        :request\\nVAT_ID;
+
      endif
    
      :create invoice;
+
    stop
    
    @enduml

@@ -21,6 +21,7 @@ Ejemplo de Vista General: Unidad de Persecución de Tráfico
 ----
 
 1. Introducción
+
 ===============
 
 Este documento describe la Unidad de Persecución de Tráfico, en inglés Traffic 
@@ -47,16 +48,20 @@ Se han establecido los siguientes objetivos para este sistema:
    * - 1
      - El sistema debe ser mejorado con características que sean adecuadas para 
        mantener y fortalecer la posición como el actual líder del mercado
+
    * - 2
      - El sistema debe implementar resolución HD para clips de video y 
        almacenamiento de los clips en disco duro
+
    * - 3
      - Todas las partes del sistema que estén sujetas a aprobación legal deben 
        estar contenidas en una unidad (llamada MeasuringUnit), de modo que el 
        reemplazo de otras partes del sistema no requiera reaprobación del dispositivo
+
    * - 4
      - La MeasuringUnit debe ser capaz de funcionar de forma autónoma y 
        comercializarse como una variante de bajo costo de TPU sin prueba de video
+
    * - 5
      - El rango de temperatura operable debe ampliarse a un rango de al menos 
        -25 a 85 grados Celsius
@@ -90,6 +95,7 @@ Se han establecido los siguientes objetivos para este sistema:
      - Realizar una persecución de un coche
      - Seguir un coche conduciendo a velocidad demasiado alta para crear 
        documentación probatoria
+
    * - F3
      - Mostrar lista de todas las persecuciones grabadas
      - 
@@ -97,6 +103,7 @@ Se han establecido los siguientes objetivos para este sistema:
      - Reproducir grabación de una persecución
      - Reproducir la documentación en video de un caso de persecución, 
        por ejemplo, para mostrársela al conductor del coche a cargo
+
    * - F5
      - Imprimir protocolo de una persecución
      - 

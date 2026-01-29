@@ -66,14 +66,17 @@ Plantilla
         - [Juan Pérez]
         - [Visión general de decisiones arquitectónicas,
           justificación de trade-offs principales]
+
       * - [Ej: Arquitecto Empresarial]
         - [María García]
         - [Alineación con estándares corporativos,
           compatibilidad con arquitectura de referencia]
+
       * - [Ej: Equipo de Desarrollo]
         - [Equipo Backend]
         - [Guías de implementación detalladas,
           decisiones técnicas documentadas]
+
       * - [Ej: Operaciones]
         - [Equipo DevOps]
         - [Vista de despliegue, requisitos de infraestructura,
@@ -189,4 +192,5 @@ Ver:
    - Método: Peshitta + Terminología arquitectónica (Workflow v1.5.0)
    - Paso 3.4 aplicado: "stakeholder" preservado sin traducir
      (término técnico internacional estándar en arquitectura de software)
+
    - Fecha: 2026-01-27

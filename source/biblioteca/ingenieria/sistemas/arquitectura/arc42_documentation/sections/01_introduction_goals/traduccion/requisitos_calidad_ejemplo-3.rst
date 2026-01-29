@@ -34,10 +34,12 @@ Ejemplo de Requisitos de Calidad: Unidad de Persecución de Tráfico
      - Precisión
      - Todas las mediciones y cálculos deben ser correctos y precisos dentro 
        del rango de desviación especificado.
+
    * - 2
      - Robustez
      - El sistema debe funcionar de manera confiable bajo todas las 
        condiciones ambientales y operativas especificadas.
+
    * - 3
      - Facilidad de uso
      - Facilidad de uso por parte del policía, especialmente en el caso de 

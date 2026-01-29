@@ -52,6 +52,7 @@ encontrar en la tabla.
    * - Manejo de Importación
      - Import-from-Mandator, Import-von-PrintShop, Import-from-Scanner, 
        Import-from-CallCenter, Import-from-CAMS, ...
+
    * - Configuración
      - Configure-Person, Configure-PrintJob, Configure-ScanOCR, 
        Configure-Reports, ...

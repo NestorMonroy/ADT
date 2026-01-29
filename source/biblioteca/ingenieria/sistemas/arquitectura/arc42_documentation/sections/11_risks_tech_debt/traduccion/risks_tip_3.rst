@@ -113,15 +113,15 @@ El **Architecture Tradeoff Analysis Method (ATAM)** es un método formal para es
 
 * **Trade-off**: Decisión que beneficia un atributo pero perjudica otro
 
- *Ejemplo: Microservicios -> mejor escalabilidad, peor latencia*
+ Ejemplo: Microservicios -> mejor escalabilidad, peor latencia
 
 * **Sensitivity**: Parámetro crítico que afecta significativamente un atributo
 
- *Ejemplo: Tamaño de pool de conexiones DB -> afecta throughput*
+ Ejemplo: Tamaño de pool de conexiones DB -> afecta throughput
 
 * **Risk**: Decisión que amenaza un requisito de calidad
 
- *Ejemplo: Sin replicación -> amenaza disponibilidad*
+ Ejemplo: Sin replicación -> amenaza disponibilidad
 
 ----
 

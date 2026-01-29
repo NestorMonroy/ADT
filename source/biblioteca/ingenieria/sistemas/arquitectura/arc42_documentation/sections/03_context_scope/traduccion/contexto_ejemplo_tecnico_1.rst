@@ -12,6 +12,7 @@ Ejemplo de Contexto Técnico: HTML Sanity Checker
 ----
 
 3. Vista de Contexto
+
 ====================
 
 3.2 Contexto Técnico

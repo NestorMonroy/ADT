@@ -11,6 +11,7 @@ Ejemplo de Vista de Despliegue: HTML Sanity Checker
 ----
 
 7. Vista de Despliegue
+
 ======================
 
 .. figure:: ../figuras/examples/htmlsc/7_1-deployment.png

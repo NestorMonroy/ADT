@@ -21,6 +21,7 @@ Ejemplo de Vista General: HTML Sanity Checker
 ----
 
 1. Introducción
+
 ===============
 
 HtmlSanityCheck (HtmlSC) verifica errores semánticos en HTML, como enlaces rotos 

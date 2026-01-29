@@ -192,6 +192,7 @@ FASE 3: Traducción Inicial
  * Referencias cruzadas entre tips
 
  **Paso 3.4: Traducción Arquitectónica**
+
 --------------------------------------------
 
 [OK] **APLICADO desde el inicio**

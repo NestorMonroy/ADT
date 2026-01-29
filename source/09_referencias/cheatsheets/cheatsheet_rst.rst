@@ -232,10 +232,10 @@ Tabla List-Table (Recomendado)
 
  * - Columna 1
    - Columna 2
- - Columna 3
+   - Columna 3
  * - Dato A
    - Dato B
- - Dato C
+   - Dato C
 
 **Ventaja:** Más fácil de mantener
 
