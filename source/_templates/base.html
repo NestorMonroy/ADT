@@ -1,0 +1,16 @@
+{#
+  Template base personalizado para ADT
+  Extiende el template base de Furo.
+
+  Objetivo:
+  - Asegurar carga de custom.css (tokens + reglas WCAG)
+  - Mantener compatibilidad con Furo (no romper bloques)
+#}
+
+{% extends "!base.html" %}
+
+{# Inyecta CSS adicional si por cualquier motivo no se cargó vía html_css_files #}
+{% block extrahead %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ pathto('_static/custom.css', 1) }}" />
+{% endblock %}

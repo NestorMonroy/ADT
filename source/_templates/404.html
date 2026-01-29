@@ -1,0 +1,102 @@
+{# ============================================
+   404.html — ADT / ADT42 (Sphinx + Furo)
+   - Usado por sphinx-notfound-page
+   - Extiende page.html del theme para heredar layout completo
+   - Evita romper wrappers internos del theme
+   ============================================ #}
+
+{% extends "!page.html" %}
+
+{# Título del documento (pestaña del navegador) #}
+{% block htmltitle %}
+  <title>404 — Página no encontrada — {{ docstitle|e }}</title>
+{% endblock %}
+
+{# Contenido principal #}
+{% block content %}
+  <article class="adt-404" role="main" aria-labelledby="adt-404-title">
+    <header class="adt-404__header">
+      <p class="adt-404__kicker">ADT / ADT42</p>
+      <h1 id="adt-404-title" class="adt-404__title">404 — Página no encontrada</h1>
+      <p class="adt-404__lead">
+        El recurso que buscas no existe, fue movido o el enlace está desactualizado.
+      </p>
+    </header>
+
+    <section class="adt-404__actions" aria-label="Acciones de recuperación">
+      <div class="adt-404__grid">
+        <div class="adt-404__card" role="region" aria-label="Ir al inicio">
+          <h2 class="adt-404__cardTitle">Volver al inicio</h2>
+          <p class="adt-404__cardText">
+            Regresa a la portada y navega desde el índice principal.
+          </p>
+          <p class="adt-404__cardCta">
+            <a class="reference internal adt-404__primaryLink" href="{{ pathto(master_doc) }}">
+              Ir al inicio
+            </a>
+          </p>
+        </div>
+
+        <div class="adt-404__card" role="region" aria-label="Buscar en la documentación">
+          <h2 class="adt-404__cardTitle">Buscar</h2>
+          <p class="adt-404__cardText">
+            Usa el buscador para localizar la sección correcta.
+          </p>
+
+          <form class="adt-404__search"
+                method="get"
+                action="{{ pathto('search') }}"
+                role="search"
+                aria-label="Búsqueda del sitio">
+            <label for="adt-404-search" class="visually-hidden">Buscar en la documentación</label>
+            <input id="adt-404-search"
+                   class="adt-404__searchInput"
+                   type="search"
+                   name="q"
+                   placeholder="Buscar…"
+                   aria-label="Buscar"
+                   autocomplete="off"
+                   spellcheck="false"
+                   inputmode="search" />
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+            <button class="adt-404__searchButton" type="submit">Buscar</button>
+          </form>
+
+          <p class="adt-404__hint">
+            Tip: prueba con el nombre del artefacto, por ejemplo <code>RST_ACC_001</code> o <code>WCAG</code>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="adt-404__links" aria-label="Rutas sugeridas">
+      <h2 class="adt-404__sectionTitle">Rutas sugeridas</h2>
+      <ul class="adt-404__list">
+        <li><a class="reference internal" href="{{ pathto(master_doc) }}">Inicio</a></li>
+        <li><a class="reference internal" href="{{ pathto('genindex') }}">Índice alfabético</a></li>
+        <li><a class="reference internal" href="{{ pathto('search') }}">Página de búsqueda</a></li>
+      </ul>
+    </section>
+
+    <section class="adt-404__details" aria-label="Información técnica">
+      <details class="adt-404__detailsBox">
+        <summary class="adt-404__summary">Detalles técnicos</summary>
+        <div class="adt-404__detailsBody">
+          <p>
+            Si llegaste aquí desde un enlace interno, puede existir un cambio de ruta o un artefacto renombrado.
+          </p>
+          <p class="adt-404__meta">
+            <strong>Ruta solicitada:</strong>
+            <code>{{ pagename|e }}</code>
+          </p>
+        </div>
+      </details>
+    </section>
+  </article>
+{% endblock %}
+
+{# Footer: conservar el del theme y tu footer adicional (si existe) #}
+{% block footer %}
+  {{ super() }}
+{% endblock %}

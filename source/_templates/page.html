@@ -1,0 +1,38 @@
+{#
+  Template de página personalizado para ADT / IACT
+  Extiende el template de página de Furo.
+
+  Nota:
+  - No sobrescribimos el bloque content para no perder wrappers internos de Furo.
+  - Solo añadimos un footer auditable con año automático.
+#}
+
+{% extends "!page.html" %}
+
+{# Footer personalizado al final - sobrescribe el footer de Furo #}
+{% block footer %}
+  <footer>
+    <div class="bottom-of-page">
+      <div class="left-details"></div>
+      <div class="right-details">
+        <div class="adt-custom-footer iact-custom-footer">
+          Copyright © <span id="adt-copyright-year"></span>, Equipo ADT
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function setYear() {
+        var el = document.getElementById('adt-copyright-year');
+        if (el) el.textContent = String(new Date().getFullYear());
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setYear);
+      } else {
+        setYear();
+      }
+    })();
+  </script>
+{% endblock %}

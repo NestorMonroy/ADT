@@ -1,0 +1,31 @@
+{# 
+  Template de búsqueda personalizado para ADT / ADT42
+  - Compatible con Sphinx + Furo
+  - Accesible (label SR-only)
+#}
+
+<form class="sidebar-search-container"
+      method="get"
+      action="{{ pathto('search') }}"
+      role="search"
+      aria-label="Búsqueda del sitio">
+
+  <label for="adt-search-input" class="visually-hidden">
+    Buscar en la documentación
+  </label>
+
+  <input id="adt-search-input"
+         class="sidebar-search"
+         type="search"
+         name="q"
+         placeholder="Buscar en ADT Docs"
+         aria-label="Buscar"
+         autocomplete="off"
+         spellcheck="false"
+         inputmode="search" />
+
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+
+<div id="searchbox" role="region" aria-label="Resultados de búsqueda"></div>
