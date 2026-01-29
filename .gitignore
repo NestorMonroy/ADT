@@ -113,3 +113,7 @@ desktop.ini
 
 /tools/_tmp/**
 tools/_tmp
+
+# Backup files with timestamp (e.g., archivo.rst.backup_20260129_143432)
+*.backup_[0-9]*
+**/*.backup_[0-9]*
