@@ -314,12 +314,17 @@ Idioma y Localización
    docs_maestros/REGLAS_ESTRUCTURA_PROYECTO
    docs_maestros/ARQUITECTURA_DOCUMENTAL_TRADUCCION
    docs_maestros/ARQUITECTURA_TRADUCCION_IACT
+   docs_maestros/ESTRUCTURA_DE_BIBLIOTECA_-_Versión_Correcta
+   docs_maestros/GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL
    docs_maestros/METODO_TRADUCCION_PESHITTA_ZACHARIAS
-   docs_maestros/PROMPT_MAESTRO_SPHINX_TRADUCCION
-   docs_maestros/ESTRUCTURA_DE_BIBLIOTECA
    docs_maestros/PLAN_FINAL_REORGANIZACION
    docs_maestros/PLAN_INCREMENTAL_CON_ARCHIVADO
    docs_maestros/PLAN_CONTENIDO
+   docs_maestros/PROMPT_MAESTRO_SPHINX_TRADUCCION
+   docs_maestros/PROPUESTA_REORGANIZACION
+   docs_maestros/PROPUESTA_REORGANIZACION_CORRECTA
+   docs_maestros/README
+   docs_maestros/RESUMEN_GUIA_CLASIFICACION
 
 Índices y Búsqueda
 ==================
