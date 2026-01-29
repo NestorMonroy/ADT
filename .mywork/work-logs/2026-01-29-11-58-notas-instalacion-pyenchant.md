@@ -1,7 +1,7 @@
-# 2026-01-29 - Notas de instalacion PyEnchant
+# 2026-01-29-11-58 - Notas de instalacion PyEnchant
 
-Fecha: 2026-01-29 11:58:54
-Timestamp: 2026-01-29 11:58:54
+Fecha: 2026-01-29 11:58
+Timestamp: 2026-01-29 11:58
 Autor: AI Assistant
 Proyecto: ADT Documentation
 Version: 1.7.1
@@ -32,6 +32,24 @@ troubleshooting y manejo de diccionarios.
 Se recopilaron las indicaciones oficiales de instalacion y requisitos
 para PyEnchant, incluyendo dependencias del sistema, diccionarios y
 verificacion de providers.
+
+### Paso 2: Instalacion y verificacion en Ubuntu 24.04
+Se instalaron los paquetes necesarios y se valido la deteccion de
+providers y diccionarios en el entorno actual.
+
+```bash
+apt-get update
+apt-get install -y libenchant-2-2 python3-enchant hunspell-en-us
+python3 - <<'PY'
+import enchant
+broker = enchant.Broker()
+print(broker.describe())
+print(sorted(broker.list_languages())[:5])
+PY
+```
+
+Resultado: `enchant` y `python3-enchant` quedaron instalados, con
+providers Aspell/Hunspell disponibles y lenguajes `en` detectados.
 
 ## Notas de Instalacion (Referencia)
 
@@ -104,18 +122,18 @@ python -c 'import enchant'
 ## Archivos Afectados
 
 ### Creados
-- `.mywork/work-logs/2026-01-29-11-58-54-notas-instalacion-pyenchant.md`
+- `.mywork/work-logs/2026-01-29-11-58-notas-instalacion-pyenchant.md`
   - Log con referencia de instalacion y troubleshooting.
 
 ## Resultados
 
 ### Validacion
-- [ ] Build exitoso (pendiente de instalar `enchant`)
+- [x] Libreria `enchant` instalada y verificada en Ubuntu 24.04.
 
 ## Proximos Pasos
 
-1. Aplicar la guia segun el SO objetivo.
-2. Reintentar builds de Sphinx tras instalar `enchant` y diccionarios.
+1. Reintentar builds de Sphinx con `sphinxcontrib.spelling`.
+2. Instalar diccionarios adicionales si se requieren otros idiomas.
 
 ---
 
