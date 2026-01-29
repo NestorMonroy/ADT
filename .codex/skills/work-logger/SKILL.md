@@ -16,7 +16,7 @@ description: "Sistema de logging estructurado de trabajo. Usar cuando se complet
 
 ## Ubicacion
 
-`.mywork/work-logs/YYYY-MM-DD-titulo.md`
+`.mywork/work-logs/YYYY-MM-DD-HH-MM-titulo.md`
 
 ## Proceso
 
@@ -38,14 +38,14 @@ NO documentar:
 ### 2. Generar Nombre
 
 ```bash
-DATE=$(date "+%F") # YYYY-MM-DD
+DATE=$(date "+%F-%H-%M") # YYYY-MM-DD-HH-MM
 TITULO="breve-descripcion-kebab-case" # max 50 chars
 ARCHIVO=".mywork/work-logs/${DATE}-${TITULO}.md"
 ```
 
 Ejemplos:
-- 2026-01-28-traducir-arc42-quality-requirements.md
-- 2026-01-28-resolver-problema-build-sphinx.md
+- 2026-01-28-09-15-traducir-arc42-quality-requirements.md
+- 2026-01-28-14-30-resolver-problema-build-sphinx.md
 
 ### 3. Usar Template
 
@@ -80,7 +80,7 @@ LENGUAJE:
 ```bash
 mkdir -p .mywork/work-logs
 
-cat > .mywork/work-logs/YYYY-MM-DD-titulo.md <<'EOF'
+cat > .mywork/work-logs/YYYY-MM-DD-HH-MM-titulo.md <<'EOF'
 [contenido del log]
 EOF
 ```
@@ -88,14 +88,14 @@ EOF
 ### 6. Commit
 
 ```bash
-git add .mywork/work-logs/YYYY-MM-DD-titulo.md
+git add .mywork/work-logs/YYYY-MM-DD-HH-MM-titulo.md
 git commit -m "docs(work-log): documentar [trabajo realizado]"
 ```
 
 ## Template Basico
 
 ```markdown
-# YYYY-MM-DD - Titulo del Trabajo
+# YYYY-MM-DD-HH-MM - Titulo del Trabajo
 
 Fecha: YYYY-MM-DD HH:MM
 Autor: [Nombre]
