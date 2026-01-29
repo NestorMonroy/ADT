@@ -24,25 +24,25 @@ Análisis Estático de Código
 
  * - **Métrica**
    - **Qué Indica**
- - **Umbral de Riesgo**
+   - **Umbral de Riesgo**
  * - **Lines of Code (LOC)**
    - Tamaño del codebase
- - >100k LOC sin modularización
+   - >100k LOC sin modularización
  * - **Cyclomatic Complexity**
    - Complejidad de funciones
- - >10 por función
+   - >10 por función
  * - **Coupling**
    - Dependencias entre módulos
- - >5 dependencias directas
+   - >5 dependencias directas
  * - **Cohesion**
    - Relacionamiento interno
- - Cohesión baja (<0.5)
+   - Cohesión baja (<0.5)
  * - **Code Duplication**
    - Código duplicado
- - >5% duplicación
+   - >5% duplicación
  * - **Comment Density**
    - Ratio comentarios/código
- - <10% o >30%
+   - <10% o >30%
 
 **1. Complejidad Ciclomática Alta**
 
@@ -89,25 +89,25 @@ Herramientas de Análisis Estático
 
  * - **Lenguaje**
    - **Herramientas**
- - **Qué Detectan**
+   - **Qué Detectan**
  * - **Java**
    - SonarQube, PMD, Checkstyle
- - Bugs, code smells, security
+   - Bugs, code smells, security
  * - **Python**
    - Pylint, Flake8, Bandit
- - Style, complexity, security
+   - Style, complexity, security
  * - **JavaScript**
    - ESLint, SonarJS
- - Errors, code quality
+   - Errors, code quality
  * - **C#**
    - ReSharper, FxCop
- - Code quality, performance
+   - Code quality, performance
  * - **Go**
    - golangci-lint, staticcheck
- - Bugs, performance
+   - Bugs, performance
  * - **Multi-language**
    - SonarQube, CodeClimate
- - Security, maintainability
+   - Security, maintainability
 
 **Categorías de Issues:**
 
@@ -287,28 +287,28 @@ Código Legacy como Riesgo
 
  * - **Métrica**
    - **Target**
- - **Warning**
- - **Critical**
+   - **Warning**
+   - **Critical**
  * - Test Coverage
    - >80%
- - 70-80%
- - <70%
+   - 70-80%
+   - <70%
  * - Cyclomatic Complexity
    - <5
- - 5-10
- - >10
+   - 5-10
+   - >10
  * - Code Duplication
    - <3%
- - 3-5%
- - >5%
+   - 3-5%
+   - >5%
  * - Security Issues
    - 0
- - Low severity
- - Medium/High
+   - Low severity
+   - Medium/High
  * - Tech Debt Ratio
    - <5%
- - 5-10%
- - >10%
+   - 5-10%
+   - >10%
 
 ----
 

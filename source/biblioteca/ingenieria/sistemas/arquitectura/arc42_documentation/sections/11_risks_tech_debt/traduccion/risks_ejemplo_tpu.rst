@@ -51,16 +51,16 @@ Dependencia de Proveedores
 
  * - **Aspecto**
    - **Riesgo**
- - **Impacto en Negocio**
+   - **Impacto en Negocio**
  * - **Diagnóstico**
    - No podemos debuggear hardware de terceros
- - Tiempo de resolución impredecible
+   - Tiempo de resolución impredecible
  * - **Soporte**
    - Dependencia del proveedor
- - SLAs no garantizables
+   - SLAs no garantizables
  * - **Warranty**
    - No podemos ofrecer garantía completa
- - Pérdida de competitividad
+   - Pérdida de competitividad
 
 ----
 
@@ -100,22 +100,22 @@ Ciertamente, existían **discos duros especiales reforzados** adecuados para con
 
  * - **Factor de Estrés**
    - **Consecuencia Potencial**
- - **Mitigación Posible**
+   - **Mitigación Posible**
  * - **Vibraciones intensas**
    - Errores de lectura/escritura
- - Montaje anti-vibración
+   - Montaje anti-vibración
  * - **Aceleración brusca**
    - Head crash (daño físico)
- - HDDs diseñados para entorno móvil
+   - HDDs diseñados para entorno móvil
  * - **Temperatura extrema**
    - Fallo térmico
- - Sistema de cooling activo
+   - Sistema de cooling activo
  * - **Escritura alta velocidad**
    - Fragmentación, wear
- - RAID 1 para redundancia
+   - RAID 1 para redundancia
  * - **Torsión del chasis**
    - Desalineación mecánica
- - Carcasa rígida independiente
+   - Carcasa rígida independiente
 
 **Limitaciones del Testing:**
 
@@ -158,9 +158,9 @@ Algunos de los cuales solo están disponibles en **código binario**, imponen un
  * - **Riesgos**
    - [WARNING] Kernel bugs pueden afectar estabilidad
  * -
- - [WARNING] Driver compatibility issues
+   - [WARNING] Driver compatibility issues
  * -
- - [WARNING] Security patches requieren actualización cuidadosa
+   - [WARNING] Security patches requieren actualización cuidadosa
 
 **2. Drivers de Hardware en Binario**
 
@@ -204,39 +204,39 @@ Algunos de los cuales solo están disponibles en **código binario**, imponen un
 
  * - **ID**
    - **Riesgo**
- - **Categoría**
- - **Severidad**
- - **Mitigación**
+   - **Categoría**
+   - **Severidad**
+   - **Mitigación**
  * - HW-001
    - Fallo HDD bajo vibración
- - Hardware
- - Alta
- - Montaje anti-vibración + RAID
+   - Hardware
+   - Alta
+   - Montaje anti-vibración + RAID
  * - HW-002
    - Componentes fuera de rango térmico
- - Hardware
- - Alta
- - Cooling activo + testing climático
+   - Hardware
+   - Alta
+   - Cooling activo + testing climático
  * - HW-003
    - Dependencia de proveedores
- - Organizacional
- - 🟡 Media
- - Múltiples proveedores si posible
+   - Organizacional
+   - 🟡 Media
+   - Múltiples proveedores si posible
  * - SW-001
    - Drivers binarios no debuggeables
- - Software
- - Alta
- - SLA con proveedor + drivers backup
+   - Software
+   - Alta
+   - SLA con proveedor + drivers backup
  * - SW-002
    - Complejidad Linux kernel
- - Software
- - 🟡 Media
- - Expertise interno + comunidad
+   - Software
+   - 🟡 Media
+   - Expertise interno + comunidad
  * - BIZ-001
    - No podemos ofrecer warranty
- - Negocio
- - Alta
- - Warranty limitada + disclaimer
+   - Negocio
+   - Alta
+   - Warranty limitada + disclaimer
 
 ----
 

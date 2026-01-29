@@ -48,19 +48,19 @@ Objetivo 1: Domesticación
 
  * - LaTeX (Fuente)
    - RST (Domesticado)
- - Táctica
+   - Táctica
  * - ``\begin{enumerate}``
    - ``1. 2. 3.``
- - Sustitución
+   - Sustitución
  * - ``\textbf{}``
    - ``**``
- - Sustitución
+   - Sustitución
  * - ``\ref{sec:intro}``
    - ``:ref:`intro```
- - Sustitución
+   - Sustitución
  * - ``\begin{verbatim}``
    - ``.. code-block::``
- - Sustitución
+   - Sustitución
 
 **Tácticas comunes:**
  - Sustitución (cambiar a equivalente RST)
@@ -89,19 +89,19 @@ Objetivo 2: Claridad
 
  * - LaTeX (Vago)
    - RST (Claro)
- - Táctica
+   - Táctica
  * - "Ver antes"
    - "Ver :ref:`seccion-anterior`"
- - Especificación
+   - Especificación
  * - "[1]"
    - "Smith (2020) :cite:`smith2020`"
- - Especificación
+   - Especificación
  * - "Este concepto..."
    - ".. note:: Este concepto es fundamental..."
- - Adición
+   - Adición
  * - "API"
    - "API (Application Programming Interface)"
- - Amplificación
+   - Amplificación
 
 **Tácticas comunes:**
  - Adición (agregar ``.. note::``, ``.. important::``)
@@ -135,24 +135,24 @@ Objetivo 3: Consistencia
 
  * - Problema Original
    - Variante 1
- - Variante 2
- - Solución
+   - Variante 2
+   - Solución
  * - Énfasis inconsistente
    - ``\textbf{}``
- - ``\emph{}`` (mismo uso)
- - Unificar a ``**``
+   - ``\emph{}`` (mismo uso)
+   - Unificar a ``**``
  * - Terminología
    - "base de datos"
- - "BD"
- - Usar "base de datos" + ``BD`` primera vez
+   - "BD"
+   - Usar "base de datos" + ``BD`` primera vez
  * - Referencias
    - "sección anterior"
- - "antes"
- - Usar ``:ref:`` explícito siempre
+   - "antes"
+   - Usar ``:ref:`` explícito siempre
  * - Estilo de listas
    - itemize en cap. 1
- - enumerate cap. 2 (mismo contenido)
- - Unificar criterio
+   - enumerate cap. 2 (mismo contenido)
+   - Unificar criterio
 
 **Tácticas comunes:**
  - Normalización (estandarizar)
@@ -185,19 +185,19 @@ Objetivo 4: Simplificación
 
  * - LaTeX (Complejo)
    - RST (Simple)
- - Táctica
+   - Táctica
  * - ``\noindent``
    - [omitir]
- - Omisión
+   - Omisión
  * - ``\vspace{1cm}``
    - [omitir]
- - Omisión
+   - Omisión
  * - ``\begin{center}\textbf{X}\end{center}``
    - ``**X**``
- - Condensación
+   - Condensación
  * - Explicación redundante (3 párrafos)
    - Explicación concisa (1 párrafo)
- - Condensación
+   - Condensación
 
 **Tácticas comunes:**
  - Omisión (eliminar no-semántico)
@@ -295,16 +295,16 @@ Táctica 3: Sustitución (Substitution)
 
  * - LaTeX
    - RST
- - Objetivo
+   - Objetivo
  * - ``\textbf{x}``
    - ``**x**``
- - Domesticación
+   - Domesticación
  * - ``\ref{label}``
    - ``:ref:`label```
- - Domesticación
+   - Domesticación
  * - ``\cite{key}``
    - ``:cite:`key```
- - Domesticación
+   - Domesticación
 
 **Cuándo usar:**
  Casi siempre - es la táctica MÁS COMÚN.
@@ -651,94 +651,94 @@ Tabla de Compatibilidad
 
  * - Táctica
    - Domesticación
- - Claridad
- - Consistencia
- - Simplificación
- - Uso Principal
+   - Claridad
+   - Consistencia
+   - Simplificación
+   - Uso Principal
  * - Adición
    - [WARNING]
- - [OK][OK][OK]
- - [WARNING]
- - [ERROR]
- - Claridad
+   - [OK][OK][OK]
+   - [WARNING]
+   - [ERROR]
+   - Claridad
  * - Omisión
    - [WARNING]
- - [ERROR]
- - [WARNING]
- - [OK][OK][OK]
- - Simplificación
+   - [ERROR]
+   - [WARNING]
+   - [OK][OK][OK]
+   - Simplificación
  * - Sustitución
    - [OK][OK][OK]
- - [OK]
- - [OK]
- - [WARNING]
- - Domesticación
+   - [OK]
+   - [OK]
+   - [WARNING]
+   - Domesticación
  * - Cambio orden
    - [OK]
- - [OK]
- - [WARNING]
- - [WARNING]
- - Domesticación
+   - [OK]
+   - [WARNING]
+   - [WARNING]
+   - Domesticación
  * - Especificación
    - [WARNING]
- - [OK][OK][OK]
- - [WARNING]
- - [ERROR]
- - Claridad
+   - [OK][OK][OK]
+   - [WARNING]
+   - [ERROR]
+   - Claridad
  * - Generalización
    - [WARNING]
- - [ERROR]
- - [OK][OK][OK]
- - [OK]
- - Consistencia
+   - [ERROR]
+   - [OK][OK][OK]
+   - [OK]
+   - Consistencia
  * - Explicación
    - [WARNING]
- - [OK][OK][OK]
- - [WARNING]
- - [ERROR]
- - Claridad
+   - [OK][OK][OK]
+   - [WARNING]
+   - [ERROR]
+   - Claridad
  * - Normalización
    - [OK]
- - [WARNING]
- - [OK][OK][OK]
- - [WARNING]
- - Consistencia
+   - [WARNING]
+   - [OK][OK][OK]
+   - [WARNING]
+   - Consistencia
  * - Modulación
    - [OK][OK]
- - [WARNING]
- - [WARNING]
- - [WARNING]
- - Domesticación
+   - [WARNING]
+   - [WARNING]
+   - [WARNING]
+   - Domesticación
  * - Compensación
    - [WARNING]
- - [OK]
- - [WARNING]
- - [ERROR]
- - Claridad
+   - [OK]
+   - [WARNING]
+   - [ERROR]
+   - Claridad
  * - Amplificación
    - [WARNING]
- - [OK][OK]
- - [WARNING]
- - [ERROR]
- - Claridad
+   - [OK][OK]
+   - [WARNING]
+   - [ERROR]
+   - Claridad
  * - Condensación
    - [WARNING]
- - [WARNING]
- - [WARNING]
- - [OK][OK][OK]
- - Simplificación
+   - [WARNING]
+   - [WARNING]
+   - [OK][OK][OK]
+   - Simplificación
  * - Literalización
    - [ERROR]
- - [OK]
- - [WARNING]
- - [ERROR]
- - Código/Ecuaciones
+   - [OK]
+   - [WARNING]
+   - [ERROR]
+   - Código/Ecuaciones
  * - Adapt. Cultural
    - [OK][OK]
- - [OK]
- - [WARNING]
- - [WARNING]
- - Domesticación
+   - [OK]
+   - [WARNING]
+   - [WARNING]
+   - Domesticación
 
 **Leyenda:**
 - [OK][OK][OK] = Uso principal y frecuente

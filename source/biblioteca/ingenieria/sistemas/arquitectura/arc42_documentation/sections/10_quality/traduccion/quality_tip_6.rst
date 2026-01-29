@@ -49,22 +49,22 @@ Ejemplos
 
  * - Tipo de Cambio
    - Descripción
- - Métrica Típica
+   - Métrica Típica
  * - **Funcional**
    - Nuevas features, reglas modificadas
- - Persona-horas/días
+   - Persona-horas/días
  * - **Calidad**
    - Performance mejorado, disponibilidad
- - Esfuerzo de adaptación
+   - Esfuerzo de adaptación
  * - **Tecnológico**
    - Nueva DB, framework, librería
- - Tiempo sin downtime
+   - Tiempo sin downtime
  * - **Regulatorio**
    - Cumplimiento legal, GDPR, etc.
- - Deadline compliance
+   - Deadline compliance
  * - **Integración**
    - Nuevos servicios externos
- - Tiempo de integración
+   - Tiempo de integración
 
 **Estructura Recomendada para Change Scenarios:**
 

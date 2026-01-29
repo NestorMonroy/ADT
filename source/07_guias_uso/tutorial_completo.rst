@@ -28,19 +28,19 @@ Este tutorial te guía **paso a paso** a través de todo el sistema ADT.
 
  * - **Aspecto**
    - **Guía Rápida**
- - **Tutorial Completo**
+   - **Tutorial Completo**
  * - Tiempo
    - 15 minutos
- - 2-3 horas
+   - 2-3 horas
  * - Profundidad
    - Conceptos básicos
- - Todos los detalles
+   - Todos los detalles
  * - Práctica
    - 1 ejercicio simple
- - Proyecto completo
+   - Proyecto completo
  * - Resultado
    - Listo para empezar
- - Dominio completo
+   - Dominio completo
 
 **Estructura del tutorial:**
 

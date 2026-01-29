@@ -45,22 +45,22 @@ Lista de **riesgos** y/o **deudas técnicas**, probablemente incluyendo medidas 
 
  * - **ID**
    - **Descripción**
- - **Impacto**
- - **Probabilidad**
- - **Prioridad**
- - **Mitigación**
+   - **Impacto**
+   - **Probabilidad**
+   - **Prioridad**
+   - **Mitigación**
  * - R-001
    - *< Descripción del riesgo >*
- - *< Alto/Medio/Bajo >*
- - *< Alta/Media/Baja >*
- - *< Crítica/Alta/Media >*
- - *< Medidas propuestas >*
+   - *< Alto/Medio/Bajo >*
+   - *< Alta/Media/Baja >*
+   - *< Crítica/Alta/Media >*
+   - *< Medidas propuestas >*
  * - TD-001
    - *< Descripción de deuda técnica >*
- - *< Esfuerzo de mantenimiento >*
- - *< Urgencia de resolver >*
- - *< Prioridad >*
- - *< Plan de reducción >*
+   - *< Esfuerzo de mantenimiento >*
+   - *< Urgencia de resolver >*
+   - *< Prioridad >*
+   - *< Plan de reducción >*
 
 **Plantilla Minimalista:**
 

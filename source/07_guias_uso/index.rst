@@ -266,24 +266,24 @@ Métricas de Aprendizaje
 
  * - **Ruta**
    - **Tiempo**
- - **Resultado**
- - **Tasa Éxito**
+   - **Resultado**
+   - **Tasa Éxito**
  * - Solo guía rápida
    - 15 min
- - Inicio básico
- - 60%
+   - Inicio básico
+   - 60%
  * - Guía + Tutorial
    - 3 horas
- - Dominio sólido
- - 85%
+   - Dominio sólido
+   - 85%
  * - Guía + Tutorial + Casos
    - 6 horas
- - Dominio completo
- - 95%
+   - Dominio completo
+   - 95%
  * - Full inmersión (semana)
    - 1 semana
- - Experto
- - 100%
+   - Experto
+   - 100%
 
 **Recomendación:**
 
@@ -305,16 +305,16 @@ Estado de Desarrollo
 
  * - **Guía**
    - **Estado**
- - **Tamaño**
+   - **Tamaño**
  * - **guia_rapida.rst**
    - [OK] Completado
- - 14.8 KB
+   - 14.8 KB
  * - **tutorial_completo.rst**
    - [OK] Completado
- - 26.4 KB
+   - 26.4 KB
  * - **casos_uso/**
    - [RUNNING] Planificado
- - Pendiente
+   - Pendiente
 
 ----
 

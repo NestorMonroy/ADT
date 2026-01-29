@@ -68,12 +68,12 @@ Forma
 
  * - **Término (EN)**
    - **Definición**
- - **Español**
- - **Alemán**
+   - **Español**
+   - **Alemán**
  * - *<Term-1>*
    - *<definition-1>*
- - *<término-1>*
- - *<Begriff-1>*
+   - *<término-1>*
+   - *<Begriff-1>*
 
 ----
 

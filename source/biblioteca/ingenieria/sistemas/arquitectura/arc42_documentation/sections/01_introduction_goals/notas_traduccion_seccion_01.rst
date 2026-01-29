@@ -24,24 +24,24 @@ Estado Actual
 
  * - Lote
    - Archivos
- - Estado
- - Observaciones
+   - Estado
+   - Observaciones
  * - Lote 1
    - 5
- - [OK] Completado
- - 4 ejemplos + 1 tip
+   - [OK] Completado
+   - 4 ejemplos + 1 tip
  * - Lote 2
    - 9
- - [RUNNING] Pendiente
- - Tips 2-10
+   - [RUNNING] Pendiente
+   - Tips 2-10
  * - Lote 3
    - 9
- - [RUNNING] Pendiente
- - Tips 11-19
+   - [RUNNING] Pendiente
+   - Tips 11-19
  * - Lote 4
    - 5
- - [RUNNING] Pendiente
- - Tips 20-24
+   - [RUNNING] Pendiente
+   - Tips 20-24
 
 **Total progreso:** 5/28 archivos (17.9%)
 
@@ -145,16 +145,16 @@ se tradujeron contexto arquitectónico, NO literalmente:
 
  * - Término Original
    - [ERROR] Literal (Incorrecto)
- - [OK] Contextual (Correcto)
+   - [OK] Contextual (Correcto)
  * - driving forces
    - fuerzas impulsoras
- - **factores determinantes**
+   - **factores determinantes**
  * - quality goals
    - objetivos de calidad
- - **atributos de calidad objetivo**
+   - **atributos de calidad objetivo**
  * - stakeholder
    - interesado, parte interesada
- - **stakeholder** (preservar)
+   - **stakeholder** (preservar)
 
 **Justificación:**
 
@@ -180,28 +180,28 @@ Los atributos de calidad se tradujeron con referencia al original:
 
  * - Inglés (Original)
    - Español (Traducido)
- - ISO 25010
+   - ISO 25010
  * - Correctness
    - Corrección
- - [OK]
+   - [OK]
  * - Safety
    - Seguridad
- - [OK]
+   - [OK]
  * - Robustness
    - Robustez
- - [OK]
+   - [OK]
  * - Flexibility
    - Flexibilidad
- - [OK]
+   - [OK]
  * - Performance
    - Rendimiento
- - [OK]
+   - [OK]
  * - Ease of use
    - Facilidad de uso
- - [OK]
+   - [OK]
  * - Accuracy
    - Precisión
- - [OK]
+   - [OK]
 
 Estructura y Formato
 --------------------

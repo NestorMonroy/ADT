@@ -505,12 +505,12 @@ Historial de Versiones
 
  * - Versión
    - Fecha
- - Autor
- - Cambios
+   - Autor
+   - Cambios
  * - 1.0.0
    - 2026-01-28
- - Sistema ADT
- - Versión inicial de guía de organización
+   - Sistema ADT
+   - Versión inicial de guía de organización
 
 ----
 

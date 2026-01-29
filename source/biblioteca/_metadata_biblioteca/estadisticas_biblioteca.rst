@@ -45,28 +45,28 @@ Libros por Estado
 
  * - Estado
    - Cantidad
- - % del Total
- - Códigos
+   - % del Total
+   - Códigos
  * - **Completados**
    - 0
- - 0%
- - --
+   - 0%
+   - --
  * - **En Proceso**
    - 0
- - 0%
- - --
+   - 0%
+   - --
  * - **En Preparación**
    - 1
- - 100%
- - ING.SIS.ARC.001
+   - 100%
+   - ING.SIS.ARC.001
  * - **Planificados**
    - 8
- - --
- - Varios
+   - --
+   - Varios
  * - **TOTAL ACTIVOS**
    - **1**
- - **100%**
- - --
+   - **100%**
+   - --
 
 Libros por Categoría
 --------------------
@@ -77,24 +77,24 @@ Libros por Categoría
 
  * - Categoría
    - Cantidad
- - % del Total
- - Progreso Promedio
+   - % del Total
+   - Progreso Promedio
  * - **Informática (INF)**
    - 0
- - 0%
- - N/A
+   - 0%
+   - N/A
  * - **Ingeniería (ING)**
    - 1
- - 100%
- - 0%
+   - 100%
+   - 0%
  * - **Ciencias (CIE)**
    - 0
- - 0%
- - N/A
+   - 0%
+   - N/A
  * - **TOTAL**
    - **1**
- - **100%**
- - **0%**
+   - **100%**
+   - **0%**
 
 Libros por Subcategoría
 ------------------------
@@ -105,25 +105,25 @@ Libros por Subcategoría
 
  * - Subcategoría
    - Cantidad
- - Libros
+   - Libros
  * - **Sistemas (ING.SIS)**
    - 1
- - arc42 Documentation
+   - arc42 Documentation
  * - Arquitectura (ING.ARQ)
    - 0
- - --
+   - --
  * - Programación (INF.PRG)
    - 0
- - --
+   - --
  * - Inteligencia Artificial (INF.IAR)
    - 0
- - --
+   - --
  * - DevOps (INF.DVC)
    - 0
- - --
+   - --
  * - Otros
    - 0
- - --
+   - --
 
 Libros por Especialidad
 ------------------------
@@ -134,25 +134,25 @@ Libros por Especialidad
 
  * - Especialidad
    - Cantidad
- - Libros
+   - Libros
  * - **arc42 (ING.SIS.ARC)**
    - 1
- - arc42 Documentation
+   - arc42 Documentation
  * - Full-Stack (INF.PRG.FST)
    - 0
- - (planificado)
+   - (planificado)
  * - Python (INF.PRG.PYT)
    - 0
- - (planificado)
+   - (planificado)
  * - Machine Learning (INF.IAR.MLF)
    - 0
- - (planificado)
+   - (planificado)
  * - Docker (INF.DVC.DOC)
    - 0
- - (planificado)
+   - (planificado)
  * - Otros
    - 0
- - --
+   - --
 
 ----
 
@@ -168,14 +168,14 @@ Progreso por Libro
 
  * - Código
    - Título
- - Progreso
- - Páginas
- - Estado
+   - Progreso
+   - Páginas
+   - Estado
  * - ING.SIS.ARC.001
    - arc42 Documentation
- - 0%
- - 0/~500
- - Preparación
+   - 0%
+   - 0/~500
+   - Preparación
 
 Progreso Acumulado
 ------------------
@@ -227,14 +227,14 @@ Glosarios
 
  * - Código
    - Libro
- - Términos
- - Único/Repetido
- - Estado
+   - Términos
+   - Único/Repetido
+   - Estado
  * - ING.SIS.ARC.001
    - arc42 Documentation
- - 0
- - --
- - Por iniciar
+   - 0
+   - --
+   - Por iniciar
 
 Términos Totales
 ----------------
@@ -288,14 +288,14 @@ Calidad por Libro
 
  * - Código
    - Libro
- - Revisiones
- - Errores
- - Calidad
+   - Revisiones
+   - Errores
+   - Calidad
  * - ING.SIS.ARC.001
    - arc42 Documentation
- - 0
- - 0
- - Pendiente
+   - 0
+   - 0
+   - Pendiente
 
 Tipo de Errores (Cuando Aplicable)
 -----------------------------------
@@ -322,14 +322,14 @@ Archivos y Tamaño
 
  * - Código
    - Libro
- - Archivos
- - Tamaño
- - Figuras
+   - Archivos
+   - Tamaño
+   - Figuras
  * - ING.SIS.ARC.001
    - arc42 Documentation
- - 474
- - 25 MB
- - ~100
+   - 474
+   - 25 MB
+   - ~100
 
 Totales
 -------
@@ -371,14 +371,14 @@ Tiempo de Traducción
 
  * - Código
    - Libro
- - Inicio
- - Estimado Fin
- - Días
+   - Inicio
+   - Estimado Fin
+   - Días
  * - ING.SIS.ARC.001
    - arc42 Documentation
- - 2026-01-27
- - TBD
- - TBD
+   - 2026-01-27
+   - TBD
+   - TBD
 
 Duración por Fase
 -----------------
@@ -604,10 +604,10 @@ Historial de Versiones
 
  * - Fecha
    - Versión
- - Cambios
+   - Cambios
  * - 2026-01-28
    - 1.0.0
- - Estadísticas iniciales - 1 libro en preparación
+   - Estadísticas iniciales - 1 libro en preparación
 
 ----
 

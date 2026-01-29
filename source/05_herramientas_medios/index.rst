@@ -74,19 +74,19 @@ Estado de Desarrollo
 
  * - **Subsección**
    - **Estado**
- - **Archivos**
+   - **Archivos**
  * - **equivalencias/**
    - [OK] Parcial (1/3)
- - latex_rst_equivalencias [OK]
+   - latex_rst_equivalencias [OK]
  * - **sphinx/**
    - [RUNNING] Planificado
- - Pendiente
+   - Pendiente
  * - **latex/**
    - [RUNNING] Planificado
- - Pendiente
+   - Pendiente
  * - **markdown/**
    - [RUNNING] Planificado
- - Pendiente
+   - Pendiente
 
 ----
 

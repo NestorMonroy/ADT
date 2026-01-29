@@ -233,24 +233,24 @@ Criterio 3: Enriquecimiento Apropiado
 
  * - **Tamaño Original**
    - **Enriquecimiento**
- - **Rango**
- - **Justificación**
+   - **Rango**
+   - **Justificación**
  * - < 20 líneas
    - +300% a +1000%
- - Alto
- - Tips breves requieren contexto y ejemplos
+   - Alto
+   - Tips breves requieren contexto y ejemplos
  * - 20-50 líneas
    - +100% a +300%
- - Medio-Alto
- - Secciones cortas necesitan expansión
+   - Medio-Alto
+   - Secciones cortas necesitan expansión
  * - 50-100 líneas
    - +80% a +150%
- - Medio
- - Balance entre fidelidad y claridad
+   - Medio
+   - Balance entre fidelidad y claridad
  * - > 100 líneas
    - +50% a +100%
- - Bajo-Medio
- - Secciones extensas ya completas
+   - Bajo-Medio
+   - Secciones extensas ya completas
 
 **Evidencia Empírica de arc42:**
 
@@ -548,28 +548,28 @@ Matriz de Evaluación de Calidad
 
  * - **Criterio**
    - **Peso**
- - **Umbral**
- - **Verificación**
+   - **Umbral**
+   - **Verificación**
  * - Completitud
    - 30%
- - 100%
- - Checklist contra original
+   - 100%
+   - Checklist contra original
  * - Precisión Técnica
    - 25%
- - 100%
- - Revisión terminológica
+   - 100%
+   - Revisión terminológica
  * - Enriquecimiento
    - 20%
- - Apropiado
- - Rango según tamaño
+   - Apropiado
+   - Rango según tamaño
  * - Formato/Compilación
    - 15%
- - 100%
- - make html exitoso
+   - 100%
+   - make html exitoso
  * - Verificación
    - 10%
- - 100%
- - Script + checklist
+   - 100%
+   - Script + checklist
 
 **Cálculo de Calidad Total:**
 

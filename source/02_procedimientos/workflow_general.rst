@@ -187,28 +187,28 @@ Tiempo Estimado
 
  * - Fase
    - Tiempo
- - Observaciones
+   - Observaciones
  * - Preparación
    - 15-30 min
- - Una vez por libro completo
+   - Una vez por libro completo
  * - Análisis
    - 5-10 min
- - Por capítulo
+   - Por capítulo
  * - Traducción Inicial
    - 20-40 min
- - Depende de complejidad del capítulo
+   - Depende de complejidad del capítulo
  * - Aplicación Tácticas
    - 10-20 min
- - Si es necesario
+   - Si es necesario
  * - Validación
    - 5-10 min
- - Por capítulo
+   - Por capítulo
  * - Revisión
    - 10-15 min
- - Por capítulo
+   - Por capítulo
  * - Publicación
    - 15-30 min
- - Al completar libro completo
+   - Al completar libro completo
 
 **Total por capítulo:** ~70-130 min (1-2 horas)
 
@@ -502,16 +502,16 @@ Paso 0.3: Verificar Fuentes de Verdad
 
  * - Tipo
    - Fuente de Verdad
- - Notas
+   - Notas
  * - Archivo principal
    - Plantilla arc42 (usuario proporciona)
- - Contiene plantillas X.1, X.2, etc.
+   - Contiene plantillas X.1, X.2, etc.
  * - Tips individuales
    - Archivos .md en ``/original/``
- - NO usar docs.arc42.org
+   - NO usar docs.arc42.org
  * - Ejemplos
    - Archivos .md en ``/original/``
- - NO usar docs.arc42.org
+   - NO usar docs.arc42.org
 
 **Sobre docs.arc42.org:**
 
@@ -1179,55 +1179,55 @@ Paso 3.2: Rendición (Comando por Comando)
 
  * - LaTeX
    - RST
- - Notas
+   - Notas
  * - ``\section{X}``
    - | ``X``
  | ``===``
- - Nivel 1
+   - Nivel 1
  * - ``\subsection{X}``
    - | ``X``
  | ``---``
- - Nivel 2
+   - Nivel 2
  * - ``\subsubsection{X}``
    - | ``X``
  | ``~~~``
- - Nivel 3
+   - Nivel 3
  * - ``\textbf{X}``
    - ``**X**``
- - Énfasis fuerte
+   - Énfasis fuerte
  * - ``\emph{X}``
    - ``*X*``
- - Énfasis moderado
+   - Énfasis moderado
  * - ``\texttt{X}``
    - ````X````
- - Código inline
+   - Código inline
  * - ``\begin{itemize}``
    - ``-``
- - Lista no numerada
+   - Lista no numerada
  * - ``\begin{enumerate}``
    - ``1. 2. 3.``
- - Lista numerada
+   - Lista numerada
  * - ``\ref{label}``
    - ``:ref:`label```
- - Referencia interna
+   - Referencia interna
  * - ``\cite{key}``
    - ``:cite:`key```
- - Citación
+   - Citación
  * - ``\label{x}``
    - ``.. _x:``
- - Etiqueta
+   - Etiqueta
  * - ``\begin{figure}``
    - ``.. figure::``
- - Figura
+   - Figura
  * - ``\begin{table}``
    - ``.. list-table::``
- - Tabla
+   - Tabla
  * - ``\begin{equation}``
    - ``.. math::``
- - Ecuación
+   - Ecuación
  * - ``\begin{verbatim}``
    - ``.. code-block::``
- - Código
+   - Código
 
 **Proceso:**
 
@@ -1459,43 +1459,43 @@ Tabla de Términos Arquitectónicos
 
  * - Inglés
    - [ERROR] Literal (INCORRECTO)
- - [OK] Contextual (CORRECTO)
+   - [OK] Contextual (CORRECTO)
  * - **driving forces**
    - fuerzas impulsoras
- - **factores determinantes**, impulsores
+   - **factores determinantes**, impulsores
  * - **quality goals**
    - objetivos de calidad
- - **atributos de calidad objetivo**
+   - **atributos de calidad objetivo**
  * - **stakeholder**
    - interesado, parte interesada
- - **stakeholder** (preservar en inglés)
+   - **stakeholder** (preservar en inglés)
  * - **building block**
    - bloque de construcción
- - **componente**, módulo arquitectónico
+   - **componente**, módulo arquitectónico
  * - **whitebox**
    - caja blanca
- - **vista interna**, descomposición
+   - **vista interna**, descomposición
  * - **blackbox**
    - caja negra
- - **vista externa**, interfaz
+   - **vista externa**, interfaz
  * - **crosscutting**
    - transversal
- - **aspectos transversales**, crosscutting
+   - **aspectos transversales**, crosscutting
  * - **deployment view**
    - vista de despliegue
- - **vista de infraestructura**
+   - **vista de infraestructura**
  * - **runtime view**
    - vista de tiempo de ejecución
- - **vista de comportamiento**
+   - **vista de comportamiento**
  * - **constraints**
    - restricciones
- - **limitaciones**, restricciones
+   - **limitaciones**, restricciones
  * - **scope**
    - alcance
- - **ámbito**, alcance
+   - **ámbito**, alcance
  * - **motivation**
    - motivación
- - **justificación**, razón de ser
+   - **justificación**, razón de ser
 
 Ejemplos Completos: Literal vs Contextual
 ------------------------------------------

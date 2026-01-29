@@ -51,22 +51,22 @@ Análisis de los Escenarios
 
  * - **Atributo Q42**
    - **Escenarios Relacionados**
- - **Prioridad**
+   - **Prioridad**
  * - **#testable**
    - 10.2.1, 10.2.2, 10.2.3
- - Alta
+   - Alta
  * - **#efficient**
    - 10.2.7
- - Alta
+   - Alta
  * - **#flexible**
    - 10.2.5
- - Media
+   - Media
  * - **#safe**
    - 10.2.6
- - Alta
+   - Alta
  * - **#reliable**
    - 10.2.4
- - Alta
+   - Alta
 
 **Características de los Escenarios:**
 

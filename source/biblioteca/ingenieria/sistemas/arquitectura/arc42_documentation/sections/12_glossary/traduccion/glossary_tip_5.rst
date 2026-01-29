@@ -45,43 +45,43 @@ Principio de Minimalismo
 
  * - **Término**
    - **¿Incluir?**
- - **Razón**
+   - **Razón**
  * - **REST API**
    - [ERROR] NO
- - Término técnico universal, conocido
+   - Término técnico universal, conocido
  * - **Microservicio**
    - [ERROR] NO (usualmente)
- - Concepto estándar
+   - Concepto estándar
  * - **Saga Pattern**
    - [WARNING] TAL VEZ
- - Si usas de manera no-estándar
+   - Si usas de manera no-estándar
  * - **Cliente Premium**
    - [OK] SÍ
- - Específico de tu dominio
+   - Específico de tu dominio
  * - **Workflow de Aprobación**
    - [OK] SÍ
- - Proceso particular de tu sistema
+   - Proceso particular de tu sistema
  * - **Java**
    - [ERROR] NO
- - Lenguaje conocido
+   - Lenguaje conocido
  * - **Python**
    - [ERROR] NO
- - Lenguaje conocido
+   - Lenguaje conocido
  * - **UML**
    - [ERROR] NO
- - Estándar conocido
+   - Estándar conocido
  * - **GDPR**
    - [WARNING] TAL VEZ
- - Si explicas cómo LO implementas
+   - Si explicas cómo LO implementas
  * - **SLA**
    - [WARNING] TAL VEZ
- - Solo si defines TUS SLAs específicos
+   - Solo si defines TUS SLAs específicos
  * - **Usuario**
    - [ERROR] NO
- - Demasiado genérico
+   - Demasiado genérico
  * - **Cliente VIP**
    - [OK] SÍ
- - Diferente de cliente regular
+   - Diferente de cliente regular
 
 ----
 
@@ -148,19 +148,19 @@ Principio de Minimalismo
 
  * - **Tamaño del Proyecto**
    - **# Términos**
- - **Comentario**
+   - **Comentario**
  * - **Pequeño** (1-5 personas)
    - 5-15
- - Solo conceptos core
+   - Solo conceptos core
  * - **Mediano** (5-20 personas)
    - 15-30
- - Balance entre completo y manejable
+   - Balance entre completo y manejable
  * - **Grande** (20-100 personas)
    - 30-50
- - Múltiples subdominios
+   - Múltiples subdominios
  * - **Enterprise** (100+ personas)
    - 40-80
- - Por bounded context, no global
+   - Por bounded context, no global
 
 .. warning::
  **Si tu glosario tiene >100 términos:**

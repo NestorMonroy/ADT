@@ -127,24 +127,24 @@ c) **Preferencia:**
 
  * - Dominio
    - Segmentación
- - Rendición
- - Preferencia
+   - Rendición
+   - Preferencia
  * - Peshitta
    - Frase
- - Palabra
- - Signifié
+   - Palabra
+   - Signifié
  * - ADT
    - Sección
- - Comando
- - Signifié
+   - Comando
+   - Signifié
  * - MDA
    - Paquete/Clase
- - Elemento
- - Semántica
+   - Elemento
+   - Semántica
  * - Compilación
    - Función
- - Instrucción
- - Comportamiento
+   - Instrucción
+   - Comportamiento
 
 4. Objetivos (Goals)
 --------------------
@@ -197,49 +197,49 @@ c) **Preferencia:**
 
  * - Táctica
    - Descripción
- - Ejemplo ADT
+   - Ejemplo ADT
  * - **Adición**
    - Agregar contenido
- - ``.. note::`` para claridad
+   - ``.. note::`` para claridad
  * - **Omisión**
    - Eliminar contenido
- - Omitir ``\noindent``
+   - Omitir ``\noindent``
  * - **Sustitución**
    - Cambiar elemento
- - ``\ref{}`` -> ``:ref:``
+   - ``\ref{}`` -> ``:ref:``
  * - **Cambio orden**
    - Reordenar
- - Mover figura cerca de ref
+   - Mover figura cerca de ref
  * - **Especificación**
    - Hacer más específico
- - "[1]" -> "Smith (2020)"
+   - "[1]" -> "Smith (2020)"
  * - **Generalización**
    - Hacer más general
- - Unificar variantes
+   - Unificar variantes
  * - **Explicación**
    - Expandir
- - Agregar contexto
+   - Agregar contexto
  * - **Normalización**
    - Estandarizar
- - Unificar nomenclatura
+   - Unificar nomenclatura
  * - **Transposición**
    - Cambiar categoría
- - Verbo -> Sustantivo
+   - Verbo -> Sustantivo
  * - **Modulación**
    - Cambiar perspectiva
- - Activa -> Pasiva
+   - Activa -> Pasiva
  * - **Compensación**
    - Recuperar pérdida
- - Info en nota al pie
+   - Info en nota al pie
  * - **Amplificación**
    - Expandir implícito
- - Hacer explícito
+   - Hacer explícito
  * - **Condensación**
    - Comprimir
- - Resumir verboso
+   - Resumir verboso
  * - **Literalización**
    - Preservar forma
- - Código fuente
+   - Código fuente
 
 ----
 
@@ -347,34 +347,34 @@ Tabla Maestra de Aplicabilidad
 
  * - Dominio
    - Framework
- - Método Defecto
- - Objetivos
- - Tácticas
+   - Método Defecto
+   - Objetivos
+   - Tácticas
  * - **Traducción**
    - [OK] 100%
- - [OK] 100%
- - [OK] 100%
- - [OK] 100%
+   - [OK] 100%
+   - [OK] 100%
+   - [OK] 100%
  * - **MDA/MDE**
    - [OK] 100%
- - [OK] 95%
- - [OK] 90%
- - [OK] 85%
+   - [OK] 95%
+   - [OK] 90%
+   - [OK] 85%
  * - **Compilación**
    - [OK] 100%
- - [OK] 95%
- - [OK] 70%
- - [OK] 60%
+   - [OK] 95%
+   - [OK] 70%
+   - [OK] 60%
  * - **Refactoring**
    - [OK] 100%
- - [OK] 90%
- - [OK] 85%
- - [OK] 80%
+   - [OK] 90%
+   - [OK] 85%
+   - [OK] 80%
  * - **Migración**
    - [OK] 100%
- - [OK] 95%
- - [OK] 90%
- - [OK] 85%
+   - [OK] 95%
+   - [OK] 90%
+   - [OK] 85%
 
 ----
 

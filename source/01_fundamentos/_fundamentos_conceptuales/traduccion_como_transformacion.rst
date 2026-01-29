@@ -37,25 +37,25 @@ Mapeo Conceptual
 
  * - Concepto
    - Translation Studies
- - MDA/MDE
+   - MDA/MDE
  * - **Entrada**
    - Texto fuente (source text)
- - Platform-Independent Model (PIM)
+   - Platform-Independent Model (PIM)
  * - **Salida**
    - Texto destino (target text)
- - Platform-Specific Model (PSM)
+   - Platform-Specific Model (PSM)
  * - **Proceso**
    - Técnica de traducción
- - Reglas de transformación
+   - Reglas de transformación
  * - **Unidad básica**
    - Palabra/Frase
- - Elemento de modelo
+   - Elemento de modelo
  * - **Preservación**
    - Significado semántico
- - Semántica del modelo
+   - Semántica del modelo
  * - **Adaptación**
    - Forma sintáctica
- - Sintaxis de plataforma
+   - Sintaxis de plataforma
 
 Aplicación a ADT
 ----------------
@@ -191,16 +191,16 @@ Inyectividad (One-to-One)
 
  * - Caso
    - Fuente
- - Destino
+   - Destino
  * - **Inyectivo**
    - ``\textbf{x}``
- - ``**x**``
+   - ``**x**``
  * - **No inyectivo**
    - ``\emph{x}`` (contexto A)
- - ``:term:`x```
+   - ``:term:`x```
  * - **No inyectivo**
    - ``\emph{x}`` (contexto B)
- - ``*x*``
+   - ``*x*``
 
 **Razón:** Contexto determina mapeo apropiado.
 

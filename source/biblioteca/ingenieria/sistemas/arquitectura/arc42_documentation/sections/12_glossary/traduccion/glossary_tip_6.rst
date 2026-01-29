@@ -45,25 +45,25 @@ Asignación de Responsabilidad
 
  * - **Metodología**
    - **Responsable Ideal**
- - **Razón**
+   - **Razón**
  * - **Scrum**
    - Product Owner
- - Owner del dominio de negocio, decide prioridades
+   - Owner del dominio de negocio, decide prioridades
  * - **Kanban**
    - Product Manager / Team Lead
- - Visión holística del sistema
+   - Visión holística del sistema
  * - **SAFe**
    - Product Manager (nivel team)
- - Define features y requisitos
+   - Define features y requisitos
  * - **Waterfall**
    - Project Manager
- - Gestiona documentación
+   - Gestiona documentación
  * - **Startup**
    - Tech Lead / CTO
- - Conoce negocio y tecnología
+   - Conoce negocio y tecnología
  * - **Open Source**
    - Maintainer Principal
- - Dueño del proyecto
+   - Dueño del proyecto
 
 ----
 
@@ -154,22 +154,22 @@ Asignación de Responsabilidad
 
  * - **Herramienta**
    - **Uso**
- - **Ventaja**
+   - **Ventaja**
  * - **Confluence**
    - Editar y colaborar
- - Notificaciones automáticas
+   - Notificaciones automáticas
  * - **Google Sheets**
    - Tracking multi-idioma
- - Fácil compartir
+   - Fácil compartir
  * - **Notion**
    - Glosario interactivo
- - Búsqueda rápida
+   - Búsqueda rápida
  * - **Wiki interna**
    - Documentación centralizada
- - Versionado Git
+   - Versionado Git
  * - **JIRA**
    - Crear tickets para definiciones
- - Integrado con workflow
+   - Integrado con workflow
 
 ----
 
@@ -245,44 +245,44 @@ Asignación de Responsabilidad
 
  * - **Actividad**
    - **PO**
- - **Arch**
- - **Dev**
- - **Stakeholders**
+   - **Arch**
+   - **Dev**
+   - **Stakeholders**
  * - Identificar nuevos términos
    - A
- - C
- - C
- - C
+   - C
+   - C
+   - C
  * - Escribir definición técnica
    - I
- - R
- - C
- - I
+   - R
+   - C
+   - I
  * - Escribir definición de negocio
    - R
- - C
- - I
- - C
+   - C
+   - I
+   - C
  * - Aprobar definición final
    - A
- - C
- - I
- - C
+   - C
+   - I
+   - C
  * - Publicar y comunicar
    - R
- - I
- - I
- - I
+   - I
+   - I
+   - I
  * - Mantener actualizado
    - A
- - C
- - C
- - I
+   - C
+   - C
+   - I
  * - Revisar periódicamente
    - R
- - C
- - I
- - C
+   - C
+   - I
+   - C
 
 **Leyenda:**
 - **R** = Responsible (ejecuta)

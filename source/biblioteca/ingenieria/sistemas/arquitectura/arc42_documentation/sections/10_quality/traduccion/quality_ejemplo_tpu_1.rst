@@ -32,60 +32,60 @@ Quality Tree Completo
 
  * - **Categoría de Calidad**
    - **Calidad**
- - **Descripción**
- - **Escenario**
+   - **Descripción**
+   - **Escenario**
  * - **Usability (Usabilidad)**
    - Ease of Use (3)
- - Facilidad de uso por el policía, especialmente en el caso de uso de perseguir otro coche
+   - Facilidad de uso por el policía, especialmente en el caso de uso de perseguir otro coche
  -
  * -
- - Ease of Learning
- - Las funciones estándar deben ser tan fáciles e intuitivas de usar como sea posible sin necesidad de instrucción previa prolongada
- - SC1
+   - Ease of Learning
+   - Las funciones estándar deben ser tan fáciles e intuitivas de usar como sea posible sin necesidad de instrucción previa prolongada
+   - SC1
  * - **Performance (Rendimiento)**
    - Accuracy (1)
- - Las mediciones y cálculos deben ser correctos y precisos dentro del rango de desviación especificado
+   - Las mediciones y cálculos deben ser correctos y precisos dentro del rango de desviación especificado
  -
  * -
- - Comprehensiveness
- - Los algoritmos usados deben ser tan legalmente herméticos como sea posible y comprensibles
+   - Comprehensiveness
+   - Los algoritmos usados deben ser tan legalmente herméticos como sea posible y comprensibles
  -
  * -
- - Precision & Accuracy
- - Si es posible, las inserciones de video deben hacerse con la granularidad de un frame de video
+   - Precision & Accuracy
+   - Si es posible, las inserciones de video deben hacerse con la granularidad de un frame de video
  -
  * -
- - Robustness (2)
- - El sistema debe trabajar de manera confiable bajo todas las condiciones de entorno y operación especificadas
+   - Robustness (2)
+   - El sistema debe trabajar de manera confiable bajo todas las condiciones de entorno y operación especificadas
  -
  * - **Operational & Environmental**
    - Temperature Range
- - El rango de temperatura en el cual se asegura el funcionamiento correcto del dispositivo debe estar entre -25 grados y +85 grados
- - SC3
+   - El rango de temperatura en el cual se asegura el funcionamiento correcto del dispositivo debe estar entre -25 grados y +85 grados
+   - SC3
  * - **Maintainability & Support**
    - Maintenance & Repair
- - Debe ser posible reemplazar componentes fuera de la caja de medición sin afectar la medición correcta dentro de la caja de medición
+   - Debe ser posible reemplazar componentes fuera de la caja de medición sin afectar la medición correcta dentro de la caja de medición
  -
  * - **Security (Seguridad)**
    - Integrity
- - La verificabilidad de la autenticidad de los archivos de video debe estar asegurada con un código de verificación
+   - La verificabilidad de la autenticidad de los archivos de video debe estar asegurada con un código de verificación
  -
  * - **Cultural and Regional**
    - Multilanguage
- - Los textos de la interfaz de usuario deben poder convertirse mediante un archivo de traducción a diferentes idiomas con conjunto de caracteres ASCII
- - SC4
+   - Los textos de la interfaz de usuario deben poder convertirse mediante un archivo de traducción a diferentes idiomas con conjunto de caracteres ASCII
+   - SC4
  * -
- - Local Time Adaptability
- - La diferencia de tiempo con Greenwich debe ser ajustable con una granularidad de 1 minuto
+   - Local Time Adaptability
+   - La diferencia de tiempo con Greenwich debe ser ajustable con una granularidad de 1 minuto
  -
  * -
- - Local Legal Rules Adaptability
- - El procedimiento de medición debe ser adaptable a la legislación regional
+   - Local Legal Rules Adaptability
+   - El procedimiento de medición debe ser adaptable a la legislación regional
  -
  * - **Legal (Legal)**
    - Legal Compliance
- - Implementación y aplicación correcta de todos los requisitos legales en la evaluación para los diferentes tipos de persecuciones
- - SC2
+   - Implementación y aplicación correcta de todos los requisitos legales en la evaluación para los diferentes tipos de persecuciones
+   - SC2
 
 ----
 
@@ -120,36 +120,36 @@ Análisis del Quality Tree
 
  * - **Categoría ISO 25010**
    - **# Requisitos**
- - **# Escenarios**
- - **Prioridad**
+   - **# Escenarios**
+   - **Prioridad**
  * - Usability
    - 2
- - 1 (SC1)
- - Alta (3)
+   - 1 (SC1)
+   - Alta (3)
  * - Performance
    - 4
- - 1 (SC2, SC3)
- - Crítica (1, 2)
+   - 1 (SC2, SC3)
+   - Crítica (1, 2)
  * - Operational
    - 1
- - 1 (SC3)
- - Alta
+   - 1 (SC3)
+   - Alta
  * - Maintainability
    - 1
- - 0
- - Media
+   - 0
+   - Media
  * - Security
    - 1
- - 0
- - Alta
+   - 0
+   - Alta
  * - Cultural/Regional
    - 3
- - 1 (SC4)
- - Media
+   - 1 (SC4)
+   - Media
  * - Legal
    - 1
- - 1 (SC2)
- - Crítica
+   - 1 (SC2)
+   - Crítica
 
 **Observaciones:**
 

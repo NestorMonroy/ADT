@@ -44,29 +44,29 @@ Matriz de Decisión Principal
 
  * - **Tamaño**
    - **Rango Óptimo**
- - **Promedio arc42**
- - **Tipo Contenido**
- - **Ejemplo Real**
+   - **Promedio arc42**
+   - **Tipo Contenido**
+   - **Ejemplo Real**
  * - **< 20 líneas**
    - +300% a +1000%
- - +771%
- - Tips breves
- - Tips 12-1 a 12-6
+   - +771%
+   - Tips breves
+   - Tips 12-1 a 12-6
  * - **20-50 líneas**
    - +100% a +300%
- - +273%
- - Secciones cortas
- - section-12.md
+   - +273%
+   - Secciones cortas
+   - section-12.md
  * - **50-100 líneas**
    - +80% a +150%
- - +95%
- - Secciones medianas
- - section-11.md
+   - +95%
+   - Secciones medianas
+   - section-11.md
  * - **> 100 líneas**
    - +50% a +100%
- - +80%
- - Secciones extensas
- - section-10.md
+   - +80%
+   - Secciones extensas
+   - section-10.md
 
 **Fórmula de Enriquecimiento:**
 
@@ -140,17 +140,17 @@ Caso 1: Tips Muy Breves (< 20 líneas)
 
  Therefore: Take care of your
  glossary. Seriously.
- - **Introducción** (contexto)
+   - **Introducción** (contexto)
 
  **Problema** (tabla comparativa):
- - Con glosario vs sin glosario
+   - Con glosario vs sin glosario
 
  **Regla "Mejor explícito que implícito"**
 
  **Ejemplos de problemas** (3 casos):
- - Término ambiguo
- - Múltiples sinónimos
- - Homónimos
+   - Término ambiguo
+   - Múltiples sinónimos
+   - Homónimos
 
  **Cómo tomarse en serio** (4 pasos):
  1. Crear glosario desde inicio
@@ -159,8 +159,8 @@ Caso 1: Tips Muy Breves (< 20 líneas)
  4. Educar al equipo
 
  **Métricas de éxito**:
- - % términos documentados
- - Tiempo resolver ambigüedades
+   - % términos documentados
+   - Tiempo resolver ambigüedades
 
  **Herramientas**: Confluence, Notion
 
@@ -265,36 +265,36 @@ Caso 2: Secciones Cortas (20-50 líneas)
 
  ## Further Information
  FAQ link
- - **Título y metadata**
+   - **Título y metadata**
 
  **Introducción** (tip contextual):
- - Por qué glosario es crítico
+   - Por qué glosario es crítico
 
  **Content** (expandido):
- - Términos de dominio
- - Términos técnicos
- - Traducciones multi-idioma
+   - Términos de dominio
+   - Términos técnicos
+   - Traducciones multi-idioma
 
  **Motivation** (expandido):
- - Entendimiento idéntico
- - Evitar sinónimos
- - Evitar homónimos
- - Cita de Tim Lister
+   - Entendimiento idéntico
+   - Evitar sinónimos
+   - Evitar homónimos
+   - Cita de Tim Lister
 
  **Form** (expandido):
- - Tabla simple (ejemplo básico)
- - Tabla multi-idioma (ejemplo)
- - Formato recomendado
+   - Tabla simple (ejemplo básico)
+   - Tabla multi-idioma (ejemplo)
+   - Formato recomendado
 
  **Plantilla** (incluida)
 
  **Relación con otras secciones**:
- - Sección 1, 3, 8
+   - Sección 1, 3, 8
 
  **Toctree** (6 tips + 1 ejemplo)
 
  **Referencias**:
- - FAQ arc42
+   - FAQ arc42
 
  **Nota**: Mejores prácticas
 
@@ -372,18 +372,18 @@ Caso 3: Secciones Medianas (50-100 líneas)
    - **Traducido (variable por archivo)**
  * - Contenido ya estructurado:
 
- - Introducción
- - Content
- - Motivation
- - Form
- - Subsecciones 11.1, 11.2
- - Ejemplos
- - Referencias
- - Enriquecimiento por archivo:
+   - Introducción
+   - Content
+   - Motivation
+   - Form
+   - Subsecciones 11.1, 11.2
+   - Ejemplos
+   - Referencias
+   - Enriquecimiento por archivo:
 
- - Principal: +353%
- - Tips: +427% a +1009%
- - Promedio: +616%
+   - Principal: +353%
+   - Tips: +427% a +1009%
+   - Promedio: +616%
 
  Nota: Tips muy breves explican
  el promedio alto
@@ -448,31 +448,31 @@ Caso 4: Secciones Extensas (> 100 líneas)
    - **Traducido (222 líneas)**
  * - Contenido extenso:
 
- - Introducción (16 líneas)
- - Content
- - Motivation
- - Further Information
- - 10.1 completo (23 líneas)
+   - Introducción (16 líneas)
+   - Content
+   - Motivation
+   - Further Information
+   - 10.1 completo (23 líneas)
  * Content
  * Motivation
  * Form
- - 10.2 completo (50 líneas)
+   - 10.2 completo (50 líneas)
  * Content
  * Forma corta
  * Forma larga
  * Referencias
- - Enriquecimiento: +80%
+   - Enriquecimiento: +80%
 
  Agregado:
- - Formato mejorado de tablas
- - Aclaraciones puntuales
- - Toctrees completos
- - Relaciones con otras secciones
+   - Formato mejorado de tablas
+   - Aclaraciones puntuales
+   - Toctrees completos
+   - Relaciones con otras secciones
 
  NO agregado:
- - Ejemplos extensos (ya hay)
- - Subsecciones nuevas
- - Contenido redundante
+   - Ejemplos extensos (ya hay)
+   - Subsecciones nuevas
+   - Contenido redundante
 
 **Qué agregar:**
 
@@ -748,24 +748,24 @@ Resumen Ejecutivo
 
  * - **Tamaño**
    - **Rango**
- - **arc42**
- - **Acción Principal**
+   - **arc42**
+   - **Acción Principal**
  * - < 20 líneas
    - +300% a +1000%
- - +771%
- - Agregar ejemplos, checklists, tablas
+   - +771%
+   - Agregar ejemplos, checklists, tablas
  * - 20-50 líneas
    - +100% a +300%
- - +273%
- - Contexto, ejemplos, relaciones
+   - +273%
+   - Contexto, ejemplos, relaciones
  * - 50-100 líneas
    - +80% a +150%
- - +95%
- - Aclaraciones, formato mejorado
+   - +95%
+   - Aclaraciones, formato mejorado
  * - > 100 líneas
    - +50% a +100%
- - +80%
- - Formato, toctrees, mínimo
+   - +80%
+   - Formato, toctrees, mínimo
 
 **Regla de Oro:**
 

@@ -74,16 +74,16 @@ Principio 2: Preferencia por Signifié sobre Signifiant
 
  * - Situación
    - Decisión
- - Razón
+   - Razón
  * - ``\textbf{}`` -> ``**``
    - Adaptar forma [OK]
- - Función (énfasis) preservada
+   - Función (énfasis) preservada
  * - ``\vspace{}`` -> omitir
    - Adaptar forma [OK]
- - No semántico en RST
+   - No semántico en RST
  * - ``def foo():`` -> igual
    - Preservar forma [OK]
- - Forma = contenido en código
+   - Forma = contenido en código
 
 **Ver:** :doc:`_fundamentos_conceptuales/signifiant_vs_signifie`
 

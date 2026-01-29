@@ -41,16 +41,16 @@ Podrías usar una lista de **enfoques de solución** o una tabla similar a la si
 
  * - **Meta de calidad**
    - **Escenario**
- - **Enfoque de solución**
- - **Enlace a detalles**
+   - **Enfoque de solución**
+   - **Enlace a detalles**
  * - *<Meta-Q 1>*
    - *<Texto>*
- - *<Texto>*
- - *<Enlace>*
+   - *<Texto>*
+   - *<Enlace>*
  * - *<Meta-Q 2>*
    - *<Texto>*
- - *<Texto>*
- - *<Enlace>*
+   - *<Texto>*
+   - *<Enlace>*
 
 ----
 

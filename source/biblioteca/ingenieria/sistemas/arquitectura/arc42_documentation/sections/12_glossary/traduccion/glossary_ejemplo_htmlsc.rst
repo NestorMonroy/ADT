@@ -108,34 +108,34 @@ Análisis del Ejemplo
 
  * - **Categoría**
    - **Término**
- - **Definición**
+   - **Definición**
  * - **Navegación**
    - Link
- - Referencia dentro de HTMLPage que apunta a LinkTarget
+   - Referencia dentro de HTMLPage que apunta a LinkTarget
  * - **Navegación**
    - Cross Reference
- - Link interno dentro del mismo documento
+   - Link interno dentro del mismo documento
  * - **Navegación**
    - External Hyperlink
- - Link a otro dominio o sitio
+   - Link a otro dominio o sitio
  * - **Navegación**
    - LinkTarget
- - Destino de un Link (anchor o URL)
+   - Destino de un Link (anchor o URL)
  * - **Resultados**
    - Run Result
- - Resultados combinados para múltiples páginas
+   - Resultados combinados para múltiples páginas
  * - **Resultados**
    - SinglePageResults
- - Resultados para una sola página HTML
+   - Resultados para una sola página HTML
  * - **Resultados**
    - Finding
- - Problema detectado por verificación
+   - Problema detectado por verificación
  * - **Core**
    - Checker
- - Componente que realiza verificación específica
+   - Componente que realiza verificación específica
  * - **Core**
    - HTMLPage
- - Documento HTML individual analizado
+   - Documento HTML individual analizado
 
 ----
 
@@ -198,22 +198,22 @@ Análisis del Ejemplo
 
  * - **Term (EN)**
    - **Definition**
- - **Deutsch**
+   - **Deutsch**
  * - Link
    - Reference within HTMLPage pointing to LinkTarget
- - Verweis
+   - Verweis
  * - Cross Reference
    - Link within same document
- - Querverweis
+   - Querverweis
  * - External Hyperlink
    - Link to another domain/site
- - Externer Link
+   - Externer Link
  * - Run Result
    - Combined results for multiple pages
- - Laufergebnis
+   - Laufergebnis
  * - SinglePageResults
    - Results for single HTML page
- - Einzelseitenergebnis
+   - Einzelseitenergebnis
 
 ----
 
@@ -250,24 +250,24 @@ Si HtmlSC crece, el glosario podría expandirse:
 
  * - **Término**
    - **Definición**
- - **Sinónimo**
- - **Ver También**
+   - **Sinónimo**
+   - **Ver También**
  * - Link
    - Referencia dentro de HTMLPage que apunta a LinkTarget
- - Hyperlink, Anchor
- - LinkTarget
+   - Hyperlink, Anchor
+   - LinkTarget
  * - Checker
    - Componente que realiza verificación específica
- - Validator, Analyzer
- - Finding
+   - Validator, Analyzer
+   - Finding
  * - HTMLPage
    - Documento HTML individual analizado
- - Document, Page
- - Run Result
+   - Document, Page
+   - Run Result
  * - Finding
    - Problema detectado (ERROR, WARNING, INFO)
- - Issue, Problem
- - Severity
+   - Issue, Problem
+   - Severity
 
 ----
 

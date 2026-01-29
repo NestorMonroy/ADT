@@ -25,13 +25,13 @@ Simplemente agrega una columna a tu tabla de **glosario** por cada idioma que ne
 
  * - **Term (EN)**
    - **Definition**
- - **Translation DE**
+   - **Translation DE**
  * - *<Term-1>*
    - *<definition-1>*
- - *<German-translation-for-term-1>*
+   - *<German-translation-for-term-1>*
  * - *<Term-2>*
    - *<definition-2>*
- - *<German-translation-for-term-2>*
+   - *<German-translation-for-term-2>*
 
 ----
 
@@ -105,23 +105,23 @@ Casos de Uso para Glosario Multi-idioma
 
  * - **Term (EN)**
    - **Definition (EN)**
- - **Español**
- - **Deutsch**
- - ****
+   - **Español**
+   - **Deutsch**
+   - ****
  * - Order
    - Purchase transaction with items, shipping, payment
- - Pedido
- - Bestellung
+   - Pedido
+   - Bestellung
  -
  * - Customer
    - Registered user who makes purchases
- - Cliente
- - Kunde
+   - Cliente
+   - Kunde
  -
  * - Checkout
    - Process to finalize purchase
- - Pago
- - Kasse
+   - Pago
+   - Kasse
  -
 
 **Opción 2: Múltiples Definiciones (para matices)**
@@ -132,16 +132,16 @@ Casos de Uso para Glosario Multi-idioma
 
  * - **EN**
    - **Definition (EN)**
- - **DE**
- - **Definition (DE)**
+   - **DE**
+   - **Definition (DE)**
  * - Claim
    - Request for insurance payment after incident
- - Schadensmeldung
- - Meldung eines Versicherungsfalls zur Schadensregulierung
+   - Schadensmeldung
+   - Meldung eines Versicherungsfalls zur Schadensregulierung
  * - Premium
    - Regular payment for insurance coverage
- - Prämie / Beitrag
- - Regelmäßige Zahlung für Versicherungsschutz
+   - Prämie / Beitrag
+   - Regelmäßige Zahlung für Versicherungsschutz
 
 ----
 
@@ -198,22 +198,22 @@ Casos de Uso para Glosario Multi-idioma
 
  * - **Herramienta**
    - **Ventajas**
- - **Limitaciones**
+   - **Limitaciones**
  * - **Excel/Google Sheets**
    - Fácil, colaborativo, columnas ilimitadas
- - No integrado con docs
+   - No integrado con docs
  * - **Confluence**
    - Búsqueda multi-idioma
- - Requiere licencia
+   - Requiere licencia
  * - **POEditor**
    - Específico para i18n
- - Orientado a UI strings
+   - Orientado a UI strings
  * - **Crowdin**
    - Traducción colaborativa
- - Overkill para solo glosario
+   - Overkill para solo glosario
  * - **Sphinx i18n**
    - Integrado con docs
- - Curva de aprendizaje
+   - Curva de aprendizaje
 
 ----
 
@@ -225,46 +225,46 @@ Casos de Uso para Glosario Multi-idioma
 
  * - **EN**
    - **Definition**
- - **DE**
- - **ES**
- - **FR**
- - **Abbr**
+   - **DE**
+   - **ES**
+   - **FR**
+   - **Abbr**
  * - Account
    - Bank account holding customer funds
- - Konto
- - Cuenta
- - Compte
- - ACC
+   - Konto
+   - Cuenta
+   - Compte
+   - ACC
  * - Transaction
    - Money transfer between accounts
- - Transaktion
- - Transacción
- - Transaction
- - TXN
+   - Transaktion
+   - Transacción
+   - Transaction
+   - TXN
  * - Balance
    - Current amount in account
- - Saldo / Kontostand
- - Saldo
- - Solde
- - BAL
+   - Saldo / Kontostand
+   - Saldo
+   - Solde
+   - BAL
  * - Overdraft
    - Negative balance permitted by bank
- - Überziehung
- - Sobregiro
- - Découvert
- - OD
+   - Überziehung
+   - Sobregiro
+   - Découvert
+   - OD
  * - IBAN
    - International Bank Account Number
- - IBAN
- - IBAN
- - IBAN
- - IBAN
+   - IBAN
+   - IBAN
+   - IBAN
+   - IBAN
  * - SWIFT
    - Society for Worldwide Interbank Financial Telecom
- - SWIFT
- - SWIFT
- - SWIFT
- - SWIFT
+   - SWIFT
+   - SWIFT
+   - SWIFT
+   - SWIFT
 
 ----
 

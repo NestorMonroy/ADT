@@ -51,28 +51,28 @@ Los Tres Pilares del Método
 
  * - Nivel
    - LaTeX
- - RST
+   - RST
  * - **Libro**
    - Todo el documento
- - Todo el documento
+   - Todo el documento
  * - **Capítulo**
    - ``\chapter{}``
- - Archivo .rst separado
+   - Archivo .rst separado
  * - **Sección** [STAR]
    - ``\section{}``
- - Título con ``====``
+   - Título con ``====``
  * - **Subsección**
    - ``\subsection{}``
- - Título con ``----``
+   - Título con ``----``
  * - **Párrafo**
    - Bloques de texto
- - Bloques de texto
+   - Bloques de texto
  * - **Frase**
    - Oraciones
- - Oraciones
+   - Oraciones
  * - **Palabra**
    - Términos individuales
- - Términos individuales
+   - Términos individuales
 
 **Decisión de segmentación:**
 
@@ -122,25 +122,25 @@ Los Tres Pilares del Método
 
  * - LaTeX
    - RST
- - Signifié
+   - Signifié
  * - ``\textbf{}``
    - ``**...**``
- - Énfasis fuerte
+   - Énfasis fuerte
  * - ``\emph{}``
    - ``*...*``
- - Énfasis moderado
+   - Énfasis moderado
  * - ``\texttt{}``
    - ````...````
- - Código inline
+   - Código inline
  * - ``\textit{}``
    - ``*...*``
- - Itálica
+   - Itálica
  * - ``\ref{}``
    - ``:ref:``
- - Referencia
+   - Referencia
  * - ``\cite{}``
    - ``:cite:``
- - Citación
+   - Citación
 
 **Decisión de rendición:**
 
@@ -171,19 +171,19 @@ Los Tres Pilares del Método
 
  * - Situación
    - Opción A (Signifiant)
- - Opción B (Signifié) [OK]
+   - Opción B (Signifié) [OK]
  * - Lista numerada
    - ``\begin{enumerate}``
- - ``1. 2. 3.``
+   - ``1. 2. 3.``
  * - Énfasis
    - ``\textbf{}``
- - ``**``
+   - ``**``
  * - Espaciado
    - ``\vspace{}`` literal
- - Confiar en RST
+   - Confiar en RST
  * - Referencia
    - ``\ref{label}``
- - ``:ref:`label```
+   - ``:ref:`label```
 
 **Decisión de preferencia:**
 

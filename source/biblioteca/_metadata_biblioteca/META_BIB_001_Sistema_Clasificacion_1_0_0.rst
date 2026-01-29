@@ -47,16 +47,16 @@ Categorías Principales
 
  * - Código
    - Nombre
- - Ámbito
+   - Ámbito
  * - **INF**
    - Informática
- - Programación, IA, Redes, Seguridad, DevOps
+   - Programación, IA, Redes, Seguridad, DevOps
  * - **ING**
    - Ingeniería
- - Arquitectura, Sistemas, Metodologías, Procesos
+   - Arquitectura, Sistemas, Metodologías, Procesos
  * - **CIE**
    - Ciencias
- - Matemáticas, Estadística, Física, Biología
+   - Matemáticas, Estadística, Física, Biología
 
 ----
 
@@ -69,37 +69,37 @@ Subcategorías Informática (INF)
 
  * - Código
    - Nombre
- - Descripción
+   - Descripción
  * - PRG
    - Programación
- - Lenguajes, frameworks, paradigmas
+   - Lenguajes, frameworks, paradigmas
  * - IAR
    - Inteligencia Artificial
- - ML, DL, NLP, Computer Vision
+   - ML, DL, NLP, Computer Vision
  * - RED
    - Redes
- - Protocolos, comunicaciones, seguridad de red
+   - Protocolos, comunicaciones, seguridad de red
  * - SEG
    - Seguridad
- - Ciberseguridad, criptografía, ethical hacking
+   - Ciberseguridad, criptografía, ethical hacking
  * - BDD
    - Bases de Datos
- - SQL, NoSQL, diseño de esquemas
+   - SQL, NoSQL, diseño de esquemas
  * - SOP
    - Sistemas Operativos
- - Linux, Windows, administración
+   - Linux, Windows, administración
  * - WEB
    - Desarrollo Web
- - Frontend, Backend, Full-Stack general
+   - Frontend, Backend, Full-Stack general
  * - MOV
    - Desarrollo Móvil
- - iOS, Android, multiplataforma
+   - iOS, Android, multiplataforma
  * - DVC
    - DevOps y Cloud
- - Docker, Kubernetes, CI/CD, Cloud
+   - Docker, Kubernetes, CI/CD, Cloud
  * - ALG
    - Algoritmos
- - Estructuras de datos, complejidad
+   - Estructuras de datos, complejidad
 
 Subcategorías Ingeniería (ING)
 ===============================
@@ -110,25 +110,25 @@ Subcategorías Ingeniería (ING)
 
  * - Código
    - Nombre
- - Descripción
+   - Descripción
  * - SIS
    - Sistemas
- - Diseño de sistemas complejos
+   - Diseño de sistemas complejos
  * - ARQ
    - Arquitectura
- - Patrones arquitectónicos, microservicios
+   - Patrones arquitectónicos, microservicios
  * - MET
    - Metodologías
- - Agile, Scrum, DevOps, Lean
+   - Agile, Scrum, DevOps, Lean
  * - REQ
    - Requisitos
- - Ingeniería de requisitos, análisis
+   - Ingeniería de requisitos, análisis
  * - PRU
    - Pruebas
- - Testing, QA, automatización
+   - Testing, QA, automatización
  * - MOD
    - Modelado
- - UML, BPMN, especificación formal
+   - UML, BPMN, especificación formal
 
 Subcategorías Ciencias (CIE)
 =============================
@@ -139,19 +139,19 @@ Subcategorías Ciencias (CIE)
 
  * - Código
    - Nombre
- - Descripción
+   - Descripción
  * - MAT
    - Matemáticas
- - Álgebra, cálculo, matemáticas aplicadas
+   - Álgebra, cálculo, matemáticas aplicadas
  * - EST
    - Estadística
- - Probabilidad, análisis estadístico
+   - Probabilidad, análisis estadístico
  * - FIS
    - Física
- - Física computacional, simulaciones
+   - Física computacional, simulaciones
  * - BIO
    - Biología
- - Bioinformática, biología computacional
+   - Bioinformática, biología computacional
 
 ----
 
@@ -378,12 +378,12 @@ Historial de Versiones
 
  * - Versión
    - Fecha
- - Autor
- - Cambios
+   - Autor
+   - Cambios
  * - 1.0.0
    - 2026-01-28
- - Sistema ADT
- - Versión inicial del sistema de clasificación
+   - Sistema ADT
+   - Versión inicial del sistema de clasificación
 
 ----
 

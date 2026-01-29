@@ -157,28 +157,28 @@ Este ejemplo muestra **riesgos** y **deuda técnica** para HTML Sanity Checker (
 
  * - **ID**
    - **Riesgo**
- - **Tipo**
- - **Impacto**
- - **Prob.**
- - **Estado**
+   - **Tipo**
+   - **Impacto**
+   - **Prob.**
+   - **Estado**
  * - RT-001
    - Single point deployment
- - Técnico
- - Alto
- - Media
- - NO MITIGADO
+   - Técnico
+   - Alto
+   - Media
+   - NO MITIGADO
  * - RT-002
    - Dependencia Gradle
- - Técnico
- - Medio
- - Media
- - [WARNING] PARCIAL
+   - Técnico
+   - Medio
+   - Media
+   - [WARNING] PARCIAL
  * - RN-001
    - Obsolescencia
- - Negocio
- - Alto
- - Baja
- - [WARNING] MONITOREAR
+   - Negocio
+   - Alto
+   - Baja
+   - [WARNING] MONITOREAR
 
 ----
 

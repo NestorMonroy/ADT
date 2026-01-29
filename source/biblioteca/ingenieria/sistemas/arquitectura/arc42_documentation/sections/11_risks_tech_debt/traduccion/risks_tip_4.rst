@@ -56,19 +56,19 @@ Incluyen **implementación**, **pruebas**, **versionado**, **configuración**.
 
  * - **Proceso**
    - **Riesgo**
- - **Mitigación**
+   - **Mitigación**
  * - **Implementación**
    - Sin estándares de código
- - Code reviews + linters
+   - Code reviews + linters
  * - **Versionado**
    - Git flow no definido
- - Adoptar Git flow o trunk-based
+   - Adoptar Git flow o trunk-based
  * - **Testing**
    - Tests solo manuales
- - Automatización de tests
+   - Automatización de tests
  * - **Configuración**
    - Config hardcodeada
- - Externalize configuration
+   - Externalize configuration
 
 ----
 
@@ -157,19 +157,19 @@ Los procesos de **gestión** y decisiones relacionadas pueden no estar alineados
 
  * - **Desalineación**
    - **Impacto**
- - **Mitigación**
+   - **Mitigación**
  * - Management prioriza features sobre calidad
    - Deuda técnica creciente
- - Comunicar costo de deuda
+   - Comunicar costo de deuda
  * - Decisiones sin input técnico
    - Compromisos irrealistas
- - Incluir arquitecto en planning
+   - Incluir arquitecto en planning
  * - Presión por deadlines
    - Shortcuts -> bugs
- - Timeboxing + MVP approach
+   - Timeboxing + MVP approach
  * - Sin tiempo para refactoring
    - Código se degrada
- - Reservar 20% para tech debt
+   - Reservar 20% para tech debt
 
 ----
 

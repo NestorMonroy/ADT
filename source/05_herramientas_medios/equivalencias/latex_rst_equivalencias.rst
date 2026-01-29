@@ -51,40 +51,40 @@ Categoría 1: Estructura del Documento
 
  * - **LaTeX**
    - **reStructuredText**
- - **Nivel**
+   - **Nivel**
  * - ``\part{Parte}``
    - ::
 
  #######
  Parte
  #######
- - 0
+   - 0
  * - ``\chapter{Capítulo}``
    - ::
 
  *********
  Capítulo
  *********
- - 1
+   - 1
  * - ``\section{Sección}``
    - ::
 
  =========
  Sección
  =========
- - 2
+   - 2
  * - ``\subsection{Subsección}``
    - ::
 
  Subsección
  ==========
- - 3
+   - 3
  * - ``\subsubsection{Sub-sub}``
    - ::
 
  Sub-sub
  -------
- - 4
+   - 4
 
 **Ejemplo completo:**
 
@@ -122,10 +122,10 @@ Categoría 1: Estructura del Documento
  \item Primero
  \item Segundo
  \end{itemize}
- - ::
+   - ::
 
- - Primero
- - Segundo
+   - Primero
+   - Segundo
 
 **Listas Numeradas:**
 
@@ -141,7 +141,7 @@ Categoría 1: Estructura del Documento
  \item Primero
  \item Segundo
  \end{enumerate}
- - ::
+   - ::
 
  1. Primero
  2. Segundo
@@ -166,17 +166,17 @@ Categoría 1: Estructura del Documento
  A & B & C \\
  \hline
  \end{tabular}
- - ::
+   - ::
 
  .. list-table::
  :header-rows: 1
 
  * - Izq
    - Centro
- - Der
+   - Der
  * - A
    - B
- - C
+   - C
 
 ----
 
@@ -192,16 +192,16 @@ Categoría 2: Formato de Texto
 
  * - **LaTeX**
    - **reStructuredText**
- - **Significado**
+   - **Significado**
  * - ``\textbf{negrita}``
    - ``**negrita**``
- - Énfasis fuerte
+   - Énfasis fuerte
  * - ``\emph{énfasis}``
    - ``*énfasis*``
- - Énfasis (cursiva)
+   - Énfasis (cursiva)
  * - ``\texttt{código}``
    - ````código````
- - Monoespaciado
+   - Monoespaciado
 
 2.2 Código y Verbatim
 ---------------------
@@ -220,7 +220,7 @@ Categoría 2: Formato de Texto
  def funcion():
  return True
  \end{verbatim}
- - ::
+   - ::
 
  .. code-block:: python
 
@@ -245,7 +245,7 @@ Categoría 3: Referencias y Enlaces
 
  \label{sec:intro}
  \section{Introducción}
- - ::
+   - ::
 
  .. _sec_intro:
 
@@ -254,7 +254,7 @@ Categoría 3: Referencias y Enlaces
  * - ::
 
  Ver sección \ref{sec:intro}
- - ::
+   - ::
 
  Ver :ref:`sec_intro`
 
@@ -293,7 +293,7 @@ Categoría 4: Figuras e Imágenes
  \caption{Descripción}
  \label{fig:nombre}
  \end{figure}
- - ::
+   - ::
 
  .. _fig_nombre:
 
@@ -323,7 +323,7 @@ Categoría 5: Matemáticas
  \[
  E = mc^2
  \]
- - ::
+   - ::
 
  .. math::
 

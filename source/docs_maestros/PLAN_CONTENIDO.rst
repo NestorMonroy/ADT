@@ -22,64 +22,64 @@ Estado Actual
 
  * - Sección
    - Subcarpetas
- - Archivos .rst
- - Estado
+   - Archivos .rst
+   - Estado
  * - 01_fundamentos
    - 2 (vacías)
- - 0 de 5
- - [ERROR] 0% completado
+   - 0 de 5
+   - [ERROR] 0% completado
  * - 02_procedimientos
    - 4 (vacías)
- - 0 de 6
- - [ERROR] 0% completado
+   - 0 de 6
+   - [ERROR] 0% completado
  * - 03_estandares
    - 4 (vacías)
- - 0 de 5
- - [ERROR] 0% completado
+   - 0 de 5
+   - [ERROR] 0% completado
  * - 04_reglas_operativas
    - 3 (vacías)
- - 0 de 4
- - [ERROR] 0% completado
+   - 0 de 4
+   - [ERROR] 0% completado
  * - 05_herramientas_medios
    - 4 (vacías)
- - 0 de 5
- - [ERROR] 0% completado
+   - 0 de 5
+   - [ERROR] 0% completado
  * - 06_casos_practicos
    - 4 (vacías)
- - 0 de 5
- - [ERROR] 0% completado
+   - 0 de 5
+   - [ERROR] 0% completado
  * - 07_guias_uso
    - 0
- - 0 de 5
- - [ERROR] 0% completado
+   - 0 de 5
+   - [ERROR] 0% completado
  * - 08_prompts
    - 2 (vacías)
- - 0 de 6
- - [ERROR] 0% completado
+   - 0 de 6
+   - [ERROR] 0% completado
  * - 09_referencias
    - 2 (vacías)
- - 0 de 5
- - [ERROR] 0% completado
+   - 0 de 5
+   - [ERROR] 0% completado
  * - 10_apendices
    - 0
- - 0 de 4
- - [ERROR] 0% completado
+   - 0 de 4
+   - [ERROR] 0% completado
  * - biblioteca/arc42
    - 12
- - 30 de 36+
- - [OK] 25% (3/12 secciones)
+   - 30 de 36+
+   - [OK] 25% (3/12 secciones)
  * - docs
    - 0
- - 3 de 3
- - [OK] 100%
+   - 3 de 3
+   - [OK] 100%
  * - docs_maestros
    - 0
- - 9 de 9
- - [OK] 100%
+   - 9 de 9
+   - [OK] 100%
  * - diataxis
    - 0
- - 1 de 1
- - [OK] 100%
+   - 1 de 1
+   - [OK] 100%
 
 **TOTAL FALTANTE:** ~47 archivos principales + subcarpetas
 
@@ -481,39 +481,39 @@ Métricas de Progreso
 
  * - Fase
    - Archivos
- - Tiempo Est.
- - Prioridad
- - Estado
+   - Tiempo Est.
+   - Prioridad
+   - Estado
  * - Fase 1 (MVP)
    - 9
- - 7-8h
- - CRÍTICA
- - [RUNNING] Pendiente
+   - 7-8h
+   - CRÍTICA
+   - [RUNNING] Pendiente
  * - Fase 2 (Core)
    - 21
- - 30-40h
- - ALTA
- - [RUNNING] Pendiente
+   - 30-40h
+   - ALTA
+   - [RUNNING] Pendiente
  * - Fase 3 (Expansión)
    - 15
- - 30-40h
- - MEDIA
- - [RUNNING] Pendiente
+   - 30-40h
+   - MEDIA
+   - [RUNNING] Pendiente
  * - Fase 4 (Referencias)
    - 11
- - 10-15h
- - BAJA
- - [RUNNING] Pendiente
+   - 10-15h
+   - BAJA
+   - [RUNNING] Pendiente
  * - Fase 5 (arc42)
    - 9 secciones
- - Variable
- - MEDIA
- - [RUNNING] Pendiente
+   - Variable
+   - MEDIA
+   - [RUNNING] Pendiente
  * - **TOTAL**
    - **56+**
- - **~100h**
+   - **~100h**
  -
- - **0% completo**
+   - **0% completo**
 
 Recomendaciones
 ================

@@ -40,24 +40,24 @@ Progreso General
 
  * - Lote
    - Archivos
- - Estado
- - Descripción
+   - Estado
+   - Descripción
  * - **Lote 1**
    - **5/28**
- - **[OK] Completado**
- - **4 ejemplos + 1 tip**
+   - **[OK] Completado**
+   - **4 ejemplos + 1 tip**
  * - Lote 2
    - 9/28
- - [RUNNING] Pendiente
- - Tips 2-10
+   - [RUNNING] Pendiente
+   - Tips 2-10
  * - Lote 3
    - 9/28
- - [RUNNING] Pendiente
- - Tips 11-19
+   - [RUNNING] Pendiente
+   - Tips 11-19
  * - Lote 4
    - 5/28
- - [RUNNING] Pendiente
- - Tips 20-24
+   - [RUNNING] Pendiente
+   - Tips 20-24
 
 **Progreso total:** 5/28 archivos (17.9%)
 
@@ -233,32 +233,32 @@ Expansión de Contenido
 
  * - Archivo
    - Líneas Orig.
- - Líneas Trad.
- - Expansión
+   - Líneas Trad.
+   - Expansión
  * - introduccion_ejemplo-3.rst
    - 46
- - 115
- - 150%
+   - 115
+   - 150%
  * - introduccion_ejemplo-htmlsc-1.rst
    - 35
- - 72
- - 106%
+   - 72
+   - 106%
  * - requisitos_calidad_ejemplo-1.rst
    - 32
- - 69
- - 116%
+   - 69
+   - 116%
  * - requisitos_calidad_ejemplo-3.rst
    - 22
- - 53
- - 141%
+   - 53
+   - 141%
  * - introduccion_tip-1.rst
    - 29
- - 65
- - 124%
+   - 65
+   - 124%
  * - **TOTAL**
    - **164**
- - **374**
- - **128%**
+   - **374**
+   - **128%**
 
 **Expansión promedio:** 128% (normal para MD->RST con metadata)
 
@@ -332,22 +332,22 @@ Comparación con Sección 02
 
  * - Aspecto
    - Sección 02
- - Sección 01
+   - Sección 01
  * - Total archivos
    - 7
- - 28
+   - 28
  * - Estrategia
    - Todo de una vez
- - **Por lotes**
+   - **Por lotes**
  * - Complejidad
    - Tips simples
- - Ejemplos complejos
+   - Ejemplos complejos
  * - Tablas
    - Pocas
- - **Muchas**
+   - **Muchas**
  * - Figuras
    - Pocas
- - **Múltiples sistemas**
+   - **Múltiples sistemas**
 
 Mejoras Identificadas
 ----------------------
@@ -397,10 +397,10 @@ Historial de Revisiones
 
  * - Versión
    - Fecha
- - Cambios
+   - Cambios
  * - 1.0.0
    - 2026-01-27
- - Reporte inicial - Lote 1 completado (FASES 0-3.5)
+   - Reporte inicial - Lote 1 completado (FASES 0-3.5)
 
 ----
 

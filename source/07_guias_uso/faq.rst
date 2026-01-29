@@ -57,16 +57,16 @@ Depende del nivel que busques:
 
  * - **Nivel**
    - **Tiempo**
- - **Resultado**
+   - **Resultado**
  * - Básico
    - 15 min
- - Primera traducción simple
+   - Primera traducción simple
  * - Intermedio
    - 2-3 horas
- - Dominio de fundamentos
+   - Dominio de fundamentos
  * - Avanzado
    - 6-8 horas
- - Experto completo
+   - Experto completo
 
 **Recomendado:** Invertir 3 horas (guía + tutorial)
 
@@ -171,24 +171,24 @@ Preguntas sobre Workflow
 
  * - **Tipo**
    - **Original**
- - **Tiempo**
- - **Velocidad**
+   - **Tiempo**
+   - **Velocidad**
  * - Tip breve
    - < 20 líneas
- - 1-2 horas
- - Lento (alto enriq.)
+   - 1-2 horas
+   - Lento (alto enriq.)
  * - Sección corta
    - 20-50 líneas
- - 30-60 min
- - Media
+   - 30-60 min
+   - Media
  * - Sección mediana
    - 50-100 líneas
- - 1-1.5 horas
- - Media-Alta
+   - 1-1.5 horas
+   - Media-Alta
  * - Sección extensa
    - > 100 líneas
- - 2-3 horas
- - Alta
+   - 2-3 horas
+   - Alta
 
 **Promedio:** 3.3 archivos/hora
 **Tu velocidad mejorará con práctica:** 2x-3x después de 10-20 archivos

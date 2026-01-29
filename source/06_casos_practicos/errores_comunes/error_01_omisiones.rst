@@ -555,25 +555,25 @@ Comparación Antes/Después
 
  * - **Métrica**
    - **Versión Inicial**
- - **Versión Corregida**
+   - **Versión Corregida**
  * - Archivos
    - 14/14
- - 14/14
+   - 14/14
  * - Contenido principal
    - 57% completo [ERROR]
- - 100% completo [OK]
+   - 100% completo [OK]
  * - Elementos presentes
    - 7/13
- - 13/13
+   - 13/13
  * - Subsecciones
    - 0/6 [ERROR]
- - 6/6 [OK]
+   - 6/6 [OK]
  * - Tiempo PASO 0
    - 3 min
- - 15 min
+   - 15 min
  * - Tiempo re-trabajo
    - 0
- - 2 horas [ERROR]
+   - 2 horas [ERROR]
 
 **Costo del Error:**
 

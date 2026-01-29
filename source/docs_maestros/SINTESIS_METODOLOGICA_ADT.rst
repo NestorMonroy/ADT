@@ -51,16 +51,16 @@ Del documento :doc:`METODO_TRADUCCION_PESHITTA_ZACHARIAS`:
 
  * - Aspecto
    - Peshitta Zacarías
- - ADT (Traducción Técnica)
+   - ADT (Traducción Técnica)
  * - **Segmentación**
    - Frase hebrea -> Frase siríaca
- - Sección LaTeX -> Sección RST
+   - Sección LaTeX -> Sección RST
  * - **Rendición**
    - Palabra por palabra
- - Elemento por elemento (comando, entorno)
+   - Elemento por elemento (comando, entorno)
  * - **Preferencia**
    - Sentido sobre forma
- - Semántica sobre sintaxis
+   - Semántica sobre sintaxis
 
 **Ejemplo Concreto:**
 
@@ -133,31 +133,31 @@ Del método Peshitta, mapeadas a ADT:
 
  * - Táctica
    - Ejemplo Peshitta
- - Aplicación ADT
+   - Aplicación ADT
  * - **Adición**
    - Agregar artículo para claridad
- - ``.. note::`` para aclarar contexto
+   - ``.. note::`` para aclarar contexto
  * - **Omisión**
    - Omitir partícula redundante
- - Omitir ``\noindent`` (no semántico en RST)
+   - Omitir ``\noindent`` (no semántico en RST)
  * - **Sustitución**
    - Sustituir nombre propio
- - ``\texttt{code}`` -> ````code````
+   - ``\texttt{code}`` -> ````code````
  * - **Cambio orden**
    - Sujeto-Verbo -> Verbo-Sujeto
- - Mover figuras cerca del texto referido
+   - Mover figuras cerca del texto referido
  * - **Especificación**
    - "él" -> "José"
- - `:term:`concepto`` para términos técnicos
+   - `:term:`concepto`` para términos técnicos
  * - **Generalización**
    - "José hijo de Jacob" -> "José"
- - ``\textbf{}`` + ``\emph{}`` -> ``**énfasis**``
+   - ``\textbf{}`` + ``\emph{}`` -> ``**énfasis**``
  * - **Explicación**
    - Agregar glosa
- - Agregar ``:doc:`` para refs cruzadas
+   - Agregar ``:doc:`` para refs cruzadas
  * - **Normalización**
    - Unificar variantes
- - Unificar títulos de secciones
+   - Unificar títulos de secciones
 
 1.4. Niveles de Análisis (Macro vs Micro)
 ------------------------------------------
@@ -446,28 +446,28 @@ Parte 5: Isomorfismo Metodológico
 
  * - Concepto
    - Translation Studies
- - MDA/MDE
+   - MDA/MDE
  * - **Entrada**
    - Texto fuente
- - Platform-Independent Model (PIM)
+   - Platform-Independent Model (PIM)
  * - **Salida**
    - Texto destino
- - Platform-Specific Model (PSM)
+   - Platform-Specific Model (PSM)
  * - **Proceso**
    - Técnica de traducción
- - Reglas de transformación
+   - Reglas de transformación
  * - **Método por defecto**
    - Segmentación + Rendición
- - Mapeo básico
+   - Mapeo básico
  * - **Divergencias**
    - Tácticas para objetivos
- - Optimizaciones / Adaptaciones
+   - Optimizaciones / Adaptaciones
  * - **Errores**
    - Divergencias no intencionales
- - Bugs en transformación
+   - Bugs en transformación
  * - **Validación**
    - Revisión semántica
- - Model checking / Testing
+   - Model checking / Testing
 
 5.2. Valor de Esta Conexión
 ---------------------------

@@ -183,24 +183,24 @@ Métricas Globales de Casos
 
  * - **Métrica**
    - **Mínimo**
- - **Máximo**
- - **Promedio**
+   - **Máximo**
+   - **Promedio**
  * - Enriquecimiento
    - +80%
- - +1373%
- - +771%
+   - +1373%
+   - +771%
  * - Velocidad
    - 2.2 arch/h
- - 3.7 arch/h
- - 3.0 arch/h
+   - 3.7 arch/h
+   - 3.0 arch/h
  * - Completitud
    - 100%
- - 100%
- - 100%
+   - 100%
+   - 100%
  * - Omisiones (con PASO 0)
    - 0
- - 0
- - 0
+   - 0
+   - 0
 
 **Conclusión:**
  Aplicar workflow correctamente -> 100% completitud garantizada
@@ -216,19 +216,19 @@ Estado de Desarrollo
 
  * - **Subsección**
    - **Estado**
- - **Archivos**
+   - **Archivos**
  * - **antes_despues/**
    - [OK] Parcial (1/4)
- - caso_01 completado
+   - caso_01 completado
  * - **errores_comunes/**
    - [OK] Parcial (1/4)
- - error_01 completado
+   - error_01 completado
  * - **casos_exito/**
    - [RUNNING] Planificado
- - Pendiente
+   - Pendiente
  * - **ejercicios_practica/**
    - [RUNNING] Planificado
- - Pendiente
+   - Pendiente
 
 ----
 

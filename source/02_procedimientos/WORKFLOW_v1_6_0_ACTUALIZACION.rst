@@ -850,36 +850,36 @@ Historial de Versiones
 
  * - Versión
    - Fecha
- - Tipo
- - Cambios
+   - Tipo
+   - Cambios
  * - 1.6.0
    - 2026-01-27
- - MINOR
- - FASE 5.5 agregada, verificación completitud, archivos txt/json obligatorios
+   - MINOR
+   - FASE 5.5 agregada, verificación completitud, archivos txt/json obligatorios
  * - 1.5.0
    - 2026-01-27
- - MINOR
- - Paso 3.4 Traducción Arquitectónica agregado
+   - MINOR
+   - Paso 3.4 Traducción Arquitectónica agregado
  * - 1.4.0
    - 2026-01-27
- - MINOR
- - FASE 3.5 Revisión Literalidad agregada
+   - MINOR
+   - FASE 3.5 Revisión Literalidad agregada
  * - 1.3.0
    - 2026-01-27
- - MINOR
- - Estructura 1:1 explícita
+   - MINOR
+   - Estructura 1:1 explícita
  * - 1.2.0
    - 2026-01-27
- - MINOR
- - Herramientas Python, FASE 2 mejorada
+   - MINOR
+   - Herramientas Python, FASE 2 mejorada
  * - 1.1.0
    - 2026-01-27
- - MINOR
- - Corrección biblioteca/
+   - MINOR
+   - Corrección biblioteca/
  * - 1.0.0
    - 2026-01-27
- - MAJOR
- - Versión inicial
+   - MAJOR
+   - Versión inicial
 
 ----
 

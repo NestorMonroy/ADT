@@ -149,19 +149,19 @@ Importancia del Glosario
 
  * - **Indicador**
    - **Objetivo**
- - **Métrica**
+   - **Métrica**
  * - Términos definidos
    - 100% términos importantes
- - 30-50 términos en glosario
+   - 30-50 términos en glosario
  * - Tiempo de onboarding
    - Reducción 30%
- - Nuevos entienden dominio en 2 días
+   - Nuevos entienden dominio en 2 días
  * - Bugs por malentendidos
    - Reducción 50%
- - Trackear causa raíz
+   - Trackear causa raíz
  * - Reuniones de aclaración
    - Reducción 40%
- - Menos "¿qué significa X?"
+   - Menos "¿qué significa X?"
 
 ----
 

@@ -79,16 +79,16 @@ A veces puede ser útil complementar la tabla con columnas adicionales:
 
  * - **Nombre**
    - **Responsabilidad**
- - **Interfaces**
- - **Código**
+   - **Interfaces**
+   - **Código**
  * - *<caja negra 1>*
    - *<Texto>*
- - ¿Cuáles son las **interfaces** principales de este bloque?
- - ¿Dónde está ubicado el código?
+   - ¿Cuáles son las **interfaces** principales de este bloque?
+   - ¿Dónde está ubicado el código?
  * - *<caja negra 2>*
    - *<Texto>*
- - ---"---
- - ---"---
+   - ---"---
+   - ---"---
 
 Interfaces Importantes (Opcional)
 ----------------------------------

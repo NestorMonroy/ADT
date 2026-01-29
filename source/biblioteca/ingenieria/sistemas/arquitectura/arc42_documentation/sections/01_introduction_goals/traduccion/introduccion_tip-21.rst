@@ -62,20 +62,20 @@ departamentos / organización respectivamente.
 
  * - Rol
    - Contacto
- - Relevancia para aprobación
- - Expectativa
+   - Relevancia para aprobación
+   - Expectativa
  * - Líder de proyecto
    - Ms. Foobar, Ph.D.
- - Alta
- - Vista general de riesgo técnico, interfaces externas
+   - Alta
+   - Vista general de riesgo técnico, interfaces externas
  * - Patrocinador del proyecto
    - Mrs. Lovelace, Ph.D.
- - Alta
- - Prueba de que se pueden lograr los top-3 atributos de calidad objetivo
+   - Alta
+   - Prueba de que se pueden lograr los top-3 atributos de calidad objetivo
  * - Desarrollador Backend
    - Bruno Batch
- - Ninguna
- - Concepto de persistencia y reporting, Detalles interfaz DWH
+   - Ninguna
+   - Concepto de persistencia y reporting, Detalles interfaz DWH
 
 ----
 

@@ -24,22 +24,22 @@ Riesgos en Estructuras de Datos
 
  * - **Problema**
    - **Consecuencia**
- - **Mitigación**
+   - **Mitigación**
  * - Sin normalización
    - Datos duplicados, inconsistencias
- - Normalizar a 3NF
+   - Normalizar a 3NF
  * - Over-normalization
    - Queries complejas, performance baja
- - Denormalizar selectivamente
+   - Denormalizar selectivamente
  * - Tipos de datos incorrectos
    - Overflows, pérdida de precisión
- - Revisar tipos (INT vs BIGINT)
+   - Revisar tipos (INT vs BIGINT)
  * - Sin constraints
    - Datos inválidos en DB
- - Agregar CHECK constraints
+   - Agregar CHECK constraints
  * - Sin índices
    - Queries lentas
- - Analizar query patterns
+   - Analizar query patterns
 
 **2. Schemas Inflexibles**
 

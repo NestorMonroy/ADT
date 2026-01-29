@@ -96,16 +96,16 @@ Estado de Desarrollo
 
  * - **Subsección**
    - **Estado**
- - **Archivos**
+   - **Archivos**
  * - **matrices_decision/**
    - [OK] Parcial (2/5)
- - MD-002, MD-004 completados
+   - MD-002, MD-004 completados
  * - **reglas_traduccion/**
    - [RUNNING] Planificado
- - Pendiente
+   - Pendiente
  * - **escenarios_traduccion/**
    - [RUNNING] Planificado
- - Pendiente
+   - Pendiente
 
 ----
 

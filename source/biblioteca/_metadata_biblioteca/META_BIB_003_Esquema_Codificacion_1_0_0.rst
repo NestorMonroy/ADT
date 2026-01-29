@@ -96,20 +96,20 @@ Tabla Maestra: Categorías
 
  * - Código
    - Nombre
- - Ámbito
- - Estado
+   - Ámbito
+   - Estado
  * - **INF**
    - Informática
- - Ciencias de la Computación, Programación, IA, Redes
- - [OK]
+   - Ciencias de la Computación, Programación, IA, Redes
+   - [OK]
  * - **ING**
    - Ingeniería
- - Ingeniería de Software, Arquitectura, Sistemas
- - [OK]
+   - Ingeniería de Software, Arquitectura, Sistemas
+   - [OK]
  * - **CIE**
    - Ciencias
- - Matemáticas, Estadística, Física, Biología Computacional
- - [OK]
+   - Matemáticas, Estadística, Física, Biología Computacional
+   - [OK]
 
 **Total Categorías Activas:** 3
 
@@ -127,48 +127,48 @@ Informática (INF)
 
  * - Código
    - Nombre
- - Descripción
- - Estado
+   - Descripción
+   - Estado
  * - **PRG**
    - Programación
- - Lenguajes, frameworks, paradigmas
- - [OK]
+   - Lenguajes, frameworks, paradigmas
+   - [OK]
  * - **IAR**
    - Inteligencia Artificial
- - ML, DL, NLP, Computer Vision, Reinforcement Learning
- - [OK]
+   - ML, DL, NLP, Computer Vision, Reinforcement Learning
+   - [OK]
  * - **RED**
    - Redes
- - Protocolos, TCP/IP, seguridad de red
- - [OK]
+   - Protocolos, TCP/IP, seguridad de red
+   - [OK]
  * - **SEG**
    - Seguridad
- - Ciberseguridad, criptografía, ethical hacking
- - [OK]
+   - Ciberseguridad, criptografía, ethical hacking
+   - [OK]
  * - **BDD**
    - Bases de Datos
- - SQL, NoSQL, diseño de esquemas, optimización
- - [OK]
+   - SQL, NoSQL, diseño de esquemas, optimización
+   - [OK]
  * - **SOP**
    - Sistemas Operativos
- - Linux, Windows, administración de sistemas
- - [OK]
+   - Linux, Windows, administración de sistemas
+   - [OK]
  * - **WEB**
    - Desarrollo Web
- - HTML, CSS, desarrollo web general
- - [OK]
+   - HTML, CSS, desarrollo web general
+   - [OK]
  * - **MOV**
    - Desarrollo Móvil
- - iOS, Android, multiplataforma
- - [OK]
+   - iOS, Android, multiplataforma
+   - [OK]
  * - **DVC**
    - DevOps y Cloud
- - Docker, Kubernetes, CI/CD, AWS, Azure
- - [OK]
+   - Docker, Kubernetes, CI/CD, AWS, Azure
+   - [OK]
  * - **ALG**
    - Algoritmos
- - Estructuras de datos, análisis de complejidad
- - [OK]
+   - Estructuras de datos, análisis de complejidad
+   - [OK]
 
 **Total Subcategorías INF:** 10
 
@@ -181,32 +181,32 @@ Ingeniería (ING)
 
  * - Código
    - Nombre
- - Descripción
- - Estado
+   - Descripción
+   - Estado
  * - **SIS**
    - Sistemas
- - Diseño de sistemas, sistemas distribuidos
- - [OK]
+   - Diseño de sistemas, sistemas distribuidos
+   - [OK]
  * - **ARQ**
    - Arquitectura
- - Patrones arquitectónicos, microservicios
- - [OK]
+   - Patrones arquitectónicos, microservicios
+   - [OK]
  * - **MET**
    - Metodologías
- - Agile, Scrum, DevOps, Lean, Kanban
- - [OK]
+   - Agile, Scrum, DevOps, Lean, Kanban
+   - [OK]
  * - **REQ**
    - Requisitos
- - Ingeniería de requisitos, análisis
- - [OK]
+   - Ingeniería de requisitos, análisis
+   - [OK]
  * - **PRU**
    - Pruebas
- - Testing, QA, TDD, automatización
- - [OK]
+   - Testing, QA, TDD, automatización
+   - [OK]
  * - **MOD**
    - Modelado
- - UML, BPMN, especificación formal
- - [OK]
+   - UML, BPMN, especificación formal
+   - [OK]
 
 **Total Subcategorías ING:** 6
 
@@ -219,24 +219,24 @@ Ciencias (CIE)
 
  * - Código
    - Nombre
- - Descripción
- - Estado
+   - Descripción
+   - Estado
  * - **MAT**
    - Matemáticas
- - Álgebra, cálculo, matemáticas aplicadas
- - [OK]
+   - Álgebra, cálculo, matemáticas aplicadas
+   - [OK]
  * - **EST**
    - Estadística
- - Probabilidad, análisis estadístico, inferencia
- - [OK]
+   - Probabilidad, análisis estadístico, inferencia
+   - [OK]
  * - **FIS**
    - Física
- - Física computacional, simulaciones
- - [OK]
+   - Física computacional, simulaciones
+   - [OK]
  * - **BIO**
    - Biología
- - Bioinformática, genómica, biología computacional
- - [OK]
+   - Bioinformática, genómica, biología computacional
+   - [OK]
 
 **Total Subcategorías CIE:** 4
 
@@ -256,84 +256,84 @@ Programación (INF.PRG)
 
  * - Código
    - Nombre
- - Descripción
- - Estado
+   - Descripción
+   - Estado
  * - **FST**
    - Full-Stack
- - Desarrollo completo (frontend + backend)
- - [OK]
+   - Desarrollo completo (frontend + backend)
+   - [OK]
  * - **FRE**
    - Frontend
- - Interfaces de usuario, UX
- - [OK]
+   - Interfaces de usuario, UX
+   - [OK]
  * - **BAC**
    - Backend
- - Lógica del servidor, APIs
- - [OK]
+   - Lógica del servidor, APIs
+   - [OK]
  * - **PYT**
    - Python
- - Lenguaje Python (general)
- - [OK]
+   - Lenguaje Python (general)
+   - [OK]
  * - **JAV**
    - JavaScript
- - Lenguaje JavaScript (general)
- - [OK]
+   - Lenguaje JavaScript (general)
+   - [OK]
  * - **TSC**
    - TypeScript
- - Lenguaje TypeScript
- - [OK]
+   - Lenguaje TypeScript
+   - [OK]
  * - **REA**
    - React
- - Biblioteca React / React ecosystem
- - [OK]
+   - Biblioteca React / React ecosystem
+   - [OK]
  * - **VUE**
    - Vue.js
- - Framework Vue
- - [OK]
+   - Framework Vue
+   - [OK]
  * - **ANG**
    - Angular
- - Framework Angular
- - [OK]
+   - Framework Angular
+   - [OK]
  * - **NOD**
    - Node.js
- - Runtime Node.js, desarrollo backend
- - [OK]
+   - Runtime Node.js, desarrollo backend
+   - [OK]
  * - **DJA**
    - Django
- - Framework Django (Python)
- - [OK]
+   - Framework Django (Python)
+   - [OK]
  * - **FLA**
    - Flask
- - Framework Flask (Python)
- - [OK]
+   - Framework Flask (Python)
+   - [OK]
  * - **SPR**
    - Spring
- - Framework Spring (Java)
- - [OK]
+   - Framework Spring (Java)
+   - [OK]
  * - **NET**
    - .NET
- - Plataforma .NET y C#
- - [OK]
+   - Plataforma .NET y C#
+   - [OK]
  * - **RUS**
    - Rust
- - Lenguaje Rust
- - [OK]
+   - Lenguaje Rust
+   - [OK]
  * - **GOL**
    - Go
- - Lenguaje Go
- - [OK]
+   - Lenguaje Go
+   - [OK]
  * - **CPP**
    - C++
- - Lenguaje C++
- - [OK]
+   - Lenguaje C++
+   - [OK]
  * - **FUN**
    - Funcional
- - Programación funcional (Haskell, Lisp, Scala)
- - [OK]
+   - Programación funcional (Haskell, Lisp, Scala)
+   - [OK]
  * - **GEN**
    - General
- - Múltiples tecnologías o programación general
- - [OK]
+   - Múltiples tecnologías o programación general
+   - [OK]
 
 **Total Especialidades PRG:** 19
 
@@ -346,28 +346,28 @@ Inteligencia Artificial (INF.IAR)
 
  * - Código
    - Nombre
- - Descripción
- - Estado
+   - Descripción
+   - Estado
  * - **MLF**
    - Machine Learning Fundamentals
- - Machine Learning básico, algoritmos tradicionales
- - [OK]
+   - Machine Learning básico, algoritmos tradicionales
+   - [OK]
  * - **DLE**
    - Deep Learning
- - Redes neuronales profundas, CNN, RNN
- - [OK]
+   - Redes neuronales profundas, CNN, RNN
+   - [OK]
  * - **NLP**
    - Natural Language Processing
- - Procesamiento de lenguaje natural, LLMs
- - [OK]
+   - Procesamiento de lenguaje natural, LLMs
+   - [OK]
  * - **CVS**
    - Computer Vision
- - Visión por computadora, procesamiento de imágenes
- - [OK]
+   - Visión por computadora, procesamiento de imágenes
+   - [OK]
  * - **RFO**
    - Reinforcement Learning
- - Aprendizaje por refuerzo, Q-learning
- - [OK]
+   - Aprendizaje por refuerzo, Q-learning
+   - [OK]
 
 **Total Especialidades IAR:** 5
 
@@ -380,44 +380,44 @@ DevOps y Cloud (INF.DVC)
 
  * - Código
    - Nombre
- - Descripción
- - Estado
+   - Descripción
+   - Estado
  * - **DOC**
    - Docker
- - Containerización con Docker
- - [OK]
+   - Containerización con Docker
+   - [OK]
  * - **KUB**
    - Kubernetes
- - Orquestación de contenedores
- - [OK]
+   - Orquestación de contenedores
+   - [OK]
  * - **AWS**
    - Amazon Web Services
- - Plataforma cloud de Amazon
- - [OK]
+   - Plataforma cloud de Amazon
+   - [OK]
  * - **AZU**
    - Microsoft Azure
- - Plataforma cloud de Microsoft
- - [OK]
+   - Plataforma cloud de Microsoft
+   - [OK]
  * - **GCP**
    - Google Cloud Platform
- - Plataforma cloud de Google
- - [OK]
+   - Plataforma cloud de Google
+   - [OK]
  * - **TER**
    - Terraform
- - Infrastructure as Code
- - [OK]
+   - Infrastructure as Code
+   - [OK]
  * - **ANS**
    - Ansible
- - Automatización y configuration management
- - [OK]
+   - Automatización y configuration management
+   - [OK]
  * - **JEN**
    - Jenkins
- - CI/CD y automatización
- - [OK]
+   - CI/CD y automatización
+   - [OK]
  * - **GIT**
    - Git/GitHub/GitLab
- - Control de versiones
- - [OK]
+   - Control de versiones
+   - [OK]
 
 **Total Especialidades DVC:** 9
 
@@ -430,32 +430,32 @@ Arquitectura (ING.ARQ)
 
  * - Código
    - Nombre
- - Descripción
- - Estado
+   - Descripción
+   - Estado
  * - **MIC**
    - Microservicios
- - Arquitectura de microservicios
- - [OK]
+   - Arquitectura de microservicios
+   - [OK]
  * - **CLE**
    - Clean Architecture
- - Clean Architecture de Uncle Bob
- - [OK]
+   - Clean Architecture de Uncle Bob
+   - [OK]
  * - **DDD**
    - Domain-Driven Design
- - Diseño guiado por dominio
- - [OK]
+   - Diseño guiado por dominio
+   - [OK]
  * - **ARC**
    - arc42
- - Plantilla de documentación arc42
- - [OK]
+   - Plantilla de documentación arc42
+   - [OK]
  * - **HEX**
    - Hexagonal Architecture
- - Arquitectura hexagonal / Ports & Adapters
- - [OK]
+   - Arquitectura hexagonal / Ports & Adapters
+   - [OK]
  * - **GEN**
    - General
- - Arquitectura general o múltiples patrones
- - [OK]
+   - Arquitectura general o múltiples patrones
+   - [OK]
 
 **Total Especialidades ARQ:** 6
 
@@ -633,88 +633,88 @@ Códigos por Frecuencia de Uso Estimada
 
  * - #
    - Código
- - Nombre
- - Código Completo Ejemplo
+   - Nombre
+   - Código Completo Ejemplo
  * - 1
    - PYT
- - Python
- - INF.PRG.PYT.XXX
+   - Python
+   - INF.PRG.PYT.XXX
  * - 2
    - FST
- - Full-Stack
- - INF.PRG.FST.XXX
+   - Full-Stack
+   - INF.PRG.FST.XXX
  * - 3
    - REA
- - React
- - INF.PRG.REA.XXX
+   - React
+   - INF.PRG.REA.XXX
  * - 4
    - JAV
- - JavaScript
- - INF.PRG.JAV.XXX
+   - JavaScript
+   - INF.PRG.JAV.XXX
  * - 5
    - MLF
- - Machine Learning
- - INF.IAR.MLF.XXX
+   - Machine Learning
+   - INF.IAR.MLF.XXX
  * - 6
    - DOC
- - Docker
- - INF.DVC.DOC.XXX
+   - Docker
+   - INF.DVC.DOC.XXX
  * - 7
    - KUB
- - Kubernetes
- - INF.DVC.KUB.XXX
+   - Kubernetes
+   - INF.DVC.KUB.XXX
  * - 8
    - NOD
- - Node.js
- - INF.PRG.NOD.XXX
+   - Node.js
+   - INF.PRG.NOD.XXX
  * - 9
    - TSC
- - TypeScript
- - INF.PRG.TSC.XXX
+   - TypeScript
+   - INF.PRG.TSC.XXX
  * - 10
    - DJA
- - Django
- - INF.PRG.DJA.XXX
+   - Django
+   - INF.PRG.DJA.XXX
  * - 11
    - MIC
- - Microservicios
- - ING.ARQ.MIC.XXX
+   - Microservicios
+   - ING.ARQ.MIC.XXX
  * - 12
    - DLE
- - Deep Learning
- - INF.IAR.DLE.XXX
+   - Deep Learning
+   - INF.IAR.DLE.XXX
  * - 13
    - AWS
- - AWS
- - INF.DVC.AWS.XXX
+   - AWS
+   - INF.DVC.AWS.XXX
  * - 14
    - CLE
- - Clean Architecture
- - ING.ARQ.CLE.XXX
+   - Clean Architecture
+   - ING.ARQ.CLE.XXX
  * - 15
    - NLP
- - NLP
- - INF.IAR.NLP.XXX
+   - NLP
+   - INF.IAR.NLP.XXX
  * - 16
    - ANG
- - Angular
- - INF.PRG.ANG.XXX
+   - Angular
+   - INF.PRG.ANG.XXX
  * - 17
    - VUE
- - Vue.js
- - INF.PRG.VUE.XXX
+   - Vue.js
+   - INF.PRG.VUE.XXX
  * - 18
    - SQL
- - SQL Databases
- - INF.BDD.SQL.XXX
+   - SQL Databases
+   - INF.BDD.SQL.XXX
  * - 19
    - ARC
- - arc42
- - ING.ARQ.ARC.XXX
+   - arc42
+   - ING.ARQ.ARC.XXX
  * - 20
    - DDD
- - DDD
- - ING.ARQ.DDD.XXX
+   - DDD
+   - ING.ARQ.DDD.XXX
 
 Índice Alfabético de Códigos
 -----------------------------
@@ -871,12 +871,12 @@ Historial de Versiones
 
  * - Versión
    - Fecha
- - Autor
- - Cambios
+   - Autor
+   - Cambios
  * - 1.0.0
    - 2026-01-28
- - Sistema ADT
- - Versión inicial - 73+ códigos definidos
+   - Sistema ADT
+   - Versión inicial - 73+ códigos definidos
 
 ----
 

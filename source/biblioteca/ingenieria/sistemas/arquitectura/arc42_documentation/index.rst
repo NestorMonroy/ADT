@@ -128,69 +128,69 @@ Estado de Traducción
 
  * - #
    - Sección
- - Original
- - Traducido
- - Estado
+   - Original
+   - Traducido
+   - Estado
  * - 01
    - Introduction and Goals
- - 147 archivos
- - 0%
- - [RUNNING] Pendiente
+   - 147 archivos
+   - 0%
+   - [RUNNING] Pendiente
  * - 02
    - Constraints
- - 2 archivos
- - 0%
- - [RUNNING] Pendiente
+   - 2 archivos
+   - 0%
+   - [RUNNING] Pendiente
  * - 03
    - Context and Scope
- - 6 archivos
- - 0%
- - [RUNNING] Pendiente
+   - 6 archivos
+   - 0%
+   - [RUNNING] Pendiente
  * - 04
    - Solution Strategy
- - 2 archivos
- - 0%
- - [RUNNING] Pendiente
+   - 2 archivos
+   - 0%
+   - [RUNNING] Pendiente
  * - 05
    - Building Block View
- - 4 archivos
- - 0%
- - [RUNNING] Pendiente
+   - 4 archivos
+   - 0%
+   - [RUNNING] Pendiente
  * - 06
    - Runtime View
- - 3 archivos
- - 0%
- - [RUNNING] Pendiente
+   - 3 archivos
+   - 0%
+   - [RUNNING] Pendiente
  * - 07
    - Deployment View
- - 3 archivos
- - 0%
- - [RUNNING] Pendiente
+   - 3 archivos
+   - 0%
+   - [RUNNING] Pendiente
  * - 08
    - Concepts
- - 4 archivos
- - 0%
- - [RUNNING] Pendiente
+   - 4 archivos
+   - 0%
+   - [RUNNING] Pendiente
  * - 09
    - Architecture Decisions
- - 3 archivos
- - 0%
- - [RUNNING] Pendiente
+   - 3 archivos
+   - 0%
+   - [RUNNING] Pendiente
  * - 10
    - Quality
- - 3 archivos
- - 0%
- - [RUNNING] Pendiente
+   - 3 archivos
+   - 0%
+   - [RUNNING] Pendiente
  * - 11
    - Risks and Technical Debt
- - 3 archivos
- - 0%
- - [RUNNING] Pendiente
+   - 3 archivos
+   - 0%
+   - [RUNNING] Pendiente
  * - 12
    - Glossary
- - 2 archivos
- - 0%
- - [RUNNING] Pendiente
+   - 2 archivos
+   - 0%
+   - [RUNNING] Pendiente
 
 **Progreso Global:** 0% (0 de 12 secciones)
 

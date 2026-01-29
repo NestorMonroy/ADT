@@ -46,34 +46,34 @@ Progreso por Lotes
 
  * - Lote
    - Archivos
- - %
- - Descripción
- - Workflow
+   - %
+   - Descripción
+   - Workflow
  * - Lote 1
    - 5/28
- - 18%
- - 4 ejemplos + 1 tip
- - v1.4.0 + corr.
+   - 18%
+   - 4 ejemplos + 1 tip
+   - v1.4.0 + corr.
  * - Lote 2
    - 9/28
- - 32%
- - Tips 2-10
- - v1.5.0 [OK]
+   - 32%
+   - Tips 2-10
+   - v1.5.0 [OK]
  * - Lote 3
    - 9/28
- - 32%
- - Tips 11-19
- - v1.5.0 [OK]
+   - 32%
+   - Tips 11-19
+   - v1.5.0 [OK]
  * - Lote 4
    - 5/28
- - 18%
- - Tips 20-24
- - v1.5.0 [OK]
+   - 18%
+   - Tips 20-24
+   - v1.5.0 [OK]
  * - **TOTAL**
    - **28/28**
- - **100%**
- - **COMPLETADO**
- - **4 lotes**
+   - **100%**
+   - **COMPLETADO**
+   - **4 lotes**
 
 **Progreso visual:**
 
@@ -159,46 +159,46 @@ Métricas de Conversión
 
  * - Métrica
    - Valor
- - Notas
+   - Notas
  * - Archivos originales
    - 31
- - Markdown (.md) + plantilla arc42
+   - Markdown (.md) + plantilla arc42
  * - Archivos traducidos
    - 31
- - reStructuredText (.rst)
+   - reStructuredText (.rst)
  * - Subsecciones plantilla
    - 3
- - 1.1, 1.2, 1.3
+   - 1.1, 1.2, 1.3
  * - Ejemplos
    - 4
- - TPU + HtmlSC
+   - TPU + HtmlSC
  * - Tips
    - 24
- - Consejos prácticos
+   - Consejos prácticos
  * - Líneas originales (aprox.)
    - ~700
- - Sin metadata
+   - Sin metadata
  * - Líneas traducidas (aprox.)
    - ~1,850
- - Con metadata RST
+   - Con metadata RST
  * - Expansión promedio
    - ~164%
- - Por metadata y estructura
+   - Por metadata y estructura
  * - Figuras convertidas
    - 12
- - Markdown -> figure directive
+   - Markdown -> figure directive
  * - Tablas convertidas
    - 10
- - Markdown -> list-table
+   - Markdown -> list-table
  * - Code-blocks
    - 2
- - PlantUML + plantillas
+   - PlantUML + plantillas
  * - Enlaces externos
    - 8
- - Preservados
+   - Preservados
  * - Footnotes
    - 1
- - Markdown -> RST
+   - Markdown -> RST
 
 Elementos por Lote
 ------------------
@@ -209,34 +209,34 @@ Elementos por Lote
 
  * - Lote
    - Figuras
- - Tablas
- - Code-blocks
- - Enlaces
+   - Tablas
+   - Code-blocks
+   - Enlaces
  * - Lote 1
    - 4
- - 5
- - 0
- - 2
+   - 5
+   - 0
+   - 2
  * - Lote 2
    - 5
- - 1
- - 1
- - 0
+   - 1
+   - 1
+   - 0
  * - Lote 3
    - 2
- - 0
- - 0
- - 2
+   - 0
+   - 0
+   - 2
  * - Lote 4
    - 1
- - 2
- - 0
- - 1
+   - 2
+   - 0
+   - 1
  * - **TOTAL**
    - **12**
- - **8**
- - **1**
- - **5**
+   - **8**
+   - **1**
+   - **5**
 
 ----
 
@@ -254,22 +254,22 @@ Términos Clave Aplicados
 
  * - Término Original
    - Traducción Aplicada
- - Ocurrencias
+   - Ocurrencias
  * - driving forces
    - factores determinantes
- - 3
+   - 3
  * - quality goals
    - atributos de calidad objetivo
- - 15+
+   - 15+
  * - stakeholder
    - stakeholder (preservado)
- - 20+
+   - 20+
  * - quality requirements
    - requisitos de calidad
- - 10+
+   - 10+
  * - quality scenarios
    - escenarios de calidad
- - 5+
+   - 5+
 
 Coherencia Terminológica
 -------------------------
@@ -296,24 +296,24 @@ Lote 1 (v1.4.0) vs Lotes 2-4 (v1.5.0)
 
  * - Métrica
    - Lote 1 (v1.4.0)
- - Lotes 2-4 (v1.5.0)
- - Mejora
+   - Lotes 2-4 (v1.5.0)
+   - Mejora
  * - Tiempo/archivo
    - ~60 min
- - ~18 min
- - **-70%**
+   - ~18 min
+   - **-70%**
  * - Correcciones necesarias
    - 12
- - 0
- - **-100%**
+   - 0
+   - **-100%**
  * - Tiempo correcciones
    - ~2 horas
- - 0 horas
- - Eliminado
+   - 0 horas
+   - Eliminado
  * - Calidad inicial
    - Requiere FASE 4
- - [OK] Lista
- - Perfecta
+   - [OK] Lista
+   - Perfecta
 
 **Conclusión:** Workflow v1.5.0 demostró ser **70% más eficiente** y producir
 **calidad correcta desde el inicio**.
@@ -339,16 +339,16 @@ Validación Empírica
 
  * - Objetivo
    - Meta
- - Resultado
+   - Resultado
  * - Reducción de correcciones
    - 80%
- - **100%** [OK]
+   - **100%** [OK]
  * - Reducción de tiempo
    - 40%
- - **70%** [OK]
+   - **70%** [OK]
  * - Calidad desde inicio
    - Mejor
- - **Perfecta** [OK]
+   - **Perfecta** [OK]
 
 **Conclusión:** **Paso 3.4 SUPERÓ TODAS LAS EXPECTATIVAS**
 
@@ -532,10 +532,10 @@ Historial de Revisiones
 
  * - Versión
    - Fecha
- - Cambios
+   - Cambios
  * - 1.0.0
    - 2026-01-27
- - Reporte final - Sección 01 completada al 100%
+   - Reporte final - Sección 01 completada al 100%
 
 ----
 

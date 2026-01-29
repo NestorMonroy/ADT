@@ -43,20 +43,20 @@ Estructura de Tabla Recomendada
 
  * - **English**
    - **Definition**
- - **Español**
- - **Deutsch**
+   - **Español**
+   - **Deutsch**
  * - **Order**
    - Collection of products a customer wants to purchase, including shipping and payment details
- - **Pedido**
- - **Bestellung**
+   - **Pedido**
+   - **Bestellung**
  * - **Shopping Cart**
    - Temporary collection of selected items before checkout
- - **Carrito**
- - **Warenkorb**
+   - **Carrito**
+   - **Warenkorb**
  * - **Checkout**
    - Process of finalizing a purchase and providing payment
- - **Pago**
- - **Kasse**
+   - **Pago**
+   - **Kasse**
 
 ----
 
@@ -68,22 +68,22 @@ Estructura de Tabla Recomendada
 
  * - **Tipo de Término**
    - **Incluir**
- - **Ejemplo**
+   - **Ejemplo**
  * - Términos de negocio específicos del dominio
    - [OK] SÍ
- - "Policy", "Premium", "Claim"
+   - "Policy", "Premium", "Claim"
  * - Términos técnicos específicos del sistema
    - [OK] SÍ
- - "Event Bus", "Saga Pattern"
+   - "Event Bus", "Saga Pattern"
  * - Términos técnicos genéricos
    - [WARNING] SOLO si usados de forma especial
- - "Microservicio" (si definición difiere)
+   - "Microservicio" (si definición difiere)
  * - Términos obvios o universales
    - [ERROR] NO
- - "Usuario", "Base de datos"
+   - "Usuario", "Base de datos"
  * - Acrónimos
    - [OK] SÍ
- - "SLA", "API", "GDPR"
+   - "SLA", "API", "GDPR"
 
 ----
 
@@ -179,19 +179,19 @@ Estructura de Tabla Recomendada
 
  * - **Herramienta**
    - **Ventajas**
- - **Uso**
+   - **Uso**
  * - **Markdown Table**
    - Simple, versionable con Git
- - Proyectos pequeños
+   - Proyectos pequeños
  * - **Confluence**
    - Búsqueda, colaboración
- - Equipos medianos
+   - Equipos medianos
  * - **Sphinx Glossary**
    - Auto-linking en docs
- - Proyectos con Sphinx
+   - Proyectos con Sphinx
  * - **Google Sheets**
    - Colaboración real-time
- - Equipos distribuidos
+   - Equipos distribuidos
 
 **Ejemplo con Sphinx Glossary:**
 

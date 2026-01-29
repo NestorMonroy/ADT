@@ -134,40 +134,40 @@ Decisión por Tipo de Documento
 
  * - **Tipo de Documento**
    - **Modo 1**
- - **Modo 2**
- - **Recomendado**
+   - **Modo 2**
+   - **Recomendado**
  * - Libro académico LaTeX
    - [OK] Excelente
- - [WARNING] Posible
- - **Modo 1**
+   - [WARNING] Posible
+   - **Modo 1**
  * - Paper científico
    - [OK] Excelente
- - [ERROR] No recomendado
- - **Modo 1**
+   - [ERROR] No recomendado
+   - **Modo 1**
  * - Documentación técnica
    - [WARNING] Posible
- - [OK] Excelente
- - **Modo 2**
+   - [OK] Excelente
+   - **Modo 2**
  * - Manual de usuario
    - [WARNING] Posible
- - [OK] Excelente
- - **Modo 2**
+   - [OK] Excelente
+   - **Modo 2**
  * - Tutorial/Guía
    - [ERROR] No recomendado
- - [OK] Excelente
- - **Modo 2**
+   - [OK] Excelente
+   - **Modo 2**
  * - Tesis doctoral
    - [OK] Excelente
- - [ERROR] No recomendado
- - **Modo 1**
+   - [ERROR] No recomendado
+   - **Modo 1**
  * - Blog técnico
    - [ERROR] No aplicable
- - [OK] Excelente
- - **Modo 2**
+   - [OK] Excelente
+   - **Modo 2**
  * - Especificación ISO
    - [OK] Excelente
- - [WARNING] Con cuidado
- - **Modo 1**
+   - [WARNING] Con cuidado
+   - **Modo 1**
 
 Decisión por Objetivo
 ----------------------
@@ -178,25 +178,25 @@ Decisión por Objetivo
 
  * - **Objetivo**
    - **Modo 1**
- - **Modo 2**
+   - **Modo 2**
  * - Publicación académica
    - [OK] Preferido
- - [ERROR]
+   - [ERROR]
  * - Documentación web
    - [ERROR]
- - [OK] Preferido
+   - [OK] Preferido
  * - Impresión física
    - [OK] Preferido
- - [WARNING] Posible
+   - [WARNING] Posible
  * - Consulta online
    - [WARNING] Posible
- - [OK] Preferido
+   - [OK] Preferido
  * - Versionado continuo
    - [WARNING] Difícil
- - [OK] Fácil
+   - [OK] Fácil
  * - Colaboración múltiple
    - [WARNING] Complejo
- - [OK] Simple
+   - [OK] Simple
 
 Decisión por Restricciones
 ---------------------------
@@ -207,22 +207,22 @@ Decisión por Restricciones
 
  * - **Restricción**
    - **Favorece Modo 1**
- - **Favorece Modo 2**
+   - **Favorece Modo 2**
  * - Debe compilar en LaTeX
    - [OK] Sí
- - [ERROR] No
+   - [ERROR] No
  * - Requiere búsqueda web
    - [ERROR] No
- - [OK] Sí
+   - [OK] Sí
  * - Formato original crítico
    - [OK] Sí
- - [ERROR] No
+   - [ERROR] No
  * - Necesita enriquecimiento
    - [WARNING] Limitado
- - [OK] Sí
+   - [OK] Sí
  * - Múltiples formatos salida
    - [ERROR] No
- - [OK] Sí
+   - [OK] Sí
 
 ----
 
@@ -375,22 +375,22 @@ Tiempo de Ejecución
 
  * - **Fase**
    - **Modo 1**
- - **Modo 2**
+   - **Modo 2**
  * - Configuración inicial
    - Rápida (15 min)
- - Media (1-2 horas)
+   - Media (1-2 horas)
  * - Traducción por página
    - Rápida
- - Media (+ conversión)
+   - Media (+ conversión)
  * - Enriquecimiento
    - Limitado
- - Extensivo
+   - Extensivo
  * - Verificación
    - Simple
- - Más compleja
+   - Más compleja
  * - **Total proyecto**
    - **Menor**
- - **Mayor inicial, menor a largo plazo**
+   - **Mayor inicial, menor a largo plazo**
 
 Calidad de Salida
 -----------------
@@ -401,25 +401,25 @@ Calidad de Salida
 
  * - **Aspecto**
    - **Modo 1**
- - **Modo 2**
+   - **Modo 2**
  * - Fidelidad al original
    - [STAR][STAR][STAR][STAR][STAR]
- - [STAR][STAR][STAR][STAR]
+   - [STAR][STAR][STAR][STAR]
  * - Experiencia web
    - [STAR][STAR][STAR]
- - [STAR][STAR][STAR][STAR][STAR]
+   - [STAR][STAR][STAR][STAR][STAR]
  * - Búsqueda
    - [STAR][STAR]
- - [STAR][STAR][STAR][STAR][STAR]
+   - [STAR][STAR][STAR][STAR][STAR]
  * - Navegación
    - [STAR][STAR]
- - [STAR][STAR][STAR][STAR][STAR]
+   - [STAR][STAR][STAR][STAR][STAR]
  * - Impresión
    - [STAR][STAR][STAR][STAR][STAR]
- - [STAR][STAR][STAR][STAR]
+   - [STAR][STAR][STAR][STAR]
  * - Flexibilidad
    - [STAR][STAR][STAR]
- - [STAR][STAR][STAR][STAR][STAR]
+   - [STAR][STAR][STAR][STAR][STAR]
 
 ----
 

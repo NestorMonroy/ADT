@@ -144,16 +144,16 @@ El sistema ADT define **3 categorías principales** expandibles a futuro:
 
  * - Código
    - Nombre
- - Ámbito
+   - Ámbito
  * - **INF**
    - Informática
- - Ciencias de la Computación, Programación, IA, Redes, Seguridad
+   - Ciencias de la Computación, Programación, IA, Redes, Seguridad
  * - **ING**
    - Ingeniería
- - Ingeniería de Software, Sistemas, Arquitectura, Metodologías
+   - Ingeniería de Software, Sistemas, Arquitectura, Metodologías
  * - **CIE**
    - Ciencias
- - Ciencias Aplicadas, Matemáticas, Física, Biología Computacional
+   - Ciencias Aplicadas, Matemáticas, Física, Biología Computacional
 
 **Criterios de Clasificación Nivel 1:**
 
@@ -185,55 +185,55 @@ El sistema ADT define **3 categorías principales** expandibles a futuro:
 
  * - Código
    - Nombre
- - Ámbito y Ejemplos
+   - Ámbito y Ejemplos
  * - **PRG**
    - Programación
- - Lenguajes, paradigmas, desarrollo de software
+   - Lenguajes, paradigmas, desarrollo de software
 
  *Ej: Python, JavaScript, Functional Programming*
  * - **IAR**
    - Inteligencia Artificial
- - Machine Learning, Deep Learning, NLP, Computer Vision
+   - Machine Learning, Deep Learning, NLP, Computer Vision
 
  *Ej: TensorFlow, PyTorch, Neural Networks*
  * - **RED**
    - Redes
- - Protocolos, arquitecturas de red, comunicaciones
+   - Protocolos, arquitecturas de red, comunicaciones
 
  *Ej: TCP/IP, HTTP, Network Security*
  * - **SEG**
    - Seguridad
- - Ciberseguridad, criptografía, ethical hacking
+   - Ciberseguridad, criptografía, ethical hacking
 
  *Ej: Penetration Testing, Cryptography, Security Audit*
  * - **BDD**
    - Bases de Datos
- - SQL, NoSQL, diseño de esquemas, optimización
+   - SQL, NoSQL, diseño de esquemas, optimización
 
  *Ej: PostgreSQL, MongoDB, Database Design*
  * - **SOP**
    - Sistemas Operativos
- - Linux, Windows, administración de sistemas
+   - Linux, Windows, administración de sistemas
 
  *Ej: Linux Kernel, System Administration, Shell Scripting*
  * - **WEB**
    - Desarrollo Web
- - Frontend, Backend, Full-Stack (cuando no cabe en PRG)
+   - Frontend, Backend, Full-Stack (cuando no cabe en PRG)
 
  *Ej: HTML5, CSS3, Web APIs (si es genérico)*
  * - **MOV**
    - Desarrollo Móvil
- - iOS, Android, multiplataforma
+   - iOS, Android, multiplataforma
 
  *Ej: Swift, Kotlin, React Native*
  * - **DVC**
    - DevOps y Cloud
- - CI/CD, containerización, orquestación, cloud computing
+   - CI/CD, containerización, orquestación, cloud computing
 
  *Ej: Kubernetes, AWS, Azure, DevOps Practices*
  * - **ALG**
    - Algoritmos
- - Estructuras de datos, algoritmos, complejidad
+   - Estructuras de datos, algoritmos, complejidad
 
  *Ej: Data Structures, Algorithm Analysis*
 
@@ -257,35 +257,35 @@ El sistema permite agregar nuevas subcategorías según necesidad:
 
  * - Código
    - Nombre
- - Ámbito y Ejemplos
+   - Ámbito y Ejemplos
  * - **SIS**
    - Sistemas
- - Arquitectura de sistemas, diseño de sistemas complejos
+   - Arquitectura de sistemas, diseño de sistemas complejos
 
  *Ej: System Design, Distributed Systems*
  * - **ARQ**
    - Arquitectura
- - Arquitectura de software, patrones arquitectónicos
+   - Arquitectura de software, patrones arquitectónicos
 
  *Ej: Clean Architecture, Microservices, arc42*
  * - **MET**
    - Metodologías
- - Agile, Scrum, DevOps, metodologías de desarrollo
+   - Agile, Scrum, DevOps, metodologías de desarrollo
 
  *Ej: Scrum Guide, Agile Practices, Lean Software*
  * - **REQ**
    - Requisitos
- - Ingeniería de requisitos, análisis de requisitos
+   - Ingeniería de requisitos, análisis de requisitos
 
  *Ej: Requirements Engineering, User Stories*
  * - **PRU**
    - Pruebas
- - Testing, QA, automatización de pruebas
+   - Testing, QA, automatización de pruebas
 
  *Ej: Test-Driven Development, Unit Testing, QA*
  * - **MOD**
    - Modelado
- - UML, modelado de procesos, especificación formal
+   - UML, modelado de procesos, especificación formal
 
  *Ej: UML Guide, BPMN, Formal Methods*
 
@@ -298,25 +298,25 @@ El sistema permite agregar nuevas subcategorías según necesidad:
 
  * - Código
    - Nombre
- - Ámbito y Ejemplos
+   - Ámbito y Ejemplos
  * - **MAT**
    - Matemáticas
- - Matemáticas aplicadas, cálculo, álgebra para CS
+   - Matemáticas aplicadas, cálculo, álgebra para CS
 
  *Ej: Linear Algebra for ML, Calculus for CS*
  * - **EST**
    - Estadística
- - Estadística, probabilidad, análisis de datos
+   - Estadística, probabilidad, análisis de datos
 
  *Ej: Statistical Analysis, Probability Theory*
  * - **FIS**
    - Física
- - Física computacional, simulaciones
+   - Física computacional, simulaciones
 
  *Ej: Computational Physics, Simulations*
  * - **BIO**
    - Biología
- - Bioinformática, biología computacional
+   - Bioinformática, biología computacional
 
  *Ej: Bioinformatics, Genomics Analysis*
 
@@ -331,61 +331,61 @@ Especialidades más comunes en **INF.PRG**:
 
  * - Código
    - Nombre
- - Descripción
+   - Descripción
  * - **FST**
    - Full-Stack
- - Desarrollo completo (frontend + backend)
+   - Desarrollo completo (frontend + backend)
  * - **FRE**
    - Frontend
- - Desarrollo de interfaces de usuario
+   - Desarrollo de interfaces de usuario
  * - **BAC**
    - Backend
- - Desarrollo del lado del servidor
+   - Desarrollo del lado del servidor
  * - **PYT**
    - Python
- - Lenguaje Python (general)
+   - Lenguaje Python (general)
  * - **JAV**
    - JavaScript
- - JavaScript (general, no específico a framework)
+   - JavaScript (general, no específico a framework)
  * - **TSC**
    - TypeScript
- - Lenguaje TypeScript
+   - Lenguaje TypeScript
  * - **REA**
    - React
- - Framework React
+   - Framework React
  * - **VUE**
    - Vue.js
- - Framework Vue
+   - Framework Vue
  * - **ANG**
    - Angular
- - Framework Angular
+   - Framework Angular
  * - **NOD**
    - Node.js
- - Runtime Node.js y desarrollo backend
+   - Runtime Node.js y desarrollo backend
  * - **DJA**
    - Django
- - Framework Django (Python)
+   - Framework Django (Python)
  * - **FLA**
    - Flask
- - Framework Flask (Python)
+   - Framework Flask (Python)
  * - **SPR**
    - Spring
- - Framework Spring (Java)
+   - Framework Spring (Java)
  * - **NET**
    - .NET
- - Plataforma .NET y C#
+   - Plataforma .NET y C#
  * - **RUS**
    - Rust
- - Lenguaje Rust
+   - Lenguaje Rust
  * - **GOL**
    - Go
- - Lenguaje Go
+   - Lenguaje Go
  * - **CPP**
    - C++
- - Lenguaje C++
+   - Lenguaje C++
  * - **FUN**
    - Funcional
- - Programación funcional (Haskell, Lisp, Scala)
+   - Programación funcional (Haskell, Lisp, Scala)
 
 **Expansión por Demanda:**
 
@@ -530,22 +530,22 @@ Parte 3: Proceso de Clasificación
 
  * - Título del Libro
    - Categoría
- - Justificación
+   - Justificación
  * - "Modern Full-Stack Development with TypeScript and React"
    - **INF**
- - Programación, frameworks específicos
+   - Programación, frameworks específicos
  * - "Software Architecture: The Hard Parts"
    - **ING**
- - Arquitectura y diseño de sistemas
+   - Arquitectura y diseño de sistemas
  * - "Linear Algebra for Machine Learning"
    - **CIE**
- - Matemáticas aplicadas (aunque para ML)
+   - Matemáticas aplicadas (aunque para ML)
  * - "Python for Data Science"
    - **INF**
- - Programación con Python (domina sobre ciencia)
+   - Programación con Python (domina sobre ciencia)
  * - "Designing Data-Intensive Applications"
    - **ING**
- - Diseño de sistemas (domina sobre implementación)
+   - Diseño de sistemas (domina sobre implementación)
 
 3.3. Paso 2: Determinar Subcategoría
 -------------------------------------
@@ -684,25 +684,25 @@ Parte 3: Proceso de Clasificación
 
  * - Combinación en Título
    - Subcategoría
- - Especialidad
+   - Especialidad
  * - "Full-Stack + [tecnologías]"
    - PRG
- - FST
+   - FST
  * - "React + [otros frameworks]"
    - PRG
- - REA (si React domina)
+   - REA (si React domina)
  * - "Python + Data Science"
    - PRG
- - PYT (si domina sintaxis)
+   - PYT (si domina sintaxis)
  * - "Machine Learning + Python"
    - IAR
- - MLF (si domina algoritmos)
+   - MLF (si domina algoritmos)
  * - "Docker + Kubernetes"
    - DVC
- - DOC o KUB (según peso)
+   - DOC o KUB (según peso)
  * - "Microservices Architecture"
    - ARQ
- - MIC
+   - MIC
 
 3.5. Paso 4: Asignar Número Secuencial
 ---------------------------------------
@@ -2114,16 +2114,16 @@ A.1. Categorías (3 letras)
 
  * - Código
    - Nombre
- - Descripción
+   - Descripción
  * - INF
    - Informática
- - Ciencias de la Computación
+   - Ciencias de la Computación
  * - ING
    - Ingeniería
- - Ingeniería de Software
+   - Ingeniería de Software
  * - CIE
    - Ciencias
- - Ciencias Aplicadas
+   - Ciencias Aplicadas
 
 A.2. Subcategorías Completas
 -----------------------------
@@ -2136,37 +2136,37 @@ A.2. Subcategorías Completas
 
  * - Código
    - Nombre
- - Ámbito
+   - Ámbito
  * - PRG
    - Programación
- - Lenguajes, paradigmas
+   - Lenguajes, paradigmas
  * - IAR
    - Inteligencia Artificial
- - ML, DL, NLP, CV
+   - ML, DL, NLP, CV
  * - RED
    - Redes
- - Protocolos, comunicaciones
+   - Protocolos, comunicaciones
  * - SEG
    - Seguridad
- - Ciberseguridad, criptografía
+   - Ciberseguridad, criptografía
  * - BDD
    - Bases de Datos
- - SQL, NoSQL, diseño
+   - SQL, NoSQL, diseño
  * - SOP
    - Sistemas Operativos
- - Linux, Windows, admin
+   - Linux, Windows, admin
  * - WEB
    - Desarrollo Web
- - Frontend, Backend, Full-Stack
+   - Frontend, Backend, Full-Stack
  * - MOV
    - Desarrollo Móvil
- - iOS, Android, multiplataforma
+   - iOS, Android, multiplataforma
  * - DVC
    - DevOps y Cloud
- - CI/CD, containers, orquestación
+   - CI/CD, containers, orquestación
  * - ALG
    - Algoritmos
- - Estructuras de datos, complejidad
+   - Estructuras de datos, complejidad
 
 **INGENIERÍA (ING):**
 
@@ -2176,25 +2176,25 @@ A.2. Subcategorías Completas
 
  * - Código
    - Nombre
- - Ámbito
+   - Ámbito
  * - SIS
    - Sistemas
- - Diseño de sistemas
+   - Diseño de sistemas
  * - ARQ
    - Arquitectura
- - Patrones arquitectónicos
+   - Patrones arquitectónicos
  * - MET
    - Metodologías
- - Agile, Scrum, DevOps
+   - Agile, Scrum, DevOps
  * - REQ
    - Requisitos
- - Ingeniería de requisitos
+   - Ingeniería de requisitos
  * - PRU
    - Pruebas
- - Testing, QA
+   - Testing, QA
  * - MOD
    - Modelado
- - UML, BPMN
+   - UML, BPMN
 
 **CIENCIAS (CIE):**
 
@@ -2204,19 +2204,19 @@ A.2. Subcategorías Completas
 
  * - Código
    - Nombre
- - Ámbito
+   - Ámbito
  * - MAT
    - Matemáticas
- - Matemáticas aplicadas
+   - Matemáticas aplicadas
  * - EST
    - Estadística
- - Probabilidad, análisis
+   - Probabilidad, análisis
  * - FIS
    - Física
- - Física computacional
+   - Física computacional
  * - BIO
    - Biología
- - Bioinformática
+   - Bioinformática
 
 A.3. Especialidades Más Comunes
 --------------------------------
@@ -2420,9 +2420,9 @@ Historial de Versiones
 
  * - Versión
    - Fecha
- - Autor
- - Cambios
+   - Autor
+   - Cambios
  * - 1.0.0
    - 2026-01-28
- - Sistema ADT
- - Versión inicial completa de la guía metodológica
+   - Sistema ADT
+   - Versión inicial completa de la guía metodológica

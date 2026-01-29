@@ -22,16 +22,16 @@ Tabla de Evaluación
 
  * - **Objetivo de Calidad**
    - **Escenario**
- - **Enfoque de Solución**
- - **Riesgo**
+   - **Enfoque de Solución**
+   - **Riesgo**
  * - *<Q-goal 1>*
    - *<Texto>*
- - *<Texto>*
- - *<risk-1>*
+   - *<Texto>*
+   - *<risk-1>*
  * - *<Q-goal 2>*
    - *<Texto>*
- - *<Texto>*
- - *<risk-2>*
+   - *<Texto>*
+   - *<risk-2>*
 
 ----
 
@@ -68,28 +68,28 @@ Ejemplo Completo
 
  * - **Objetivo de Calidad**
    - **Escenario**
- - **Enfoque de Solución**
- - **Riesgo**
+   - **Enfoque de Solución**
+   - **Riesgo**
  * - **Performance**
    - Búsqueda de productos <200ms para 95% de requests
- - ElasticSearch con cache Redis, CDN para imágenes
- - Alta: Tamaño del índice crece 10x anualmente
+   - ElasticSearch con cache Redis, CDN para imágenes
+   - Alta: Tamaño del índice crece 10x anualmente
  * - **Escalabilidad**
    - Soportar 10,000 usuarios concurrentes durante Black Friday
- - Kubernetes auto-scaling, load balancer, DB read replicas
- - Medio: Costos de cloud pueden ser muy altos
+   - Kubernetes auto-scaling, load balancer, DB read replicas
+   - Medio: Costos de cloud pueden ser muy altos
  * - **Seguridad**
    - Proteger datos de tarjetas de crédito (PCI DSS)
- - Tokenización con Stripe, sin almacenar datos de tarjeta
- - Bajo: Dependencia de proveedor externo
+   - Tokenización con Stripe, sin almacenar datos de tarjeta
+   - Bajo: Dependencia de proveedor externo
  * - **Disponibilidad**
    - 99.9% uptime (8h downtime/año)
- - Multi-region deployment, health checks, automated failover
- - Medio: Complejidad de sincronización entre regiones
+   - Multi-region deployment, health checks, automated failover
+   - Medio: Complejidad de sincronización entre regiones
  * - **Mantenibilidad**
    - Desplegar nuevo feature en <2h
- - CI/CD pipeline, feature flags, blue-green deployment
- - Bajo: Requiere disciplina de equipo
+   - CI/CD pipeline, feature flags, blue-green deployment
+   - Bajo: Requiere disciplina de equipo
 
 ----
 
@@ -126,16 +126,16 @@ Para análisis más profundo, considera agregar estas columnas:
 
  * - **Q-Goal**
    - **Escenario**
- - **Solución**
- - **Riesgo**
- - **Trade-off**
- - **Sensibilidad**
+   - **Solución**
+   - **Riesgo**
+   - **Trade-off**
+   - **Sensibilidad**
  * - Performance
    - <200ms búsqueda
- - Cache + índice
- - Sincronización
- - Consistencia eventual
- - Alta: +10% carga = fallo
+   - Cache + índice
+   - Sincronización
+   - Consistencia eventual
+   - Alta: +10% carga = fallo
 
 **Columnas adicionales explicadas:**
 

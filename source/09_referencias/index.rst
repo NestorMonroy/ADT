@@ -171,19 +171,19 @@ Estado de Desarrollo
 
  * - **Subsección**
    - **Estado**
- - **Archivos**
+   - **Archivos**
  * - **cheatsheets/**
    - [OK] Iniciado
- - cheatsheet_rst [OK]
+   - cheatsheet_rst [OK]
  * - **comandos_utiles**
    - [OK] Completado
- - 1 archivo [OK]
+   - 1 archivo [OK]
  * - **recursos_externos**
    - [OK] Completado
- - 1 archivo [OK]
+   - 1 archivo [OK]
  * - **Otros**
    - [RUNNING] Planeado
- - Pendiente
+   - Pendiente
 
 ----
 

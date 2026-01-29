@@ -461,24 +461,24 @@ Tardé mucho en un archivo, ¿es normal?
 
  * - **Tipo**
    - **Original**
- - **Tiempo**
- - **Normal?**
+   - **Tiempo**
+   - **Normal?**
  * - Tip breve
    - < 20 líneas
- - 1-2 horas
- - [OK] Sí
+   - 1-2 horas
+   - [OK] Sí
  * - Sección corta
    - 20-50
- - 30-60 min
- - [OK] Sí
+   - 30-60 min
+   - [OK] Sí
  * - Sección mediana
    - 50-100
- - 1-1.5 horas
- - [OK] Sí
+   - 1-1.5 horas
+   - [OK] Sí
  * - Sección extensa
    - > 100
- - 2-3 horas
- - [OK] Sí
+   - 2-3 horas
+   - [OK] Sí
 
 **Si tardas más:** Identificar causa
 

@@ -49,24 +49,24 @@ Método de Evaluación
 
  * - **Requisito**
    - **Enfoque Actual**
- - **Análisis**
- - **Riesgo Identificado**
+   - **Análisis**
+   - **Riesgo Identificado**
  * - Performance: <100ms respuesta
    - Llamadas síncronas a DB
- - DB en región diferente = latencia 50-150ms
- - [WARNING] RIESGO: No cumplir SLA bajo carga
+   - DB en región diferente = latencia 50-150ms
+   - [WARNING] RIESGO: No cumplir SLA bajo carga
  * - Disponibilidad: 99.9%
    - Servidor único
- - Sin redundancia
- - PROBLEMA: Single point of failure
+   - Sin redundancia
+   - PROBLEMA: Single point of failure
  * - Seguridad: Encriptación end-to-end
    - HTTPS en tránsito
- - Datos en reposo sin encriptar
- - [WARNING] GAP: Falta encriptación at-rest
+   - Datos en reposo sin encriptar
+   - [WARNING] GAP: Falta encriptación at-rest
  * - Escalabilidad: 10x usuarios
    - Arquitectura monolítica
- - Escalar = escalar todo
- - [WARNING] RIESGO: Costos altos de infraestructura
+   - Escalar = escalar todo
+   - [WARNING] RIESGO: Costos altos de infraestructura
 
 ----
 
@@ -133,16 +133,16 @@ El **Architecture Tradeoff Analysis Method (ATAM)** es un método formal para es
 
  * - **Requisito**
    - **Enfoque**
- - **Trade-off**
- - **Sensitivity**
- - **Riesgo**
- - **Acción**
+   - **Trade-off**
+   - **Sensitivity**
+   - **Riesgo**
+   - **Acción**
  * - *<Req>*
    - *<Enfoque arquitectónico>*
- - *<Qué se sacrifica>*
- - *<Parámetros críticos>*
- - *<Nivel de riesgo>*
- - *<Mitigación propuesta>*
+   - *<Qué se sacrifica>*
+   - *<Parámetros críticos>*
+   - *<Nivel de riesgo>*
+   - *<Mitigación propuesta>*
 
 ----
 

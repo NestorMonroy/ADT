@@ -101,20 +101,20 @@ Para cada interfaz, pregunta:
 
  * - **Interface**
    - **Riesgo**
- - **Impacto**
- - **Mitigación**
+   - **Impacto**
+   - **Mitigación**
  * - API Pagos
    - Servicio no disponible
- - Alto: no se procesan pagos
- - Circuit breaker + cola de reintentos
+   - Alto: no se procesan pagos
+   - Circuit breaker + cola de reintentos
  * - API Pagos
    - Cambio de formato
- - Alto: integración rota
- - Tests de contrato + versionado
+   - Alto: integración rota
+   - Tests de contrato + versionado
  * - Webhook
    - Datos maliciosos
- - Medio: posible XSS
- - Validación estricta + sanitización
+   - Medio: posible XSS
+   - Validación estricta + sanitización
 
 ----
 

@@ -630,24 +630,24 @@ Resumen de Checklists
 
  * - **Fase**
    - **Duración**
- - **Items**
- - **Objetivo**
+   - **Items**
+   - **Objetivo**
  * - PASO 0
    - 5-10 min
- - 5
- - Identificar TODO antes de empezar
+   - 5
+   - Identificar TODO antes de empezar
  * - Durante Traducción
    - Variable
- - 5 por lote
- - Traducir sin omitir nada
+   - 5 por lote
+   - Traducir sin omitir nada
  * - Verificación
    - 30-60 min
- - 5
- - Asegurar calidad
+   - 5
+   - Asegurar calidad
  * - Documentación
    - 15-30 min
- - 5
- - Documentar trabajo realizado
+   - 5
+   - Documentar trabajo realizado
 
 **Total Items:** ~20 checks por proyecto
 

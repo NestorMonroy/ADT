@@ -263,10 +263,10 @@ Historial de Cambios
 
  * - Versión
    - Fecha
- - Cambios
+   - Cambios
  * - 1.0
    - 2026-01-27
- - Creación del documento. Establecimiento de reglas fundamentales.
+   - Creación del documento. Establecimiento de reglas fundamentales.
 
 Referencias
 ===========

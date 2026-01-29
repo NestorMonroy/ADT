@@ -250,13 +250,13 @@ Ejemplo 1: Énfasis
 
  * - LaTeX (Signifiant)
    - RST (Signifiant)
- - Signifié Preservado
+   - Signifié Preservado
  * - ``\textbf{texto}``
    - ``**texto**``
- - Énfasis fuerte
+   - Énfasis fuerte
  * - ``\emph{texto}``
    - ``*texto*``
- - Énfasis moderado
+   - Énfasis moderado
 
 **Análisis:**
 
@@ -274,13 +274,13 @@ Ejemplo 2: Listas
 
  * - LaTeX (Signifiant)
    - RST (Signifiant)
- - Decisión
+   - Decisión
  * - ``\begin{enumerate}``
    - ``1. 2. 3.``
- - Signifié [OK]
+   - Signifié [OK]
  * - ``\item``
    - ``1.``, ``2.``, etc.
- - Signifié [OK]
+   - Signifié [OK]
 
 **Signifié preservado:** "Lista ordenada con ítems numerados"
 
@@ -460,25 +460,25 @@ Matriz de Decisión
 
  * - Situación
    - Preferir Signifiant
- - Preferir Signifié
+   - Preferir Signifié
  * - **Código fuente**
    - [OK] Sí (fidelidad exacta)
- - [ERROR] No
+   - [ERROR] No
  * - **Estructura documento**
    - [ERROR] No
- - [OK] Sí (semántica)
+   - [OK] Sí (semántica)
  * - **Énfasis/Formato**
    - [ERROR] No
- - [OK] Sí (función)
+   - [OK] Sí (función)
  * - **Espaciado/Layout**
    - [ERROR] No (confiar en RST)
- - [OK] Sí (si semántico)
+   - [OK] Sí (si semántico)
  * - **Términos técnicos**
    - [OK] Sí (exactitud)
- - [WARNING] Depende
+   - [WARNING] Depende
  * - **Figuras/Tablas**
    - [WARNING] Depende
- - [OK] Sí (contenido)
+   - [OK] Sí (contenido)
 
 ----
 
