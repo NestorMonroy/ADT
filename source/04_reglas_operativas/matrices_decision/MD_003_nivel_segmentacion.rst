@@ -146,23 +146,23 @@ Por Tamaño de Contenido
  :widths: 25 25 25 25
 
  * - **Tamaño Total**
- - **Nivel 1**
+   - **Nivel 1**
  - **Nivel 2**
  - **Nivel 3**
  * - < 300 líneas
- - [OK] **Recomendado**
+   - [OK] **Recomendado**
  - [WARNING] Opcional
  - [ERROR] Excesivo
  * - 300-1000 líneas
- - [WARNING] Posible
+   - [WARNING] Posible
  - [OK] **Recomendado**
  - [WARNING] Posible
  * - 1000-3000 líneas
- - [ERROR] Muy largo
+   - [ERROR] Muy largo
  - [OK] **Recomendado**
  - [OK] Bueno
  * - > 3000 líneas
- - [ERROR] No
+   - [ERROR] No
  - [WARNING] Con cuidado
  - [OK] **Recomendado**
 
@@ -174,31 +174,31 @@ Por Tipo de Contenido
  :widths: 35 20 25 20
 
  * - **Tipo de Contenido**
- - **Nivel 1**
+   - **Nivel 1**
  - **Nivel 2**
  - **Nivel 3**
  * - Narrativa continua
- - [OK]
+   - [OK]
  - [WARNING]
  - [ERROR]
  * - Conceptos independientes
- - [WARNING]
+   - [WARNING]
  - [OK]
  - [OK]
  * - Tips/Consejos breves
- - [ERROR]
+   - [ERROR]
  - [WARNING]
  - [OK]
  * - Tutorial paso a paso
- - [OK]
+   - [OK]
  - [WARNING]
  - [ERROR]
  * - Documentación referencia
- - [ERROR]
+   - [ERROR]
  - [WARNING]
  - [OK]
  * - Manual de usuario
- - [WARNING]
+   - [WARNING]
  - [OK]
  - [WARNING]
 
@@ -210,27 +210,27 @@ Por Contexto de Proyecto
  :widths: 40 20 20 20
 
  * - **Factor**
- - **Nivel 1**
+   - **Nivel 1**
  - **Nivel 2**
  - **Nivel 3**
  * - Un solo autor
- - [OK]
+   - [OK]
  - [OK]
  - [WARNING]
  * - Equipo pequeño (2-5)
- - [WARNING]
+   - [WARNING]
  - [OK]
  - [OK]
  * - Equipo grande (5+)
- - [ERROR]
+   - [ERROR]
  - [OK]
  - [OK]
  * - Actualizaciones frecuentes
- - [WARNING]
+   - [WARNING]
  - [OK]
  - [OK]
  * - Contenido estable
- - [OK]
+   - [OK]
  - [OK]
  - [WARNING]
 
@@ -382,31 +382,31 @@ Comparación Detallada
  :widths: 25 25 25 25
 
  * - **Aspecto**
- - **Nivel 1**
+   - **Nivel 1**
  - **Nivel 2**
  - **Nivel 3**
  * - **Simplicidad**
- - [STAR][STAR][STAR][STAR][STAR]
+   - [STAR][STAR][STAR][STAR][STAR]
  - [STAR][STAR][STAR][STAR]
  - [STAR][STAR][STAR]
  * - **Navegabilidad**
- - [STAR][STAR]
+   - [STAR][STAR]
  - [STAR][STAR][STAR][STAR]
  - [STAR][STAR][STAR][STAR][STAR]
  * - **Mantenibilidad**
- - [STAR][STAR][STAR]
+   - [STAR][STAR][STAR]
  - [STAR][STAR][STAR][STAR]
  - [STAR][STAR][STAR][STAR][STAR]
  * - **Colaboración**
- - [STAR][STAR]
+   - [STAR][STAR]
  - [STAR][STAR][STAR][STAR]
  - [STAR][STAR][STAR][STAR][STAR]
  * - **Performance**
- - [STAR][STAR][STAR][STAR][STAR]
+   - [STAR][STAR][STAR][STAR][STAR]
  - [STAR][STAR][STAR][STAR]
  - [STAR][STAR][STAR]
  * - **Reutilización**
- - [STAR][STAR]
+   - [STAR][STAR]
  - [STAR][STAR][STAR]
  - [STAR][STAR][STAR][STAR][STAR]
 
@@ -418,27 +418,27 @@ Tiempo de Gestión
  :widths: 30 25 25 20
 
  * - **Actividad**
- - **Nivel 1**
+   - **Nivel 1**
  - **Nivel 2**
  - **Nivel 3**
  * - Crear estructura inicial
- - Rápido (5 min)
+   - Rápido (5 min)
  - Medio (15 min)
  - Lento (30 min)
  * - Encontrar sección específica
- - Lento (scroll)
+   - Lento (scroll)
  - Rápido
  - Muy rápido
  * - Actualizar contenido
- - Rápido
+   - Rápido
  - Rápido
  - Muy rápido
  * - Reorganizar
- - Difícil
+   - Difícil
  - Medio
  - Fácil
  * - Merge de Git
- - Conflictos
+   - Conflictos
  - Pocos conflictos
  - Muy pocos
 

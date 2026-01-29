@@ -160,15 +160,15 @@ Nivel 4: Carpeta del Libro
  :widths: 50 50
 
  * - Título Original
- - Nombre de Carpeta
+   - Nombre de Carpeta
  * - "Modern Full-Stack Development (2nd Edition)"
- - ``Modern_Full_Stack_Development_Zammetti_2ed/``
+   - ``Modern_Full_Stack_Development_Zammetti_2ed/``
  * - "Clean Architecture: A Craftsman's Guide"
- - ``Clean_Architecture_Martin_2017/``
+   - ``Clean_Architecture_Martin_2017/``
  * - "Python for Data Science"
- - ``Python_For_Data_Science_McKinney_2024/``
+   - ``Python_For_Data_Science_McKinney_2024/``
  * - "Docker: Up & Running"
- - ``Docker_Up_And_Running_Kane_2023/``
+   - ``Docker_Up_And_Running_Kane_2023/``
 
 ----
 
@@ -504,11 +504,11 @@ Historial de Versiones
  :header-rows: 1
 
  * - Versión
- - Fecha
+   - Fecha
  - Autor
  - Cambios
  * - 1.0.0
- - 2026-01-28
+   - 2026-01-28
  - Sistema ADT
  - Versión inicial de guía de organización
 

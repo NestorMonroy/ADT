@@ -323,10 +323,10 @@ Tablas no se ven correctamente
  :widths: 30 30 40
 
  * - Columna 1
- - Columna 2
+   - Columna 2
  - Columna 3
  * - Dato A
- - Dato B
+   - Dato B
  - Dato C
 
 **Ventajas de list-table:**
@@ -460,23 +460,23 @@ Tardé mucho en un archivo, ¿es normal?
  :widths: 30 25 25 20
 
  * - **Tipo**
- - **Original**
+   - **Original**
  - **Tiempo**
  - **Normal?**
  * - Tip breve
- - < 20 líneas
+   - < 20 líneas
  - 1-2 horas
  - [OK] Sí
  * - Sección corta
- - 20-50
+   - 20-50
  - 30-60 min
  - [OK] Sí
  * - Sección mediana
- - 50-100
+   - 50-100
  - 1-1.5 horas
  - [OK] Sí
  * - Sección extensa
- - > 100
+   - > 100
  - 2-3 horas
  - [OK] Sí
 
@@ -688,27 +688,27 @@ Tabla de Referencia
  :widths: 40 60
 
  * - **Problema**
- - **Solución Rápida**
+   - **Solución Rápida**
  * - Title underline too short
- - Igualar longitud de === con título
+   - Igualar longitud de === con título
  * - Unexpected indentation
- - Línea vacía + 2 espacios en listas anidadas
+   - Línea vacía + 2 espacios en listas anidadas
  * - Unknown directive
- - Espacio después de .. en directivas
+   - Espacio después de .. en directivas
  * - Undefined label
- - Verificar que label existe con grep
+   - Verificar que label existe con grep
  * - Imagen no aparece
- - Usar ruta relativa, verificar archivo existe
+   - Usar ruta relativa, verificar archivo existe
  * - Tabla mal formada
- - Usar list-table en lugar de tabla ASCII
+   - Usar list-table en lugar de tabla ASCII
  * - Código sin colores
- - Agregar .. code-block:: lenguaje
+   - Agregar .. code-block:: lenguaje
  * - Terminología inconsistente
- - Crear y usar glosario del proyecto
+   - Crear y usar glosario del proyecto
  * - Enriquecimiento incorrecto
- - Consultar MD-002 para rango apropiado
+   - Consultar MD-002 para rango apropiado
  * - Omisiones
- - Aplicar PASO 0 completo retrospectivamente
+   - Aplicar PASO 0 completo retrospectivamente
 
 Comandos Útiles
 ---------------

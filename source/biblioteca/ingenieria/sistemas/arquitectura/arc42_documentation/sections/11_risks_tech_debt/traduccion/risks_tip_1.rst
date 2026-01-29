@@ -44,13 +44,13 @@ Para identificar **riesgos** o problemas adicionales, considera incluir:
  :widths: 30 70
 
  * - **Fase**
- - **Acción**
+   - **Acción**
  * - **1. Amplitud**
- - Consultar TODOS los grupos de stakeholders (rápido, superficial)
+   - Consultar TODOS los grupos de stakeholders (rápido, superficial)
  * - **2. Consolidación**
- - Identificar temas comunes y priorizar
+   - Identificar temas comunes y priorizar
  * - **3. Profundidad**
- - Profundizar en riesgos críticos con expertos específicos
+   - Profundizar en riesgos críticos con expertos específicos
 
 **Beneficios del Enfoque Multi-Stakeholder:**
 

@@ -64,23 +64,23 @@ Rangos Estándar por Tamaño
  :widths: 20 20 20 40
 
  * - **Tamaño Original**
- - **Rango Óptimo**
+   - **Rango Óptimo**
  - **Promedio arc42**
  - **Ejemplos Reales**
  * - **< 20 líneas**
- - +300% a +1000%
+   - +300% a +1000%
  - +771%
  - Tips 12-1 a 12-6 (11-26 líneas)
  * - **20-50 líneas**
- - +100% a +300%
+   - +100% a +300%
  - +273%
  - section-12.md (44 líneas)
  * - **50-100 líneas**
- - +80% a +150%
+   - +80% a +150%
  - +95%
  - section-11.md (72 líneas)
  * - **> 100 líneas**
- - +50% a +100%
+   - +50% a +100%
  - +80%
  - section-10.md (123 líneas)
 
@@ -94,43 +94,43 @@ Datos Detallados por Sección de arc42
  :widths: 40 20 20 20
 
  * - **Archivo**
- - **Original**
+   - **Original**
  - **Traducido**
  - **Enriquecimiento**
  * - section-10.md (principal)
- - 123 líneas
+   - 123 líneas
  - 222 líneas
  - +80%
  * - quality_tip_1.rst
- - 15 líneas
+   - 15 líneas
  - 48 líneas
  - +220%
  * - quality_tip_2.rst
- - 37 líneas
+   - 37 líneas
  - 88 líneas
  - +138%
  * - quality_tip_3.rst
- - 18 líneas
+   - 18 líneas
  - 56 líneas
  - +211%
  * - quality_tip_4.rst
- - 28 líneas
+   - 28 líneas
  - 103 líneas
  - +268%
  * - quality_tip_5.rst
- - 21 líneas
+   - 21 líneas
  - 68 líneas
  - +224%
  * - quality_tip_6.rst
- - 26 líneas
+   - 26 líneas
  - 77 líneas
  - +196%
  * - quality_tip_7.rst
- - 32 líneas
+   - 32 líneas
  - 94 líneas
  - +194%
  * - quality_tip_8.rst
- - 42 líneas
+   - 42 líneas
  - 120 líneas
  - +186%
 
@@ -143,35 +143,35 @@ Datos Detallados por Sección de arc42
  :widths: 40 20 20 20
 
  * - **Archivo**
- - **Original**
+   - **Original**
  - **Traducido**
  - **Enriquecimiento**
  * - section-11.md (principal)
- - 34 líneas
+   - 34 líneas
  - 154 líneas
  - +353%
  * - risks_tip_1.rst
- - 15 líneas
+   - 15 líneas
  - 79 líneas
  - +427%
  * - risks_tip_2.rst
- - 14 líneas
+   - 14 líneas
  - 117 líneas
  - +736%
  * - risks_tip_3.rst
- - 11 líneas
+   - 11 líneas
  - 121 líneas
  - +1000%
  * - risks_tip_4.rst
- - 14 líneas
+   - 14 líneas
  - 127 líneas
  - +807%
  * - risks_tip_5.rst
- - 15 líneas
+   - 15 líneas
  - 109 líneas
  - +627%
  * - risks_tip_6.rst
- - 11 líneas
+   - 11 líneas
  - 122 líneas
  - +1009%
 
@@ -184,35 +184,35 @@ Datos Detallados por Sección de arc42
  :widths: 40 20 20 20
 
  * - **Archivo**
- - **Original**
+   - **Original**
  - **Traducido**
  - **Enriquecimiento**
  * - section-12.md (principal)
- - 44 líneas
+   - 44 líneas
  - 164 líneas
  - +273%
  * - glossary_tip_1.rst
- - 12 líneas
+   - 12 líneas
  - 140 líneas
  - +1067%
  * - glossary_tip_2.rst
- - 26 líneas
+   - 26 líneas
  - 168 líneas
  - +546%
  * - glossary_tip_3.rst
- - 18 líneas
+   - 18 líneas
  - 175 líneas
  - +872%
  * - glossary_tip_4.rst
- - 26 líneas
+   - 26 líneas
  - 165 líneas
  - +535%
  * - glossary_tip_5.rst
- - 17 líneas
+   - 17 líneas
  - 220 líneas
  - +1194%
  * - glossary_tip_6.rst
- - 11 líneas
+   - 11 líneas
  - 162 líneas
  - +1373%
 
@@ -361,67 +361,67 @@ Datos por Sección de arc42
  :widths: 15 15 15 15 40
 
  * - **Sección**
- - **Archivos**
+   - **Archivos**
  - **Tamaño**
  - **Promedio**
  - **Observaciones**
  * - 01
- - 32
+   - 32
  - 78 KB
  - 2.4 KB/archivo
  - Sección compleja, muchos archivos
  * - 02
- - 8
+   - 8
  - 19 KB
  - 2.4 KB/archivo
  - Sección corta
  * - 03
- - 28
+   - 28
  - 61 KB
  - 2.2 KB/archivo
  - Contexto y alcance
  * - 04
- - 9
+   - 9
  - 25 KB
  - 2.8 KB/archivo
  - Estrategia de solución
  * - 05
- - 36
+   - 36
  - 103 KB
  - 2.9 KB/archivo
  - Sección más grande
  * - 06
- - 15
+   - 15
  - 44 KB
  - 2.9 KB/archivo
  - Vista de runtime
  * - 07
- - 14
+   - 14
  - 38 KB
  - 2.7 KB/archivo
  - Vista de deployment
  * - 08
- - 12
+   - 12
  - 24 KB
  - 2.0 KB/archivo
  - Conceptos transversales
  * - 09
- - 14
+   - 14
  - 25 KB
  - 1.8 KB/archivo
  - Decisiones arquitectónicas
  * - 10
- - 11
+   - 11
  - 48 KB
  - 4.4 KB/archivo
  - Tips muy enriquecidos
  * - 11
- - 9
+   - 9
  - 55 KB
  - 6.1 KB/archivo
  - Máximo enriquecimiento
  * - 12
- - 8
+   - 8
  - 62 KB
  - 7.8 KB/archivo
  - Tips extremadamente enriquecidos
@@ -458,22 +458,22 @@ Datos Empíricos de arc42
  :widths: 20 20 20 20 20
 
  * - **Sección**
- - **Archivos**
+   - **Archivos**
  - **Tiempo**
  - **Velocidad**
  - **Complejidad**
  * - 10
- - 11
+   - 11
  - ~3 horas
  - 3.7 arch/hora
  - Media
  * - 11
- - 9
+   - 9
  - ~2.5 horas
  - 3.6 arch/hora
  - Media-Alta
  * - 12
- - 8
+   - 8
  - ~3 horas
  - 2.7 arch/hora
  - Baja (tips muy enriquecidos)
@@ -578,35 +578,35 @@ Medición en arc42
  :widths: 30 30 20 20
 
  * - **Término Original**
- - **Traducción**
+   - **Traducción**
  - **Variaciones**
  - **Consistencia**
  * - Stakeholder
- - Stakeholder
+   - Stakeholder
  - 0
  - 100%
  * - Building Block
- - Bloque de Construcción
+   - Bloque de Construcción
  - 0
  - 100%
  * - Quality Requirement
- - Requisito de Calidad
+   - Requisito de Calidad
  - 0
  - 100%
  * - Technical Debt
- - Deuda Técnica
+   - Deuda Técnica
  - 0
  - 100%
  * - Deployment
- - Despliegue
+   - Despliegue
  - 0
  - 100%
  * - Runtime
- - Runtime
+   - Runtime
  - 0
  - 100%
  * - API
- - API
+   - API
  - 0
  - 100%
 
@@ -758,35 +758,35 @@ Resumen de Métricas Clave
  :widths: 30 25 25 20
 
  * - **Métrica**
- - **Rango Objetivo**
+   - **Rango Objetivo**
  - **arc42 Real**
  - **Umbral**
  * - Enriquecimiento (<20 líneas)
- - +300% a +1000%
+   - +300% a +1000%
  - +771%
  - Variable
  * - Enriquecimiento (20-50 líneas)
- - +100% a +300%
+   - +100% a +300%
  - +273%
  - Variable
  * - Enriquecimiento (>100 líneas)
- - +50% a +100%
+   - +50% a +100%
  - +80%
  - Variable
  * - Completitud
- - 100%
+   - 100%
  - 100%
  - Obligatorio
  * - Velocidad
- - 3-4 arch/hora
+   - 3-4 arch/hora
  - 3.3 arch/hora
  - Referencia
  * - Consistencia Terminológica
- - 100%
+   - 100%
  - 100%
  - Obligatorio
  * - Warnings Críticos
- - 0
+   - 0
  - 0
  - Obligatorio
 

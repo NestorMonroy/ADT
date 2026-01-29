@@ -256,21 +256,21 @@ Estadísticas
  :header-rows: 1
 
  * - Elemento
- - Cantidad
+   - Cantidad
  * - Secciones principales
- - 10
+   - 10
  * - Subcarpetas
- - 25+
+   - 25+
  * - Procedimientos documentados
- - 9+
+   - 9+
  * - Estándares definidos
- - 10+
+   - 10+
  * - Reglas operativas
- - 16+
+   - 16+
  * - Casos prácticos
- - 15+
+   - 15+
  * - Prompts de producción
- - 3+
+   - 3+
 
 Idioma y Localización
 =====================

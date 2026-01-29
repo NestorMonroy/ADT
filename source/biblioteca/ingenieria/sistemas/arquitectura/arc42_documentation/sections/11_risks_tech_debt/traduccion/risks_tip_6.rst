@@ -23,25 +23,25 @@ Análisis Estático de Código
  :widths: 30 35 35
 
  * - **Métrica**
- - **Qué Indica**
+   - **Qué Indica**
  - **Umbral de Riesgo**
  * - **Lines of Code (LOC)**
- - Tamaño del codebase
+   - Tamaño del codebase
  - >100k LOC sin modularización
  * - **Cyclomatic Complexity**
- - Complejidad de funciones
+   - Complejidad de funciones
  - >10 por función
  * - **Coupling**
- - Dependencias entre módulos
+   - Dependencias entre módulos
  - >5 dependencias directas
  * - **Cohesion**
- - Relacionamiento interno
+   - Relacionamiento interno
  - Cohesión baja (<0.5)
  * - **Code Duplication**
- - Código duplicado
+   - Código duplicado
  - >5% duplicación
  * - **Comment Density**
- - Ratio comentarios/código
+   - Ratio comentarios/código
  - <10% o >30%
 
 **1. Complejidad Ciclomática Alta**
@@ -88,25 +88,25 @@ Herramientas de Análisis Estático
  :widths: 20 40 40
 
  * - **Lenguaje**
- - **Herramientas**
+   - **Herramientas**
  - **Qué Detectan**
  * - **Java**
- - SonarQube, PMD, Checkstyle
+   - SonarQube, PMD, Checkstyle
  - Bugs, code smells, security
  * - **Python**
- - Pylint, Flake8, Bandit
+   - Pylint, Flake8, Bandit
  - Style, complexity, security
  * - **JavaScript**
- - ESLint, SonarJS
+   - ESLint, SonarJS
  - Errors, code quality
  * - **C#**
- - ReSharper, FxCop
+   - ReSharper, FxCop
  - Code quality, performance
  * - **Go**
- - golangci-lint, staticcheck
+   - golangci-lint, staticcheck
  - Bugs, performance
  * - **Multi-language**
- - SonarQube, CodeClimate
+   - SonarQube, CodeClimate
  - Security, maintainability
 
 **Categorías de Issues:**
@@ -153,15 +153,15 @@ Análisis Dinámico de Código
  :widths: 40 60
 
  * - **Problema**
- - **Ejemplo**
+   - **Ejemplo**
  * - **Hotspots**
- - Función consume 80% del tiempo total
+   - Función consume 80% del tiempo total
  * - **Memory Leaks**
- - Memoria crece indefinidamente
+   - Memoria crece indefinidamente
  * - **N+1 Queries**
- - 1000 queries DB en un request
+   - 1000 queries DB en un request
  * - **Blocking I/O**
- - Thread bloqueado esperando I/O
+   - Thread bloqueado esperando I/O
 
 **3. Análisis de Threads/Concurrencia**
 
@@ -286,27 +286,27 @@ Código Legacy como Riesgo
  :widths: 30 25 20 25
 
  * - **Métrica**
- - **Target**
+   - **Target**
  - **Warning**
  - **Critical**
  * - Test Coverage
- - >80%
+   - >80%
  - 70-80%
  - <70%
  * - Cyclomatic Complexity
- - <5
+   - <5
  - 5-10
  - >10
  * - Code Duplication
- - <3%
+   - <3%
  - 3-5%
  - >5%
  * - Security Issues
- - 0
+   - 0
  - Low severity
  - Medium/High
  * - Tech Debt Ratio
- - <5%
+   - <5%
  - 5-10%
  - >10%
 

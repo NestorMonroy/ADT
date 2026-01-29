@@ -23,22 +23,22 @@ Riesgos en Estructuras de Datos
  :widths: 35 35 30
 
  * - **Problema**
- - **Consecuencia**
+   - **Consecuencia**
  - **Mitigación**
  * - Sin normalización
- - Datos duplicados, inconsistencias
+   - Datos duplicados, inconsistencias
  - Normalizar a 3NF
  * - Over-normalization
- - Queries complejas, performance baja
+   - Queries complejas, performance baja
  - Denormalizar selectivamente
  * - Tipos de datos incorrectos
- - Overflows, pérdida de precisión
+   - Overflows, pérdida de precisión
  - Revisar tipos (INT vs BIGINT)
  * - Sin constraints
- - Datos inválidos en DB
+   - Datos inválidos en DB
  - Agregar CHECK constraints
  * - Sin índices
- - Queries lentas
+   - Queries lentas
  - Analizar query patterns
 
 **2. Schemas Inflexibles**
@@ -132,15 +132,15 @@ Riesgos en Distribución de Datos
  :widths: 40 60
 
  * - **Patrón**
- - **Riesgo**
+   - **Riesgo**
  * - Sincronización síncrona
- - Performance: esperar a todos los nodos
+   - Performance: esperar a todos los nodos
  * - Sincronización asíncrona
- - Consistencia: eventual consistency
+   - Consistencia: eventual consistency
  * - Sin conflict resolution
- - Datos contradictorios sin resolver
+   - Datos contradictorios sin resolver
  * - Manual sync
- - Error humano, datos perdidos
+   - Error humano, datos perdidos
 
 ----
 
@@ -234,21 +234,21 @@ Riesgos en Backup y Recovery
  :widths: 60 40
 
  * - **Pregunta**
- - **Acción si NO**
+   - **Acción si NO**
  * - [ ] ¿Hay estrategia de backup automatizada?
- - Implementar backups automáticos
+   - Implementar backups automáticos
  * - [ ] ¿Se verifican regularmente los backups?
- - Schedule verification tests
+   - Schedule verification tests
  * - [ ] ¿Hay plan de disaster recovery documentado?
- - Crear DR runbook
+   - Crear DR runbook
  * - [ ] ¿Datos sensibles están encriptados?
- - Implementar encryption
+   - Implementar encryption
  * - [ ] ¿Hay validación de calidad de datos?
- - Agregar data quality checks
+   - Agregar data quality checks
  * - [ ] ¿Esquema está versionado?
- - Implementar schema versioning
+   - Implementar schema versioning
  * - [ ] ¿Hay monitoring de lag de replicación?
- - Configurar alertas
+   - Configurar alertas
 
 ----
 

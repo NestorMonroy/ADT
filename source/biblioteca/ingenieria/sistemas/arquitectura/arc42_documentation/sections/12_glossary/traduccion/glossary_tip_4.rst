@@ -24,13 +24,13 @@ Simplemente agrega una columna a tu tabla de **glosario** por cada idioma que ne
  :widths: 25 40 35
 
  * - **Term (EN)**
- - **Definition**
+   - **Definition**
  - **Translation DE**
  * - *<Term-1>*
- - *<definition-1>*
+   - *<definition-1>*
  - *<German-translation-for-term-1>*
  * - *<Term-2>*
- - *<definition-2>*
+   - *<definition-2>*
  - *<German-translation-for-term-2>*
 
 ----
@@ -104,22 +104,22 @@ Casos de Uso para Glosario Multi-idioma
  :widths: 20 35 15 15 15
 
  * - **Term (EN)**
- - **Definition (EN)**
+   - **Definition (EN)**
  - **Español**
  - **Deutsch**
  - ****
  * - Order
- - Purchase transaction with items, shipping, payment
+   - Purchase transaction with items, shipping, payment
  - Pedido
  - Bestellung
  -
  * - Customer
- - Registered user who makes purchases
+   - Registered user who makes purchases
  - Cliente
  - Kunde
  -
  * - Checkout
- - Process to finalize purchase
+   - Process to finalize purchase
  - Pago
  - Kasse
  -
@@ -131,15 +131,15 @@ Casos de Uso para Glosario Multi-idioma
  :widths: 15 40 15 30
 
  * - **EN**
- - **Definition (EN)**
+   - **Definition (EN)**
  - **DE**
  - **Definition (DE)**
  * - Claim
- - Request for insurance payment after incident
+   - Request for insurance payment after incident
  - Schadensmeldung
  - Meldung eines Versicherungsfalls zur Schadensregulierung
  * - Premium
- - Regular payment for insurance coverage
+   - Regular payment for insurance coverage
  - Prämie / Beitrag
  - Regelmäßige Zahlung für Versicherungsschutz
 
@@ -154,13 +154,13 @@ Casos de Uso para Glosario Multi-idioma
  :widths: 50 50
 
  * - [ERROR] **MAL**
- - [OK] **BIEN**
+   - [OK] **BIEN**
  * - Google Translate sin revisión
- - Traductor profesional del dominio
+   - Traductor profesional del dominio
  * - Desarrollador traduce sin contexto
- - Experto de dominio valida traducción
+   - Experto de dominio valida traducción
  * - Una sola traducción sin alternativas
- - Mostrar sinónimos si existen
+   - Mostrar sinónimos si existen
 
 2. **Consistencia en Todo el Proyecto**
 
@@ -197,22 +197,22 @@ Casos de Uso para Glosario Multi-idioma
  :widths: 30 40 30
 
  * - **Herramienta**
- - **Ventajas**
+   - **Ventajas**
  - **Limitaciones**
  * - **Excel/Google Sheets**
- - Fácil, colaborativo, columnas ilimitadas
+   - Fácil, colaborativo, columnas ilimitadas
  - No integrado con docs
  * - **Confluence**
- - Búsqueda multi-idioma
+   - Búsqueda multi-idioma
  - Requiere licencia
  * - **POEditor**
- - Específico para i18n
+   - Específico para i18n
  - Orientado a UI strings
  * - **Crowdin**
- - Traducción colaborativa
+   - Traducción colaborativa
  - Overkill para solo glosario
  * - **Sphinx i18n**
- - Integrado con docs
+   - Integrado con docs
  - Curva de aprendizaje
 
 ----
@@ -224,43 +224,43 @@ Casos de Uso para Glosario Multi-idioma
  :widths: 15 30 15 15 15 10
 
  * - **EN**
- - **Definition**
+   - **Definition**
  - **DE**
  - **ES**
  - **FR**
  - **Abbr**
  * - Account
- - Bank account holding customer funds
+   - Bank account holding customer funds
  - Konto
  - Cuenta
  - Compte
  - ACC
  * - Transaction
- - Money transfer between accounts
+   - Money transfer between accounts
  - Transaktion
  - Transacción
  - Transaction
  - TXN
  * - Balance
- - Current amount in account
+   - Current amount in account
  - Saldo / Kontostand
  - Saldo
  - Solde
  - BAL
  * - Overdraft
- - Negative balance permitted by bank
+   - Negative balance permitted by bank
  - Überziehung
  - Sobregiro
  - Découvert
  - OD
  * - IBAN
- - International Bank Account Number
+   - International Bank Account Number
  - IBAN
  - IBAN
  - IBAN
  - IBAN
  * - SWIFT
- - Society for Worldwide Interbank Financial Telecom
+   - Society for Worldwide Interbank Financial Telecom
  - SWIFT
  - SWIFT
  - SWIFT

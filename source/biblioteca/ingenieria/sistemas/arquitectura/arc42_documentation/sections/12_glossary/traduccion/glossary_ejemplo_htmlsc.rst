@@ -29,17 +29,17 @@ Glosario del Sistema
  :widths: 30 70
 
  * - **Término**
- - **Definición**
+   - **Definición**
  * - **Link**
- - Una referencia dentro de una HTMLPage. Apunta a LinkTarget.
+   - Una referencia dentro de una HTMLPage. Apunta a LinkTarget.
  * - **Cross Reference**
- - Link de una parte de un documento a otra parte dentro del mismo documento.
+   - Link de una parte de un documento a otra parte dentro del mismo documento.
  * - **External Hyperlink**
- - Link a otra página HTML o a un recurso dentro de otro dominio o sitio.
+   - Link a otra página HTML o a un recurso dentro de otro dominio o sitio.
  * - **Run Result**
- - Resultados de verificación combinados para múltiples páginas (HTMLPages).
+   - Resultados de verificación combinados para múltiples páginas (HTMLPages).
  * - **SinglePageResults**
- - Resultados combinados de todas las instancias `Checker` para una sola página HTML.
+   - Resultados combinados de todas las instancias `Checker` para una sola página HTML.
 
 ----
 
@@ -53,17 +53,17 @@ Análisis del Ejemplo
  :widths: 40 60
 
  * - **Característica**
- - **Observación**
+   - **Observación**
  * - **Tamaño**
- - Compacto (5 términos) [OK]
+   - Compacto (5 términos) [OK]
  * - **Especificidad**
- - Todos específicos del dominio de validación HTML [OK]
+   - Todos específicos del dominio de validación HTML [OK]
  * - **Claridad**
- - Definiciones concisas (1 oración) [OK]
+   - Definiciones concisas (1 oración) [OK]
  * - **Relaciones**
- - Términos se referencian entre sí (Link -> LinkTarget) [OK]
+   - Términos se referencian entre sí (Link -> LinkTarget) [OK]
  * - **Audiencia**
- - Orientado a desarrolladores [OK]
+   - Orientado a desarrolladores [OK]
 
 ----
 
@@ -76,27 +76,27 @@ Análisis del Ejemplo
  :widths: 30 70
 
  * - **Término**
- - **Definición**
+   - **Definición**
  * - **Link**
- - Una referencia dentro de una HTMLPage. Apunta a LinkTarget.
+   - Una referencia dentro de una HTMLPage. Apunta a LinkTarget.
  * - **Cross Reference**
- - Link de una parte de un documento a otra parte dentro del mismo documento.
+   - Link de una parte de un documento a otra parte dentro del mismo documento.
  * - **External Hyperlink**
- - Link a otra página HTML o a un recurso dentro de otro dominio o sitio.
+   - Link a otra página HTML o a un recurso dentro de otro dominio o sitio.
  * - **Run Result**
- - Resultados de verificación combinados para múltiples páginas (HTMLPages).
+   - Resultados de verificación combinados para múltiples páginas (HTMLPages).
  * - **SinglePageResults**
- - Resultados combinados de todas las instancias `Checker` para una sola página HTML.
+   - Resultados combinados de todas las instancias `Checker` para una sola página HTML.
  * - **Checker**
- - Componente que realiza una verificación específica en HTMLPage (ej: BrokenLinkChecker, ImageChecker).
+   - Componente que realiza una verificación específica en HTMLPage (ej: BrokenLinkChecker, ImageChecker).
  * - **HTMLPage**
- - Documento HTML individual que es analizado y validado por HtmlSC.
+   - Documento HTML individual que es analizado y validado por HtmlSC.
  * - **LinkTarget**
- - Destino al que apunta un Link. Puede ser anchor dentro de mismo documento o URL externo.
+   - Destino al que apunta un Link. Puede ser anchor dentro de mismo documento o URL externo.
  * - **Finding**
- - Problema detectado por un Checker (ej: link roto, imagen faltante).
+   - Problema detectado por un Checker (ej: link roto, imagen faltante).
  * - **Severity**
- - Nivel de criticidad de un Finding (ERROR, WARNING, INFO).
+   - Nivel de criticidad de un Finding (ERROR, WARNING, INFO).
 
 ----
 
@@ -107,34 +107,34 @@ Análisis del Ejemplo
  :widths: 15 25 60
 
  * - **Categoría**
- - **Término**
+   - **Término**
  - **Definición**
  * - **Navegación**
- - Link
+   - Link
  - Referencia dentro de HTMLPage que apunta a LinkTarget
  * - **Navegación**
- - Cross Reference
+   - Cross Reference
  - Link interno dentro del mismo documento
  * - **Navegación**
- - External Hyperlink
+   - External Hyperlink
  - Link a otro dominio o sitio
  * - **Navegación**
- - LinkTarget
+   - LinkTarget
  - Destino de un Link (anchor o URL)
  * - **Resultados**
- - Run Result
+   - Run Result
  - Resultados combinados para múltiples páginas
  * - **Resultados**
- - SinglePageResults
+   - SinglePageResults
  - Resultados para una sola página HTML
  * - **Resultados**
- - Finding
+   - Finding
  - Problema detectado por verificación
  * - **Core**
- - Checker
+   - Checker
  - Componente que realiza verificación específica
  * - **Core**
- - HTMLPage
+   - HTMLPage
  - Documento HTML individual analizado
 
 ----
@@ -197,22 +197,22 @@ Análisis del Ejemplo
  :widths: 25 50 25
 
  * - **Term (EN)**
- - **Definition**
+   - **Definition**
  - **Deutsch**
  * - Link
- - Reference within HTMLPage pointing to LinkTarget
+   - Reference within HTMLPage pointing to LinkTarget
  - Verweis
  * - Cross Reference
- - Link within same document
+   - Link within same document
  - Querverweis
  * - External Hyperlink
- - Link to another domain/site
+   - Link to another domain/site
  - Externer Link
  * - Run Result
- - Combined results for multiple pages
+   - Combined results for multiple pages
  - Laufergebnis
  * - SinglePageResults
- - Results for single HTML page
+   - Results for single HTML page
  - Einzelseitenergebnis
 
 ----
@@ -224,19 +224,19 @@ Análisis del Ejemplo
  :widths: 40 60
 
  * - **Lección**
- - **Aplicación**
+   - **Aplicación**
  * - **Mantener compacto**
- - 5 términos core son suficientes para sistema pequeño
+   - 5 términos core son suficientes para sistema pequeño
  * - **Específico del dominio**
- - No incluir términos genéricos (HTML, URL ya conocidos)
+   - No incluir términos genéricos (HTML, URL ya conocidos)
  * - **Relaciones claras**
- - Link -> LinkTarget muestra dependencia
+   - Link -> LinkTarget muestra dependencia
  * - **Una oración por definición**
- - Conciso y claro
+   - Conciso y claro
  * - **Orientado a audiencia**
- - "Términos deberían ser buenos amigos para desarrolladores"
+   - "Términos deberían ser buenos amigos para desarrolladores"
  * - **Integración con otras secciones**
- - Referencia a Sección 8 para Domain Model
+   - Referencia a Sección 8 para Domain Model
 
 ----
 
@@ -249,23 +249,23 @@ Si HtmlSC crece, el glosario podría expandirse:
  :widths: 20 40 20 20
 
  * - **Término**
- - **Definición**
+   - **Definición**
  - **Sinónimo**
  - **Ver También**
  * - Link
- - Referencia dentro de HTMLPage que apunta a LinkTarget
+   - Referencia dentro de HTMLPage que apunta a LinkTarget
  - Hyperlink, Anchor
  - LinkTarget
  * - Checker
- - Componente que realiza verificación específica
+   - Componente que realiza verificación específica
  - Validator, Analyzer
  - Finding
  * - HTMLPage
- - Documento HTML individual analizado
+   - Documento HTML individual analizado
  - Document, Page
  - Run Result
  * - Finding
- - Problema detectado (ERROR, WARNING, INFO)
+   - Problema detectado (ERROR, WARNING, INFO)
  - Issue, Problem
  - Severity
 

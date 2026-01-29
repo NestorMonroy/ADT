@@ -95,19 +95,19 @@ Tabla Maestra: Categorías
  :widths: 10 25 60 5
 
  * - Código
- - Nombre
+   - Nombre
  - Ámbito
  - Estado
  * - **INF**
- - Informática
+   - Informática
  - Ciencias de la Computación, Programación, IA, Redes
  - [OK]
  * - **ING**
- - Ingeniería
+   - Ingeniería
  - Ingeniería de Software, Arquitectura, Sistemas
  - [OK]
  * - **CIE**
- - Ciencias
+   - Ciencias
  - Matemáticas, Estadística, Física, Biología Computacional
  - [OK]
 
@@ -126,47 +126,47 @@ Informática (INF)
  :widths: 10 30 50 10
 
  * - Código
- - Nombre
+   - Nombre
  - Descripción
  - Estado
  * - **PRG**
- - Programación
+   - Programación
  - Lenguajes, frameworks, paradigmas
  - [OK]
  * - **IAR**
- - Inteligencia Artificial
+   - Inteligencia Artificial
  - ML, DL, NLP, Computer Vision, Reinforcement Learning
  - [OK]
  * - **RED**
- - Redes
+   - Redes
  - Protocolos, TCP/IP, seguridad de red
  - [OK]
  * - **SEG**
- - Seguridad
+   - Seguridad
  - Ciberseguridad, criptografía, ethical hacking
  - [OK]
  * - **BDD**
- - Bases de Datos
+   - Bases de Datos
  - SQL, NoSQL, diseño de esquemas, optimización
  - [OK]
  * - **SOP**
- - Sistemas Operativos
+   - Sistemas Operativos
  - Linux, Windows, administración de sistemas
  - [OK]
  * - **WEB**
- - Desarrollo Web
+   - Desarrollo Web
  - HTML, CSS, desarrollo web general
  - [OK]
  * - **MOV**
- - Desarrollo Móvil
+   - Desarrollo Móvil
  - iOS, Android, multiplataforma
  - [OK]
  * - **DVC**
- - DevOps y Cloud
+   - DevOps y Cloud
  - Docker, Kubernetes, CI/CD, AWS, Azure
  - [OK]
  * - **ALG**
- - Algoritmos
+   - Algoritmos
  - Estructuras de datos, análisis de complejidad
  - [OK]
 
@@ -180,31 +180,31 @@ Ingeniería (ING)
  :widths: 10 30 50 10
 
  * - Código
- - Nombre
+   - Nombre
  - Descripción
  - Estado
  * - **SIS**
- - Sistemas
+   - Sistemas
  - Diseño de sistemas, sistemas distribuidos
  - [OK]
  * - **ARQ**
- - Arquitectura
+   - Arquitectura
  - Patrones arquitectónicos, microservicios
  - [OK]
  * - **MET**
- - Metodologías
+   - Metodologías
  - Agile, Scrum, DevOps, Lean, Kanban
  - [OK]
  * - **REQ**
- - Requisitos
+   - Requisitos
  - Ingeniería de requisitos, análisis
  - [OK]
  * - **PRU**
- - Pruebas
+   - Pruebas
  - Testing, QA, TDD, automatización
  - [OK]
  * - **MOD**
- - Modelado
+   - Modelado
  - UML, BPMN, especificación formal
  - [OK]
 
@@ -218,23 +218,23 @@ Ciencias (CIE)
  :widths: 10 30 50 10
 
  * - Código
- - Nombre
+   - Nombre
  - Descripción
  - Estado
  * - **MAT**
- - Matemáticas
+   - Matemáticas
  - Álgebra, cálculo, matemáticas aplicadas
  - [OK]
  * - **EST**
- - Estadística
+   - Estadística
  - Probabilidad, análisis estadístico, inferencia
  - [OK]
  * - **FIS**
- - Física
+   - Física
  - Física computacional, simulaciones
  - [OK]
  * - **BIO**
- - Biología
+   - Biología
  - Bioinformática, genómica, biología computacional
  - [OK]
 
@@ -255,83 +255,83 @@ Programación (INF.PRG)
  :widths: 10 30 50 10
 
  * - Código
- - Nombre
+   - Nombre
  - Descripción
  - Estado
  * - **FST**
- - Full-Stack
+   - Full-Stack
  - Desarrollo completo (frontend + backend)
  - [OK]
  * - **FRE**
- - Frontend
+   - Frontend
  - Interfaces de usuario, UX
  - [OK]
  * - **BAC**
- - Backend
+   - Backend
  - Lógica del servidor, APIs
  - [OK]
  * - **PYT**
- - Python
+   - Python
  - Lenguaje Python (general)
  - [OK]
  * - **JAV**
- - JavaScript
+   - JavaScript
  - Lenguaje JavaScript (general)
  - [OK]
  * - **TSC**
- - TypeScript
+   - TypeScript
  - Lenguaje TypeScript
  - [OK]
  * - **REA**
- - React
+   - React
  - Biblioteca React / React ecosystem
  - [OK]
  * - **VUE**
- - Vue.js
+   - Vue.js
  - Framework Vue
  - [OK]
  * - **ANG**
- - Angular
+   - Angular
  - Framework Angular
  - [OK]
  * - **NOD**
- - Node.js
+   - Node.js
  - Runtime Node.js, desarrollo backend
  - [OK]
  * - **DJA**
- - Django
+   - Django
  - Framework Django (Python)
  - [OK]
  * - **FLA**
- - Flask
+   - Flask
  - Framework Flask (Python)
  - [OK]
  * - **SPR**
- - Spring
+   - Spring
  - Framework Spring (Java)
  - [OK]
  * - **NET**
- - .NET
+   - .NET
  - Plataforma .NET y C#
  - [OK]
  * - **RUS**
- - Rust
+   - Rust
  - Lenguaje Rust
  - [OK]
  * - **GOL**
- - Go
+   - Go
  - Lenguaje Go
  - [OK]
  * - **CPP**
- - C++
+   - C++
  - Lenguaje C++
  - [OK]
  * - **FUN**
- - Funcional
+   - Funcional
  - Programación funcional (Haskell, Lisp, Scala)
  - [OK]
  * - **GEN**
- - General
+   - General
  - Múltiples tecnologías o programación general
  - [OK]
 
@@ -345,27 +345,27 @@ Inteligencia Artificial (INF.IAR)
  :widths: 10 30 50 10
 
  * - Código
- - Nombre
+   - Nombre
  - Descripción
  - Estado
  * - **MLF**
- - Machine Learning Fundamentals
+   - Machine Learning Fundamentals
  - Machine Learning básico, algoritmos tradicionales
  - [OK]
  * - **DLE**
- - Deep Learning
+   - Deep Learning
  - Redes neuronales profundas, CNN, RNN
  - [OK]
  * - **NLP**
- - Natural Language Processing
+   - Natural Language Processing
  - Procesamiento de lenguaje natural, LLMs
  - [OK]
  * - **CVS**
- - Computer Vision
+   - Computer Vision
  - Visión por computadora, procesamiento de imágenes
  - [OK]
  * - **RFO**
- - Reinforcement Learning
+   - Reinforcement Learning
  - Aprendizaje por refuerzo, Q-learning
  - [OK]
 
@@ -379,43 +379,43 @@ DevOps y Cloud (INF.DVC)
  :widths: 10 30 50 10
 
  * - Código
- - Nombre
+   - Nombre
  - Descripción
  - Estado
  * - **DOC**
- - Docker
+   - Docker
  - Containerización con Docker
  - [OK]
  * - **KUB**
- - Kubernetes
+   - Kubernetes
  - Orquestación de contenedores
  - [OK]
  * - **AWS**
- - Amazon Web Services
+   - Amazon Web Services
  - Plataforma cloud de Amazon
  - [OK]
  * - **AZU**
- - Microsoft Azure
+   - Microsoft Azure
  - Plataforma cloud de Microsoft
  - [OK]
  * - **GCP**
- - Google Cloud Platform
+   - Google Cloud Platform
  - Plataforma cloud de Google
  - [OK]
  * - **TER**
- - Terraform
+   - Terraform
  - Infrastructure as Code
  - [OK]
  * - **ANS**
- - Ansible
+   - Ansible
  - Automatización y configuration management
  - [OK]
  * - **JEN**
- - Jenkins
+   - Jenkins
  - CI/CD y automatización
  - [OK]
  * - **GIT**
- - Git/GitHub/GitLab
+   - Git/GitHub/GitLab
  - Control de versiones
  - [OK]
 
@@ -429,31 +429,31 @@ Arquitectura (ING.ARQ)
  :widths: 10 30 50 10
 
  * - Código
- - Nombre
+   - Nombre
  - Descripción
  - Estado
  * - **MIC**
- - Microservicios
+   - Microservicios
  - Arquitectura de microservicios
  - [OK]
  * - **CLE**
- - Clean Architecture
+   - Clean Architecture
  - Clean Architecture de Uncle Bob
  - [OK]
  * - **DDD**
- - Domain-Driven Design
+   - Domain-Driven Design
  - Diseño guiado por dominio
  - [OK]
  * - **ARC**
- - arc42
+   - arc42
  - Plantilla de documentación arc42
  - [OK]
  * - **HEX**
- - Hexagonal Architecture
+   - Hexagonal Architecture
  - Arquitectura hexagonal / Ports & Adapters
  - [OK]
  * - **GEN**
- - General
+   - General
  - Arquitectura general o múltiples patrones
  - [OK]
 
@@ -632,87 +632,87 @@ Códigos por Frecuencia de Uso Estimada
  :widths: 5 15 30 50
 
  * - #
- - Código
+   - Código
  - Nombre
  - Código Completo Ejemplo
  * - 1
- - PYT
+   - PYT
  - Python
  - INF.PRG.PYT.XXX
  * - 2
- - FST
+   - FST
  - Full-Stack
  - INF.PRG.FST.XXX
  * - 3
- - REA
+   - REA
  - React
  - INF.PRG.REA.XXX
  * - 4
- - JAV
+   - JAV
  - JavaScript
  - INF.PRG.JAV.XXX
  * - 5
- - MLF
+   - MLF
  - Machine Learning
  - INF.IAR.MLF.XXX
  * - 6
- - DOC
+   - DOC
  - Docker
  - INF.DVC.DOC.XXX
  * - 7
- - KUB
+   - KUB
  - Kubernetes
  - INF.DVC.KUB.XXX
  * - 8
- - NOD
+   - NOD
  - Node.js
  - INF.PRG.NOD.XXX
  * - 9
- - TSC
+   - TSC
  - TypeScript
  - INF.PRG.TSC.XXX
  * - 10
- - DJA
+   - DJA
  - Django
  - INF.PRG.DJA.XXX
  * - 11
- - MIC
+   - MIC
  - Microservicios
  - ING.ARQ.MIC.XXX
  * - 12
- - DLE
+   - DLE
  - Deep Learning
  - INF.IAR.DLE.XXX
  * - 13
- - AWS
+   - AWS
  - AWS
  - INF.DVC.AWS.XXX
  * - 14
- - CLE
+   - CLE
  - Clean Architecture
  - ING.ARQ.CLE.XXX
  * - 15
- - NLP
+   - NLP
  - NLP
  - INF.IAR.NLP.XXX
  * - 16
- - ANG
+   - ANG
  - Angular
  - INF.PRG.ANG.XXX
  * - 17
- - VUE
+   - VUE
  - Vue.js
  - INF.PRG.VUE.XXX
  * - 18
- - SQL
+   - SQL
  - SQL Databases
  - INF.BDD.SQL.XXX
  * - 19
- - ARC
+   - ARC
  - arc42
  - ING.ARQ.ARC.XXX
  * - 20
- - DDD
+   - DDD
  - DDD
  - ING.ARQ.DDD.XXX
 
@@ -870,11 +870,11 @@ Historial de Versiones
  :header-rows: 1
 
  * - Versión
- - Fecha
+   - Fecha
  - Autor
  - Cambios
  * - 1.0.0
- - 2026-01-28
+   - 2026-01-28
  - Sistema ADT
  - Versión inicial - 73+ códigos definidos
 

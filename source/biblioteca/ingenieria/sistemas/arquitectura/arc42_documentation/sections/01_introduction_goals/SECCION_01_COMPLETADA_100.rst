@@ -45,32 +45,32 @@ Progreso por Lotes
  :widths: 15 15 15 40 15
 
  * - Lote
- - Archivos
+   - Archivos
  - %
  - Descripción
  - Workflow
  * - Lote 1
- - 5/28
+   - 5/28
  - 18%
  - 4 ejemplos + 1 tip
  - v1.4.0 + corr.
  * - Lote 2
- - 9/28
+   - 9/28
  - 32%
  - Tips 2-10
  - v1.5.0 [OK]
  * - Lote 3
- - 9/28
+   - 9/28
  - 32%
  - Tips 11-19
  - v1.5.0 [OK]
  * - Lote 4
- - 5/28
+   - 5/28
  - 18%
  - Tips 20-24
  - v1.5.0 [OK]
  * - **TOTAL**
- - **28/28**
+   - **28/28**
  - **100%**
  - **COMPLETADO**
  - **4 lotes**
@@ -158,46 +158,46 @@ Métricas de Conversión
  :widths: 40 30 30
 
  * - Métrica
- - Valor
+   - Valor
  - Notas
  * - Archivos originales
- - 31
+   - 31
  - Markdown (.md) + plantilla arc42
  * - Archivos traducidos
- - 31
+   - 31
  - reStructuredText (.rst)
  * - Subsecciones plantilla
- - 3
+   - 3
  - 1.1, 1.2, 1.3
  * - Ejemplos
- - 4
+   - 4
  - TPU + HtmlSC
  * - Tips
- - 24
+   - 24
  - Consejos prácticos
  * - Líneas originales (aprox.)
- - ~700
+   - ~700
  - Sin metadata
  * - Líneas traducidas (aprox.)
- - ~1,850
+   - ~1,850
  - Con metadata RST
  * - Expansión promedio
- - ~164%
+   - ~164%
  - Por metadata y estructura
  * - Figuras convertidas
- - 12
+   - 12
  - Markdown -> figure directive
  * - Tablas convertidas
- - 10
+   - 10
  - Markdown -> list-table
  * - Code-blocks
- - 2
+   - 2
  - PlantUML + plantillas
  * - Enlaces externos
- - 8
+   - 8
  - Preservados
  * - Footnotes
- - 1
+   - 1
  - Markdown -> RST
 
 Elementos por Lote
@@ -208,32 +208,32 @@ Elementos por Lote
  :widths: 20 20 20 20 20
 
  * - Lote
- - Figuras
+   - Figuras
  - Tablas
  - Code-blocks
  - Enlaces
  * - Lote 1
- - 4
+   - 4
  - 5
  - 0
  - 2
  * - Lote 2
- - 5
+   - 5
  - 1
  - 1
  - 0
  * - Lote 3
- - 2
+   - 2
  - 0
  - 0
  - 2
  * - Lote 4
- - 1
+   - 1
  - 2
  - 0
  - 1
  * - **TOTAL**
- - **12**
+   - **12**
  - **8**
  - **1**
  - **5**
@@ -253,22 +253,22 @@ Términos Clave Aplicados
  :widths: 35 35 30
 
  * - Término Original
- - Traducción Aplicada
+   - Traducción Aplicada
  - Ocurrencias
  * - driving forces
- - factores determinantes
+   - factores determinantes
  - 3
  * - quality goals
- - atributos de calidad objetivo
+   - atributos de calidad objetivo
  - 15+
  * - stakeholder
- - stakeholder (preservado)
+   - stakeholder (preservado)
  - 20+
  * - quality requirements
- - requisitos de calidad
+   - requisitos de calidad
  - 10+
  * - quality scenarios
- - escenarios de calidad
+   - escenarios de calidad
  - 5+
 
 Coherencia Terminológica
@@ -295,23 +295,23 @@ Lote 1 (v1.4.0) vs Lotes 2-4 (v1.5.0)
  :widths: 30 25 25 20
 
  * - Métrica
- - Lote 1 (v1.4.0)
+   - Lote 1 (v1.4.0)
  - Lotes 2-4 (v1.5.0)
  - Mejora
  * - Tiempo/archivo
- - ~60 min
+   - ~60 min
  - ~18 min
  - **-70%**
  * - Correcciones necesarias
- - 12
+   - 12
  - 0
  - **-100%**
  * - Tiempo correcciones
- - ~2 horas
+   - ~2 horas
  - 0 horas
  - Eliminado
  * - Calidad inicial
- - Requiere FASE 4
+   - Requiere FASE 4
  - [OK] Lista
  - Perfecta
 
@@ -338,16 +338,16 @@ Validación Empírica
  :widths: 50 25 25
 
  * - Objetivo
- - Meta
+   - Meta
  - Resultado
  * - Reducción de correcciones
- - 80%
+   - 80%
  - **100%** [OK]
  * - Reducción de tiempo
- - 40%
+   - 40%
  - **70%** [OK]
  * - Calidad desde inicio
- - Mejor
+   - Mejor
  - **Perfecta** [OK]
 
 **Conclusión:** **Paso 3.4 SUPERÓ TODAS LAS EXPECTATIVAS**
@@ -531,10 +531,10 @@ Historial de Revisiones
  :widths: 20 20 60
 
  * - Versión
- - Fecha
+   - Fecha
  - Cambios
  * - 1.0.0
- - 2026-01-27
+   - 2026-01-27
  - Reporte final - Sección 01 completada al 100%
 
 ----

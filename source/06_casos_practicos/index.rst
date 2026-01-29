@@ -182,23 +182,23 @@ Métricas Globales de Casos
  :widths: 30 20 20 30
 
  * - **Métrica**
- - **Mínimo**
+   - **Mínimo**
  - **Máximo**
  - **Promedio**
  * - Enriquecimiento
- - +80%
+   - +80%
  - +1373%
  - +771%
  * - Velocidad
- - 2.2 arch/h
+   - 2.2 arch/h
  - 3.7 arch/h
  - 3.0 arch/h
  * - Completitud
- - 100%
+   - 100%
  - 100%
  - 100%
  * - Omisiones (con PASO 0)
- - 0
+   - 0
  - 0
  - 0
 
@@ -215,19 +215,19 @@ Estado de Desarrollo
  :widths: 40 30 30
 
  * - **Subsección**
- - **Estado**
+   - **Estado**
  - **Archivos**
  * - **antes_despues/**
- - [OK] Parcial (1/4)
+   - [OK] Parcial (1/4)
  - caso_01 completado
  * - **errores_comunes/**
- - [OK] Parcial (1/4)
+   - [OK] Parcial (1/4)
  - error_01 completado
  * - **casos_exito/**
- - [RUNNING] Planificado
+   - [RUNNING] Planificado
  - Pendiente
  * - **ejercicios_practica/**
- - [RUNNING] Planificado
+   - [RUNNING] Planificado
  - Pendiente
 
 ----

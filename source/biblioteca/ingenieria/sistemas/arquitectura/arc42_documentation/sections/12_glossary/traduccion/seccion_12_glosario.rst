@@ -54,11 +54,11 @@ Forma
  :widths: 30 70
 
  * - **Término**
- - **Definición**
+   - **Definición**
  * - *<Término-1>*
- - *<definición-1>*
+   - *<definición-1>*
  * - *<Término-2>*
- - *<definición-2>*
+   - *<definición-2>*
 
 **Tabla de Glosario Multi-idioma:**
 
@@ -67,11 +67,11 @@ Forma
  :widths: 25 35 20 20
 
  * - **Término (EN)**
- - **Definición**
+   - **Definición**
  - **Español**
  - **Alemán**
  * - *<Term-1>*
- - *<definition-1>*
+   - *<definition-1>*
  - *<término-1>*
  - *<Begriff-1>*
 

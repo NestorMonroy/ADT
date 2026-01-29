@@ -62,11 +62,11 @@ Si usas forma tabular, solo describirás tus cajas negras con nombre y **respons
  :widths: 30 70
 
  * - **Nombre**
- - **Responsabilidad**
+   - **Responsabilidad**
  * - *<caja negra 1>*
- - *<Texto>*
+   - *<Texto>*
  * - *<caja negra 2>*
- - *<Texto>*
+   - *<Texto>*
 
 Su encabezado es el nombre de la caja negra.
 Si usas una lista de descripciones de caja negra, entonces llenas una plantilla de caja negra separada para cada **bloque de construcción** importante.
@@ -78,15 +78,15 @@ A veces puede ser útil complementar la tabla con columnas adicionales:
  :widths: 25 35 20 20
 
  * - **Nombre**
- - **Responsabilidad**
+   - **Responsabilidad**
  - **Interfaces**
  - **Código**
  * - *<caja negra 1>*
- - *<Texto>*
+   - *<Texto>*
  - ¿Cuáles son las **interfaces** principales de este bloque?
  - ¿Dónde está ubicado el código?
  * - *<caja negra 2>*
- - *<Texto>*
+   - *<Texto>*
  - ---"---
  - ---"---
 

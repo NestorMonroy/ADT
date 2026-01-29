@@ -111,21 +111,21 @@ Contenido Documental (-> ``source/``)
  :widths: 30 70
 
  * - Archivo/Carpeta
- - Razón
+   - Razón
  * - ``diataxis/``
- - Framework de documentación (se documenta)
+   - Framework de documentación (se documenta)
  * - ``docs/``
- - Documentación técnica (se compila a HTML)
+   - Documentación técnica (se compila a HTML)
  * - ``docs_maestros/``
- - Documentos fundamentales (se compilan a HTML)
+   - Documentos fundamentales (se compilan a HTML)
  * - ``biblioteca/arc42/``
- - Traducciones arc42 (se compilan a HTML)
+   - Traducciones arc42 (se compilan a HTML)
  * - ``01_fundamentos/``
- - Metodología de traducción (se documenta)
+   - Metodología de traducción (se documenta)
  * - ``glosario.rst``
- - Glosario (se compila a HTML)
+   - Glosario (se compila a HTML)
  * - ``tutorial.md``
- - Tutorial (se compila a HTML)
+   - Tutorial (se compila a HTML)
 
 Herramientas/Utilidades (-> raíz)
 ---------------------------------
@@ -135,19 +135,19 @@ Herramientas/Utilidades (-> raíz)
  :widths: 30 70
 
  * - Archivo/Carpeta
- - Razón
+   - Razón
  * - ``tools/plantuml.jar``
- - Herramienta para compilar diagramas
+   - Herramienta para compilar diagramas
  * - ``scripts/deploy.sh``
- - Script de despliegue (automatización)
+   - Script de despliegue (automatización)
  * - ``scripts/clean.sh``
- - Script de limpieza (utilidad)
+   - Script de limpieza (utilidad)
  * - ``config/``
- - Configuraciones del proyecto
+   - Configuraciones del proyecto
  * - ``Makefile``
- - Herramienta de build
+   - Herramienta de build
  * - ``backup.tar.gz``
- - Archivo de respaldo (no se documenta)
+   - Archivo de respaldo (no se documenta)
 
 Excepciones y Casos Especiales
 ===============================
@@ -262,10 +262,10 @@ Historial de Cambios
  :widths: 15 15 70
 
  * - Versión
- - Fecha
+   - Fecha
  - Cambios
  * - 1.0
- - 2026-01-27
+   - 2026-01-27
  - Creación del documento. Establecimiento de reglas fundamentales.
 
 Referencias

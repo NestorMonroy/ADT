@@ -23,23 +23,23 @@ Estado Actual
  :widths: 30 15 15 40
 
  * - Lote
- - Archivos
+   - Archivos
  - Estado
  - Observaciones
  * - Lote 1
- - 5
+   - 5
  - [OK] Completado
  - 4 ejemplos + 1 tip
  * - Lote 2
- - 9
+   - 9
  - [RUNNING] Pendiente
  - Tips 2-10
  * - Lote 3
- - 9
+   - 9
  - [RUNNING] Pendiente
  - Tips 11-19
  * - Lote 4
- - 5
+   - 5
  - [RUNNING] Pendiente
  - Tips 20-24
 
@@ -144,16 +144,16 @@ se tradujeron contexto arquitectónico, NO literalmente:
  :widths: 30 30 40
 
  * - Término Original
- - [ERROR] Literal (Incorrecto)
+   - [ERROR] Literal (Incorrecto)
  - [OK] Contextual (Correcto)
  * - driving forces
- - fuerzas impulsoras
+   - fuerzas impulsoras
  - **factores determinantes**
  * - quality goals
- - objetivos de calidad
+   - objetivos de calidad
  - **atributos de calidad objetivo**
  * - stakeholder
- - interesado, parte interesada
+   - interesado, parte interesada
  - **stakeholder** (preservar)
 
 **Justificación:**
@@ -179,28 +179,28 @@ Los atributos de calidad se tradujeron con referencia al original:
  :widths: 40 40 20
 
  * - Inglés (Original)
- - Español (Traducido)
+   - Español (Traducido)
  - ISO 25010
  * - Correctness
- - Corrección
+   - Corrección
  - [OK]
  * - Safety
- - Seguridad
+   - Seguridad
  - [OK]
  * - Robustness
- - Robustez
+   - Robustez
  - [OK]
  * - Flexibility
- - Flexibilidad
+   - Flexibilidad
  - [OK]
  * - Performance
- - Rendimiento
+   - Rendimiento
  - [OK]
  * - Ease of use
- - Facilidad de uso
+   - Facilidad de uso
  - [OK]
  * - Accuracy
- - Precisión
+   - Precisión
  - [OK]
 
 Estructura y Formato

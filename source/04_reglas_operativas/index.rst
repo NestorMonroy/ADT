@@ -75,15 +75,15 @@ Uso de esta Sección
  :widths: 50 50
 
  * - **Decisión**
- - **Matriz/Regla**
+   - **Matriz/Regla**
  * - ¿Cuánto enriquecer?
- - :doc:`matrices_decision/MD_002_cuando_enriquecer`
+   - :doc:`matrices_decision/MD_002_cuando_enriquecer`
  * - ¿Traducir o conservar término?
- - :doc:`matrices_decision/MD_004_traducir_vs_conservar`
+   - :doc:`matrices_decision/MD_004_traducir_vs_conservar`
  * - ¿Qué nivel de segmentación?
- - [RUNNING] MD-003 (planificado)
+   - [RUNNING] MD-003 (planificado)
  * - ¿Cómo estructurar salida?
- - [RUNNING] MD-005 (planificado)
+   - [RUNNING] MD-005 (planificado)
 
 ----
 
@@ -95,16 +95,16 @@ Estado de Desarrollo
  :widths: 40 30 30
 
  * - **Subsección**
- - **Estado**
+   - **Estado**
  - **Archivos**
  * - **matrices_decision/**
- - [OK] Parcial (2/5)
+   - [OK] Parcial (2/5)
  - MD-002, MD-004 completados
  * - **reglas_traduccion/**
- - [RUNNING] Planificado
+   - [RUNNING] Planificado
  - Pendiente
  * - **escenarios_traduccion/**
- - [RUNNING] Planificado
+   - [RUNNING] Planificado
  - Pendiente
 
 ----

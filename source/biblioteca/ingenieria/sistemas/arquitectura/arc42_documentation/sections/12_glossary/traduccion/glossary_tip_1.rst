@@ -23,17 +23,17 @@ Importancia del Glosario
  :widths: 40 60
 
  * - **Sin Glosario**
- - **Con Glosario**
+   - **Con Glosario**
  * - [ERROR] Desarrolladores y negocio usan términos diferentes
- - [OK] Todos hablan el mismo idioma
+   - [OK] Todos hablan el mismo idioma
  * - [ERROR] "Cliente" significa cosas diferentes para cada equipo
- - [OK] "Cliente" tiene definición única acordada
+   - [OK] "Cliente" tiene definición única acordada
  * - [ERROR] Pérdida de tiempo aclarando términos
- - [OK] Comunicación eficiente
+   - [OK] Comunicación eficiente
  * - [ERROR] Bugs por malentendidos
- - [OK] Implementación correcta desde inicio
+   - [OK] Implementación correcta desde inicio
  * - [ERROR] Onboarding lento para nuevos
- - [OK] Nuevos aprenden terminología rápidamente
+   - [OK] Nuevos aprenden terminología rápidamente
 
 **Regla: "Mejor Explícito que Implícito"**
 
@@ -148,19 +148,19 @@ Importancia del Glosario
  :widths: 40 30 30
 
  * - **Indicador**
- - **Objetivo**
+   - **Objetivo**
  - **Métrica**
  * - Términos definidos
- - 100% términos importantes
+   - 100% términos importantes
  - 30-50 términos en glosario
  * - Tiempo de onboarding
- - Reducción 30%
+   - Reducción 30%
  - Nuevos entienden dominio en 2 días
  * - Bugs por malentendidos
- - Reducción 50%
+   - Reducción 50%
  - Trackear causa raíz
  * - Reuniones de aclaración
- - Reducción 40%
+   - Reducción 40%
  - Menos "¿qué significa X?"
 
 ----

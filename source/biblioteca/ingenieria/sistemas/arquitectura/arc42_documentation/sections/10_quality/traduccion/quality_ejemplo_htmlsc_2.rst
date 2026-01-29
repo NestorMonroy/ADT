@@ -22,21 +22,21 @@ Este ejemplo muestra **escenarios de calidad** para HTML Sanity Checker (HtmlSC)
  :widths: 10 90
 
  * - **ID**
- - **Descripción**
+   - **Descripción**
  * - **10.2.1**
- - Cada enlace interno roto será encontrado.
+   - Cada enlace interno roto será encontrado.
  * - **10.2.2**
- - Cada imagen (local) faltante será encontrada.
+   - Cada imagen (local) faltante será encontrada.
  * - **10.2.3**
- - La **corrección** de todas las verificaciones está asegurada mediante pruebas automatizadas positivas y negativas.
+   - La **corrección** de todas las verificaciones está asegurada mediante pruebas automatizadas positivas y negativas.
  * - **10.2.4**
- - El reporte de resultados debe contener *todos* los resultados (también conocidos como hallazgos - findings).
+   - El reporte de resultados debe contener *todos* los resultados (también conocidos como hallazgos - findings).
  * - **10.2.5**
- - HtmlSC debe ser **extensible** con nuevos algoritmos de verificación y nuevos escenarios de uso (es decir, desde diferentes sistemas de build).
+   - HtmlSC debe ser **extensible** con nuevos algoritmos de verificación y nuevos escenarios de uso (es decir, desde diferentes sistemas de build).
  * - **10.2.6**
- - HtmlSC deja sus archivos fuente completamente intactos: El contenido de los archivos a verificar *nunca* será modificado.
+   - HtmlSC deja sus archivos fuente completamente intactos: El contenido de los archivos a verificar *nunca* será modificado.
  * - **10.2.7**
- - HtmlSC realiza todas las verificaciones en un archivo HTML de 100kBytes en menos de 10 segundos.
+   - HtmlSC realiza todas las verificaciones en un archivo HTML de 100kBytes en menos de 10 segundos.
 
 ----
 
@@ -50,22 +50,22 @@ Análisis de los Escenarios
  :widths: 30 40 30
 
  * - **Atributo Q42**
- - **Escenarios Relacionados**
+   - **Escenarios Relacionados**
  - **Prioridad**
  * - **#testable**
- - 10.2.1, 10.2.2, 10.2.3
+   - 10.2.1, 10.2.2, 10.2.3
  - Alta
  * - **#efficient**
- - 10.2.7
+   - 10.2.7
  - Alta
  * - **#flexible**
- - 10.2.5
+   - 10.2.5
  - Media
  * - **#safe**
- - 10.2.6
+   - 10.2.6
  - Alta
  * - **#reliable**
- - 10.2.4
+   - 10.2.4
  - Alta
 
 **Características de los Escenarios:**

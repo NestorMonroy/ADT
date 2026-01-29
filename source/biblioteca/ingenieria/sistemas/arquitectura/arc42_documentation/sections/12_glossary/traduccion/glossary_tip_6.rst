@@ -23,17 +23,17 @@ Asignación de Responsabilidad
  :widths: 45 55
 
  * - **Sin Responsable Claro**
- - **Con Responsable Asignado**
+   - **Con Responsable Asignado**
  * - [ERROR] Nadie actualiza el glosario
- - [OK] Glosario se mantiene actualizado
+   - [OK] Glosario se mantiene actualizado
  * - [ERROR] "Alguien debería hacerlo"
- - [OK] Accountability clara
+   - [OK] Accountability clara
  * - [ERROR] Glosario se vuelve obsoleto
- - [OK] Revisión regular programada
+   - [OK] Revisión regular programada
  * - [ERROR] Inconsistencias no resueltas
- - [OK] Arbitraje de conflictos
+   - [OK] Arbitraje de conflictos
  * - [ERROR] Nuevos términos no documentados
- - [OK] Proceso de adición definido
+   - [OK] Proceso de adición definido
 
 ----
 
@@ -44,25 +44,25 @@ Asignación de Responsabilidad
  :widths: 30 35 35
 
  * - **Metodología**
- - **Responsable Ideal**
+   - **Responsable Ideal**
  - **Razón**
  * - **Scrum**
- - Product Owner
+   - Product Owner
  - Owner del dominio de negocio, decide prioridades
  * - **Kanban**
- - Product Manager / Team Lead
+   - Product Manager / Team Lead
  - Visión holística del sistema
  * - **SAFe**
- - Product Manager (nivel team)
+   - Product Manager (nivel team)
  - Define features y requisitos
  * - **Waterfall**
- - Project Manager
+   - Project Manager
  - Gestiona documentación
  * - **Startup**
- - Tech Lead / CTO
+   - Tech Lead / CTO
  - Conoce negocio y tecnología
  * - **Open Source**
- - Maintainer Principal
+   - Maintainer Principal
  - Dueño del proyecto
 
 ----
@@ -153,22 +153,22 @@ Asignación de Responsabilidad
  :widths: 30 40 30
 
  * - **Herramienta**
- - **Uso**
+   - **Uso**
  - **Ventaja**
  * - **Confluence**
- - Editar y colaborar
+   - Editar y colaborar
  - Notificaciones automáticas
  * - **Google Sheets**
- - Tracking multi-idioma
+   - Tracking multi-idioma
  - Fácil compartir
  * - **Notion**
- - Glosario interactivo
+   - Glosario interactivo
  - Búsqueda rápida
  * - **Wiki interna**
- - Documentación centralizada
+   - Documentación centralizada
  - Versionado Git
  * - **JIRA**
- - Crear tickets para definiciones
+   - Crear tickets para definiciones
  - Integrado con workflow
 
 ----
@@ -244,42 +244,42 @@ Asignación de Responsabilidad
  :widths: 35 15 15 15 20
 
  * - **Actividad**
- - **PO**
+   - **PO**
  - **Arch**
  - **Dev**
  - **Stakeholders**
  * - Identificar nuevos términos
- - A
+   - A
  - C
  - C
  - C
  * - Escribir definición técnica
- - I
+   - I
  - R
  - C
  - I
  * - Escribir definición de negocio
- - R
+   - R
  - C
  - I
  - C
  * - Aprobar definición final
- - A
+   - A
  - C
  - I
  - C
  * - Publicar y comunicar
- - R
+   - R
  - I
  - I
  - I
  * - Mantener actualizado
- - A
+   - A
  - C
  - C
  - I
  * - Revisar periódicamente
- - R
+   - R
  - C
  - I
  - C

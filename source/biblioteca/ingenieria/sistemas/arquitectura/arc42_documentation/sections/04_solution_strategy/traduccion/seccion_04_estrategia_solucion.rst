@@ -40,15 +40,15 @@ Podrías usar una lista de **enfoques de solución** o una tabla similar a la si
  :widths: 20 25 35 20
 
  * - **Meta de calidad**
- - **Escenario**
+   - **Escenario**
  - **Enfoque de solución**
  - **Enlace a detalles**
  * - *<Meta-Q 1>*
- - *<Texto>*
+   - *<Texto>*
  - *<Texto>*
  - *<Enlace>*
  * - *<Meta-Q 2>*
- - *<Texto>*
+   - *<Texto>*
  - *<Texto>*
  - *<Enlace>*
 

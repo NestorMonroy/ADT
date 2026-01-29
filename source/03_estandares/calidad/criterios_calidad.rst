@@ -44,19 +44,19 @@ Criterio 1: Completitud (100%)
  :widths: 50 50
 
  * - **Aspecto**
- - **Verificación**
+   - **Verificación**
  * - Todas las secciones incluidas
- - [OK] Checklist contra original
+   - [OK] Checklist contra original
  * - Todos los párrafos traducidos
- - [OK] Conteo de elementos
+   - [OK] Conteo de elementos
  * - Todas las tablas presentes
- - [OK] Inventario de tablas
+   - [OK] Inventario de tablas
  * - Todas las imágenes referenciadas
- - [OK] Referencias de figuras
+   - [OK] Referencias de figuras
  * - Todos los ejemplos incluidos
- - [OK] Código y ejemplos verificados
+   - [OK] Código y ejemplos verificados
  * - Todas las referencias cruzadas
- - [OK] Links internos funcionales
+   - [OK] Links internos funcionales
 
 **Ejemplos Reales de Cumplimiento:**
 
@@ -141,16 +141,16 @@ Criterio 2: Precisión Técnica (100%)
  :widths: 30 35 35
 
  * - **Aspecto**
- - **Correcto**
+   - **Correcto**
  - **Incorrecto**
  * - Mismo término siempre igual
- - "Stakeholder" en todo el doc
+   - "Stakeholder" en todo el doc
  - "Stakeholder" / "Interesado" mezclados
  * - Términos técnicos conservados
- - "API", "Microservicio", "ATAM"
+   - "API", "Microservicio", "ATAM"
  - "IPA", "Micro-servicio", "MTAA"
  * - Traducciones normativas
- - "Building Block" -> "Bloque de Construcción"
+   - "Building Block" -> "Bloque de Construcción"
  - "Building Block" -> "Módulo" / "Componente"
 
 2. **Conceptos Traducidos Correctamente**
@@ -232,23 +232,23 @@ Criterio 3: Enriquecimiento Apropiado
  :widths: 20 20 20 40
 
  * - **Tamaño Original**
- - **Enriquecimiento**
+   - **Enriquecimiento**
  - **Rango**
  - **Justificación**
  * - < 20 líneas
- - +300% a +1000%
+   - +300% a +1000%
  - Alto
  - Tips breves requieren contexto y ejemplos
  * - 20-50 líneas
- - +100% a +300%
+   - +100% a +300%
  - Medio-Alto
  - Secciones cortas necesitan expansión
  * - 50-100 líneas
- - +80% a +150%
+   - +80% a +150%
  - Medio
  - Balance entre fidelidad y claridad
  * - > 100 líneas
- - +50% a +100%
+   - +50% a +100%
  - Bajo-Medio
  - Secciones extensas ya completas
 
@@ -547,27 +547,27 @@ Matriz de Evaluación de Calidad
  :widths: 30 15 15 40
 
  * - **Criterio**
- - **Peso**
+   - **Peso**
  - **Umbral**
  - **Verificación**
  * - Completitud
- - 30%
+   - 30%
  - 100%
  - Checklist contra original
  * - Precisión Técnica
- - 25%
+   - 25%
  - 100%
  - Revisión terminológica
  * - Enriquecimiento
- - 20%
+   - 20%
  - Apropiado
  - Rango según tamaño
  * - Formato/Compilación
- - 15%
+   - 15%
  - 100%
  - make html exitoso
  * - Verificación
- - 10%
+   - 10%
  - 100%
  - Script + checklist
 

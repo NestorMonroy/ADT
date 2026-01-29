@@ -56,16 +56,16 @@ Depende del nivel que busques:
  :widths: 30 20 50
 
  * - **Nivel**
- - **Tiempo**
+   - **Tiempo**
  - **Resultado**
  * - Básico
- - 15 min
+   - 15 min
  - Primera traducción simple
  * - Intermedio
- - 2-3 horas
+   - 2-3 horas
  - Dominio de fundamentos
  * - Avanzado
- - 6-8 horas
+   - 6-8 horas
  - Experto completo
 
 **Recomendado:** Invertir 3 horas (guía + tutorial)
@@ -170,23 +170,23 @@ Preguntas sobre Workflow
  :widths: 30 25 25 20
 
  * - **Tipo**
- - **Original**
+   - **Original**
  - **Tiempo**
  - **Velocidad**
  * - Tip breve
- - < 20 líneas
+   - < 20 líneas
  - 1-2 horas
  - Lento (alto enriq.)
  * - Sección corta
- - 20-50 líneas
+   - 20-50 líneas
  - 30-60 min
  - Media
  * - Sección mediana
- - 50-100 líneas
+   - 50-100 líneas
  - 1-1.5 horas
  - Media-Alta
  * - Sección extensa
- - > 100 líneas
+   - > 100 líneas
  - 2-3 horas
  - Alta
 

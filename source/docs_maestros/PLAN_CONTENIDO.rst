@@ -21,63 +21,63 @@ Estado Actual
  :widths: 30 20 20 30
 
  * - Sección
- - Subcarpetas
+   - Subcarpetas
  - Archivos .rst
  - Estado
  * - 01_fundamentos
- - 2 (vacías)
+   - 2 (vacías)
  - 0 de 5
  - [ERROR] 0% completado
  * - 02_procedimientos
- - 4 (vacías)
+   - 4 (vacías)
  - 0 de 6
  - [ERROR] 0% completado
  * - 03_estandares
- - 4 (vacías)
+   - 4 (vacías)
  - 0 de 5
  - [ERROR] 0% completado
  * - 04_reglas_operativas
- - 3 (vacías)
+   - 3 (vacías)
  - 0 de 4
  - [ERROR] 0% completado
  * - 05_herramientas_medios
- - 4 (vacías)
+   - 4 (vacías)
  - 0 de 5
  - [ERROR] 0% completado
  * - 06_casos_practicos
- - 4 (vacías)
+   - 4 (vacías)
  - 0 de 5
  - [ERROR] 0% completado
  * - 07_guias_uso
- - 0
+   - 0
  - 0 de 5
  - [ERROR] 0% completado
  * - 08_prompts
- - 2 (vacías)
+   - 2 (vacías)
  - 0 de 6
  - [ERROR] 0% completado
  * - 09_referencias
- - 2 (vacías)
+   - 2 (vacías)
  - 0 de 5
  - [ERROR] 0% completado
  * - 10_apendices
- - 0
+   - 0
  - 0 de 4
  - [ERROR] 0% completado
  * - biblioteca/arc42
- - 12
+   - 12
  - 30 de 36+
  - [OK] 25% (3/12 secciones)
  * - docs
- - 0
+   - 0
  - 3 de 3
  - [OK] 100%
  * - docs_maestros
- - 0
+   - 0
  - 9 de 9
  - [OK] 100%
  * - diataxis
- - 0
+   - 0
  - 1 de 1
  - [OK] 100%
 
@@ -99,17 +99,17 @@ Estos documentos son fundamentales para que el proyecto sea útil.
  :widths: 40 60
 
  * - Archivo
- - Descripción
+   - Descripción
  * - ``index.rst``
- - Índice de guías de uso
+   - Índice de guías de uso
  * - ``guia_rapida.rst``
- - **CRÍTICO**: Tutorial de 5 minutos para empezar
+   - **CRÍTICO**: Tutorial de 5 minutos para empezar
  * - ``tutorial_completo.rst``
- - Tutorial paso a paso completo
+   - Tutorial paso a paso completo
  * - ``faq.rst``
- - Preguntas frecuentes
+   - Preguntas frecuentes
  * - ``troubleshooting.rst``
- - Solución de problemas comunes
+   - Solución de problemas comunes
 
 **Razón:** Sin guías de uso, nadie puede usar el proyecto.
 
@@ -121,17 +121,17 @@ Estos documentos son fundamentales para que el proyecto sea útil.
  :widths: 40 60
 
  * - Archivo
- - Descripción
+   - Descripción
  * - ``index.rst``
- - Índice de fundamentos
+   - Índice de fundamentos
  * - ``glosario_traduccion.rst``
- - **CRÍTICO**: Glosario de términos de traducción
+   - **CRÍTICO**: Glosario de términos de traducción
  * - ``principios_fundamentales.rst``
- - Principios base de la metodología ADT
+   - Principios base de la metodología ADT
  * - ``taxonomias/index.rst``
- - Clasificación de tipos de documentos
+   - Clasificación de tipos de documentos
  * - ``metamodelos/index.rst``
- - Modelos conceptuales de traducción
+   - Modelos conceptuales de traducción
 
 **Razón:** Fundamentos necesarios para entender el proyecto.
 
@@ -143,19 +143,19 @@ Estos documentos son fundamentales para que el proyecto sea útil.
  :widths: 40 60
 
  * - Archivo
- - Descripción
+   - Descripción
  * - ``index.rst``
- - Índice de prompts
+   - Índice de prompts
  * - ``prompt_maestro_latex.rst``
- - **CRÍTICO**: Prompt para traducir LaTeX
+   - **CRÍTICO**: Prompt para traducir LaTeX
  * - ``prompt_maestro_sphinx.rst``
- - Prompt para traducir Sphinx/RST
+   - Prompt para traducir Sphinx/RST
  * - ``prompt_maestro_markdown.rst``
- - Prompt para traducir Markdown
+   - Prompt para traducir Markdown
  * - ``prompts_condicionales/index.rst``
- - Prompts según contexto
+   - Prompts según contexto
  * - ``plantillas/index.rst``
- - Plantillas reutilizables
+   - Plantillas reutilizables
 
 **Razón:** Los prompts son la herramienta principal de trabajo.
 
@@ -170,19 +170,19 @@ PRIORIDAD 2: ALTA (Procedimientos y Estándares)
  :widths: 40 60
 
  * - Archivo
- - Descripción
+   - Descripción
  * - ``index.rst``
- - Índice de procedimientos
+   - Índice de procedimientos
  * - ``workflow_general.rst``
- - Flujo general de traducción
+   - Flujo general de traducción
  * - ``modo_alta_fidelidad/index.rst``
- - Modo traducción literal
+   - Modo traducción literal
  * - ``modo_marcado_visual/index.rst``
- - Modo con marcadores visuales
+   - Modo con marcadores visuales
  * - ``verificacion_calidad/index.rst``
- - Proceso de QA
+   - Proceso de QA
  * - ``correccion_errores/index.rst``
- - Cómo corregir errores
+   - Cómo corregir errores
 
 03_estandares/ (5 archivos)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -192,17 +192,17 @@ PRIORIDAD 2: ALTA (Procedimientos y Estándares)
  :widths: 40 60
 
  * - Archivo
- - Descripción
+   - Descripción
  * - ``index.rst``
- - Índice de estándares
+   - Índice de estándares
  * - ``terminologia/index.rst``
- - Estándares de terminología
+   - Estándares de terminología
  * - ``formato_por_medio/index.rst``
- - Formato según medio (LaTeX, MD, etc.)
+   - Formato según medio (LaTeX, MD, etc.)
  * - ``calidad/index.rst``
- - Métricas de calidad
+   - Métricas de calidad
  * - ``restricciones/index.rst``
- - Restricciones y límites
+   - Restricciones y límites
 
 04_reglas_operativas/ (4 archivos)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -212,15 +212,15 @@ PRIORIDAD 2: ALTA (Procedimientos y Estándares)
  :widths: 40 60
 
  * - Archivo
- - Descripción
+   - Descripción
  * - ``index.rst``
- - Índice de reglas operativas
+   - Índice de reglas operativas
  * - ``reglas_traduccion/index.rst``
- - Reglas específicas de traducción
+   - Reglas específicas de traducción
  * - ``escenarios_traduccion/index.rst``
- - Escenarios comunes
+   - Escenarios comunes
  * - ``matrices_decision/index.rst``
- - Matrices para tomar decisiones
+   - Matrices para tomar decisiones
 
 PRIORIDAD 3: MEDIA (Herramientas y Casos)
 ------------------------------------------
@@ -233,17 +233,17 @@ PRIORIDAD 3: MEDIA (Herramientas y Casos)
  :widths: 40 60
 
  * - Archivo
- - Descripción
+   - Descripción
  * - ``index.rst``
- - Índice de herramientas
+   - Índice de herramientas
  * - ``latex/index.rst``
- - Guía específica de LaTeX
+   - Guía específica de LaTeX
  * - ``sphinx/index.rst``
- - Guía específica de Sphinx
+   - Guía específica de Sphinx
  * - ``markdown/index.rst``
- - Guía específica de Markdown
+   - Guía específica de Markdown
  * - ``equivalencias/index.rst``
- - Equivalencias entre formatos
+   - Equivalencias entre formatos
 
 06_casos_practicos/ (5 archivos)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -253,17 +253,17 @@ PRIORIDAD 3: MEDIA (Herramientas y Casos)
  :widths: 40 60
 
  * - Archivo
- - Descripción
+   - Descripción
  * - ``index.rst``
- - Índice de casos prácticos
+   - Índice de casos prácticos
  * - ``antes_despues/index.rst``
- - Comparaciones antes/después
+   - Comparaciones antes/después
  * - ``errores_comunes/index.rst``
- - Errores más frecuentes
+   - Errores más frecuentes
  * - ``casos_exito/index.rst``
- - Casos de éxito documentados
+   - Casos de éxito documentados
  * - ``ejercicios_practica/index.rst``
- - Ejercicios para practicar
+   - Ejercicios para practicar
 
 PRIORIDAD 4: BAJA (Referencias y Apéndices)
 --------------------------------------------
@@ -276,17 +276,17 @@ PRIORIDAD 4: BAJA (Referencias y Apéndices)
  :widths: 40 60
 
  * - Archivo
- - Descripción
+   - Descripción
  * - ``index.rst``
- - Índice de referencias
+   - Índice de referencias
  * - ``bibliografia.rst``
- - Bibliografía
+   - Bibliografía
  * - ``recursos_externos.rst``
- - Enlaces externos
+   - Enlaces externos
  * - ``documentacion_oficial/index.rst``
- - Docs oficiales relevantes
+   - Docs oficiales relevantes
  * - ``cheatsheets/index.rst``
- - Hojas de referencia rápida
+   - Hojas de referencia rápida
 
 10_apendices/ (4 archivos)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -296,15 +296,15 @@ PRIORIDAD 4: BAJA (Referencias y Apéndices)
  :widths: 40 60
 
  * - Archivo
- - Descripción
+   - Descripción
  * - ``index.rst``
- - Índice de apéndices
+   - Índice de apéndices
  * - ``historia_versiones.rst``
- - Historial de cambios
+   - Historial de cambios
  * - ``contribuidores.rst``
- - Lista de contribuidores
+   - Lista de contribuidores
  * - ``licencia.rst``
- - Información de licencia
+   - Información de licencia
 
 Plan de Implementación
 =======================
@@ -480,37 +480,37 @@ Métricas de Progreso
  :widths: 20 20 20 20 20
 
  * - Fase
- - Archivos
+   - Archivos
  - Tiempo Est.
  - Prioridad
  - Estado
  * - Fase 1 (MVP)
- - 9
+   - 9
  - 7-8h
  - CRÍTICA
  - [RUNNING] Pendiente
  * - Fase 2 (Core)
- - 21
+   - 21
  - 30-40h
  - ALTA
  - [RUNNING] Pendiente
  * - Fase 3 (Expansión)
- - 15
+   - 15
  - 30-40h
  - MEDIA
  - [RUNNING] Pendiente
  * - Fase 4 (Referencias)
- - 11
+   - 11
  - 10-15h
  - BAJA
  - [RUNNING] Pendiente
  * - Fase 5 (arc42)
- - 9 secciones
+   - 9 secciones
  - Variable
  - MEDIA
  - [RUNNING] Pendiente
  * - **TOTAL**
- - **56+**
+   - **56+**
  - **~100h**
  -
  - **0% completo**

@@ -72,19 +72,19 @@ Estado de Desarrollo
  :widths: 40 30 30
 
  * - **Subsección**
- - **Estado**
+   - **Estado**
  - **Archivos**
  * - **calidad/**
- - [OK] Completado
+   - [OK] Completado
  - 4 archivos
  * - **formato_por_medio/**
- - [RUNNING] Planificado
+   - [RUNNING] Planificado
  - Pendiente
  * - **terminologia/**
- - [RUNNING] Planificado
+   - [RUNNING] Planificado
  - Pendiente
  * - **restricciones/**
- - [RUNNING] Planificado
+   - [RUNNING] Planificado
  - Pendiente
 
 ----

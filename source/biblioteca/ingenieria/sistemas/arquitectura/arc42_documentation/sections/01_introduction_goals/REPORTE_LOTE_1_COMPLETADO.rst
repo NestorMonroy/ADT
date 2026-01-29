@@ -39,23 +39,23 @@ Progreso General
  :widths: 20 15 15 50
 
  * - Lote
- - Archivos
+   - Archivos
  - Estado
  - Descripción
  * - **Lote 1**
- - **5/28**
+   - **5/28**
  - **[OK] Completado**
  - **4 ejemplos + 1 tip**
  * - Lote 2
- - 9/28
+   - 9/28
  - [RUNNING] Pendiente
  - Tips 2-10
  * - Lote 3
- - 9/28
+   - 9/28
  - [RUNNING] Pendiente
  - Tips 11-19
  * - Lote 4
- - 5/28
+   - 5/28
  - [RUNNING] Pendiente
  - Tips 20-24
 
@@ -207,17 +207,17 @@ FASE 3.5: Revisión de Literalidad
  :widths: 50 50
 
  * - Item
- - Estado
+   - Estado
  * - Todos los párrafos traducidos
- - [OK] Verificado
+   - [OK] Verificado
  * - Todas las tablas preservadas
- - [OK] 5 tablas convertidas
+   - [OK] 5 tablas convertidas
  * - Todas las figuras incluidas
- - [OK] 4 figuras referenciadas
+   - [OK] 4 figuras referenciadas
  * - Referencias y enlaces funcionan
- - [OK] 2 enlaces externos preservados
+   - [OK] 2 enlaces externos preservados
  * - Código fuente sin cambios
- - [OK] N/A (sin código)
+   - [OK] N/A (sin código)
 
 ----
 
@@ -232,31 +232,31 @@ Expansión de Contenido
  :widths: 40 20 20 20
 
  * - Archivo
- - Líneas Orig.
+   - Líneas Orig.
  - Líneas Trad.
  - Expansión
  * - introduccion_ejemplo-3.rst
- - 46
+   - 46
  - 115
  - 150%
  * - introduccion_ejemplo-htmlsc-1.rst
- - 35
+   - 35
  - 72
  - 106%
  * - requisitos_calidad_ejemplo-1.rst
- - 32
+   - 32
  - 69
  - 116%
  * - requisitos_calidad_ejemplo-3.rst
- - 22
+   - 22
  - 53
  - 141%
  * - introduccion_tip-1.rst
- - 29
+   - 29
  - 65
  - 124%
  * - **TOTAL**
- - **164**
+   - **164**
  - **374**
  - **128%**
 
@@ -331,22 +331,22 @@ Comparación con Sección 02
  :widths: 40 30 30
 
  * - Aspecto
- - Sección 02
+   - Sección 02
  - Sección 01
  * - Total archivos
- - 7
+   - 7
  - 28
  * - Estrategia
- - Todo de una vez
+   - Todo de una vez
  - **Por lotes**
  * - Complejidad
- - Tips simples
+   - Tips simples
  - Ejemplos complejos
  * - Tablas
- - Pocas
+   - Pocas
  - **Muchas**
  * - Figuras
- - Pocas
+   - Pocas
  - **Múltiples sistemas**
 
 Mejoras Identificadas
@@ -396,10 +396,10 @@ Historial de Revisiones
  :widths: 20 20 60
 
  * - Versión
- - Fecha
+   - Fecha
  - Cambios
  * - 1.0.0
- - 2026-01-27
+   - 2026-01-27
  - Reporte inicial - Lote 1 completado (FASES 0-3.5)
 
 ----

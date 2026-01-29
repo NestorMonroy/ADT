@@ -36,11 +36,11 @@ las expectativas o artefactos requeridos.
  :widths: 30 70
 
  * - Rol
- - Expectativa
+   - Expectativa
  * - Administrador
- - Vista general de despliegue, detalles de instalación y operaciones, firewalls
+   - Vista general de despliegue, detalles de instalación y operaciones, firewalls
  * - Departamento de QA
- - Descripción de las interfaces para pruebas de carga, posibles puntos de
+   - Descripción de las interfaces para pruebas de carga, posibles puntos de
  medición para pruebas de rendimiento, concepto técnico para seguridad y
  confiabilidad
 
@@ -61,19 +61,19 @@ departamentos / organización respectivamente.
  :widths: 25 25 20 30
 
  * - Rol
- - Contacto
+   - Contacto
  - Relevancia para aprobación
  - Expectativa
  * - Líder de proyecto
- - Ms. Foobar, Ph.D.
+   - Ms. Foobar, Ph.D.
  - Alta
  - Vista general de riesgo técnico, interfaces externas
  * - Patrocinador del proyecto
- - Mrs. Lovelace, Ph.D.
+   - Mrs. Lovelace, Ph.D.
  - Alta
  - Prueba de que se pueden lograr los top-3 atributos de calidad objetivo
  * - Desarrollador Backend
- - Bruno Batch
+   - Bruno Batch
  - Ninguna
  - Concepto de persistencia y reporting, Detalles interfaz DWH
 

@@ -25,13 +25,13 @@ Tipos de Riesgos en Interfaces
  :widths: 40 60
 
  * - **Riesgo**
- - **Ejemplo**
+   - **Ejemplo**
  * - Servicio externo no disponible
- - API de pago cae -> sistema no puede procesar transacciones
+   - API de pago cae -> sistema no puede procesar transacciones
  * - Latencia alta
- - Servicio de terceros lento -> timeouts en nuestro sistema
+   - Servicio de terceros lento -> timeouts en nuestro sistema
  * - Rate limiting
- - API externa limita requests -> funcionalidad degradada
+   - API externa limita requests -> funcionalidad degradada
 
 **2. Riesgos de Robustez**
 
@@ -100,19 +100,19 @@ Para cada interfaz, pregunta:
  :widths: 20 30 25 25
 
  * - **Interface**
- - **Riesgo**
+   - **Riesgo**
  - **Impacto**
  - **Mitigación**
  * - API Pagos
- - Servicio no disponible
+   - Servicio no disponible
  - Alto: no se procesan pagos
  - Circuit breaker + cola de reintentos
  * - API Pagos
- - Cambio de formato
+   - Cambio de formato
  - Alto: integración rota
  - Tests de contrato + versionado
  * - Webhook
- - Datos maliciosos
+   - Datos maliciosos
  - Medio: posible XSS
  - Validación estricta + sanitización
 

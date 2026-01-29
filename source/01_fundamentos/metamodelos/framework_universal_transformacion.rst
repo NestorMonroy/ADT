@@ -56,17 +56,17 @@ El Framework en 5 Componentes
  :header-rows: 1
 
  * - Dominio
- - Entrada (Source)
+   - Entrada (Source)
  * - Peshitta
- - Texto hebreo del libro de Zacarías
+   - Texto hebreo del libro de Zacarías
  * - MDA
- - Platform-Independent Model (PIM)
+   - Platform-Independent Model (PIM)
  * - ADT
- - Documento LaTeX original
+   - Documento LaTeX original
  * - Compilación
- - Código fuente en C
+   - Código fuente en C
  * - Refactoring
- - Código antes de refactorizar
+   - Código antes de refactorizar
 
 2. Salida (Target)
 ------------------
@@ -90,17 +90,17 @@ El Framework en 5 Componentes
  :header-rows: 1
 
  * - Dominio
- - Salida (Target)
+   - Salida (Target)
  * - Peshitta
- - Texto siríaco de Zacarías
+   - Texto siríaco de Zacarías
  * - MDA
- - Platform-Specific Model (PSM)
+   - Platform-Specific Model (PSM)
  * - ADT
- - Documento RST/Sphinx
+   - Documento RST/Sphinx
  * - Compilación
- - Código Assembly
+   - Código Assembly
  * - Refactoring
- - Código después de refactorizar
+   - Código después de refactorizar
 
 3. Método por Defecto
 ---------------------
@@ -126,23 +126,23 @@ c) **Preferencia:**
  :header-rows: 1
 
  * - Dominio
- - Segmentación
+   - Segmentación
  - Rendición
  - Preferencia
  * - Peshitta
- - Frase
+   - Frase
  - Palabra
  - Signifié
  * - ADT
- - Sección
+   - Sección
  - Comando
  - Signifié
  * - MDA
- - Paquete/Clase
+   - Paquete/Clase
  - Elemento
  - Semántica
  * - Compilación
- - Función
+   - Función
  - Instrucción
  - Comportamiento
 
@@ -173,15 +173,15 @@ c) **Preferencia:**
  :header-rows: 1
 
  * - Objetivo
- - Ejemplo ADT
+   - Ejemplo ADT
  * - Domesticación
- - ``\textbf{}`` -> ``**`` (sintaxis natural RST)
+   - ``\textbf{}`` -> ``**`` (sintaxis natural RST)
  * - Claridad
- - Agregar ``.. note::`` para aclarar
+   - Agregar ``.. note::`` para aclarar
  * - Consistencia
- - Unificar ``\textbf{}`` y ``\emph{}`` a un solo estilo
+   - Unificar ``\textbf{}`` y ``\emph{}`` a un solo estilo
  * - Simplificación
- - Omitir ``\vspace{}`` (no semántico en RST)
+   - Omitir ``\vspace{}`` (no semántico en RST)
 
 5. Tácticas (Tactics)
 ---------------------
@@ -196,49 +196,49 @@ c) **Preferencia:**
  :header-rows: 1
 
  * - Táctica
- - Descripción
+   - Descripción
  - Ejemplo ADT
  * - **Adición**
- - Agregar contenido
+   - Agregar contenido
  - ``.. note::`` para claridad
  * - **Omisión**
- - Eliminar contenido
+   - Eliminar contenido
  - Omitir ``\noindent``
  * - **Sustitución**
- - Cambiar elemento
+   - Cambiar elemento
  - ``\ref{}`` -> ``:ref:``
  * - **Cambio orden**
- - Reordenar
+   - Reordenar
  - Mover figura cerca de ref
  * - **Especificación**
- - Hacer más específico
+   - Hacer más específico
  - "[1]" -> "Smith (2020)"
  * - **Generalización**
- - Hacer más general
+   - Hacer más general
  - Unificar variantes
  * - **Explicación**
- - Expandir
+   - Expandir
  - Agregar contexto
  * - **Normalización**
- - Estandarizar
+   - Estandarizar
  - Unificar nomenclatura
  * - **Transposición**
- - Cambiar categoría
+   - Cambiar categoría
  - Verbo -> Sustantivo
  * - **Modulación**
- - Cambiar perspectiva
+   - Cambiar perspectiva
  - Activa -> Pasiva
  * - **Compensación**
- - Recuperar pérdida
+   - Recuperar pérdida
  - Info en nota al pie
  * - **Amplificación**
- - Expandir implícito
+   - Expandir implícito
  - Hacer explícito
  * - **Condensación**
- - Comprimir
+   - Comprimir
  - Resumir verboso
  * - **Literalización**
- - Preservar forma
+   - Preservar forma
  - Código fuente
 
 ----
@@ -346,32 +346,32 @@ Tabla Maestra de Aplicabilidad
  :header-rows: 1
 
  * - Dominio
- - Framework
+   - Framework
  - Método Defecto
  - Objetivos
  - Tácticas
  * - **Traducción**
- - [OK] 100%
+   - [OK] 100%
  - [OK] 100%
  - [OK] 100%
  - [OK] 100%
  * - **MDA/MDE**
- - [OK] 100%
+   - [OK] 100%
  - [OK] 95%
  - [OK] 90%
  - [OK] 85%
  * - **Compilación**
- - [OK] 100%
+   - [OK] 100%
  - [OK] 95%
  - [OK] 70%
  - [OK] 60%
  * - **Refactoring**
- - [OK] 100%
+   - [OK] 100%
  - [OK] 90%
  - [OK] 85%
  - [OK] 80%
  * - **Migración**
- - [OK] 100%
+   - [OK] 100%
  - [OK] 95%
  - [OK] 90%
  - [OK] 85%

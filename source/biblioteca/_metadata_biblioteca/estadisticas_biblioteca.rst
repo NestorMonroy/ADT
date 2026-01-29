@@ -44,27 +44,27 @@ Libros por Estado
  :widths: 30 15 15 40
 
  * - Estado
- - Cantidad
+   - Cantidad
  - % del Total
  - Códigos
  * - **Completados**
- - 0
+   - 0
  - 0%
  - --
  * - **En Proceso**
- - 0
+   - 0
  - 0%
  - --
  * - **En Preparación**
- - 1
+   - 1
  - 100%
  - ING.SIS.ARC.001
  * - **Planificados**
- - 8
+   - 8
  - --
  - Varios
  * - **TOTAL ACTIVOS**
- - **1**
+   - **1**
  - **100%**
  - --
 
@@ -76,23 +76,23 @@ Libros por Categoría
  :widths: 30 15 15 40
 
  * - Categoría
- - Cantidad
+   - Cantidad
  - % del Total
  - Progreso Promedio
  * - **Informática (INF)**
- - 0
+   - 0
  - 0%
  - N/A
  * - **Ingeniería (ING)**
- - 1
+   - 1
  - 100%
  - 0%
  * - **Ciencias (CIE)**
- - 0
+   - 0
  - 0%
  - N/A
  * - **TOTAL**
- - **1**
+   - **1**
  - **100%**
  - **0%**
 
@@ -104,25 +104,25 @@ Libros por Subcategoría
  :widths: 40 15 45
 
  * - Subcategoría
- - Cantidad
+   - Cantidad
  - Libros
  * - **Sistemas (ING.SIS)**
- - 1
+   - 1
  - arc42 Documentation
  * - Arquitectura (ING.ARQ)
- - 0
+   - 0
  - --
  * - Programación (INF.PRG)
- - 0
+   - 0
  - --
  * - Inteligencia Artificial (INF.IAR)
- - 0
+   - 0
  - --
  * - DevOps (INF.DVC)
- - 0
+   - 0
  - --
  * - Otros
- - 0
+   - 0
  - --
 
 Libros por Especialidad
@@ -133,25 +133,25 @@ Libros por Especialidad
  :widths: 40 15 45
 
  * - Especialidad
- - Cantidad
+   - Cantidad
  - Libros
  * - **arc42 (ING.SIS.ARC)**
- - 1
+   - 1
  - arc42 Documentation
  * - Full-Stack (INF.PRG.FST)
- - 0
+   - 0
  - (planificado)
  * - Python (INF.PRG.PYT)
- - 0
+   - 0
  - (planificado)
  * - Machine Learning (INF.IAR.MLF)
- - 0
+   - 0
  - (planificado)
  * - Docker (INF.DVC.DOC)
- - 0
+   - 0
  - (planificado)
  * - Otros
- - 0
+   - 0
  - --
 
 ----
@@ -167,12 +167,12 @@ Progreso por Libro
  :widths: 15 40 15 15 15
 
  * - Código
- - Título
+   - Título
  - Progreso
  - Páginas
  - Estado
  * - ING.SIS.ARC.001
- - arc42 Documentation
+   - arc42 Documentation
  - 0%
  - 0/~500
  - Preparación
@@ -226,12 +226,12 @@ Glosarios
  :widths: 15 40 15 15 15
 
  * - Código
- - Libro
+   - Libro
  - Términos
  - Único/Repetido
  - Estado
  * - ING.SIS.ARC.001
- - arc42 Documentation
+   - arc42 Documentation
  - 0
  - --
  - Por iniciar
@@ -287,12 +287,12 @@ Calidad por Libro
  :widths: 15 40 15 15 15
 
  * - Código
- - Libro
+   - Libro
  - Revisiones
  - Errores
  - Calidad
  * - ING.SIS.ARC.001
- - arc42 Documentation
+   - arc42 Documentation
  - 0
  - 0
  - Pendiente
@@ -321,12 +321,12 @@ Archivos y Tamaño
  :widths: 15 40 15 15 15
 
  * - Código
- - Libro
+   - Libro
  - Archivos
  - Tamaño
  - Figuras
  * - ING.SIS.ARC.001
- - arc42 Documentation
+   - arc42 Documentation
  - 474
  - 25 MB
  - ~100
@@ -370,12 +370,12 @@ Tiempo de Traducción
  :widths: 15 40 15 15 15
 
  * - Código
- - Libro
+   - Libro
  - Inicio
  - Estimado Fin
  - Días
  * - ING.SIS.ARC.001
- - arc42 Documentation
+   - arc42 Documentation
  - 2026-01-27
  - TBD
  - TBD
@@ -603,10 +603,10 @@ Historial de Versiones
  :header-rows: 1
 
  * - Fecha
- - Versión
+   - Versión
  - Cambios
  * - 2026-01-28
- - 1.0.0
+   - 1.0.0
  - Estadísticas iniciales - 1 libro en preparación
 
 ----

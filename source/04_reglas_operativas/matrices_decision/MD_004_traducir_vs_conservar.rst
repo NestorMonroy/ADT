@@ -73,31 +73,31 @@ Categoría 1: SIEMPRE CONSERVAR
  :widths: 30 30 40
 
  * - **Término**
- - **Decisión**
+   - **Decisión**
  - **Razón**
  * - API
- - API
+   - API
  - Acrónimo universal
  * - REST
- - REST
+   - REST
  - Estilo arquitectónico estándar
  * - JSON
- - JSON
+   - JSON
  - Formato de datos
  * - XML
- - XML
+   - XML
  - Formato de datos
  * - HTTP
- - HTTP
+   - HTTP
  - Protocolo
  * - SQL
- - SQL
+   - SQL
  - Lenguaje de consulta
  * - UML
- - UML
+   - UML
  - Lenguaje de modelado
  * - URL
- - URL
+   - URL
  - Acrónimo técnico
 
 **Justificación:**
@@ -118,28 +118,28 @@ Categoría 1: SIEMPRE CONSERVAR
  :widths: 30 30 40
 
  * - **Término**
- - **Decisión**
+   - **Decisión**
  - **Razón**
  * - Singleton
- - Singleton
+   - Singleton
  - Patrón GoF establecido
  * - Factory
- - Factory
+   - Factory
  - Patrón de creación
  * - Observer
- - Observer
+   - Observer
  - Patrón de comportamiento
  * - Strategy
- - Strategy
+   - Strategy
  - Patrón de comportamiento
  * - Adapter
- - Adapter
+   - Adapter
  - Patrón estructural
  * - Facade
- - Facade
+   - Facade
  - Patrón estructural
  * - Circuit Breaker
- - Circuit Breaker
+   - Circuit Breaker
  - Patrón resiliencia
 
 **Justificación:**
@@ -160,25 +160,25 @@ Categoría 1: SIEMPRE CONSERVAR
  :widths: 30 30 40
 
  * - **Término**
- - **Decisión**
+   - **Decisión**
  - **Razón**
  * - Scrum
- - Scrum
+   - Scrum
  - Metodología ágil
  * - Kanban
- - Kanban
+   - Kanban
  - Sistema de gestión
  * - ATAM
- - ATAM
+   - ATAM
  - Método de evaluación
  * - SAFe
- - SAFe
+   - SAFe
  - Framework escalado
  * - DevOps
- - DevOps
+   - DevOps
  - Cultura y práctica
  * - Agile
- - Agile (o Ágil)
+   - Agile (o Ágil)
  - Metodología (caso especial)
 
 **Justificación:**
@@ -215,19 +215,19 @@ Categoría 1: SIEMPRE CONSERVAR
  :widths: 30 30 40
 
  * - **Término**
- - **Decisión**
+   - **Decisión**
  - **Razón**
  * - Product Owner
- - Product Owner
+   - Product Owner
  - Rol Scrum oficial
  * - Scrum Master
- - Scrum Master
+   - Scrum Master
  - Rol Scrum oficial
  * - Stakeholder
- - Stakeholder
+   - Stakeholder
  - Término universal PM
  * - DevOps Engineer
- - DevOps Engineer
+   - DevOps Engineer
  - Rol técnico moderno
 
 **Justificación:**
@@ -248,22 +248,22 @@ Categoría 1: SIEMPRE CONSERVAR
  :widths: 30 30 40
 
  * - **Término**
- - **Decisión**
+   - **Decisión**
  - **Razón**
  * - Microservicio
- - Microservicio
+   - Microservicio
  - Estilo arquitectónico
  * - Runtime
- - Runtime
+   - Runtime
  - Entorno de ejecución
  * - Deployment
- - Deployment
+   - Deployment
  - Proceso de despliegue
  * - Whitebox
- - Whitebox
+   - Whitebox
  - Vista de caja blanca
  * - Blackbox
- - Blackbox
+   - Blackbox
  - Vista de caja negra
 
 **Nota sobre "Runtime":**
@@ -305,25 +305,25 @@ Categoría 2: SIEMPRE TRADUCIR
  :widths: 30 30 40
 
  * - **Término**
- - **Traducción**
+   - **Traducción**
  - **Razón**
  * - Quality
- - Calidad
+   - Calidad
  - Concepto general
  * - Risk
- - Riesgo
+   - Riesgo
  - Concepto general
  * - Goal
- - Objetivo
+   - Objetivo
  - Concepto general
  * - Requirement
- - Requisito
+   - Requisito
  - Concepto general
  * - Decision
- - Decisión
+   - Decisión
  - Concepto general
  * - Constraint
- - Restricción
+   - Restricción
  - Concepto general
 
 **Justificación:**
@@ -344,25 +344,25 @@ Categoría 2: SIEMPRE TRADUCIR
  :widths: 30 30 40
 
  * - **Término**
- - **Traducción**
+   - **Traducción**
  - **Razón**
  * - Implement
- - Implementar
+   - Implementar
  - Verbo común
  * - Design
- - Diseñar
+   - Diseñar
  - Verbo común
  * - Test
- - Probar/Testear
+   - Probar/Testear
  - Verbo común
  * - Deploy
- - Desplegar
+   - Desplegar
  - Verbo común
  * - Document
- - Documentar
+   - Documentar
  - Verbo común
  * - Validate
- - Validar
+   - Validar
  - Verbo común
 
 **Justificación:**
@@ -380,25 +380,25 @@ Categoría 2: SIEMPRE TRADUCIR
  :widths: 30 30 40
 
  * - **Término**
- - **Traducción**
+   - **Traducción**
  - **Razón**
  * - Complex
- - Complejo
+   - Complejo
  - Adjetivo común
  * - Simple
- - Simple
+   - Simple
  - Adjetivo común
  * - Critical
- - Crítico
+   - Crítico
  - Adjetivo común
  * - Optional
- - Opcional
+   - Opcional
  - Adjetivo común
  * - Required
- - Requerido
+   - Requerido
  - Adjetivo común
  * - Important
- - Importante
+   - Importante
  - Adjetivo común
 
 **2.4 Términos con Traducción Estándar ISO**
@@ -408,19 +408,19 @@ Categoría 2: SIEMPRE TRADUCIR
  :widths: 30 30 40
 
  * - **Término**
- - **Traducción**
+   - **Traducción**
  - **Razón**
  * - Technical Debt
- - Deuda Técnica
+   - Deuda Técnica
  - Traducción ISO 25010
  * - Quality Attribute
- - Atributo de Calidad
+   - Atributo de Calidad
  - Terminología ISO
  * - Building Block
- - Bloque de Construcción
+   - Bloque de Construcción
  - Traducción establecida
  * - Glossary
- - Glosario
+   - Glosario
  - Traducción estándar
 
 **Uso en arc42:** 100% traducidos consistentemente
@@ -451,28 +451,28 @@ Categoría 3: CASO POR CASO
  :widths: 40 35 25
 
  * - **Original**
- - **Decisión arc42**
+   - **Decisión arc42**
  - **Razón**
  * - Building Block View
- - Vista de Bloques de Construcción
+   - Vista de Bloques de Construcción
  - Título sección, traducible
  * - Runtime View
- - Vista de Runtime
+   - Vista de Runtime
  - "Runtime" técnico
  * - Deployment View
- - Vista de Despliegue
+   - Vista de Despliegue
  - Título formal
  * - Context and Scope
- - Contexto y Alcance
+   - Contexto y Alcance
  - Totalmente traducible
  * - Quality Requirements
- - Requisitos de Calidad
+   - Requisitos de Calidad
  - Totalmente traducible
  * - Crosscutting Concepts
- - Conceptos Transversales
+   - Conceptos Transversales
  - Totalmente traducible
  * - Architecture Decisions
- - Decisiones Arquitectónicas
+   - Decisiones Arquitectónicas
  - Totalmente traducible
 
 **3.2 Neologismos Recientes**
@@ -593,59 +593,59 @@ Tabla de Referencia Rápida
  :widths: 30 25 25 20
 
  * - **Término**
- - **Categoría**
+   - **Categoría**
  - **Decisión**
  - **arc42**
  * - API
- - Acrónimo
+   - Acrónimo
  - API
  - [OK]
  * - Stakeholder
- - Rol
+   - Rol
  - Stakeholder
  - [OK]
  * - Quality
- - Concepto
+   - Concepto
  - Calidad
  - [OK]
  * - Risk
- - Concepto
+   - Concepto
  - Riesgo
  - [OK]
  * - Building Block
- - Término arc42
+   - Término arc42
  - Bloque de Construcción
  - [OK]
  * - Runtime
- - Técnico
+   - Técnico
  - Runtime
  - [OK]
  * - Deployment
- - Mixto
+   - Mixto
  - Despliegue/Deployment
  - [OK]
  * - Microservicio
- - Estilo arqui.
+   - Estilo arqui.
  - Microservicio
  - [OK]
  * - ATAM
- - Metodología
+   - Metodología
  - ATAM
  - [OK]
  * - Product Owner
- - Rol
+   - Rol
  - Product Owner
  - [OK]
  * - Technical Debt
- - ISO
+   - ISO
  - Deuda Técnica
  - [OK]
  * - Circuit Breaker
- - Patrón
+   - Patrón
  - Circuit Breaker
  - [OK]
  * - Glossary
- - Concepto
+   - Concepto
  - Glosario
  - [OK]
 

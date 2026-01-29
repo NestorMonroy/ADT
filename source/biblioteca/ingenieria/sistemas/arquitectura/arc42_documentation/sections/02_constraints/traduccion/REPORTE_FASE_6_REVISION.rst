@@ -203,22 +203,22 @@ Métricas de Revisión
  :widths: 40 30 30
 
  * - Aspecto
- - Cantidad
+   - Cantidad
  - Estado
  * - Archivos revisados
- - 7
+   - 7
  - [OK] 100%
  * - Enlaces verificados
- - 5
+   - 5
  - [OK] 100%
  * - Etiquetas validadas
- - 7
+   - 7
  - [OK] 100%
  * - Errores críticos
- - 0
+   - 0
  - [OK] 0%
  * - Warnings menores
- - 4
+   - 4
  - [WARNING] No crítico
 
 ----
@@ -265,10 +265,10 @@ Historial de Revisiones
  :widths: 20 20 60
 
  * - Versión
- - Fecha
+   - Fecha
  - Cambios
  * - 1.0.0
- - 2026-01-27
+   - 2026-01-27
  - Reporte inicial FASE 6 completada
 
 ----

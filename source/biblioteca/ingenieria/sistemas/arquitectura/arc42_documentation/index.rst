@@ -127,67 +127,67 @@ Estado de Traducción
  :class: progress-table
 
  * - #
- - Sección
+   - Sección
  - Original
  - Traducido
  - Estado
  * - 01
- - Introduction and Goals
+   - Introduction and Goals
  - 147 archivos
  - 0%
  - [RUNNING] Pendiente
  * - 02
- - Constraints
+   - Constraints
  - 2 archivos
  - 0%
  - [RUNNING] Pendiente
  * - 03
- - Context and Scope
+   - Context and Scope
  - 6 archivos
  - 0%
  - [RUNNING] Pendiente
  * - 04
- - Solution Strategy
+   - Solution Strategy
  - 2 archivos
  - 0%
  - [RUNNING] Pendiente
  * - 05
- - Building Block View
+   - Building Block View
  - 4 archivos
  - 0%
  - [RUNNING] Pendiente
  * - 06
- - Runtime View
+   - Runtime View
  - 3 archivos
  - 0%
  - [RUNNING] Pendiente
  * - 07
- - Deployment View
+   - Deployment View
  - 3 archivos
  - 0%
  - [RUNNING] Pendiente
  * - 08
- - Concepts
+   - Concepts
  - 4 archivos
  - 0%
  - [RUNNING] Pendiente
  * - 09
- - Architecture Decisions
+   - Architecture Decisions
  - 3 archivos
  - 0%
  - [RUNNING] Pendiente
  * - 10
- - Quality
+   - Quality
  - 3 archivos
  - 0%
  - [RUNNING] Pendiente
  * - 11
- - Risks and Technical Debt
+   - Risks and Technical Debt
  - 3 archivos
  - 0%
  - [RUNNING] Pendiente
  * - 12
- - Glossary
+   - Glossary
  - 2 archivos
  - 0%
  - [RUNNING] Pendiente

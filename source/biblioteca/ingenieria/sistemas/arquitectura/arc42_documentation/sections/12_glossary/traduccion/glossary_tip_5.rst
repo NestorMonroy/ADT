@@ -44,43 +44,43 @@ Principio de Minimalismo
  :widths: 30 35 35
 
  * - **Término**
- - **¿Incluir?**
+   - **¿Incluir?**
  - **Razón**
  * - **REST API**
- - [ERROR] NO
+   - [ERROR] NO
  - Término técnico universal, conocido
  * - **Microservicio**
- - [ERROR] NO (usualmente)
+   - [ERROR] NO (usualmente)
  - Concepto estándar
  * - **Saga Pattern**
- - [WARNING] TAL VEZ
+   - [WARNING] TAL VEZ
  - Si usas de manera no-estándar
  * - **Cliente Premium**
- - [OK] SÍ
+   - [OK] SÍ
  - Específico de tu dominio
  * - **Workflow de Aprobación**
- - [OK] SÍ
+   - [OK] SÍ
  - Proceso particular de tu sistema
  * - **Java**
- - [ERROR] NO
+   - [ERROR] NO
  - Lenguaje conocido
  * - **Python**
- - [ERROR] NO
+   - [ERROR] NO
  - Lenguaje conocido
  * - **UML**
- - [ERROR] NO
+   - [ERROR] NO
  - Estándar conocido
  * - **GDPR**
- - [WARNING] TAL VEZ
+   - [WARNING] TAL VEZ
  - Si explicas cómo LO implementas
  * - **SLA**
- - [WARNING] TAL VEZ
+   - [WARNING] TAL VEZ
  - Solo si defines TUS SLAs específicos
  * - **Usuario**
- - [ERROR] NO
+   - [ERROR] NO
  - Demasiado genérico
  * - **Cliente VIP**
- - [OK] SÍ
+   - [OK] SÍ
  - Diferente de cliente regular
 
 ----
@@ -147,19 +147,19 @@ Principio de Minimalismo
  :widths: 30 25 45
 
  * - **Tamaño del Proyecto**
- - **# Términos**
+   - **# Términos**
  - **Comentario**
  * - **Pequeño** (1-5 personas)
- - 5-15
+   - 5-15
  - Solo conceptos core
  * - **Mediano** (5-20 personas)
- - 15-30
+   - 15-30
  - Balance entre completo y manejable
  * - **Grande** (20-100 personas)
- - 30-50
+   - 30-50
  - Múltiples subdominios
  * - **Enterprise** (100+ personas)
- - 40-80
+   - 40-80
  - Por bounded context, no global
 
 .. warning::
@@ -216,37 +216,37 @@ Principio de Minimalismo
  :widths: 30 70
 
  * - **Término**
- - **Definición**
+   - **Definición**
  * - **Availability**
- - Habitaciones no reservadas para fecha específica. Actualizado en tiempo real.
+   - Habitaciones no reservadas para fecha específica. Actualizado en tiempo real.
  * - **Booking**
- - Reserva confirmada con pago completado o garantía de tarjeta.
+   - Reserva confirmada con pago completado o garantía de tarjeta.
  * - **Channel**
- - Fuente de reserva (directo, OTA, GDS, corporativo).
+   - Fuente de reserva (directo, OTA, GDS, corporativo).
  * - **Dynamic Pricing**
- - Algoritmo que ajusta precio basado en demanda, eventos, temporada.
+   - Algoritmo que ajusta precio basado en demanda, eventos, temporada.
  * - **Guaranteed Booking**
- - Reserva con tarjeta de crédito que cobra no-show fee.
+   - Reserva con tarjeta de crédito que cobra no-show fee.
  * - **Inventory**
- - Total de habitaciones disponibles por tipo y fecha.
+   - Total de habitaciones disponibles por tipo y fecha.
  * - **No-Show**
- - Huésped con booking confirmado que no llega sin cancelar.
+   - Huésped con booking confirmado que no llega sin cancelar.
  * - **Occupancy Rate**
- - % de habitaciones ocupadas vs total inventario.
+   - % de habitaciones ocupadas vs total inventario.
  * - **OTA**
- - Online Travel Agency (Booking.com, Expedia).
+   - Online Travel Agency (Booking.com, Expedia).
  * - **Overbooking**
- - Vender más habitaciones que inventario disponible (estrategia).
+   - Vender más habitaciones que inventario disponible (estrategia).
  * - **PMS**
- - Property Management System (software core del hotel).
+   - Property Management System (software core del hotel).
  * - **Rate Plan**
- - Conjunto de reglas de pricing (BAR, corporate, promotional).
+   - Conjunto de reglas de pricing (BAR, corporate, promotional).
  * - **Room Type**
- - Categoría de habitación (Standard, Deluxe, Suite).
+   - Categoría de habitación (Standard, Deluxe, Suite).
  * - **Walk-in**
- - Huésped sin reserva previa que solicita habitación.
+   - Huésped sin reserva previa que solicita habitación.
  * - **Yield Management**
- - Estrategia de maximizar revenue via dynamic pricing y overbooking.
+   - Estrategia de maximizar revenue via dynamic pricing y overbooking.
 
 **Total: 15 términos**
 **Todos específicos del dominio de hotelería**

@@ -73,19 +73,19 @@ Estado de Desarrollo
  :widths: 40 30 30
 
  * - **Subsección**
- - **Estado**
+   - **Estado**
  - **Archivos**
  * - **equivalencias/**
- - [OK] Parcial (1/3)
+   - [OK] Parcial (1/3)
  - latex_rst_equivalencias [OK]
  * - **sphinx/**
- - [RUNNING] Planificado
+   - [RUNNING] Planificado
  - Pendiente
  * - **latex/**
- - [RUNNING] Planificado
+   - [RUNNING] Planificado
  - Pendiente
  * - **markdown/**
- - [RUNNING] Planificado
+   - [RUNNING] Planificado
  - Pendiente
 
 ----

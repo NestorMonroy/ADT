@@ -73,16 +73,16 @@ Principio 2: Preferencia por Signifié sobre Signifiant
  :header-rows: 1
 
  * - Situación
- - Decisión
+   - Decisión
  - Razón
  * - ``\textbf{}`` -> ``**``
- - Adaptar forma [OK]
+   - Adaptar forma [OK]
  - Función (énfasis) preservada
  * - ``\vspace{}`` -> omitir
- - Adaptar forma [OK]
+   - Adaptar forma [OK]
  - No semántico en RST
  * - ``def foo():`` -> igual
- - Preservar forma [OK]
+   - Preservar forma [OK]
  - Forma = contenido en código
 
 **Ver:** :doc:`_fundamentos_conceptuales/signifiant_vs_signifie`
@@ -179,15 +179,15 @@ Para cada objetivo, hay tácticas preferidas:
  :header-rows: 1
 
  * - Objetivo
- - Tácticas Comunes
+   - Tácticas Comunes
  * - Domesticación
- - Sustitución, Normalización
+   - Sustitución, Normalización
  * - Claridad
- - Adición (notas), Explicación
+   - Adición (notas), Explicación
  * - Consistencia
- - Normalización, Generalización
+   - Normalización, Generalización
  * - Simplificación
- - Omisión, Condensación
+   - Omisión, Condensación
 
 Principio 6: Preservación Semántica
 ------------------------------------

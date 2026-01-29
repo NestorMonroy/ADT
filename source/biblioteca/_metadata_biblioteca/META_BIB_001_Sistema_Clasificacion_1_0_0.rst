@@ -46,16 +46,16 @@ Categorías Principales
  :widths: 15 25 60
 
  * - Código
- - Nombre
+   - Nombre
  - Ámbito
  * - **INF**
- - Informática
+   - Informática
  - Programación, IA, Redes, Seguridad, DevOps
  * - **ING**
- - Ingeniería
+   - Ingeniería
  - Arquitectura, Sistemas, Metodologías, Procesos
  * - **CIE**
- - Ciencias
+   - Ciencias
  - Matemáticas, Estadística, Física, Biología
 
 ----
@@ -68,37 +68,37 @@ Subcategorías Informática (INF)
  :widths: 15 30 55
 
  * - Código
- - Nombre
+   - Nombre
  - Descripción
  * - PRG
- - Programación
+   - Programación
  - Lenguajes, frameworks, paradigmas
  * - IAR
- - Inteligencia Artificial
+   - Inteligencia Artificial
  - ML, DL, NLP, Computer Vision
  * - RED
- - Redes
+   - Redes
  - Protocolos, comunicaciones, seguridad de red
  * - SEG
- - Seguridad
+   - Seguridad
  - Ciberseguridad, criptografía, ethical hacking
  * - BDD
- - Bases de Datos
+   - Bases de Datos
  - SQL, NoSQL, diseño de esquemas
  * - SOP
- - Sistemas Operativos
+   - Sistemas Operativos
  - Linux, Windows, administración
  * - WEB
- - Desarrollo Web
+   - Desarrollo Web
  - Frontend, Backend, Full-Stack general
  * - MOV
- - Desarrollo Móvil
+   - Desarrollo Móvil
  - iOS, Android, multiplataforma
  * - DVC
- - DevOps y Cloud
+   - DevOps y Cloud
  - Docker, Kubernetes, CI/CD, Cloud
  * - ALG
- - Algoritmos
+   - Algoritmos
  - Estructuras de datos, complejidad
 
 Subcategorías Ingeniería (ING)
@@ -109,25 +109,25 @@ Subcategorías Ingeniería (ING)
  :widths: 15 30 55
 
  * - Código
- - Nombre
+   - Nombre
  - Descripción
  * - SIS
- - Sistemas
+   - Sistemas
  - Diseño de sistemas complejos
  * - ARQ
- - Arquitectura
+   - Arquitectura
  - Patrones arquitectónicos, microservicios
  * - MET
- - Metodologías
+   - Metodologías
  - Agile, Scrum, DevOps, Lean
  * - REQ
- - Requisitos
+   - Requisitos
  - Ingeniería de requisitos, análisis
  * - PRU
- - Pruebas
+   - Pruebas
  - Testing, QA, automatización
  * - MOD
- - Modelado
+   - Modelado
  - UML, BPMN, especificación formal
 
 Subcategorías Ciencias (CIE)
@@ -138,19 +138,19 @@ Subcategorías Ciencias (CIE)
  :widths: 15 30 55
 
  * - Código
- - Nombre
+   - Nombre
  - Descripción
  * - MAT
- - Matemáticas
+   - Matemáticas
  - Álgebra, cálculo, matemáticas aplicadas
  * - EST
- - Estadística
+   - Estadística
  - Probabilidad, análisis estadístico
  * - FIS
- - Física
+   - Física
  - Física computacional, simulaciones
  * - BIO
- - Biología
+   - Biología
  - Bioinformática, biología computacional
 
 ----
@@ -377,11 +377,11 @@ Historial de Versiones
  :header-rows: 1
 
  * - Versión
- - Fecha
+   - Fecha
  - Autor
  - Cambios
  * - 1.0.0
- - 2026-01-28
+   - 2026-01-28
  - Sistema ADT
  - Versión inicial del sistema de clasificación
 

@@ -27,13 +27,13 @@ Estructura de Tabla Recomendada
  :widths: 25 75
 
  * - **Término**
- - **Definición**
+   - **Definición**
  * - **API Client**
- - Aplicación externa que consume nuestros endpoints REST. Requiere autenticación vía API key.
+   - Aplicación externa que consume nuestros endpoints REST. Requiere autenticación vía API key.
  * - **Carrito de Compra**
- - Colección temporal de productos seleccionados por un cliente antes de completar la orden. Expira después de 24 horas de inactividad.
+   - Colección temporal de productos seleccionados por un cliente antes de completar la orden. Expira después de 24 horas de inactividad.
  * - **Cliente Final**
- - Usuario registrado con cuenta activa que realiza compras en la plataforma. Diferente de "Cliente Corporativo" que representa organizaciones.
+   - Usuario registrado con cuenta activa que realiza compras en la plataforma. Diferente de "Cliente Corporativo" que representa organizaciones.
 
 **Tabla Multi-idioma (Proyectos Internacionales):**
 
@@ -42,19 +42,19 @@ Estructura de Tabla Recomendada
  :widths: 20 40 20 20
 
  * - **English**
- - **Definition**
+   - **Definition**
  - **Español**
  - **Deutsch**
  * - **Order**
- - Collection of products a customer wants to purchase, including shipping and payment details
+   - Collection of products a customer wants to purchase, including shipping and payment details
  - **Pedido**
  - **Bestellung**
  * - **Shopping Cart**
- - Temporary collection of selected items before checkout
+   - Temporary collection of selected items before checkout
  - **Carrito**
  - **Warenkorb**
  * - **Checkout**
- - Process of finalizing a purchase and providing payment
+   - Process of finalizing a purchase and providing payment
  - **Pago**
  - **Kasse**
 
@@ -67,22 +67,22 @@ Estructura de Tabla Recomendada
  :widths: 40 30 30
 
  * - **Tipo de Término**
- - **Incluir**
+   - **Incluir**
  - **Ejemplo**
  * - Términos de negocio específicos del dominio
- - [OK] SÍ
+   - [OK] SÍ
  - "Policy", "Premium", "Claim"
  * - Términos técnicos específicos del sistema
- - [OK] SÍ
+   - [OK] SÍ
  - "Event Bus", "Saga Pattern"
  * - Términos técnicos genéricos
- - [WARNING] SOLO si usados de forma especial
+   - [WARNING] SOLO si usados de forma especial
  - "Microservicio" (si definición difiere)
  * - Términos obvios o universales
- - [ERROR] NO
+   - [ERROR] NO
  - "Usuario", "Base de datos"
  * - Acrónimos
- - [OK] SÍ
+   - [OK] SÍ
  - "SLA", "API", "GDPR"
 
 ----
@@ -94,27 +94,27 @@ Estructura de Tabla Recomendada
  :widths: 25 75
 
  * - **Término**
- - **Definición**
+   - **Definición**
  * - **API Key**
- - Token de autenticación alfanumérico de 32 caracteres usado por API Clients para autenticarse. Válido por 1 año desde creación.
+   - Token de autenticación alfanumérico de 32 caracteres usado por API Clients para autenticarse. Válido por 1 año desde creación.
  * - **Backorder**
- - Pedido de producto actualmente sin stock que será enviado cuando el inventario se reponga. Cliente es notificado del delay estimado.
+   - Pedido de producto actualmente sin stock que será enviado cuando el inventario se reponga. Cliente es notificado del delay estimado.
  * - **Carrito de Compra**
- - Colección temporal de productos seleccionados. Expira después de 24 horas de inactividad. Máximo 100 items por carrito.
+   - Colección temporal de productos seleccionados. Expira después de 24 horas de inactividad. Máximo 100 items por carrito.
  * - **Cliente Corporativo**
- - Organización con cuenta empresarial que realiza compras al por mayor. Tiene términos de pago neto-30 y descuentos por volumen.
+   - Organización con cuenta empresarial que realiza compras al por mayor. Tiene términos de pago neto-30 y descuentos por volumen.
  * - **Cliente Final**
- - Usuario individual registrado que realiza compras para uso personal. Paga al momento del checkout.
+   - Usuario individual registrado que realiza compras para uso personal. Paga al momento del checkout.
  * - **Fulfillment Center**
- - Almacén físico donde se almacenan productos y desde donde se envían pedidos. Identificado por código de 3 letras (ej: LAX, NYC).
+   - Almacén físico donde se almacenan productos y desde donde se envían pedidos. Identificado por código de 3 letras (ej: LAX, NYC).
  * - **Inventory**
- - Cantidad actual de unidades disponibles de un producto en un Fulfillment Center específico. Actualizado en tiempo real.
+   - Cantidad actual de unidades disponibles de un producto en un Fulfillment Center específico. Actualizado en tiempo real.
  * - **Pedido** (Order)
- - Transacción confirmada que incluye productos, dirección de envío, método de pago y fecha estimada de entrega. Tiene estado lifecycle.
+   - Transacción confirmada que incluye productos, dirección de envío, método de pago y fecha estimada de entrega. Tiene estado lifecycle.
  * - **RMA** (Return Merchandise Authorization)
- - Número de autorización de devolución de 10 dígitos emitido al cliente para retornar productos. Válido por 30 días.
+   - Número de autorización de devolución de 10 dígitos emitido al cliente para retornar productos. Válido por 30 días.
  * - **SKU** (Stock Keeping Unit)
- - Identificador único alfanumérico de 8 caracteres asignado a cada variante de producto (ej: color, tamaño).
+   - Identificador único alfanumérico de 8 caracteres asignado a cada variante de producto (ej: color, tamaño).
 
 ----
 
@@ -178,19 +178,19 @@ Estructura de Tabla Recomendada
  :widths: 30 40 30
 
  * - **Herramienta**
- - **Ventajas**
+   - **Ventajas**
  - **Uso**
  * - **Markdown Table**
- - Simple, versionable con Git
+   - Simple, versionable con Git
  - Proyectos pequeños
  * - **Confluence**
- - Búsqueda, colaboración
+   - Búsqueda, colaboración
  - Equipos medianos
  * - **Sphinx Glossary**
- - Auto-linking en docs
+   - Auto-linking en docs
  - Proyectos con Sphinx
  * - **Google Sheets**
- - Colaboración real-time
+   - Colaboración real-time
  - Equipos distribuidos
 
 **Ejemplo con Sphinx Glossary:**

@@ -50,16 +50,16 @@ Dependencia de Proveedores
  :widths: 30 40 30
 
  * - **Aspecto**
- - **Riesgo**
+   - **Riesgo**
  - **Impacto en Negocio**
  * - **Diagnóstico**
- - No podemos debuggear hardware de terceros
+   - No podemos debuggear hardware de terceros
  - Tiempo de resolución impredecible
  * - **Soporte**
- - Dependencia del proveedor
+   - Dependencia del proveedor
  - SLAs no garantizables
  * - **Warranty**
- - No podemos ofrecer garantía completa
+   - No podemos ofrecer garantía completa
  - Pérdida de competitividad
 
 ----
@@ -99,22 +99,22 @@ Ciertamente, existían **discos duros especiales reforzados** adecuados para con
  :widths: 25 35 40
 
  * - **Factor de Estrés**
- - **Consecuencia Potencial**
+   - **Consecuencia Potencial**
  - **Mitigación Posible**
  * - **Vibraciones intensas**
- - Errores de lectura/escritura
+   - Errores de lectura/escritura
  - Montaje anti-vibración
  * - **Aceleración brusca**
- - Head crash (daño físico)
+   - Head crash (daño físico)
  - HDDs diseñados para entorno móvil
  * - **Temperatura extrema**
- - Fallo térmico
+   - Fallo térmico
  - Sistema de cooling activo
  * - **Escritura alta velocidad**
- - Fragmentación, wear
+   - Fragmentación, wear
  - RAID 1 para redundancia
  * - **Torsión del chasis**
- - Desalineación mecánica
+   - Desalineación mecánica
  - Carcasa rígida independiente
 
 **Limitaciones del Testing:**
@@ -154,9 +154,9 @@ Algunos de los cuales solo están disponibles en **código binario**, imponen un
  :widths: 40 60
 
  * - **Ventajas**
- - [OK] Open source, well-tested
+   - [OK] Open source, well-tested
  * - **Riesgos**
- - [WARNING] Kernel bugs pueden afectar estabilidad
+   - [WARNING] Kernel bugs pueden afectar estabilidad
  * -
  - [WARNING] Driver compatibility issues
  * -
@@ -168,13 +168,13 @@ Algunos de los cuales solo están disponibles en **código binario**, imponen un
  :widths: 40 60
 
  * - **Problema**
- - Sin acceso a código fuente
+   - Sin acceso a código fuente
  * - **Consecuencia**
- - Debugging imposible internamente
+   - Debugging imposible internamente
  * - **Dependencia**
- - Totalmente dependiente del proveedor
+   - Totalmente dependiente del proveedor
  * - **Riesgo**
- - Proveedor descontinúa soporte -> sistema obsoleto
+   - Proveedor descontinúa soporte -> sistema obsoleto
 
 **3. Esfuerzo de Diagnóstico**
 
@@ -203,37 +203,37 @@ Algunos de los cuales solo están disponibles en **código binario**, imponen un
  :widths: 15 30 20 15 20
 
  * - **ID**
- - **Riesgo**
+   - **Riesgo**
  - **Categoría**
  - **Severidad**
  - **Mitigación**
  * - HW-001
- - Fallo HDD bajo vibración
+   - Fallo HDD bajo vibración
  - Hardware
  - Alta
  - Montaje anti-vibración + RAID
  * - HW-002
- - Componentes fuera de rango térmico
+   - Componentes fuera de rango térmico
  - Hardware
  - Alta
  - Cooling activo + testing climático
  * - HW-003
- - Dependencia de proveedores
+   - Dependencia de proveedores
  - Organizacional
  - 🟡 Media
  - Múltiples proveedores si posible
  * - SW-001
- - Drivers binarios no debuggeables
+   - Drivers binarios no debuggeables
  - Software
  - Alta
  - SLA con proveedor + drivers backup
  * - SW-002
- - Complejidad Linux kernel
+   - Complejidad Linux kernel
  - Software
  - 🟡 Media
  - Expertise interno + comunidad
  * - BIZ-001
- - No podemos ofrecer warranty
+   - No podemos ofrecer warranty
  - Negocio
  - Alta
  - Warranty limitada + disclaimer
@@ -271,17 +271,17 @@ Algunos de los cuales solo están disponibles en **código binario**, imponen un
  :widths: 40 60
 
  * - **Lección**
- - **Aplicación**
+   - **Aplicación**
  * - **Dependencia de hardware de terceros**
- - Evaluar criticality vs in-house development
+   - Evaluar criticality vs in-house development
  * - **Testing en condiciones reales**
- - Invertir en field testing extensivo
+   - Invertir en field testing extensivo
  * - **Drivers binarios**
- - Priorizar proveedores con código abierto
+   - Priorizar proveedores con código abierto
  * - **Entorno automotriz**
- - Requiere certificaciones específicas
+   - Requiere certificaciones específicas
  * - **Warranty limitations**
- - Transparencia temprana con cliente
+   - Transparencia temprana con cliente
 
 **Aplicabilidad:**
 

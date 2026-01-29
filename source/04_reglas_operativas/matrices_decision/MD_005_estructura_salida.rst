@@ -156,23 +156,23 @@ Por Tamaño del Proyecto
  :widths: 30 25 25 20
 
  * - **Archivos**
- - **Plana**
+   - **Plana**
  - **Por Temas**
  - **Numerada**
  * - < 10
- - [OK] Óptimo
+   - [OK] Óptimo
  - [WARNING] Excesivo
  - [WARNING] Excesivo
  * - 10-50
- - [WARNING] Aceptable
+   - [WARNING] Aceptable
  - [OK] Óptimo
  - [OK] Óptimo
  * - 50-100
- - [ERROR] Difícil
+   - [ERROR] Difícil
  - [OK] Óptimo
  - [OK] Óptimo
  * - > 100
- - [ERROR] Inmanejable
+   - [ERROR] Inmanejable
  - [OK] Recomendado
  - [WARNING] Posible
 
@@ -184,27 +184,27 @@ Por Tipo de Contenido
  :widths: 35 25 25 15
 
  * - **Tipo**
- - **Plana**
+   - **Plana**
  - **Por Temas**
  - **Numerada**
  * - README simple
- - [OK] Ideal
+   - [OK] Ideal
  - [ERROR] Excesivo
  - [ERROR] Excesivo
  * - Documentación API
- - [ERROR] Difícil
+   - [ERROR] Difícil
  - [OK] Ideal
  - [WARNING] Posible
  * - Manual de usuario
- - [WARNING] Posible
+   - [WARNING] Posible
  - [OK] Ideal
  - [OK] Ideal
  * - Libro técnico
- - [ERROR] No viable
+   - [ERROR] No viable
  - [OK] Bueno
  - [OK] Ideal
  * - Tutorial paso a paso
- - [WARNING] Posible
+   - [WARNING] Posible
  - [OK] Bueno
  - [OK] Ideal
 

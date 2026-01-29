@@ -44,19 +44,19 @@ Lista de **riesgos** y/o **deudas técnicas**, probablemente incluyendo medidas 
  :widths: 10 25 20 15 15 15
 
  * - **ID**
- - **Descripción**
+   - **Descripción**
  - **Impacto**
  - **Probabilidad**
  - **Prioridad**
  - **Mitigación**
  * - R-001
- - *< Descripción del riesgo >*
+   - *< Descripción del riesgo >*
  - *< Alto/Medio/Bajo >*
  - *< Alta/Media/Baja >*
  - *< Crítica/Alta/Media >*
  - *< Medidas propuestas >*
  * - TD-001
- - *< Descripción de deuda técnica >*
+   - *< Descripción de deuda técnica >*
  - *< Esfuerzo de mantenimiento >*
  - *< Urgencia de resolver >*
  - *< Prioridad >*

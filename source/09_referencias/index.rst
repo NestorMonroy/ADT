@@ -170,19 +170,19 @@ Estado de Desarrollo
  :widths: 40 30 30
 
  * - **Subsección**
- - **Estado**
+   - **Estado**
  - **Archivos**
  * - **cheatsheets/**
- - [OK] Iniciado
+   - [OK] Iniciado
  - cheatsheet_rst [OK]
  * - **comandos_utiles**
- - [OK] Completado
+   - [OK] Completado
  - 1 archivo [OK]
  * - **recursos_externos**
- - [OK] Completado
+   - [OK] Completado
  - 1 archivo [OK]
  * - **Otros**
- - [RUNNING] Planeado
+   - [RUNNING] Planeado
  - Pendiente
 
 ----

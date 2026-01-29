@@ -231,10 +231,10 @@ Tabla List-Table (Recomendado)
  :widths: 30 30 40
 
  * - Columna 1
- - Columna 2
+   - Columna 2
  - Columna 3
  * - Dato A
- - Dato B
+   - Dato B
  - Dato C
 
 **Ventaja:** Más fácil de mantener

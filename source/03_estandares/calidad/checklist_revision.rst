@@ -629,23 +629,23 @@ Resumen de Checklists
  :widths: 20 15 15 50
 
  * - **Fase**
- - **Duración**
+   - **Duración**
  - **Items**
  - **Objetivo**
  * - PASO 0
- - 5-10 min
+   - 5-10 min
  - 5
  - Identificar TODO antes de empezar
  * - Durante Traducción
- - Variable
+   - Variable
  - 5 por lote
  - Traducir sin omitir nada
  * - Verificación
- - 30-60 min
+   - 30-60 min
  - 5
  - Asegurar calidad
  * - Documentación
- - 15-30 min
+   - 15-30 min
  - 5
  - Documentar trabajo realizado
 

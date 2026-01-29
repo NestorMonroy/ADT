@@ -48,22 +48,22 @@ Ejemplos
  :widths: 30 40 30
 
  * - Tipo de Cambio
- - Descripción
+   - Descripción
  - Métrica Típica
  * - **Funcional**
- - Nuevas features, reglas modificadas
+   - Nuevas features, reglas modificadas
  - Persona-horas/días
  * - **Calidad**
- - Performance mejorado, disponibilidad
+   - Performance mejorado, disponibilidad
  - Esfuerzo de adaptación
  * - **Tecnológico**
- - Nueva DB, framework, librería
+   - Nueva DB, framework, librería
  - Tiempo sin downtime
  * - **Regulatorio**
- - Cumplimiento legal, GDPR, etc.
+   - Cumplimiento legal, GDPR, etc.
  - Deadline compliance
  * - **Integración**
- - Nuevos servicios externos
+   - Nuevos servicios externos
  - Tiempo de integración
 
 **Estructura Recomendada para Change Scenarios:**

@@ -43,27 +43,27 @@ Matriz de Decisión Principal
  :widths: 15 20 15 20 30
 
  * - **Tamaño**
- - **Rango Óptimo**
+   - **Rango Óptimo**
  - **Promedio arc42**
  - **Tipo Contenido**
  - **Ejemplo Real**
  * - **< 20 líneas**
- - +300% a +1000%
+   - +300% a +1000%
  - +771%
  - Tips breves
  - Tips 12-1 a 12-6
  * - **20-50 líneas**
- - +100% a +300%
+   - +100% a +300%
  - +273%
  - Secciones cortas
  - section-12.md
  * - **50-100 líneas**
- - +80% a +150%
+   - +80% a +150%
  - +95%
  - Secciones medianas
  - section-11.md
  * - **> 100 líneas**
- - +50% a +100%
+   - +50% a +100%
  - +80%
  - Secciones extensas
  - section-10.md
@@ -126,7 +126,7 @@ Caso 1: Tips Muy Breves (< 20 líneas)
  :widths: 50 50
 
  * - **Original (12 líneas)**
- - **Traducido (140 líneas)**
+   - **Traducido (140 líneas)**
  * - ::
 
  You should take the glossary
@@ -242,7 +242,7 @@ Caso 2: Secciones Cortas (20-50 líneas)
  :widths: 50 50
 
  * - **Original (44 líneas)**
- - **Traducido (164 líneas)**
+   - **Traducido (164 líneas)**
  * - ::
 
  # 12. Glossary
@@ -369,7 +369,7 @@ Caso 3: Secciones Medianas (50-100 líneas)
  :widths: 50 50
 
  * - **Original (72 líneas)**
- - **Traducido (variable por archivo)**
+   - **Traducido (variable por archivo)**
  * - Contenido ya estructurado:
 
  - Introducción
@@ -445,7 +445,7 @@ Caso 4: Secciones Extensas (> 100 líneas)
  :widths: 50 50
 
  * - **Original (123 líneas)**
- - **Traducido (222 líneas)**
+   - **Traducido (222 líneas)**
  * - Contenido extenso:
 
  - Introducción (16 líneas)
@@ -747,23 +747,23 @@ Resumen Ejecutivo
  :widths: 20 20 20 40
 
  * - **Tamaño**
- - **Rango**
+   - **Rango**
  - **arc42**
  - **Acción Principal**
  * - < 20 líneas
- - +300% a +1000%
+   - +300% a +1000%
  - +771%
  - Agregar ejemplos, checklists, tablas
  * - 20-50 líneas
- - +100% a +300%
+   - +100% a +300%
  - +273%
  - Contexto, ejemplos, relaciones
  * - 50-100 líneas
- - +80% a +150%
+   - +80% a +150%
  - +95%
  - Aclaraciones, formato mejorado
  * - > 100 líneas
- - +50% a +100%
+   - +50% a +100%
  - +80%
  - Formato, toctrees, mínimo
 

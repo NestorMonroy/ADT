@@ -47,19 +47,19 @@ Objetivo 1: Domesticación
  :header-rows: 1
 
  * - LaTeX (Fuente)
- - RST (Domesticado)
+   - RST (Domesticado)
  - Táctica
  * - ``\begin{enumerate}``
- - ``1. 2. 3.``
+   - ``1. 2. 3.``
  - Sustitución
  * - ``\textbf{}``
- - ``**``
+   - ``**``
  - Sustitución
  * - ``\ref{sec:intro}``
- - ``:ref:`intro```
+   - ``:ref:`intro```
  - Sustitución
  * - ``\begin{verbatim}``
- - ``.. code-block::``
+   - ``.. code-block::``
  - Sustitución
 
 **Tácticas comunes:**
@@ -88,19 +88,19 @@ Objetivo 2: Claridad
  :header-rows: 1
 
  * - LaTeX (Vago)
- - RST (Claro)
+   - RST (Claro)
  - Táctica
  * - "Ver antes"
- - "Ver :ref:`seccion-anterior`"
+   - "Ver :ref:`seccion-anterior`"
  - Especificación
  * - "[1]"
- - "Smith (2020) :cite:`smith2020`"
+   - "Smith (2020) :cite:`smith2020`"
  - Especificación
  * - "Este concepto..."
- - ".. note:: Este concepto es fundamental..."
+   - ".. note:: Este concepto es fundamental..."
  - Adición
  * - "API"
- - "API (Application Programming Interface)"
+   - "API (Application Programming Interface)"
  - Amplificación
 
 **Tácticas comunes:**
@@ -134,23 +134,23 @@ Objetivo 3: Consistencia
  :header-rows: 1
 
  * - Problema Original
- - Variante 1
+   - Variante 1
  - Variante 2
  - Solución
  * - Énfasis inconsistente
- - ``\textbf{}``
+   - ``\textbf{}``
  - ``\emph{}`` (mismo uso)
  - Unificar a ``**``
  * - Terminología
- - "base de datos"
+   - "base de datos"
  - "BD"
  - Usar "base de datos" + ``BD`` primera vez
  * - Referencias
- - "sección anterior"
+   - "sección anterior"
  - "antes"
  - Usar ``:ref:`` explícito siempre
  * - Estilo de listas
- - itemize en cap. 1
+   - itemize en cap. 1
  - enumerate cap. 2 (mismo contenido)
  - Unificar criterio
 
@@ -184,19 +184,19 @@ Objetivo 4: Simplificación
  :header-rows: 1
 
  * - LaTeX (Complejo)
- - RST (Simple)
+   - RST (Simple)
  - Táctica
  * - ``\noindent``
- - [omitir]
+   - [omitir]
  - Omisión
  * - ``\vspace{1cm}``
- - [omitir]
+   - [omitir]
  - Omisión
  * - ``\begin{center}\textbf{X}\end{center}``
- - ``**X**``
+   - ``**X**``
  - Condensación
  * - Explicación redundante (3 párrafos)
- - Explicación concisa (1 párrafo)
+   - Explicación concisa (1 párrafo)
  - Condensación
 
 **Tácticas comunes:**
@@ -294,16 +294,16 @@ Táctica 3: Sustitución (Substitution)
  :header-rows: 1
 
  * - LaTeX
- - RST
+   - RST
  - Objetivo
  * - ``\textbf{x}``
- - ``**x**``
+   - ``**x**``
  - Domesticación
  * - ``\ref{label}``
- - ``:ref:`label```
+   - ``:ref:`label```
  - Domesticación
  * - ``\cite{key}``
- - ``:cite:`key```
+   - ``:cite:`key```
  - Domesticación
 
 **Cuándo usar:**
@@ -650,91 +650,91 @@ Tabla de Compatibilidad
  :header-rows: 1
 
  * - Táctica
- - Domesticación
+   - Domesticación
  - Claridad
  - Consistencia
  - Simplificación
  - Uso Principal
  * - Adición
- - [WARNING]
+   - [WARNING]
  - [OK][OK][OK]
  - [WARNING]
  - [ERROR]
  - Claridad
  * - Omisión
- - [WARNING]
+   - [WARNING]
  - [ERROR]
  - [WARNING]
  - [OK][OK][OK]
  - Simplificación
  * - Sustitución
- - [OK][OK][OK]
+   - [OK][OK][OK]
  - [OK]
  - [OK]
  - [WARNING]
  - Domesticación
  * - Cambio orden
- - [OK]
+   - [OK]
  - [OK]
  - [WARNING]
  - [WARNING]
  - Domesticación
  * - Especificación
- - [WARNING]
+   - [WARNING]
  - [OK][OK][OK]
  - [WARNING]
  - [ERROR]
  - Claridad
  * - Generalización
- - [WARNING]
+   - [WARNING]
  - [ERROR]
  - [OK][OK][OK]
  - [OK]
  - Consistencia
  * - Explicación
- - [WARNING]
+   - [WARNING]
  - [OK][OK][OK]
  - [WARNING]
  - [ERROR]
  - Claridad
  * - Normalización
- - [OK]
+   - [OK]
  - [WARNING]
  - [OK][OK][OK]
  - [WARNING]
  - Consistencia
  * - Modulación
- - [OK][OK]
+   - [OK][OK]
  - [WARNING]
  - [WARNING]
  - [WARNING]
  - Domesticación
  * - Compensación
- - [WARNING]
+   - [WARNING]
  - [OK]
  - [WARNING]
  - [ERROR]
  - Claridad
  * - Amplificación
- - [WARNING]
+   - [WARNING]
  - [OK][OK]
  - [WARNING]
  - [ERROR]
  - Claridad
  * - Condensación
- - [WARNING]
+   - [WARNING]
  - [WARNING]
  - [WARNING]
  - [OK][OK][OK]
  - Simplificación
  * - Literalización
- - [ERROR]
+   - [ERROR]
  - [OK]
  - [WARNING]
  - [ERROR]
  - Código/Ecuaciones
  * - Adapt. Cultural
- - [OK][OK]
+   - [OK][OK]
  - [OK]
  - [WARNING]
  - [WARNING]

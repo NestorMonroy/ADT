@@ -21,15 +21,15 @@ Tabla de Evaluación
  :widths: 20 25 30 25
 
  * - **Objetivo de Calidad**
- - **Escenario**
+   - **Escenario**
  - **Enfoque de Solución**
  - **Riesgo**
  * - *<Q-goal 1>*
- - *<Texto>*
+   - *<Texto>*
  - *<Texto>*
  - *<risk-1>*
  * - *<Q-goal 2>*
- - *<Texto>*
+   - *<Texto>*
  - *<Texto>*
  - *<risk-2>*
 
@@ -67,27 +67,27 @@ Ejemplo Completo
  :widths: 20 25 30 25
 
  * - **Objetivo de Calidad**
- - **Escenario**
+   - **Escenario**
  - **Enfoque de Solución**
  - **Riesgo**
  * - **Performance**
- - Búsqueda de productos <200ms para 95% de requests
+   - Búsqueda de productos <200ms para 95% de requests
  - ElasticSearch con cache Redis, CDN para imágenes
  - Alta: Tamaño del índice crece 10x anualmente
  * - **Escalabilidad**
- - Soportar 10,000 usuarios concurrentes durante Black Friday
+   - Soportar 10,000 usuarios concurrentes durante Black Friday
  - Kubernetes auto-scaling, load balancer, DB read replicas
  - Medio: Costos de cloud pueden ser muy altos
  * - **Seguridad**
- - Proteger datos de tarjetas de crédito (PCI DSS)
+   - Proteger datos de tarjetas de crédito (PCI DSS)
  - Tokenización con Stripe, sin almacenar datos de tarjeta
  - Bajo: Dependencia de proveedor externo
  * - **Disponibilidad**
- - 99.9% uptime (8h downtime/año)
+   - 99.9% uptime (8h downtime/año)
  - Multi-region deployment, health checks, automated failover
  - Medio: Complejidad de sincronización entre regiones
  * - **Mantenibilidad**
- - Desplegar nuevo feature en <2h
+   - Desplegar nuevo feature en <2h
  - CI/CD pipeline, feature flags, blue-green deployment
  - Bajo: Requiere disciplina de equipo
 
@@ -125,13 +125,13 @@ Para análisis más profundo, considera agregar estas columnas:
  :widths: 15 20 20 15 15 15
 
  * - **Q-Goal**
- - **Escenario**
+   - **Escenario**
  - **Solución**
  - **Riesgo**
  - **Trade-off**
  - **Sensibilidad**
  * - Performance
- - <200ms búsqueda
+   - <200ms búsqueda
  - Cache + índice
  - Sincronización
  - Consistencia eventual

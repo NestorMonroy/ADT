@@ -116,22 +116,22 @@ Cambios Detallados
  :widths: 30 35 35
 
  * - Inglés
- - [ERROR] Literal (INCORRECTO)
+   - [ERROR] Literal (INCORRECTO)
  - [OK] Contextual (CORRECTO)
  * - driving forces
- - fuerzas impulsoras
+   - fuerzas impulsoras
  - factores determinantes
  * - quality goals
- - objetivos de calidad
+   - objetivos de calidad
  - atributos de calidad objetivo
  * - stakeholder
- - interesado
+   - interesado
  - stakeholder (preservar)
  * - building block
- - bloque de construcción
+   - bloque de construcción
  - componente, módulo
  * - crosscutting
- - transversal
+   - transversal
  - aspectos transversales
 
 **Tabla completa incluye:** 13 términos arquitectónicos esenciales
@@ -210,19 +210,19 @@ Para Lotes Futuros de Sección 01
  :widths: 40 30 30
 
  * - Actividad
- - Lote 1 (v1.4.0)
+   - Lote 1 (v1.4.0)
  - Lote 2+ (v1.5.0)
  * - Traducción inicial
- - 2 horas
+   - 2 horas
  - 2.5 horas (+30 min consulta)
  * - Correcciones arquitectónicas
- - 2 horas (12 correcciones)
+   - 2 horas (12 correcciones)
  - 0 horas (ya correcto)
  * - Revisión FASE 3.5
- - 1 hora
+   - 1 hora
  - 30 min (menos errores)
  * - **TOTAL**
- - **5 horas**
+   - **5 horas**
  - **3 horas**
 
 **Mejora:** 40% reducción de tiempo + 100% mejor calidad
@@ -414,10 +414,10 @@ Historial de Revisiones
  :widths: 20 20 60
 
  * - Versión
- - Fecha
+   - Fecha
  - Cambios
  * - 1.0.0
- - 2026-01-27
+   - 2026-01-27
  - Reporte inicial de actualización workflow v1.5.0
 
 ----

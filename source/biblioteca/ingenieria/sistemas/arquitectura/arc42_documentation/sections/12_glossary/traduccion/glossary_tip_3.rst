@@ -34,17 +34,17 @@ Ventajas del Modelo Gráfico
  :widths: 45 55
 
  * - **Beneficio**
- - **Descripción**
+   - **Descripción**
  * - **Relaciones Visuales**
- - Muestra cómo términos se relacionan entre sí (composición, agregación, herencia)
+   - Muestra cómo términos se relacionan entre sí (composición, agregación, herencia)
  * - **Comprensión Rápida**
- - Un diagrama vale más que 1000 palabras
+   - Un diagrama vale más que 1000 palabras
  * - **Onboarding Efectivo**
- - Nuevos miembros entienden dominio visualmente
+   - Nuevos miembros entienden dominio visualmente
  * - **Identificación de Gaps**
- - Revela términos faltantes o relaciones no documentadas
+   - Revela términos faltantes o relaciones no documentadas
  * - **Complementa Tabla**
- - Tabla = definiciones, Diagrama = contexto y relaciones
+   - Tabla = definiciones, Diagrama = contexto y relaciones
 
 ----
 
@@ -170,23 +170,23 @@ Ventajas del Modelo Gráfico
  :widths: 25 75
 
  * - **Término**
- - **Definición**
+   - **Definición**
  * - **Usuario**
- - Cualquier persona que interactúa con el sistema. Puede ser Guest, Cliente Final, Admin o Support.
+   - Cualquier persona que interactúa con el sistema. Puede ser Guest, Cliente Final, Admin o Support.
  * - **Guest**
- - Usuario no autenticado que puede navegar productos pero no puede comprar.
+   - Usuario no autenticado que puede navegar productos pero no puede comprar.
  * - **Cliente Final**
- - Usuario registrado y autenticado que puede realizar compras. Tiene carrito persistente.
+   - Usuario registrado y autenticado que puede realizar compras. Tiene carrito persistente.
  * - **Carrito**
- - Colección temporal de productos seleccionados por un Cliente Final. Se convierte en Pedido al hacer checkout.
+   - Colección temporal de productos seleccionados por un Cliente Final. Se convierte en Pedido al hacer checkout.
  * - **Pedido**
- - Transacción confirmada que incluye LineItems, Pago y Envío. Generado desde Carrito.
+   - Transacción confirmada que incluye LineItems, Pago y Envío. Generado desde Carrito.
  * - **LineItem**
- - Línea individual en un Pedido que referencia un Producto, cantidad y precio al momento de compra.
+   - Línea individual en un Pedido que referencia un Producto, cantidad y precio al momento de compra.
  * - **Producto**
- - Item vendible en el catálogo. Almacenado en uno o más Fulfillment Centers.
+   - Item vendible en el catálogo. Almacenado en uno o más Fulfillment Centers.
  * - **Fulfillment Center**
- - Almacén físico donde se almacenan Productos y desde donde se envían Pedidos.
+   - Almacén físico donde se almacenan Productos y desde donde se envían Pedidos.
 
 ----
 
@@ -270,17 +270,17 @@ Herramientas recomendadas:
  :widths: 40 60
 
  * - **Situación**
- - **Recomendación**
+   - **Recomendación**
  * - Dominio complejo con muchas relaciones
- - [OK] **SÍ** - Diagrama ayuda mucho
+   - [OK] **SÍ** - Diagrama ayuda mucho
  * - Dominio simple con <10 términos
- - [WARNING] **OPCIONAL** - Tabla puede ser suficiente
+   - [WARNING] **OPCIONAL** - Tabla puede ser suficiente
  * - Onboarding frecuente de nuevos
- - [OK] **SÍ** - Facilita aprendizaje
+   - [OK] **SÍ** - Facilita aprendizaje
  * - Stakeholders visuales
- - [OK] **SÍ** - Prefieren diagramas a tablas
+   - [OK] **SÍ** - Prefieren diagramas a tablas
  * - Dominio muy técnico
- - [WARNING] **CUIDADO** - Puede intimidar a no-técnicos
+   - [WARNING] **CUIDADO** - Puede intimidar a no-técnicos
 
 ----
 

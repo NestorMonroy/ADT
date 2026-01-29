@@ -45,23 +45,23 @@ Progreso General
  :widths: 20 15 15 50
 
  * - Lote
- - Archivos
+   - Archivos
  - Estado
  - Descripción
  * - Lote 1
- - 5/28
+   - 5/28
  - [OK] Completado
  - 4 ejemplos + 1 tip (v1.4.0 + correcciones)
  * - **Lote 2**
- - **9/28**
+   - **9/28**
  - **[OK] Completado**
  - **Tips 2-10 (v1.5.0 desde inicio)**
  * - Lote 3
- - 9/28
+   - 9/28
  - [RUNNING] Pendiente
  - Tips 11-19
  * - Lote 4
- - 5/28
+   - 5/28
  - [RUNNING] Pendiente
  - Tips 20-24
 
@@ -217,19 +217,19 @@ FASE 3.5: Revisión de Literalidad
  :widths: 50 50
 
  * - Item
- - Estado
+   - Estado
  * - Todos los párrafos traducidos
- - [OK] 9/9 archivos
+   - [OK] 9/9 archivos
  * - Metadata RST presente
- - [OK] 9/9 archivos
+   - [OK] 9/9 archivos
  * - Etiquetas correctas
- - [OK] 9/9 archivos
+   - [OK] 9/9 archivos
  * - Workflow v1.5.0 documentado
- - [OK] 9/9 archivos
+   - [OK] 9/9 archivos
  * - Figuras referenciadas
- - [OK] 5 figuras
+   - [OK] 5 figuras
  * - Términos arquitectónicos correctos
- - [OK] Verificado
+   - [OK] Verificado
 
 **Tiempo de revisión:** ~15 minutos (vs ~2 horas de correcciones en Lote 1)
 
@@ -246,47 +246,47 @@ Expansión de Contenido
  :widths: 40 20 20 20
 
  * - Archivo
- - Líneas Orig.
+   - Líneas Orig.
  - Líneas Trad.
  - Expansión
  * - introduccion_tip-2.rst
- - 14
+   - 14
  - 38
  - 171%
  * - introduccion_tip-3.rst
- - 15
+   - 15
  - 37
  - 147%
  * - introduccion_tip-4.rst
- - 26
+   - 26
  - 66
  - 154%
  * - introduccion_tip-5.rst
- - 13
+   - 13
  - 43
  - 231%
  * - introduccion_tip-6.rst
- - 13
+   - 13
  - 49
  - 277%
  * - introduccion_tip-7.rst
- - 12
+   - 12
  - 39
  - 225%
  * - introduccion_tip-8.rst
- - 21
+   - 21
  - 54
  - 157%
  * - introduccion_tip-9.rst
- - 40
+   - 40
  - 75
  - 88%
  * - introduccion_tip-10.rst
- - 15
+   - 15
  - 50
  - 233%
  * - **TOTAL**
- - **167**
+   - **167**
  - **451**
  - **170%**
 
@@ -314,22 +314,22 @@ Proceso de Traducción
  :widths: 30 35 35
 
  * - Aspecto
- - Lote 1 (v1.4.0)
+   - Lote 1 (v1.4.0)
  - Lote 2 (v1.5.0)
  * - Paso 3.4
- - [ERROR] No existía
+   - [ERROR] No existía
  - [OK] Aplicado desde inicio
  * - Terminología
- - Literal -> Correcciones
+   - Literal -> Correcciones
  - Contextual desde inicio
  * - Correcciones post
- - 12 correcciones
+   - 12 correcciones
  - 0 correcciones
  * - Tiempo FASE 3.5
- - ~1 hora
+   - ~1 hora
  - ~15 minutos
  * - Calidad final
- - Requirió FASE 4
+   - Requirió FASE 4
  - [OK] Lista desde FASE 3.5
 
 Tiempos de Ejecución
@@ -340,22 +340,22 @@ Tiempos de Ejecución
  :widths: 40 30 30
 
  * - Actividad
- - Lote 1 (5 archivos)
+   - Lote 1 (5 archivos)
  - Lote 2 (9 archivos)
  * - FASE 3: Traducción
- - 2 horas
+   - 2 horas
  - 2.5 horas
  * - FASE 3.5: Revisión
- - 1 hora
+   - 1 hora
  - 15 minutos
  * - Correcciones arquitectónicas
- - 2 horas
+   - 2 horas
  - 0 horas
  * - **TOTAL**
- - **5 horas**
+   - **5 horas**
  - **2.75 horas**
  * - **Tiempo por archivo**
- - **60 min**
+   - **60 min**
  - **18 min**
 
 **Ahorro:** 70% más eficiente con Workflow v1.5.0
@@ -451,10 +451,10 @@ Historial de Revisiones
  :widths: 20 20 60
 
  * - Versión
- - Fecha
+   - Fecha
  - Cambios
  * - 1.0.0
- - 2026-01-27
+   - 2026-01-27
  - Reporte inicial - Lote 2 completado con Workflow v1.5.0
 
 ----

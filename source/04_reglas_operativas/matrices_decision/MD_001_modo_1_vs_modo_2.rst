@@ -133,39 +133,39 @@ Decisión por Tipo de Documento
  :widths: 30 25 25 20
 
  * - **Tipo de Documento**
- - **Modo 1**
+   - **Modo 1**
  - **Modo 2**
  - **Recomendado**
  * - Libro académico LaTeX
- - [OK] Excelente
+   - [OK] Excelente
  - [WARNING] Posible
  - **Modo 1**
  * - Paper científico
- - [OK] Excelente
+   - [OK] Excelente
  - [ERROR] No recomendado
  - **Modo 1**
  * - Documentación técnica
- - [WARNING] Posible
+   - [WARNING] Posible
  - [OK] Excelente
  - **Modo 2**
  * - Manual de usuario
- - [WARNING] Posible
+   - [WARNING] Posible
  - [OK] Excelente
  - **Modo 2**
  * - Tutorial/Guía
- - [ERROR] No recomendado
+   - [ERROR] No recomendado
  - [OK] Excelente
  - **Modo 2**
  * - Tesis doctoral
- - [OK] Excelente
+   - [OK] Excelente
  - [ERROR] No recomendado
  - **Modo 1**
  * - Blog técnico
- - [ERROR] No aplicable
+   - [ERROR] No aplicable
  - [OK] Excelente
  - **Modo 2**
  * - Especificación ISO
- - [OK] Excelente
+   - [OK] Excelente
  - [WARNING] Con cuidado
  - **Modo 1**
 
@@ -177,25 +177,25 @@ Decisión por Objetivo
  :widths: 40 30 30
 
  * - **Objetivo**
- - **Modo 1**
+   - **Modo 1**
  - **Modo 2**
  * - Publicación académica
- - [OK] Preferido
+   - [OK] Preferido
  - [ERROR]
  * - Documentación web
- - [ERROR]
+   - [ERROR]
  - [OK] Preferido
  * - Impresión física
- - [OK] Preferido
+   - [OK] Preferido
  - [WARNING] Posible
  * - Consulta online
- - [WARNING] Posible
+   - [WARNING] Posible
  - [OK] Preferido
  * - Versionado continuo
- - [WARNING] Difícil
+   - [WARNING] Difícil
  - [OK] Fácil
  * - Colaboración múltiple
- - [WARNING] Complejo
+   - [WARNING] Complejo
  - [OK] Simple
 
 Decisión por Restricciones
@@ -206,22 +206,22 @@ Decisión por Restricciones
  :widths: 35 30 35
 
  * - **Restricción**
- - **Favorece Modo 1**
+   - **Favorece Modo 1**
  - **Favorece Modo 2**
  * - Debe compilar en LaTeX
- - [OK] Sí
+   - [OK] Sí
  - [ERROR] No
  * - Requiere búsqueda web
- - [ERROR] No
+   - [ERROR] No
  - [OK] Sí
  * - Formato original crítico
- - [OK] Sí
+   - [OK] Sí
  - [ERROR] No
  * - Necesita enriquecimiento
- - [WARNING] Limitado
+   - [WARNING] Limitado
  - [OK] Sí
  * - Múltiples formatos salida
- - [ERROR] No
+   - [ERROR] No
  - [OK] Sí
 
 ----
@@ -335,17 +335,17 @@ Ventajas y Desventajas
  :widths: 50 50
 
  * - **Ventajas [OK]**
- - **Desventajas [ERROR]**
+   - **Desventajas [ERROR]**
  * - Fidelidad absoluta
- - Menos flexible
+   - Menos flexible
  * - Formato original preservado
- - Difícil enriquecer
+   - Difícil enriquecer
  * - Compilación directa
- - Un solo formato salida
+   - Un solo formato salida
  * - Ideal para académico
- - Navegación web limitada
+   - Navegación web limitada
  * - Menor transformación
- - Requiere conocer formato original
+   - Requiere conocer formato original
 
 **Modo 2: Transformación**
 
@@ -354,17 +354,17 @@ Ventajas y Desventajas
  :widths: 50 50
 
  * - **Ventajas [OK]**
- - **Desventajas [ERROR]**
+   - **Desventajas [ERROR]**
  * - Múltiples formatos salida
- - Requiere conversión
+   - Requiere conversión
  * - Enriquecimiento fácil
- - Pierde formato nativo
+   - Pierde formato nativo
  * - Excelente para web
- - Más tiempo inicial
+   - Más tiempo inicial
  * - Búsqueda integrada
- - Curva aprendizaje RST
+   - Curva aprendizaje RST
  * - Navegación superior
- - No para todos los tipos
+   - No para todos los tipos
 
 Tiempo de Ejecución
 -------------------
@@ -374,22 +374,22 @@ Tiempo de Ejecución
  :widths: 30 30 40
 
  * - **Fase**
- - **Modo 1**
+   - **Modo 1**
  - **Modo 2**
  * - Configuración inicial
- - Rápida (15 min)
+   - Rápida (15 min)
  - Media (1-2 horas)
  * - Traducción por página
- - Rápida
+   - Rápida
  - Media (+ conversión)
  * - Enriquecimiento
- - Limitado
+   - Limitado
  - Extensivo
  * - Verificación
- - Simple
+   - Simple
  - Más compleja
  * - **Total proyecto**
- - **Menor**
+   - **Menor**
  - **Mayor inicial, menor a largo plazo**
 
 Calidad de Salida
@@ -400,25 +400,25 @@ Calidad de Salida
  :widths: 30 35 35
 
  * - **Aspecto**
- - **Modo 1**
+   - **Modo 1**
  - **Modo 2**
  * - Fidelidad al original
- - [STAR][STAR][STAR][STAR][STAR]
+   - [STAR][STAR][STAR][STAR][STAR]
  - [STAR][STAR][STAR][STAR]
  * - Experiencia web
- - [STAR][STAR][STAR]
+   - [STAR][STAR][STAR]
  - [STAR][STAR][STAR][STAR][STAR]
  * - Búsqueda
- - [STAR][STAR]
+   - [STAR][STAR]
  - [STAR][STAR][STAR][STAR][STAR]
  * - Navegación
- - [STAR][STAR]
+   - [STAR][STAR]
  - [STAR][STAR][STAR][STAR][STAR]
  * - Impresión
- - [STAR][STAR][STAR][STAR][STAR]
+   - [STAR][STAR][STAR][STAR][STAR]
  - [STAR][STAR][STAR][STAR]
  * - Flexibilidad
- - [STAR][STAR][STAR]
+   - [STAR][STAR][STAR]
  - [STAR][STAR][STAR][STAR][STAR]
 
 ----

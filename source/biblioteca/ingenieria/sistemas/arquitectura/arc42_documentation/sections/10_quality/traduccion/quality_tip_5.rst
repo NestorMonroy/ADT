@@ -47,17 +47,17 @@ Ejemplos
  :widths: 30 70
 
  * - Característica
- - Descripción
+   - Descripción
  * - **Específico**
- - Identifica función/caso de uso exacto
+   - Identifica función/caso de uso exacto
  * - **Medible**
- - Incluye métrica clara (tiempo, clicks, etc.)
+   - Incluye métrica clara (tiempo, clicks, etc.)
  * - **Realista**
- - Basado en uso real esperado
+   - Basado en uso real esperado
  * - **Relevante**
- - Importante para stakeholders
+   - Importante para stakeholders
  * - **Verificable**
- - Puede ser probado/validado
+   - Puede ser probado/validado
 
 **Categorías Comunes:**
 

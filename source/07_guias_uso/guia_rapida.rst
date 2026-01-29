@@ -299,19 +299,19 @@ Ejercicio Práctico
  :header-rows: 1
 
  * - Aspecto
- - Simple
+   - Simple
  - Complejo
  * - Entendimiento
- - Rápido (< 1 hora)
+   - Rápido (< 1 hora)
  - Lento (días)
  * - Mantenimiento
- - Fácil
+   - Fácil
  - Difícil
  * - Errores
- - Pocos
+   - Pocos
  - Muchos
  * - Onboarding
- - Rápido
+   - Rápido
  - Lento
 
  Ejemplos

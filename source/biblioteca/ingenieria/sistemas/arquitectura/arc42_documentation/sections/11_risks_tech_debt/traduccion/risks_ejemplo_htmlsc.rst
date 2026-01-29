@@ -30,11 +30,11 @@ Este ejemplo muestra **riesgos** y **deuda técnica** para HTML Sanity Checker (
  :widths: 35 65
 
  * - **Riesgo**
- - **Descripción**
+   - **Descripción**
  * - **Cuello de botella con derechos de acceso en repositorios públicos**
- - Actualmente solo un único desarrollador tiene derechos de acceso para desplegar nuevas versiones de HtmlSC en servidores públicos como Bintray o portal de plugins de Gradle.
+   - Actualmente solo un único desarrollador tiene derechos de acceso para desplegar nuevas versiones de HtmlSC en servidores públicos como Bintray o portal de plugins de Gradle.
  * - **Sistema depende de `gradle` - que puede no estar disponible en computadoras objetivo**
- - Aunque el Java Runtime está instalado en muchas computadoras, podría no estar disponible para cada usuario potencial de HtmlSC.
+   - Aunque el Java Runtime está instalado en muchas computadoras, podría no estar disponible para cada usuario potencial de HtmlSC.
 
 ----
 
@@ -99,9 +99,9 @@ Este ejemplo muestra **riesgos** y **deuda técnica** para HTML Sanity Checker (
  :widths: 35 65
 
  * - **Riesgo**
- - **Descripción**
+   - **Descripción**
  * - **Sistema podría volverse obsoleto**
- - En caso de que procesadores AsciiDoc o Markdown implementen verificación HTML nativamente, HtmlSC podría volverse obsoleto.
+   - En caso de que procesadores AsciiDoc o Markdown implementen verificación HTML nativamente, HtmlSC podría volverse obsoleto.
 
 ----
 
@@ -156,25 +156,25 @@ Este ejemplo muestra **riesgos** y **deuda técnica** para HTML Sanity Checker (
  :widths: 10 25 15 15 15 20
 
  * - **ID**
- - **Riesgo**
+   - **Riesgo**
  - **Tipo**
  - **Impacto**
  - **Prob.**
  - **Estado**
  * - RT-001
- - Single point deployment
+   - Single point deployment
  - Técnico
  - Alto
  - Media
  - NO MITIGADO
  * - RT-002
- - Dependencia Gradle
+   - Dependencia Gradle
  - Técnico
  - Medio
  - Media
  - [WARNING] PARCIAL
  * - RN-001
- - Obsolescencia
+   - Obsolescencia
  - Negocio
  - Alto
  - Baja

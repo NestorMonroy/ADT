@@ -182,7 +182,12 @@ exclude_patterns = [
     ".venv",
     "venv",
     ".git",
+    # Backups y copias de seguridad (NO deben entrar al build)
+    "**/*BACKUP*.rst",
+    "**/*_BACKUP_*.rst",
+    "**/*backup*.rst",
 ]
+
 
 # Si usas .md y .rst mezclados (opcional):
 # source_suffix = {

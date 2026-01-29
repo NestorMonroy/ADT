@@ -554,25 +554,25 @@ Comparación Antes/Después
  :widths: 30 30 40
 
  * - **Métrica**
- - **Versión Inicial**
+   - **Versión Inicial**
  - **Versión Corregida**
  * - Archivos
- - 14/14
+   - 14/14
  - 14/14
  * - Contenido principal
- - 57% completo [ERROR]
+   - 57% completo [ERROR]
  - 100% completo [OK]
  * - Elementos presentes
- - 7/13
+   - 7/13
  - 13/13
  * - Subsecciones
- - 0/6 [ERROR]
+   - 0/6 [ERROR]
  - 6/6 [OK]
  * - Tiempo PASO 0
- - 3 min
+   - 3 min
  - 15 min
  * - Tiempo re-trabajo
- - 0
+   - 0
  - 2 horas [ERROR]
 
 **Costo del Error:**

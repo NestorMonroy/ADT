@@ -50,37 +50,37 @@ Categoría 1: Estructura del Documento
  :widths: 40 40 20
 
  * - **LaTeX**
- - **reStructuredText**
+   - **reStructuredText**
  - **Nivel**
  * - ``\part{Parte}``
- - ::
+   - ::
 
  #######
  Parte
  #######
  - 0
  * - ``\chapter{Capítulo}``
- - ::
+   - ::
 
  *********
  Capítulo
  *********
  - 1
  * - ``\section{Sección}``
- - ::
+   - ::
 
  =========
  Sección
  =========
  - 2
  * - ``\subsection{Subsección}``
- - ::
+   - ::
 
  Subsección
  ==========
  - 3
  * - ``\subsubsection{Sub-sub}``
- - ::
+   - ::
 
  Sub-sub
  -------
@@ -115,7 +115,7 @@ Categoría 1: Estructura del Documento
  :widths: 50 50
 
  * - **LaTeX**
- - **reStructuredText**
+   - **reStructuredText**
  * - ::
 
  \begin{itemize}
@@ -134,7 +134,7 @@ Categoría 1: Estructura del Documento
  :widths: 50 50
 
  * - **LaTeX**
- - **reStructuredText**
+   - **reStructuredText**
  * - ::
 
  \begin{enumerate}
@@ -156,7 +156,7 @@ Categoría 1: Estructura del Documento
  :widths: 50 50
 
  * - **LaTeX**
- - **reStructuredText**
+   - **reStructuredText**
  * - ::
 
  \begin{tabular}{|l|c|r|}
@@ -172,10 +172,10 @@ Categoría 1: Estructura del Documento
  :header-rows: 1
 
  * - Izq
- - Centro
+   - Centro
  - Der
  * - A
- - B
+   - B
  - C
 
 ----
@@ -191,16 +191,16 @@ Categoría 2: Formato de Texto
  :widths: 40 40 20
 
  * - **LaTeX**
- - **reStructuredText**
+   - **reStructuredText**
  - **Significado**
  * - ``\textbf{negrita}``
- - ``**negrita**``
+   - ``**negrita**``
  - Énfasis fuerte
  * - ``\emph{énfasis}``
- - ``*énfasis*``
+   - ``*énfasis*``
  - Énfasis (cursiva)
  * - ``\texttt{código}``
- - ````código````
+   - ````código````
  - Monoespaciado
 
 2.2 Código y Verbatim
@@ -213,7 +213,7 @@ Categoría 2: Formato de Texto
  :widths: 50 50
 
  * - **LaTeX**
- - **reStructuredText**
+   - **reStructuredText**
  * - ::
 
  \begin{verbatim}
@@ -240,7 +240,7 @@ Categoría 3: Referencias y Enlaces
  :widths: 50 50
 
  * - **LaTeX**
- - **reStructuredText**
+   - **reStructuredText**
  * - ::
 
  \label{sec:intro}
@@ -266,11 +266,11 @@ Categoría 3: Referencias y Enlaces
  :widths: 50 50
 
  * - **LaTeX**
- - **reStructuredText**
+   - **reStructuredText**
  * - ``\url{https://example.com}``
- - ``https://example.com``
+   - ``https://example.com``
  * - ``\href{https://example.com}{Texto}``
- - ```Texto <https://example.com>`_``
+   - ```Texto <https://example.com>`_``
 
 ----
 
@@ -285,7 +285,7 @@ Categoría 4: Figuras e Imágenes
  :widths: 50 50
 
  * - **LaTeX**
- - **reStructuredText**
+   - **reStructuredText**
  * - ::
 
  \begin{figure}[h]
@@ -315,9 +315,9 @@ Categoría 5: Matemáticas
  :widths: 50 50
 
  * - **LaTeX**
- - **reStructuredText**
+   - **reStructuredText**
  * - ``$E = mc^2$``
- - ``:math:`E = mc^2```
+   - ``:math:`E = mc^2```
  * - ::
 
  \[
@@ -342,14 +342,14 @@ Categoría 6: Bloques Especiales
  :widths: 50 50
 
  * - **LaTeX**
- - **reStructuredText**
+   - **reStructuredText**
  * - Sin equivalente directo
- - ::
+   - ::
 
  .. note::
  Esto es una nota
  * - Sin equivalente directo
- - ::
+   - ::
 
  .. warning::
  Advertencia

@@ -50,16 +50,16 @@ Del documento :doc:`METODO_TRADUCCION_PESHITTA_ZACHARIAS`:
  :widths: 30 35 35
 
  * - Aspecto
- - Peshitta Zacarías
+   - Peshitta Zacarías
  - ADT (Traducción Técnica)
  * - **Segmentación**
- - Frase hebrea -> Frase siríaca
+   - Frase hebrea -> Frase siríaca
  - Sección LaTeX -> Sección RST
  * - **Rendición**
- - Palabra por palabra
+   - Palabra por palabra
  - Elemento por elemento (comando, entorno)
  * - **Preferencia**
- - Sentido sobre forma
+   - Sentido sobre forma
  - Semántica sobre sintaxis
 
 **Ejemplo Concreto:**
@@ -132,31 +132,31 @@ Del método Peshitta, mapeadas a ADT:
  :widths: 20 30 50
 
  * - Táctica
- - Ejemplo Peshitta
+   - Ejemplo Peshitta
  - Aplicación ADT
  * - **Adición**
- - Agregar artículo para claridad
+   - Agregar artículo para claridad
  - ``.. note::`` para aclarar contexto
  * - **Omisión**
- - Omitir partícula redundante
+   - Omitir partícula redundante
  - Omitir ``\noindent`` (no semántico en RST)
  * - **Sustitución**
- - Sustituir nombre propio
+   - Sustituir nombre propio
  - ``\texttt{code}`` -> ````code````
  * - **Cambio orden**
- - Sujeto-Verbo -> Verbo-Sujeto
+   - Sujeto-Verbo -> Verbo-Sujeto
  - Mover figuras cerca del texto referido
  * - **Especificación**
- - "él" -> "José"
+   - "él" -> "José"
  - `:term:`concepto`` para términos técnicos
  * - **Generalización**
- - "José hijo de Jacob" -> "José"
+   - "José hijo de Jacob" -> "José"
  - ``\textbf{}`` + ``\emph{}`` -> ``**énfasis**``
  * - **Explicación**
- - Agregar glosa
+   - Agregar glosa
  - Agregar ``:doc:`` para refs cruzadas
  * - **Normalización**
- - Unificar variantes
+   - Unificar variantes
  - Unificar títulos de secciones
 
 1.4. Niveles de Análisis (Macro vs Micro)
@@ -214,17 +214,17 @@ Organizados en 3 categorías:
  :widths: 30 70
 
  * - Estándar
- - Aplicación en ADT
+   - Aplicación en ADT
  * - ISO 1087:2019
- - Fundamentos conceptuales, ontología terminológica
+   - Fundamentos conceptuales, ontología terminológica
  * - ISO 704:2022
- - Metodologías de traducción
+   - Metodologías de traducción
  * - ISO 12620-2:2022
- - Gestión de repositorios terminológicos
+   - Gestión de repositorios terminológicos
  * - ISO 16642:2017
- - Terminological Markup Framework
+   - Terminological Markup Framework
  * - ISO 30042:2019
- - TermBase eXchange (TBX)
+   - TermBase eXchange (TBX)
 
 2.2. Estructura del Proyecto
 -----------------------------
@@ -445,28 +445,28 @@ Parte 5: Isomorfismo Metodológico
  :widths: 30 35 35
 
  * - Concepto
- - Translation Studies
+   - Translation Studies
  - MDA/MDE
  * - **Entrada**
- - Texto fuente
+   - Texto fuente
  - Platform-Independent Model (PIM)
  * - **Salida**
- - Texto destino
+   - Texto destino
  - Platform-Specific Model (PSM)
  * - **Proceso**
- - Técnica de traducción
+   - Técnica de traducción
  - Reglas de transformación
  * - **Método por defecto**
- - Segmentación + Rendición
+   - Segmentación + Rendición
  - Mapeo básico
  * - **Divergencias**
- - Tácticas para objetivos
+   - Tácticas para objetivos
  - Optimizaciones / Adaptaciones
  * - **Errores**
- - Divergencias no intencionales
+   - Divergencias no intencionales
  - Bugs en transformación
  * - **Validación**
- - Revisión semántica
+   - Revisión semántica
  - Model checking / Testing
 
 5.2. Valor de Esta Conexión

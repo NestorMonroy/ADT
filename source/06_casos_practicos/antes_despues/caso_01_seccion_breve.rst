@@ -579,47 +579,47 @@ Archivos Traducidos
  :widths: 40 15 15 15 15
 
  * - **Archivo**
- - **Original**
+   - **Original**
  - **Traducido**
  - **Enriquec.**
  - **Estado**
  * - seccion_12_glosario.rst
- - 44 líneas
+   - 44 líneas
  - 164 líneas
  - +273%
  - [OK]
  * - glossary_tip_1.rst
- - 12 líneas
+   - 12 líneas
  - 140 líneas
  - +1067%
  - [OK]
  * - glossary_tip_2.rst
- - 26 líneas
+   - 26 líneas
  - 168 líneas
  - +546%
  - [OK]
  * - glossary_tip_3.rst
- - 18 líneas
+   - 18 líneas
  - 175 líneas
  - +872%
  - [OK]
  * - glossary_tip_4.rst
- - 26 líneas
+   - 26 líneas
  - 165 líneas
  - +535%
  - [OK]
  * - glossary_tip_5.rst
- - 17 líneas
+   - 17 líneas
  - 220 líneas
  - +1194%
  - [OK]
  * - glossary_tip_6.rst
- - 11 líneas
+   - 11 líneas
  - 162 líneas
  - +1373%
  - [OK]
  * - glossary_ejemplo_htmlsc.rst
- - 31 líneas
+   - 31 líneas
  - 126 líneas
  - +306%
  - [OK]
@@ -662,27 +662,27 @@ Cumplimiento de Criterios
  :widths: 30 20 20 30
 
  * - **Criterio**
- - **Objetivo**
+   - **Objetivo**
  - **Logrado**
  - **Evidencia**
  * - Completitud
- - 100%
+   - 100%
  - [OK] 100%
  - 13/13 elementos presentes
  * - Precisión Técnica
- - 100%
+   - 100%
  - [OK] 100%
  - Terminología consistente
  * - Enriquecimiento
- - Apropiado
+   - Apropiado
  - [OK] +771%
  - En rango <20 líneas
  * - Compilación
- - Exitosa
+   - Exitosa
  - [OK] Exitosa
  - 0 errores críticos
  * - Verificación
- - Sistemática
+   - Sistemática
  - [OK] 100%
  - Script + checklist
 

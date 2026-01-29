@@ -249,13 +249,13 @@ Ejemplo 1: Énfasis
  :widths: 30 30 40
 
  * - LaTeX (Signifiant)
- - RST (Signifiant)
+   - RST (Signifiant)
  - Signifié Preservado
  * - ``\textbf{texto}``
- - ``**texto**``
+   - ``**texto**``
  - Énfasis fuerte
  * - ``\emph{texto}``
- - ``*texto*``
+   - ``*texto*``
  - Énfasis moderado
 
 **Análisis:**
@@ -273,13 +273,13 @@ Ejemplo 2: Listas
  :widths: 40 40 20
 
  * - LaTeX (Signifiant)
- - RST (Signifiant)
+   - RST (Signifiant)
  - Decisión
  * - ``\begin{enumerate}``
- - ``1. 2. 3.``
+   - ``1. 2. 3.``
  - Signifié [OK]
  * - ``\item``
- - ``1.``, ``2.``, etc.
+   - ``1.``, ``2.``, etc.
  - Signifié [OK]
 
 **Signifié preservado:** "Lista ordenada con ítems numerados"
@@ -311,11 +311,11 @@ Ejemplo 3: Títulos de Sección
  :header-rows: 1
 
  * - Signifiant
- - Signifié
+   - Signifié
  * - ``\section{}`` vs ``====``
- - DIFERENTE
+   - DIFERENTE
  * - Jerarquía nivel 1 vs nivel 2
- - **IGUAL** [OK]
+   - **IGUAL** [OK]
 
 **Decisión:** Preservar Signifié (jerarquía), adaptar Signifiant (sintaxis)
 
@@ -459,25 +459,25 @@ Matriz de Decisión
  :widths: 30 35 35
 
  * - Situación
- - Preferir Signifiant
+   - Preferir Signifiant
  - Preferir Signifié
  * - **Código fuente**
- - [OK] Sí (fidelidad exacta)
+   - [OK] Sí (fidelidad exacta)
  - [ERROR] No
  * - **Estructura documento**
- - [ERROR] No
+   - [ERROR] No
  - [OK] Sí (semántica)
  * - **Énfasis/Formato**
- - [ERROR] No
+   - [ERROR] No
  - [OK] Sí (función)
  * - **Espaciado/Layout**
- - [ERROR] No (confiar en RST)
+   - [ERROR] No (confiar en RST)
  - [OK] Sí (si semántico)
  * - **Términos técnicos**
- - [OK] Sí (exactitud)
+   - [OK] Sí (exactitud)
  - [WARNING] Depende
  * - **Figuras/Tablas**
- - [WARNING] Depende
+   - [WARNING] Depende
  - [OK] Sí (contenido)
 
 ----

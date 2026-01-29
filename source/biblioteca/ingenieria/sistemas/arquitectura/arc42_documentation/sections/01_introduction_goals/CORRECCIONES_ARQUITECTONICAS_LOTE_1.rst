@@ -80,16 +80,16 @@ Correcciones Aplicadas
  :widths: 50 20 30
 
  * - Archivo
- - Líneas
+   - Líneas
  - Tipo
  * - introduccion_tip-1.rst
- - 3, 14
+   - 3, 14
  - Metadata + subtítulo
  * - seccion_01_introduccion_objetivos.rst
- - 21
+   - 21
  - Texto principal
  * - glosario_seccion_01.rst
- - 36-43
+   - 36-43
  - Definición
 
 **Contexto arquitectónico:**
@@ -125,19 +125,19 @@ arquitectura. "Factores determinantes" es el término arquitectónico correcto.
  :widths: 50 20 30
 
  * - Archivo
- - Líneas
+   - Líneas
  - Tipo
  * - requisitos_calidad_ejemplo-1.rst
- - 25
+   - 25
  - Título de tabla
  * - requisitos_calidad_ejemplo-3.rst
- - 18, 23, 26
+   - 18, 23, 26
  - Nota + título + tabla
  * - seccion_01_introduccion_objetivos.rst
- - 16
+   - 16
  - Texto principal
  * - glosario_seccion_01.rst
- - 71-82
+   - 71-82
  - Definición
 
 **Contexto arquitectónico:**
@@ -173,13 +173,13 @@ medibles. "Atributos de calidad objetivo" refleja mejor esta naturaleza.
  :widths: 50 20 30
 
  * - Archivo
- - Acción
+   - Acción
  - Tipo
  * - glosario_seccion_01.rst
- - Agregada definición
+   - Agregada definición
  - Nueva entrada
  * - seccion_01_introduccion_objetivos.rst
- - Ya correcto
+   - Ya correcto
  - Verificado
 
 **Contexto arquitectónico:**
@@ -232,25 +232,25 @@ Archivos Afectados - Resumen
  :widths: 40 20 40
 
  * - Archivo
- - Correcciones
+   - Correcciones
  - Estado
  * - introduccion_tip-1.rst
- - 2
+   - 2
  - [OK] Corregido
  * - requisitos_calidad_ejemplo-1.rst
- - 1
+   - 1
  - [OK] Corregido
  * - requisitos_calidad_ejemplo-3.rst
- - 3
+   - 3
  - [OK] Corregido
  * - seccion_01_introduccion_objetivos.rst
- - 2
+   - 2
  - [OK] Corregido
  * - glosario_seccion_01.rst
- - 3
+   - 3
  - [OK] Actualizado
  * - notas_traduccion_seccion_01.rst
- - 1
+   - 1
  - [OK] Documentado
 
 **Total:** 6 archivos actualizados | **12 correcciones aplicadas**
@@ -316,16 +316,16 @@ Alineación con Estándares
  :widths: 40 30 30
 
  * - Término
- - Estándar
+   - Estándar
  - Conformidad
  * - Factores determinantes
- - ISO/IEC 42010
+   - ISO/IEC 42010
  - [OK] Alineado
  * - Atributos de calidad
- - ISO 25010
+   - ISO 25010
  - [OK] Alineado
  * - Stakeholder
- - IEEE 1471
+   - IEEE 1471
  - [OK] Alineado
 
 ----
@@ -431,10 +431,10 @@ Historial de Revisiones
  :widths: 20 20 60
 
  * - Versión
- - Fecha
+   - Fecha
  - Cambios
  * - 1.0.0
- - 2026-01-27
+   - 2026-01-27
  - Correcciones arquitectónicas aplicadas según guía ADT
 
 ----

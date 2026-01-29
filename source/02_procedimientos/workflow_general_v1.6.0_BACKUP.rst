@@ -166,28 +166,28 @@ Tiempo Estimado
  :header-rows: 1
 
  * - Fase
- - Tiempo
+   - Tiempo
  - Observaciones
  * - Preparación
- - 15-30 min
+   - 15-30 min
  - Una vez por libro completo
  * - Análisis
- - 5-10 min
+   - 5-10 min
  - Por capítulo
  * - Traducción Inicial
- - 20-40 min
+   - 20-40 min
  - Depende de complejidad del capítulo
  * - Aplicación Tácticas
- - 10-20 min
+   - 10-20 min
  - Si es necesario
  * - Validación
- - 5-10 min
+   - 5-10 min
  - Por capítulo
  * - Revisión
- - 10-15 min
+   - 10-15 min
  - Por capítulo
  * - Publicación
- - 15-30 min
+   - 15-30 min
  - Al completar libro completo
 
 **Total por capítulo:** ~70-130 min (1-2 horas)
@@ -479,13 +479,13 @@ Paso 1.3: Planificación
  :header-rows: 1
 
  * - Modo 1: Alta Fidelidad
- - Modo 2: Marcado Visual
+   - Modo 2: Marcado Visual
  * - Preserva estructura original
- - Añade marcadores visuales
+   - Añade marcadores visuales
  * - Mínimas adaptaciones
- - Más adaptaciones para claridad
+   - Más adaptaciones para claridad
  * - Para: Libros formales, papers
- - Para: Tutoriales, material didáctico
+   - Para: Tutoriales, material didáctico
 
 2. **¿Qué objetivos son prioritarios?**
 
@@ -831,55 +831,55 @@ Paso 3.2: Rendición (Comando por Comando)
  :header-rows: 1
 
  * - LaTeX
- - RST
+   - RST
  - Notas
  * - ``\section{X}``
- - | ``X``
+   - | ``X``
  | ``===``
  - Nivel 1
  * - ``\subsection{X}``
- - | ``X``
+   - | ``X``
  | ``---``
  - Nivel 2
  * - ``\subsubsection{X}``
- - | ``X``
+   - | ``X``
  | ``~~~``
  - Nivel 3
  * - ``\textbf{X}``
- - ``**X**``
+   - ``**X**``
  - Énfasis fuerte
  * - ``\emph{X}``
- - ``*X*``
+   - ``*X*``
  - Énfasis moderado
  * - ``\texttt{X}``
- - ````X````
+   - ````X````
  - Código inline
  * - ``\begin{itemize}``
- - ``-``
+   - ``-``
  - Lista no numerada
  * - ``\begin{enumerate}``
- - ``1. 2. 3.``
+   - ``1. 2. 3.``
  - Lista numerada
  * - ``\ref{label}``
- - ``:ref:`label```
+   - ``:ref:`label```
  - Referencia interna
  * - ``\cite{key}``
- - ``:cite:`key```
+   - ``:cite:`key```
  - Citación
  * - ``\label{x}``
- - ``.. _x:``
+   - ``.. _x:``
  - Etiqueta
  * - ``\begin{figure}``
- - ``.. figure::``
+   - ``.. figure::``
  - Figura
  * - ``\begin{table}``
- - ``.. list-table::``
+   - ``.. list-table::``
  - Tabla
  * - ``\begin{equation}``
- - ``.. math::``
+   - ``.. math::``
  - Ecuación
  * - ``\begin{verbatim}``
- - ``.. code-block::``
+   - ``.. code-block::``
  - Código
 
 **Proceso:**
@@ -1111,43 +1111,43 @@ Tabla de Términos Arquitectónicos
  :widths: 25 30 45
 
  * - Inglés
- - [ERROR] Literal (INCORRECTO)
+   - [ERROR] Literal (INCORRECTO)
  - [OK] Contextual (CORRECTO)
  * - **driving forces**
- - fuerzas impulsoras
+   - fuerzas impulsoras
  - **factores determinantes**, impulsores
  * - **quality goals**
- - objetivos de calidad
+   - objetivos de calidad
  - **atributos de calidad objetivo**
  * - **stakeholder**
- - interesado, parte interesada
+   - interesado, parte interesada
  - **stakeholder** (preservar en inglés)
  * - **building block**
- - bloque de construcción
+   - bloque de construcción
  - **componente**, módulo arquitectónico
  * - **whitebox**
- - caja blanca
+   - caja blanca
  - **vista interna**, descomposición
  * - **blackbox**
- - caja negra
+   - caja negra
  - **vista externa**, interfaz
  * - **crosscutting**
- - transversal
+   - transversal
  - **aspectos transversales**, crosscutting
  * - **deployment view**
- - vista de despliegue
+   - vista de despliegue
  - **vista de infraestructura**
  * - **runtime view**
- - vista de tiempo de ejecución
+   - vista de tiempo de ejecución
  - **vista de comportamiento**
  * - **constraints**
- - restricciones
+   - restricciones
  - **limitaciones**, restricciones
  * - **scope**
- - alcance
+   - alcance
  - **ámbito**, alcance
  * - **motivation**
- - motivación
+   - motivación
  - **justificación**, razón de ser
 
 Ejemplos Completos: Literal vs Contextual
