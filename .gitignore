@@ -110,3 +110,6 @@ desktop.ini
 # ------------------------------------------------------------------------------
 /tools/_downloads/
 /tools/_downloads/**
+
+/tools/_tmp/
+/tools/_tmp/**

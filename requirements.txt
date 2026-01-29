@@ -1,36 +1,65 @@
-# Requirements para scripts Python de ADT
-# ========================================
-
-# YAML parsing (para front matter de archivos markdown)
-PyYAML>=6.0.1
-
-# Markdown parsing avanzado (opcional, para análisis más profundo)
-markdown>=3.5.1
-markdown-it-py>=3.0.0
-
-# Utilidades de texto
-python-frontmatter>=1.1.0
-
-# Validación y conversión
-# pandoc>=2.3  # Si se necesita convertir formatos
-
-# Testing
-pytest>=7.4.0
-pytest-cov>=4.1.0
-
-# Linting y formateo (desarrollo)
-black>=23.12.0
-flake8>=6.1.0
-mypy>=1.7.0
-
-# Documentación
-# sphinx>=7.2.0  # Ya está instalado en el sistema
-
-# Progress bars (opcional, para scripts largos)
-tqdm>=4.66.0
-
-# Colores en terminal
-colorama>=0.4.6
-
-# Análisis de texto
-# nltk>=3.8.1  # Si necesitamos NLP avanzado
+accessible-pygments==0.0.5
+alabaster==1.0.0
+anyio==4.12.1
+babel==2.17.0
+beautifulsoup4==4.14.3
+black==26.1.0
+certifi==2026.1.4
+charset-normalizer==3.4.4
+click==8.3.1
+colorama==0.4.6
+coverage==7.13.2
+docutils==0.22.4
+flake8==7.3.0
+furo==2025.12.19
+h11==0.16.0
+idna==3.11
+imagesize==1.4.1
+iniconfig==2.3.0
+Jinja2==3.1.6
+librt==0.7.8
+Markdown==3.10.1
+markdown-it-py==4.0.0
+MarkupSafe==3.0.3
+mccabe==0.7.0
+mdit-py-plugins==0.5.0
+mdurl==0.1.2
+mypy==1.19.1
+mypy_extensions==1.1.0
+myst-parser==5.0.0
+packaging==26.0
+pathspec==1.0.4
+platformdirs==4.5.1
+pluggy==1.6.0
+pycodestyle==2.14.0
+pyflakes==3.4.0
+Pygments==2.19.2
+pytest==9.0.2
+pytest-cov==7.0.0
+python-frontmatter==1.1.0
+pytokens==0.4.0
+PyYAML==6.0.3
+requests==2.32.5
+roman-numerals==4.1.0
+snowballstemmer==3.0.1
+soupsieve==2.8.3
+Sphinx==9.0.4
+sphinx-autobuild==2025.8.25
+sphinx-basic-ng==1.0.0b2
+sphinx-copybutton==0.5.2
+sphinx-tabs==3.4.7
+sphinx_design==0.7.0
+sphinxcontrib-applehelp==2.0.0
+sphinxcontrib-devhelp==2.0.0
+sphinxcontrib-htmlhelp==2.1.0
+sphinxcontrib-jsmath==1.0.1
+sphinxcontrib-plantuml==0.31
+sphinxcontrib-qthelp==2.0.0
+sphinxcontrib-serializinghtml==2.0.0
+starlette==0.52.1
+tqdm==4.67.1
+typing_extensions==4.15.0
+urllib3==2.6.3
+uvicorn==0.40.0
+watchfiles==1.1.1
+websockets==16.0
