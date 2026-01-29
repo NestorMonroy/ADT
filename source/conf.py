@@ -176,16 +176,21 @@ templates_path = ["_templates"]
 
 # List of patterns to ignore
 exclude_patterns = [
-    "_build",      # por si alguien genera build dentro de source/
+    "_build",
     "Thumbs.db",
     ".DS_Store",
     ".venv",
     "venv",
     ".git",
-    # Backups y copias de seguridad (NO deben entrar al build)
-    "**/*BACKUP*.rst",
-    "**/*_BACKUP_*.rst",
-    "**/*backup*.rst",
+
+    # Carpetas fuera del corpus documental
+    "archivados/**",
+
+    # Backups / temporales (cualquier extensión)
+    "**/*BACKUP*",
+    "**/*backup*",
+    "**/*.bak",
+    "**/*~",
 ]
 
 
