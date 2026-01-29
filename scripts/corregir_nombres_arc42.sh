@@ -13,7 +13,7 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
-RUTA_ARC42="source/biblioteca/arc42/sections"
+RUTA_ARC42="source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentationsections"
 
 echo ""
 echo -e "${BLUE}═══════════════════════════════════════════════${NC}"

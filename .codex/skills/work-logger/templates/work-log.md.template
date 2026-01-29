@@ -1,0 +1,151 @@
+# YYYY-MM-DD - Titulo del Trabajo
+
+Fecha: YYYY-MM-DD HH:MM
+Autor: [Nombre o AI Assistant]
+Proyecto: ADT Documentation
+Version: [version del proyecto si relevante]
+
+## Resumen Ejecutivo
+
+[1-2 parrafos describiendo que se hizo y por que]
+
+## Contexto
+
+### Situacion Inicial
+[Estado antes de este trabajo]
+
+### Motivacion
+[Por que era necesario hacerlo]
+
+### Objetivo
+[Que se buscaba lograr]
+
+## Trabajo Realizado
+
+### Paso 1: [Nombre]
+[Descripcion detallada]
+
+```bash
+# Comandos ejecutados (si aplica)
+comando1
+comando2
+```
+
+[Resultado obtenido]
+
+### Paso 2: [Nombre]
+[Descripcion detallada]
+
+[Resultado]
+
+### Paso 3: [Nombre]
+...
+
+## Decisiones Tomadas
+
+### Decision 1: [Titulo]
+**Contexto:** [Por que surgio esta decision]
+
+**Opciones:**
+- Opcion A: [pros/contras]
+- Opcion B: [pros/contras]
+
+**Elegida:** Opcion X
+
+**Razon:** [Por que se eligio]
+
+### Decision 2: [Titulo]
+...
+
+## Problemas Encontrados
+
+### Problema 1: [Descripcion]
+**Sintomas:** [Como se manifesto]
+
+**Causa:** [Raiz del problema]
+
+**Solucion:** [Como se resolvio]
+
+**Prevencion:** [Como evitar en futuro]
+
+### Problema 2: [Descripcion]
+...
+
+## Archivos Afectados
+
+### Creados
+- `path/file.rst` - [Descripcion]
+- `path/script.py` - [Descripcion]
+
+### Modificados
+- `path/existing.rst` - [Que se cambio]
+- `path/index.rst` - [Que se cambio]
+
+### Eliminados
+- `path/deprecated.rst` - [Por que se elimino]
+
+## Comandos Clave
+
+```bash
+# Comando 1: Descripcion
+comando --parametro valor
+
+# Comando 2: Descripcion
+otro-comando
+```
+
+## Resultados
+
+### Metricas (si aplica)
+- Build time: X segundos
+- Archivos generados: N
+- Lineas de codigo: +X / -Y
+
+### Validacion
+- [x] Build exitoso
+- [x] Tests pasan
+- [x] Linkcheck OK
+- [x] Metadata completa
+
+## Aprendizajes
+
+### Lecciones Aprendidas
+1. [Leccion 1]
+2. [Leccion 2]
+3. [Leccion 3]
+
+### Mejores Practicas Identificadas
+1. [Practica 1]
+2. [Practica 2]
+
+### Antipatrones a Evitar
+1. [Antipatron 1]
+2. [Antipatron 2]
+
+## Referencias
+
+### Documentacion Consultada
+- [Documento 1] - [URL o path]
+- [Documento 2] - [URL o path]
+
+### Issues Relacionados
+- #123 - [Descripcion]
+
+### Commits
+- `abc1234` - feat(traduccion): ...
+- `def5678` - fix(estructura): ...
+
+## Proximos Pasos
+
+1. [Accion pendiente 1]
+2. [Accion pendiente 2]
+3. [Accion pendiente 3]
+
+## Notas Adicionales
+
+[Cualquier informacion relevante que no encaja en categorias anteriores]
+
+---
+
+**Tags:** #tag1 #tag2 #tag3
+**Estado:** Completado | En Progreso | Bloqueado

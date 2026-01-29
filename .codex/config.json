@@ -1,0 +1,95 @@
+{
+  "project": {
+    "name": "ADT Documentation",
+    "description": "Sistema de documentacion tecnica basado en metodologia ADT (Arquitectura Documental de Traduccion)",
+    "type": "documentation-translation",
+    "version": "1.7.1",
+    "root": "ADT",
+    "frameworks": ["sphinx", "diataxis", "arc42"],
+    "languages": {
+      "source": "es",
+      "target": ["en", "de", "fr"]
+    }
+  },
+  "paths": {
+    "root": ".",
+    "source": "source",
+    "build": "build",
+    "scripts": "scripts",
+    "config": "config",
+    "tools": "tools",
+    "codex": ".codex",
+    "mywork": ".mywork"
+  },
+  "codex": {
+    "enabled": true,
+    "model": "claude-sonnet-4-5",
+    "capabilities": [
+      "translation-analysis",
+      "rst-generation",
+      "metadata-management",
+      "workflow-orchestration",
+      "script-execution",
+      "quality-validation"
+    ]
+  },
+  "translation": {
+    "methodology": "ADT",
+    "modes": [
+      "alta_fidelidad",
+      "marcado_visual",
+      "enriquecimiento"
+    ],
+    "frameworks": {
+      "diataxis": {
+        "enabled": true,
+        "categories": ["tutorials", "how_to_guides", "reference", "explanation"]
+      },
+      "arc42": {
+        "enabled": true,
+        "sections": 12,
+        "location": "source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation"
+      }
+    }
+  },
+  "validation": {
+    "sphinx_build": true,
+    "rst_lint": true,
+    "metadata_check": true,
+    "link_validation": true
+  },
+  "workflows": {
+    "spec_driven": {
+      "enabled": true,
+      "base_path": ".mywork/",
+      "phases": ["requirements", "design", "tasks", "implementation"]
+    },
+    "work_logging": {
+      "enabled": true,
+      "path": ".mywork/work-logs/",
+      "format": "markdown"
+    }
+  },
+  "scripts": {
+    "translation": {
+      "adt_translator": "scripts/traduccion/adt_translator.py",
+      "arc42_scraper": "scripts/traduccion/arc42_scraper_python.py",
+      "web_content": "scripts/traduccion/translate_web_content.sh"
+    },
+    "analysis": {
+      "section_analyzer": "scripts/analizar_seccion.py",
+      "structure_validator": "scripts/validar_estructura.sh",
+      "progress_tracker": "scripts/progreso_libro.sh"
+    },
+    "initialization": {
+      "init_book": "scripts/init_libro.sh",
+      "init_chapter": "scripts/init_capitulo.sh"
+    }
+  },
+  "integration": {
+    "mcp_enabled": false,
+    "filesystem_access": true,
+    "git_integration": true,
+    "script_execution": true
+  }
+}
