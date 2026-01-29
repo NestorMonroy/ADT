@@ -1,257 +1,257 @@
-════════════════════════════════════════════════════════════════════
+====================================================================
 GUÍA PARA COMPLETAR LOTE 1 - SECCIÓN 03
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 Fecha: 2026-01-27
 Workflow: v1.6.0
 Estado: 5/9 archivos DEMOSTRADOS
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 ARCHIVOS YA CREADOS (5)
-════════════════════════════════════════════════════════════════════
+====================================================================
 
-✅ SUBSECCIONES PLANTILLA (3/3 - COMPLETADO 100%):
-   1. seccion_03_contexto_alcance.rst
-   2. seccion_3_1_contexto_negocio.rst
-   3. seccion_3_2_contexto_tecnico.rst
+[OK] SUBSECCIONES PLANTILLA (3/3 - COMPLETADO 100%):
+ 1. seccion_03_contexto_alcance.rst
+ 2. seccion_3_1_contexto_negocio.rst
+ 3. seccion_3_2_contexto_tecnico.rst
 
-✅ EJEMPLOS DEMOSTRACIÓN (2/6):
-   4. contexto_ejemplo_negocio_1.rst (HTML Sanity Checker business)
-   5. contexto_ejemplo_tecnico_1.rst (HTML Sanity Checker technical)
+[OK] EJEMPLOS DEMOSTRACIÓN (2/6):
+ 4. contexto_ejemplo_negocio_1.rst (HTML Sanity Checker business)
+ 5. contexto_ejemplo_tecnico_1.rst (HTML Sanity Checker technical)
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 ARCHIVOS RESTANTES (4) - PATRÓN A SEGUIR
-════════════════════════════════════════════════════════════════════
+====================================================================
 
-⏳ EJEMPLOS BUSINESS RESTANTES (3):
+[RUNNING] EJEMPLOS BUSINESS RESTANTES (3):
 
 6. contexto_ejemplo_negocio_2.rst
-   ────────────────────────────────────────────────────────────────
-   Original: 03-context-example-business-2.md
-   Patrón: Igual a ejemplo_negocio_1.rst
-   
-   Estructura:
-   • Título con sistema específico
-   • Nota arc42-example
-   • Diagrama de contexto de negocio
-   • Tabla de socios de comunicación
-   • Observaciones
-   • Referencias cruzadas
-   
-   Paso 3.4: Aplicar términos arquitectónicos
-   • Business context → Contexto de negocio
-   • Communication partner → Socio de comunicación
-   • Domain interface → Interfaz de dominio
+ ----------------------------------------------------------------
+ Original: 03-context-example-business-2.md
+ Patrón: Igual a ejemplo_negocio_1.rst
+
+ Estructura:
+ • Título con sistema específico
+ • Nota arc42-example
+ • Diagrama de contexto de negocio
+ • Tabla de socios de comunicación
+ • Observaciones
+ • Referencias cruzadas
+
+ Paso 3.4: Aplicar términos arquitectónicos
+ • Business context -> Contexto de negocio
+ • Communication partner -> Socio de comunicación
+ • Domain interface -> Interfaz de dominio
 
 7. contexto_ejemplo_negocio_3.rst
-   ────────────────────────────────────────────────────────────────
-   Original: 03-context-example-business-3.md
-   Patrón: Mismo que #6
-   
-8. contexto_ejemplo_negocio_4.rst
-   ────────────────────────────────────────────────────────────────
-   Original: 03-context-example-business-4.md
-   Patrón: Mismo que #6
+ ----------------------------------------------------------------
+ Original: 03-context-example-business-3.md
+ Patrón: Mismo que #6
 
-⏳ EJEMPLO TECHNICAL RESTANTE (1):
+8. contexto_ejemplo_negocio_4.rst
+ ----------------------------------------------------------------
+ Original: 03-context-example-business-4.md
+ Patrón: Mismo que #6
+
+[RUNNING] EJEMPLO TECHNICAL RESTANTE (1):
 
 9. contexto_ejemplo_tecnico_4.rst
-   ────────────────────────────────────────────────────────────────
-   Original: 03-context-example-technical-4.md
-   Patrón: Igual a ejemplo_tecnico_1.rst
-   
-   Estructura:
-   • Título con sistema específico
-   • Nota arc42-example
-   • Diagrama de contexto técnico
-   • Tabla de nodos/artefactos
-   • Descripción de canales
-   • Observaciones
-   • Referencias cruzadas
-   
-   Paso 3.4: Aplicar términos arquitectónicos
-   • Technical context → Contexto técnico
-   • Node → Nodo
-   • Channel → Canal
-   • Artifact → Artefacto
-   • Deployment → Despliegue
+ ----------------------------------------------------------------
+ Original: 03-context-example-technical-4.md
+ Patrón: Igual a ejemplo_tecnico_1.rst
 
-════════════════════════════════════════════════════════════════════
+ Estructura:
+ • Título con sistema específico
+ • Nota arc42-example
+ • Diagrama de contexto técnico
+ • Tabla de nodos/artefactos
+ • Descripción de canales
+ • Observaciones
+ • Referencias cruzadas
+
+ Paso 3.4: Aplicar términos arquitectónicos
+ • Technical context -> Contexto técnico
+ • Node -> Nodo
+ • Channel -> Canal
+ • Artifact -> Artefacto
+ • Deployment -> Despliegue
+
+====================================================================
 PLANTILLA PARA EJEMPLOS BUSINESS
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 .. code-block:: rst
 
-   .. _contexto_ejemplo_negocio_X:
-   
-   ============================================================
-   Ejemplo de Contexto de Negocio: <Nombre del Sistema>
-   ============================================================
-   
-   .. note::
-      **Ejemplo arc42**
-      
-      <Descripción breve del ejemplo>
-   
-   ----
-   
-   3. Vista de Contexto
-   ====================
-   
-   .. figure:: ../figuras/<nombre-diagrama>.png
-      :alt: Contexto de negocio
-      :align: center
-      :width: 80%
-      
-      Diagrama de contexto de negocio del <Sistema>
-   
-   Socios de Comunicación
-   =======================
-   
-   .. list-table:: 
-      :header-rows: 1
-      :widths: 30 70
-      
-      * - Vecino
-        - Descripción
-      * - **<socio 1>**
-        - <Descripción del socio y su interfaz>
-      * - **<socio 2>**
-        - <Descripción>
-   
-   ----
-   
-   Observaciones
-   =============
-   
-   Este ejemplo muestra un **contexto de negocio** donde:
-   
-   * <Observación 1>
-   * <Observación 2>
-   
-   .. seealso::
-      * :ref:`seccion_3_1` - Plantilla de Contexto de Negocio
-      * :ref:`seccion_03` - Contexto y Alcance completo
-   
-   ----
-   
-   :Ejemplo: Contexto de Negocio
-   :Sistema: <Nombre>
-   :Traducción: Método Peshitta + Paso 3.4
-   :Workflow: v1.6.0
+ .. _contexto_ejemplo_negocio_X:
 
-════════════════════════════════════════════════════════════════════
+ ============================================================
+ Ejemplo de Contexto de Negocio: <Nombre del Sistema>
+ ============================================================
+
+ .. note::
+ **Ejemplo arc42**
+
+ <Descripción breve del ejemplo>
+
+ ----
+
+ 3. Vista de Contexto
+ ====================
+
+ .. figure:: ../figuras/<nombre-diagrama>.png
+ :alt: Contexto de negocio
+ :align: center
+ :width: 80%
+
+ Diagrama de contexto de negocio del <Sistema>
+
+ Socios de Comunicación
+ =======================
+
+ .. list-table::
+ :header-rows: 1
+ :widths: 30 70
+
+ * - Vecino
+ - Descripción
+ * - **<socio 1>**
+ - <Descripción del socio y su interfaz>
+ * - **<socio 2>**
+ - <Descripción>
+
+ ----
+
+ Observaciones
+ =============
+
+ Este ejemplo muestra un **contexto de negocio** donde:
+
+ * <Observación 1>
+ * <Observación 2>
+
+ .. seealso::
+ * :ref:`seccion_3_1` - Plantilla de Contexto de Negocio
+ * :ref:`seccion_03` - Contexto y Alcance completo
+
+ ----
+
+ :Ejemplo: Contexto de Negocio
+ :Sistema: <Nombre>
+ :Traducción: Método Peshitta + Paso 3.4
+ :Workflow: v1.6.0
+
+====================================================================
 PLANTILLA PARA EJEMPLOS TECHNICAL
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 .. code-block:: rst
 
-   .. _contexto_ejemplo_tecnico_X:
-   
-   ============================================================
-   Ejemplo de Contexto Técnico: <Nombre del Sistema>
-   ============================================================
-   
-   .. note::
-      **Ejemplo arc42**
-      
-      <Descripción breve del ejemplo>
-   
-   ----
-   
-   3. Vista de Contexto
-   ====================
-   
-   3.2 Contexto Técnico
-   --------------------
-   
-   <Descripción del diagrama>
-   
-   .. figure:: ../figuras/<nombre-diagrama>.png
-      :alt: Contexto técnico
-      :align: center
-      :width: 80%
-      
-      Diagrama de contexto técnico del <Sistema>
-   
-   Nodos y Artefactos
-   ==================
-   
-   .. list-table::
-      :header-rows: 1
-      :widths: 35 65
-      
-      * - Nodo / Artefacto
-        - Descripción
-      * - **<nodo 1>**
-        - <Descripción del nodo>
-      * - **<artefacto 1>**
-        - <Descripción del artefacto>
-   
-   ----
-   
-   Observaciones
-   =============
-   
-   Este ejemplo muestra un **contexto técnico** donde:
-   
-   * <Observación 1>
-   * <Observación 2>
-   
-   .. seealso::
-      * :ref:`seccion_3_2` - Plantilla de Contexto Técnico
-      * :ref:`seccion_03` - Contexto y Alcance completo
-   
-   ----
-   
-   :Ejemplo: Contexto Técnico
-   :Sistema: <Nombre>
-   :Traducción: Método Peshitta + Paso 3.4
-   :Workflow: v1.6.0
+ .. _contexto_ejemplo_tecnico_X:
 
-════════════════════════════════════════════════════════════════════
+ ============================================================
+ Ejemplo de Contexto Técnico: <Nombre del Sistema>
+ ============================================================
+
+ .. note::
+ **Ejemplo arc42**
+
+ <Descripción breve del ejemplo>
+
+ ----
+
+ 3. Vista de Contexto
+ ====================
+
+ 3.2 Contexto Técnico
+ --------------------
+
+ <Descripción del diagrama>
+
+ .. figure:: ../figuras/<nombre-diagrama>.png
+ :alt: Contexto técnico
+ :align: center
+ :width: 80%
+
+ Diagrama de contexto técnico del <Sistema>
+
+ Nodos y Artefactos
+ ==================
+
+ .. list-table::
+ :header-rows: 1
+ :widths: 35 65
+
+ * - Nodo / Artefacto
+ - Descripción
+ * - **<nodo 1>**
+ - <Descripción del nodo>
+ * - **<artefacto 1>**
+ - <Descripción del artefacto>
+
+ ----
+
+ Observaciones
+ =============
+
+ Este ejemplo muestra un **contexto técnico** donde:
+
+ * <Observación 1>
+ * <Observación 2>
+
+ .. seealso::
+ * :ref:`seccion_3_2` - Plantilla de Contexto Técnico
+ * :ref:`seccion_03` - Contexto y Alcance completo
+
+ ----
+
+ :Ejemplo: Contexto Técnico
+ :Sistema: <Nombre>
+ :Traducción: Método Peshitta + Paso 3.4
+ :Workflow: v1.6.0
+
+====================================================================
 TÉRMINOS ARQUITECTÓNICOS CLAVE (Paso 3.4)
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 USAR SIEMPRE:
 
 Business Context:
-✅ Context → Contexto
-✅ Scope → Alcance
-✅ Business context → Contexto de negocio
-✅ Communication partner → Socio de comunicación
-✅ Neighbor → Vecino
-✅ Domain interface → Interfaz de dominio
-✅ Black box → Caja negra
-✅ Input/Output → Entrada/Salida
+[OK] Context -> Contexto
+[OK] Scope -> Alcance
+[OK] Business context -> Contexto de negocio
+[OK] Communication partner -> Socio de comunicación
+[OK] Neighbor -> Vecino
+[OK] Domain interface -> Interfaz de dominio
+[OK] Black box -> Caja negra
+[OK] Input/Output -> Entrada/Salida
 
 Technical Context:
-✅ Technical context → Contexto técnico
-✅ Node → Nodo
-✅ Channel → Canal
-✅ Transmission media → Medio de transmisión
-✅ Protocol → Protocolo
-✅ Deployment diagram → Diagrama de despliegue
-✅ Artifact → Artefacto
-✅ Technical interface → Interfaz técnica
+[OK] Technical context -> Contexto técnico
+[OK] Node -> Nodo
+[OK] Channel -> Canal
+[OK] Transmission media -> Medio de transmisión
+[OK] Protocol -> Protocolo
+[OK] Deployment diagram -> Diagrama de despliegue
+[OK] Artifact -> Artefacto
+[OK] Technical interface -> Interfaz técnica
 
 EVITAR (traducciones literales):
-❌ "socio de comunicaciones" → ✅ "socio de comunicación"
-❌ "vecindad" → ✅ "vecino"
-❌ "medio de transmisión" como plural → ✅ singular
+[ERROR] "socio de comunicaciones" -> [OK] "socio de comunicación"
+[ERROR] "vecindad" -> [OK] "vecino"
+[ERROR] "medio de transmisión" como plural -> [OK] singular
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 PROCESO PARA COMPLETAR
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 PARA CADA ARCHIVO RESTANTE:
 
 1. Leer original MD completo
 2. Identificar:
-   • Título del sistema
-   • Diagrama (nombre de imagen)
-   • Tabla de contenido
-   • Observaciones especiales
+ • Título del sistema
+ • Diagrama (nombre de imagen)
+ • Tabla de contenido
+ • Observaciones especiales
 3. Aplicar plantilla correspondiente (business o technical)
 4. Traducir usando Paso 3.4 desde el inicio
 5. Revisar coherencia terminológica
@@ -262,36 +262,36 @@ TIEMPO ESTIMADO POR ARCHIVO:
 • Ejemplos technical: ~15 min cada uno
 • TOTAL 4 archivos: ~60 min (1 hora)
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 SIGUIENTE FASE DESPUÉS DE COMPLETAR
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 Una vez completados los 9 archivos:
 
-⏭️  FASE 3.5: Revisión de Literalidad
-   • Buscar traducciones literales incorrectas
-   • Verificar Paso 3.4 aplicado consistentemente
+⏭ FASE 3.5: Revisión de Literalidad
+ • Buscar traducciones literales incorrectas
+ • Verificar Paso 3.4 aplicado consistentemente
 
-⏭️  FASE 4: Aplicación de Tácticas
-   • Ajustes contextuales si necesarios
+⏭ FASE 4: Aplicación de Tácticas
+ • Ajustes contextuales si necesarios
 
-⏭️  FASE 5: Validación
-   • make html
-   • Verificar compilación
+⏭ FASE 5: Validación
+ • make html
+ • Verificar compilación
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 ESTADO ACTUAL
-════════════════════════════════════════════════════════════════════
+====================================================================
 
-✅ Demostración exitosa del Workflow v1.6.0
-✅ Paso 3.4 aplicado desde el inicio
-✅ Subsecciones plantilla arc42 COMPLETADAS (lo más crítico)
-✅ Patrón establecido para archivos restantes
+[OK] Demostración exitosa del Workflow v1.6.0
+[OK] Paso 3.4 aplicado desde el inicio
+[OK] Subsecciones plantilla arc42 COMPLETADAS (lo más crítico)
+[OK] Patrón establecido para archivos restantes
 
 PRÓXIMO PASO:
-  Completar 4 ejemplos restantes siguiendo las plantillas
-  (Tiempo estimado: ~60 min)
+ Completar 4 ejemplos restantes siguiendo las plantillas
+ (Tiempo estimado: ~60 min)
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 FIN DE LA GUÍA
-════════════════════════════════════════════════════════════════════
+====================================================================

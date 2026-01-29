@@ -1,8 +1,8 @@
 # ANÁLISIS DE ERRORES - SECCIONES 3 Y 5
 
-**Fecha:** 2026-01-27  
-**Workflow Afectado:** v1.6.0  
-**Secciones:** 03 (Context & Scope) y 05 (Building Block View)  
+**Fecha:** 2026-01-27
+**Workflow Afectado:** v1.6.0
+**Secciones:** 03 (Context & Scope) y 05 (Building Block View)
 **Analista:** Claude (asistente)
 
 ---
@@ -37,15 +37,15 @@ En la primera iteración de traducción de la Sección 3, se crearon archivos RS
 **Contenido faltante:** Explicaciones, ejemplos, detalles técnicos
 
 ### Causa Raíz
-- **Mala interpretación de "crear archivo"** → Se interpretó como "crear estructura"
-- **Falta de verificación de completitud** → No se comparó longitud con original
-- **Ausencia de checkpoints obligatorios** → No había paso de validación
+- **Mala interpretación de "crear archivo"** -> Se interpretó como "crear estructura"
+- **Falta de verificación de completitud** -> No se comparó longitud con original
+- **Ausencia de checkpoints obligatorios** -> No había paso de validación
 
 ### Impacto
-- **Usuario detectó el problema** → Tuvo que solicitar corrección
-- **Trabajo duplicado** → Se tuvieron que reescribir 15+ tips completos
-- **Pérdida de confianza** → El usuario cuestionó si había más archivos incompletos
-- **Tiempo perdido** → ~2 horas de retrabajo
+- **Usuario detectó el problema** -> Tuvo que solicitar corrección
+- **Trabajo duplicado** -> Se tuvieron que reescribir 15+ tips completos
+- **Pérdida de confianza** -> El usuario cuestionó si había más archivos incompletos
+- **Tiempo perdido** -> ~2 horas de retrabajo
 
 ### Corrección Aplicada
 Se reescribieron tips 3-5 a 3-19 (15 archivos) con contenido COMPLETO:
@@ -77,15 +77,15 @@ Durante la traducción de Tips 11-19 (rango histórico), se **agregó contenido 
 Ejemplo de Refinamiento Consistente
 ====================================
 
-**✅ CORRECTO:**
-   Nivel 1: Sistema
-     └─ Bloque A
-   Nivel 2: Bloque A (refinado)
-     └─ Bloque A.1
-     └─ Bloque A.2
+**[OK] CORRECTO:**
+ Nivel 1: Sistema
+ +- Bloque A
+ Nivel 2: Bloque A (refinado)
+ +- Bloque A.1
+ +- Bloque A.2
 
-**❌ INCORRECTO:**
-   [Nivel 2 omitido]
+**[ERROR] INCORRECTO:**
+ [Nivel 2 omitido]
 ```
 **Problema:** Este ejemplo con diagramas ASCII NO está en el original
 
@@ -98,16 +98,16 @@ Ventajas del Mapeo Directo
 ===========================
 
 **Simplicidad**
-  Los desarrolladores encuentran el código intuitivamente
+ Los desarrolladores encuentran el código intuitivamente
 
 **Mantenibilidad**
-  Los cambios arquitectónicos reflejan cambios en directorios
+ Los cambios arquitectónicos reflejan cambios en directorios
 
 **Comprensibilidad**
-  La estructura es obvia para nuevos miembros del equipo
+ La estructura es obvia para nuevos miembros del equipo
 
 **Consistencia**
-  La arquitectura y el código permanecen sincronizados
+ La arquitectura y el código permanecen sincronizados
 ```
 **Problema:** Estas 4 ventajas NO están en el original
 
@@ -120,35 +120,35 @@ Tipos de Cohesión
 =================
 
 **Alta Cohesión (Deseable)**
-  - Cohesión Funcional
-  - Cohesión Secuencial
-  - Cohesión Comunicacional
+ - Cohesión Funcional
+ - Cohesión Secuencial
+ - Cohesión Comunicacional
 
 **Baja Cohesión (Evitar)**
-  - Cohesión Coincidental
-  - Cohesión Lógica
-  - Cohesión Temporal
+ - Cohesión Coincidental
+ - Cohesión Lógica
+ - Cohesión Temporal
 ```
 **Problema:** Esta clasificación de 6 tipos NO está en el original
 
 ### Causa Raíz
-- **Intención de "mejorar" la traducción** → Se intentó hacer contenido más útil
-- **Confusión entre traducción y documentación** → Se actuó como documentador, no traductor
-- **Falta de restricción explícita** → Workflow no prohibía agregar contenido
-- **Ausencia de proceso de revisión** → No había verificación contra original
+- **Intención de "mejorar" la traducción** -> Se intentó hacer contenido más útil
+- **Confusión entre traducción y documentación** -> Se actuó como documentador, no traductor
+- **Falta de restricción explícita** -> Workflow no prohibía agregar contenido
+- **Ausencia de proceso de revisión** -> No había verificación contra original
 
 ### Impacto
-- **Violación de fidelidad** → No es traducción fiel de arc42
-- **Divergencia del estándar** → Contenido no oficial mezclado con oficial
-- **Mantenimiento futuro** → Si arc42 actualiza, el contenido agregado queda obsoleto
-- **Trabajo de corrección** → Se tuvieron que reescribir 7 tips
-- **~180 líneas eliminadas** → Contenido agregado innecesario
+- **Violación de fidelidad** -> No es traducción fiel de arc42
+- **Divergencia del estándar** -> Contenido no oficial mezclado con oficial
+- **Mantenimiento futuro** -> Si arc42 actualiza, el contenido agregado queda obsoleto
+- **Trabajo de corrección** -> Se tuvieron que reescribir 7 tips
+- **~180 líneas eliminadas** -> Contenido agregado innecesario
 
 ### Corrección Aplicada
 Se reescribieron tips 5-12, 5-14, 5-15, 5-16, 5-17, 5-18, 5-19 con traducciones PURAS:
 - SOLO contenido que existe en el original
 - Sin agregar secciones, ejemplos o listas
-- Reducción promedio: 68 → 39 líneas por tip (43% de reducción)
+- Reducción promedio: 68 -> 39 líneas por tip (43% de reducción)
 
 ---
 
@@ -188,15 +188,15 @@ Se reescribieron tips 5-12, 5-14, 5-15, 5-16, 5-17, 5-18, 5-19 con traducciones 
 **Solución:**
 ```
 TRADUCCIÓN COMPLETA significa:
-✅ TODO el texto del original traducido palabra por palabra
-✅ TODOS los ejemplos incluidos
-✅ TODAS las explicaciones preservadas
-✅ Longitud esperada: 1.5-3.0x el original (por formato RST)
+[OK] TODO el texto del original traducido palabra por palabra
+[OK] TODOS los ejemplos incluidos
+[OK] TODAS las explicaciones preservadas
+[OK] Longitud esperada: 1.5-3.0x el original (por formato RST)
 
 NO significa:
-❌ Solo estructura y encabezados
-❌ Resúmenes del contenido
-❌ Parafraseo breve
+[ERROR] Solo estructura y encabezados
+[ERROR] Resúmenes del contenido
+[ERROR] Parafraseo breve
 ```
 
 ### 2. Prohibición Explícita de Agregar Contenido
@@ -205,14 +205,14 @@ NO significa:
 **Solución:**
 ```
 REGLA ABSOLUTA:
-❌ NO agregar secciones que no existen en el original
-❌ NO agregar ejemplos inventados
-❌ NO agregar listas de ventajas/tipos
-❌ NO expandir explicaciones
-❌ NO agregar contenido "educativo" adicional
+[ERROR] NO agregar secciones que no existen en el original
+[ERROR] NO agregar ejemplos inventados
+[ERROR] NO agregar listas de ventajas/tipos
+[ERROR] NO expandir explicaciones
+[ERROR] NO agregar contenido "educativo" adicional
 
 EXCEPCIÓN ÚNICA:
-✅ Notas de traducción técnica (marcadas claramente)
+[OK] Notas de traducción técnica (marcadas claramente)
 ```
 
 ### 3. Proceso de Verificación Obligatorio
@@ -224,7 +224,7 @@ FASE 5.5 (OBLIGATORIA - NUEVA):
 - Comparar longitud: traducción debe ser 1.5-3x original
 - Verificar secciones: SOLO las que existen en original
 - Contar ejemplos: mismo número que en original
-- Check visual: ¿hay títulos nuevos? → ERROR
+- Check visual: ¿hay títulos nuevos? -> ERROR
 ```
 
 ### 4. Indicadores de Calidad
@@ -234,13 +234,13 @@ FASE 5.5 (OBLIGATORIA - NUEVA):
 ```
 INDICADORES DE ERROR:
 
-⚠️ TIPO A (Esqueleto):
-- Ratio <1.5x → Posible contenido faltante
+[WARNING] TIPO A (Esqueleto):
+- Ratio <1.5x -> Posible contenido faltante
 - Archivo <30 líneas con original >40 líneas
 - Falta de ejemplos mencionados en original
 
-⚠️ TIPO B (Agregado):
-- Ratio >3.5x → Posible contenido agregado
+[WARNING] TIPO B (Agregado):
+- Ratio >3.5x -> Posible contenido agregado
 - Secciones con títulos no en original
 - Listas extensas no presentes en original
 ```
@@ -251,16 +251,16 @@ INDICADORES DE ERROR:
 **Solución:**
 ```
 ROL DEL TRADUCTOR:
-✅ Traducir fielmente el contenido existente
-✅ Aplicar Paso 3.4 (terminología técnica)
-✅ Mantener formato y estructura RST
-✅ Preservar intención del autor original
+[OK] Traducir fielmente el contenido existente
+[OK] Aplicar Paso 3.4 (terminología técnica)
+[OK] Mantener formato y estructura RST
+[OK] Preservar intención del autor original
 
 NO ES ROL DEL TRADUCTOR:
-❌ "Mejorar" el contenido original
-❌ Agregar información útil pero no presente
-❌ Expandir explicaciones
-❌ Crear ejemplos adicionales
+[ERROR] "Mejorar" el contenido original
+[ERROR] Agregar información útil pero no presente
+[ERROR] Expandir explicaciones
+[ERROR] Crear ejemplos adicionales
 ```
 
 ---
@@ -270,18 +270,18 @@ NO ES ROL DEL TRADUCTOR:
 ### Línea de Tiempo
 
 ```
-Sección 01-02: ✅ Sin errores mayores
-Sección 03: ❌ ERROR TIPO A detectado
-  └→ Corrección aplicada (tips 3-5 a 3-19)
-  └→ Lección aprendida: "Crear = Traducir COMPLETO"
+Sección 01-02: [OK] Sin errores mayores
+Sección 03: [ERROR] ERROR TIPO A detectado
+ +-> Corrección aplicada (tips 3-5 a 3-19)
+ +-> Lección aprendida: "Crear = Traducir COMPLETO"
 
-Sección 04: ✅ Sin errores (lección aplicada)
+Sección 04: [OK] Sin errores (lección aplicada)
 
-Sección 05: ❌ ERROR TIPO B detectado
-  └→ Tips 1-10: correctos (sesión actual)
-  └→ Tips 11-19: con agregados (sesión anterior)
-  └→ Tips 20-28: correctos (sesión actual)
-  └→ Corrección aplicada (tips 5-12, 5-14-19)
+Sección 05: [ERROR] ERROR TIPO B detectado
+ +-> Tips 1-10: correctos (sesión actual)
+ +-> Tips 11-19: con agregados (sesión anterior)
+ +-> Tips 20-28: correctos (sesión actual)
+ +-> Corrección aplicada (tips 5-12, 5-14-19)
 ```
 
 ### Hipótesis del Patrón
@@ -318,26 +318,26 @@ Sección 05: ❌ ERROR TIPO B detectado
 
 ```yaml
 FASE_5_5_VALIDACION:
-  nombre: "Validación de Completitud y Fidelidad"
-  obligatoria: true
-  ejecutar_en: "Después de cada archivo traducido"
-  
-  checks:
-    - name: "Verificar longitud"
-      criteria: "1.5x ≤ (traducido/original) ≤ 3.5x"
-      accion_fallo: "REVISAR - posible contenido faltante o agregado"
-    
-    - name: "Verificar secciones"
-      criteria: "SOLO secciones que existen en original"
-      accion_fallo: "ELIMINAR secciones agregadas"
-    
-    - name: "Verificar ejemplos"
-      criteria: "Mismo número de ejemplos que original"
-      accion_fallo: "AGREGAR ejemplos faltantes o ELIMINAR agregados"
-    
-    - name: "Check visual"
-      criteria: "¿Hay títulos que no están en original?"
-      accion_fallo: "ELIMINAR contenido agregado"
+ nombre: "Validación de Completitud y Fidelidad"
+ obligatoria: true
+ ejecutar_en: "Después de cada archivo traducido"
+
+ checks:
+ - name: "Verificar longitud"
+ criteria: "1.5x ≤ (traducido/original) ≤ 3.5x"
+ accion_fallo: "REVISAR - posible contenido faltante o agregado"
+
+ - name: "Verificar secciones"
+ criteria: "SOLO secciones que existen en original"
+ accion_fallo: "ELIMINAR secciones agregadas"
+
+ - name: "Verificar ejemplos"
+ criteria: "Mismo número de ejemplos que original"
+ accion_fallo: "AGREGAR ejemplos faltantes o ELIMINAR agregados"
+
+ - name: "Check visual"
+ criteria: "¿Hay títulos que no están en original?"
+ accion_fallo: "ELIMINAR contenido agregado"
 ```
 
 ### 2. Regla de Oro Actualizada
@@ -349,8 +349,8 @@ REGLA DE ORO v1.7.0:
 "Traducción FIEL" = SOLO el contenido original, sin agregados
 
 Violaciones:
-- Omitir contenido → ERROR TIPO A
-- Agregar contenido → ERROR TIPO B
+- Omitir contenido -> ERROR TIPO A
+- Agregar contenido -> ERROR TIPO B
 ```
 
 ### 3. Checklist Pre-Commit
@@ -358,33 +358,33 @@ Violaciones:
 ```markdown
 ANTES DE CONSIDERAR UN TIP "COMPLETADO":
 
-□ Leí el archivo original COMPLETO
-□ Traduje TODO el texto (no hice resumen)
-□ NO agregué secciones nuevas
-□ NO agregué ejemplos propios
-□ NO agregué listas de ventajas/tipos
-□ Longitud está en rango 1.5-3.5x
-□ Todos los ejemplos del original están incluidos
-□ Paso 3.4 aplicado (terminología)
-□ Formato RST correcto
+ Leí el archivo original COMPLETO
+ Traduje TODO el texto (no hice resumen)
+ NO agregué secciones nuevas
+ NO agregué ejemplos propios
+ NO agregué listas de ventajas/tipos
+ Longitud está en rango 1.5-3.5x
+ Todos los ejemplos del original están incluidos
+ Paso 3.4 aplicado (terminología)
+ Formato RST correcto
 ```
 
 ### 4. Señales de Advertencia
 
 ```
-🚨 DETENER Y REVISAR SI:
+[ALERT] DETENER Y REVISAR SI:
 
 1. El archivo traducido es <50% del original
-   → Probable ERROR TIPO A
+ -> Probable ERROR TIPO A
 
 2. El archivo traducido es >350% del original
-   → Probable ERROR TIPO B
+ -> Probable ERROR TIPO B
 
 3. Estoy escribiendo un título de sección que no veo en el original
-   → STOP - estás agregando contenido
+ -> STOP - estás agregando contenido
 
 4. Estoy "mejorando" o "expandiendo" una explicación
-   → STOP - tu rol es traducir, no mejorar
+ -> STOP - tu rol es traducir, no mejorar
 ```
 
 ---
@@ -393,17 +393,17 @@ ANTES DE CONSIDERAR UN TIP "COMPLETADO":
 
 ### Errores Sistemáticos Identificados
 
-1. **Malinterpretación de "completo"** → Esqueletos en lugar de traducciones
-2. **Expansión no autorizada** → Agregar contenido "útil" pero no original
-3. **Falta de validación** → No había checks de calidad
-4. **Ambigüedad en el rol** → Traductor vs Documentador
+1. **Malinterpretación de "completo"** -> Esqueletos en lugar de traducciones
+2. **Expansión no autorizada** -> Agregar contenido "útil" pero no original
+3. **Falta de validación** -> No había checks de calidad
+4. **Ambigüedad en el rol** -> Traductor vs Documentador
 
 ### Correcciones Exitosas
 
-- ✅ 22 archivos corregidos y verificados
-- ✅ Ambos tipos de error eliminados
-- ✅ Calidad actual: Traducciones puras y fieles
-- ✅ Lecciones documentadas para evitar repetición
+- [OK] 22 archivos corregidos y verificados
+- [OK] Ambos tipos de error eliminados
+- [OK] Calidad actual: Traducciones puras y fieles
+- [OK] Lecciones documentadas para evitar repetición
 
 ### Próximos Pasos
 
@@ -429,6 +429,6 @@ ANTES DE CONSIDERAR UN TIP "COMPLETADO":
 
 ---
 
-**Documento generado:** 2026-01-27  
-**Versión:** 1.0  
-**Para:** Actualización workflow v1.6.0 → v1.7.0
+**Documento generado:** 2026-01-27
+**Versión:** 1.0
+**Para:** Actualización workflow v1.6.0 -> v1.7.0

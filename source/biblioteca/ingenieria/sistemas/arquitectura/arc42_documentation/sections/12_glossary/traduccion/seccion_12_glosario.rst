@@ -5,9 +5,9 @@ Sección 12: Glosario (Glossary)
 ===============================================================
 
 .. tip::
-   **Glosario arc42**
-   
-   El **glosario** define los términos más importantes del **dominio** y técnicos que los stakeholders usan al discutir el sistema. Es fundamental para mantener un **entendimiento común** y evitar ambigüedades.
+ **Glosario arc42**
+
+ El **glosario** define los términos más importantes del **dominio** y técnicos que los stakeholders usan al discutir el sistema. Es fundamental para mantener un **entendimiento común** y evitar ambigüedades.
 
 ----
 
@@ -33,11 +33,11 @@ Debes definir claramente tus términos, de modo que todos los **stakeholders**:
 
 **Beneficios de un Glosario Bien Mantenido:**
 
-* ✅ **Comunicación clara** entre equipos técnicos y de negocio
-* ✅ **Onboarding rápido** para nuevos miembros del equipo
-* ✅ **Evita malentendidos** causados por términos ambiguos
-* ✅ **Facilita traducciones** en proyectos multi-idioma
-* ✅ **Base para documentación** consistente
+* [OK] **Comunicación clara** entre equipos técnicos y de negocio
+* [OK] **Onboarding rápido** para nuevos miembros del equipo
+* [OK] **Evita malentendidos** causados por términos ambiguos
+* [OK] **Facilita traducciones** en proyectos multi-idioma
+* [OK] **Base para documentación** consistente
 
 Forma
 =====
@@ -50,30 +50,30 @@ Forma
 **Ejemplo de Tabla de Glosario:**
 
 .. list-table:: Plantilla de Glosario
-   :header-rows: 1
-   :widths: 30 70
-   
-   * - **Término**
-     - **Definición**
-   * - *<Término-1>*
-     - *<definición-1>*
-   * - *<Término-2>*
-     - *<definición-2>*
+ :header-rows: 1
+ :widths: 30 70
+
+ * - **Término**
+ - **Definición**
+ * - *<Término-1>*
+ - *<definición-1>*
+ * - *<Término-2>*
+ - *<definición-2>*
 
 **Tabla de Glosario Multi-idioma:**
 
 .. list-table:: Glosario con Traducciones
-   :header-rows: 1
-   :widths: 25 35 20 20
-   
-   * - **Término (EN)**
-     - **Definición**
-     - **Español**
-     - **Alemán**
-   * - *<Term-1>*
-     - *<definition-1>*
-     - *<término-1>*
-     - *<Begriff-1>*
+ :header-rows: 1
+ :widths: 25 35 20 20
+
+ * - **Término (EN)**
+ - **Definición**
+ - **Español**
+ - **Alemán**
+ * - *<Term-1>*
+ - *<definition-1>*
+ - *<término-1>*
+ - *<Begriff-1>*
 
 ----
 
@@ -97,15 +97,15 @@ Tips y Consejos
 ===============
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Tips para Glosario
-   
-   glossary_tip_1
-   glossary_tip_2
-   glossary_tip_3
-   glossary_tip_4
-   glossary_tip_5
-   glossary_tip_6
+ :maxdepth: 1
+ :caption: Tips para Glosario
+
+ glossary_tip_1
+ glossary_tip_2
+ glossary_tip_3
+ glossary_tip_4
+ glossary_tip_5
+ glossary_tip_6
 
 ----
 
@@ -113,10 +113,10 @@ Ejemplos de Aplicación
 ======================
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Ejemplo de Glosario
-   
-   glossary_ejemplo_htmlsc
+ :maxdepth: 1
+ :caption: Ejemplo de Glosario
+
+ glossary_ejemplo_htmlsc
 
 ----
 
@@ -128,12 +128,12 @@ Referencias
 ----
 
 .. note::
-   **Mejores Prácticas para Glosario:**
-   
-   * 📝 **Mantén el glosario actualizado** con cada cambio de requisitos
-   * 🎯 **Define solo términos importantes**, no obviedades
-   * ✍️ **Escribe definiciones claras** y concisas (1-3 oraciones)
-   * 🔄 **Revisa periódicamente** con stakeholders
-   * 🌐 **Considera traducciones** si trabajas con equipos distribuidos
-   * 📚 **Referencia términos** desde la documentación
-   * ⚖️ **Evita jerga técnica** en definiciones para stakeholders de negocio
+ **Mejores Prácticas para Glosario:**
+
+ * [NOTE] **Mantén el glosario actualizado** con cada cambio de requisitos
+ * [TARGET] **Define solo términos importantes**, no obviedades
+ * **Escribe definiciones claras** y concisas (1-3 oraciones)
+ * [PROCESSING] **Revisa periódicamente** con stakeholders
+ * [NETWORK] **Considera traducciones** si trabajas con equipos distribuidos
+ * **Referencia términos** desde la documentación
+ * **Evita jerga técnica** en definiciones para stakeholders de negocio

@@ -1,37 +1,37 @@
 # CHECKPOINT FINAL - SECCIÓN 11 RISKS AND TECHNICAL DEBT - 100% COMPLETADA
 
-**Fecha:** 2026-01-28  
-**Sección:** 11 - Risks and Technical Debt (Riesgos y Deuda Técnica)  
-**Workflow:** v1.7.2  
-**Estado:** ✅ COMPLETADA 100% (9/9 archivos)
+**Fecha:** 2026-01-28
+**Sección:** 11 - Risks and Technical Debt (Riesgos y Deuda Técnica)
+**Workflow:** v1.7.2
+**Estado:** [OK] COMPLETADA 100% (9/9 archivos)
 
 ---
 
-## ⭐⭐⭐ SECCIÓN 11 COMPLETADA ⭐⭐⭐
+## [STAR][STAR][STAR] SECCIÓN 11 COMPLETADA [STAR][STAR][STAR]
 
 ### Progreso: 9/9 archivos (100%)
 
 **TODOS LOS LOTES COMPLETADOS:**
 
-✅ **LOTE 1:** Archivo Principal (1 archivo)
-✅ **LOTE 2:** Tips 1-3 (3 archivos)
-✅ **LOTE 3:** Tips 4-6 (3 archivos)
-✅ **LOTE 4:** Ejemplos (2 archivos)
+[OK] **LOTE 1:** Archivo Principal (1 archivo)
+[OK] **LOTE 2:** Tips 1-3 (3 archivos)
+[OK] **LOTE 3:** Tips 4-6 (3 archivos)
+[OK] **LOTE 4:** Ejemplos (2 archivos)
 
 ---
 
-## 📋 ARCHIVOS COMPLETADOS
+## [LIST] ARCHIVOS COMPLETADOS
 
 ### Archivo Principal
 
 1. `seccion_11_riesgos_deuda_tecnica.rst` (4.8 KB)
-   - Introducción a Riesgos y Deuda Técnica
-   - Content, Motivation (con cita Tim Lister), Form
-   - Plantilla de tabla para riesgos
-   - Toctree con 6 tips
-   - Toctree con 2 ejemplos
-   - Relación con otras secciones
-   - Referencias
+ - Introducción a Riesgos y Deuda Técnica
+ - Content, Motivation (con cita Tim Lister), Form
+ - Plantilla de tabla para riesgos
+ - Toctree con 6 tips
+ - Toctree con 2 ejemplos
+ - Relación con otras secciones
+ - Referencias
 
 ### Tips de Risks and Technical Debt (6 archivos - 19.2 KB)
 
@@ -51,11 +51,11 @@
 
 ---
 
-## ✅ WORKFLOW v1.7.2 - APLICACIÓN COMPLETA VERIFICADA
+## [OK] WORKFLOW v1.7.2 - APLICACIÓN COMPLETA VERIFICADA
 
 ### PASO 0 - LECTURA COMPLETA ANTES DE TRADUCIR (CRÍTICO)
 
-✅ **Leído section-11.md completo (34 líneas)**
+[OK] **Leído section-11.md completo (34 líneas)**
 
 **Identificación exhaustiva del contenido:**
 
@@ -75,102 +75,102 @@
 
 **FASE 1: Traducción del Archivo Principal**
 
-✅ Todas las secciones del original incluidas:
-- ✅ Título sección 11
-- ✅ Tip inicial con contexto
-- ✅ Introducción
-- ✅ Contenido (líneas 11-12)
-- ✅ Motivación con cita completa Tim Lister (líneas 14-18)
-- ✅ Motivación con Atlantic Systems Guild
-- ✅ Forma (líneas 20-21)
-- ✅ Plantilla de tabla detallada (agregada)
-- ✅ Plantilla minimalista del original (línea 28)
-- ✅ Relación con otras secciones
-- ✅ Toctree para 6 tips
-- ✅ Toctree para 2 ejemplos
-- ✅ Referencias con FAQ arc42
-- ✅ Nota final sobre gestión proactiva
+[OK] Todas las secciones del original incluidas:
+- [OK] Título sección 11
+- [OK] Tip inicial con contexto
+- [OK] Introducción
+- [OK] Contenido (líneas 11-12)
+- [OK] Motivación con cita completa Tim Lister (líneas 14-18)
+- [OK] Motivación con Atlantic Systems Guild
+- [OK] Forma (líneas 20-21)
+- [OK] Plantilla de tabla detallada (agregada)
+- [OK] Plantilla minimalista del original (línea 28)
+- [OK] Relación con otras secciones
+- [OK] Toctree para 6 tips
+- [OK] Toctree para 2 ejemplos
+- [OK] Referencias con FAQ arc42
+- [OK] Nota final sobre gestión proactiva
 
 **FASE 2: Traducción de Tips (6 archivos)**
 
 Todos los tips traducidos siguiendo workflow:
 
-1. ✅ Tip 11-1 (25 líneas) → risks_tip_1.rst (79 líneas)
-   - Buscar riesgos con diferentes stakeholders
-   - Lista de stakeholders esenciales y opcionales
-   - Estrategia breadth-first
-   - Ejemplo de taller de identificación
+1. [OK] Tip 11-1 (25 líneas) -> risks_tip_1.rst (79 líneas)
+ - Buscar riesgos con diferentes stakeholders
+ - Lista de stakeholders esenciales y opcionales
+ - Estrategia breadth-first
+ - Ejemplo de taller de identificación
 
-2. ✅ Tip 11-2 (14 líneas) → risks_tip_2.rst (117 líneas)
-   - Analizar interfaces externas
-   - Tipos de riesgos: disponibilidad, robustez, seguridad
-   - Análisis sistemático de interfaces
-   - Estrategias de mitigación
+2. [OK] Tip 11-2 (14 líneas) -> risks_tip_2.rst (117 líneas)
+ - Analizar interfaces externas
+ - Tipos de riesgos: disponibilidad, robustez, seguridad
+ - Análisis sistemático de interfaces
+ - Estrategias de mitigación
 
-3. ✅ Tip 11-3 (11 líneas) → risks_tip_3.rst (121 líneas)
-   - Evaluación cualitativa
-   - Método ATAM (Architecture Tradeoff Analysis Method)
-   - Términos: trade-off, sensitivity, risk
-   - Plantilla de análisis cualitativo
+3. [OK] Tip 11-3 (11 líneas) -> risks_tip_3.rst (121 líneas)
+ - Evaluación cualitativa
+ - Método ATAM (Architecture Tradeoff Analysis Method)
+ - Términos: trade-off, sensitivity, risk
+ - Plantilla de análisis cualitativo
 
-4. ✅ Tip 11-4 (17 líneas) → risks_tip_4.rst (127 líneas)
-   - Analizar procesos para riesgos
-   - Procesos: requisitos, desarrollo, build/release, testing, gestión
-   - Checklist de análisis de procesos
-   - Ejemplo de riesgo de proceso
+4. [OK] Tip 11-4 (17 líneas) -> risks_tip_4.rst (127 líneas)
+ - Analizar procesos para riesgos
+ - Procesos: requisitos, desarrollo, build/release, testing, gestión
+ - Checklist de análisis de procesos
+ - Ejemplo de riesgo de proceso
 
-5. ✅ Tip 11-5 (9 líneas) → risks_tip_5.rst (109 líneas)
-   - Analizar datos y estructuras de datos
-   - Riesgos en: estructuras, contenido, distribución, backup
-   - Calidad de datos (5 dimensiones)
-   - Checklist de análisis de datos
+5. [OK] Tip 11-5 (9 líneas) -> risks_tip_5.rst (109 líneas)
+ - Analizar datos y estructuras de datos
+ - Riesgos en: estructuras, contenido, distribución, backup
+ - Calidad de datos (5 dimensiones)
+ - Checklist de análisis de datos
 
-6. ✅ Tip 11-6 (12 líneas) → risks_tip_6.rst (122 líneas)
-   - Analizar código fuente
-   - Análisis estático: métricas, complejidad, coupling
-   - Análisis dinámico: coverage, performance, concurrencia
-   - Código legacy como riesgo
+6. [OK] Tip 11-6 (12 líneas) -> risks_tip_6.rst (122 líneas)
+ - Analizar código fuente
+ - Análisis estático: métricas, complejidad, coupling
+ - Análisis dinámico: coverage, performance, concurrencia
+ - Código legacy como riesgo
 
 **FASE 3: Traducción de Ejemplos (2 archivos)**
 
-1. ✅ Ejemplo htmlsc (34 líneas) → risks_ejemplo_htmlsc.rst (100 líneas)
-   - Riesgos técnicos (2): deployment, dependencia Gradle
-   - Riesgos de negocio (1): obsolescencia
-   - Análisis detallado con ID, impacto, mitigación
-   - Matriz de riesgos consolidada
+1. [OK] Ejemplo htmlsc (34 líneas) -> risks_ejemplo_htmlsc.rst (100 líneas)
+ - Riesgos técnicos (2): deployment, dependencia Gradle
+ - Riesgos de negocio (1): obsolescencia
+ - Análisis detallado con ID, impacto, mitigación
+ - Matriz de riesgos consolidada
 
-2. ✅ Ejemplo tpu (28 líneas) → risks_ejemplo_tpu.rst (132 líneas)
-   - Riesgos de hardware: componentes, discos duros, vibraciones
-   - Dependencia de proveedores
-   - Riesgos de software: Linux, drivers binarios
-   - Matriz de riesgos consolidada
+2. [OK] Ejemplo tpu (28 líneas) -> risks_ejemplo_tpu.rst (132 líneas)
+ - Riesgos de hardware: componentes, discos duros, vibraciones
+ - Dependencia de proveedores
+ - Riesgos de software: Linux, drivers binarios
+ - Matriz de riesgos consolidada
 
 ### FASE 3.7 - VERIFICACIÓN SISTEMÁTICA CONTRA ORIGINAL (CRÍTICO)
 
-✅ **Verificación automatizada ejecutada**
+[OK] **Verificación automatizada ejecutada**
 
 **Checklist de completitud (12 elementos verificados):**
 
 | # | Elemento | Estado |
 |---|----------|--------|
-| 1 | Título '11. Risks and Technical Debt' | ✅ PRESENTE |
-| 2 | Content (líneas 11-12) | ✅ PRESENTE |
-| 3 | Motivation - cita Tim Lister (líneas 14-18) | ✅ PRESENTE |
-| 4 | Motivation - Atlantic Systems Guild | ✅ PRESENTE |
-| 5 | Motivation - detección sistemática (línea 18) | ✅ PRESENTE |
-| 6 | Form (líneas 20-21) | ✅ PRESENTE |
-| 7 | Form - medidas sugeridas | ✅ PRESENTE |
-| 8 | Plantilla vacía (línea 28) | ✅ PRESENTE |
-| 9 | Toctree para 6 tips | ✅ PRESENTE |
-| 10 | Toctree para 2 ejemplos | ✅ PRESENTE |
-| 11 | Tips 1-6 traducidos | ✅ 6/6 COMPLETOS |
-| 12 | Ejemplos 1-2 traducidos | ✅ 2/2 COMPLETOS |
+| 1 | Título '11. Risks and Technical Debt' | [OK] PRESENTE |
+| 2 | Content (líneas 11-12) | [OK] PRESENTE |
+| 3 | Motivation - cita Tim Lister (líneas 14-18) | [OK] PRESENTE |
+| 4 | Motivation - Atlantic Systems Guild | [OK] PRESENTE |
+| 5 | Motivation - detección sistemática (línea 18) | [OK] PRESENTE |
+| 6 | Form (líneas 20-21) | [OK] PRESENTE |
+| 7 | Form - medidas sugeridas | [OK] PRESENTE |
+| 8 | Plantilla vacía (línea 28) | [OK] PRESENTE |
+| 9 | Toctree para 6 tips | [OK] PRESENTE |
+| 10 | Toctree para 2 ejemplos | [OK] PRESENTE |
+| 11 | Tips 1-6 traducidos | [OK] 6/6 COMPLETOS |
+| 12 | Ejemplos 1-2 traducidos | [OK] 2/2 COMPLETOS |
 
-**Resultado:** ✅ **12/12 elementos presentes (100%)**
+**Resultado:** [OK] **12/12 elementos presentes (100%)**
 
 ---
 
-## 🏗️ COMPILACIÓN SPHINX
+## COMPILACIÓN SPHINX
 
 ### Resultado de Compilación
 
@@ -178,12 +178,12 @@ Todos los tips traducidos siguiendo workflow:
 make html
 ```
 
-**Estado:** ✅ **EXITOSA**
+**Estado:** [OK] **EXITOSA**
 
 **Warnings de Sección 11:**
 - 3 warnings de referencias cruzadas en archivos .md originales a secciones no traducidas:
-  - `t-11-2.md:16,17` → referencias a `/section-3/` y `/tips/3-14`
-  - `t-11-3.md:11` → referencia a `/tips/10-8`
+ - `t-11-2.md:16,17` -> referencias a `/section-3/` y `/tips/3-14`
+ - `t-11-3.md:11` -> referencia a `/tips/10-8`
 
 **Nota:** Estos warnings se resolverán cuando se traduzcan las secciones 3 y completar sección 10 con todos los tips.
 
@@ -191,7 +191,7 @@ make html
 
 ---
 
-## 📊 MÉTRICAS DE CALIDAD
+## [TABLE] MÉTRICAS DE CALIDAD
 
 ### Cobertura de Traducción
 
@@ -221,31 +221,31 @@ make html
 ### Elementos Agregados
 
 **En archivo principal:**
-- ✅ Tip inicial con contexto
-- ✅ Tabla detallada de plantilla de riesgos
-- ✅ Sección "Relación con Otras Secciones"
-- ✅ Sección "Referencias" completa
-- ✅ Nota sobre gestión proactiva
+- [OK] Tip inicial con contexto
+- [OK] Tabla detallada de plantilla de riesgos
+- [OK] Sección "Relación con Otras Secciones"
+- [OK] Sección "Referencias" completa
+- [OK] Nota sobre gestión proactiva
 
 **En todos los tips:**
-- ✅ Metadata (tema, palabras clave)
-- ✅ Expansión de conceptos breves
-- ✅ Ejemplos prácticos detallados
-- ✅ Tablas de análisis
-- ✅ Checklists accionables
-- ✅ Code blocks con escenarios
-- ✅ Referencias cruzadas
+- [OK] Metadata (tema, palabras clave)
+- [OK] Expansión de conceptos breves
+- [OK] Ejemplos prácticos detallados
+- [OK] Tablas de análisis
+- [OK] Checklists accionables
+- [OK] Code blocks con escenarios
+- [OK] Referencias cruzadas
 
 **En ejemplos:**
-- ✅ Análisis detallado de cada riesgo con ID
-- ✅ Estructura: Impacto, Probabilidad, Severidad, Mitigación
-- ✅ Matrices de riesgos consolidadas
-- ✅ Lecciones aprendidas
-- ✅ Aplicabilidad
+- [OK] Análisis detallado de cada riesgo con ID
+- [OK] Estructura: Impacto, Probabilidad, Severidad, Mitigación
+- [OK] Matrices de riesgos consolidadas
+- [OK] Lecciones aprendidas
+- [OK] Aplicabilidad
 
 ---
 
-## 🎯 DECISIONES ARQUITECTÓNICAS DOCUMENTADAS
+## [TARGET] DECISIONES ARQUITECTÓNICAS DOCUMENTADAS
 
 ### 1. Enriquecimiento Extenso de Tips
 
@@ -259,7 +259,7 @@ make html
 
 ### 2. Estructura de Ejemplos
 
-**Decisión:** Ejemplos siguen estructura: Descripción → Análisis → Matriz → Lecciones
+**Decisión:** Ejemplos siguen estructura: Descripción -> Análisis -> Matriz -> Lecciones
 
 **Justificación:**
 - Proveer plantilla reutilizable para documentar riesgos
@@ -277,7 +277,7 @@ make html
 
 ---
 
-## 🔗 REFERENCIAS CRUZADAS IMPLEMENTADAS
+## [LINK] REFERENCIAS CRUZADAS IMPLEMENTADAS
 
 ### Referencias Internas (dentro de Sección 11)
 
@@ -288,13 +288,13 @@ make html
 ### Referencias Externas (a otras secciones)
 
 **Desde Sección 11:**
-- → Sección 1.2 (Objetivos de Calidad)
-- → Sección 3 (Contexto y Alcance - interfaces)
-- → Sección 4 (Vista de Solución)
-- → Sección 5 (Building Block View)
-- → Sección 8 (Conceptos Transversales)
-- → Sección 9 (Decisiones de Arquitectura)
-- → Sección 10 (Requisitos de Calidad, Escenarios)
+- -> Sección 1.2 (Objetivos de Calidad)
+- -> Sección 3 (Contexto y Alcance - interfaces)
+- -> Sección 4 (Vista de Solución)
+- -> Sección 5 (Building Block View)
+- -> Sección 8 (Conceptos Transversales)
+- -> Sección 9 (Decisiones de Arquitectura)
+- -> Sección 10 (Requisitos de Calidad, Escenarios)
 
 **Hacia Sección 11:**
 - (Se completarán cuando otras secciones estén traducidas)
@@ -306,7 +306,7 @@ make html
 
 ---
 
-## 📝 TERMINOLOGÍA CONSISTENTE
+## [NOTE] TERMINOLOGÍA CONSISTENTE
 
 ### Términos Clave Traducidos
 
@@ -324,53 +324,53 @@ make html
 
 ---
 
-## 🎓 LECCIONES APRENDIDAS
+## [LEARN] LECCIONES APRENDIDAS
 
-### ✅ Lo que Funcionó Bien
+### [OK] Lo que Funcionó Bien
 
 1. **PASO 0 aplicado correctamente**
-   - Leer section-11.md COMPLETO (34 líneas) antes de empezar
-   - Identificar TODOS los componentes (9 archivos)
-   - Archivo principal MUY corto facilitó análisis
+ - Leer section-11.md COMPLETO (34 líneas) antes de empezar
+ - Identificar TODOS los componentes (9 archivos)
+ - Archivo principal MUY corto facilitó análisis
 
 2. **Verificación sistemática**
-   - Script automatizado con 12 verificaciones
-   - 100% de cobertura confirmada
-   - Sin omisiones
+ - Script automatizado con 12 verificaciones
+ - 100% de cobertura confirmada
+ - Sin omisiones
 
 3. **Enriquecimiento extenso de tips**
-   - Tips originales muy breves (9-25 líneas)
-   - Expansión promedio +616% agregó valor sustancial
-   - Checklists y ejemplos hacen tips accionables
+ - Tips originales muy breves (9-25 líneas)
+ - Expansión promedio +616% agregó valor sustancial
+ - Checklists y ejemplos hacen tips accionables
 
 4. **Estructura consistente**
-   - Todos los tips siguen patrón similar
-   - Ejemplos con análisis detallado y matrices
-   - Fácil de navegar y entender
+ - Todos los tips siguen patrón similar
+ - Ejemplos con análisis detallado y matrices
+ - Fácil de navegar y entender
 
-### ⚠️ Aspectos a Considerar
+### [WARNING] Aspectos a Considerar
 
 1. **Referencias cruzadas pendientes**
-   - 3 warnings de referencias a secciones no traducidas (3, 10)
-   - Se resolverán cuando se traduzcan
+ - 3 warnings de referencias a secciones no traducidas (3, 10)
+ - Se resolverán cuando se traduzcan
 
 2. **Enriquecimiento muy alto**
-   - Promedio +616% (vs +207% en Sección 10)
-   - Justificado por brevedad extrema de originales
-   - Tips son más guías prácticas que traducciones literales
+ - Promedio +616% (vs +207% en Sección 10)
+ - Justificado por brevedad extrema de originales
+ - Tips son más guías prácticas que traducciones literales
 
 ---
 
-## ✅ CONCLUSIÓN
+## [OK] CONCLUSIÓN
 
 **SECCIÓN 11 COMPLETADA AL 100%**
 
-- ✅ 9/9 archivos traducidos
-- ✅ 100% del contenido del original incluido
-- ✅ 0 omisiones detectadas
-- ✅ Compilación Sphinx exitosa
-- ✅ Workflow v1.7.2 aplicado correctamente
-- ✅ Verificación sistemática completada
+- [OK] 9/9 archivos traducidos
+- [OK] 100% del contenido del original incluido
+- [OK] 0 omisiones detectadas
+- [OK] Compilación Sphinx exitosa
+- [OK] Workflow v1.7.2 aplicado correctamente
+- [OK] Verificación sistemática completada
 
 **Próximos pasos:**
 - Continuar con siguiente sección
@@ -378,7 +378,7 @@ make html
 
 ---
 
-**Tiempo estimado de trabajo:** ~2.5 horas  
-**Workflow utilizado:** v1.7.2 (con PASO 0 y FASE 3.7)  
-**Compilador:** Sphinx 8.1.3  
+**Tiempo estimado de trabajo:** ~2.5 horas
+**Workflow utilizado:** v1.7.2 (con PASO 0 y FASE 3.7)
+**Compilador:** Sphinx 8.1.3
 **Fecha de finalización:** 2026-01-28

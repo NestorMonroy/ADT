@@ -10,16 +10,16 @@ Cheatsheets Disponibles
 ========================
 
 .. toctree::
-   :maxdepth: 2
+ :maxdepth: 2
 
-   cheatsheet_rst
+ cheatsheet_rst
 
 Próximos Cheatsheets
 =====================
 
-⏳ cheatsheet_sphinx.rst  
-⏳ cheatsheet_git.rst  
-⏳ comandos_utiles.rst
+[RUNNING] cheatsheet_sphinx.rst
+[RUNNING] cheatsheet_git.rst
+[RUNNING] comandos_utiles.rst
 
 .. note::
-   Mantén estos cheatsheets abiertos durante el trabajo para consulta rápida.
+ Mantén estos cheatsheets abiertos durante el trabajo para consulta rápida.

@@ -7,8 +7,8 @@ Apéndices
 Material de referencia y complementario del proyecto ADT.
 
 .. contents:: Contenido
-   :depth: 2
-   :local:
+ :depth: 2
+ :local:
 
 ----
 
@@ -16,9 +16,9 @@ Apéndices Disponibles
 =====================
 
 .. toctree::
-   :maxdepth: 2
+ :maxdepth: 2
 
-   glosario_adt
+ glosario_adt
 
 ----
 
@@ -48,33 +48,33 @@ Apéndices Planeados
 
 .. code-block:: text
 
-   ⏳ Historial de cambios del proyecto ADT
-   ⏳ Changelog completo
-   ⏳ Evolución de las matrices de decisión
+ [RUNNING] Historial de cambios del proyecto ADT
+ [RUNNING] Changelog completo
+ [RUNNING] Evolución de las matrices de decisión
 
 **C. Contribuidores**
 
 .. code-block:: text
 
-   ⏳ Lista de contribuidores al proyecto
-   ⏳ Créditos y reconocimientos
-   ⏳ Comunidad ADT
+ [RUNNING] Lista de contribuidores al proyecto
+ [RUNNING] Créditos y reconocimientos
+ [RUNNING] Comunidad ADT
 
 **D. Licencia**
 
 .. code-block:: text
 
-   ⏳ Información de licencia del proyecto
-   ⏳ Términos de uso
-   ⏳ Atribuciones
+ [RUNNING] Información de licencia del proyecto
+ [RUNNING] Términos de uso
+ [RUNNING] Atribuciones
 
 **E. Roadmap**
 
 .. code-block:: text
 
-   ⏳ Planes futuros del proyecto
-   ⏳ Features planeados
-   ⏳ Mejoras propuestas
+ [RUNNING] Planes futuros del proyecto
+ [RUNNING] Features planeados
+ [RUNNING] Mejoras propuestas
 
 ----
 
@@ -111,9 +111,9 @@ Los apéndices complementan:
 ----
 
 .. seealso::
-   * :doc:`../01_fundamentos/glosario_traduccion` - Glosario original de traducción
-   * :doc:`../07_guias_uso/faq` - Preguntas frecuentes
-   * :doc:`../09_referencias/index` - Referencias y recursos
+ * :doc:`../01_fundamentos/glosario_traduccion` - Glosario original de traducción
+ * :doc:`../07_guias_uso/faq` - Preguntas frecuentes
+ * :doc:`../09_referencias/index` - Referencias y recursos
 
 .. note::
-   Los apéndices se expanden según necesidades del proyecto. Contribuciones bienvenidas.
+ Los apéndices se expanden según necesidades del proyecto. Contribuciones bienvenidas.

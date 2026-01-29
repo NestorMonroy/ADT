@@ -17,79 +17,79 @@ Tabla de Evaluación
 ===================
 
 .. list-table:: Evaluación de Escenarios de Calidad
-   :header-rows: 1
-   :widths: 20 25 30 25
-   
-   * - **Objetivo de Calidad**
-     - **Escenario**
-     - **Enfoque de Solución**
-     - **Riesgo**
-   * - *<Q-goal 1>*
-     - *<Texto>*
-     - *<Texto>*
-     - *<risk-1>*
-   * - *<Q-goal 2>*
-     - *<Texto>*
-     - *<Texto>*
-     - *<risk-2>*
+ :header-rows: 1
+ :widths: 20 25 30 25
+
+ * - **Objetivo de Calidad**
+ - **Escenario**
+ - **Enfoque de Solución**
+ - **Riesgo**
+ * - *<Q-goal 1>*
+ - *<Texto>*
+ - *<Texto>*
+ - *<risk-1>*
+ * - *<Q-goal 2>*
+ - *<Texto>*
+ - *<Texto>*
+ - *<risk-2>*
 
 ----
 
 **Método de Evaluación Paso a Paso:**
 
 1. **Identificar escenarios críticos**
-   
-   * Selecciona los 5-10 **escenarios de calidad** más importantes
-   * Prioriza por riesgo de negocio e impacto técnico
+
+ * Selecciona los 5-10 **escenarios de calidad** más importantes
+ * Prioriza por riesgo de negocio e impacto técnico
 
 2. **Documentar enfoque de solución actual**
-   
-   * ¿Cómo la arquitectura actual aborda cada escenario?
-   * ¿Qué patrones/tecnologías/decisiones se usan?
+
+ * ¿Cómo la arquitectura actual aborda cada escenario?
+ * ¿Qué patrones/tecnologías/decisiones se usan?
 
 3. **Identificar riesgos**
-   
-   * ¿Qué podría fallar?
-   * ¿Qué suposiciones son críticas?
-   * ¿Qué no está probado/validado?
+
+ * ¿Qué podría fallar?
+ * ¿Qué suposiciones son críticas?
+ * ¿Qué no está probado/validado?
 
 4. **Evaluar completitud**
-   
-   * ¿Todos los escenarios importantes tienen solución?
-   * ¿Hay escenarios en conflicto?
-   * ¿Hay gaps en la arquitectura?
+
+ * ¿Todos los escenarios importantes tienen solución?
+ * ¿Hay escenarios en conflicto?
+ * ¿Hay gaps en la arquitectura?
 
 Ejemplo Completo
 ================
 
 .. list-table:: Ejemplo de Evaluación - Sistema de e-Commerce
-   :header-rows: 1
-   :widths: 20 25 30 25
-   
-   * - **Objetivo de Calidad**
-     - **Escenario**
-     - **Enfoque de Solución**
-     - **Riesgo**
-   * - **Performance**
-     - Búsqueda de productos <200ms para 95% de requests
-     - ElasticSearch con cache Redis, CDN para imágenes
-     - Alta: Tamaño del índice crece 10x anualmente
-   * - **Escalabilidad**
-     - Soportar 10,000 usuarios concurrentes durante Black Friday
-     - Kubernetes auto-scaling, load balancer, DB read replicas
-     - Medio: Costos de cloud pueden ser muy altos
-   * - **Seguridad**
-     - Proteger datos de tarjetas de crédito (PCI DSS)
-     - Tokenización con Stripe, sin almacenar datos de tarjeta
-     - Bajo: Dependencia de proveedor externo
-   * - **Disponibilidad**
-     - 99.9% uptime (8h downtime/año)
-     - Multi-region deployment, health checks, automated failover
-     - Medio: Complejidad de sincronización entre regiones
-   * - **Mantenibilidad**
-     - Desplegar nuevo feature en <2h
-     - CI/CD pipeline, feature flags, blue-green deployment
-     - Bajo: Requiere disciplina de equipo
+ :header-rows: 1
+ :widths: 20 25 30 25
+
+ * - **Objetivo de Calidad**
+ - **Escenario**
+ - **Enfoque de Solución**
+ - **Riesgo**
+ * - **Performance**
+ - Búsqueda de productos <200ms para 95% de requests
+ - ElasticSearch con cache Redis, CDN para imágenes
+ - Alta: Tamaño del índice crece 10x anualmente
+ * - **Escalabilidad**
+ - Soportar 10,000 usuarios concurrentes durante Black Friday
+ - Kubernetes auto-scaling, load balancer, DB read replicas
+ - Medio: Costos de cloud pueden ser muy altos
+ * - **Seguridad**
+ - Proteger datos de tarjetas de crédito (PCI DSS)
+ - Tokenización con Stripe, sin almacenar datos de tarjeta
+ - Bajo: Dependencia de proveedor externo
+ * - **Disponibilidad**
+ - 99.9% uptime (8h downtime/año)
+ - Multi-region deployment, health checks, automated failover
+ - Medio: Complejidad de sincronización entre regiones
+ * - **Mantenibilidad**
+ - Desplegar nuevo feature en <2h
+ - CI/CD pipeline, feature flags, blue-green deployment
+ - Bajo: Requiere disciplina de equipo
 
 ----
 
@@ -109,10 +109,10 @@ El método ATAM del SEI usa **escenarios de calidad** como mecanismo central:
 
 **Beneficios:**
 
-* ✅ Identificación temprana de **riesgos** arquitectónicos
-* ✅ Evaluación de **trade-offs** entre objetivos de calidad
-* ✅ Validación de **decisiones arquitectónicas**
-* ✅ Consenso entre **stakeholders**
+* [OK] Identificación temprana de **riesgos** arquitectónicos
+* [OK] Evaluación de **trade-offs** entre objetivos de calidad
+* [OK] Validación de **decisiones arquitectónicas**
+* [OK] Consenso entre **stakeholders**
 
 ----
 
@@ -121,21 +121,21 @@ El método ATAM del SEI usa **escenarios de calidad** como mecanismo central:
 Para análisis más profundo, considera agregar estas columnas:
 
 .. list-table:: Template Extendido
-   :header-rows: 1
-   :widths: 15 20 20 15 15 15
-   
-   * - **Q-Goal**
-     - **Escenario**
-     - **Solución**
-     - **Riesgo**
-     - **Trade-off**
-     - **Sensibilidad**
-   * - Performance
-     - <200ms búsqueda
-     - Cache + índice
-     - Sincronización
-     - Consistencia eventual
-     - Alta: +10% carga = fallo
+ :header-rows: 1
+ :widths: 15 20 20 15 15 15
+
+ * - **Q-Goal**
+ - **Escenario**
+ - **Solución**
+ - **Riesgo**
+ - **Trade-off**
+ - **Sensibilidad**
+ * - Performance
+ - <200ms búsqueda
+ - Cache + índice
+ - Sincronización
+ - Consistencia eventual
+ - Alta: +10% carga = fallo
 
 **Columnas adicionales explicadas:**
 
@@ -157,8 +157,8 @@ Al completar esta evaluación, deberías poder:
 ----
 
 .. seealso::
-   * **Tip 4-2** - Enfoque de solución como tabla
-   * **Tip 10-1** - Mantener objetivos de calidad cortos
-   * **Sección 9** - Decisiones de Arquitectura
-   * **Sección 11** - Riesgos y Deuda Técnica
-   * **Método ATAM** - https://www.sei.cmu.edu/architecture/tools/evaluate/atam.cfm
+ * **Tip 4-2** - Enfoque de solución como tabla
+ * **Tip 10-1** - Mantener objetivos de calidad cortos
+ * **Sección 9** - Decisiones de Arquitectura
+ * **Sección 11** - Riesgos y Deuda Técnica
+ * **Método ATAM** - https://www.sei.cmu.edu/architecture/tools/evaluate/atam.cfm

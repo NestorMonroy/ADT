@@ -16,21 +16,21 @@ Encontrarás un ejemplo a continuación. Por favor nota el pequeño signo "+" en
 Nos gusta incluir referencias a **escenarios** específicos en el árbol; en el ejemplo a continuación, los **objetivos de calidad** principales, por ejemplo **Performance**, **usability**, **correctness** y otros.
 
 .. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/figuras/10-quality-tree-mindmap-example.png
-   :alt: Mind-map como quality tree
-   :align: center
-   :width: 90%
-   
-   Mind-map como quality tree - ejemplo práctico
+ :alt: Mind-map como quality tree
+ :align: center
+ :width: 90%
+
+ Mind-map como quality tree - ejemplo práctico
 
 ----
 
 **Ventajas de Mind-Maps:**
 
-* ✅ **Estructura jerárquica** clara y visual
-* ✅ **Referencias cruzadas** entre diferentes partes
-* ✅ **Información oculta/expandible** (signo "+")
-* ✅ **Más amigable** para el lector que tablas largas
-* ✅ **Fácil de actualizar** con herramientas especializadas
+* [OK] **Estructura jerárquica** clara y visual
+* [OK] **Referencias cruzadas** entre diferentes partes
+* [OK] **Información oculta/expandible** (signo "+")
+* [OK] **Más amigable** para el lector que tablas largas
+* [OK] **Fácil de actualizar** con herramientas especializadas
 
 **Cuándo Usar Mind-Maps:**
 
@@ -50,6 +50,6 @@ Nos gusta incluir referencias a **escenarios** específicos en el árbol; en el 
 ----
 
 .. seealso::
-   * **Tip 10-2** - Quality tree (deprecado, usar tabla simple)
-   * **Tip 10-4** - Usar quality tree como checklist
-   * **Sección 10.1** - Resumen de Requisitos de Calidad
+ * **Tip 10-2** - Quality tree (deprecado, usar tabla simple)
+ * **Tip 10-4** - Usar quality tree como checklist
+ * **Sección 10.1** - Resumen de Requisitos de Calidad

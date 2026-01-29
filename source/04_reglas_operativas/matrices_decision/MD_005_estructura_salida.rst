@@ -11,8 +11,8 @@ MD-005: Estructura de Salida
 :Impacto: Medio (afecta mantenibilidad a largo plazo)
 
 .. contents:: Contenido
-   :depth: 2
-   :local:
+ :depth: 2
+ :local:
 
 ----
 
@@ -39,24 +39,24 @@ Estructura 1: Plana
 
 .. code-block:: text
 
-   proyecto/
-   ├─ conf.py
-   ├─ index.rst
-   ├─ capitulo_01.rst
-   ├─ capitulo_02.rst
-   ├─ capitulo_03.rst
-   ├─ anexo_a.rst
-   └─ referencias.rst
+ proyecto/
+ +- conf.py
+ +- index.rst
+ +- capitulo_01.rst
+ +- capitulo_02.rst
+ +- capitulo_03.rst
+ +- anexo_a.rst
+ +- referencias.rst
 
 **Ventajas:**
-- ✅ Muy simple
-- ✅ Fácil de configurar
-- ✅ Búsqueda rápida de archivos
+- [OK] Muy simple
+- [OK] Fácil de configurar
+- [OK] Búsqueda rápida de archivos
 
 **Desventajas:**
-- ❌ Difícil escalar (>20 archivos)
-- ❌ Sin agrupación lógica
-- ❌ Confuso para proyectos grandes
+- [ERROR] Difícil escalar (>20 archivos)
+- [ERROR] Sin agrupación lógica
+- [ERROR] Confuso para proyectos grandes
 
 **Cuándo usar:**
 - Proyectos pequeños (< 20 archivos)
@@ -70,34 +70,34 @@ Estructura 2: Por Temas
 
 .. code-block:: text
 
-   proyecto/
-   ├─ conf.py
-   ├─ index.rst
-   ├─ introduccion/
-   │  ├─ index.rst
-   │  ├─ que_es.rst
-   │  └─ requisitos.rst
-   ├─ instalacion/
-   │  ├─ index.rst
-   │  ├─ linux.rst
-   │  └─ windows.rst
-   ├─ uso/
-   │  ├─ index.rst
-   │  ├─ basico.rst
-   │  └─ avanzado.rst
-   └─ referencia/
-      ├─ index.rst
-      └─ api.rst
+ proyecto/
+ +- conf.py
+ +- index.rst
+ +- introduccion/
+ | +- index.rst
+ | +- que_es.rst
+ | +- requisitos.rst
+ +- instalacion/
+ | +- index.rst
+ | +- linux.rst
+ | +- windows.rst
+ +- uso/
+ | +- index.rst
+ | +- basico.rst
+ | +- avanzado.rst
+ +- referencia/
+ +- index.rst
+ +- api.rst
 
 **Ventajas:**
-- ✅ Organización lógica
-- ✅ Escala bien (hasta 100+ archivos)
-- ✅ Fácil navegar
-- ✅ Clara para colaboradores
+- [OK] Organización lógica
+- [OK] Escala bien (hasta 100+ archivos)
+- [OK] Fácil navegar
+- [OK] Clara para colaboradores
 
 **Desventajas:**
-- ⚠️ Requiere planificación inicial
-- ⚠️ Múltiples niveles de índices
+- [WARNING] Requiere planificación inicial
+- [WARNING] Múltiples niveles de índices
 
 **Cuándo usar:**
 - **Mayoría de proyectos**
@@ -111,32 +111,32 @@ Estructura 3: Numerada
 
 .. code-block:: text
 
-   proyecto/
-   ├─ conf.py
-   ├─ index.rst
-   ├─ 01_fundamentos/
-   │  ├─ index.rst
-   │  ├─ conceptos.rst
-   │  └─ principios.rst
-   ├─ 02_instalacion/
-   │  ├─ index.rst
-   │  └─ pasos.rst
-   ├─ 03_uso/
-   │  ├─ index.rst
-   │  ├─ basico.rst
-   │  └─ avanzado.rst
-   └─ 04_referencia/
-      ├─ index.rst
-      └─ api.rst
+ proyecto/
+ +- conf.py
+ +- index.rst
+ +- 01_fundamentos/
+ | +- index.rst
+ | +- conceptos.rst
+ | +- principios.rst
+ +- 02_instalacion/
+ | +- index.rst
+ | +- pasos.rst
+ +- 03_uso/
+ | +- index.rst
+ | +- basico.rst
+ | +- avanzado.rst
+ +- 04_referencia/
+ +- index.rst
+ +- api.rst
 
 **Ventajas:**
-- ✅ Orden explícito garantizado
-- ✅ Fácil añadir entre secciones (01.5_)
-- ✅ Clara secuencia de lectura
+- [OK] Orden explícito garantizado
+- [OK] Fácil añadir entre secciones (01.5_)
+- [OK] Clara secuencia de lectura
 
 **Desventajas:**
-- ⚠️ Renombrar si cambia orden
-- ⚠️ Números en URLs
+- [WARNING] Renombrar si cambia orden
+- [WARNING] Números en URLs
 
 **Cuándo usar:**
 - Libros técnicos (orden importante)
@@ -152,61 +152,61 @@ Por Tamaño del Proyecto
 -----------------------
 
 .. list-table::
-   :header-rows: 1
-   :widths: 30 25 25 20
+ :header-rows: 1
+ :widths: 30 25 25 20
 
-   * - **Archivos**
-     - **Plana**
-     - **Por Temas**
-     - **Numerada**
-   * - < 10
-     - ✅ Óptimo
-     - ⚠️ Excesivo
-     - ⚠️ Excesivo
-   * - 10-50
-     - ⚠️ Aceptable
-     - ✅ Óptimo
-     - ✅ Óptimo
-   * - 50-100
-     - ❌ Difícil
-     - ✅ Óptimo
-     - ✅ Óptimo
-   * - > 100
-     - ❌ Inmanejable
-     - ✅ Recomendado
-     - ⚠️ Posible
+ * - **Archivos**
+ - **Plana**
+ - **Por Temas**
+ - **Numerada**
+ * - < 10
+ - [OK] Óptimo
+ - [WARNING] Excesivo
+ - [WARNING] Excesivo
+ * - 10-50
+ - [WARNING] Aceptable
+ - [OK] Óptimo
+ - [OK] Óptimo
+ * - 50-100
+ - [ERROR] Difícil
+ - [OK] Óptimo
+ - [OK] Óptimo
+ * - > 100
+ - [ERROR] Inmanejable
+ - [OK] Recomendado
+ - [WARNING] Posible
 
 Por Tipo de Contenido
 ----------------------
 
 .. list-table::
-   :header-rows: 1
-   :widths: 35 25 25 15
+ :header-rows: 1
+ :widths: 35 25 25 15
 
-   * - **Tipo**
-     - **Plana**
-     - **Por Temas**
-     - **Numerada**
-   * - README simple
-     - ✅ Ideal
-     - ❌ Excesivo
-     - ❌ Excesivo
-   * - Documentación API
-     - ❌ Difícil
-     - ✅ Ideal
-     - ⚠️ Posible
-   * - Manual de usuario
-     - ⚠️ Posible
-     - ✅ Ideal
-     - ✅ Ideal
-   * - Libro técnico
-     - ❌ No viable
-     - ✅ Bueno
-     - ✅ Ideal
-   * - Tutorial paso a paso
-     - ⚠️ Posible
-     - ✅ Bueno
-     - ✅ Ideal
+ * - **Tipo**
+ - **Plana**
+ - **Por Temas**
+ - **Numerada**
+ * - README simple
+ - [OK] Ideal
+ - [ERROR] Excesivo
+ - [ERROR] Excesivo
+ * - Documentación API
+ - [ERROR] Difícil
+ - [OK] Ideal
+ - [WARNING] Posible
+ * - Manual de usuario
+ - [WARNING] Posible
+ - [OK] Ideal
+ - [OK] Ideal
+ * - Libro técnico
+ - [ERROR] No viable
+ - [OK] Bueno
+ - [OK] Ideal
+ * - Tutorial paso a paso
+ - [WARNING] Posible
+ - [OK] Bueno
+ - [OK] Ideal
 
 ----
 
@@ -220,25 +220,25 @@ Para Directorios
 
 .. code-block:: text
 
-   ✅ Minúsculas
-   ✅ Guiones bajos (snake_case)
-   ✅ Nombres descriptivos
-   ✅ Sin espacios
-   ✅ Sin caracteres especiales
+ [OK] Minúsculas
+ [OK] Guiones bajos (snake_case)
+ [OK] Nombres descriptivos
+ [OK] Sin espacios
+ [OK] Sin caracteres especiales
 
 **Ejemplos:**
 
 .. code-block:: text
 
-   ✅ introduccion/
-   ✅ guia_usuario/
-   ✅ api_referencia/
-   ✅ 01_fundamentos/
-   
-   ❌ Introducción/
-   ❌ Guía Usuario/
-   ❌ API-Referencia/
-   ❌ 01.Fundamentos/
+ [OK] introduccion/
+ [OK] guia_usuario/
+ [OK] api_referencia/
+ [OK] 01_fundamentos/
+
+ [ERROR] Introducción/
+ [ERROR] Guía Usuario/
+ [ERROR] API-Referencia/
+ [ERROR] 01.Fundamentos/
 
 Para Archivos
 -------------
@@ -247,24 +247,24 @@ Para Archivos
 
 .. code-block:: text
 
-   ✅ Minúsculas
-   ✅ Guiones bajos
-   ✅ Extensión .rst
-   ✅ Nombres descriptivos cortos
+ [OK] Minúsculas
+ [OK] Guiones bajos
+ [OK] Extensión .rst
+ [OK] Nombres descriptivos cortos
 
 **Ejemplos:**
 
 .. code-block:: text
 
-   ✅ introduccion.rst
-   ✅ instalacion_linux.rst
-   ✅ api_referencia.rst
-   ✅ faq.rst
-   
-   ❌ Introducción.rst
-   ❌ Instalación Linux.rst
-   ❌ API-Referencia.rst
-   ❌ FAQ.RST
+ [OK] introduccion.rst
+ [OK] instalacion_linux.rst
+ [OK] api_referencia.rst
+ [OK] faq.rst
+
+ [ERROR] Introducción.rst
+ [ERROR] Instalación Linux.rst
+ [ERROR] API-Referencia.rst
+ [ERROR] FAQ.RST
 
 ----
 
@@ -276,42 +276,42 @@ Para Proyecto ADT
 
 .. code-block:: text
 
-   ADT/
-   ├─ source/
-   │  ├─ conf.py
-   │  ├─ index.rst
-   │  ├─ 01_fundamentos/
-   │  │  ├─ index.rst
-   │  │  └─ ...
-   │  ├─ 02_procedimientos/
-   │  │  ├─ index.rst
-   │  │  └─ ...
-   │  ├─ 03_estandares/
-   │  │  ├─ index.rst
-   │  │  ├─ calidad/
-   │  │  │  └─ ...
-   │  │  └─ terminologia/
-   │  │     └─ ...
-   │  ├─ 04_reglas_operativas/
-   │  │  ├─ index.rst
-   │  │  └─ matrices_decision/
-   │  │     └─ ...
-   │  ├─ 05_herramientas_medios/
-   │  │  ├─ index.rst
-   │  │  └─ equivalencias/
-   │  │     └─ ...
-   │  ├─ 06_casos_practicos/
-   │  │  ├─ index.rst
-   │  │  ├─ antes_despues/
-   │  │  └─ errores_comunes/
-   │  ├─ 07_guias_uso/
-   │  │  ├─ index.rst
-   │  │  └─ ...
-   │  ├─ 08_prompts/
-   │  ├─ 09_referencias/
-   │  └─ 10_apendices/
-   ├─ build/
-   └─ Makefile
+ ADT/
+ +- source/
+ | +- conf.py
+ | +- index.rst
+ | +- 01_fundamentos/
+ | | +- index.rst
+ | | +- ...
+ | +- 02_procedimientos/
+ | | +- index.rst
+ | | +- ...
+ | +- 03_estandares/
+ | | +- index.rst
+ | | +- calidad/
+ | | | +- ...
+ | | +- terminologia/
+ | | +- ...
+ | +- 04_reglas_operativas/
+ | | +- index.rst
+ | | +- matrices_decision/
+ | | +- ...
+ | +- 05_herramientas_medios/
+ | | +- index.rst
+ | | +- equivalencias/
+ | | +- ...
+ | +- 06_casos_practicos/
+ | | +- index.rst
+ | | +- antes_despues/
+ | | +- errores_comunes/
+ | +- 07_guias_uso/
+ | | +- index.rst
+ | | +- ...
+ | +- 08_prompts/
+ | +- 09_referencias/
+ | +- 10_apendices/
+ +- build/
+ +- Makefile
 
 **Razones:**
 - Numeración para orden claro
@@ -331,14 +331,14 @@ _static/
 
 .. code-block:: text
 
-   source/_static/
-   ├─ css/
-   │  └─ custom.css
-   ├─ js/
-   │  └─ custom.js
-   └─ images/
-      ├─ logo.png
-      └─ diagrams/
+ source/_static/
+ +- css/
+ | +- custom.css
+ +- js/
+ | +- custom.js
+ +- images/
+ +- logo.png
+ +- diagrams/
 
 _templates/
 -----------
@@ -347,9 +347,9 @@ _templates/
 
 .. code-block:: text
 
-   source/_templates/
-   ├─ layout.html
-   └─ page.html
+ source/_templates/
+ +- layout.html
+ +- page.html
 
 images/
 -------
@@ -358,12 +358,12 @@ images/
 
 .. code-block:: text
 
-   source/images/
-   ├─ arquitectura/
-   │  ├─ diagrama_01.png
-   │  └─ diagrama_02.png
-   └─ capturas/
-      └─ screenshot_01.png
+ source/images/
+ +- arquitectura/
+ | +- diagrama_01.png
+ | +- diagrama_02.png
+ +- capturas/
+ +- screenshot_01.png
 
 ----
 
@@ -375,40 +375,40 @@ Al Inicio del Proyecto
 
 .. code-block:: text
 
-   ☐ Decidí estructura (plana/temas/numerada)
-   ☐ Creé directorio raíz
-   ☐ Configuré conf.py
-   ☐ Creé index.rst principal
-   ☐ Creé subdirectorios necesarios
-   ☐ Establecí convención de nombres
-   ☐ Documenté estructura para equipo
+ [ ] Decidí estructura (plana/temas/numerada)
+ [ ] Creé directorio raíz
+ [ ] Configuré conf.py
+ [ ] Creé index.rst principal
+ [ ] Creé subdirectorios necesarios
+ [ ] Establecí convención de nombres
+ [ ] Documenté estructura para equipo
 
 Durante el Proyecto
 --------------------
 
 .. code-block:: text
 
-   ☐ Mantengo consistencia de nombres
-   ☐ Nuevos directorios siguen convención
-   ☐ Índices actualizados (toctrees)
-   ☐ Sin archivos huérfanos
+ [ ] Mantengo consistencia de nombres
+ [ ] Nuevos directorios siguen convención
+ [ ] Índices actualizados (toctrees)
+ [ ] Sin archivos huérfanos
 
 Al Finalizar
 ------------
 
 .. code-block:: text
 
-   ☐ Estructura clara y lógica
-   ☐ Fácil navegar
-   ☐ Sin directorios vacíos
-   ☐ Documentación de estructura actualizada
+ [ ] Estructura clara y lógica
+ [ ] Fácil navegar
+ [ ] Sin directorios vacíos
+ [ ] Documentación de estructura actualizada
 
 ----
 
 .. seealso::
-   * :doc:`MD_003_nivel_segmentacion` - Nivel de segmentación
-   * :doc:`../../02_procedimientos/workflow_general` - Workflow general
-   * :doc:`../../07_guias_uso/guia_rapida` - Guía rápida
+ * :doc:`MD_003_nivel_segmentacion` - Nivel de segmentación
+ * :doc:`../../02_procedimientos/workflow_general` - Workflow general
+ * :doc:`../../07_guias_uso/guia_rapida` - Guía rápida
 
 .. note::
-   Esta matriz refleja las mejores prácticas de proyectos Sphinx. Adapta según necesidades específicas.
+ Esta matriz refleja las mejores prácticas de proyectos Sphinx. Adapta según necesidades específicas.

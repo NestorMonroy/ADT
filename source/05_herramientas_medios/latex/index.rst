@@ -4,7 +4,7 @@
 Herramientas LaTeX
 ===============================================
 
-⏳ **Subsección en desarrollo**
+[RUNNING] **Subsección en desarrollo**
 
 Contenido Planificado
 ======================

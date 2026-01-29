@@ -4,7 +4,7 @@
 Casos de Uso Específicos
 ===============================================
 
-⏳ **Subsección en desarrollo**
+[RUNNING] **Subsección en desarrollo**
 
 Esta subsección contendrá guías para casos de uso específicos.
 
@@ -18,4 +18,4 @@ Contenido Planificado
 ----
 
 .. note::
-   Esta subsección será desarrollada en fases posteriores según necesidad.
+ Esta subsección será desarrollada en fases posteriores según necesidad.

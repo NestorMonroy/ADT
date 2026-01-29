@@ -4,7 +4,7 @@
 Restricciones y Limitaciones
 ===============================================
 
-⏳ **Sección en desarrollo**
+[RUNNING] **Sección en desarrollo**
 
 Esta subsección contendrá restricciones conocidas y limitaciones técnicas.
 
@@ -17,4 +17,4 @@ Contenido Planificado
 ----
 
 .. note::
-   Esta subsección será desarrollada en Fase 2.
+ Esta subsección será desarrollada en Fase 2.

@@ -5,13 +5,13 @@
 =====================================
 
 .. note::
-   **Plantilla arc42 - Traducción Arquitectónica (Paso 3.4)**
-   
-   Términos clave:
-   * Level 3 → Nivel 3
-   * White box → Caja blanca
-   * Building block → Bloque de construcción
-   * Additional levels → Niveles adicionales
+ **Plantilla arc42 - Traducción Arquitectónica (Paso 3.4)**
+
+ Términos clave:
+ * Level 3 -> Nivel 3
+ * White box -> Caja blanca
+ * Building block -> Bloque de construcción
+ * Additional levels -> Niveles adicionales
 
 ----
 
@@ -26,27 +26,27 @@ Plantilla Nivel 3
 
 .. code-block:: text
 
-   5.3 Nivel 3
-   ===========
-   
-   5.3.1 Caja Blanca <bloque de construcción x.1>
-   -----------------------------------------------
-   
-   Especifica la estructura interna de _bloque de construcción x.1_.
-   
-   _<inserta plantilla de caja blanca del bloque de construcción x.1>_
-   
-   
-   5.3.2 Caja Blanca <bloque de construcción x.2>
-   -----------------------------------------------
-   
-   _<inserta plantilla de caja blanca del bloque de construcción x.2>_
-   
-   
-   5.3.3 Caja Blanca <bloque de construcción y.1>
-   -----------------------------------------------
-   
-   _<inserta plantilla de caja blanca del bloque de construcción y.1>_
+ 5.3 Nivel 3
+ ===========
+
+ 5.3.1 Caja Blanca <bloque de construcción x.1>
+ -----------------------------------------------
+
+ Especifica la estructura interna de _bloque de construcción x.1_.
+
+ _<inserta plantilla de caja blanca del bloque de construcción x.1>_
+
+
+ 5.3.2 Caja Blanca <bloque de construcción x.2>
+ -----------------------------------------------
+
+ _<inserta plantilla de caja blanca del bloque de construcción x.2>_
+
+
+ 5.3.3 Caja Blanca <bloque de construcción y.1>
+ -----------------------------------------------
+
+ _<inserta plantilla de caja blanca del bloque de construcción y.1>_
 
 ----
 
@@ -108,16 +108,16 @@ Guía de Profundidad
 ===================
 
 **Nivel 1:** Sistema completo (obligatorio)
-  Visión general del sistema como **caja blanca** con sus **bloques de construcción** principales como **cajas negras**.
+ Visión general del sistema como **caja blanca** con sus **bloques de construcción** principales como **cajas negras**.
 
 **Nivel 2:** Descomposición de bloques importantes (recomendado)
-  **Estructura interna** de **bloques de construcción** críticos o complejos del nivel 1.
+ **Estructura interna** de **bloques de construcción** críticos o complejos del nivel 1.
 
 **Nivel 3:** Detalles adicionales (opcional)
-  **Descomposición** de **bloques de construcción** del nivel 2 cuando sea necesario.
+ **Descomposición** de **bloques de construcción** del nivel 2 cuando sea necesario.
 
 **Nivel 4+:** Casos especiales (raro)
-  Solo cuando sea absolutamente necesario para sistemas muy complejos.
+ Solo cuando sea absolutamente necesario para sistemas muy complejos.
 
 ----
 

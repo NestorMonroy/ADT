@@ -1,192 +1,192 @@
-╔══════════════════════════════════════════════════════════════════╗
-║                                                                  ║
-║        PLAN DE TRADUCCIÓN - SECCIÓN 06 RUNTIME VIEW            ║
-║                                                                  ║
-║                    Workflow v1.7.1                              ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
++==================================================================+
+| |
+| PLAN DE TRADUCCIÓN - SECCIÓN 06 RUNTIME VIEW |
+| |
+| Workflow v1.7.1 |
+| |
++==================================================================+
 
 FECHA: 2026-01-27
 SECCIÓN: 06 - Runtime View (Vista de Tiempo de Ejecución)
 WORKFLOW: v1.7.1 (con Paso 3.5 Enriquecimiento Opcional)
 MÉTODO: Peshitta + Paso 3.4
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-FASE 1: PREPARACIÓN ✅ COMPLETADA
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FASE 1: PREPARACIÓN [OK] COMPLETADA
+
 
 INVENTARIO DE ARCHIVOS:
-  Total: 15 archivos .md en original/
-  
-  Categoría 1: PLANTILLAS Y PRINCIPAL (1 archivo)
-    • README.md - Información de la sección
-  
-  Categoría 2: TIPS (11 archivos)
-    • 2016-03-01-t-6-1.md  - Tip 6-1
-    • 2016-03-01-t-6-2.md  - Tip 6-2
-    • 2016-03-01-t-6-3.md  - Tip 6-3
-    • 2016-03-01-t-6-4.md  - Tip 6-4
-    • 2016-03-01-t-6-5.md  - Tip 6-5
-    • 2016-03-01-t-6-6.md  - Tip 6-6
-    • 2016-03-01-t-6-7.md  - Tip 6-7
-    • 2016-03-01-t-6-8.md  - Tip 6-8
-    • 2016-03-01-t-6-9.md  - Tip 6-9
-    • 2016-03-02-t-6-10.md - Tip 6-10
-    • 2016-03-02-t-6-11.md - Tip 6-11
-  
-  Categoría 3: EJEMPLOS (3 archivos)
-    • 06-runtime-example-htmlsc-1.md - HTML Sanity Checker
-    • 06-runtime-example-mama-2.md   - MAMA CRM System
-    • 06-runtime-example-tpu-1.md    - Traffic Pursuit Unit
+ Total: 15 archivos .md en original/
+
+ Categoría 1: PLANTILLAS Y PRINCIPAL (1 archivo)
+ • README.md - Información de la sección
+
+ Categoría 2: TIPS (11 archivos)
+ • 2016-03-01-t-6-1.md - Tip 6-1
+ • 2016-03-01-t-6-2.md - Tip 6-2
+ • 2016-03-01-t-6-3.md - Tip 6-3
+ • 2016-03-01-t-6-4.md - Tip 6-4
+ • 2016-03-01-t-6-5.md - Tip 6-5
+ • 2016-03-01-t-6-6.md - Tip 6-6
+ • 2016-03-01-t-6-7.md - Tip 6-7
+ • 2016-03-01-t-6-8.md - Tip 6-8
+ • 2016-03-01-t-6-9.md - Tip 6-9
+ • 2016-03-02-t-6-10.md - Tip 6-10
+ • 2016-03-02-t-6-11.md - Tip 6-11
+
+ Categoría 3: EJEMPLOS (3 archivos)
+ • 06-runtime-example-htmlsc-1.md - HTML Sanity Checker
+ • 06-runtime-example-mama-2.md - MAMA CRM System
+ • 06-runtime-example-tpu-1.md - Traffic Pursuit Unit
 
 ESTRUCTURA DE SALIDA:
-  traduccion/
-    ├── seccion_06_vista_runtime.rst         (principal con toctree)
-    ├── runtime_tip_1.rst                     (Tips 1-11)
-    ├── runtime_tip_2.rst
-    ├── ...
-    ├── runtime_tip_11.rst
-    ├── runtime_ejemplo_htmlsc.rst            (Ejemplos)
-    ├── runtime_ejemplo_mama.rst
-    └── runtime_ejemplo_tpu.rst
+ traduccion/
+ +-- seccion_06_vista_runtime.rst (principal con toctree)
+ +-- runtime_tip_1.rst (Tips 1-11)
+ +-- runtime_tip_2.rst
+ +-- ...
+ +-- runtime_tip_11.rst
+ +-- runtime_ejemplo_htmlsc.rst (Ejemplos)
+ +-- runtime_ejemplo_mama.rst
+ +-- runtime_ejemplo_tpu.rst
 
 TOTAL ARCHIVOS A CREAR: 15 archivos .rst
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-FASE 2: ANÁLISIS ESTRUCTURAL ✅ COMPLETADA
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FASE 2: ANÁLISIS ESTRUCTURAL [OK] COMPLETADA
+
 
 TERMINOLOGÍA CLAVE (Paso 3.4):
 
-INGLÉS                    → ESPAÑOL
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Runtime                   → Tiempo de ejecución
-Runtime view              → Vista de tiempo de ejecución
-Runtime scenario          → Escenario de tiempo de ejecución
-Building block            → Bloque de construcción
-Sequence diagram          → Diagrama de secuencia
-Activity diagram          → Diagrama de actividad
-Flowchart                 → Diagrama de flujo
-Swimlane                  → Carril / Línea de responsabilidad
-Responsibility            → Responsabilidad
-Instance                  → Instancia
-Interaction               → Interacción
-Component                 → Componente
-Interface                 → Interfaz
-Message                   → Mensaje
-Collaboration             → Colaboración
-Use case                  → Caso de uso
-Deployment                → Despliegue
-Execution                 → Ejecución
-Process                   → Proceso
-Thread                    → Hilo (de ejecución)
-State                     → Estado
-Transition                → Transición
-Event                     → Evento
+INGLÉS -> ESPAÑOL
+
+Runtime -> Tiempo de ejecución
+Runtime view -> Vista de tiempo de ejecución
+Runtime scenario -> Escenario de tiempo de ejecución
+Building block -> Bloque de construcción
+Sequence diagram -> Diagrama de secuencia
+Activity diagram -> Diagrama de actividad
+Flowchart -> Diagrama de flujo
+Swimlane -> Carril / Línea de responsabilidad
+Responsibility -> Responsabilidad
+Instance -> Instancia
+Interaction -> Interacción
+Component -> Componente
+Interface -> Interfaz
+Message -> Mensaje
+Collaboration -> Colaboración
+Use case -> Caso de uso
+Deployment -> Despliegue
+Execution -> Ejecución
+Process -> Proceso
+Thread -> Hilo (de ejecución)
+State -> Estado
+Transition -> Transición
+Event -> Evento
 
 ELEMENTOS ESPECIALES:
-  • Diagramas UML mencionados
-  • Referencias a Sección 05 (Building Blocks)
-  • Ejemplos de código
-  • Imágenes de diagramas
+ • Diagramas UML mencionados
+ • Referencias a Sección 05 (Building Blocks)
+ • Ejemplos de código
+ • Imágenes de diagramas
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 FASE 3: TRADUCCIÓN INICIAL
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 
 ESTRATEGIA DE LOTES (según complejidad):
 
 LOTE 1: ARCHIVO PRINCIPAL (1 archivo)
-  • seccion_06_vista_runtime.rst
-  Tiempo estimado: 30 min
+ • seccion_06_vista_runtime.rst
+ Tiempo estimado: 30 min
 
 LOTE 2: TIPS FUNDAMENTALES 1-5 (5 archivos)
-  • runtime_tip_1.rst - Mapear bloques a actividades
-  • runtime_tip_2.rst - TBD
-  • runtime_tip_3.rst - TBD
-  • runtime_tip_4.rst - TBD
-  • runtime_tip_5.rst - TBD
-  Tiempo estimado: 2 horas
+ • runtime_tip_1.rst - Mapear bloques a actividades
+ • runtime_tip_2.rst - TBD
+ • runtime_tip_3.rst - TBD
+ • runtime_tip_4.rst - TBD
+ • runtime_tip_5.rst - TBD
+ Tiempo estimado: 2 horas
 
 LOTE 3: TIPS INTERMEDIOS 6-10 (5 archivos)
-  • runtime_tip_6.rst - TBD
-  • runtime_tip_7.rst - TBD
-  • runtime_tip_8.rst - TBD
-  • runtime_tip_9.rst - TBD
-  • runtime_tip_10.rst - TBD
-  Tiempo estimado: 2 horas
+ • runtime_tip_6.rst - TBD
+ • runtime_tip_7.rst - TBD
+ • runtime_tip_8.rst - TBD
+ • runtime_tip_9.rst - TBD
+ • runtime_tip_10.rst - TBD
+ Tiempo estimado: 2 horas
 
 LOTE 4: TIP FINAL (1 archivo)
-  • runtime_tip_11.rst - Diagramas de secuencia
-  Tiempo estimado: 30 min
+ • runtime_tip_11.rst - Diagramas de secuencia
+ Tiempo estimado: 30 min
 
 LOTE 5: EJEMPLOS (3 archivos)
-  • runtime_ejemplo_htmlsc.rst
-  • runtime_ejemplo_mama.rst
-  • runtime_ejemplo_tpu.rst
-  Tiempo estimado: 1.5 horas
+ • runtime_ejemplo_htmlsc.rst
+ • runtime_ejemplo_mama.rst
+ • runtime_ejemplo_tpu.rst
+ Tiempo estimado: 1.5 horas
 
 TIEMPO TOTAL ESTIMADO: 6.5 horas
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 APLICACIÓN DE WORKFLOW v1.7.1
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 
 PRINCIPIO FUNDAMENTAL:
-  1º → Traducir TODO el original (COMPLETO)
-  2º → Aplicar terminología consistente (Paso 3.4)
-  3º → OPCIONALMENTE agregar contenido MARCADO (Paso 3.5)
+ 1º -> Traducir TODO el original (COMPLETO)
+ 2º -> Aplicar terminología consistente (Paso 3.4)
+ 3º -> OPCIONALMENTE agregar contenido MARCADO (Paso 3.5)
 
 PASOS POR ARCHIVO:
-  1. Leer TODO el archivo original
-  2. Traducir TODO el contenido palabra por palabra
-  3. Aplicar Paso 3.4 (terminología arquitectónica)
-  4. EVALUAR si Paso 3.5 aplica (enriquecimiento opcional)
-  5. Formato RST y referencias
+ 1. Leer TODO el archivo original
+ 2. Traducir TODO el contenido palabra por palabra
+ 3. Aplicar Paso 3.4 (terminología arquitectónica)
+ 4. EVALUAR si Paso 3.5 aplica (enriquecimiento opcional)
+ 5. Formato RST y referencias
 
 CRITERIOS PARA PASO 3.5 (Enriquecimiento):
-  ✅ SÍ agregar si:
-     • Diagrama PlantUML ayuda visualizar escenario
-     • Tabla comparativa de tipos de diagramas
-     • Ejemplo de código muestra implementación
-  ❌ NO agregar si:
-     • Ya está claro en el original
-     • Es opinión personal
-     • No aporta valor real
+ [OK] SÍ agregar si:
+ • Diagrama PlantUML ayuda visualizar escenario
+ • Tabla comparativa de tipos de diagramas
+ • Ejemplo de código muestra implementación
+ [ERROR] NO agregar si:
+ • Ya está claro en el original
+ • Es opinión personal
+ • No aporta valor real
 
 FORMATO OBLIGATORIO SI SE AGREGA:
-  .. note::
-     **Contenido complementario en español**
-     
-     [Contenido agregado]
+ .. note::
+ **Contenido complementario en español**
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ [Contenido agregado]
+
+
 CHECKLIST POR LOTE
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 
 ANTES DE COMPLETAR CADA LOTE:
-  [ ] TODO el contenido original traducido (verificar líneas)
-  [ ] Paso 3.4 aplicado (términos en **negritas**)
-  [ ] Paso 3.5 evaluado y aplicado (si corresponde)
-  [ ] Contenido agregado MARCADO con .. note::
-  [ ] Referencias cruzadas funcionan
-  [ ] Formato RST correcto
-  [ ] Archivos compilan sin errores
+ [ ] TODO el contenido original traducido (verificar líneas)
+ [ ] Paso 3.4 aplicado (términos en **negritas**)
+ [ ] Paso 3.5 evaluado y aplicado (si corresponde)
+ [ ] Contenido agregado MARCADO con .. note::
+ [ ] Referencias cruzadas funcionan
+ [ ] Formato RST correcto
+ [ ] Archivos compilan sin errores
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 PROGRESO
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 
 ESTADO: LOTE 2 COMPLETADO
 LOTE ACTUAL: Lote 3 (próximo)
 ARCHIVOS COMPLETADOS: 6/15 (40%)
 
 COMPLETADOS:
-  ✅ LOTE 1: Archivo Principal (1 archivo)
-  ✅ LOTE 2: Tips 1-5 (5 archivos)
+ [OK] LOTE 1: Archivo Principal (1 archivo)
+ [OK] LOTE 2: Tips 1-5 (5 archivos)
 
 PENDIENTES:
-  ⏳ LOTE 3: Tips 6-10 (5 archivos)
-  ⏳ LOTE 4: Tip 11 (1 archivo)
-  ⏳ LOTE 5: Ejemplos (3 archivos)
+ [RUNNING] LOTE 3: Tips 6-10 (5 archivos)
+ [RUNNING] LOTE 4: Tip 11 (1 archivo)
+ [RUNNING] LOTE 5: Ejemplos (3 archivos)
 

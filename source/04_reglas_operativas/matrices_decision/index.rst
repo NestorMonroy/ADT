@@ -7,7 +7,7 @@ Matrices de Decisión
 Las **matrices de decisión** proveen guía objetiva para decisiones frecuentes durante traducción.
 
 **Base empírica:**
-   Basadas en decisiones reales tomadas durante traducción de arc42 (196 archivos).
+ Basadas en decisiones reales tomadas durante traducción de arc42 (196 archivos).
 
 ----
 
@@ -15,14 +15,14 @@ Matrices Disponibles
 ====================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Matrices de Decisión
+ :maxdepth: 2
+ :caption: Matrices de Decisión
 
-   MD_001_modo_1_vs_modo_2
-   MD_002_cuando_enriquecer
-   MD_003_nivel_segmentacion
-   MD_004_traducir_vs_conservar
-   MD_005_estructura_salida
+ MD_001_modo_1_vs_modo_2
+ MD_002_cuando_enriquecer
+ MD_003_nivel_segmentacion
+ MD_004_traducir_vs_conservar
+ MD_005_estructura_salida
 
 ----
 
@@ -48,9 +48,9 @@ Próximas Matrices Planeadas
 
 .. code-block:: text
 
-   ⏳ MD-001: Modo 1 vs Modo 2 (cuándo usar cada modo)
-   ⏳ MD-003: Nivel de segmentación (qué granularidad usar)
-   ⏳ MD-005: Estructura de salida (cómo organizar archivos)
+ [RUNNING] MD-001: Modo 1 vs Modo 2 (cuándo usar cada modo)
+ [RUNNING] MD-003: Nivel de segmentación (qué granularidad usar)
+ [RUNNING] MD-005: Estructura de salida (cómo organizar archivos)
 
 ----
 
@@ -64,4 +64,4 @@ Relación con Otras Secciones
 ----
 
 .. note::
-   Las matrices evolucionan con cada proyecto. Versión actual basada en arc42 (2026-01-28).
+ Las matrices evolucionan con cada proyecto. Versión actual basada en arc42 (2026-01-28).

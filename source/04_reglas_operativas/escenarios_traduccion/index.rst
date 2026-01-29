@@ -4,7 +4,7 @@
 Escenarios de Traducción
 ===============================================
 
-⏳ **Subsección en desarrollo**
+[RUNNING] **Subsección en desarrollo**
 
 Esta subsección contendrá guías para escenarios específicos de traducción.
 
@@ -19,4 +19,4 @@ Contenido Planificado
 ----
 
 .. note::
-   Esta subsección será desarrollada en Fase 2.
+ Esta subsección será desarrollada en Fase 2.

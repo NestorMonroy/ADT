@@ -1,328 +1,328 @@
-╔══════════════════════════════════════════════════════════════════════════╗
-║   FASE 2: ANÁLISIS ESTRUCTURAL - Sección 02_constraints                 ║
-║   VERSIÓN ACTUALIZADA - Contenido completo (6 archivos)                 ║
-╚══════════════════════════════════════════════════════════════════════════╝
++==========================================================================+
+| FASE 2: ANÁLISIS ESTRUCTURAL - Sección 02_constraints |
+| VERSIÓN ACTUALIZADA - Contenido completo (6 archivos) |
++==========================================================================+
 
-📋 INFORMACIÓN
-═══════════════════════════════════════════════════════════════════════════
+[LIST] INFORMACIÓN
+===========================================================================
 
 Sección: 02_constraints
 Fecha análisis: 2026-01-27 (ACTUALIZADO)
 Herramienta: analizar_seccion.py v1.0 + redistribuir_arc42_CORRECTO.sh
-Estado: ✅ FASE 2 COMPLETADA CON CONTENIDO CORRECTO
+Estado: [OK] FASE 2 COMPLETADA CON CONTENIDO CORRECTO
 
 CORRECCIÓN APLICADA:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
-❌ ANTES: 2 archivos (distribución incorrecta)
-✅ AHORA: 6 archivos (distribución corregida usando _posts/02-constraints/)
+[ERROR] ANTES: 2 archivos (distribución incorrecta)
+[OK] AHORA: 6 archivos (distribución corregida usando _posts/02-constraints/)
 
-═══════════════════════════════════════════════════════════════════════════
+===========================================================================
 
-✅ PASO 2.1: IDENTIFICAR JERARQUÍA Y UBICACIÓN
-═══════════════════════════════════════════════════════════════════════════
+[OK] PASO 2.1: IDENTIFICAR JERARQUÍA Y UBICACIÓN
+===========================================================================
 
 ARCHIVOS ENCONTRADOS (6 archivos de contenido):
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
-1. 02-constraint-example-1.md         ⭐ EJEMPLO
-2. 2016-03-01-t-2-1.md                ⭐ TIP 2-1
-3. 2016-03-01-t-2-2.md                ⭐ TIP 2-2
-4. 2016-03-01-t-2-3.md                ⭐ TIP 2-3
-5. 2016-03-01-t-2-4.md                ⭐ TIP 2-4
-6. 2016-03-01-t-2-5.md                ⭐ TIP 2-5
-7. README.md                          (info distribución)
+1. 02-constraint-example-1.md [STAR] EJEMPLO
+2. 2016-03-01-t-2-1.md [STAR] TIP 2-1
+3. 2016-03-01-t-2-2.md [STAR] TIP 2-2
+4. 2016-03-01-t-2-3.md [STAR] TIP 2-3
+5. 2016-03-01-t-2-4.md [STAR] TIP 2-4
+6. 2016-03-01-t-2-5.md [STAR] TIP 2-5
+7. README.md (info distribución)
 
 Total líneas: 128
 Total palabras: 419
 
 ESTRUCTURA IDENTIFICADA:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 La sección se compone de DOS tipos de contenido:
 
 A) EJEMPLO (1 archivo)
-   Muestra CÓMO documentar restricciones con un caso real
+ Muestra CÓMO documentar restricciones con un caso real
 
 B) TIPS (5 archivos)
-   Consejos prácticos sobre restricciones
+ Consejos prácticos sobre restricciones
 
-═══════════════════════════════════════════════════════════════════════════
+===========================================================================
 
-📄 EJEMPLO: 02-constraint-example-1.md
-═══════════════════════════════════════════════════════════════════════════
+FILE: EJEMPLO: 02-constraint-example-1.md
+===========================================================================
 
 METADATOS:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 Front Matter:
-   - title: "Example Constraints: HTML Sanity Checker"
-   - tags: constraints example
-   - category: constraints ✅
-   - permalink: /examples/constraints-1/
+ - title: "Example Constraints: HTML Sanity Checker"
+ - tags: constraints example
+ - category: constraints [OK]
+ - permalink: /examples/constraints-1/
 
 CONTENIDO:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 Estructura:
-   <div class="arc42-example">
-      Mensaje introductorio
-   </div>
-   
-   ## 2. Constraints for HTML Sanity Checker
-   
-   Lista de restricciones:
-   * platform-independent (Windows, Linux, Mac)
-   * integrated with Gradle build tool
-   * runnable from command line
-   * developed under liberal open-source license
+ <div class="arc42-example">
+ Mensaje introductorio
+ </div>
+
+ ## 2. Constraints for HTML Sanity Checker
+
+ Lista de restricciones:
+ * platform-independent (Windows, Linux, Mac)
+ * integrated with Gradle build tool
+ * runnable from command line
+ * developed under liberal open-source license
 
 Estadísticas:
-   - Líneas: 26
-   - Palabras: 77
-   - Headings: 1 (nivel 2)
-   - Listas: 4 items bullet
-   - DIVs HTML: 1 (clase arc42-example)
+ - Líneas: 26
+ - Palabras: 77
+ - Headings: 1 (nivel 2)
+ - Listas: 4 items bullet
+ - DIVs HTML: 1 (clase arc42-example)
 
 Elementos especiales:
-   - ✅ DIV HTML → convertir a .. note::
-   - ✅ Lista bullet → mantener en RST
-   - ✅ Heading nivel 2 → convertir a sección RST
+ - [OK] DIV HTML -> convertir a .. note::
+ - [OK] Lista bullet -> mantener en RST
+ - [OK] Heading nivel 2 -> convertir a sección RST
 
 PROPÓSITO:
-   Mostrar un EJEMPLO CONCRETO de cómo documentar restricciones
-   de forma simple y clara.
+ Mostrar un EJEMPLO CONCRETO de cómo documentar restricciones
+ de forma simple y clara.
 
-═══════════════════════════════════════════════════════════════════════════
+===========================================================================
 
-📝 TIP 2-1: Consider constraints of other systems
-═══════════════════════════════════════════════════════════════════════════
+[NOTE] TIP 2-1: Consider constraints of other systems
+===========================================================================
 
 METADATOS:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 Front Matter:
-   - title: "Tip 2-1: Consider the constraints of other systems within 
-             the organization!"
-   - tags: constraint
-   - category: constraints ✅
+ - title: "Tip 2-1: Consider the constraints of other systems within
+ the organization!"
+ - tags: constraint
+ - category: constraints [OK]
 
 CONTENIDO:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 Texto completo:
-   "If you don't know any constraints of your system, start looking at 
-    other systems within the organization."
+ "If you don't know any constraints of your system, start looking at
+ other systems within the organization."
 
 Estadísticas:
-   - Líneas: 11
-   - Palabras: 39
-   - Muy breve, directo al punto
+ - Líneas: 11
+ - Palabras: 39
+ - Muy breve, directo al punto
 
 PROPÓSITO:
-   Consejo: Buscar restricciones mirando otros sistemas de la organización.
+ Consejo: Buscar restricciones mirando otros sistemas de la organización.
 
 TRADUCCIÓN PROPUESTA:
-   "Si no conoces restricciones de tu sistema, empieza mirando otros
-    sistemas dentro de la organización."
+ "Si no conoces restricciones de tu sistema, empieza mirando otros
+ sistemas dentro de la organización."
 
-═══════════════════════════════════════════════════════════════════════════
+===========================================================================
 
-📝 TIP 2-2: Clarify consequences of constraints
-═══════════════════════════════════════════════════════════════════════════
+[NOTE] TIP 2-2: Clarify consequences of constraints
+===========================================================================
 
 METADATOS:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 Front Matter:
-   - title: "Tip 2-2: Clarify the consequences of constraints!"
-   - tags: constraint stakeholder
-   - category: constraints ✅
+ - title: "Tip 2-2: Clarify the consequences of constraints!"
+ - tags: constraint stakeholder
+ - category: constraints [OK]
 
 CONTENIDO:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 Texto completo:
-   "You should clarify the *consequences* of constraints, e.g. resulting
-    (additional) costs or effort.
-    
-    If constraints bring *unreasonable* consequences (e.g., can only be 
-    satisfied with excessively high costs), you should negotiate about 
-    them with the relevant stakeholders."
+ "You should clarify the *consequences* of constraints, e.g. resulting
+ (additional) costs or effort.
+
+ If constraints bring *unreasonable* consequences (e.g., can only be
+ satisfied with excessively high costs), you should negotiate about
+ them with the relevant stakeholders."
 
 Estadísticas:
-   - Líneas: 15
-   - Palabras: 55
-   - Énfasis con *asteriscos* (italic)
+ - Líneas: 15
+ - Palabras: 55
+ - Énfasis con *asteriscos* (italic)
 
 Elementos especiales:
-   - *consequences* → énfasis (italic)
-   - *unreasonable* → énfasis (italic)
+ - *consequences* -> énfasis (italic)
+ - *unreasonable* -> énfasis (italic)
 
 PROPÓSITO:
-   Consejo: Aclarar consecuencias de restricciones y negociar si son
-   irrazonables.
+ Consejo: Aclarar consecuencias de restricciones y negociar si son
+ irrazonables.
 
 TRADUCCIÓN PROPUESTA:
-   "Debes aclarar las *consecuencias* de las restricciones, por ejemplo,
-    costos o esfuerzo adicional resultante.
-    
-    Si las restricciones traen consecuencias *irrazonables* (ej., solo se
-    pueden satisfacer con costos excesivamente altos), debes negociarlas
-    con las partes interesadas relevantes."
+ "Debes aclarar las *consecuencias* de las restricciones, por ejemplo,
+ costos o esfuerzo adicional resultante.
 
-═══════════════════════════════════════════════════════════════════════════
+ Si las restricciones traen consecuencias *irrazonables* (ej., solo se
+ pueden satisfacer con costos excesivamente altos), debes negociarlas
+ con las partes interesadas relevantes."
 
-📝 TIP 2-3: Document organizational constraints
-═══════════════════════════════════════════════════════════════════════════
+===========================================================================
+
+[NOTE] TIP 2-3: Document organizational constraints
+===========================================================================
 
 METADATOS:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 Front Matter:
-   - title: "Tip 2-3: Document organizational constraints!"
-   - tags: constraint
-   - category: constraints ✅
+ - title: "Tip 2-3: Document organizational constraints!"
+ - tags: constraint
+ - category: constraints [OK]
 
 CONTENIDO:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 Texto completo:
-   "Organizational constraints like time and budget are for good reason 
-    unpopular with development teams, because they limit the freedom of 
-    design or implementation decisions very strongly. Therefore disclose 
-    these types of constraints.
-    
-    Sometimes such constraints relate to development processes, third 
-    party contracting or legal concerns. Discuss them with your management.
-    
-    See also [tip 2-4 (technical constraints)](/tips/2-4)."
+ "Organizational constraints like time and budget are for good reason
+ unpopular with development teams, because they limit the freedom of
+ design or implementation decisions very strongly. Therefore disclose
+ these types of constraints.
+
+ Sometimes such constraints relate to development processes, third
+ party contracting or legal concerns. Discuss them with your management.
+
+ See also [tip 2-4 (technical constraints)](/tips/2-4)."
 
 Estadísticas:
-   - Líneas: 17
-   - Palabras: 72
-   - Múltiples párrafos
-   - 1 enlace interno
+ - Líneas: 17
+ - Palabras: 72
+ - Múltiples párrafos
+ - 1 enlace interno
 
 Elementos especiales:
-   - ✅ Enlace interno: [tip 2-4](/tips/2-4)
-   - ✅ Múltiples párrafos
+ - [OK] Enlace interno: [tip 2-4](/tips/2-4)
+ - [OK] Múltiples párrafos
 
 PROPÓSITO:
-   Consejo: Documentar restricciones organizacionales (tiempo, presupuesto,
-   procesos, contratos, legales).
+ Consejo: Documentar restricciones organizacionales (tiempo, presupuesto,
+ procesos, contratos, legales).
 
 TRADUCCIÓN PROPUESTA:
-   "Las restricciones organizacionales como tiempo y presupuesto son
-    impopulares (con razón) entre equipos de desarrollo, porque limitan
-    fuertemente la libertad de decisiones de diseño o implementación.
-    Por lo tanto, divulga estos tipos de restricciones.
-    
-    A veces estas restricciones se relacionan con procesos de desarrollo,
-    contratación de terceros o asuntos legales. Discútelas con tu gerencia.
-    
-    Ver también :ref:`tip-2-4` (restricciones técnicas)."
+ "Las restricciones organizacionales como tiempo y presupuesto son
+ impopulares (con razón) entre equipos de desarrollo, porque limitan
+ fuertemente la libertad de decisiones de diseño o implementación.
+ Por lo tanto, divulga estos tipos de restricciones.
 
-═══════════════════════════════════════════════════════════════════════════
+ A veces estas restricciones se relacionan con procesos de desarrollo,
+ contratación de terceros o asuntos legales. Discútelas con tu gerencia.
 
-📝 TIP 2-4: Document design and development constraints
-═══════════════════════════════════════════════════════════════════════════
+ Ver también :ref:`tip-2-4` (restricciones técnicas)."
+
+===========================================================================
+
+[NOTE] TIP 2-4: Document design and development constraints
+===========================================================================
 
 METADATOS:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 Front Matter:
-   - title: "Tip 2-4: Document design and development constraints!"
-   - tags: constraint
-   - category: constraints ✅
+ - title: "Tip 2-4: Document design and development constraints!"
+ - tags: constraint
+ - category: constraints [OK]
 
 CONTENIDO:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 Texto completo:
-   "In addition to the organisational constraints (see [tip 2-3](/tips/2-3)),
-    technical contraints will probably apply as well to the design and 
-    development of your system. That can be guidelines from the managements 
-    or the organisation itself regarding hardware, operations, technology 
-    selection, use of products, frameworks or reference architectures.
-    
-    Disclose such constraints so that the development team can adjust to 
-    them in time.
-    
-    See also [tip 2-3 (organizational constraints)](/tips/2-3)"
+ "In addition to the organisational constraints (see [tip 2-3](/tips/2-3)),
+ technical contraints will probably apply as well to the design and
+ development of your system. That can be guidelines from the managements
+ or the organisation itself regarding hardware, operations, technology
+ selection, use of products, frameworks or reference architectures.
+
+ Disclose such constraints so that the development team can adjust to
+ them in time.
+
+ See also [tip 2-3 (organizational constraints)](/tips/2-3)"
 
 Estadísticas:
-   - Líneas: 18
-   - Palabras: 85
-   - El tip más largo
-   - 2 enlaces internos
+ - Líneas: 18
+ - Palabras: 85
+ - El tip más largo
+ - 2 enlaces internos
 
 Elementos especiales:
-   - ✅ Enlace a tip 2-3 (mencionado 2 veces)
-   - ✅ Typo en original: "contraints" → debería ser "constraints"
+ - [OK] Enlace a tip 2-3 (mencionado 2 veces)
+ - [OK] Typo en original: "contraints" -> debería ser "constraints"
 
 PROPÓSITO:
-   Consejo: Documentar restricciones técnicas/de diseño (hardware, tecnología,
-   frameworks, arquitecturas de referencia).
+ Consejo: Documentar restricciones técnicas/de diseño (hardware, tecnología,
+ frameworks, arquitecturas de referencia).
 
 TRADUCCIÓN PROPUESTA:
-   "Además de las restricciones organizacionales (ver :ref:`tip-2-3`),
-    restricciones técnicas probablemente también apliquen al diseño y
-    desarrollo de tu sistema. Pueden ser lineamientos de la gerencia o
-    la organización misma respecto a hardware, operaciones, selección de
-    tecnología, uso de productos, frameworks o arquitecturas de referencia.
-    
-    Divulga estas restricciones para que el equipo de desarrollo pueda
-    ajustarse a ellas a tiempo.
-    
-    Ver también :ref:`tip-2-3` (restricciones organizacionales)"
+ "Además de las restricciones organizacionales (ver :ref:`tip-2-3`),
+ restricciones técnicas probablemente también apliquen al diseño y
+ desarrollo de tu sistema. Pueden ser lineamientos de la gerencia o
+ la organización misma respecto a hardware, operaciones, selección de
+ tecnología, uso de productos, frameworks o arquitecturas de referencia.
 
-═══════════════════════════════════════════════════════════════════════════
+ Divulga estas restricciones para que el equipo de desarrollo pueda
+ ajustarse a ellas a tiempo.
 
-📝 TIP 2-5: Differentiate categories of constraints
-═══════════════════════════════════════════════════════════════════════════
+ Ver también :ref:`tip-2-3` (restricciones organizacionales)"
+
+===========================================================================
+
+[NOTE] TIP 2-5: Differentiate categories of constraints
+===========================================================================
 
 METADATOS:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 Front Matter:
-   - title: "Tip 2-5: Differentiate different categories of constraints!"
-   - tags: constraint essential
-   - category: constraints ✅
+ - title: "Tip 2-5: Differentiate different categories of constraints!"
+ - tags: constraint essential
+ - category: constraints [OK]
 
 CONTENIDO:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 Texto completo:
-   "If necessary, differentiate between technical, organizational and 
-    political constraints or overlapping conventions (e.g., programming 
-    guidelines, documentation-, naming- or organisational conventions)."
+ "If necessary, differentiate between technical, organizational and
+ political constraints or overlapping conventions (e.g., programming
+ guidelines, documentation-, naming- or organisational conventions)."
 
 Estadísticas:
-   - Líneas: 12
-   - Palabras: 39
-   - Breve y directo
-   - Tag especial: "essential" ⭐
+ - Líneas: 12
+ - Palabras: 39
+ - Breve y directo
+ - Tag especial: "essential" [STAR]
 
 Elementos especiales:
-   - ✅ Tag "essential" → Tip importante/fundamental
+ - [OK] Tag "essential" -> Tip importante/fundamental
 
 PROPÓSITO:
-   Consejo: Diferenciar entre tipos de restricciones (técnicas,
-   organizacionales, políticas, convenciones).
+ Consejo: Diferenciar entre tipos de restricciones (técnicas,
+ organizacionales, políticas, convenciones).
 
 TRADUCCIÓN PROPUESTA:
-   "Si es necesario, diferencia entre restricciones técnicas, organizacionales
-    y políticas, o convenciones superpuestas (ej., lineamientos de programación,
-    convenciones de documentación, nomenclatura u organizacionales)."
+ "Si es necesario, diferencia entre restricciones técnicas, organizacionales
+ y políticas, o convenciones superpuestas (ej., lineamientos de programación,
+ convenciones de documentación, nomenclatura u organizacionales)."
 
-═══════════════════════════════════════════════════════════════════════════
+===========================================================================
 
-✅ PASO 2.2: MAPEAR ELEMENTOS ESPECIALES
-═══════════════════════════════════════════════════════════════════════════
+[OK] PASO 2.2: MAPEAR ELEMENTOS ESPECIALES
+===========================================================================
 
 ESTADÍSTICAS AGREGADAS:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 Total archivos: 6
 Total líneas: 128
@@ -330,348 +330,348 @@ Total palabras: 419
 Total headings: 5 (1 en ejemplo, 4 implícitos en títulos de tips)
 
 Elementos especiales encontrados:
-   - Imágenes:             0 ✅ (no hay)
-   - Tablas:               0 ✅ (no hay)
-   - Bloques de código:    0 ✅ (no hay en contenido)
-   - Enlaces externos:     0
-   - Enlaces internos:     3 (tip 2-3 ↔ tip 2-4, cross-references)
-   - DIVs HTML:            1 (en ejemplo)
-   - Listas bullet:        4 items (en ejemplo)
-   - Énfasis (italic):     2 palabras (*consequences*, *unreasonable*)
+ - Imágenes: 0 [OK] (no hay)
+ - Tablas: 0 [OK] (no hay)
+ - Bloques de código: 0 [OK] (no hay en contenido)
+ - Enlaces externos: 0
+ - Enlaces internos: 3 (tip 2-3 ↔ tip 2-4, cross-references)
+ - DIVs HTML: 1 (en ejemplo)
+ - Listas bullet: 4 items (en ejemplo)
+ - Énfasis (italic): 2 palabras (*consequences*, *unreasonable*)
 
 ELEMENTOS A CONVERTIR:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
-1. DIV HTML (arc42-example) → .. note::
-   ───────────────────────────────────────────────────────────────────
-   Original:
-      <div class="arc42-example">
-      <br>
-      Key constraints can often be explained as simple enumeration 
-      in plain text.
-      </div>
-   
-   RST:
-      .. note::
-         **Ejemplo arc42:**
-         
-         Las restricciones clave frecuentemente pueden explicarse como
-         una simple enumeración en texto plano.
+1. DIV HTML (arc42-example) -> .. note::
+ -------------------------------------------------------------------
+ Original:
+ <div class="arc42-example">
+ <br>
+ Key constraints can often be explained as simple enumeration
+ in plain text.
+ </div>
 
-2. Enlaces internos → :ref:
-   ───────────────────────────────────────────────────────────────────
-   Original:
-      [tip 2-3](/tips/2-3)
-      [tip 2-4 (technical constraints)](/tips/2-4)
-   
-   RST:
-      :ref:`tip-2-3`
-      :ref:`tip-2-4` (restricciones técnicas)
+ RST:
+ .. note::
+ **Ejemplo arc42:**
 
-3. Énfasis (italic) → *italic* en RST
-   ───────────────────────────────────────────────────────────────────
-   Original:
-      *consequences*
-      *unreasonable*
-   
-   RST:
-      *consecuencias*
-      *irrazonables*
+ Las restricciones clave frecuentemente pueden explicarse como
+ una simple enumeración en texto plano.
 
-4. Front Matter YAML → Ignorar
-   ───────────────────────────────────────────────────────────────────
-   No se incluye en RST traducido
-   Información útil ya está en el título/contenido
+2. Enlaces internos -> :ref:
+ -------------------------------------------------------------------
+ Original:
+ [tip 2-3](/tips/2-3)
+ [tip 2-4 (technical constraints)](/tips/2-4)
 
-5. Lista bullet → list en RST
-   ───────────────────────────────────────────────────────────────────
-   Mantener estructura, traducir contenido
+ RST:
+ :ref:`tip-2-3`
+ :ref:`tip-2-4` (restricciones técnicas)
+
+3. Énfasis (italic) -> *italic* en RST
+ -------------------------------------------------------------------
+ Original:
+ *consequences*
+ *unreasonable*
+
+ RST:
+ *consecuencias*
+ *irrazonables*
+
+4. Front Matter YAML -> Ignorar
+ -------------------------------------------------------------------
+ No se incluye en RST traducido
+ Información útil ya está en el título/contenido
+
+5. Lista bullet -> list en RST
+ -------------------------------------------------------------------
+ Mantener estructura, traducir contenido
 
 CONVERSIONES NO NECESARIAS:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
-✅ No hay imágenes que copiar
-✅ No hay tablas que convertir
-✅ No hay bloques de código
-✅ No hay enlaces externos que verificar
+[OK] No hay imágenes que copiar
+[OK] No hay tablas que convertir
+[OK] No hay bloques de código
+[OK] No hay enlaces externos que verificar
 
-═══════════════════════════════════════════════════════════════════════════
+===========================================================================
 
-✅ PASO 2.3: DETECTAR INCONSISTENCIAS
-═══════════════════════════════════════════════════════════════════════════
+[OK] PASO 2.3: DETECTAR INCONSISTENCIAS
+===========================================================================
 
 PROBLEMAS DETECTADOS:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
-✅ PROBLEMA 1: Typo en original (RESUELTO)
-   Archivo: 2016-03-01-t-2-4.md
-   Issue: "contraints" → debería ser "constraints"
-   Línea: "technical contraints will probably apply"
-   Solución: Corregir en traducción → "restricciones técnicas"
-   Impacto: Menor, no afecta comprensión
+[OK] PROBLEMA 1: Typo en original (RESUELTO)
+ Archivo: 2016-03-01-t-2-4.md
+ Issue: "contraints" -> debería ser "constraints"
+ Línea: "technical contraints will probably apply"
+ Solución: Corregir en traducción -> "restricciones técnicas"
+ Impacto: Menor, no afecta comprensión
 
-✅ PROBLEMA 2: Referencias circulares (DOCUMENTADO)
-   Tip 2-3 → referencia a tip 2-4
-   Tip 2-4 → referencia a tip 2-3
-   Issue: Referencias cruzadas bidireccionales
-   Solución: Usar :ref: en RST para mantener vínculos
-   Impacto: Ninguno, es intencional (tips complementarios)
+[OK] PROBLEMA 2: Referencias circulares (DOCUMENTADO)
+ Tip 2-3 -> referencia a tip 2-4
+ Tip 2-4 -> referencia a tip 2-3
+ Issue: Referencias cruzadas bidireccionales
+ Solución: Usar :ref: en RST para mantener vínculos
+ Impacto: Ninguno, es intencional (tips complementarios)
 
 NO HAY PROBLEMAS:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
-✅ Todos los archivos tienen category: constraints (correctos)
-✅ No hay enlaces rotos
-✅ Numeración consistente (tip 2-1 al 2-5)
-✅ Estructura clara y coherente
+[OK] Todos los archivos tienen category: constraints (correctos)
+[OK] No hay enlaces rotos
+[OK] Numeración consistente (tip 2-1 al 2-5)
+[OK] Estructura clara y coherente
 
-═══════════════════════════════════════════════════════════════════════════
+===========================================================================
 
-📊 RESUMEN FASE 2 - ACTUALIZADO
-═══════════════════════════════════════════════════════════════════════════
+[TABLE] RESUMEN FASE 2 - ACTUALIZADO
+===========================================================================
 
 COMPLEJIDAD:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
-Nivel: ⭐⭐ BAJA-MEDIA
+Nivel: [STAR][STAR] BAJA-MEDIA
 
 Razones BAJA complejidad:
-   ✅ No hay imágenes, tablas, código complejo
-   ✅ Texto mayormente simple y directo
-   ✅ Estructura muy clara
-   ✅ Sin diagramas
+ [OK] No hay imágenes, tablas, código complejo
+ [OK] Texto mayormente simple y directo
+ [OK] Estructura muy clara
+ [OK] Sin diagramas
 
 Razones MEDIA complejidad:
-   ⚠️ 6 archivos (no solo 1)
-   ⚠️ Referencias cruzadas entre tips
-   ⚠️ Necesita organización coherente en RST
-   ⚠️ Múltiples tipos de contenido (ejemplo + tips)
+ [WARNING] 6 archivos (no solo 1)
+ [WARNING] Referencias cruzadas entre tips
+ [WARNING] Necesita organización coherente en RST
+ [WARNING] Múltiples tipos de contenido (ejemplo + tips)
 
 TIEMPO ESTIMADO TRADUCCIÓN (FASE 3):
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 Según workflow: 20-40 min por sección
 
 Para esta sección específica:
-   Estimado: 35-45 min (6 archivos)
-   
-   Desglose:
-   - Crear estructura RST: 5 min
-   - Traducir ejemplo: 10 min
-   - Traducir 5 tips: 20 min (4 min c/u)
-   - Convertir referencias cruzadas: 5 min
-   - Ajustar formato final: 5 min
+ Estimado: 35-45 min (6 archivos)
+
+ Desglose:
+ - Crear estructura RST: 5 min
+ - Traducir ejemplo: 10 min
+ - Traducir 5 tips: 20 min (4 min c/u)
+ - Convertir referencias cruzadas: 5 min
+ - Ajustar formato final: 5 min
 
 CONTENIDO PARA FASE 3:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 Archivos a crear en traduccion/:
 
 1. index.rst (o restricciones.rst)
-   ───────────────────────────────────────────────────────────────────
-   Sección principal que incluye:
-   - Introducción a restricciones
-   - Ejemplo
-   - Tips 2-1 al 2-5
-   
-   O ALTERNATIVAMENTE:
-   
-   - index.rst (introducción)
-   - ejemplo_restricciones.rst
-   - tips_restricciones.rst
+ -------------------------------------------------------------------
+ Sección principal que incluye:
+ - Introducción a restricciones
+ - Ejemplo
+ - Tips 2-1 al 2-5
+
+ O ALTERNATIVAMENTE:
+
+ - index.rst (introducción)
+ - ejemplo_restricciones.rst
+ - tips_restricciones.rst
 
 2. glosario_seccion.rst
-   ───────────────────────────────────────────────────────────────────
-   Términos clave de esta sección
+ -------------------------------------------------------------------
+ Términos clave de esta sección
 
 3. notas_traduccion.rst
-   ───────────────────────────────────────────────────────────────────
-   Decisiones tomadas durante traducción
+ -------------------------------------------------------------------
+ Decisiones tomadas durante traducción
 
 TERMINOLOGÍA CLAVE:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 Para glosario_seccion.rst:
 
 Términos técnicos:
-   - Constraint / Restricción
-   - Organizational constraints / Restricciones organizacionales
-   - Technical constraints / Restricciones técnicas
-   - Political constraints / Restricciones políticas
-   - Stakeholder / Parte interesada (o mantener Stakeholder)
-   - Design decisions / Decisiones de diseño
-   - Implementation decisions / Decisiones de implementación
-   - Development team / Equipo de desarrollo
-   - Reference architecture / Arquitectura de referencia
-   - Framework / Framework (mantener en inglés)
-   - Build tool / Herramienta de construcción
-   - Command line / Línea de comandos
-   - Open-source license / Licencia open-source
-   - Platform-independent / Independiente de plataforma
+ - Constraint / Restricción
+ - Organizational constraints / Restricciones organizacionales
+ - Technical constraints / Restricciones técnicas
+ - Political constraints / Restricciones políticas
+ - Stakeholder / Parte interesada (o mantener Stakeholder)
+ - Design decisions / Decisiones de diseño
+ - Implementation decisions / Decisiones de implementación
+ - Development team / Equipo de desarrollo
+ - Reference architecture / Arquitectura de referencia
+ - Framework / Framework (mantener en inglés)
+ - Build tool / Herramienta de construcción
+ - Command line / Línea de comandos
+ - Open-source license / Licencia open-source
+ - Platform-independent / Independiente de plataforma
 
 Conceptos importantes:
-   - Consequences of constraints / Consecuencias de restricciones
-   - Freedom of design / Libertad de diseño
-   - Third party contracting / Contratación de terceros
-   - Legal concerns / Asuntos legales
-   - Programming guidelines / Lineamientos de programación
-   - Documentation conventions / Convenciones de documentación
-   - Naming conventions / Convenciones de nomenclatura
+ - Consequences of constraints / Consecuencias de restricciones
+ - Freedom of design / Libertad de diseño
+ - Third party contracting / Contratación de terceros
+ - Legal concerns / Asuntos legales
+ - Programming guidelines / Lineamientos de programación
+ - Documentation conventions / Convenciones de documentación
+ - Naming conventions / Convenciones de nomenclatura
 
-═══════════════════════════════════════════════════════════════════════════
+===========================================================================
 
-✅ DECISIONES TOMADAS
-═══════════════════════════════════════════════════════════════════════════
+[OK] DECISIONES TOMADAS
+===========================================================================
 
 1. ESTRUCTURA RST - OPCIÓN A (Recomendada):
-   ───────────────────────────────────────────────────────────────────
-   Un solo archivo: restricciones.rst
-   
-   Contenido:
-   .. _sec-02-restricciones:
-   
-   ====================================
-   2. Restricciones (Constraints)
-   ====================================
-   
-   [Introducción breve]
-   
-   Ejemplo: HTML Sanity Checker
-   =============================
-   
-   [Ejemplo traducido]
-   
-   Consejos sobre Restricciones
-   =============================
-   
-   .. _tip-2-1:
-   
-   Tip 2-1: Considera restricciones de otros sistemas
-   ---------------------------------------------------
-   
-   [contenido]
-   
-   .. _tip-2-2:
-   
-   Tip 2-2: Aclara las consecuencias de las restricciones
-   -------------------------------------------------------
-   
-   [contenido]
-   
-   [Y así con todos los tips...]
+ -------------------------------------------------------------------
+ Un solo archivo: restricciones.rst
+
+ Contenido:
+ .. _sec-02-restricciones:
+
+ ====================================
+ 2. Restricciones (Constraints)
+ ====================================
+
+ [Introducción breve]
+
+ Ejemplo: HTML Sanity Checker
+ =============================
+
+ [Ejemplo traducido]
+
+ Consejos sobre Restricciones
+ =============================
+
+ .. _tip-2-1:
+
+ Tip 2-1: Considera restricciones de otros sistemas
+ ---------------------------------------------------
+
+ [contenido]
+
+ .. _tip-2-2:
+
+ Tip 2-2: Aclara las consecuencias de las restricciones
+ -------------------------------------------------------
+
+ [contenido]
+
+ [Y así con todos los tips...]
 
 2. ESTRUCTURA RST - OPCIÓN B:
-   ───────────────────────────────────────────────────────────────────
-   Múltiples archivos separados:
-   - index.rst (introducción + toctree)
-   - ejemplo_restricciones.rst
-   - tips/tip_2_1.rst
-   - tips/tip_2_2.rst
-   - tips/tip_2_3.rst
-   - tips/tip_2_4.rst
-   - tips/tip_2_5.rst
+ -------------------------------------------------------------------
+ Múltiples archivos separados:
+ - index.rst (introducción + toctree)
+ - ejemplo_restricciones.rst
+ - tips/tip_2_1.rst
+ - tips/tip_2_2.rst
+ - tips/tip_2_3.rst
+ - tips/tip_2_4.rst
+ - tips/tip_2_5.rst
 
-   DECISIÓN: NO usar esta opción
-   Razón: Demasiado fragmentado para contenido tan breve
+ DECISIÓN: NO usar esta opción
+ Razón: Demasiado fragmentado para contenido tan breve
 
 3. REFERENCIAS CRUZADAS:
-   ───────────────────────────────────────────────────────────────────
-   Usar etiquetas :ref: de Sphinx
-   
-   Ejemplo:
-   .. _tip-2-3:
-   
-   Entonces referenciar como:
-   Ver también :ref:`tip-2-3`
+ -------------------------------------------------------------------
+ Usar etiquetas :ref: de Sphinx
+
+ Ejemplo:
+ .. _tip-2-3:
+
+ Entonces referenciar como:
+ Ver también :ref:`tip-2-3`
 
 4. TERMINOLOGÍA:
-   ───────────────────────────────────────────────────────────────────
-   - Constraint → "Restricción" (traducido)
-   - Stakeholder → "Parte interesada" o mantener "Stakeholder"
-     (decidir consistentemente)
-   - Framework → "Framework" (mantener en inglés, término estándar)
-   - Build tool → "Herramienta de construcción"
-   - Open-source → "open-source" (mantener, término universal)
+ -------------------------------------------------------------------
+ - Constraint -> "Restricción" (traducido)
+ - Stakeholder -> "Parte interesada" o mantener "Stakeholder"
+ (decidir consistentemente)
+ - Framework -> "Framework" (mantener en inglés, término estándar)
+ - Build tool -> "Herramienta de construcción"
+ - Open-source -> "open-source" (mantener, término universal)
 
 5. TYPO EN ORIGINAL:
-   ───────────────────────────────────────────────────────────────────
-   "contraints" → Corregir a "restricciones" en traducción
-   NO documentar como error (muy menor)
+ -------------------------------------------------------------------
+ "contraints" -> Corregir a "restricciones" en traducción
+ NO documentar como error (muy menor)
 
 6. DIV HTML:
-   ───────────────────────────────────────────────────────────────────
-   Convertir a:
-   .. note::
-      **Ejemplo arc42:**
-      
-      [contenido]
+ -------------------------------------------------------------------
+ Convertir a:
+ .. note::
+ **Ejemplo arc42:**
+
+ [contenido]
 
 7. ÉNFASIS:
-   ───────────────────────────────────────────────────────────────────
-   Mantener énfasis en palabras clave
-   *consequences* → *consecuencias*
-   *unreasonable* → *irrazonables*
+ -------------------------------------------------------------------
+ Mantener énfasis en palabras clave
+ *consequences* -> *consecuencias*
+ *unreasonable* -> *irrazonables*
 
-═══════════════════════════════════════════════════════════════════════════
+===========================================================================
 
-📁 ARCHIVOS GENERADOS
-═══════════════════════════════════════════════════════════════════════════
+DIRECTORY: ARCHIVOS GENERADOS
+===========================================================================
 
-✅ analisis_seccion.json (ACTUALIZADO)
-   Ubicación: sections/02_constraints/analisis_seccion.json
-   Contenido: Análisis completo de 6 archivos
+[OK] analisis_seccion.json (ACTUALIZADO)
+ Ubicación: sections/02_constraints/analisis_seccion.json
+ Contenido: Análisis completo de 6 archivos
 
-✅ Este documento (FASE_2_ANALISIS_02_CONSTRAINTS_COMPLETO.txt)
-   Contenido: Análisis estructural completo y actualizado
+[OK] Este documento (FASE_2_ANALISIS_02_CONSTRAINTS_COMPLETO.txt)
+ Contenido: Análisis estructural completo y actualizado
 
-═══════════════════════════════════════════════════════════════════════════
+===========================================================================
 
-🎯 PRÓXIMO PASO
-═══════════════════════════════════════════════════════════════════════════
+[TARGET] PRÓXIMO PASO
+===========================================================================
 
 FASE 3: TRADUCCIÓN INICIAL
 
-Paso 3.1: Segmentación ✅
-   Ya completado:
-   - 1 ejemplo
-   - 5 tips
-   Total: 6 unidades
+Paso 3.1: Segmentación [OK]
+ Ya completado:
+ - 1 ejemplo
+ - 5 tips
+ Total: 6 unidades
 
-Paso 3.2: Rendición (traducción Markdown → RST)
-   Crear archivo: traduccion/restricciones.rst
-   
-   Contenido a traducir:
-   - Ejemplo completo (26 líneas)
-   - Tip 2-1 (11 líneas)
-   - Tip 2-2 (15 líneas)
-   - Tip 2-3 (17 líneas)
-   - Tip 2-4 (18 líneas)
-   - Tip 2-5 (12 líneas)
-   
-   Total: ~100 líneas de contenido
+Paso 3.2: Rendición (traducción Markdown -> RST)
+ Crear archivo: traduccion/restricciones.rst
+
+ Contenido a traducir:
+ - Ejemplo completo (26 líneas)
+ - Tip 2-1 (11 líneas)
+ - Tip 2-2 (15 líneas)
+ - Tip 2-3 (17 líneas)
+ - Tip 2-4 (18 líneas)
+ - Tip 2-5 (12 líneas)
+
+ Total: ~100 líneas de contenido
 
 Paso 3.3: Preferencia (Signifié sobre Signifiant)
-   - Priorizar claridad
-   - Adaptar terminología técnica
-   - Mantener referencias cruzadas
-   - Preservar estructura de tips
+ - Priorizar claridad
+ - Adaptar terminología técnica
+ - Mantener referencias cruzadas
+ - Preservar estructura de tips
 
 Tiempo estimado: 35-45 min
 
-═══════════════════════════════════════════════════════════════════════════
+===========================================================================
 
-📋 CHECKLIST PARA FASE 3
-═══════════════════════════════════════════════════════════════════════════
+[LIST] CHECKLIST PARA FASE 3
+===========================================================================
 
 PREPARACIÓN:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 [ ] Revisar terminología en glosario
 [ ] Decidir: ¿Stakeholder o Parte interesada?
 [ ] Crear etiquetas :ref: para cada tip
 
 TRADUCCIÓN:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 [ ] Crear restricciones.rst en traduccion/
 [ ] Traducir introducción (si se agrega)
@@ -686,20 +686,20 @@ TRADUCCIÓN:
 [ ] Revisar énfasis (italic)
 
 DOCUMENTACIÓN:
-────────────────────────────────────────────────────────────────────────
+------------------------------------------------------------------------
 
 [ ] Crear glosario_seccion.rst con términos clave
 [ ] Crear notas_traduccion.rst con decisiones
 [ ] Documentar typo encontrado (opcional)
 
-═══════════════════════════════════════════════════════════════════════════
+===========================================================================
 
 Fecha: 2026-01-27
-Estado: ✅ FASE 2 COMPLETADA (actualizada con 6 archivos)
+Estado: [OK] FASE 2 COMPLETADA (actualizada con 6 archivos)
 Siguiente: FASE 3 - Traducción Inicial (35-45 min)
 Archivos: 6 archivos de contenido + README
 
-Corrección aplicada: ✅ Redistribución correcta usando _posts/02-constraints/
+Corrección aplicada: [OK] Redistribución correcta usando _posts/02-constraints/
 Script utilizado: redistribuir_arc42_CORRECTO.sh v2.0.0
 
-═══════════════════════════════════════════════════════════════════════════
+===========================================================================

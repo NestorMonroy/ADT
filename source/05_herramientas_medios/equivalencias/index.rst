@@ -10,15 +10,15 @@ Tablas Disponibles
 ==================
 
 .. toctree::
-   :maxdepth: 2
+ :maxdepth: 2
 
-   latex_rst_equivalencias
+ latex_rst_equivalencias
 
 Próximas Tablas
 ===============
 
-⏳ markdown_rst_equivalencias.rst  
-⏳ html_rst_equivalencias.rst
+[RUNNING] markdown_rst_equivalencias.rst
+[RUNNING] html_rst_equivalencias.rst
 
 .. note::
-   Las tablas adicionales se crearán según necesidad.
+ Las tablas adicionales se crearán según necesidad.

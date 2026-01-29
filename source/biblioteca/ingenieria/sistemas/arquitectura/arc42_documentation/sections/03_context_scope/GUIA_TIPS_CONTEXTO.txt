@@ -1,246 +1,246 @@
-════════════════════════════════════════════════════════════════════
+====================================================================
 GUÍA COMPLETA - TIPS DE CONTEXTO (3-1 a 3-19)
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 Sección: 03 - Context and Scope
 Total Tips: 19
 Workflow: v1.6.0
 Método: Peshitta + Paso 3.4
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 ESTADO ACTUAL
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 TIPS CREADOS COMO EJEMPLO (3):
-────────────────────────────────────────────────────────────────
-✅ contexto_tip_1.rst  - Demarcación del sistema
-✅ contexto_tip_2.rst  - Diagrama de contexto
-✅ contexto_tip_10.rst - Diferenciación business/technical
+----------------------------------------------------------------
+[OK] contexto_tip_1.rst - Demarcación del sistema
+[OK] contexto_tip_2.rst - Diagrama de contexto
+[OK] contexto_tip_10.rst - Diferenciación business/technical
 
 TIPS PENDIENTES (16):
-────────────────────────────────────────────────────────────────
-⏳ contexto_tip_3.rst  a contexto_tip_9.rst   (7 tips)
-⏳ contexto_tip_11.rst a contexto_tip_19.rst  (9 tips)
+----------------------------------------------------------------
+[RUNNING] contexto_tip_3.rst a contexto_tip_9.rst (7 tips)
+[RUNNING] contexto_tip_11.rst a contexto_tip_19.rst (9 tips)
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 LISTA COMPLETA DE TIPS CON TRADUCCIONES
-════════════════════════════════════════════════════════════════════
+====================================================================
 
-Tip 3-1: ✅ CREADO
-────────────────────────────────────────────────────────────────
+Tip 3-1: [OK] CREADO
+----------------------------------------------------------------
 EN: Explicitly demarcate your system from its environment!
 ES: ¡Demarca explícitamente tu sistema de su entorno!
 Archivo: contexto_tip_1.rst
 
-Tip 3-2: ✅ CREADO
-────────────────────────────────────────────────────────────────
+Tip 3-2: [OK] CREADO
+----------------------------------------------------------------
 EN: Show the context as diagram!
 ES: ¡Muestra el contexto como diagrama!
 Archivo: contexto_tip_2.rst
 
-Tip 3-3: ⏳ PENDIENTE
-────────────────────────────────────────────────────────────────
+Tip 3-3: [RUNNING] PENDIENTE
+----------------------------------------------------------------
 EN: Combine the context diagram with a table!
 ES: ¡Combina el diagrama de contexto con una tabla!
 Archivo: contexto_tip_3.rst
 Original: 2016-03-01-t-3-3.md
 
-Tip 3-4: ⏳ PENDIENTE
-────────────────────────────────────────────────────────────────
+Tip 3-4: [RUNNING] PENDIENTE
+----------------------------------------------------------------
 EN: Explicitly indicate risks in the context!
 ES: ¡Indica explícitamente los riesgos en el contexto!
 Archivo: contexto_tip_4.rst
 Original: 2016-03-01-t-3-4.md
 
-Tip 3-5: ⏳ PENDIENTE
-────────────────────────────────────────────────────────────────
+Tip 3-5: [RUNNING] PENDIENTE
+----------------------------------------------------------------
 EN: Restrict the context to an overview, avoid too many details!
 ES: ¡Restringe el contexto a una visión general, evita demasiados detalles!
 Archivo: contexto_tip_5.rst
 Original: 2016-03-01-t-3-5.md
 
-Tip 3-6: ⏳ PENDIENTE
-────────────────────────────────────────────────────────────────
+Tip 3-6: [RUNNING] PENDIENTE
+----------------------------------------------------------------
 EN: Simplify the context by categorization!
 ES: ¡Simplifica el contexto mediante categorización!
 Archivo: contexto_tip_6.rst
 Original: 2016-03-01-t-3-6.md
 
-Tip 3-7: ⏳ PENDIENTE
-────────────────────────────────────────────────────────────────
+Tip 3-7: [RUNNING] PENDIENTE
+----------------------------------------------------------------
 EN: If many external systems are involved, aggregate (cluster) them by explicit criteria!
 ES: ¡Si hay muchos sistemas externos involucrados, agrégalos (agrúpalos) por criterios explícitos!
 Archivo: contexto_tip_7.rst
 Original: 2016-03-01-t-3-7.md
 
-Tip 3-8: ⏳ PENDIENTE
-────────────────────────────────────────────────────────────────
+Tip 3-8: [RUNNING] PENDIENTE
+----------------------------------------------------------------
 EN: Aggregate (cluster) similar neighbour systems with ports!
 ES: ¡Agrega (agrupa) sistemas vecinos similares con puertos!
 Archivo: contexto_tip_8.rst
 Original: 2016-03-01-t-3-8.md
 
-Tip 3-9: ⏳ PENDIENTE
-────────────────────────────────────────────────────────────────
+Tip 3-9: [RUNNING] PENDIENTE
+----------------------------------------------------------------
 EN: Show all (all!) external interfaces!
 ES: ¡Muestra todas (¡todas!) las interfaces externas!
 Archivo: contexto_tip_9.rst
 Original: 2016-03-01-t-3-9.md
 
-Tip 3-10: ✅ CREADO
-────────────────────────────────────────────────────────────────
+Tip 3-10: [OK] CREADO
+----------------------------------------------------------------
 EN: Differentiate business and technical context!
 ES: ¡Diferencia el contexto de negocio y técnico!
 Archivo: contexto_tip_10.rst
 
-Tip 3-11: ⏳ PENDIENTE
-────────────────────────────────────────────────────────────────
+Tip 3-11: [RUNNING] PENDIENTE
+----------------------------------------------------------------
 EN: In the business context, show data flows (instead of dependencies)!
 ES: ¡En el contexto de negocio, muestra flujos de datos (en lugar de dependencias)!
 Archivo: contexto_tip_11.rst
 Original: 2016-03-02-t-3-11.md
 
-Tip 3-12: ⏳ PENDIENTE
-────────────────────────────────────────────────────────────────
+Tip 3-12: [RUNNING] PENDIENTE
+----------------------------------------------------------------
 EN: Show external influences in the context!
 ES: ¡Muestra influencias externas en el contexto!
 Archivo: contexto_tip_12.rst
 Original: 2016-03-02-t-3-12.md
 
-Tip 3-13: ⏳ PENDIENTE
-────────────────────────────────────────────────────────────────
+Tip 3-13: [RUNNING] PENDIENTE
+----------------------------------------------------------------
 EN: Show transitive dependencies in the context!
 ES: ¡Muestra dependencias transitivas en el contexto!
 Archivo: contexto_tip_13.rst
 Original: 2016-03-02-t-3-13.md
 
-Tip 3-14: ⏳ PENDIENTE
-────────────────────────────────────────────────────────────────
+Tip 3-14: [RUNNING] PENDIENTE
+----------------------------------------------------------------
 EN: Pay attention to quality requirements at external interfaces!
 ES: ¡Presta atención a los requisitos de calidad en las interfaces externas!
 Archivo: contexto_tip_14.rst
 Original: 2016-03-02-t-3-14.md
 
-Tip 3-15: ⏳ PENDIENTE
-────────────────────────────────────────────────────────────────
+Tip 3-15: [RUNNING] PENDIENTE
+----------------------------------------------------------------
 EN: Show the technical context (in case hardware is central to your system)!
 ES: ¡Muestra el contexto técnico (en caso de que el hardware sea central para tu sistema)!
 Archivo: contexto_tip_15.rst
 Original: 2016-03-02-t-3-15.md
 
-Tip 3-16: ⏳ PENDIENTE
-────────────────────────────────────────────────────────────────
+Tip 3-16: [RUNNING] PENDIENTE
+----------------------------------------------------------------
 EN: Use the technical context to describe protocols or channels!
 ES: ¡Usa el contexto técnico para describir protocolos o canales!
 Archivo: contexto_tip_16.rst
 Original: 2016-03-02-t-3-16.md
 
-Tip 3-17: ⏳ PENDIENTE
-────────────────────────────────────────────────────────────────
+Tip 3-17: [RUNNING] PENDIENTE
+----------------------------------------------------------------
 EN: Combine business context with technical information!
 ES: ¡Combina el contexto de negocio con información técnica!
 Archivo: contexto_tip_17.rst
 Original: 2016-03-02-t-3-17.md
 
-Tip 3-18: ⏳ PENDIENTE
-────────────────────────────────────────────────────────────────
+Tip 3-18: [RUNNING] PENDIENTE
+----------------------------------------------------------------
 EN: Explain the relationship between domain interfaces and their technical realization!
 ES: ¡Explica la relación entre las interfaces de dominio y su realización técnica!
 Archivo: contexto_tip_18.rst
 Original: 2016-03-02-t-3-18.md
 
-Tip 3-19: ⏳ PENDIENTE
-────────────────────────────────────────────────────────────────
+Tip 3-19: [RUNNING] PENDIENTE
+----------------------------------------------------------------
 EN: Defer technical context to the deployment view!
 ES: ¡Difiere el contexto técnico a la vista de despliegue!
 Archivo: contexto_tip_19.rst
 Original: 2016-03-02-t-3-19.md
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 PLANTILLA RST PARA TIPS
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 .. code-block:: rst
 
-   .. _contexto_tip_X:
-   
-   ===============================================================
-   Tip 3-X: <Título en Español>
-   ===============================================================
-   
-   .. tip::
-      **Consejo de Contexto arc42**
-      
-      <Resumen del tip en una o dos líneas>
-   
-   ----
-   
-   <Contenido principal del tip traducido>
-   
-   <Si hay subsecciones, usar:>
-   
-   Subsección de Ejemplo
-   =====================
-   
-   <Contenido de subsección>
-   
-   .. figure:: ../figuras/<nombre-imagen>
-      :alt: <Descripción alternativa>
-      :align: center
-      :width: <70-90>%
-      
-      <Caption de la imagen>
-   
-   ----
-   
-   .. seealso::
-      * :ref:`seccion_03` - Contexto y Alcance
-      * :ref:`seccion_3_1` o :ref:`seccion_3_2`
-      * :ref:`contexto_tip_Y` - Otro tip relacionado
-   
-   ----
-   
-   :Tip: 3-X
-   :Tema: <Tema principal>
-   :Traducción: Método Peshitta + Paso 3.4
-   :Workflow: v1.6.0
+ .. _contexto_tip_X:
 
-════════════════════════════════════════════════════════════════════
+ ===============================================================
+ Tip 3-X: <Título en Español>
+ ===============================================================
+
+ .. tip::
+ **Consejo de Contexto arc42**
+
+ <Resumen del tip en una o dos líneas>
+
+ ----
+
+ <Contenido principal del tip traducido>
+
+ <Si hay subsecciones, usar:>
+
+ Subsección de Ejemplo
+ =====================
+
+ <Contenido de subsección>
+
+ .. figure:: ../figuras/<nombre-imagen>
+ :alt: <Descripción alternativa>
+ :align: center
+ :width: <70-90>%
+
+ <Caption de la imagen>
+
+ ----
+
+ .. seealso::
+ * :ref:`seccion_03` - Contexto y Alcance
+ * :ref:`seccion_3_1` o :ref:`seccion_3_2`
+ * :ref:`contexto_tip_Y` - Otro tip relacionado
+
+ ----
+
+ :Tip: 3-X
+ :Tema: <Tema principal>
+ :Traducción: Método Peshitta + Paso 3.4
+ :Workflow: v1.6.0
+
+====================================================================
 TÉRMINOS ARQUITECTÓNICOS (Paso 3.4)
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 USAR CONSISTENTEMENTE:
 
-Context → Contexto
-Scope → Alcance
-Business context → Contexto de negocio
-Technical context → Contexto técnico
-External interface → Interfaz externa
-Communication partner → Socio de comunicación
-Neighbor / Neighbouring → Vecino
-Domain interface → Interfaz de dominio
-Technical interface → Interfaz técnica
-Black box → Caja negra
-Channel → Canal
-Node → Nodo
-Deployment → Despliegue
-Protocol → Protocolo
-Cluster / Aggregate → Agrupar / Agregar
-Data flow → Flujo de datos
-Dependency → Dependencia
-Quality requirement → Requisito de calidad
+Context -> Contexto
+Scope -> Alcance
+Business context -> Contexto de negocio
+Technical context -> Contexto técnico
+External interface -> Interfaz externa
+Communication partner -> Socio de comunicación
+Neighbor / Neighbouring -> Vecino
+Domain interface -> Interfaz de dominio
+Technical interface -> Interfaz técnica
+Black box -> Caja negra
+Channel -> Canal
+Node -> Nodo
+Deployment -> Despliegue
+Protocol -> Protocolo
+Cluster / Aggregate -> Agrupar / Agregar
+Data flow -> Flujo de datos
+Dependency -> Dependencia
+Quality requirement -> Requisito de calidad
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 PROCESO PARA CADA TIP
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 PASO 1: Leer original MD
-────────────────────────────────────────────────────────────────
+----------------------------------------------------------------
 cd /tmp/ADT/source/.../03_context_scope/original
 cat 2016-03-0X-t-3-X.md
 
 PASO 2: Identificar estructura
-────────────────────────────────────────────────────────────────
+----------------------------------------------------------------
 • Título (title:)
 • Contenido principal
 • ¿Tiene subsecciones (###)?
@@ -248,91 +248,91 @@ PASO 2: Identificar estructura
 • ¿Tiene listas o ejemplos?
 
 PASO 3: Aplicar plantilla RST
-────────────────────────────────────────────────────────────────
+----------------------------------------------------------------
 • Copiar plantilla de arriba
 • Reemplazar X con número de tip
 • Traducir título usando lista de arriba
 • Traducir contenido aplicando Paso 3.4
 
 PASO 4: Traducir contenido
-────────────────────────────────────────────────────────────────
+----------------------------------------------------------------
 • Usar términos arquitectónicos correctos (Paso 3.4)
 • Convertir Markdown a RST:
-  * ### Título → Título\n=========
-  * ![](url) → .. figure:: ../figuras/nombre
-  * * Lista → * Lista (igual)
-  * **Bold** → **Bold** (igual)
+ * ### Título -> Título\n=========
+ * ![](url) -> .. figure:: ../figuras/nombre
+ * * Lista -> * Lista (igual)
+ * **Bold** -> **Bold** (igual)
 • Mantener significado (Método Peshitta)
 
 PASO 5: Guardar archivo
-────────────────────────────────────────────────────────────────
+----------------------------------------------------------------
 Guardar como: contexto_tip_X.rst
 Ubicación: .../03_context_scope/traduccion/
 
 TIEMPO ESTIMADO POR TIP: ~10-15 minutos
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 EJEMPLOS DE REFERENCIA
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 Ver archivos ya creados:
-  • contexto_tip_1.rst  - Tip simple con imagen
-  • contexto_tip_2.rst  - Tip simple con lista
-  • contexto_tip_10.rst - Tip complejo con subsecciones
+ • contexto_tip_1.rst - Tip simple con imagen
+ • contexto_tip_2.rst - Tip simple con lista
+ • contexto_tip_10.rst - Tip complejo con subsecciones
 
 Estos archivos muestran el patrón completo aplicado.
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 ESTIMACIÓN DE TIEMPO
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 TIPS PENDIENTES: 16
 TIEMPO POR TIP: ~10-15 min
 TIEMPO TOTAL: ~2.5-4 horas
 
 DISTRIBUCIÓN:
-  • Tips simples (3-9): ~10 min cada uno = ~70 min
-  • Tips complejos (11-19): ~15 min cada uno = ~135 min
-  • Total: ~205 min (~3.5 horas)
+ • Tips simples (3-9): ~10 min cada uno = ~70 min
+ • Tips complejos (11-19): ~15 min cada uno = ~135 min
+ • Total: ~205 min (~3.5 horas)
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 VERIFICACIÓN AL COMPLETAR
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 CHECKLIST POR TIP:
-────────────────────────────────────────────────────────────────
-□ Título traducido correctamente
-□ Paso 3.4 aplicado (términos arquitectónicos)
-□ Imágenes convertidas a formato RST
-□ Subsecciones con formato correcto
-□ Referencias cruzadas agregadas
-□ Metadata al final completa
+----------------------------------------------------------------
+ Título traducido correctamente
+ Paso 3.4 aplicado (términos arquitectónicos)
+ Imágenes convertidas a formato RST
+ Subsecciones con formato correcto
+ Referencias cruzadas agregadas
+ Metadata al final completa
 
 CHECKLIST TOTAL (19 TIPS):
-────────────────────────────────────────────────────────────────
-□ 19 archivos .rst creados
-□ Nomenclatura: contexto_tip_1.rst a contexto_tip_19.rst
-□ Coherencia terminológica 100%
-□ Todos con directiva .. tip::
-□ Todos con metadata al final
+----------------------------------------------------------------
+ 19 archivos .rst creados
+ Nomenclatura: contexto_tip_1.rst a contexto_tip_19.rst
+ Coherencia terminológica 100%
+ Todos con directiva .. tip::
+ Todos con metadata al final
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 PRÓXIMOS PASOS DESPUÉS DE COMPLETAR TIPS
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 1. Actualizar archivo principal (seccion_03_contexto_alcance.rst)
-   • Agregar sección "Tips y Consejos"
-   • Agregar toctree con los 19 tips
+ • Agregar sección "Tips y Consejos"
+ • Agregar toctree con los 19 tips
 
 2. Ejecutar FASE 5.5 COMPLETA:
-   • Crear section-3.txt (28 archivos completos)
-   • Crear section-3.json (metadata de 28 archivos)
-   • Checklist final
+ • Crear section-3.txt (28 archivos completos)
+ • Crear section-3.json (metadata de 28 archivos)
+ • Checklist final
 
 3. FASE 6: Revisión y Mejora
 
 4. FASE 7: Publicación
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 FIN DE LA GUÍA
-════════════════════════════════════════════════════════════════════
+====================================================================

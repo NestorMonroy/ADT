@@ -1,16 +1,16 @@
-# 🗺️ MAPEO COMPLETO DE /tmp Y PLAN INCREMENTAL DE REORGANIZACIÓN
-**Sin Eliminar Nada - Todo se Archiva**  
+# MAPEO COMPLETO DE /tmp Y PLAN INCREMENTAL DE REORGANIZACIÓN
+**Sin Eliminar Nada - Todo se Archiva**
 **Fecha:** 2026-01-26
 
 ---
 
-## 📊 INVENTARIO COMPLETO DE /tmp
+## [TABLE] INVENTARIO COMPLETO DE /tmp
 
 ### Nivel 1: Archivos en /tmp (raíz)
 
 | Archivo/Carpeta | Tipo | Descripción | Decisión |
 |-----------------|------|-------------|----------|
-| `ADT/` | Carpeta | ⭐ Proyecto principal (destino final) | **MANTENER** |
+| `ADT/` | Carpeta | [STAR] Proyecto principal (destino final) | **MANTENER** |
 | `ADT42/` | Carpeta | Proyecto Sphinx completo (duplicado) | **ARCHIVAR** (después de consolidar) |
 | `ANALISIS_COMPLETO_TMP.md` | Archivo | Análisis que generé | **ARCHIVAR** |
 | `ESTRATEGIA_OBTENCION_CONTENIDO.md` | Archivo | Docs de estrategias | **ARCHIVAR** |
@@ -57,7 +57,7 @@
 | `config/` | 8.5KB | Configuraciones | **MANTENER** |
 | `diataxis/` | 2.5KB | Framework Diátaxis | **MANTENER** |
 | `docs/` | 23KB | Documentación | **MANTENER** |
-| `docs_maestros/` | ✅ | Documentos maestros | **MANTENER** |
+| `docs_maestros/` | [OK] | Documentos maestros | **MANTENER** |
 | `scripts/` | 47KB | Scripts de automatización | **MANTENER** |
 | `seccion3_diagramas/` | 52KB | 7 PlantUML + PNG | **MIGRAR a source/biblioteca/arc42/** |
 | `traduccion/` | 27KB | source/ sin Makefile | **MIGRAR a source/** |
@@ -68,7 +68,7 @@
 
 ---
 
-## 🎯 PLAN INCREMENTAL DE REORGANIZACIÓN
+## [TARGET] PLAN INCREMENTAL DE REORGANIZACIÓN
 
 ### FASE 0: Preparación y Análisis (15 min)
 
@@ -96,20 +96,20 @@ find /tmp -maxdepth 2 -type f -o -type d > ADT_archives/inventario_inicial.txt
 tar -czf ADT_archives/respaldos/ADT_COMPLETO_ANTES_$(date +%Y%m%d_%H%M%S).tar.gz ADT/
 tar -czf ADT_archives/respaldos/ADT42_COMPLETO_$(date +%Y%m%d_%H%M%S).tar.gz ADT42/
 
-echo "✅ FASE 0 completada - Backups creados"
+echo "[OK] FASE 0 completada - Backups creados"
 ```
 
 **Resultado:**
 ```
 /tmp/ADT_archives/
-├── proyectos_independientes/
-├── tmp_raiz_archivos/
-├── ADT_archivos_sueltos/
-├── respaldos/
-│   ├── ADT_COMPLETO_ANTES_*.tar.gz    ⭐ Backup completo
-│   └── ADT42_COMPLETO_*.tar.gz        ⭐ Backup completo
-├── REGISTRO_REORGANIZACION.log
-└── inventario_inicial.txt
++-- proyectos_independientes/
++-- tmp_raiz_archivos/
++-- ADT_archivos_sueltos/
++-- respaldos/
+| +-- ADT_COMPLETO_ANTES_*.tar.gz [STAR] Backup completo
+| +-- ADT42_COMPLETO_*.tar.gz [STAR] Backup completo
++-- REGISTRO_REORGANIZACION.log
++-- inventario_inicial.txt
 ```
 
 ---
@@ -123,21 +123,21 @@ cd /tmp
 
 # 1. Archivar scripts y archivos sueltos (excepto ADT, ADT42, ADT_archives)
 tar -czf ADT_archives/tmp_raiz_archivos/scripts_y_utilidades_$(date +%Y%m%d).tar.gz \
-    *.py *.sh *.js *.txt *.md *.log *.jar *.bz2 \
-    phantomjs/ node-compile-cache/ hsperfdata_root/ \
-    2>/dev/null
+ *.py *.sh *.js *.txt *.md *.log *.jar *.bz2 \
+ phantomjs/ node-compile-cache/ hsperfdata_root/ \
+ 2>/dev/null
 
 # 2. Verificar contenido
 tar -tzf ADT_archives/tmp_raiz_archivos/scripts_y_utilidades_*.tar.gz | head -20
 
 # 3. Registrar
 echo "ARCHIVADO: Archivos de /tmp raíz" >> ADT_archives/REGISTRO_REORGANIZACION.log
-echo "  - scripts_y_utilidades_$(date +%Y%m%d).tar.gz" >> ADT_archives/REGISTRO_REORGANIZACION.log
+echo " - scripts_y_utilidades_$(date +%Y%m%d).tar.gz" >> ADT_archives/REGISTRO_REORGANIZACION.log
 
 # 4. OPCIONAL: Mover plantuml.jar a ADT antes de archivar
 cp plantuml.jar /tmp/ADT/tools/ 2>/dev/null || mkdir -p /tmp/ADT/tools && cp plantuml.jar /tmp/ADT/tools/
 
-echo "✅ FASE 1 completada - Archivos de /tmp raíz archivados"
+echo "[OK] FASE 1 completada - Archivos de /tmp raíz archivados"
 ```
 
 **Archivos incluidos:**
@@ -159,26 +159,26 @@ cd /tmp/ADT
 
 # 1. Archivar cada proyecto independiente
 for proyecto in arc42-scraper arc42-scraper-project \
-                arc42-vagrant arc42-vagrant-complete \
-                arc42_scraper_proxy backend-modular-v2; do
-    
-    if [ -d "$proyecto" ]; then
-        echo "Archivando: $proyecto"
-        tar -czf /tmp/ADT_archives/proyectos_independientes/${proyecto}_$(date +%Y%m%d).tar.gz "$proyecto"
-        
-        # Registrar
-        echo "ARCHIVADO: $proyecto" >> /tmp/ADT_archives/REGISTRO_REORGANIZACION.log
-        
-        # Verificar tamaño
-        ls -lh /tmp/ADT_archives/proyectos_independientes/${proyecto}_*.tar.gz
-    fi
+ arc42-vagrant arc42-vagrant-complete \
+ arc42_scraper_proxy backend-modular-v2; do
+
+ if [ -d "$proyecto" ]; then
+ echo "Archivando: $proyecto"
+ tar -czf /tmp/ADT_archives/proyectos_independientes/${proyecto}_$(date +%Y%m%d).tar.gz "$proyecto"
+
+ # Registrar
+ echo "ARCHIVADO: $proyecto" >> /tmp/ADT_archives/REGISTRO_REORGANIZACION.log
+
+ # Verificar tamaño
+ ls -lh /tmp/ADT_archives/proyectos_independientes/${proyecto}_*.tar.gz
+ fi
 done
 
 # 2. Archivar caches
 tar -czf /tmp/ADT_archives/proyectos_independientes/arc42_caches_$(date +%Y%m%d).tar.gz \
-    arc42_cache/ arc42_html_cache/ 2>/dev/null
+ arc42_cache/ arc42_html_cache/ 2>/dev/null
 
-echo "✅ FASE 2 completada - Proyectos independientes archivados"
+echo "[OK] FASE 2 completada - Proyectos independientes archivados"
 ```
 
 **Proyectos archivados:**
@@ -214,24 +214,24 @@ ls -la seccion3_diagramas/ >> /tmp/ADT_archives/analisis_contenido.txt
 # 4. Mostrar análisis
 cat /tmp/ADT_archives/analisis_contenido.txt
 
-echo "✅ FASE 3 completada - Contenido analizado"
+echo "[OK] FASE 3 completada - Contenido analizado"
 ```
 
 **Contenido identificado:**
 
 **En biblioteca/arc42_documentation/traducciones/sections/:**
-- `01/seccion_01_CORRECTA.rst` (18KB) → **MIGRAR**
-- `02/seccion_02_restricciones.rst` (26KB) → **MIGRAR**
-- `03/seccion_03_contexto_alcance.rst` (31KB) → **MIGRAR**
-- `03/README_SECCION_3.md` (4KB) → **MIGRAR**
+- `01/seccion_01_CORRECTA.rst` (18KB) -> **MIGRAR**
+- `02/seccion_02_restricciones.rst` (26KB) -> **MIGRAR**
+- `03/seccion_03_contexto_alcance.rst` (31KB) -> **MIGRAR**
+- `03/README_SECCION_3.md` (4KB) -> **MIGRAR**
 
 **En seccion3_diagramas/:**
-- 7 archivos `.puml` → **MIGRAR**
-- 7 archivos `.png` → **MIGRAR**
+- 7 archivos `.puml` -> **MIGRAR**
+- 7 archivos `.png` -> **MIGRAR**
 
 **En traduccion/source/:**
-- Carpetas `01_fundamentos/` hasta `10_apendices/` → **BASE PARA source/**
-- `index.rst` → **EVALUAR (comparar con ADT42)**
+- Carpetas `01_fundamentos/` hasta `10_apendices/` -> **BASE PARA source/**
+- `index.rst` -> **EVALUAR (comparar con ADT42)**
 
 ---
 
@@ -252,7 +252,7 @@ cp /tmp/ADT42/make.bat ./
 # 3. Crear carpeta build
 mkdir -p build
 
-# 4. Mover traduccion/source/ → source/
+# 4. Mover traduccion/source/ -> source/
 mv traduccion/source ./
 
 # 5. Eliminar carpeta traduccion/ vacía
@@ -260,10 +260,10 @@ rmdir traduccion
 
 # 6. Copiar conf.py de ADT42 si no existe en source/
 if [ ! -f source/conf.py ]; then
-    cp /tmp/ADT42/source/conf.py source/
-    echo "✅ conf.py copiado de ADT42"
+ cp /tmp/ADT42/source/conf.py source/
+ echo "[OK] conf.py copiado de ADT42"
 else
-    echo "⚠️ conf.py ya existe en source/"
+ echo "[WARNING] conf.py ya existe en source/"
 fi
 
 # 7. Comparar index.rst
@@ -279,25 +279,25 @@ mkdir -p source/_static
 mkdir -p source/_templates
 
 # 9. Verificar estructura
-echo "=== ESTRUCTURA SPHINX CREADA ===" 
+echo "=== ESTRUCTURA SPHINX CREADA ==="
 ls -la | grep -E "Makefile|make.bat|build|source"
 ls -la source/ | grep -E "conf.py|index.rst|_static|_templates|0._"
 
-echo "✅ FASE 4 completada - ADT es ahora proyecto Sphinx"
+echo "[OK] FASE 4 completada - ADT es ahora proyecto Sphinx"
 ```
 
 **Resultado:**
 ```
 /tmp/ADT/
-├── Makefile        ✅ De ADT42
-├── make.bat        ✅ De ADT42
-├── build/          ✅ Creado
-└── source/         ✅ De traduccion/source
-    ├── conf.py     ✅ De ADT42
-    ├── index.rst   ✅
-    ├── _static/    ✅
-    ├── _templates/ ✅
-    └── 01-10/      ✅
++-- Makefile [OK] De ADT42
++-- make.bat [OK] De ADT42
++-- build/ [OK] Creado
++-- source/ [OK] De traduccion/source
+ +-- conf.py [OK] De ADT42
+ +-- index.rst [OK]
+ +-- _static/ [OK]
+ +-- _templates/ [OK]
+ +-- 01-10/ [OK]
 ```
 
 ---
@@ -320,26 +320,26 @@ cd biblioteca/arc42/sections
 
 # 3. Crear las 12 secciones de arc42
 for i in {01..12}; do
-    case $i in
-        01) name="01_introduction_goals" ;;
-        02) name="02_constraints" ;;
-        03) name="03_context" ;;
-        04) name="04_solution_strategy" ;;
-        05) name="05_building_blocks" ;;
-        06) name="06_runtime" ;;
-        07) name="07_deployment" ;;
-        08) name="08_concepts" ;;
-        09) name="09_decisions" ;;
-        10) name="10_quality" ;;
-        11) name="11_risks_tech_debt" ;;
-        12) name="12_glossary" ;;
-    esac
-    
-    mkdir -p "$name"/{original,traduccion,diagramas}
-    touch "$name"/glosario_seccion.rst
-    touch "$name"/notas_traduccion.rst
-    
-    echo "✅ Creado: $name/"
+ case $i in
+ 01) name="01_introduction_goals" ;;
+ 02) name="02_constraints" ;;
+ 03) name="03_context" ;;
+ 04) name="04_solution_strategy" ;;
+ 05) name="05_building_blocks" ;;
+ 06) name="06_runtime" ;;
+ 07) name="07_deployment" ;;
+ 08) name="08_concepts" ;;
+ 09) name="09_decisions" ;;
+ 10) name="10_quality" ;;
+ 11) name="11_risks_tech_debt" ;;
+ 12) name="12_glossary" ;;
+ esac
+
+ mkdir -p "$name"/{original,traduccion,diagramas}
+ touch "$name"/glosario_seccion.rst
+ touch "$name"/notas_traduccion.rst
+
+ echo "[OK] Creado: $name/"
 done
 
 # 4. Volver a arc42/ y crear archivos raíz
@@ -351,26 +351,26 @@ touch glosario_acumulativo.rst
 # 5. Verificar estructura
 tree -L 3 /tmp/ADT/source/biblioteca/
 
-echo "✅ FASE 5 completada - Estructura arc42 creada"
+echo "[OK] FASE 5 completada - Estructura arc42 creada"
 ```
 
 **Estructura creada:**
 ```
 source/biblioteca/
-├── _metadata_biblioteca/
-├── arc42/
-│   ├── metadata_libro.rst
-│   ├── index.rst
-│   ├── glosario_acumulativo.rst
-│   └── sections/
-│       ├── 01_introduction_goals/
-│       │   ├── original/
-│       │   ├── traduccion/
-│       │   ├── diagramas/
-│       │   ├── glosario_seccion.rst
-│       │   └── notas_traduccion.rst
-│       └── ... (12 secciones)
-└── informatica/
++-- _metadata_biblioteca/
++-- arc42/
+| +-- metadata_libro.rst
+| +-- index.rst
+| +-- glosario_acumulativo.rst
+| +-- sections/
+| +-- 01_introduction_goals/
+| | +-- original/
+| | +-- traduccion/
+| | +-- diagramas/
+| | +-- glosario_seccion.rst
+| | +-- notas_traduccion.rst
+| +-- ... (12 secciones)
++-- informatica/
 ```
 
 ---
@@ -382,33 +382,33 @@ source/biblioteca/
 ```bash
 # 1. Migrar Sección 1
 cp /tmp/ADT/biblioteca/arc42_documentation/traducciones/sections/01/seccion_01_CORRECTA.rst \
-   /tmp/ADT/source/biblioteca/arc42/sections/01_introduction_goals/traduccion/seccion_01_introduccion_objetivos.rst
+ /tmp/ADT/source/biblioteca/arc42/sections/01_introduction_goals/traduccion/seccion_01_introduccion_objetivos.rst
 
-echo "✅ Sección 1 migrada"
+echo "[OK] Sección 1 migrada"
 
 # 2. Migrar Sección 2
 cp /tmp/ADT/biblioteca/arc42_documentation/traducciones/sections/02/seccion_02_restricciones.rst \
-   /tmp/ADT/source/biblioteca/arc42/sections/02_constraints/traduccion/
+ /tmp/ADT/source/biblioteca/arc42/sections/02_constraints/traduccion/
 
-echo "✅ Sección 2 migrada"
+echo "[OK] Sección 2 migrada"
 
 # 3. Migrar Sección 3
 cp /tmp/ADT/biblioteca/arc42_documentation/traducciones/sections/03/seccion_03_contexto_alcance.rst \
-   /tmp/ADT/source/biblioteca/arc42/sections/03_context/traduccion/
+ /tmp/ADT/source/biblioteca/arc42/sections/03_context/traduccion/
 
 cp /tmp/ADT/biblioteca/arc42_documentation/traducciones/sections/03/README_SECCION_3.md \
-   /tmp/ADT/source/biblioteca/arc42/sections/03_context/
+ /tmp/ADT/source/biblioteca/arc42/sections/03_context/
 
-echo "✅ Sección 3 migrada"
+echo "[OK] Sección 3 migrada"
 
 # 4. Migrar diagramas PlantUML
 cp /tmp/ADT/seccion3_diagramas/*.puml \
-   /tmp/ADT/source/biblioteca/arc42/sections/03_context/diagramas/
+ /tmp/ADT/source/biblioteca/arc42/sections/03_context/diagramas/
 
 cp /tmp/ADT/seccion3_diagramas/*.png \
-   /tmp/ADT/source/biblioteca/arc42/sections/03_context/diagramas/
+ /tmp/ADT/source/biblioteca/arc42/sections/03_context/diagramas/
 
-echo "✅ Diagramas PlantUML migrados"
+echo "[OK] Diagramas PlantUML migrados"
 
 # 5. Verificar migraciones
 echo "=== CONTENIDO MIGRADO ==="
@@ -417,14 +417,14 @@ ls -la /tmp/ADT/source/biblioteca/arc42/sections/02_constraints/traduccion/
 ls -la /tmp/ADT/source/biblioteca/arc42/sections/03_context/traduccion/
 ls -la /tmp/ADT/source/biblioteca/arc42/sections/03_context/diagramas/
 
-echo "✅ FASE 6 completada - Contenido migrado"
+echo "[OK] FASE 6 completada - Contenido migrado"
 ```
 
 **Migrado:**
-- ✅ 3 archivos `.rst` (secciones 01-03)
-- ✅ 1 archivo `README_SECCION_3.md`
-- ✅ 7 archivos `.puml`
-- ✅ 7 archivos `.png`
+- [OK] 3 archivos `.rst` (secciones 01-03)
+- [OK] 1 archivo `README_SECCION_3.md`
+- [OK] 7 archivos `.puml`
+- [OK] 7 archivos `.png`
 - **Total:** 18 archivos migrados
 
 ---
@@ -439,35 +439,35 @@ cd /tmp/ADT
 # 1. Archivar biblioteca/ antigua
 tar -czf /tmp/ADT_archives/ADT_archivos_sueltos/biblioteca_antigua_$(date +%Y%m%d).tar.gz biblioteca/
 
-echo "✅ biblioteca/ antigua archivada"
+echo "[OK] biblioteca/ antigua archivada"
 
 # 2. Archivar seccion3_diagramas/ (ya migrados)
 tar -czf /tmp/ADT_archives/ADT_archivos_sueltos/seccion3_diagramas_$(date +%Y%m%d).tar.gz seccion3_diagramas/
 
-echo "✅ seccion3_diagramas/ archivado"
+echo "[OK] seccion3_diagramas/ archivado"
 
 # 3. Archivar arc42/ vacía
 tar -czf /tmp/ADT_archives/ADT_archivos_sueltos/arc42_vacia_$(date +%Y%m%d).tar.gz arc42/
 
-echo "✅ arc42/ vacía archivada"
+echo "[OK] arc42/ vacía archivada"
 
 # 4. Archivar archivos .md sueltos en raíz de ADT
 tar -czf /tmp/ADT_archives/ADT_archivos_sueltos/documentos_temporales_$(date +%Y%m%d).tar.gz \
-    *.md *.txt 2>/dev/null
+ *.md *.txt 2>/dev/null
 
-echo "✅ Documentos temporales archivados"
+echo "[OK] Documentos temporales archivados"
 
 # 5. Registrar todo
 cat >> /tmp/ADT_archives/REGISTRO_REORGANIZACION.log << EOF
 
 FASE 7 - Archivado de estructuras antiguas:
-- biblioteca/ antigua → biblioteca_antigua_$(date +%Y%m%d).tar.gz
-- seccion3_diagramas/ → seccion3_diagramas_$(date +%Y%m%d).tar.gz
-- arc42/ vacía → arc42_vacia_$(date +%Y%m%d).tar.gz
-- Documentos temporales → documentos_temporales_$(date +%Y%m%d).tar.gz
+- biblioteca/ antigua -> biblioteca_antigua_$(date +%Y%m%d).tar.gz
+- seccion3_diagramas/ -> seccion3_diagramas_$(date +%Y%m%d).tar.gz
+- arc42/ vacía -> arc42_vacia_$(date +%Y%m%d).tar.gz
+- Documentos temporales -> documentos_temporales_$(date +%Y%m%d).tar.gz
 EOF
 
-echo "✅ FASE 7 completada - Estructuras antiguas archivadas"
+echo "[OK] FASE 7 completada - Estructuras antiguas archivadas"
 ```
 
 ---
@@ -489,31 +489,31 @@ echo "Traducciones:" && find source/biblioteca/arc42/sections/0[1-3]_*/traduccio
 # 2. Si TODO está OK, archivar ADT42
 tar -czf /tmp/ADT_archives/respaldos/ADT42_CONSOLIDADO_$(date +%Y%m%d_%H%M%S).tar.gz /tmp/ADT42/
 
-echo "✅ ADT42 archivado completamente"
+echo "[OK] ADT42 archivado completamente"
 
 # 3. Limpiar archivos de /tmp raíz que ya fueron archivados
 # SOLO después de verificar que están en tar.gz
 cd /tmp
 
 for archivo in *.py *.sh *.js *.txt *.md *.log *.jar *.bz2 *.lock; do
-    if [ -f "$archivo" ]; then
-        # Verificar que está en el archivo
-        if tar -tzf ADT_archives/tmp_raiz_archivos/scripts_y_utilidades_*.tar.gz | grep -q "$archivo"; then
-            echo "Verificado en tar.gz: $archivo"
-            # rm "$archivo"  # Descomentar para eliminar
-        fi
-    fi
+ if [ -f "$archivo" ]; then
+ # Verificar que está en el archivo
+ if tar -tzf ADT_archives/tmp_raiz_archivos/scripts_y_utilidades_*.tar.gz | grep -q "$archivo"; then
+ echo "Verificado en tar.gz: $archivo"
+ # rm "$archivo" # Descomentar para eliminar
+ fi
+ fi
 done
 
 # 4. Limpiar carpetas temporales de /tmp raíz
 for carpeta in phantomjs node-compile-cache hsperfdata_root; do
-    if [ -d "$carpeta" ]; then
-        # rm -rf "$carpeta"  # Descomentar para eliminar
-        echo "Carpeta temporal: $carpeta"
-    fi
+ if [ -d "$carpeta" ]; then
+ # rm -rf "$carpeta" # Descomentar para eliminar
+ echo "Carpeta temporal: $carpeta"
+ fi
 done
 
-echo "✅ FASE 8 completada - ADT42 archivado"
+echo "[OK] FASE 8 completada - ADT42 archivado"
 ```
 
 ---
@@ -534,17 +534,17 @@ make html 2>&1 | tee /tmp/ADT_archives/compilacion.log
 
 # 3. Verificar resultado
 if [ -f "build/html/index.html" ]; then
-    echo "✅✅✅ COMPILACIÓN EXITOSA ✅✅✅"
-    ls -lh build/html/index.html
-    
-    # Contar páginas generadas
-    echo "Páginas HTML generadas:"
-    find build/html -name "*.html" | wc -l
-    
+ echo "[OK][OK][OK] COMPILACIÓN EXITOSA [OK][OK][OK]"
+ ls -lh build/html/index.html
+
+ # Contar páginas generadas
+ echo "Páginas HTML generadas:"
+ find build/html -name "*.html" | wc -l
+
 else
-    echo "❌ ERROR EN COMPILACIÓN"
-    echo "Ver log en: /tmp/ADT_archives/compilacion.log"
-    tail -50 /tmp/ADT_archives/compilacion.log
+ echo "[ERROR] ERROR EN COMPILACIÓN"
+ echo "Ver log en: /tmp/ADT_archives/compilacion.log"
+ tail -50 /tmp/ADT_archives/compilacion.log
 fi
 
 # 4. Crear inventario final
@@ -554,12 +554,12 @@ find /tmp/ADT -type f -o -type d > /tmp/ADT_archives/inventario_final.txt
 echo "=== COMPARACIÓN ANTES/DESPUÉS ==="
 wc -l /tmp/ADT_archives/inventario_inicial.txt /tmp/ADT_archives/inventario_final.txt
 
-echo "✅ FASE 9 completada - Compilación verificada"
+echo "[OK] FASE 9 completada - Compilación verificada"
 ```
 
 ---
 
-## ✅ CHECKLIST DE VERIFICACIÓN FINAL
+## [OK] CHECKLIST DE VERIFICACIÓN FINAL
 
 ### Archivos Creados en ADT_archives/
 
@@ -606,19 +606,19 @@ echo "✅ FASE 9 completada - Compilación verificada"
 
 ---
 
-## 📊 RESUMEN DE ARCHIVOS GENERADOS
+## [TABLE] RESUMEN DE ARCHIVOS GENERADOS
 
 ```
 /tmp/ADT_archives/
-├── respaldos/                      4 backups completos (.tar.gz)
-├── proyectos_independientes/       7 proyectos archivados
-├── tmp_raiz_archivos/             1 archivo con scripts/utils
-├── ADT_archivos_sueltos/          4 archivos con contenido migrado
-├── REGISTRO_REORGANIZACION.log    Log de todas las acciones
-├── inventario_inicial.txt         Estado antes
-├── inventario_final.txt           Estado después
-├── analisis_contenido.txt         Análisis de contenido
-└── compilacion.log                Log de compilación Sphinx
++-- respaldos/ 4 backups completos (.tar.gz)
++-- proyectos_independientes/ 7 proyectos archivados
++-- tmp_raiz_archivos/ 1 archivo con scripts/utils
++-- ADT_archivos_sueltos/ 4 archivos con contenido migrado
++-- REGISTRO_REORGANIZACION.log Log de todas las acciones
++-- inventario_inicial.txt Estado antes
++-- inventario_final.txt Estado después
++-- analisis_contenido.txt Análisis de contenido
++-- compilacion.log Log de compilación Sphinx
 
 Total archivos .tar.gz: ~16 archivos
 Tamaño estimado: ~50-100 MB
@@ -626,7 +626,7 @@ Tamaño estimado: ~50-100 MB
 
 ---
 
-## ⏱️ TIEMPO ESTIMADO POR FASE
+## [PENDING] TIEMPO ESTIMADO POR FASE
 
 | Fase | Tiempo | Descripción |
 |------|--------|-------------|
@@ -644,7 +644,7 @@ Tamaño estimado: ~50-100 MB
 
 ---
 
-## 🚨 POLÍTICA DE SEGURIDAD
+## [ALERT] POLÍTICA DE SEGURIDAD
 
 ### NADA SE ELIMINA
 
@@ -665,7 +665,7 @@ tar -xzf ADT_archives/respaldos/ADT42_COMPLETO_*.tar.gz
 
 ---
 
-## 📋 PRÓXIMOS PASOS DESPUÉS DE REORGANIZACIÓN
+## [LIST] PRÓXIMOS PASOS DESPUÉS DE REORGANIZACIÓN
 
 1. **Verificar compilación:** `cd /tmp/ADT && make html`
 2. **Revisar HTML generado:** `firefox build/html/index.html`
@@ -678,9 +678,9 @@ tar -xzf ADT_archives/respaldos/ADT42_COMPLETO_*.tar.gz
 **¿Proceder con este plan incremental de reorganización?**
 
 Ventajas:
-- ✅ NADA se elimina
-- ✅ TODO se archiva con fecha
-- ✅ Múltiples backups
-- ✅ Proceso reversible
-- ✅ Registro completo de acciones
-- ✅ Verificación en cada fase
+- [OK] NADA se elimina
+- [OK] TODO se archiva con fecha
+- [OK] Múltiples backups
+- [OK] Proceso reversible
+- [OK] Registro completo de acciones
+- [OK] Verificación en cada fase

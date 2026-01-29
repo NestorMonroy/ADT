@@ -4,7 +4,7 @@
 Estándares de Terminología
 ===============================================
 
-⏳ **Sección en desarrollo**
+[RUNNING] **Sección en desarrollo**
 
 Esta subsección contendrá estándares para uso consistente de terminología.
 
@@ -18,4 +18,4 @@ Contenido Planificado
 ----
 
 .. note::
-   Esta subsección será desarrollada en Fase 2.
+ Esta subsección será desarrollada en Fase 2.

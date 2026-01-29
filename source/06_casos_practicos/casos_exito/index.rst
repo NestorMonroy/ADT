@@ -4,7 +4,7 @@
 Casos de Éxito
 ===============================================
 
-⏳ **Subsección en desarrollo**
+[RUNNING] **Subsección en desarrollo**
 
 Esta subsección contendrá casos de éxito completos de proyectos de traducción.
 
@@ -18,4 +18,4 @@ Contenido Planificado
 ----
 
 .. note::
-   Esta subsección será desarrollada en Fase 2.
+ Esta subsección será desarrollada en Fase 2.

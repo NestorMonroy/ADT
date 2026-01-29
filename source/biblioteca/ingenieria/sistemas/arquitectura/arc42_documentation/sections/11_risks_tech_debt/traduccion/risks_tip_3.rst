@@ -17,56 +17,56 @@ Método de Evaluación
 **Proceso de Comparación Sistemática:**
 
 1. **Identificar requisitos de calidad**
-   
-   * Extraer de Sección 1.2 (Objetivos de Calidad)
-   * Extraer de Sección 10 (Requisitos de Calidad detallados)
+
+ * Extraer de Sección 1.2 (Objetivos de Calidad)
+ * Extraer de Sección 10 (Requisitos de Calidad detallados)
 
 2. **Documentar enfoques arquitectónicos**
-   
-   * De Sección 4 (Vista de Solución)
-   * De Sección 8 (Conceptos Transversales)
-   * De Sección 9 (Decisiones de Arquitectura)
+
+ * De Sección 4 (Vista de Solución)
+ * De Sección 8 (Conceptos Transversales)
+ * De Sección 9 (Decisiones de Arquitectura)
 
 3. **Comparar sistemáticamente**
-   
-   * ¿El enfoque arquitectónico soporta el requisito?
-   * ¿Hay gaps o contradicciones?
-   * ¿Qué podría fallar?
+
+ * ¿El enfoque arquitectónico soporta el requisito?
+ * ¿Hay gaps o contradicciones?
+ * ¿Qué podría fallar?
 
 4. **Identificar riesgos y problemas**
-   
-   * Requisitos no soportados → RIESGO
-   * Enfoques conflictivos → PROBLEMA
-   * Suposiciones no validadas → RIESGO
+
+ * Requisitos no soportados -> RIESGO
+ * Enfoques conflictivos -> PROBLEMA
+ * Suposiciones no validadas -> RIESGO
 
 ----
 
 **Ejemplo de Evaluación Cualitativa:**
 
 .. list-table:: Evaluación Requisito vs Enfoque
-   :header-rows: 1
-   :widths: 20 25 25 30
-   
-   * - **Requisito**
-     - **Enfoque Actual**
-     - **Análisis**
-     - **Riesgo Identificado**
-   * - Performance: <100ms respuesta
-     - Llamadas síncronas a DB
-     - DB en región diferente = latencia 50-150ms
-     - ⚠️ RIESGO: No cumplir SLA bajo carga
-   * - Disponibilidad: 99.9%
-     - Servidor único
-     - Sin redundancia
-     - 🔴 PROBLEMA: Single point of failure
-   * - Seguridad: Encriptación end-to-end
-     - HTTPS en tránsito
-     - Datos en reposo sin encriptar
-     - ⚠️ GAP: Falta encriptación at-rest
-   * - Escalabilidad: 10x usuarios
-     - Arquitectura monolítica
-     - Escalar = escalar todo
-     - ⚠️ RIESGO: Costos altos de infraestructura
+ :header-rows: 1
+ :widths: 20 25 25 30
+
+ * - **Requisito**
+ - **Enfoque Actual**
+ - **Análisis**
+ - **Riesgo Identificado**
+ * - Performance: <100ms respuesta
+ - Llamadas síncronas a DB
+ - DB en región diferente = latencia 50-150ms
+ - [WARNING] RIESGO: No cumplir SLA bajo carga
+ * - Disponibilidad: 99.9%
+ - Servidor único
+ - Sin redundancia
+ - PROBLEMA: Single point of failure
+ * - Seguridad: Encriptación end-to-end
+ - HTTPS en tránsito
+ - Datos en reposo sin encriptar
+ - [WARNING] GAP: Falta encriptación at-rest
+ * - Escalabilidad: 10x usuarios
+ - Arquitectura monolítica
+ - Escalar = escalar todo
+ - [WARNING] RIESGO: Costos altos de infraestructura
 
 ----
 
@@ -74,25 +74,25 @@ Método de Evaluación
 
 .. code-block:: text
 
-   Requisito de Calidad: Performance (<200ms p95)
-   ┌─────────────────────────────────────────────┐
-   │ Enfoque Arquitectónico                      │
-   ├─────────────────────────────────────────────┤
-   │ ✅ Cache en Redis (reduce DB queries)      │
-   │ ✅ CDN para assets estáticos                │
-   │ ⚠️  Base de datos sin índices optimizados   │
-   │ ❌ Queries N+1 en múltiples endpoints       │
-   └─────────────────────────────────────────────┘
-   
-   Análisis:
-   ├─ Fortalezas: Cache + CDN dan buen baseline
-   ├─ Debilidades: Queries ineficientes
-   └─ Riesgo: Bajo carga alta, cache misses = degradación
-   
-   Mitigación Propuesta:
-   1. Agregar índices a queries frecuentes (2 días)
-   2. Refactorizar queries N+1 (1 semana)
-   3. Implementar query monitoring (3 días)
+ Requisito de Calidad: Performance (<200ms p95)
+ +---------------------------------------------+
+ | Enfoque Arquitectónico |
+ +---------------------------------------------+
+ | [OK] Cache en Redis (reduce DB queries) |
+ | [OK] CDN para assets estáticos |
+ | [WARNING] Base de datos sin índices optimizados |
+ | [ERROR] Queries N+1 en múltiples endpoints |
+ +---------------------------------------------+
+
+ Análisis:
+ +- Fortalezas: Cache + CDN dan buen baseline
+ +- Debilidades: Queries ineficientes
+ +- Riesgo: Bajo carga alta, cache misses = degradación
+
+ Mitigación Propuesta:
+ 1. Agregar índices a queries frecuentes (2 días)
+ 2. Refactorizar queries N+1 (1 semana)
+ 3. Implementar query monitoring (3 días)
 
 ----
 
@@ -112,47 +112,47 @@ El **Architecture Tradeoff Analysis Method (ATAM)** es un método formal para es
 **Términos ATAM:**
 
 * **Trade-off**: Decisión que beneficia un atributo pero perjudica otro
-  
-  *Ejemplo: Microservicios → mejor escalabilidad, peor latencia*
+
+ *Ejemplo: Microservicios -> mejor escalabilidad, peor latencia*
 
 * **Sensitivity**: Parámetro crítico que afecta significativamente un atributo
-  
-  *Ejemplo: Tamaño de pool de conexiones DB → afecta throughput*
+
+ *Ejemplo: Tamaño de pool de conexiones DB -> afecta throughput*
 
 * **Risk**: Decisión que amenaza un requisito de calidad
-  
-  *Ejemplo: Sin replicación → amenaza disponibilidad*
+
+ *Ejemplo: Sin replicación -> amenaza disponibilidad*
 
 ----
 
 **Plantilla de Análisis Cualitativo:**
 
 .. list-table::
-   :header-rows: 1
-   :widths: 15 20 20 15 15 15
-   
-   * - **Requisito**
-     - **Enfoque**
-     - **Trade-off**
-     - **Sensitivity**
-     - **Riesgo**
-     - **Acción**
-   * - *<Req>*
-     - *<Enfoque arquitectónico>*
-     - *<Qué se sacrifica>*
-     - *<Parámetros críticos>*
-     - *<Nivel de riesgo>*
-     - *<Mitigación propuesta>*
+ :header-rows: 1
+ :widths: 15 20 20 15 15 15
+
+ * - **Requisito**
+ - **Enfoque**
+ - **Trade-off**
+ - **Sensitivity**
+ - **Riesgo**
+ - **Acción**
+ * - *<Req>*
+ - *<Enfoque arquitectónico>*
+ - *<Qué se sacrifica>*
+ - *<Parámetros críticos>*
+ - *<Nivel de riesgo>*
+ - *<Mitigación propuesta>*
 
 ----
 
 **Beneficios de Evaluación Cualitativa:**
 
-* ✅ **Detección temprana**: Riesgos identificados en diseño, no en producción
-* ✅ **Objetividad**: Análisis sistemático vs intuición
-* ✅ **Trazabilidad**: Requisito → Enfoque → Riesgo
-* ✅ **Priorización**: Riesgos clasificados por impacto
-* ✅ **Comunicación**: Evidencia clara para stakeholders
+* [OK] **Detección temprana**: Riesgos identificados en diseño, no en producción
+* [OK] **Objetividad**: Análisis sistemático vs intuición
+* [OK] **Trazabilidad**: Requisito -> Enfoque -> Riesgo
+* [OK] **Priorización**: Riesgos clasificados por impacto
+* [OK] **Comunicación**: Evidencia clara para stakeholders
 
 ----
 
@@ -166,7 +166,7 @@ Ver También
 ----
 
 .. seealso::
-   * **Tip 11-1** - Buscar riesgos con diferentes stakeholders
-   * **Tip 11-2** - Analizar interfaces para riesgos
-   * **Sección 4** - Vista de Solución
-   * **Sección 9** - Decisiones de Arquitectura
+ * **Tip 11-1** - Buscar riesgos con diferentes stakeholders
+ * **Tip 11-2** - Analizar interfaces para riesgos
+ * **Sección 4** - Vista de Solución
+ * **Sección 9** - Decisiones de Arquitectura

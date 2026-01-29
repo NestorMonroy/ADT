@@ -1,17 +1,17 @@
-# 📚 DOCUMENTOS MAESTROS DEL PROYECTO ADT
+# DOCUMENTOS MAESTROS DEL PROYECTO ADT
 
 Esta carpeta contiene los **3 documentos maestros fundamentales** que definen la arquitectura, metodología y organización del proyecto ADT (Arc42-Diátaxis-Traducción).
 
 ---
 
-## 📋 Documentos Incluidos
+## [LIST] Documentos Incluidos
 
 ### 1. ARQUITECTURA_DOCUMENTAL_TRADUCCION.md (19KB)
 **Propósito:** Define la estructura documental para procedimientos de traducción técnica.
 
 **Contenido:**
 - Estructura completa de 10 secciones para documentar traducción
-- 01_fundamentos → 10_apendices
+- 01_fundamentos -> 10_apendices
 - Justificación de cada sección
 - Mapeo de contenido existente
 - Configuración Sphinx recomendada
@@ -51,31 +51,31 @@ Esta carpeta contiene los **3 documentos maestros fundamentales** que definen la
 
 ---
 
-## 🎯 Relación entre Documentos
+## [TARGET] Relación entre Documentos
 
 ```
 ARQUITECTURA_DOCUMENTAL_TRADUCCION.md
-    ↓
-    Define: /tmp/ADT/traduccion/source/
-             └── 10 secciones de metodología
-    
+ v
+ Define: /tmp/ADT/traduccion/source/
+ +-- 10 secciones de metodología
+
 PROMPT_MAESTRO_SPHINX_TRADUCCION.md
-    ↓
-    Aplica: Proceso de traducción
-            └── Usa metodología de ARQUITECTURA_DOCUMENTAL
+ v
+ Aplica: Proceso de traducción
+ +-- Usa metodología de ARQUITECTURA_DOCUMENTAL
 
 ESTRUCTURA_DE_BIBLIOTECA.md
-    ↓
-    Define: /tmp/ADT/biblioteca/
-             └── Organización de contenido traducido
-                  ├── arc42/ (libro traducido)
-                  ├── informatica/programacion/
-                  └── ingenieria/ciencias/
+ v
+ Define: /tmp/ADT/biblioteca/
+ +-- Organización de contenido traducido
+ +-- arc42/ (libro traducido)
+ +-- informatica/programacion/
+ +-- ingenieria/ciencias/
 ```
 
 ---
 
-## 🔑 Conceptos Clave
+## [KEY] Conceptos Clave
 
 ### arc42 es un "Libro" que están Traduciendo
 
@@ -89,22 +89,22 @@ ESTRUCTURA_DE_BIBLIOTECA.md
 
 ```
 /tmp/ADT/
-├── docs_maestros/          ← ⭐ ESTOS DOCUMENTOS
-│   ├── ARQUITECTURA_DOCUMENTAL_TRADUCCION.md
-│   ├── PROMPT_MAESTRO_SPHINX_TRADUCCION.md
-│   └── ESTRUCTURA_DE_BIBLIOTECA.md
-│
-├── diataxis/               ← Framework documentación por propósito
-├── traduccion/             ← Metodología (10 secciones)
-├── biblioteca/             ← TODO el contenido traducido
-│   └── arc42/              ← arc42 como libro traducido
-├── scripts/
-└── config/
++-- docs_maestros/ <- [STAR] ESTOS DOCUMENTOS
+| +-- ARQUITECTURA_DOCUMENTAL_TRADUCCION.md
+| +-- PROMPT_MAESTRO_SPHINX_TRADUCCION.md
+| +-- ESTRUCTURA_DE_BIBLIOTECA.md
+|
++-- diataxis/ <- Framework documentación por propósito
++-- traduccion/ <- Metodología (10 secciones)
++-- biblioteca/ <- TODO el contenido traducido
+| +-- arc42/ <- arc42 como libro traducido
++-- scripts/
++-- config/
 ```
 
 ---
 
-## 📖 Cómo Usar Estos Documentos
+## Cómo Usar Estos Documentos
 
 ### Paso 1: Leer ARQUITECTURA_DOCUMENTAL_TRADUCCION.md
 - Entender las 10 secciones de metodología
@@ -123,7 +123,7 @@ ESTRUCTURA_DE_BIBLIOTECA.md
 
 ---
 
-## ✅ Próximos Pasos Recomendados
+## [OK] Próximos Pasos Recomendados
 
 1. **Reorganizar /tmp/ADT/** según arquitectura correcta
 2. **Mover arc42** de raíz a `/tmp/ADT/biblioteca/arc42/`
@@ -133,31 +133,31 @@ ESTRUCTURA_DE_BIBLIOTECA.md
 
 ---
 
-## 🚨 Notas Importantes
+## [ALERT] Notas Importantes
 
 ### arc42 Debe Estar en biblioteca/
 
-❌ **INCORRECTO:**
+[ERROR] **INCORRECTO:**
 ```
 /tmp/ADT/
-├── arc42/              ← MAL, en raíz
-└── biblioteca/
++-- arc42/ <- MAL, en raíz
++-- biblioteca/
 ```
 
-✅ **CORRECTO:**
+[OK] **CORRECTO:**
 ```
 /tmp/ADT/
-└── biblioteca/
-    └── arc42/          ← BIEN, dentro de biblioteca
-        ├── metadata_libro.rst
-        ├── index.rst
-        └── sections/
-            ├── 01_introduction/
-            │   ├── original/
-            │   ├── traduccion/
-            │   └── glosario_seccion.rst
-            ├── 02_constraints/
-            └── 03_context/
++-- biblioteca/
+ +-- arc42/ <- BIEN, dentro de biblioteca
+ +-- metadata_libro.rst
+ +-- index.rst
+ +-- sections/
+ +-- 01_introduction/
+ | +-- original/
+ | +-- traduccion/
+ | +-- glosario_seccion.rst
+ +-- 02_constraints/
+ +-- 03_context/
 ```
 
 ### Estructura Similar a Libros Regulares
@@ -171,6 +171,6 @@ arc42 se organiza **igual** que cualquier otro libro técnico traducido:
 
 ---
 
-**Creado:** 2026-01-26  
-**Ubicación:** /tmp/ADT/docs_maestros/  
+**Creado:** 2026-01-26
+**Ubicación:** /tmp/ADT/docs_maestros/
 **Propósito:** Guía maestra del proyecto ADT

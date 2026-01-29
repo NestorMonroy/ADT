@@ -1,15 +1,15 @@
-════════════════════════════════════════════════════════════════════
+====================================================================
 SECCIÓN 03 - CONTEXT AND SCOPE (Contexto y Alcance)
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 Fecha de completación: 2026-01-27
 Workflow: v1.6.0
 Método: Peshitta + Paso 3.4 (Traducción Arquitectónica)
-Estado: ✅ 100% COMPLETADO (28/28 archivos)
+Estado: [OK] 100% COMPLETADO (28/28 archivos)
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 ÍNDICE DE CONTENIDO
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 1. SUBSECCIONES PLANTILLA arc42 (3)
 2. EJEMPLOS (6)
@@ -17,12 +17,12 @@ Estado: ✅ 100% COMPLETADO (28/28 archivos)
 
 TOTAL: 28 archivos RST
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 1. SUBSECCIONES PLANTILLA arc42
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 1.1 seccion_03_contexto_alcance.rst
-────────────────────────────────────────────────────────────────
+----------------------------------------------------------------
 Título: 3. Contexto y Alcance
 
 Contenido principal:
@@ -31,15 +31,15 @@ Contenido principal:
 - Incluye toctree completo con 28 archivos
 
 Términos clave (Paso 3.4):
-- Context → Contexto
-- Scope → Alcance
-- Business context → Contexto de negocio
-- Technical context → Contexto técnico
-- Communication partner → Socio de comunicación
-- External interface → Interfaz externa
+- Context -> Contexto
+- Scope -> Alcance
+- Business context -> Contexto de negocio
+- Technical context -> Contexto técnico
+- Communication partner -> Socio de comunicación
+- External interface -> Interfaz externa
 
 1.2 seccion_3_1_contexto_negocio.rst
-────────────────────────────────────────────────────────────────
+----------------------------------------------------------------
 Título: 3.1 Contexto de Negocio
 
 Contenido principal:
@@ -52,7 +52,7 @@ Plantilla incluida:
 - Formato para describir interfaces de dominio
 
 1.3 seccion_3_2_contexto_tecnico.rst
-────────────────────────────────────────────────────────────────
+----------------------------------------------------------------
 Título: 3.2 Contexto Técnico
 
 Contenido principal:
@@ -65,229 +65,229 @@ Plantilla incluida:
 - Tabla de mapeo E/S a canales
 - Formato para interfaces técnicas
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 2. EJEMPLOS
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 2.1 EJEMPLOS DE CONTEXTO DE NEGOCIO (4)
-────────────────────────────────────────────────────────────────
+----------------------------------------------------------------
 
 contexto_ejemplo_negocio_1.rst
-  Sistema: HTML Sanity Checker
-  Contenido: Diagrama + tabla de socios
-  Vecinos: usuario, sistema de construcción, archivos HTML/imagen, recursos web
+ Sistema: HTML Sanity Checker
+ Contenido: Diagrama + tabla de socios
+ Vecinos: usuario, sistema de construcción, archivos HTML/imagen, recursos web
 
 contexto_ejemplo_negocio_2.rst
-  Sistema: MaMa
-  Contenido: Diagrama simple + tabla
-  Vecinos: Mandator, PrintService
+ Sistema: MaMa
+ Contenido: Diagrama simple + tabla
+ Vecinos: Mandator, PrintService
 
 contexto_ejemplo_negocio_3.rst
-  Sistema: TrafficPursuitUnit
-  Contenido: Diagrama de flujo de datos
-  Enfoque: Usuarios humanos + entorno técnico
+ Sistema: TrafficPursuitUnit
+ Contenido: Diagrama de flujo de datos
+ Enfoque: Usuarios humanos + entorno técnico
 
 contexto_ejemplo_negocio_4.rst
-  Sistema: status.arc42.org
-  Contenido: Creado con drawio/diagrams.net
-  Enfoque: Sitio web con entradas/salidas
+ Sistema: status.arc42.org
+ Contenido: Creado con drawio/diagrams.net
+ Enfoque: Sitio web con entradas/salidas
 
 2.2 EJEMPLOS DE CONTEXTO TÉCNICO (2)
-────────────────────────────────────────────────────────────────
+----------------------------------------------------------------
 
 contexto_ejemplo_tecnico_1.rst
-  Sistema: HTML Sanity Checker
-  Contenido: Nodos + artefactos
-  Elementos: hsc-development, hsc-plugin-binary, repositorio cloud, build.gradle
+ Sistema: HTML Sanity Checker
+ Contenido: Nodos + artefactos
+ Elementos: hsc-development, hsc-plugin-binary, repositorio cloud, build.gradle
 
 contexto_ejemplo_tecnico_4.rst
-  Sistema: TrafficPursuitUnit
-  Contenido: Modelo de despliegue UML
-  Elementos: Canales con estereotipos UML, mapeo E/S a canales
+ Sistema: TrafficPursuitUnit
+ Contenido: Modelo de despliegue UML
+ Elementos: Canales con estereotipos UML, mapeo E/S a canales
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 3. TIPS Y CONSEJOS (19)
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 contexto_tip_1.rst
-  Título: ¡Demarca explícitamente tu sistema de su entorno!
-  Tema: Definir límites del sistema
-  Contenido: Mostrar qué está dentro/fuera, alcance vs responsabilidades
+ Título: ¡Demarca explícitamente tu sistema de su entorno!
+ Tema: Definir límites del sistema
+ Contenido: Mostrar qué está dentro/fuera, alcance vs responsabilidades
 
 contexto_tip_2.rst
-  Título: ¡Muestra el contexto como diagrama!
-  Tema: Representación gráfica
-  Contenido: Caja negra, opciones UML, sistema en el centro
+ Título: ¡Muestra el contexto como diagrama!
+ Tema: Representación gráfica
+ Contenido: Caja negra, opciones UML, sistema en el centro
 
 contexto_tip_3.rst
-  Título: ¡Combina el diagrama de contexto con una tabla!
-  Tema: Diagrama + Tabla
-  Contenido: Reducir etiquetas, agregar explicaciones
+ Título: ¡Combina el diagrama de contexto con una tabla!
+ Tema: Diagrama + Tabla
+ Contenido: Reducir etiquetas, agregar explicaciones
 
 contexto_tip_4.rst
-  Título: ¡Indica explícitamente los riesgos en el contexto!
-  Tema: Gestión de riesgos
-  Contenido: Disponibilidad, costo, seguridad, volatilidad, complejidad
+ Título: ¡Indica explícitamente los riesgos en el contexto!
+ Tema: Gestión de riesgos
+ Contenido: Disponibilidad, costo, seguridad, volatilidad, complejidad
 
 contexto_tip_5.rst
-  Título: ¡Restringe el contexto a una visión general, evita demasiados detalles!
-  Tema: Nivel de detalle
-  Contenido: Visión general vs detalles técnicos
+ Título: ¡Restringe el contexto a una visión general, evita demasiados detalles!
+ Tema: Nivel de detalle
+ Contenido: Visión general vs detalles técnicos
 
 contexto_tip_6.rst
-  Título: ¡Simplifica el contexto mediante categorización!
-  Tema: Categorización
-  Contenido: Agrupar interfaces/sistemas similares
+ Título: ¡Simplifica el contexto mediante categorización!
+ Tema: Categorización
+ Contenido: Agrupar interfaces/sistemas similares
 
 contexto_tip_7.rst
-  Título: ¡Si hay muchos sistemas externos, agrégalos por criterios explícitos!
-  Tema: Agregación
-  Contenido: Criterios de agrupación (datos, casos de uso, tecnología)
+ Título: ¡Si hay muchos sistemas externos, agrégalos por criterios explícitos!
+ Tema: Agregación
+ Contenido: Criterios de agrupación (datos, casos de uso, tecnología)
 
 contexto_tip_8.rst
-  Título: ¡Agrega sistemas vecinos similares con puertos!
-  Tema: Puertos UML
-  Contenido: Símbolos de puerto para clusters
+ Título: ¡Agrega sistemas vecinos similares con puertos!
+ Tema: Puertos UML
+ Contenido: Símbolos de puerto para clusters
 
 contexto_tip_9.rst
-  Título: ¡Muestra todas las interfaces externas!
-  Tema: Completitud
-  Contenido: Incluir todos los sistemas externos
+ Título: ¡Muestra todas las interfaces externas!
+ Tema: Completitud
+ Contenido: Incluir todos los sistemas externos
 
 contexto_tip_10.rst
-  Título: ¡Diferencia el contexto de negocio y técnico!
-  Tema: Diferenciación business/technical
-  Contenido: Cuándo usar cada uno, ejemplos embebidos y web
+ Título: ¡Diferencia el contexto de negocio y técnico!
+ Tema: Diferenciación business/technical
+ Contenido: Cuándo usar cada uno, ejemplos embebidos y web
 
 contexto_tip_11.rst
-  Título: ¡En el contexto de negocio, muestra flujos de datos!
-  Tema: Flujos de datos
-  Contenido: Qué datos se intercambian
+ Título: ¡En el contexto de negocio, muestra flujos de datos!
+ Tema: Flujos de datos
+ Contenido: Qué datos se intercambian
 
 contexto_tip_12.rst
-  Título: ¡Muestra influencias externas en el contexto!
-  Tema: Influencias externas
-  Contenido: Regulaciones, estándares, legacy
+ Título: ¡Muestra influencias externas en el contexto!
+ Tema: Influencias externas
+ Contenido: Regulaciones, estándares, legacy
 
 contexto_tip_13.rst
-  Título: ¡Muestra dependencias transitivas en el contexto!
-  Tema: Dependencias indirectas
-  Contenido: Cuando son relevantes
+ Título: ¡Muestra dependencias transitivas en el contexto!
+ Tema: Dependencias indirectas
+ Contenido: Cuando son relevantes
 
 contexto_tip_14.rst
-  Título: ¡Presta atención a los requisitos de calidad en las interfaces externas!
-  Tema: Requisitos de calidad
-  Contenido: Performance, seguridad, disponibilidad
+ Título: ¡Presta atención a los requisitos de calidad en las interfaces externas!
+ Tema: Requisitos de calidad
+ Contenido: Performance, seguridad, disponibilidad
 
 contexto_tip_15.rst
-  Título: ¡Muestra el contexto técnico si el hardware es central!
-  Tema: Hardware
-  Contenido: Sistemas embebidos, hardware crítico
+ Título: ¡Muestra el contexto técnico si el hardware es central!
+ Tema: Hardware
+ Contenido: Sistemas embebidos, hardware crítico
 
 contexto_tip_16.rst
-  Título: ¡Usa el contexto técnico para describir protocolos o canales!
-  Tema: Protocolos y canales
-  Contenido: Tecnologías de comunicación
+ Título: ¡Usa el contexto técnico para describir protocolos o canales!
+ Tema: Protocolos y canales
+ Contenido: Tecnologías de comunicación
 
 contexto_tip_17.rst
-  Título: ¡Combina el contexto de negocio con información técnica!
-  Tema: Combinación
-  Contenido: Cuándo combinar ambos contextos
+ Título: ¡Combina el contexto de negocio con información técnica!
+ Tema: Combinación
+ Contenido: Cuándo combinar ambos contextos
 
 contexto_tip_18.rst
-  Título: ¡Explica la relación entre interfaces de dominio y su realización técnica!
-  Tema: Mapeo dominio-técnico
-  Contenido: Relacionar interfaces de negocio con técnicas
+ Título: ¡Explica la relación entre interfaces de dominio y su realización técnica!
+ Tema: Mapeo dominio-técnico
+ Contenido: Relacionar interfaces de negocio con técnicas
 
 contexto_tip_19.rst
-  Título: ¡Difiere el contexto técnico a la vista de despliegue!
-  Tema: Contexto vs Despliegue
-  Contenido: Cuándo documentar en Sección 7
+ Título: ¡Difiere el contexto técnico a la vista de despliegue!
+ Tema: Contexto vs Despliegue
+ Contenido: Cuándo documentar en Sección 7
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 TÉRMINOS ARQUITECTÓNICOS (Paso 3.4)
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 COHERENCIA: 100% en todos los 28 archivos
 
-Context → Contexto
-Scope → Alcance
-Business context → Contexto de negocio
-Technical context → Contexto técnico
-Communication partner → Socio de comunicación
-Neighbor / Neighbouring → Vecino
-Domain interface → Interfaz de dominio
-Technical interface → Interfaz técnica
-External interface → Interfaz externa
-Black box → Caja negra
-Channel → Canal
-Node → Nodo
-Deployment → Despliegue
-Protocol → Protocolo
-Artifact → Artefacto
-Data flow → Flujo de datos
-Dependency → Dependencia
-Quality requirement → Requisito de calidad
-Transmission media → Medio de transmisión
+Context -> Contexto
+Scope -> Alcance
+Business context -> Contexto de negocio
+Technical context -> Contexto técnico
+Communication partner -> Socio de comunicación
+Neighbor / Neighbouring -> Vecino
+Domain interface -> Interfaz de dominio
+Technical interface -> Interfaz técnica
+External interface -> Interfaz externa
+Black box -> Caja negra
+Channel -> Canal
+Node -> Nodo
+Deployment -> Despliegue
+Protocol -> Protocolo
+Artifact -> Artefacto
+Data flow -> Flujo de datos
+Dependency -> Dependencia
+Quality requirement -> Requisito de calidad
+Transmission media -> Medio de transmisión
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 MÉTRICAS DE CALIDAD
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 EFICIENCIA:
-  Archivos totales: 28
-  Tiempo total: ~8 horas
-  Tiempo por archivo: ~17 min
-  Correcciones necesarias: 0
+ Archivos totales: 28
+ Tiempo total: ~8 horas
+ Tiempo por archivo: ~17 min
+ Correcciones necesarias: 0
 
 CALIDAD:
-  Coherencia terminológica: 100%
-  Traducciones literales incorrectas: 0
-  Sintaxis RST: Correcta en todos
-  Referencias cruzadas: Completas
-  Estructura 1:1: Mantenida
+ Coherencia terminológica: 100%
+ Traducciones literales incorrectas: 0
+ Sintaxis RST: Correcta en todos
+ Referencias cruzadas: Completas
+ Estructura 1:1: Mantenida
 
 COMPARACIÓN CON SECCIÓN 01:
-  Sin Paso 3.4: 12 correcciones necesarias
-  Con Paso 3.4: 0 correcciones
-  Mejora: 100% reducción de correcciones
+ Sin Paso 3.4: 12 correcciones necesarias
+ Con Paso 3.4: 0 correcciones
+ Mejora: 100% reducción de correcciones
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 UBICACIÓN DE ARCHIVOS
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 Traducción (RST):
-  /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/
-    sections/03_context_scope/traduccion/
+ /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/
+ sections/03_context_scope/traduccion/
 
 Original (MD):
-  /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/
-    sections/03_context_scope/original/
+ /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/
+ sections/03_context_scope/original/
 
 Especificación oficial:
-  /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/
-    original/_pages/section-3.md
+ /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/
+ original/_pages/section-3.md
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 REFERENCIAS EN ARCHIVO PRINCIPAL
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 Archivo: seccion_03_contexto_alcance.rst
 
 Contiene:
-  • Introducción a Contexto y Alcance
-  • Toctree con subsecciones (3.1, 3.2)
-  • Toctree con ejemplos (6)
-  • Toctree con tips (19)
-  • Metadata de estado (100% completado)
-  • Términos arquitectónicos documentados
+ • Introducción a Contexto y Alcance
+ • Toctree con subsecciones (3.1, 3.2)
+ • Toctree con ejemplos (6)
+ • Toctree con tips (19)
+ • Metadata de estado (100% completado)
+ • Términos arquitectónicos documentados
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 FIN DE section-3.txt
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 Para uso:
-  • Referencia rápida de todos los archivos
-  • Plantillas copiables
-  • Consulta sin compilar Sphinx
-  • Independiente del build system
+ • Referencia rápida de todos los archivos
+ • Plantillas copiables
+ • Consulta sin compilar Sphinx
+ • Independiente del build system

@@ -5,13 +5,13 @@
 =====================================
 
 .. note::
-   **Plantilla arc42 - Traducción Arquitectónica (Paso 3.4)**
-   
-   Términos clave:
-   * Level 2 → Nivel 2
-   * White box → Caja blanca
-   * Building block → Bloque de construcción
-   * Internal structure → Estructura interna
+ **Plantilla arc42 - Traducción Arquitectónica (Paso 3.4)**
+
+ Términos clave:
+ * Level 2 -> Nivel 2
+ * White box -> Caja blanca
+ * Building block -> Bloque de construcción
+ * Internal structure -> Estructura interna
 
 ----
 
@@ -26,30 +26,30 @@ Plantilla Nivel 2
 
 .. code-block:: text
 
-   5.2 Nivel 2
-   ===========
-   
-   5.2.1 Caja Blanca <bloque de construcción 1>
-   ---------------------------------------------
-   
-   Especifica la estructura interna de _bloque de construcción 1_.
-   
-   Usa la plantilla de caja blanca (ver arriba).
-   
-   _<inserta plantilla de caja blanca del bloque de construcción 1>_
-   
-   
-   5.2.2 Caja Blanca <bloque de construcción 2>
-   ---------------------------------------------
-   
-   _<inserta plantilla de caja blanca para el bloque de construcción 2>_
-   
-   ...
-   
-   5.2.n Caja Blanca <bloque de construcción n>
-   ---------------------------------------------
-   
-   _<inserta plantilla de caja blanca para el bloque de construcción n>_
+ 5.2 Nivel 2
+ ===========
+
+ 5.2.1 Caja Blanca <bloque de construcción 1>
+ ---------------------------------------------
+
+ Especifica la estructura interna de _bloque de construcción 1_.
+
+ Usa la plantilla de caja blanca (ver arriba).
+
+ _<inserta plantilla de caja blanca del bloque de construcción 1>_
+
+
+ 5.2.2 Caja Blanca <bloque de construcción 2>
+ ---------------------------------------------
+
+ _<inserta plantilla de caja blanca para el bloque de construcción 2>_
+
+ ...
+
+ 5.2.n Caja Blanca <bloque de construcción n>
+ ---------------------------------------------
+
+ _<inserta plantilla de caja blanca para el bloque de construcción n>_
 
 ----
 

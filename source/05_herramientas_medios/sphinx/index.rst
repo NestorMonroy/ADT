@@ -4,7 +4,7 @@
 Herramientas Sphinx
 ===============================================
 
-⏳ **Subsección en desarrollo**
+[RUNNING] **Subsección en desarrollo**
 
 Contenido Planificado
 ======================

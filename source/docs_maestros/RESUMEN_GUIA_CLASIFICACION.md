@@ -1,13 +1,13 @@
-# 📚 Guía Metodológica de Clasificación Documental - Resumen Ejecutivo
+# Guía Metodológica de Clasificación Documental - Resumen Ejecutivo
 
-**Código:** META_BIB_001  
-**Versión:** 1.0.0  
-**Fecha:** 2026-01-28  
+**Código:** META_BIB_001
+**Versión:** 1.0.0
+**Fecha:** 2026-01-28
 **Estado:** NORMATIVO
 
 ---
 
-## 🎯 Propósito
+## [TARGET] Propósito
 
 Sistema de clasificación jerárquica para organizar libros técnicos traducidos en el proyecto ADT.
 
@@ -15,24 +15,24 @@ Sistema de clasificación jerárquica para organizar libros técnicos traducidos
 
 ---
 
-## 📊 Sistema de Clasificación
+## [TABLE] Sistema de Clasificación
 
 ### Jerarquía de 4 Niveles
 
 ```
-CATEGORÍA → SUBCATEGORÍA → ESPECIALIDAD → NÚMERO
-    3 letras      3 letras       3 letras       001-999
+CATEGORÍA -> SUBCATEGORÍA -> ESPECIALIDAD -> NÚMERO
+ 3 letras 3 letras 3 letras 001-999
 
 Ejemplo: INF.PRG.FST.001
-         │   │   │   └── Número secuencial
-         │   │   └───── Especialidad (Full-Stack)
-         │   └───────── Subcategoría (Programación)
-         └───────────── Categoría (Informática)
+ | | | +-- Número secuencial
+ | | +----- Especialidad (Full-Stack)
+ | +--------- Subcategoría (Programación)
+ +------------- Categoría (Informática)
 ```
 
 ---
 
-## 🗂️ Categorías Principales
+## DIRECTORY: Categorías Principales
 
 | Código | Nombre | Ámbito |
 |--------|--------|--------|
@@ -42,7 +42,7 @@ Ejemplo: INF.PRG.FST.001
 
 ---
 
-## 💻 Subcategorías Informática (INF)
+## [COMPUTER] Subcategorías Informática (INF)
 
 | Código | Nombre | Ejemplos |
 |--------|--------|----------|
@@ -59,7 +59,7 @@ Ejemplo: INF.PRG.FST.001
 
 ---
 
-## 🔧 Subcategorías Ingeniería (ING)
+## [TOOL] Subcategorías Ingeniería (ING)
 
 | Código | Nombre | Ejemplos |
 |--------|--------|----------|
@@ -72,7 +72,7 @@ Ejemplo: INF.PRG.FST.001
 
 ---
 
-## 🔬 Subcategorías Ciencias (CIE)
+## Subcategorías Ciencias (CIE)
 
 | Código | Nombre | Ejemplos |
 |--------|--------|----------|
@@ -83,74 +83,74 @@ Ejemplo: INF.PRG.FST.001
 
 ---
 
-## 🎓 Especialidades Más Comunes
+## [LEARN] Especialidades Más Comunes
 
 ### Programación (INF.PRG)
 
 ```
-FST → Full-Stack
-FRE → Frontend
-BAC → Backend
-PYT → Python
-JAV → JavaScript
-TSC → TypeScript
-REA → React
-VUE → Vue.js
-ANG → Angular
-NOD → Node.js
-DJA → Django
-FLA → Flask
+FST -> Full-Stack
+FRE -> Frontend
+BAC -> Backend
+PYT -> Python
+JAV -> JavaScript
+TSC -> TypeScript
+REA -> React
+VUE -> Vue.js
+ANG -> Angular
+NOD -> Node.js
+DJA -> Django
+FLA -> Flask
 ```
 
 ### IA (INF.IAR)
 
 ```
-MLF → Machine Learning Fundamentals
-DLE → Deep Learning
-NLP → Natural Language Processing
-CVS → Computer Vision
-RFO → Reinforcement Learning
+MLF -> Machine Learning Fundamentals
+DLE -> Deep Learning
+NLP -> Natural Language Processing
+CVS -> Computer Vision
+RFO -> Reinforcement Learning
 ```
 
 ### DevOps (INF.DVC)
 
 ```
-DOC → Docker
-KUB → Kubernetes
-AWS → Amazon Web Services
-AZU → Microsoft Azure
-GCP → Google Cloud Platform
-TER → Terraform
-ANS → Ansible
+DOC -> Docker
+KUB -> Kubernetes
+AWS -> Amazon Web Services
+AZU -> Microsoft Azure
+GCP -> Google Cloud Platform
+TER -> Terraform
+ANS -> Ansible
 ```
 
 ### Arquitectura (ING.ARQ)
 
 ```
-MIC → Microservicios
-CLE → Clean Architecture
-DDD → Domain-Driven Design
-ARC → arc42
-HEX → Hexagonal Architecture
+MIC -> Microservicios
+CLE -> Clean Architecture
+DDD -> Domain-Driven Design
+ARC -> arc42
+HEX -> Hexagonal Architecture
 ```
 
 ---
 
-## ⚡ Proceso de Clasificación en 4 Pasos
+## [WARNING] Proceso de Clasificación en 4 Pasos
 
 ### Paso 1: Determinar Categoría
 
 ```
 ¿El libro trata de...?
 
-→ Programación, IA, redes, bases de datos?
-  ✅ INFORMÁTICA (INF)
+-> Programación, IA, redes, bases de datos?
+ [OK] INFORMÁTICA (INF)
 
-→ Arquitectura de software, metodologías?
-  ✅ INGENIERÍA (ING)
+-> Arquitectura de software, metodologías?
+ [OK] INGENIERÍA (ING)
 
-→ Matemáticas aplicadas, física, biología computacional?
-  ✅ CIENCIAS (CIE)
+-> Matemáticas aplicadas, física, biología computacional?
+ [OK] CIENCIAS (CIE)
 ```
 
 ### Paso 2: Determinar Subcategoría
@@ -184,30 +184,30 @@ ls /biblioteca/informatica/programacion/full_stack/
 
 ---
 
-## 📝 Ejemplos Completos
+## [NOTE] Ejemplos Completos
 
 ### Ejemplo 1: Full-Stack Development
 
 ```
-Libro: "Modern Full-Stack Development: Using TypeScript, React, 
-        Node.js, Webpack, Python, Django, and Docker"
+Libro: "Modern Full-Stack Development: Using TypeScript, React,
+ Node.js, Webpack, Python, Django, and Docker"
 
 PASO 1: Categoría
-→ Programación con frameworks → INFORMÁTICA (INF)
+-> Programación con frameworks -> INFORMÁTICA (INF)
 
-PASO 2: Subcategoría  
-→ Múltiples lenguajes/frameworks → PROGRAMACIÓN (PRG)
+PASO 2: Subcategoría
+-> Múltiples lenguajes/frameworks -> PROGRAMACIÓN (PRG)
 
 PASO 3: Especialidad
-→ "Full-Stack Development" en título → FULL-STACK (FST)
+-> "Full-Stack Development" en título -> FULL-STACK (FST)
 
 PASO 4: Número
-→ Primer libro en la especialidad → 001
+-> Primer libro en la especialidad -> 001
 
 RESULTADO: INF.PRG.FST.001
 
 RUTA: /biblioteca/informatica/programacion/full_stack/
-      Modern_Full_Stack_Development_Zammetti_2ed/
+ Modern_Full_Stack_Development_Zammetti_2ed/
 ```
 
 ### Ejemplo 2: Machine Learning
@@ -215,15 +215,15 @@ RUTA: /biblioteca/informatica/programacion/full_stack/
 ```
 Libro: "Machine Learning with Python"
 
-PASO 1: → INFORMÁTICA (INF)
-PASO 2: → INTELIGENCIA ARTIFICIAL (IAR)
-PASO 3: → MACHINE LEARNING FUNDAMENTALS (MLF)
-PASO 4: → 001
+PASO 1: -> INFORMÁTICA (INF)
+PASO 2: -> INTELIGENCIA ARTIFICIAL (IAR)
+PASO 3: -> MACHINE LEARNING FUNDAMENTALS (MLF)
+PASO 4: -> 001
 
 RESULTADO: INF.IAR.MLF.001
 
 RUTA: /biblioteca/informatica/inteligencia_artificial/machine_learning/
-      Machine_Learning_with_Python_Johnson_2025/
+ Machine_Learning_with_Python_Johnson_2025/
 ```
 
 ### Ejemplo 3: Software Architecture
@@ -231,15 +231,15 @@ RUTA: /biblioteca/informatica/inteligencia_artificial/machine_learning/
 ```
 Libro: "Software Architecture: The Hard Parts"
 
-PASO 1: → INGENIERÍA (ING)
-PASO 2: → ARQUITECTURA (ARQ)
-PASO 3: → GENERAL (GEN)
-PASO 4: → 001
+PASO 1: -> INGENIERÍA (ING)
+PASO 2: -> ARQUITECTURA (ARQ)
+PASO 3: -> GENERAL (GEN)
+PASO 4: -> 001
 
 RESULTADO: ING.ARQ.GEN.001
 
 RUTA: /biblioteca/ingenieria/arquitectura/general/
-      Software_Architecture_Hard_Parts_Ford_2023/
+ Software_Architecture_Hard_Parts_Ford_2023/
 ```
 
 ### Ejemplo 4: Docker
@@ -247,162 +247,162 @@ RUTA: /biblioteca/ingenieria/arquitectura/general/
 ```
 Libro: "Docker Deep Dive"
 
-PASO 1: → INFORMÁTICA (INF)
-PASO 2: → DEVOPS Y CLOUD (DVC)
-PASO 3: → DOCKER (DOC)
-PASO 4: → 001
+PASO 1: -> INFORMÁTICA (INF)
+PASO 2: -> DEVOPS Y CLOUD (DVC)
+PASO 3: -> DOCKER (DOC)
+PASO 4: -> 001
 
 RESULTADO: INF.DVC.DOC.001
 
 RUTA: /biblioteca/informatica/devops/docker/
-      Docker_Deep_Dive_Poulton_2024/
+ Docker_Deep_Dive_Poulton_2024/
 ```
 
 ---
 
-## 📁 Estructura de Carpetas
+## DIRECTORY: Estructura de Carpetas
 
 ```
 /biblioteca/
-│
-├── _metadata_biblioteca/              # Metadata del sistema
-│   ├── META_BIB_001_Sistema_Clasificacion_1_0_0.rst
-│   ├── META_BIB_002_Guia_Organizacion_1_0_0.rst
-│   ├── catalogo_completo.rst
-│   └── catalogo_numeros.txt
-│
-├── informatica/                        # CATEGORÍA
-│   ├── programacion/                   # SUBCATEGORÍA
-│   │   ├── full_stack/                 # ESPECIALIDAD
-│   │   │   └── Modern_Full_Stack_Development_Zammetti_2ed/  # LIBRO
-│   │   │       ├── metadata_libro.rst
-│   │   │       ├── index.rst
-│   │   │       ├── glosario_acumulativo.rst
-│   │   │       ├── Chapter_01_*/
-│   │   │       ├── Chapter_02_*/
-│   │   │       └── ...
-│   │   ├── react/
-│   │   ├── python/
-│   │   └── typescript/
-│   │
-│   ├── inteligencia_artificial/
-│   │   ├── machine_learning/
-│   │   └── deep_learning/
-│   │
-│   └── devops/
-│       ├── docker/
-│       └── kubernetes/
-│
-├── ingenieria/
-│   ├── arquitectura/
-│   └── sistemas/
-│
-└── ciencias/
-    └── matematicas/
+|
++-- _metadata_biblioteca/ # Metadata del sistema
+| +-- META_BIB_001_Sistema_Clasificacion_1_0_0.rst
+| +-- META_BIB_002_Guia_Organizacion_1_0_0.rst
+| +-- catalogo_completo.rst
+| +-- catalogo_numeros.txt
+|
++-- informatica/ # CATEGORÍA
+| +-- programacion/ # SUBCATEGORÍA
+| | +-- full_stack/ # ESPECIALIDAD
+| | | +-- Modern_Full_Stack_Development_Zammetti_2ed/ # LIBRO
+| | | +-- metadata_libro.rst
+| | | +-- index.rst
+| | | +-- glosario_acumulativo.rst
+| | | +-- Chapter_01_*/
+| | | +-- Chapter_02_*/
+| | | +-- ...
+| | +-- react/
+| | +-- python/
+| | +-- typescript/
+| |
+| +-- inteligencia_artificial/
+| | +-- machine_learning/
+| | +-- deep_learning/
+| |
+| +-- devops/
+| +-- docker/
+| +-- kubernetes/
+|
++-- ingenieria/
+| +-- arquitectura/
+| +-- sistemas/
+|
++-- ciencias/
+ +-- matematicas/
 ```
 
 ---
 
-## 📄 Estructura Interna de Libro
+## FILE: Estructura Interna de Libro
 
 ```
 Libro_Ejemplo/
-├── metadata_libro.rst              # ⭐ OBLIGATORIO
-├── index.rst                       # ⭐ OBLIGATORIO
-├── glosario_acumulativo.rst        # ⭐ OBLIGATORIO
-│
-├── Chapter_01_Titulo/
-│   ├── original/
-│   │   └── chapter_01.pdf
-│   ├── traduccion/
-│   │   └── capitulo_01.rst
-│   ├── glosario_capitulo.rst
-│   ├── notas_traduccion.rst
-│   └── figuras/
-│
-├── Chapter_02_Titulo/
-│   └── ...
-│
-├── appendices/
-├── front_matter/
-└── back_matter/
++-- metadata_libro.rst # [STAR] OBLIGATORIO
++-- index.rst # [STAR] OBLIGATORIO
++-- glosario_acumulativo.rst # [STAR] OBLIGATORIO
+|
++-- Chapter_01_Titulo/
+| +-- original/
+| | +-- chapter_01.pdf
+| +-- traduccion/
+| | +-- capitulo_01.rst
+| +-- glosario_capitulo.rst
+| +-- notas_traduccion.rst
+| +-- figuras/
+|
++-- Chapter_02_Titulo/
+| +-- ...
+|
++-- appendices/
++-- front_matter/
++-- back_matter/
 ```
 
 ---
 
-## 🏷️ Formato del Código
+## [TAG] Formato del Código
 
-### Válido ✅
-
-```
-INF.PRG.FST.001  ✅ Correcto
-INF.IAR.MLF.023  ✅ Correcto
-ING.ARQ.MIC.005  ✅ Correcto
-```
-
-### Inválido ❌
+### Válido [OK]
 
 ```
-inf.prg.fst.001  ❌ Minúsculas
-INF.PROG.FST.001 ❌ Subcategoría 4 letras
-INF.PRG.FS.001   ❌ Especialidad 2 letras
-INF.PRG.FST.1    ❌ Número sin ceros a la izquierda
-INF.PRG.FST.1000 ❌ Número > 999
+INF.PRG.FST.001 [OK] Correcto
+INF.IAR.MLF.023 [OK] Correcto
+ING.ARQ.MIC.005 [OK] Correcto
 ```
 
----
-
-## 📋 Checklist de Clasificación
+### Inválido [ERROR]
 
 ```
-☐ PASO 1: Categoría determinada (INF/ING/CIE)
-☐ PASO 2: Subcategoría determinada (XXX)
-☐ PASO 3: Especialidad determinada (XXX)
-☐ PASO 4: Número asignado (001-999)
-☐ Código completo generado (XXX.XXX.XXX.XXX)
-☐ Ruta de carpeta generada
-☐ Estructura de carpetas creada
-☐ metadata_libro.rst creado
-☐ Catálogo actualizado
-☐ Revisión por segundo clasificador
-☐ Clasificación finalizada
+inf.prg.fst.001 [ERROR] Minúsculas
+INF.PROG.FST.001 [ERROR] Subcategoría 4 letras
+INF.PRG.FS.001 [ERROR] Especialidad 2 letras
+INF.PRG.FST.1 [ERROR] Número sin ceros a la izquierda
+INF.PRG.FST.1000 [ERROR] Número > 999
 ```
 
 ---
 
-## ❓ FAQ Rápido
+## [LIST] Checklist de Clasificación
 
-**P: ¿Puedo cambiar la clasificación después?**  
+```
+[ ] PASO 1: Categoría determinada (INF/ING/CIE)
+[ ] PASO 2: Subcategoría determinada (XXX)
+[ ] PASO 3: Especialidad determinada (XXX)
+[ ] PASO 4: Número asignado (001-999)
+[ ] Código completo generado (XXX.XXX.XXX.XXX)
+[ ] Ruta de carpeta generada
+[ ] Estructura de carpetas creada
+[ ] metadata_libro.rst creado
+[ ] Catálogo actualizado
+[ ] Revisión por segundo clasificador
+[ ] Clasificación finalizada
+```
+
+---
+
+## FAQ Rápido
+
+**P: ¿Puedo cambiar la clasificación después?**
 R: SÍ, pero requiere aprobación y actualización de metadata. Evitar si es posible.
 
-**P: ¿Qué hago si no existe la especialidad?**  
+**P: ¿Qué hago si no existe la especialidad?**
 R: Proponer nueva especialidad con código de 3 letras y justificación.
 
-**P: ¿Los números deben ser consecutivos?**  
+**P: ¿Los números deben ser consecutivos?**
 R: SÍ. 001, 002, 003... sin saltos. No reutilizar números eliminados.
 
-**P: ¿Puedo tener un libro en dos categorías?**  
+**P: ¿Puedo tener un libro en dos categorías?**
 R: NO. Cada libro tiene UNA sola ubicación.
 
-**P: ¿Mayúsculas o minúsculas?**  
+**P: ¿Mayúsculas o minúsculas?**
 R: SIEMPRE MAYÚSCULAS.
 
 ---
 
-## 🎯 Reglas de Oro
+## [TARGET] Reglas de Oro
 
-1. ✅ **Un libro = Una ubicación** (no clasificación múltiple)
-2. ✅ **Códigos SIEMPRE en mayúsculas**
-3. ✅ **Números secuenciales sin saltos** (001, 002, 003...)
-4. ✅ **No reutilizar números** de libros eliminados
-5. ✅ **Exactamente 3 letras** para cada nivel
-6. ✅ **Pensar bien la clasificación inicial** (evitar reclasificaciones)
-7. ✅ **Documentar siempre** en metadata_libro.rst
-8. ✅ **Actualizar catálogo** después de cada clasificación
+1. [OK] **Un libro = Una ubicación** (no clasificación múltiple)
+2. [OK] **Códigos SIEMPRE en mayúsculas**
+3. [OK] **Números secuenciales sin saltos** (001, 002, 003...)
+4. [OK] **No reutilizar números** de libros eliminados
+5. [OK] **Exactamente 3 letras** para cada nivel
+6. [OK] **Pensar bien la clasificación inicial** (evitar reclasificaciones)
+7. [OK] **Documentar siempre** en metadata_libro.rst
+8. [OK] **Actualizar catálogo** después de cada clasificación
 
 ---
 
-## 📚 Tabla de Referencia Rápida
+## Tabla de Referencia Rápida
 
 ### Decisión de Categoría
 
@@ -449,7 +449,7 @@ R: SIEMPRE MAYÚSCULAS.
 
 ---
 
-## 🔍 Casos Especiales
+## [DEBUG] Casos Especiales
 
 ### Libro Multidominio
 
@@ -457,9 +457,9 @@ R: SIEMPRE MAYÚSCULAS.
 Ejemplo: "AI for Web Development"
 
 Análisis:
-- ¿60% IA, 40% Web? → INF.IAR
-- ¿40% IA, 60% Web? → INF.WEB
-- ¿50/50? → Elegir tema PRIMARIO del título
+- ¿60% IA, 40% Web? -> INF.IAR
+- ¿40% IA, 60% Web? -> INF.WEB
+- ¿50/50? -> Elegir tema PRIMARIO del título
 ```
 
 ### Serie de Libros
@@ -468,8 +468,8 @@ Análisis:
 "Python Vol 1" y "Python Vol 2"
 
 Clasificación:
-- Python_Vol1 → INF.PRG.PYT.001
-- Python_Vol2 → INF.PRG.PYT.002
+- Python_Vol1 -> INF.PRG.PYT.001
+- Python_Vol2 -> INF.PRG.PYT.002
 (Cada volumen = Libro independiente)
 ```
 
@@ -479,45 +479,45 @@ Clasificación:
 "Docker 1st Ed" y "Docker 2nd Ed"
 
 Clasificación:
-- Docker_1ed → INF.DVC.DOC.001
-- Docker_2ed → INF.DVC.DOC.002
+- Docker_1ed -> INF.DVC.DOC.001
+- Docker_2ed -> INF.DVC.DOC.002
 (Cada edición = Libro NUEVO)
 ```
 
 ---
 
-## 🛠️ Herramientas
+## [TOOLS] Herramientas
 
 ### Script de Clasificación
 
 ```python
 def clasificar_libro(titulo, autor, toc):
-    categoria = inferir_categoria(titulo)
-    subcategoria = inferir_subcategoria(titulo, toc)
-    especialidad = inferir_especialidad(titulo, toc)
-    numero = obtener_siguiente_numero(categoria, subcategoria, especialidad)
-    codigo = f"{categoria}.{subcategoria}.{especialidad}.{numero:03d}"
-    return codigo
+ categoria = inferir_categoria(titulo)
+ subcategoria = inferir_subcategoria(titulo, toc)
+ especialidad = inferir_especialidad(titulo, toc)
+ numero = obtener_siguiente_numero(categoria, subcategoria, especialidad)
+ codigo = f"{categoria}.{subcategoria}.{especialidad}.{numero:03d}"
+ return codigo
 ```
 
 ### Validación
 
 ```python
 def validar_codigo(codigo):
-    # Formato: XXX.XXX.XXX.NNN
-    partes = codigo.split('.')
-    if len(partes) != 4:
-        return False
-    if not all(len(p) == 3 for p in partes[:3]):
-        return False
-    if not partes[3].isdigit() or len(partes[3]) != 3:
-        return False
-    return True
+ # Formato: XXX.XXX.XXX.NNN
+ partes = codigo.split('.')
+ if len(partes) != 4:
+ return False
+ if not all(len(p) == 3 for p in partes[:3]):
+ return False
+ if not partes[3].isdigit() or len(partes[3]) != 3:
+ return False
+ return True
 ```
 
 ---
 
-## 📊 Estadísticas Recomendadas
+## [TABLE] Estadísticas Recomendadas
 
 Mantener en `estadisticas_biblioteca.rst`:
 
@@ -531,7 +531,7 @@ Mantener en `estadisticas_biblioteca.rst`:
 
 ---
 
-## 🔗 Archivos Relacionados
+## [LINK] Archivos Relacionados
 
 - **Guía completa:** `GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL.rst` (80+ páginas)
 - **Arquitectura:** `ARQUITECTURA_TRADUCCION_IACT.rst`
@@ -540,7 +540,7 @@ Mantener en `estadisticas_biblioteca.rst`:
 
 ---
 
-## ✅ Para Empezar
+## [OK] Para Empezar
 
 1. Lee este resumen ejecutivo
 2. Consulta la guía completa para detalles
@@ -550,12 +550,12 @@ Mantener en `estadisticas_biblioteca.rst`:
 
 ---
 
-**Versión:** 1.0.0  
-**Última actualización:** 2026-01-28  
+**Versión:** 1.0.0
+**Última actualización:** 2026-01-28
 **Estado:** NORMATIVO
 
 ---
 
 **FIN DEL RESUMEN EJECUTIVO**
 
-📖 Para información detallada, casos de uso complejos, plantillas y procedimientos completos, consulta el documento completo: `GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL.rst`
+ Para información detallada, casos de uso complejos, plantillas y procedimientos completos, consulta el documento completo: `GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL.rst`

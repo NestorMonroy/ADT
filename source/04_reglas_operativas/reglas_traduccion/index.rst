@@ -4,7 +4,7 @@
 Reglas de Traducción
 ===============================================
 
-⏳ **Subsección en desarrollo**
+[RUNNING] **Subsección en desarrollo**
 
 Esta subsección contendrá reglas específicas para traducción de elementos particulares.
 
@@ -19,4 +19,4 @@ Contenido Planificado
 ----
 
 .. note::
-   Esta subsección será desarrollada en Fase 2.
+ Esta subsección será desarrollada en Fase 2.

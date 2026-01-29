@@ -9,17 +9,17 @@ Plantillas reutilizables para diferentes tipos de documentos.
 Plantillas Disponibles
 =======================
 
-⏳ **plantilla_manual_usuario.rst**
-   - Estructura estándar manual de usuario
-   - Secciones típicas incluidas
+[RUNNING] **plantilla_manual_usuario.rst**
+ - Estructura estándar manual de usuario
+ - Secciones típicas incluidas
 
-⏳ **plantilla_documentacion_api.rst**
-   - Formato de referencia API
-   - Ejemplos de código incluidos
+[RUNNING] **plantilla_documentacion_api.rst**
+ - Formato de referencia API
+ - Ejemplos de código incluidos
 
-⏳ **plantilla_tutorial.rst**
-   - Estructura paso a paso
-   - Ejercicios incluidos
+[RUNNING] **plantilla_tutorial.rst**
+ - Estructura paso a paso
+ - Ejercicios incluidos
 
 ----
 
@@ -34,4 +34,4 @@ Uso de Plantillas
 ----
 
 .. note::
-   Plantillas en desarrollo. Versión completa próximamente.
+ Plantillas en desarrollo. Versión completa próximamente.

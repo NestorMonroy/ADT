@@ -3,46 +3,46 @@ ANÁLISIS PROFUNDO - SECCIÓN 07
 Programación Funcional en Python
 ================================================================================
 
-📊 RESUMEN GENERAL
+[TABLE] RESUMEN GENERAL
 --------------------------------------------------------------------------------
 Total de archivos analizados: 13
 
 Agrupación por tipo:
-  • tip: 10 archivos
-  • ejemplo: 3 archivos
+ • tip: 10 archivos
+ • ejemplo: 3 archivos
 
-📈 ESTADÍSTICAS GLOBALES
+[CHART] ESTADÍSTICAS GLOBALES
 --------------------------------------------------------------------------------
-  total_archivos: 13
-  total_palabras: 1693
-  total_lineas: 383
-  archivos_con_imagenes: 9
-  total_imagenes: 12
-  archivos_con_codigo: 2
-  archivos_con_tablas: 3
-  archivos_con_listas: 5
-  promedio_palabras: 130.23076923076923
-  promedio_lineas: 29.46153846153846
+ total_archivos: 13
+ total_palabras: 1693
+ total_lineas: 383
+ archivos_con_imagenes: 9
+ total_imagenes: 12
+ archivos_con_codigo: 2
+ archivos_con_tablas: 3
+ archivos_con_listas: 5
+ promedio_palabras: 130.23076923076923
+ promedio_lineas: 29.46153846153846
 
-🏷️  ANÁLISIS FRONT MATTER
+[TAG] ANÁLISIS FRONT MATTER
 --------------------------------------------------------------------------------
 Keys únicos: category, layout, permalink, tags, title
 
 Frecuencias:
-  layout: 13 archivos
-  tags: 13 archivos
-  category: 13 archivos
-  title: 13 archivos
-  permalink: 13 archivos
+ layout: 13 archivos
+ tags: 13 archivos
+ category: 13 archivos
+ title: 13 archivos
+ permalink: 13 archivos
 
-🖼️  ANÁLISIS DE IMÁGENES
+[IMAGE] ANÁLISIS DE IMÁGENES
 --------------------------------------------------------------------------------
-  total_imagenes: 12
-  con_site_imageurl: 12
-  con_http: 0
-  relativas: 0
+ total_imagenes: 12
+ con_site_imageurl: 12
+ con_http: 0
+ relativas: 0
 
-🔄 VERIFICACIÓN DE TRADUCCIONES
+[PROCESSING] VERIFICACIÓN DE TRADUCCIONES
 --------------------------------------------------------------------------------
 Total originales: 13
 Total traducciones: 13

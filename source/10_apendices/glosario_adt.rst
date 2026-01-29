@@ -7,8 +7,8 @@ Glosario ADT
 Glosario completo de términos usados en el sistema ADT.
 
 .. contents:: Contenido
-   :depth: 2
-   :local:
+ :depth: 2
+ :local:
 
 ----
 
@@ -110,11 +110,11 @@ Matriz de decisión: Traducir vs conservar. Define qué términos traducir y cu�
 
 Modo 1
 ------
-**Alta Fidelidad**. Modo de traducción que preserva formato original (LaTeX→LaTeX). Ideal para documentos académicos.
+**Alta Fidelidad**. Modo de traducción que preserva formato original (LaTeX->LaTeX). Ideal para documentos académicos.
 
 Modo 2
 ------
-**Transformación**. Modo de traducción que convierte a nuevo formato (LaTeX→RST). Ideal para documentación técnica web.
+**Transformación**. Modo de traducción que convierte a nuevo formato (LaTeX->RST). Ideal para documentación técnica web.
 
 ----
 
@@ -127,7 +127,7 @@ Fase crítica de pre-traducción donde se lee el documento COMPLETO antes de tra
 
 Pandoc
 ------
-Herramienta de conversión entre formatos de documento. Útil para conversiones automáticas LaTeX→RST.
+Herramienta de conversión entre formatos de documento. Útil para conversiones automáticas LaTeX->RST.
 
 Precisión Técnica
 -----------------
@@ -301,10 +301,10 @@ Términos que NO se traducen según MD-004:
 Traducir al Español
 -------------------
 Términos que SÍ se traducen según MD-004:
-- Conceptos generales: Quality → Calidad
-- Verbos: Implement → Implementar
-- Adjetivos: Complex → Complejo
-- Sustantivos comunes: Risk → Riesgo
+- Conceptos generales: Quality -> Calidad
+- Verbos: Implement -> Implementar
+- Adjetivos: Complex -> Complejo
+- Sustantivos comunes: Risk -> Riesgo
 
 Marcado de Primera Aparición
 -----------------------------
@@ -464,9 +464,9 @@ Link a label que no existe. Verificable durante compilación.
 ----
 
 .. seealso::
-   * :doc:`../01_fundamentos/glosario_traduccion` - Glosario original de traducción
-   * :doc:`../04_reglas_operativas/matrices_decision/MD_004_traducir_vs_conservar` - Decisiones de terminología
-   * :doc:`../07_guias_uso/faq` - Preguntas frecuentes
+ * :doc:`../01_fundamentos/glosario_traduccion` - Glosario original de traducción
+ * :doc:`../04_reglas_operativas/matrices_decision/MD_004_traducir_vs_conservar` - Decisiones de terminología
+ * :doc:`../07_guias_uso/faq` - Preguntas frecuentes
 
 .. note::
-   Este glosario evoluciona con el proyecto. Versión actual: 2026-01-28.
+ Este glosario evoluciona con el proyecto. Versión actual: 2026-01-28.

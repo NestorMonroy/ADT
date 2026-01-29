@@ -5,9 +5,9 @@ Sección 11: Riesgos y Deuda Técnica (Risks and Technical Debt)
 ===============================================================
 
 .. tip::
-   **Riesgos y Deuda Técnica arc42**
-   
-   Los **riesgos** y la **deuda técnica** son parte inevitable de cualquier proyecto. Esta sección documenta los **riesgos técnicos** identificados y la **deuda técnica**, ordenados por prioridad, para facilitar la gestión proactiva.
+ **Riesgos y Deuda Técnica arc42**
+
+ Los **riesgos** y la **deuda técnica** son parte inevitable de cualquier proyecto. Esta sección documenta los **riesgos técnicos** identificados y la **deuda técnica**, ordenados por prioridad, para facilitar la gestión proactiva.
 
 ----
 
@@ -24,11 +24,11 @@ Una lista de **riesgos técnicos** identificados o **deudas técnicas**, ordenad
 Motivación
 ==========
 
-    *"Risk management is project management for grown-ups"*
-    
-    (Gestión de riesgos es gestión de proyectos para adultos)
-    
-    — Tim Lister, `Atlantic Systems Guild <https://www.infoq.com/presentations/risk-project-management>`_
+ *"Risk management is project management for grown-ups"*
+
+ (Gestión de riesgos es gestión de proyectos para adultos)
+
+ — Tim Lister, `Atlantic Systems Guild <https://www.infoq.com/presentations/risk-project-management>`_
 
 Este debería ser tu lema para la detección y evaluación sistemática de **riesgos** y **deudas técnicas** en la arquitectura, que serán necesarios para los stakeholders de gestión (por ejemplo, gerentes de proyecto, product owners) como parte del análisis de riesgos general y la planificación de mediciones.
 
@@ -40,27 +40,27 @@ Lista de **riesgos** y/o **deudas técnicas**, probablemente incluyendo medidas 
 **Estructura Recomendada:**
 
 .. list-table:: Plantilla de Riesgos y Deuda Técnica
-   :header-rows: 1
-   :widths: 10 25 20 15 15 15
-   
-   * - **ID**
-     - **Descripción**
-     - **Impacto**
-     - **Probabilidad**
-     - **Prioridad**
-     - **Mitigación**
-   * - R-001
-     - *< Descripción del riesgo >*
-     - *< Alto/Medio/Bajo >*
-     - *< Alta/Media/Baja >*
-     - *< Crítica/Alta/Media >*
-     - *< Medidas propuestas >*
-   * - TD-001
-     - *< Descripción de deuda técnica >*
-     - *< Esfuerzo de mantenimiento >*
-     - *< Urgencia de resolver >*
-     - *< Prioridad >*
-     - *< Plan de reducción >*
+ :header-rows: 1
+ :widths: 10 25 20 15 15 15
+
+ * - **ID**
+ - **Descripción**
+ - **Impacto**
+ - **Probabilidad**
+ - **Prioridad**
+ - **Mitigación**
+ * - R-001
+ - *< Descripción del riesgo >*
+ - *< Alto/Medio/Bajo >*
+ - *< Alta/Media/Baja >*
+ - *< Crítica/Alta/Media >*
+ - *< Medidas propuestas >*
+ * - TD-001
+ - *< Descripción de deuda técnica >*
+ - *< Esfuerzo de mantenimiento >*
+ - *< Urgencia de resolver >*
+ - *< Prioridad >*
+ - *< Plan de reducción >*
 
 **Plantilla Minimalista:**
 
@@ -81,15 +81,15 @@ Tips y Consejos
 ===============
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Tips para Riesgos y Deuda Técnica
-   
-   risks_tip_1
-   risks_tip_2
-   risks_tip_3
-   risks_tip_4
-   risks_tip_5
-   risks_tip_6
+ :maxdepth: 1
+ :caption: Tips para Riesgos y Deuda Técnica
+
+ risks_tip_1
+ risks_tip_2
+ risks_tip_3
+ risks_tip_4
+ risks_tip_5
+ risks_tip_6
 
 ----
 
@@ -97,11 +97,11 @@ Ejemplos de Aplicación
 ======================
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Ejemplos de Gestión de Riesgos
-   
-   risks_ejemplo_htmlsc
-   risks_ejemplo_tpu
+ :maxdepth: 1
+ :caption: Ejemplos de Gestión de Riesgos
+
+ risks_ejemplo_htmlsc
+ risks_ejemplo_tpu
 
 ----
 
@@ -115,12 +115,12 @@ Referencias
 ----
 
 .. note::
-   **Gestión Proactiva de Riesgos**
-   
-   La detección sistemática de **riesgos técnicos** y **deuda técnica** permite:
-   
-   * ✅ **Anticipar problemas** antes de que se conviertan en crisis
-   * ✅ **Priorizar esfuerzos** de refactorización
-   * ✅ **Comunicar claramente** con stakeholders de negocio
-   * ✅ **Justificar inversiones** en mejoras técnicas
-   * ✅ **Reducir sorpresas** durante desarrollo y mantenimiento
+ **Gestión Proactiva de Riesgos**
+
+ La detección sistemática de **riesgos técnicos** y **deuda técnica** permite:
+
+ * [OK] **Anticipar problemas** antes de que se conviertan en crisis
+ * [OK] **Priorizar esfuerzos** de refactorización
+ * [OK] **Comunicar claramente** con stakeholders de negocio
+ * [OK] **Justificar inversiones** en mejoras técnicas
+ * [OK] **Reducir sorpresas** durante desarrollo y mantenimiento

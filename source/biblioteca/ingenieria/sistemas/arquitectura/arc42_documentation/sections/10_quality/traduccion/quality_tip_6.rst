@@ -29,42 +29,42 @@ Ejemplos
 
 **Ejemplo 1: Integración de proveedor externo**
 
-   La integración de un nuevo proveedor de pagos (externo) es posible dentro de un máximo de dos persona-semanas.
+ La integración de un nuevo proveedor de pagos (externo) es posible dentro de un máximo de dos persona-semanas.
 
 **Ejemplo 2: Adaptación a requisitos legales**
 
-   El formato de datos del reporte de reservas anual puede adaptarse a los requisitos estatutarios (legales) dentro de 80 persona-horas.
+ El formato de datos del reporte de reservas anual puede adaptarse a los requisitos estatutarios (legales) dentro de 80 persona-horas.
 
 **Ejemplo 3: Flexibilidad de base de datos**
 
-   El sistema debe ser usable con los sistemas de base de datos DB2, Oracle y MySQL sin modificaciones al código fuente.
+ El sistema debe ser usable con los sistemas de base de datos DB2, Oracle y MySQL sin modificaciones al código fuente.
 
 ----
 
 **Tipos de Change Scenarios:**
 
 .. list-table::
-   :header-rows: 1
-   :widths: 30 40 30
-   
-   * - Tipo de Cambio
-     - Descripción
-     - Métrica Típica
-   * - **Funcional**
-     - Nuevas features, reglas modificadas
-     - Persona-horas/días
-   * - **Calidad**
-     - Performance mejorado, disponibilidad
-     - Esfuerzo de adaptación
-   * - **Tecnológico**
-     - Nueva DB, framework, librería
-     - Tiempo sin downtime
-   * - **Regulatorio**
-     - Cumplimiento legal, GDPR, etc.
-     - Deadline compliance
-   * - **Integración**
-     - Nuevos servicios externos
-     - Tiempo de integración
+ :header-rows: 1
+ :widths: 30 40 30
+
+ * - Tipo de Cambio
+ - Descripción
+ - Métrica Típica
+ * - **Funcional**
+ - Nuevas features, reglas modificadas
+ - Persona-horas/días
+ * - **Calidad**
+ - Performance mejorado, disponibilidad
+ - Esfuerzo de adaptación
+ * - **Tecnológico**
+ - Nueva DB, framework, librería
+ - Tiempo sin downtime
+ * - **Regulatorio**
+ - Cumplimiento legal, GDPR, etc.
+ - Deadline compliance
+ * - **Integración**
+ - Nuevos servicios externos
+ - Tiempo de integración
 
 **Estructura Recomendada para Change Scenarios:**
 
@@ -78,16 +78,16 @@ Ejemplos
 
 **Beneficios de Documentar Change Scenarios:**
 
-* ✅ **Diseño anticipado** para cambios futuros predecibles
-* ✅ **Estimación** de costos de mantenimiento
-* ✅ **Identificación** de áreas rígidas vs flexibles
-* ✅ **Justificación** de decisiones arquitectónicas
-* ✅ **Comunicación** clara con stakeholders de negocio
+* [OK] **Diseño anticipado** para cambios futuros predecibles
+* [OK] **Estimación** de costos de mantenimiento
+* [OK] **Identificación** de áreas rígidas vs flexibles
+* [OK] **Justificación** de decisiones arquitectónicas
+* [OK] **Comunicación** clara con stakeholders de negocio
 
 ----
 
 .. seealso::
-   * **Tip 10-5** - Escenarios de uso/aplicación
-   * **Tip 10-7** - Escenarios de fallo/error
-   * **Sección 9** - Decisiones de Arquitectura (justificación de flexibilidad)
-   * **Sección 11** - Riesgos y Deuda Técnica (cambios costosos)
+ * **Tip 10-5** - Escenarios de uso/aplicación
+ * **Tip 10-7** - Escenarios de fallo/error
+ * **Sección 9** - Decisiones de Arquitectura (justificación de flexibilidad)
+ * **Sección 11** - Riesgos y Deuda Técnica (cambios costosos)

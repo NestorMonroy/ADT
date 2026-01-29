@@ -14,33 +14,33 @@ Notas de Traducción: Sección 02 - Restricciones
 Decisiones de Traducción
 =========================
 
-Conversiones Markdown → RST
+Conversiones Markdown -> RST
 ----------------------------
 
-1. **DIV HTML → .. note::**
-   
-   Original: ``<div class="arc42-example">``
-   RST: ``.. note:: **Ejemplo arc42:**``
+1. **DIV HTML -> .. note::**
 
-2. **Enlaces internos → :ref:**
-   
-   Original: ``[tip 2-4](/tips/2-4)``
-   RST: ``:ref:`tip-2-4```
+ Original: ``<div class="arc42-example">``
+ RST: ``.. note:: **Ejemplo arc42:**``
+
+2. **Enlaces internos -> :ref:**
+
+ Original: ``[tip 2-4](/tips/2-4)``
+ RST: ``:ref:`tip-2-4```
 
 3. **Front Matter YAML**
-   
-   NO incluir layout/permalink (específicos de Jekyll)
-   SÍ incluir tags y category como metadatos
+
+ NO incluir layout/permalink (específicos de Jekyll)
+ SÍ incluir tags y category como metadatos
 
 Terminología
 ------------
 
 **Traducidos:**
 
-- Constraint → Restricción
-- Build tool → Herramienta de construcción
-- Command line → Línea de comandos
-- Management → Gerencia
+- Constraint -> Restricción
+- Build tool -> Herramienta de construcción
+- Command line -> Línea de comandos
+- Management -> Gerencia
 
 **Mantenidos en inglés:**
 
@@ -53,13 +53,13 @@ Correcciones
 **Typo corregido:**
 
 Archivo: 2016-03-01-t-2-4.md
-Original: "contraints" → Traducción: "restricciones"
+Original: "contraints" -> Traducción: "restricciones"
 
 Tácticas Aplicadas
 ==================
 
 1. **Claridad:** Introducción agregada
-2. **Domesticación:** Terminología apropiada  
+2. **Domesticación:** Terminología apropiada
 3. **Consistencia:** Glosario de 23 términos
 
 Métricas
@@ -78,4 +78,4 @@ Próximos Pasos
 
 ----
 
-:Estado: ✅ FASE 3 COMPLETADA
+:Estado: [OK] FASE 3 COMPLETADA

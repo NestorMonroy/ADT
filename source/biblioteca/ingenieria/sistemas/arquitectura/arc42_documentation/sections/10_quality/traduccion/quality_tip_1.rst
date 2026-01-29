@@ -19,9 +19,9 @@ Hemos participado en el desarrollo de varios sistemas que tenían más de 100 **
 
 **Aplicación Práctica:**
 
-* ✅ Sección 1.2: Solo los top 3-5 **objetivos de calidad** con prioridades
-* ✅ Sección 10.1: **Quality tree** (resumen gráfico o tabla)
-* ✅ Sección 10.2: Todos los **escenarios de calidad** detallados (100+ si es necesario)
+* [OK] Sección 1.2: Solo los top 3-5 **objetivos de calidad** con prioridades
+* [OK] Sección 10.1: **Quality tree** (resumen gráfico o tabla)
+* [OK] Sección 10.2: Todos los **escenarios de calidad** detallados (100+ si es necesario)
 
 **Beneficios:**
 
@@ -32,7 +32,7 @@ Hemos participado en el desarrollo de varios sistemas que tenían más de 100 **
 ----
 
 .. seealso::
-   * **Sección 1.2** - Objetivos de Calidad
-   * **Tip 10-2** - Documentar y explicar el quality tree específico
-   * **Sección 10.1** - Resumen de Requisitos de Calidad
-   * **Sección 10.2** - Escenarios de Calidad
+ * **Sección 1.2** - Objetivos de Calidad
+ * **Tip 10-2** - Documentar y explicar el quality tree específico
+ * **Sección 10.1** - Resumen de Requisitos de Calidad
+ * **Sección 10.2** - Escenarios de Calidad

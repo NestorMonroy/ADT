@@ -1,135 +1,135 @@
-# 🎯 REORGANIZACIÓN DEFINITIVA: /tmp/ADT COMO PROYECTO SPHINX ÚNICO
-**Versión FINAL - Correcta según Análisis Real**  
+# [TARGET] REORGANIZACIÓN DEFINITIVA: /tmp/ADT COMO PROYECTO SPHINX ÚNICO
+**Versión FINAL - Correcta según Análisis Real**
 **Fecha:** 2026-01-26
 
 ---
 
-## ✅ SITUACIÓN ACTUAL VERIFICADA
+## [OK] SITUACIÓN ACTUAL VERIFICADA
 
 ```
-/tmp/ADT/                          ❌ NO es proyecto Sphinx (raíz)
-├── [muchos .md]                   ← Archivos sueltos
-├── traduccion/                    ⚠️ Estructura Sphinx INCOMPLETA
-│   └── source/                    ✅ Tiene las 10 secciones
-│       ├── index.rst              ✅
-│       ├── 01-10/                 ✅
-│       └── (sin conf.py, sin Makefile)
-├── biblioteca/                    Traducciones antiguas
-│   └── arc42_documentation/
-├── arc42/                         Carpeta vacía
-├── seccion3_diagramas/            7 PlantUML
-├── docs_maestros/                 ✅ 3 documentos
-├── diataxis/                      ✅ Framework
-├── scripts/                       ✅
-├── config/                        ✅
-└── [proyectos independientes]     arc42_scraper_proxy, vagrant, etc.
+/tmp/ADT/ [ERROR] NO es proyecto Sphinx (raíz)
++-- [muchos .md] <- Archivos sueltos
++-- traduccion/ [WARNING] Estructura Sphinx INCOMPLETA
+| +-- source/ [OK] Tiene las 10 secciones
+| +-- index.rst [OK]
+| +-- 01-10/ [OK]
+| +-- (sin conf.py, sin Makefile)
++-- biblioteca/ Traducciones antiguas
+| +-- arc42_documentation/
++-- arc42/ Carpeta vacía
++-- seccion3_diagramas/ 7 PlantUML
++-- docs_maestros/ [OK] 3 documentos
++-- diataxis/ [OK] Framework
++-- scripts/ [OK]
++-- config/ [OK]
++-- [proyectos independientes] arc42_scraper_proxy, vagrant, etc.
 
-/tmp/ADT42/                        ✅ Proyecto Sphinx COMPLETO
-├── Makefile                       ✅
-├── make.bat                       ✅
-├── build/                         ✅
-└── source/                        ✅
-    ├── conf.py                    ✅
-    ├── index.rst                  ✅
-    ├── 01-10/                     ✅
-    └── biblioteca/                ✅
-```
-
----
-
-## 🎯 ESTRUCTURA OBJETIVO FINAL
-
-```
-/tmp/ADT/                          ⭐ PROYECTO SPHINX ÚNICO
-│
-├── Makefile                       ← Copiado de ADT42
-├── make.bat                       ← Copiado de ADT42
-├── build/                         ← HTML compilado
-│   └── html/
-│
-├── source/                        ⭐ TODO EL CONTENIDO SPHINX
-│   │
-│   ├── conf.py                    ← De ADT42 o config/sphinx/
-│   ├── index.rst                  ← Consolidado mejor versión
-│   ├── _static/                   ← CSS, JS
-│   ├── _templates/                ← Templates
-│   │
-│   ├── 01_fundamentos/            📖 Metodología Sección 1
-│   ├── 02_procedimientos/         📖 Metodología Sección 2
-│   ├── 03_estandares/             📖 Metodología Sección 3
-│   ├── 04_reglas_operativas/      📖 Metodología Sección 4
-│   ├── 05_herramientas_medios/    📖 Metodología Sección 5
-│   ├── 06_casos_practicos/        📖 Metodología Sección 6
-│   ├── 07_guias_uso/              📖 Metodología Sección 7
-│   ├── 08_prompts/                📖 Metodología Sección 8
-│   ├── 09_referencias/            📖 Metodología Sección 9
-│   ├── 10_apendices/              📖 Metodología Sección 10
-│   │
-│   └── biblioteca/                ⭐ CONTENIDO TRADUCIDO
-│       │
-│       ├── _metadata_biblioteca/
-│       │
-│       ├── arc42/                 ⭐ arc42 COMO LIBRO
-│       │   ├── metadata_libro.rst
-│       │   ├── index.rst
-│       │   ├── glosario_acumulativo.rst
-│       │   └── sections/
-│       │       ├── 01_introduction_goals/
-│       │       │   ├── original/
-│       │       │   ├── traduccion/
-│       │       │   │   └── seccion_01_introduccion_objetivos.rst
-│       │       │   ├── glosario_seccion.rst
-│       │       │   └── notas_traduccion.rst
-│       │       ├── 02_constraints/
-│       │       │   ├── original/
-│       │       │   ├── traduccion/
-│       │       │   │   └── seccion_02_restricciones.rst
-│       │       │   ├── glosario_seccion.rst
-│       │       │   └── notas_traduccion.rst
-│       │       ├── 03_context/
-│       │       │   ├── original/
-│       │       │   ├── traduccion/
-│       │       │   │   └── seccion_03_contexto_alcance.rst
-│       │       │   ├── glosario_seccion.rst
-│       │       │   ├── notas_traduccion.rst
-│       │       │   ├── README_SECCION_3.md
-│       │       │   └── diagramas/      ⭐ 7 PlantUML
-│       │       │       ├── *.puml (7)
-│       │       │       └── *.png (7)
-│       │       ├── 04_solution_strategy/
-│       │       └── ... (hasta 12_glossary)
-│       │
-│       └── informatica/
-│           └── programacion/
-│               ├── full_stack/
-│               ├── python/
-│               └── typescript/
-│
-├── docs_maestros/                 📚 Documentos fundamentales
-│   ├── ARQUITECTURA_DOCUMENTAL_TRADUCCION.md
-│   ├── PROMPT_MAESTRO_SPHINX_TRADUCCION.md
-│   ├── ESTRUCTURA_DE_BIBLIOTECA.md
-│   └── README.md
-│
-├── diataxis/                      Framework (NO Sphinx)
-│   ├── tutorials/
-│   ├── how_to_guides/
-│   ├── reference/
-│   └── explanation/
-│
-├── scripts/                       Automatización
-│   ├── build/
-│   ├── traduccion/
-│   └── utils/
-│
-└── config/                        Configuraciones
-    ├── sphinx/
-    └── templates/
+/tmp/ADT42/ [OK] Proyecto Sphinx COMPLETO
++-- Makefile [OK]
++-- make.bat [OK]
++-- build/ [OK]
++-- source/ [OK]
+ +-- conf.py [OK]
+ +-- index.rst [OK]
+ +-- 01-10/ [OK]
+ +-- biblioteca/ [OK]
 ```
 
 ---
 
-## 🔄 PLAN DE CONSOLIDACIÓN - 5 FASES
+## [TARGET] ESTRUCTURA OBJETIVO FINAL
+
+```
+/tmp/ADT/ [STAR] PROYECTO SPHINX ÚNICO
+|
++-- Makefile <- Copiado de ADT42
++-- make.bat <- Copiado de ADT42
++-- build/ <- HTML compilado
+| +-- html/
+|
++-- source/ [STAR] TODO EL CONTENIDO SPHINX
+| |
+| +-- conf.py <- De ADT42 o config/sphinx/
+| +-- index.rst <- Consolidado mejor versión
+| +-- _static/ <- CSS, JS
+| +-- _templates/ <- Templates
+| |
+| +-- 01_fundamentos/ Metodología Sección 1
+| +-- 02_procedimientos/ Metodología Sección 2
+| +-- 03_estandares/ Metodología Sección 3
+| +-- 04_reglas_operativas/ Metodología Sección 4
+| +-- 05_herramientas_medios/ Metodología Sección 5
+| +-- 06_casos_practicos/ Metodología Sección 6
+| +-- 07_guias_uso/ Metodología Sección 7
+| +-- 08_prompts/ Metodología Sección 8
+| +-- 09_referencias/ Metodología Sección 9
+| +-- 10_apendices/ Metodología Sección 10
+| |
+| +-- biblioteca/ [STAR] CONTENIDO TRADUCIDO
+| |
+| +-- _metadata_biblioteca/
+| |
+| +-- arc42/ [STAR] arc42 COMO LIBRO
+| | +-- metadata_libro.rst
+| | +-- index.rst
+| | +-- glosario_acumulativo.rst
+| | +-- sections/
+| | +-- 01_introduction_goals/
+| | | +-- original/
+| | | +-- traduccion/
+| | | | +-- seccion_01_introduccion_objetivos.rst
+| | | +-- glosario_seccion.rst
+| | | +-- notas_traduccion.rst
+| | +-- 02_constraints/
+| | | +-- original/
+| | | +-- traduccion/
+| | | | +-- seccion_02_restricciones.rst
+| | | +-- glosario_seccion.rst
+| | | +-- notas_traduccion.rst
+| | +-- 03_context/
+| | | +-- original/
+| | | +-- traduccion/
+| | | | +-- seccion_03_contexto_alcance.rst
+| | | +-- glosario_seccion.rst
+| | | +-- notas_traduccion.rst
+| | | +-- README_SECCION_3.md
+| | | +-- diagramas/ [STAR] 7 PlantUML
+| | | +-- *.puml (7)
+| | | +-- *.png (7)
+| | +-- 04_solution_strategy/
+| | +-- ... (hasta 12_glossary)
+| |
+| +-- informatica/
+| +-- programacion/
+| +-- full_stack/
+| +-- python/
+| +-- typescript/
+|
++-- docs_maestros/ Documentos fundamentales
+| +-- ARQUITECTURA_DOCUMENTAL_TRADUCCION.md
+| +-- PROMPT_MAESTRO_SPHINX_TRADUCCION.md
+| +-- ESTRUCTURA_DE_BIBLIOTECA.md
+| +-- README.md
+|
++-- diataxis/ Framework (NO Sphinx)
+| +-- tutorials/
+| +-- how_to_guides/
+| +-- reference/
+| +-- explanation/
+|
++-- scripts/ Automatización
+| +-- build/
+| +-- traduccion/
+| +-- utils/
+|
++-- config/ Configuraciones
+ +-- sphinx/
+ +-- templates/
+```
+
+---
+
+## [PROCESSING] PLAN DE CONSOLIDACIÓN - 5 FASES
 
 ### FASE 0: Backup (5 min)
 
@@ -161,7 +161,7 @@ rmdir traduccion
 
 # 5. Copiar conf.py si no existe
 if [ ! -f source/conf.py ]; then
-    cp /tmp/ADT42/source/conf.py source/
+ cp /tmp/ADT42/source/conf.py source/
 fi
 
 # 6. Usar mejor index.rst (de ADT42 si es mejor)
@@ -176,22 +176,22 @@ mkdir -p source/_static
 mkdir -p source/_templates
 
 # Verificar
-echo "✅ Estructura creada:"
+echo "[OK] Estructura creada:"
 ls -la /tmp/ADT/ | grep -E "Makefile|make.bat|build|source"
 ```
 
 **Resultado:**
 ```
 /tmp/ADT/
-├── Makefile        ✅
-├── make.bat        ✅
-├── build/          ✅
-└── source/         ✅
-    ├── conf.py     ✅
-    ├── index.rst   ✅
-    ├── 01-10/      ✅ (ya estaban)
-    ├── _static/    ✅
-    └── _templates/ ✅
++-- Makefile [OK]
++-- make.bat [OK]
++-- build/ [OK]
++-- source/ [OK]
+ +-- conf.py [OK]
+ +-- index.rst [OK]
+ +-- 01-10/ [OK] (ya estaban)
+ +-- _static/ [OK]
+ +-- _templates/ [OK]
 ```
 
 ---
@@ -203,8 +203,8 @@ cd /tmp/ADT/source
 
 # 1. Si biblioteca/ NO existe, copiar de ADT42
 if [ ! -d "biblioteca" ]; then
-    echo "Creando biblioteca/ desde ADT42..."
-    cp -r /tmp/ADT42/source/biblioteca ./
+ echo "Creando biblioteca/ desde ADT42..."
+ cp -r /tmp/ADT42/source/biblioteca ./
 fi
 
 # 2. Crear estructura base si está vacía
@@ -220,24 +220,24 @@ cd biblioteca/arc42/sections
 
 # 4. Crear 12 secciones de arc42
 for i in {01..12}; do
-    case $i in
-        01) name="01_introduction_goals" ;;
-        02) name="02_constraints" ;;
-        03) name="03_context" ;;
-        04) name="04_solution_strategy" ;;
-        05) name="05_building_blocks" ;;
-        06) name="06_runtime" ;;
-        07) name="07_deployment" ;;
-        08) name="08_concepts" ;;
-        09) name="09_decisions" ;;
-        10) name="10_quality" ;;
-        11) name="11_risks_tech_debt" ;;
-        12) name="12_glossary" ;;
-    esac
-    
-    mkdir -p "$name"/{original,traduccion,diagramas}
-    touch "$name"/glosario_seccion.rst
-    touch "$name"/notas_traduccion.rst
+ case $i in
+ 01) name="01_introduction_goals" ;;
+ 02) name="02_constraints" ;;
+ 03) name="03_context" ;;
+ 04) name="04_solution_strategy" ;;
+ 05) name="05_building_blocks" ;;
+ 06) name="06_runtime" ;;
+ 07) name="07_deployment" ;;
+ 08) name="08_concepts" ;;
+ 09) name="09_decisions" ;;
+ 10) name="10_quality" ;;
+ 11) name="11_risks_tech_debt" ;;
+ 12) name="12_glossary" ;;
+ esac
+
+ mkdir -p "$name"/{original,traduccion,diagramas}
+ touch "$name"/glosario_seccion.rst
+ touch "$name"/notas_traduccion.rst
 done
 
 # 5. Crear archivos raíz de arc42
@@ -257,21 +257,21 @@ tree -L 2 /tmp/ADT/source/biblioteca/arc42/
 ```bash
 # Sección 1
 cp /tmp/ADT/biblioteca/arc42_documentation/traducciones/sections/01/seccion_01_CORRECTA.rst \
-   /tmp/ADT/source/biblioteca/arc42/sections/01_introduction_goals/traduccion/seccion_01_introduccion_objetivos.rst
+ /tmp/ADT/source/biblioteca/arc42/sections/01_introduction_goals/traduccion/seccion_01_introduccion_objetivos.rst
 
-# Sección 2  
+# Sección 2
 cp /tmp/ADT/biblioteca/arc42_documentation/traducciones/sections/02/seccion_02_restricciones.rst \
-   /tmp/ADT/source/biblioteca/arc42/sections/02_constraints/traduccion/
+ /tmp/ADT/source/biblioteca/arc42/sections/02_constraints/traduccion/
 
 # Sección 3
 cp /tmp/ADT/biblioteca/arc42_documentation/traducciones/sections/03/seccion_03_contexto_alcance.rst \
-   /tmp/ADT/source/biblioteca/arc42/sections/03_context/traduccion/
+ /tmp/ADT/source/biblioteca/arc42/sections/03_context/traduccion/
 
 # README Sección 3
 cp /tmp/ADT/biblioteca/arc42_documentation/traducciones/sections/03/README_SECCION_3.md \
-   /tmp/ADT/source/biblioteca/arc42/sections/03_context/
+ /tmp/ADT/source/biblioteca/arc42/sections/03_context/
 
-echo "✅ Traducciones copiadas"
+echo "[OK] Traducciones copiadas"
 ls -la /tmp/ADT/source/biblioteca/arc42/sections/0{1,2,3}_*/traduccion/
 ```
 
@@ -282,13 +282,13 @@ ls -la /tmp/ADT/source/biblioteca/arc42/sections/0{1,2,3}_*/traduccion/
 ```bash
 # Copiar .puml y .png
 cp /tmp/ADT/seccion3_diagramas/*.puml \
-   /tmp/ADT/source/biblioteca/arc42/sections/03_context/diagramas/
+ /tmp/ADT/source/biblioteca/arc42/sections/03_context/diagramas/
 
 cp /tmp/ADT/seccion3_diagramas/*.png \
-   /tmp/ADT/source/biblioteca/arc42/sections/03_context/diagramas/
+ /tmp/ADT/source/biblioteca/arc42/sections/03_context/diagramas/
 
 # Verificar
-echo "✅ Diagramas copiados:"
+echo "[OK] Diagramas copiados:"
 ls -la /tmp/ADT/source/biblioteca/arc42/sections/03_context/diagramas/
 # Debe mostrar: 14 archivos (7 .puml + 7 .png)
 ```
@@ -304,7 +304,7 @@ cd /tmp/ADT
 rm -rf biblioteca/arc42
 rm -rf biblioteca/arc42_documentation
 rm -rf seccion3_diagramas
-rm -rf arc42  # carpeta vacía en raíz
+rm -rf arc42 # carpeta vacía en raíz
 
 # 2. Mover ADT42 como backup
 mv /tmp/ADT42 /tmp/ADT42_backup
@@ -312,9 +312,9 @@ mv /tmp/ADT42 /tmp/ADT42_backup
 # 3. Mover proyectos independientes
 mkdir -p /tmp/proyectos_independientes
 for proj in arc42_scraper_proxy arc42-vagrant arc42-vagrant-complete \
-            backend-modular-v2 arc42-scraper-project arc42-scraper \
-            arc42_cache arc42_html_cache; do
-    [ -d "$proj" ] && mv "$proj" /tmp/proyectos_independientes/
+ backend-modular-v2 arc42-scraper-project arc42-scraper \
+ arc42_cache arc42_html_cache; do
+ [ -d "$proj" ] && mv "$proj" /tmp/proyectos_independientes/
 done
 
 # 4. Limpiar archivos .md sueltos en raíz (opcional)
@@ -328,17 +328,17 @@ make html
 
 # 6. Verificar
 if [ -f "build/html/index.html" ]; then
-    echo "✅✅✅ COMPILACIÓN EXITOSA ✅✅✅"
-    ls -lh build/html/index.html
+ echo "[OK][OK][OK] COMPILACIÓN EXITOSA [OK][OK][OK]"
+ ls -lh build/html/index.html
 else
-    echo "❌ Error en compilación"
-    cat build/make.log
+ echo "[ERROR] Error en compilación"
+ cat build/make.log
 fi
 ```
 
 ---
 
-## ✅ CHECKLIST FINAL
+## [OK] CHECKLIST FINAL
 
 ### Proyecto Sphinx Base
 - [ ] `/tmp/ADT/Makefile` existe
@@ -374,36 +374,36 @@ fi
 
 ---
 
-## 📊 ANTES vs DESPUÉS
+## [TABLE] ANTES vs DESPUÉS
 
 ### ANTES
 ```
 /tmp/
-├── ADT/                    ❌ NO es proyecto Sphinx
-│   ├── traduccion/source/  (sin Makefile)
-│   ├── arc42/              (vacío)
-│   └── [proyectos mezclados]
-└── ADT42/                  (proyecto Sphinx duplicado)
++-- ADT/ [ERROR] NO es proyecto Sphinx
+| +-- traduccion/source/ (sin Makefile)
+| +-- arc42/ (vacío)
+| +-- [proyectos mezclados]
++-- ADT42/ (proyecto Sphinx duplicado)
 ```
 
 ### DESPUÉS
 ```
 /tmp/
-├── ADT/                    ⭐ PROYECTO SPHINX ÚNICO
-│   ├── Makefile
-│   ├── build/html/
-│   ├── source/
-│   │   ├── conf.py
-│   │   ├── 01-10/
-│   │   └── biblioteca/arc42/
-│   └── docs_maestros/
-├── ADT42_backup/
-└── proyectos_independientes/
++-- ADT/ [STAR] PROYECTO SPHINX ÚNICO
+| +-- Makefile
+| +-- build/html/
+| +-- source/
+| | +-- conf.py
+| | +-- 01-10/
+| | +-- biblioteca/arc42/
+| +-- docs_maestros/
++-- ADT42_backup/
++-- proyectos_independientes/
 ```
 
 ---
 
-## 🚀 PRÓXIMOS PASOS
+## [START] PRÓXIMOS PASOS
 
 ### 1. Compilar y Verificar
 ```bash
@@ -418,11 +418,11 @@ Ver contenido en versión anterior de este documento
 ### 3. Continuar Sección 4
 - Tips de arc42.org
 - 5-7 diagramas PlantUML
-- Calidad ⭐⭐⭐⭐⭐
+- Calidad [STAR][STAR][STAR][STAR][STAR]
 
 ---
 
-## ⏱️ TIEMPO TOTAL
+## [PENDING] TIEMPO TOTAL
 
 - Fase 0: 5 min (backup)
 - Fase 1: 10 min (estructura Sphinx)

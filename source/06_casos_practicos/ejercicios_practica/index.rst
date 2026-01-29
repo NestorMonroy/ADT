@@ -4,7 +4,7 @@
 Ejercicios de Práctica
 ===============================================
 
-⏳ **Subsección en desarrollo**
+[RUNNING] **Subsección en desarrollo**
 
 Esta subsección contendrá ejercicios prácticos para aprender el método ADT.
 
@@ -18,4 +18,4 @@ Contenido Planificado
 ----
 
 .. note::
-   Esta subsección será desarrollada en Fase 2.
+ Esta subsección será desarrollada en Fase 2.

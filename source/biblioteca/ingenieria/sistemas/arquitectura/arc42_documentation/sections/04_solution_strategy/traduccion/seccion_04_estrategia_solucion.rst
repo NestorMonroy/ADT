@@ -5,9 +5,9 @@
 ============================================================
 
 .. note::
-   **Traducción con Paso 3.4 (Traducción Arquitectónica)**
-   
-   Esta sección aplica terminología arquitectónica coherente con arc42.
+ **Traducción con Paso 3.4 (Traducción Arquitectónica)**
+
+ Esta sección aplica terminología arquitectónica coherente con arc42.
 
 ----
 
@@ -36,21 +36,21 @@ Motiva lo que has decidido y por qué lo decidiste de esa manera, basándote en 
 Podrías usar una lista de **enfoques de solución** o una tabla similar a la siguiente:
 
 .. list-table:: Tabla de Estrategia de Solución
-   :header-rows: 1
-   :widths: 20 25 35 20
-   
-   * - **Meta de calidad**
-     - **Escenario**
-     - **Enfoque de solución**
-     - **Enlace a detalles**
-   * - *<Meta-Q 1>*
-     - *<Texto>*
-     - *<Texto>*
-     - *<Enlace>*
-   * - *<Meta-Q 2>*
-     - *<Texto>*
-     - *<Texto>*
-     - *<Enlace>*
+ :header-rows: 1
+ :widths: 20 25 35 20
+
+ * - **Meta de calidad**
+ - **Escenario**
+ - **Enfoque de solución**
+ - **Enlace a detalles**
+ * - *<Meta-Q 1>*
+ - *<Texto>*
+ - *<Texto>*
+ - *<Enlace>*
+ * - *<Meta-Q 2>*
+ - *<Texto>*
+ - *<Texto>*
+ - *<Enlace>*
 
 ----
 
@@ -59,12 +59,12 @@ Plantilla
 
 .. code-block:: text
 
-   4. Estrategia de Solución
-   =========================
-   
-   <inserta estrategia de solución>
-   
-   _lista o tabla_
+ 4. Estrategia de Solución
+ =========================
+
+ <inserta estrategia de solución>
+
+ _lista o tabla_
 
 Ver ejemplos a continuación para casos reales de estrategias de solución.
 
@@ -74,23 +74,23 @@ Ejemplos
 ========
 
 .. toctree::
-   :maxdepth: 1
-   
-   estrategia_ejemplo_1
-   estrategia_ejemplo_2
+ :maxdepth: 1
+
+ estrategia_ejemplo_1
+ estrategia_ejemplo_2
 
 Tips y Consejos
 ===============
 
 .. toctree::
-   :maxdepth: 1
-   
-   estrategia_tip_1
-   estrategia_tip_2
-   estrategia_tip_3
-   estrategia_tip_4
-   estrategia_tip_5
-   estrategia_tip_6
+ :maxdepth: 1
+
+ estrategia_tip_1
+ estrategia_tip_2
+ estrategia_tip_3
+ estrategia_tip_4
+ estrategia_tip_5
+ estrategia_tip_6
 
 ----
 
@@ -104,17 +104,17 @@ Referencias
 ----
 
 .. note::
-   **Términos Arquitectónicos Clave (Paso 3.4):**
-   
-   * Solution strategy → Estrategia de solución
-   * Quality goal → Meta de calidad
-   * Scenario → Escenario
-   * Solution approach → Enfoque de solución
-   * Fundamental decision → Decisión fundamental
-   * Top-level decomposition → Descomposición de alto nivel
-   * Architectural pattern → Patrón arquitectónico
-   * Design pattern → Patrón de diseño
-   * Key constraint → Restricción clave
+ **Términos Arquitectónicos Clave (Paso 3.4):**
+
+ * Solution strategy -> Estrategia de solución
+ * Quality goal -> Meta de calidad
+ * Scenario -> Escenario
+ * Solution approach -> Enfoque de solución
+ * Fundamental decision -> Decisión fundamental
+ * Top-level decomposition -> Descomposición de alto nivel
+ * Architectural pattern -> Patrón arquitectónico
+ * Design pattern -> Patrón de diseño
+ * Key constraint -> Restricción clave
 
 :Sección: 04 - Estrategia de Solución
 :Traducción: Método Peshitta + Paso 3.4

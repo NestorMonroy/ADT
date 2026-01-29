@@ -1,104 +1,104 @@
-╔══════════════════════════════════════════════════════════════════╗
-║                                                                  ║
-║            📊 ANÁLISIS DEL WORKFLOW - PROBLEMA DETECTADO         ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
++==================================================================+
+| |
+| [TABLE] ANÁLISIS DEL WORKFLOW - PROBLEMA DETECTADO |
+| |
++==================================================================+
 
 FECHA: 2026-01-27
 ANÁLISIS: Comparación workflow_general.rst v1.5.0 vs v1.6.0
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 1. WORKFLOW v1.5.0 ACTUAL (COMPLETO)
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 ARCHIVO: /tmp/ADT/source/02_procedimientos/workflow_general.rst
 VERSIÓN: 1.5.0
 TAMAÑO: 2,179 líneas
-ESTADO: ✅ COMPLETO
+ESTADO: [OK] COMPLETO
 
 ESTRUCTURA COMPLETA:
-────────────────────────────────────────────────────────────────────
+--------------------------------------------------------------------
 
 1. Metadata y Registro de Cambios
-   • Versión 1.5.0
-   • Registro de cambios desde v1.0.0
+ • Versión 1.5.0
+ • Registro de cambios desde v1.0.0
 
 2. Introducción
-   • Descripción general
-   • Audiencia
-   • Prerrequisitos
+ • Descripción general
+ • Audiencia
+ • Prerrequisitos
 
 3. Integración con Biblioteca y Clasificación
-   • Estructura Base
-   • Sistema de Clasificación
-   • Documentos de Referencia
+ • Estructura Base
+ • Sistema de Clasificación
+ • Documentos de Referencia
 
 4. Visión General del Workflow
-   • Diagrama de Flujo (7 FASES)
-   • Descripción general
+ • Diagrama de Flujo (7 FASES)
+ • Descripción general
 
 5. Método por Defecto
-   • Segmentación, Rendición, Preferencia
-   • Cuándo aplicarlo
+ • Segmentación, Rendición, Preferencia
+ • Cuándo aplicarlo
 
 6. Casos Especiales
-   • arc42
-   • Documentación técnica especializada
+ • arc42
+ • Documentación técnica especializada
 
 7. FASE 1: Preparación (COMPLETA)
-   • Paso 1.1: Análisis del Documento Fuente
-   • Paso 1.2: Configuración del Entorno
-   • Paso 1.3: Planificación de la Traducción
-   • Ejemplo completo
+ • Paso 1.1: Análisis del Documento Fuente
+ • Paso 1.2: Configuración del Entorno
+ • Paso 1.3: Planificación de la Traducción
+ • Ejemplo completo
 
 8. FASE 2: Análisis Estructural (COMPLETA)
-   • Paso 2.1: Identificar Estructura
-   • Paso 2.2: Mapear Elementos Especiales
-   • Paso 2.3: Detectar Inconsistencias
-   • Herramientas Python
-   • Ejemplo completo
+ • Paso 2.1: Identificar Estructura
+ • Paso 2.2: Mapear Elementos Especiales
+ • Paso 2.3: Detectar Inconsistencias
+ • Herramientas Python
+ • Ejemplo completo
 
 9. FASE 3: Traducción Inicial (COMPLETA)
-   • Paso 3.1: Segmentación
-   • Paso 3.2: Rendición (Método Peshitta)
-   • Paso 3.3: Preferencia (Signifié)
-   • Paso 3.4: Traducción Arquitectónica ★ (AGREGADO en v1.5.0)
-   • Ejemplos completos
+ • Paso 3.1: Segmentación
+ • Paso 3.2: Rendición (Método Peshitta)
+ • Paso 3.3: Preferencia (Signifié)
+ • Paso 3.4: Traducción Arquitectónica (AGREGADO en v1.5.0)
+ • Ejemplos completos
 
 10. FASE 3.5: Revisión de Literalidad (COMPLETA)
-    • Agregada en v1.4.0
-    • Checklist de revisión
-    • Ejemplos
+ • Agregada en v1.4.0
+ • Checklist de revisión
+ • Ejemplos
 
 11. FASE 4: Aplicación de Tácticas (COMPLETA)
-    • Paso 4.1: Identificar Objetivos
-    • Paso 4.2: Aplicar Tácticas
-    • Paso 4.3: Documentar Decisiones
+ • Paso 4.1: Identificar Objetivos
+ • Paso 4.2: Aplicar Tácticas
+ • Paso 4.3: Documentar Decisiones
 
 12. FASE 5: Validación (COMPLETA)
-    • Paso 5.1: Compilación
-    • Paso 5.2: Preservación Semántica
-    • Paso 5.3: Calidad Visual
+ • Paso 5.1: Compilación
+ • Paso 5.2: Preservación Semántica
+ • Paso 5.3: Calidad Visual
 
 13. FASE 6: Revisión y Mejora (COMPLETA)
-    • Paso 6.1: Revisión de Enlaces
-    • Paso 6.2: Optimización
-    • Paso 6.3: Feedback
+ • Paso 6.1: Revisión de Enlaces
+ • Paso 6.2: Optimización
+ • Paso 6.3: Feedback
 
 14. FASE 7: Publicación (COMPLETA)
-    • Paso 7.1: Compilación Final
-    • Paso 7.2: Control de Calidad
-    • Paso 7.3: Despliegue
+ • Paso 7.1: Compilación Final
+ • Paso 7.2: Control de Calidad
+ • Paso 7.3: Despliegue
 
 15. Plantillas y Herramientas
-    • Template de Sección
-    • Scripts Útiles
+ • Template de Sección
+ • Scripts Útiles
 
 16. Troubleshooting Común
-    • Problema 1: No Compila
-    • Problema 2: Figuras No Se Ven
-    • Problema 3: Glosario No Aparece
-    • ... (varios más)
+ • Problema 1: No Compila
+ • Problema 2: Figuras No Se Ven
+ • Problema 3: Glosario No Aparece
+ • ... (varios más)
 
 17. Mejores Prácticas
 
@@ -108,85 +108,85 @@ ESTRUCTURA COMPLETA:
 
 20. Referencias
 
-════════════════════════════════════════════════════════════════════
-2. WORKFLOW v1.6.0 ACTUAL (INCOMPLETO ❌)
-════════════════════════════════════════════════════════════════════
+====================================================================
+2. WORKFLOW v1.6.0 ACTUAL (INCOMPLETO [ERROR])
+====================================================================
 
 ARCHIVO: WORKFLOW_v1_6_0_ACTUALIZACION.rst (recién creado)
 VERSIÓN: 1.6.0
 TAMAÑO: ~300 líneas
-ESTADO: ❌ INCOMPLETO - Solo tiene FRAGMENTOS
+ESTADO: [ERROR] INCOMPLETO - Solo tiene FRAGMENTOS
 
 LO QUE TIENE:
-────────────────────────────────────────────────────────────────────
+--------------------------------------------------------------------
 
-✅ Metadata y Registro de Cambios (actualizado a v1.6.0)
-✅ Introducción (con cambios v1.6.0)
-✅ Resumen de Cambios v1.6.0
-✅ FASE 5.5: Documentación de Sección (NUEVA - COMPLETA)
-   ├─ 5.5.1: Verificación de Completitud
-   ├─ 5.5.2: Creación de section-X.txt
-   ├─ 5.5.3: Creación de section-X.json
-   ├─ 5.5.4: Actualización de Archivo Principal
-   └─ 5.5.5: Checklist Final
-✅ Lecciones Aprendidas - Sección 01
-✅ Checklist General Actualizado
+[OK] Metadata y Registro de Cambios (actualizado a v1.6.0)
+[OK] Introducción (con cambios v1.6.0)
+[OK] Resumen de Cambios v1.6.0
+[OK] FASE 5.5: Documentación de Sección (NUEVA - COMPLETA)
+ +- 5.5.1: Verificación de Completitud
+ +- 5.5.2: Creación de section-X.txt
+ +- 5.5.3: Creación de section-X.json
+ +- 5.5.4: Actualización de Archivo Principal
+ +- 5.5.5: Checklist Final
+[OK] Lecciones Aprendidas - Sección 01
+[OK] Checklist General Actualizado
 
-LO QUE FALTA (❌ CRÍTICO):
-────────────────────────────────────────────────────────────────────
+LO QUE FALTA ([ERROR] CRÍTICO):
+--------------------------------------------------------------------
 
-❌ Integración con Biblioteca y Clasificación
-❌ Visión General del Workflow (actualizada)
-❌ Método por Defecto
-❌ Casos Especiales
-❌ FASE 1: Preparación (COMPLETA)
-❌ FASE 2: Análisis Estructural (COMPLETA)
-❌ FASE 3: Traducción Inicial (COMPLETA con Paso 3.4)
-❌ FASE 3.5: Revisión de Literalidad (COMPLETA)
-❌ FASE 4: Aplicación de Tácticas (COMPLETA)
-❌ FASE 5: Validación (COMPLETA)
-❌ FASE 6: Revisión y Mejora (COMPLETA)
-❌ FASE 7: Publicación (COMPLETA)
-❌ Plantillas y Herramientas
-❌ Troubleshooting Común
-❌ Mejores Prácticas
-❌ Integración con Otros Documentos
-❌ Apéndices
-❌ Referencias
+[ERROR] Integración con Biblioteca y Clasificación
+[ERROR] Visión General del Workflow (actualizada)
+[ERROR] Método por Defecto
+[ERROR] Casos Especiales
+[ERROR] FASE 1: Preparación (COMPLETA)
+[ERROR] FASE 2: Análisis Estructural (COMPLETA)
+[ERROR] FASE 3: Traducción Inicial (COMPLETA con Paso 3.4)
+[ERROR] FASE 3.5: Revisión de Literalidad (COMPLETA)
+[ERROR] FASE 4: Aplicación de Tácticas (COMPLETA)
+[ERROR] FASE 5: Validación (COMPLETA)
+[ERROR] FASE 6: Revisión y Mejora (COMPLETA)
+[ERROR] FASE 7: Publicación (COMPLETA)
+[ERROR] Plantillas y Herramientas
+[ERROR] Troubleshooting Común
+[ERROR] Mejores Prácticas
+[ERROR] Integración con Otros Documentos
+[ERROR] Apéndices
+[ERROR] Referencias
 
 CONCLUSIÓN: El v1.6.0 actual NO ES USABLE - solo tiene 15% del contenido
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 3. LO QUE DEBE TENER v1.6.0 COMPLETO
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 ESTRATEGIA: Tomar v1.5.0 COMPLETO + Agregar FASE 5.5 + Lecciones
 
 ESTRUCTURA REQUERIDA:
-────────────────────────────────────────────────────────────────────
+--------------------------------------------------------------------
 
-✅ TODO el contenido de v1.5.0 (2,179 líneas)
-   • Mantener TODAS las FASES 1-7
-   • Mantener Troubleshooting
-   • Mantener Plantillas
-   • Mantener TODO
+[OK] TODO el contenido de v1.5.0 (2,179 líneas)
+ • Mantener TODAS las FASES 1-7
+ • Mantener Troubleshooting
+ • Mantener Plantillas
+ • Mantener TODO
 
-➕ AGREGAR en la posición correcta:
-   • FASE 5.5 (entre FASE 5 y FASE 6)
-   • Lecciones Aprendidas (nueva sección)
-   • Actualizar Visión General (diagrama con FASE 5.5)
-   • Actualizar Checklist General
+ AGREGAR en la posición correcta:
+ • FASE 5.5 (entre FASE 5 y FASE 6)
+ • Lecciones Aprendidas (nueva sección)
+ • Actualizar Visión General (diagrama con FASE 5.5)
+ • Actualizar Checklist General
 
 = v1.6.0 COMPLETO (~2,500 líneas)
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 4. PLAN DE ACCIÓN
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 OPCIÓN A: Actualizar workflow_general.rst in-place
-───────────────────────────────────────────────────
+---------------------------------------------------
 1. Tomar v1.5.0 completo
-2. Actualizar metadata (v1.5.0 → v1.6.0)
+2. Actualizar metadata (v1.5.0 -> v1.6.0)
 3. Actualizar diagrama (agregar FASE 5.5)
 4. INSERTAR FASE 5.5 completa después de FASE 5
 5. AGREGAR sección "Lecciones Aprendidas" al final
@@ -195,8 +195,8 @@ OPCIÓN A: Actualizar workflow_general.rst in-place
 8. Hacer backup de v1.5.0
 
 OPCIÓN B: Crear workflow_general_v1_6_0.rst nuevo
-──────────────────────────────────────────────────
-1. Copiar workflow_general.rst → workflow_general_v1_6_0.rst
+--------------------------------------------------
+1. Copiar workflow_general.rst -> workflow_general_v1_6_0.rst
 2. Realizar cambios en el nuevo archivo
 3. Mantener v1.5.0 como está
 4. Tener ambas versiones disponibles
@@ -204,101 +204,101 @@ OPCIÓN B: Crear workflow_general_v1_6_0.rst nuevo
 RECOMENDACIÓN: OPCIÓN A
 Razón: Mantener workflow_general.rst como archivo principal activo
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 5. CAMBIOS ESPECÍFICOS REQUERIDOS
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 UBICACIÓN: Línea ~25 (Registro de Cambios)
 ACCIÓN: Agregar entrada v1.6.0
-────────────────────────────────────────────────────────────────────
-- **v1.6.0 (2026-01-27):** MINOR - Agregada FASE 5.5: Documentación 
-  de Sección (OBLIGATORIA). Incluye creación de section-X.txt y 
-  section-X.json, verificación de completitud, y actualización de 
-  archivo principal. Agregadas lecciones aprendidas de Sección 01.
+--------------------------------------------------------------------
+- **v1.6.0 (2026-01-27):** MINOR - Agregada FASE 5.5: Documentación
+ de Sección (OBLIGATORIA). Incluye creación de section-X.txt y
+ section-X.json, verificación de completitud, y actualización de
+ archivo principal. Agregadas lecciones aprendidas de Sección 01.
 
 UBICACIÓN: Línea ~106 (Visión General - Diagrama)
 ACCIÓN: Actualizar diagrama para incluir FASE 5.5
-────────────────────────────────────────────────────────────────────
-   FASE 5: VALIDACIÓN
-   ├─ Compilar Sphinx (make html)
-   ├─ Verificar preservación semántica
-   └─ Revisar calidad visual
-   
-   FASE 5.5: DOCUMENTACIÓN DE SECCIÓN ★ (NUEVA v1.6.0)
-   ├─ Verificación de Completitud
-   ├─ Creación de section-X.txt
-   ├─ Creación de section-X.json
-   └─ Actualización de Archivo Principal
-   
-   FASE 6: REVISIÓN Y MEJORA
-   ...
+--------------------------------------------------------------------
+ FASE 5: VALIDACIÓN
+ +- Compilar Sphinx (make html)
+ +- Verificar preservación semántica
+ +- Revisar calidad visual
+
+ FASE 5.5: DOCUMENTACIÓN DE SECCIÓN (NUEVA v1.6.0)
+ +- Verificación de Completitud
+ +- Creación de section-X.txt
+ +- Creación de section-X.json
+ +- Actualización de Archivo Principal
+
+ FASE 6: REVISIÓN Y MEJORA
+ ...
 
 UBICACIÓN: Después de FASE 5 (~línea 1653)
 ACCIÓN: INSERTAR toda la FASE 5.5 (~400 líneas)
-────────────────────────────────────────────────────────────────────
+--------------------------------------------------------------------
 [Contenido completo de FASE 5.5 como se creó]
 
 UBICACIÓN: Antes de "Plantillas y Herramientas" (~línea 1803)
 ACCIÓN: AGREGAR nueva sección "Lecciones Aprendidas"
-────────────────────────────────────────────────────────────────────
+--------------------------------------------------------------------
 [Lecciones Aprendidas - Sección 01]
 
 UBICACIÓN: Checklist General (si existe)
 ACCIÓN: Actualizar para incluir FASE 5.5
-────────────────────────────────────────────────────────────────────
+--------------------------------------------------------------------
 [Checklist actualizado con FASE 5.5]
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 6. TAMAÑO ESTIMADO v1.6.0
-════════════════════════════════════════════════════════════════════
+====================================================================
 
-Base v1.5.0:              2,179 líneas
-+ FASE 5.5:                 ~400 líneas
-+ Lecciones Aprendidas:     ~150 líneas
-+ Actualizaciones varias:    ~50 líneas
-─────────────────────────────────────────
-TOTAL v1.6.0:             ~2,780 líneas
+Base v1.5.0: 2,179 líneas
++ FASE 5.5: ~400 líneas
++ Lecciones Aprendidas: ~150 líneas
++ Actualizaciones varias: ~50 líneas
+-----------------------------------------
+TOTAL v1.6.0: ~2,780 líneas
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 7. VERIFICACIÓN FINAL
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 Antes de declarar v1.6.0 como COMPLETO, verificar:
 
-✓ FASE 1: Preparación (completa)
-✓ FASE 2: Análisis Estructural (completa)
-✓ FASE 3: Traducción Inicial (completa con Paso 3.4)
-✓ FASE 3.5: Revisión de Literalidad (completa)
-✓ FASE 4: Aplicación de Tácticas (completa)
-✓ FASE 5: Validación (completa)
-✓ FASE 5.5: Documentación de Sección (completa) ← NUEVA
-✓ FASE 6: Revisión y Mejora (completa)
-✓ FASE 7: Publicación (completa)
-✓ Plantillas y Herramientas (completa)
-✓ Troubleshooting (completo)
-✓ Lecciones Aprendidas (completa) ← NUEVA
-✓ Mejores Prácticas (completa)
-✓ Referencias (completa)
+[OK] FASE 1: Preparación (completa)
+[OK] FASE 2: Análisis Estructural (completa)
+[OK] FASE 3: Traducción Inicial (completa con Paso 3.4)
+[OK] FASE 3.5: Revisión de Literalidad (completa)
+[OK] FASE 4: Aplicación de Tácticas (completa)
+[OK] FASE 5: Validación (completa)
+[OK] FASE 5.5: Documentación de Sección (completa) <- NUEVA
+[OK] FASE 6: Revisión y Mejora (completa)
+[OK] FASE 7: Publicación (completa)
+[OK] Plantillas y Herramientas (completa)
+[OK] Troubleshooting (completo)
+[OK] Lecciones Aprendidas (completa) <- NUEVA
+[OK] Mejores Prácticas (completa)
+[OK] Referencias (completa)
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 RESUMEN
-════════════════════════════════════════════════════════════════════
+====================================================================
 
 PROBLEMA IDENTIFICADO:
-   El archivo WORKFLOW_v1_6_0_ACTUALIZACION.rst creado solo contiene
-   ~15% del contenido necesario (solo FASE 5.5 y lecciones).
+ El archivo WORKFLOW_v1_6_0_ACTUALIZACION.rst creado solo contiene
+ ~15% del contenido necesario (solo FASE 5.5 y lecciones).
 
 SOLUCIÓN REQUERIDA:
-   Crear workflow v1.6.0 COMPLETO que incluya:
-   1. TODO el contenido de v1.5.0
-   2. FASE 5.5 nueva insertada en la posición correcta
-   3. Lecciones Aprendidas agregadas
-   4. Diagramas y checklists actualizados
+ Crear workflow v1.6.0 COMPLETO que incluya:
+ 1. TODO el contenido de v1.5.0
+ 2. FASE 5.5 nueva insertada en la posición correcta
+ 3. Lecciones Aprendidas agregadas
+ 4. Diagramas y checklists actualizados
 
 SIGUIENTE PASO:
-   Generar workflow_general.rst v1.6.0 COMPLETO
-   (~2,780 líneas con TODO el contenido)
+ Generar workflow_general.rst v1.6.0 COMPLETO
+ (~2,780 líneas con TODO el contenido)
 
-════════════════════════════════════════════════════════════════════
+====================================================================
 FIN DEL ANÁLISIS
-════════════════════════════════════════════════════════════════════
+====================================================================

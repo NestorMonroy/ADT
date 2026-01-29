@@ -7,8 +7,8 @@ Referencias y Recursos
 Documentación de referencia, recursos externos y material complementario.
 
 .. contents:: Contenido
-   :depth: 2
-   :local:
+ :depth: 2
+ :local:
 
 ----
 
@@ -18,7 +18,7 @@ Contenido Disponible
 Cheatsheets
 -----------
 
-**✅ Cheatsheet RST**
+**[OK] Cheatsheet RST**
 
 Referencia rápida completa de reStructuredText.
 
@@ -36,7 +36,7 @@ Ver: :doc:`cheatsheets/cheatsheet_rst`
 Comandos Útiles
 ---------------
 
-**✅ Comandos de Terminal**
+**[OK] Comandos de Terminal**
 
 Comandos más usados en proyectos ADT.
 
@@ -53,7 +53,7 @@ Ver: :doc:`comandos_utiles`
 Recursos Externos
 -----------------
 
-**✅ Enlaces y Documentación**
+**[OK] Enlaces y Documentación**
 
 Enlaces a recursos oficiales y herramientas externas.
 
@@ -74,12 +74,12 @@ Contenido Planeado
 
 .. code-block:: text
 
-   ⏳ Bibliografía completa
-   ⏳ Glosario de términos técnicos
-   ⏳ Cheatsheet Sphinx
-   ⏳ Cheatsheet Git
-   ⏳ Patrones de documentación
-   ⏳ Mejores prácticas de escritura técnica
+ [RUNNING] Bibliografía completa
+ [RUNNING] Glosario de términos técnicos
+ [RUNNING] Cheatsheet Sphinx
+ [RUNNING] Cheatsheet Git
+ [RUNNING] Patrones de documentación
+ [RUNNING] Mejores prácticas de escritura técnica
 
 ----
 
@@ -93,22 +93,22 @@ Durante el Trabajo
 
 .. code-block:: text
 
-   1. cheatsheet_rst.html
-      → Sintaxis RST rápida
-   
-   2. comandos_utiles.html
-      → Comandos frecuentes
-   
-   3. FAQ (Sección 07)
-      → Dudas comunes
+ 1. cheatsheet_rst.html
+ -> Sintaxis RST rápida
+
+ 2. comandos_utiles.html
+ -> Comandos frecuentes
+
+ 3. FAQ (Sección 07)
+ -> Dudas comunes
 
 **Para consultas específicas:**
 
 .. code-block:: text
 
-   ¿Sintaxis RST? → cheatsheet_rst
-   ¿Comando de Git? → comandos_utiles
-   ¿Tutorial externo? → recursos_externos
+ ¿Sintaxis RST? -> cheatsheet_rst
+ ¿Comando de Git? -> comandos_utiles
+ ¿Tutorial externo? -> recursos_externos
 
 Durante el Aprendizaje
 -----------------------
@@ -117,10 +117,10 @@ Durante el Aprendizaje
 
 .. code-block:: text
 
-   1. Tutorial ADT (Sección 07)
-   2. Cheatsheet RST (esta sección)
-   3. Recursos externos (para profundizar)
-   4. Práctica con proyectos reales
+ 1. Tutorial ADT (Sección 07)
+ 2. Cheatsheet RST (esta sección)
+ 3. Recursos externos (para profundizar)
+ 4. Práctica con proyectos reales
 
 ----
 
@@ -128,11 +128,11 @@ Subsecciones
 ============
 
 .. toctree::
-   :maxdepth: 2
+ :maxdepth: 2
 
-   cheatsheets/index
-   comandos_utiles
-   recursos_externos
+ cheatsheets/index
+ comandos_utiles
+ recursos_externos
 
 ----
 
@@ -149,16 +149,16 @@ Relación con Otras Secciones
 
 .. code-block:: text
 
-   DURANTE TRABAJO
-        ↓
-   Duda técnica específica
-        ↓
-   CONSULTAR REFERENCIAS
-   ├─ cheatsheet_rst (sintaxis)
-   ├─ comandos_utiles (comandos)
-   └─ recursos_externos (profundizar)
-        ↓
-   RESOLVER Y CONTINUAR
+ DURANTE TRABAJO
+ v
+ Duda técnica específica
+ v
+ CONSULTAR REFERENCIAS
+ +- cheatsheet_rst (sintaxis)
+ +- comandos_utiles (comandos)
+ +- recursos_externos (profundizar)
+ v
+ RESOLVER Y CONTINUAR
 
 ----
 
@@ -166,24 +166,24 @@ Estado de Desarrollo
 ====================
 
 .. list-table::
-   :header-rows: 1
-   :widths: 40 30 30
+ :header-rows: 1
+ :widths: 40 30 30
 
-   * - **Subsección**
-     - **Estado**
-     - **Archivos**
-   * - **cheatsheets/**
-     - ✅ Iniciado
-     - cheatsheet_rst ✅
-   * - **comandos_utiles**
-     - ✅ Completado
-     - 1 archivo ✅
-   * - **recursos_externos**
-     - ✅ Completado
-     - 1 archivo ✅
-   * - **Otros**
-     - ⏳ Planeado
-     - Pendiente
+ * - **Subsección**
+ - **Estado**
+ - **Archivos**
+ * - **cheatsheets/**
+ - [OK] Iniciado
+ - cheatsheet_rst [OK]
+ * - **comandos_utiles**
+ - [OK] Completado
+ - 1 archivo [OK]
+ * - **recursos_externos**
+ - [OK] Completado
+ - 1 archivo [OK]
+ * - **Otros**
+ - [RUNNING] Planeado
+ - Pendiente
 
 ----
 
@@ -194,28 +194,28 @@ Si encuentras recursos útiles:
 
 .. code-block:: text
 
-   1. Verifica que el recurso es de calidad
-   2. Verifica que el enlace funciona
-   3. Categoriza apropiadamente
-   4. Agrega descripción breve
-   5. Sugiere la adición
+ 1. Verifica que el recurso es de calidad
+ 2. Verifica que el enlace funciona
+ 3. Categoriza apropiadamente
+ 4. Agrega descripción breve
+ 5. Sugiere la adición
 
 **Criterios de inclusión:**
 
 .. code-block:: text
 
-   ✅ Documentación oficial
-   ✅ Tutoriales de calidad verificada
-   ✅ Herramientas ampliamente usadas
-   ✅ Recursos gratuitos o con versión free
-   ✅ Enlaces estables (no temporales)
+ [OK] Documentación oficial
+ [OK] Tutoriales de calidad verificada
+ [OK] Herramientas ampliamente usadas
+ [OK] Recursos gratuitos o con versión free
+ [OK] Enlaces estables (no temporales)
 
 ----
 
 .. seealso::
-   * :doc:`../07_guias_uso/faq` - Preguntas frecuentes
-   * :doc:`../07_guias_uso/troubleshooting` - Solución de problemas
-   * :doc:`../10_apendices/glosario_adt` - Glosario ADT
+ * :doc:`../07_guias_uso/faq` - Preguntas frecuentes
+ * :doc:`../07_guias_uso/troubleshooting` - Solución de problemas
+ * :doc:`../10_apendices/glosario_adt` - Glosario ADT
 
 .. note::
-   Las referencias se actualizan periódicamente. Última revisión: 2026-01-28.
+ Las referencias se actualizan periódicamente. Última revisión: 2026-01-28.

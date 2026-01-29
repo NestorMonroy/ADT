@@ -9,8 +9,8 @@ ADT - Procedimientos de Traducción Técnica
 Versión |release|
 
 .. meta::
-   :description: Sistema integrado que combina arc42, Diátaxis y metodología de traducción técnica
-   :keywords: arc42, diataxis, traduccion tecnica, sphinx, documentacion
+ :description: Sistema integrado que combina arc42, Diátaxis y metodología de traducción técnica
+ :keywords: arc42, diataxis, traduccion tecnica, sphinx, documentacion
 
 Bienvenida
 ==========
@@ -27,13 +27,13 @@ Esta documentación cubre metodologías, estándares, herramientas y casos prác
 para traducción de alta calidad de documentación técnica.
 
 .. note::
-   Esta es la documentación del módulo de **Traducción Técnica**.
-   
-   Para ver otros módulos:
-   
-   - :doc:`../arc42/index` - Documentación Arquitectónica
-   - :doc:`../diataxis/index` - Documentación por Propósito
-   - :doc:`../biblioteca/index` - Gestión de Libros
+ Esta es la documentación del módulo de **Traducción Técnica**.
+
+ Para ver otros módulos:
+
+ - :doc:`../arc42/index` - Documentación Arquitectónica
+ - :doc:`../diataxis/index` - Documentación por Propósito
+ - :doc:`../biblioteca/index` - Gestión de Libros
 
 Inicio Rápido
 =============
@@ -49,130 +49,130 @@ Búsqueda Rápida
 ===============
 
 **¿Cómo traduzco un libro LaTeX?**
-   Ver :doc:`08_prompts/prompt_maestro_latex`
+ Ver :doc:`08_prompts/prompt_maestro_latex`
 
 **¿Qué modo uso para traducir?**
-   Ver :doc:`04_reglas_operativas/matrices_decision/MD_001_modo_1_vs_modo_2`
+ Ver :doc:`04_reglas_operativas/matrices_decision/MD_001_modo_1_vs_modo_2`
 
 **¿Cómo marco conceptos clave?**
-   Ver :doc:`05_herramientas_medios/equivalencias/conceptos_clave`
+ Ver :doc:`05_herramientas_medios/equivalencias/conceptos_clave`
 
 **¿Cuáles son los errores comunes?**
-   Ver :doc:`06_casos_practicos/errores_comunes/index`
+ Ver :doc:`06_casos_practicos/errores_comunes/index`
 
 Contenido Principal
 ===================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Fundamentos
-   :numbered:
+ :maxdepth: 2
+ :caption: Fundamentos
+ :numbered:
 
-   01_fundamentos/index
-   01_fundamentos/glosario_traduccion
-   01_fundamentos/principios_fundamentales
-   01_fundamentos/taxonomias/index
-   01_fundamentos/metamodelos/index
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Procedimientos
-   :numbered:
-
-   02_procedimientos/index
-   02_procedimientos/workflow_general
-   02_procedimientos/modo_alta_fidelidad/index
-   02_procedimientos/modo_marcado_visual/index
-   02_procedimientos/verificacion_calidad/index
-   02_procedimientos/correccion_errores/index
+ 01_fundamentos/index
+ 01_fundamentos/glosario_traduccion
+ 01_fundamentos/principios_fundamentales
+ 01_fundamentos/taxonomias/index
+ 01_fundamentos/metamodelos/index
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Estándares
-   :numbered:
+ :maxdepth: 2
+ :caption: Procedimientos
+ :numbered:
 
-   03_estandares/index
-   03_estandares/terminologia/index
-   03_estandares/formato_por_medio/index
-   03_estandares/calidad/index
-   03_estandares/restricciones/index
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Reglas Operativas
-   :numbered:
-
-   04_reglas_operativas/index
-   04_reglas_operativas/reglas_traduccion/index
-   04_reglas_operativas/escenarios_traduccion/index
-   04_reglas_operativas/matrices_decision/index
+ 02_procedimientos/index
+ 02_procedimientos/workflow_general
+ 02_procedimientos/modo_alta_fidelidad/index
+ 02_procedimientos/modo_marcado_visual/index
+ 02_procedimientos/verificacion_calidad/index
+ 02_procedimientos/correccion_errores/index
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Herramientas y Medios
-   :numbered:
+ :maxdepth: 2
+ :caption: Estándares
+ :numbered:
 
-   05_herramientas_medios/index
-   05_herramientas_medios/latex/index
-   05_herramientas_medios/sphinx/index
-   05_herramientas_medios/markdown/index
-   05_herramientas_medios/equivalencias/index
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Casos Prácticos
-   :numbered:
-
-   06_casos_practicos/index
-   06_casos_practicos/antes_despues/index
-   06_casos_practicos/errores_comunes/index
-   06_casos_practicos/casos_exito/index
-   06_casos_practicos/ejercicios_practica/index
+ 03_estandares/index
+ 03_estandares/terminologia/index
+ 03_estandares/formato_por_medio/index
+ 03_estandares/calidad/index
+ 03_estandares/restricciones/index
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Guías de Uso
-   :numbered:
+ :maxdepth: 2
+ :caption: Reglas Operativas
+ :numbered:
 
-   07_guias_uso/index
-   07_guias_uso/guia_rapida
-   07_guias_uso/tutorial_completo
-   07_guias_uso/faq
-   07_guias_uso/troubleshooting
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Prompts
-   :numbered:
-
-   08_prompts/index
-   08_prompts/prompt_maestro_latex
-   08_prompts/prompt_maestro_sphinx
-   08_prompts/prompt_maestro_markdown
-   08_prompts/prompts_condicionales/index
-   08_prompts/plantillas/index
+ 04_reglas_operativas/index
+ 04_reglas_operativas/reglas_traduccion/index
+ 04_reglas_operativas/escenarios_traduccion/index
+ 04_reglas_operativas/matrices_decision/index
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Referencias
-   :numbered:
+ :maxdepth: 2
+ :caption: Herramientas y Medios
+ :numbered:
 
-   09_referencias/index
-   09_referencias/bibliografia
-   09_referencias/recursos_externos
-   09_referencias/documentacion_oficial/index
-   09_referencias/cheatsheets/index
+ 05_herramientas_medios/index
+ 05_herramientas_medios/latex/index
+ 05_herramientas_medios/sphinx/index
+ 05_herramientas_medios/markdown/index
+ 05_herramientas_medios/equivalencias/index
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Apéndices
-   :numbered:
+ :maxdepth: 2
+ :caption: Casos Prácticos
+ :numbered:
 
-   10_apendices/index
-   10_apendices/historia_versiones
-   10_apendices/contribuidores
-   10_apendices/licencia
-   10_apendices/roadmap
+ 06_casos_practicos/index
+ 06_casos_practicos/antes_despues/index
+ 06_casos_practicos/errores_comunes/index
+ 06_casos_practicos/casos_exito/index
+ 06_casos_practicos/ejercicios_practica/index
+
+.. toctree::
+ :maxdepth: 2
+ :caption: Guías de Uso
+ :numbered:
+
+ 07_guias_uso/index
+ 07_guias_uso/guia_rapida
+ 07_guias_uso/tutorial_completo
+ 07_guias_uso/faq
+ 07_guias_uso/troubleshooting
+
+.. toctree::
+ :maxdepth: 2
+ :caption: Prompts
+ :numbered:
+
+ 08_prompts/index
+ 08_prompts/prompt_maestro_latex
+ 08_prompts/prompt_maestro_sphinx
+ 08_prompts/prompt_maestro_markdown
+ 08_prompts/prompts_condicionales/index
+ 08_prompts/plantillas/index
+
+.. toctree::
+ :maxdepth: 2
+ :caption: Referencias
+ :numbered:
+
+ 09_referencias/index
+ 09_referencias/bibliografia
+ 09_referencias/recursos_externos
+ 09_referencias/documentacion_oficial/index
+ 09_referencias/cheatsheets/index
+
+.. toctree::
+ :maxdepth: 2
+ :caption: Apéndices
+ :numbered:
+
+ 10_apendices/index
+ 10_apendices/historia_versiones
+ 10_apendices/contribuidores
+ 10_apendices/licencia
+ 10_apendices/roadmap
 
 Características Principales
 ============================
@@ -184,11 +184,11 @@ Traducción que preserva exactamente la estructura, formato y significado
 del documento original.
 
 .. admonition:: Principio Fundamental
-   
-   **Fidelidad > Elegancia**
-   
-   Una traducción perfectamente fiel es más valiosa que una traducción
-   elegante pero imprecisa.
+
+ **Fidelidad > Elegancia**
+
+ Una traducción perfectamente fiel es más valiosa que una traducción
+ elegante pero imprecisa.
 
 Marcado Visual
 --------------
@@ -210,67 +210,67 @@ Control de Calidad
 
 Múltiples checklists de verificación:
 
-✓ Checklist de contenido completo
-✓ Checklist de términos marcados
-✓ Checklist de formato preservado
-✓ Checklist de fidelidad estructural
-✓ Checklist de referencias cruzadas
+[OK] Checklist de contenido completo
+[OK] Checklist de términos marcados
+[OK] Checklist de formato preservado
+[OK] Checklist de fidelidad estructural
+[OK] Checklist de referencias cruzadas
 
 Casos de Uso
 ============
 
 .. grid:: 2
-   :gutter: 3
+ :gutter: 3
 
-   .. grid-item-card:: 📚 Traducir Libro Técnico
-      :link: 06_casos_practicos/casos_exito/exito_01_libro_BPM
-      :link-type: doc
+ .. grid-item-card:: Traducir Libro Técnico
+ :link: 06_casos_practicos/casos_exito/exito_01_libro_BPM
+ :link-type: doc
 
-      Proceso completo de traducción de un libro técnico,
-      desde el PDF original hasta la versión final en Sphinx.
+ Proceso completo de traducción de un libro técnico,
+ desde el PDF original hasta la versión final en Sphinx.
 
-   .. grid-item-card:: 📖 Traducir Manual LaTeX
-      :link: 06_casos_practicos/casos_exito/exito_02_manual_latex
-      :link-type: doc
+ .. grid-item-card:: Traducir Manual LaTeX
+ :link: 06_casos_practicos/casos_exito/exito_02_manual_latex
+ :link-type: doc
 
-      Traducción de manual académico preservando toda
-      la estructura LaTeX nativa.
+ Traducción de manual académico preservando toda
+ la estructura LaTeX nativa.
 
-   .. grid-item-card:: 🐛 Evitar Errores Comunes
-      :link: 06_casos_practicos/errores_comunes/index
-      :link-type: doc
+ .. grid-item-card:: [DEBUG] Evitar Errores Comunes
+ :link: 06_casos_practicos/errores_comunes/index
+ :link-type: doc
 
-      Aprende de los 7 errores más comunes y cómo evitarlos.
+ Aprende de los 7 errores más comunes y cómo evitarlos.
 
-   .. grid-item-card:: 🎯 Tutorial Completo
-      :link: 07_guias_uso/tutorial_completo
-      :link-type: doc
+ .. grid-item-card:: [TARGET] Tutorial Completo
+ :link: 07_guias_uso/tutorial_completo
+ :link-type: doc
 
-      Tutorial paso a paso de traducción desde cero.
+ Tutorial paso a paso de traducción desde cero.
 
 Estadísticas
 ============
 
 .. list-table:: Números del Proyecto ADT
-   :widths: 40 60
-   :header-rows: 1
+ :widths: 40 60
+ :header-rows: 1
 
-   * - Elemento
-     - Cantidad
-   * - Secciones principales
-     - 10
-   * - Subcarpetas
-     - 25+
-   * - Procedimientos documentados
-     - 9+
-   * - Estándares definidos
-     - 10+
-   * - Reglas operativas
-     - 16+
-   * - Casos prácticos
-     - 15+
-   * - Prompts de producción
-     - 3+
+ * - Elemento
+ - Cantidad
+ * - Secciones principales
+ - 10
+ * - Subcarpetas
+ - 25+
+ * - Procedimientos documentados
+ - 9+
+ * - Estándares definidos
+ - 10+
+ * - Reglas operativas
+ - 16+
+ * - Casos prácticos
+ - 15+
+ * - Prompts de producción
+ - 3+
 
 Idioma y Localización
 =====================
@@ -288,43 +288,43 @@ Idioma y Localización
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: 📚 Biblioteca
-   :numbered:
+ :maxdepth: 2
+ :caption: Biblioteca
+ :numbered:
 
-   biblioteca/arc42/index
-
-.. toctree::
-   :maxdepth: 2
-   :caption: 📖 Framework Diátaxis
-
-   diataxis/index
+ biblioteca/arc42/index
 
 .. toctree::
-   :maxdepth: 2
-   :caption: 📋 Documentación Técnica
+ :maxdepth: 2
+ :caption: Framework Diátaxis
 
-   docs/index
+ diataxis/index
 
 .. toctree::
-   :maxdepth: 2
-   :caption: 📜 Documentos Maestros
+ :maxdepth: 2
+ :caption: [LIST] Documentación Técnica
 
-   docs_maestros/SINTESIS_METODOLOGICA_ADT
-   docs_maestros/REGLAS_ESTRUCTURA_PROYECTO
-   docs_maestros/ARQUITECTURA_DOCUMENTAL_TRADUCCION
-   docs_maestros/ARQUITECTURA_TRADUCCION_IACT
-   docs_maestros/ESTRUCTURA_DE_BIBLIOTECA_-_Versión_Correcta
-   docs_maestros/GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL
-   docs_maestros/METODO_TRADUCCION_PESHITTA_ZACHARIAS
-   docs_maestros/PLAN_FINAL_REORGANIZACION
-   docs_maestros/PLAN_INCREMENTAL_CON_ARCHIVADO
-   docs_maestros/PLAN_CONTENIDO
-   docs_maestros/PROMPT_MAESTRO_SPHINX_TRADUCCION
-   docs_maestros/PROPUESTA_REORGANIZACION
-   docs_maestros/PROPUESTA_REORGANIZACION_CORRECTA
-   docs_maestros/README
-   docs_maestros/RESUMEN_GUIA_CLASIFICACION
+ docs/index
+
+.. toctree::
+ :maxdepth: 2
+ :caption: Documentos Maestros
+
+ docs_maestros/SINTESIS_METODOLOGICA_ADT
+ docs_maestros/REGLAS_ESTRUCTURA_PROYECTO
+ docs_maestros/ARQUITECTURA_DOCUMENTAL_TRADUCCION
+ docs_maestros/ARQUITECTURA_TRADUCCION_IACT
+ docs_maestros/ESTRUCTURA_DE_BIBLIOTECA_-_Versión_Correcta
+ docs_maestros/GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL
+ docs_maestros/METODO_TRADUCCION_PESHITTA_ZACHARIAS
+ docs_maestros/PLAN_FINAL_REORGANIZACION
+ docs_maestros/PLAN_INCREMENTAL_CON_ARCHIVADO
+ docs_maestros/PLAN_CONTENIDO
+ docs_maestros/PROMPT_MAESTRO_SPHINX_TRADUCCION
+ docs_maestros/PROPUESTA_REORGANIZACION
+ docs_maestros/PROPUESTA_REORGANIZACION_CORRECTA
+ docs_maestros/README
+ docs_maestros/RESUMEN_GUIA_CLASIFICACION
 
 Índices y Búsqueda
 ==================
@@ -343,9 +343,9 @@ Información del Proyecto
 :Autor: Equipo ADT
 
 .. note::
-   Esta documentación está en constante desarrollo.
-   
-   **Última actualización:** |today|
+ Esta documentación está en constante desarrollo.
+
+ **Última actualización:** |today|
 
 ----
 

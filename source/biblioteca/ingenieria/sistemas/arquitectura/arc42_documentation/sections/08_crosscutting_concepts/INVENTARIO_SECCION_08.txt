@@ -4,7 +4,7 @@ Generado con: analisis_profundo_funcional.py
 Fecha: 2026-01-27
 Workflow: v1.7.2 (PRIMER USO EN PRODUCCIÓN - PASO 0)
 
-═══════════════════════════════════════════════════════════════════════════════
+===============================================================================
 
 RESUMEN (del JSON):
 • Total archivos: 12
@@ -16,151 +16,151 @@ RESUMEN (del JSON):
 • Archivos con imágenes: 5
 • Total imágenes: 5
 
-───────────────────────────────────────────────────────────────────────────────
+-------------------------------------------------------------------------------
 
 A. ARCHIVO PRINCIPAL: section-8.md (74 líneas)
 
-   Estructura completa a traducir:
+ Estructura completa a traducir:
 
-   □ Front matter YAML
-     - layout: arc42-doc-section
-     - title: 8 - Concepts
-     - permalink: /section-8/
-     - order: 12
+ Front matter YAML
+ - layout: arc42-doc-section
+ - title: 8 - Concepts
+ - permalink: /section-8/
+ - order: 12
 
-   □ Título principal
-     - ### 8. Crosscutting Concepts
+ Título principal
+ - ### 8. Crosscutting Concepts
 
-   □ Sección: Content
-     - Descripción de conceptos transversales
-     - Diagrama: 08-concepts-EN.drawio.png
-     - Listado de temas posibles
+ Sección: Content
+ - Descripción de conceptos transversales
+ - Diagrama: 08-concepts-EN.drawio.png
+ - Listado de temas posibles
 
-   □ Sección: Motivation
-     - Conceptual integrity
-     - Contribución a inner qualities
+ Sección: Motivation
+ - Conceptual integrity
+ - Contribución a inner qualities
 
-   □ Sección: Form
-     - Formas variadas de documentar
-     - Concept papers
-     - Example implementations
-     - Cross-cutting model excerpts
+ Sección: Form
+ - Formas variadas de documentar
+ - Concept papers
+ - Example implementations
+ - Cross-cutting model excerpts
 
-   □ Sección: Structure of this section
-     - Instrucción: Pick only most-needed topics
-     - Advertencia: DO NOT ATTEMPT to cover all topics
+ Sección: Structure of this section
+ - Instrucción: Pick only most-needed topics
+ - Advertencia: DO NOT ATTEMPT to cover all topics
 
-   □ Sección: Background
-     - Explicación de conceptos transversales
-     - Ejemplos reales:
-       * Logging-concept
-       * Backend authentication concept
-       * Strategy pattern (HTML Sanity Checker)
+ Sección: Background
+ - Explicación de conceptos transversales
+ - Ejemplos reales:
+ * Logging-concept
+ * Backend authentication concept
+ * Strategy pattern (HTML Sanity Checker)
 
-   □ Include: example.md category='concepts'
-     - Marcador Jekyll para incluir ejemplos
+ Include: example.md category='concepts'
+ - Marcador Jekyll para incluir ejemplos
 
-   □ Include: further-info.md
-     - category='concepts'
-     - topic='crosscutting and/or technical concepts'
-     - faqlink='https://faq.arc42.org/category_c/#c-sec-8'
+ Include: further-info.md
+ - category='concepts'
+ - topic='crosscutting and/or technical concepts'
+ - faqlink='https://faq.arc42.org/category_c/#c-sec-8'
 
-   □ Placeholder final
-     - _<describe concepts here >_
+ Placeholder final
+ - _<describe concepts here >_
 
-───────────────────────────────────────────────────────────────────────────────
+-------------------------------------------------------------------------------
 
 B. TIPS INDIVIDUALES (10 archivos)
 
-   De análisis automático (JSON):
+ De análisis automático (JSON):
 
-   □ Tip 8-1: 2016-03-01-t-8-1.md (28 líneas, 201 palabras)
-     - Tipo: tip
-     - Tiene: listas
-     - NO tiene imágenes
+ Tip 8-1: 2016-03-01-t-8-1.md (28 líneas, 201 palabras)
+ - Tipo: tip
+ - Tiene: listas
+ - NO tiene imágenes
 
-   □ Tip 8-2: 2016-03-01-t-8-2.md (44 líneas, 193 palabras)
-     - Tipo: tip
-     - Tiene: imágenes (1)
-     - Tiene: listas
-     - Imagen usa: {{ site.imageurl }}
+ Tip 8-2: 2016-03-01-t-8-2.md (44 líneas, 193 palabras)
+ - Tipo: tip
+ - Tiene: imágenes (1)
+ - Tiene: listas
+ - Imagen usa: {{ site.imageurl }}
 
-   □ Tip 8-3: 2016-03-01-t-8-3.md (23 líneas, 138 palabras)
-     - Tipo: tip
-     - Tiene: listas
-     - NO tiene imágenes
+ Tip 8-3: 2016-03-01-t-8-3.md (23 líneas, 138 palabras)
+ - Tipo: tip
+ - Tiene: listas
+ - NO tiene imágenes
 
-   □ Tip 8-4: 2016-03-01-t-8-4.md (30 líneas, 174 palabras)
-     - Tipo: tip
-     - Tiene: listas
-     - NO tiene imágenes
+ Tip 8-4: 2016-03-01-t-8-4.md (30 líneas, 174 palabras)
+ - Tipo: tip
+ - Tiene: listas
+ - NO tiene imágenes
 
-   □ Tip 8-5: 2016-03-01-t-8-5.md (28 líneas, 170 palabras)
-     - Tipo: tip
-     - Tiene: imágenes (1)
-     - Imagen usa: {{ site.imageurl }}
+ Tip 8-5: 2016-03-01-t-8-5.md (28 líneas, 170 palabras)
+ - Tipo: tip
+ - Tiene: imágenes (1)
+ - Imagen usa: {{ site.imageurl }}
 
-   □ Tip 8-6: 2016-03-01-t-8-6.md (24 líneas, 133 palabras)
-     - Tipo: tip
-     - Tiene: listas
-     - NO tiene imágenes
+ Tip 8-6: 2016-03-01-t-8-6.md (24 líneas, 133 palabras)
+ - Tipo: tip
+ - Tiene: listas
+ - NO tiene imágenes
 
-   □ Tip 8-7: 2016-03-01-t-8-7.md (43 líneas, 178 palabras)
-     - Tipo: tip
-     - Tiene: imágenes (1)
-     - Imagen usa: {{ site.imageurl }}
+ Tip 8-7: 2016-03-01-t-8-7.md (43 líneas, 178 palabras)
+ - Tipo: tip
+ - Tiene: imágenes (1)
+ - Imagen usa: {{ site.imageurl }}
 
-   □ Tip 8-8: 2016-03-01-t-8-8.md (64 líneas, 258 palabras)
-     - Tipo: tip
-     - Tiene: listas
-     - Tiene: código
-     - NO tiene imágenes
+ Tip 8-8: 2016-03-01-t-8-8.md (64 líneas, 258 palabras)
+ - Tipo: tip
+ - Tiene: listas
+ - Tiene: código
+ - NO tiene imágenes
 
-   □ Tip 8-9: 2016-03-01-t-8-9.md (118 líneas, 431 palabras)
-     - Tipo: tip (MÁS LARGO)
-     - Tiene: listas
-     - Tiene: código
-     - Tiene: tablas (1)
-     - NO tiene imágenes
+ Tip 8-9: 2016-03-01-t-8-9.md (118 líneas, 431 palabras)
+ - Tipo: tip (MÁS LARGO)
+ - Tiene: listas
+ - Tiene: código
+ - Tiene: tablas (1)
+ - NO tiene imágenes
 
-   □ Tip 8-10: 2016-03-02-t-8-10.md (37 líneas, 142 palabras)
-     - Tipo: tip
-     - Tiene: imágenes (1)
-     - Imagen usa: {{ site.imageurl }}
+ Tip 8-10: 2016-03-02-t-8-10.md (37 líneas, 142 palabras)
+ - Tipo: tip
+ - Tiene: imágenes (1)
+ - Imagen usa: {{ site.imageurl }}
 
-   □ Tip 8-11: 2022-07-01-t-8-11.md (33 líneas, 174 palabras)
-     - Tipo: tip
-     - Tiene: imágenes (1)
-     - Imagen usa: {{ site.imageurl }}
+ Tip 8-11: 2022-07-01-t-8-11.md (33 líneas, 174 palabras)
+ - Tipo: tip
+ - Tiene: imágenes (1)
+ - Imagen usa: {{ site.imageurl }}
 
-───────────────────────────────────────────────────────────────────────────────
+-------------------------------------------------------------------------------
 
 C. EJEMPLOS (1 archivo)
 
-   (No identificados específicamente por el script, están incluidos en "otro")
+ (No identificados específicamente por el script, están incluidos en "otro")
 
-   Nota: La sección usa {% include example.md category="concepts" %}
-         Esto sugiere que puede haber ejemplos externos o inline.
+ Nota: La sección usa {% include example.md category="concepts" %}
+ Esto sugiere que puede haber ejemplos externos o inline.
 
-───────────────────────────────────────────────────────────────────────────────
+-------------------------------------------------------------------------------
 
 D. ELEMENTOS ESPECIALES
 
-   Imágenes (5 total):
-   □ 08-concepts-EN.drawio.png (en plantilla principal)
-   □ 4 imágenes adicionales en tips (una por archivo con imagen)
+ Imágenes (5 total):
+ 08-concepts-EN.drawio.png (en plantilla principal)
+ 4 imágenes adicionales en tips (una por archivo con imagen)
 
-   Código:
-   □ Tip 8-8: Contiene código
-   □ Tip 8-9: Contiene código
+ Código:
+ Tip 8-8: Contiene código
+ Tip 8-9: Contiene código
 
-   Tablas:
-   □ Tip 8-9: Contiene tabla
+ Tablas:
+ Tip 8-9: Contiene tabla
 
-   Listas:
-   □ 6 archivos contienen listas
+ Listas:
+ 6 archivos contienen listas
 
-───────────────────────────────────────────────────────────────────────────────
+-------------------------------------------------------------------------------
 
 TOTALES A TRADUCIR:
 
@@ -171,7 +171,7 @@ TOTALES A TRADUCIR:
 
 TOTAL: 12 archivos
 
-═══════════════════════════════════════════════════════════════════════════════
+===============================================================================
 
 NOTAS IMPORTANTES:
 
@@ -181,4 +181,4 @@ NOTAS IMPORTANTES:
 4. 2 archivos tienen código - mantener formato exacto
 5. 1 archivo tiene tabla - verificar formato RST correcto
 
-═══════════════════════════════════════════════════════════════════════════════
+===============================================================================

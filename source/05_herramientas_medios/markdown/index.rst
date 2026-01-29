@@ -4,7 +4,7 @@
 Herramientas Markdown
 ===============================================
 
-⏳ **Subsección en desarrollo**
+[RUNNING] **Subsección en desarrollo**
 
 Contenido Planificado
 ======================

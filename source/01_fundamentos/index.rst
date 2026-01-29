@@ -3,9 +3,9 @@ Fundamentos de Traducción ADT
 =============================
 
 .. note::
-   Esta sección contiene los **fundamentos teóricos y conceptuales** del 
-   proyecto ADT, basados en el Método Peshitta (Micheli, 2014) y estándares
-   ISO 1087/704.
+ Esta sección contiene los **fundamentos teóricos y conceptuales** del
+ proyecto ADT, basados en el Método Peshitta (Micheli, 2014) y estándares
+ ISO 1087/704.
 
 ----
 
@@ -25,13 +25,13 @@ Documentos Principales
 ======================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Documentos Públicos
+ :maxdepth: 2
+ :caption: Documentos Públicos
 
-   glosario_traduccion
-   principios_fundamentales
-   objetivos_tacticas
-   metodo_segmentacion
+ glosario_traduccion
+ principios_fundamentales
+ objetivos_tacticas
+ metodo_segmentacion
 
 ----
 
@@ -39,20 +39,20 @@ Base Teórica (Carpetas Privadas)
 =================================
 
 **Fundamentos Conceptuales** (_fundamentos_conceptuales/)
-   Base teórica según ISO 1087
-   
-   - :doc:`_fundamentos_conceptuales/traduccion_como_transformacion`
-   - :doc:`_fundamentos_conceptuales/signifiant_vs_signifie`
+ Base teórica según ISO 1087
+
+ - :doc:`_fundamentos_conceptuales/traduccion_como_transformacion`
+ - :doc:`_fundamentos_conceptuales/signifiant_vs_signifie`
 
 **Metodologías** (_metodologias/)
-   Procedimientos según ISO 704
-   
-   - :doc:`_metodologias/metodo_por_defecto`
+ Procedimientos según ISO 704
+
+ - :doc:`_metodologias/metodo_por_defecto`
 
 **Metadata** (_metadata/)
-   Referencias bibliográficas
-   
-   - :doc:`_metadata/micheli_2014`
+ Referencias bibliográficas
+
+ - :doc:`_metadata/micheli_2014`
 
 ----
 
@@ -60,10 +60,10 @@ Modelos de Alto Nivel
 ======================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Metamodelos
+ :maxdepth: 2
+ :caption: Metamodelos
 
-   metamodelos/framework_universal_transformacion
+ metamodelos/framework_universal_transformacion
 
 ----
 
@@ -77,9 +77,9 @@ Isomorfismo Fundamental
 
 .. code-block:: text
 
-   Texto Fuente (LaTeX)  →  Texto Destino (RST/HTML)
-         ≈                        ≈
-   PIM (Platform-Ind.)   →  PSM (Platform-Spec.)
+ Texto Fuente (LaTeX) -> Texto Destino (RST/HTML)
+ ≈ ≈
+ PIM (Platform-Ind.) -> PSM (Platform-Spec.)
 
 **Base:** 50+ años Translation Studies aplicados a ingeniería de software
 
@@ -87,16 +87,16 @@ Los Tres Pilares del Método
 ----------------------------
 
 1. **Segmentación**
-   
-   Nivel al que trabajamos (sección, párrafo, frase, palabra)
+
+ Nivel al que trabajamos (sección, párrafo, frase, palabra)
 
 2. **Rendición**
-   
-   Cómo mapeamos elementos básicos (comando por comando)
+
+ Cómo mapeamos elementos básicos (comando por comando)
 
 3. **Preferencia**
-   
-   Signifié (contenido) sobre Signifiant (forma)
+
+ Signifié (contenido) sobre Signifiant (forma)
 
 Los Cuatro Objetivos
 ---------------------
@@ -127,24 +127,24 @@ Flujo de Aprendizaje
 **Para nuevos usuarios:**
 
 1. **Leer:** :doc:`principios_fundamentales`
-   
-   Entender conceptos base (30 min)
+
+ Entender conceptos base (30 min)
 
 2. **Consultar:** :doc:`glosario_traduccion`
-   
-   Familiarizarse con terminología (15 min)
+
+ Familiarizarse con terminología (15 min)
 
 3. **Estudiar:** :doc:`objetivos_tacticas`
-   
-   Aprender objetivos y tácticas (45 min)
+
+ Aprender objetivos y tácticas (45 min)
 
 4. **Profundizar:** :doc:`_fundamentos_conceptuales/traduccion_como_transformacion`
-   
-   Teoría completa (1-2 horas)
+
+ Teoría completa (1-2 horas)
 
 5. **Aplicar:** Ver :doc:`/02_procedimientos/workflow_general`
-   
-   Procedimiento paso a paso
+
+ Procedimiento paso a paso
 
 ----
 
@@ -178,30 +178,30 @@ Resumen Visual
 
 .. code-block:: text
 
-   FUNDAMENTOS ADT
-   ═══════════════════════════════════════════════════════════
-   
-   BASE TEÓRICA (Carpetas Privadas _)
-   ├─ Fundamentos Conceptuales (ISO 1087)
-   │  ├─ Traducción como Transformación
-   │  └─ Signifiant vs Signifié
-   ├─ Metodologías (ISO 704)
-   │  └─ Método por Defecto (3 pilares)
-   └─ Metadata
-      └─ Micheli (2014)
-   
-   DOCUMENTOS PÚBLICOS
-   ├─ Glosario de Traducción
-   ├─ Principios Fundamentales
-   ├─ Objetivos y Tácticas
-   └─ Método de Segmentación
-   
-   METAMODELOS
-   └─ Framework Universal de Transformación
-   
-   APLICACIÓN
-   └─> Procedimientos (02_procedimientos/)
-   └─> Prompts (08_prompts/)
+ FUNDAMENTOS ADT
+ ===========================================================
+
+ BASE TEÓRICA (Carpetas Privadas _)
+ +- Fundamentos Conceptuales (ISO 1087)
+ | +- Traducción como Transformación
+ | +- Signifiant vs Signifié
+ +- Metodologías (ISO 704)
+ | +- Método por Defecto (3 pilares)
+ +- Metadata
+ +- Micheli (2014)
+
+ DOCUMENTOS PÚBLICOS
+ +- Glosario de Traducción
+ +- Principios Fundamentales
+ +- Objetivos y Tácticas
+ +- Método de Segmentación
+
+ METAMODELOS
+ +- Framework Universal de Transformación
+
+ APLICACIÓN
+ +-> Procedimientos (02_procedimientos/)
+ +-> Prompts (08_prompts/)
 
 ----
 
@@ -226,6 +226,6 @@ Referencias
 
 ----
 
-**Versión:** 1.0  
-**Fecha:** 2026-01-27  
+**Versión:** 1.0
+**Fecha:** 2026-01-27
 **Estado:** Aprobado

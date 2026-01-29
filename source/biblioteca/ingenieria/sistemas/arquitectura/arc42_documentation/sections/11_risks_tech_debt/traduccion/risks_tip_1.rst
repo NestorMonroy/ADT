@@ -40,24 +40,24 @@ Para identificar **riesgos** o problemas adicionales, considera incluir:
 **Estrategia Breadth-First:**
 
 .. list-table::
-   :header-rows: 1
-   :widths: 30 70
-   
-   * - **Fase**
-     - **Acción**
-   * - **1. Amplitud**
-     - Consultar TODOS los grupos de stakeholders (rápido, superficial)
-   * - **2. Consolidación**
-     - Identificar temas comunes y priorizar
-   * - **3. Profundidad**
-     - Profundizar en riesgos críticos con expertos específicos
+ :header-rows: 1
+ :widths: 30 70
+
+ * - **Fase**
+ - **Acción**
+ * - **1. Amplitud**
+ - Consultar TODOS los grupos de stakeholders (rápido, superficial)
+ * - **2. Consolidación**
+ - Identificar temas comunes y priorizar
+ * - **3. Profundidad**
+ - Profundizar en riesgos críticos con expertos específicos
 
 **Beneficios del Enfoque Multi-Stakeholder:**
 
-* ✅ **Perspectivas diversas**: Cada grupo ve riesgos diferentes
-* ✅ **Detección temprana**: Problemas identificados antes de crisis
-* ✅ **Buy-in**: Stakeholders se sienten escuchados
-* ✅ **Cobertura completa**: No se pierden riesgos críticos
+* [OK] **Perspectivas diversas**: Cada grupo ve riesgos diferentes
+* [OK] **Detección temprana**: Problemas identificados antes de crisis
+* [OK] **Buy-in**: Stakeholders se sienten escuchados
+* [OK] **Cobertura completa**: No se pierden riesgos críticos
 
 ----
 
@@ -66,29 +66,29 @@ Para identificar **riesgos** o problemas adicionales, considera incluir:
 **Agenda (2 horas):**
 
 1. **Introducción** (15 min)
-   - Explicar objetivo: identificar riesgos técnicos
-   - Reglas: sin juicios, todas las ideas bienvenidas
+ - Explicar objetivo: identificar riesgos técnicos
+ - Reglas: sin juicios, todas las ideas bienvenidas
 
 2. **Brainstorming por grupos** (45 min)
-   - Cada grupo de stakeholders (5-6 personas)
-   - Identificar top 5 riesgos desde su perspectiva
-   - Usar post-its
+ - Cada grupo de stakeholders (5-6 personas)
+ - Identificar top 5 riesgos desde su perspectiva
+ - Usar post-its
 
 3. **Presentación y consolidación** (30 min)
-   - Cada grupo presenta sus riesgos
-   - Agrupar riesgos similares
+ - Cada grupo presenta sus riesgos
+ - Agrupar riesgos similares
 
 4. **Priorización** (20 min)
-   - Votar por riesgos más críticos
-   - Asignar responsables
+ - Votar por riesgos más críticos
+ - Asignar responsables
 
 5. **Siguiente pasos** (10 min)
-   - Definir análisis de profundidad
-   - Calendario de seguimiento
+ - Definir análisis de profundidad
+ - Calendario de seguimiento
 
 ----
 
 .. seealso::
-   * **Tip 11-2** - Analizar interfaces externas para riesgos
-   * **Tip 11-3** - Identificar riesgos por evaluación cualitativa
-   * **Sección 3** - Contexto del Sistema y Alcance
+ * **Tip 11-2** - Analizar interfaces externas para riesgos
+ * **Tip 11-3** - Identificar riesgos por evaluación cualitativa
+ * **Sección 3** - Contexto del Sistema y Alcance

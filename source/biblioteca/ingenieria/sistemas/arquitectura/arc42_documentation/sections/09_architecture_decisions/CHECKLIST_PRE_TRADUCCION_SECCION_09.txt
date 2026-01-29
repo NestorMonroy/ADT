@@ -4,175 +4,175 @@ Fecha: 2026-01-28
 Workflow: v1.7.2
 Sección: 09 - Architecture Decisions
 
-═══════════════════════════════════════════════════════════════════════════════
+===============================================================================
 
 INSTRUCCIONES
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 
 Este checklist DEBE completarse ANTES de empezar cualquier traducción.
-Marca con ✓ cada ítem completado.
+Marca con [OK] cada ítem completado.
 
 Basado en lecciones aprendidas de Sección 07 (omisiones) y Sección 08 (éxito).
 
-═══════════════════════════════════════════════════════════════════════════════
+===============================================================================
 
 PASO 0.1: LECTURA COMPLETA
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-☑ 1. He leído la plantilla COMPLETA de section-9.md (64 líneas)
-☑ 2. He identificado TODAS las secciones del archivo principal (11 elementos)
-☑ 3. He leído al menos 2-3 tips de ejemplo para entender el formato
-☐ 4. He leído al menos 1 ejemplo para entender la estructura de ADR
-☑ 5. Sé qué son los includes de Jekyll y cómo convertirlos a Sphinx
+
+[OK] 1. He leído la plantilla COMPLETA de section-9.md (64 líneas)
+[OK] 2. He identificado TODAS las secciones del archivo principal (11 elementos)
+[OK] 3. He leído al menos 2-3 tips de ejemplo para entender el formato
+[ ] 4. He leído al menos 1 ejemplo para entender la estructura de ADR
+[OK] 5. Sé qué son los includes de Jekyll y cómo convertirlos a Sphinx
 
 Secciones identificadas en section-9.md:
-  ☑ Front matter YAML
-  ☑ Title (9. Architecture Decisions)
-  ☑ Content
-  ☑ Motivation
-  ☑ Form
-  ☑ Background on ADRs
-  ☑ Our proposal concerning decisions
-  ☑ Tabla Nygard (estructura de ADR)
-  ☑ Include: example.md
-  ☑ Placeholder de decisiones
-  ☑ Include: further-info.md
+ [OK] Front matter YAML
+ [OK] Title (9. Architecture Decisions)
+ [OK] Content
+ [OK] Motivation
+ [OK] Form
+ [OK] Background on ADRs
+ [OK] Our proposal concerning decisions
+ [OK] Tabla Nygard (estructura de ADR)
+ [OK] Include: example.md
+ [OK] Placeholder de decisiones
+ [OK] Include: further-info.md
 
-═══════════════════════════════════════════════════════════════════════════════
+===============================================================================
 
 PASO 0.2: INVENTARIO COMPLETO
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-☑ 6. He ejecutado el script: python3 /tmp/ADT/scripts/analisis_profundo_funcional.py 09
-☑ 7. He revisado el archivo JSON generado (ANALISIS_PROFUNDO_FUNCIONAL.json)
-☑ 8. He revisado el archivo TXT generado (ANALISIS_PROFUNDO_FUNCIONAL.txt)
-☑ 9. He creado inventario manual detallado (INVENTARIO_SECCION_09.txt)
-☑ 10. Sé exactamente cuántos archivos voy a traducir: 14
+
+[OK] 6. He ejecutado el script: python3 /tmp/ADT/scripts/analisis_profundo_funcional.py 09
+[OK] 7. He revisado el archivo JSON generado (ANALISIS_PROFUNDO_FUNCIONAL.json)
+[OK] 8. He revisado el archivo TXT generado (ANALISIS_PROFUNDO_FUNCIONAL.txt)
+[OK] 9. He creado inventario manual detallado (INVENTARIO_SECCION_09.txt)
+[OK] 10. Sé exactamente cuántos archivos voy a traducir: 14
 
 Desglose de archivos:
-  ☑ 1 archivo principal (section-9.md)
-  ☑ 10 tips (t-9-1 hasta t-9-10)
-  ☑ 3 ejemplos (ADR, HTMLSC, TPU)
+ [OK] 1 archivo principal (section-9.md)
+ [OK] 10 tips (t-9-1 hasta t-9-10)
+ [OK] 3 ejemplos (ADR, HTMLSC, TPU)
 
-═══════════════════════════════════════════════════════════════════════════════
+===============================================================================
 
 PASO 0.3: FUENTES DE VERDAD
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-☑ 11. Sé cuál es la fuente de verdad para el archivo principal: section-9.md en /original/
-☑ 12. Sé cuál es la fuente de verdad para los tips: archivos .md en /original/
-☑ 13. Sé cuál es la fuente de verdad para los ejemplos: archivos .md en /original/
-☑ 14. SÉ que NO debo usar docs.arc42.org como fuente (solo renderizado Jekyll)
-☑ 15. He verificado que los 14 archivos están en /original/
 
-═══════════════════════════════════════════════════════════════════════════════
+[OK] 11. Sé cuál es la fuente de verdad para el archivo principal: section-9.md en /original/
+[OK] 12. Sé cuál es la fuente de verdad para los tips: archivos .md en /original/
+[OK] 13. Sé cuál es la fuente de verdad para los ejemplos: archivos .md en /original/
+[OK] 14. SÉ que NO debo usar docs.arc42.org como fuente (solo renderizado Jekyll)
+[OK] 15. He verificado que los 14 archivos están en /original/
+
+===============================================================================
 
 PASO 0.4: CLARIDAD ANTES DE EMPEZAR
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-☑ 16. Sé EXACTAMENTE qué archivos voy a traducir (14 archivos)
-☑ 17. Sé en qué orden los voy a traducir (primero archivo principal, luego tips, luego ejemplos)
-☑ 18. NO tengo dudas sobre qué traducir o qué omitir
-☑ 19. Sé que README.md NO se traduce (excluido automáticamente)
-☑ 20. Entiendo qué es un ADR y cómo documentarlo
+
+[OK] 16. Sé EXACTAMENTE qué archivos voy a traducir (14 archivos)
+[OK] 17. Sé en qué orden los voy a traducir (primero archivo principal, luego tips, luego ejemplos)
+[OK] 18. NO tengo dudas sobre qué traducir o qué omitir
+[OK] 19. Sé que README.md NO se traduce (excluido automáticamente)
+[OK] 20. Entiendo qué es un ADR y cómo documentarlo
 
 Elementos especiales identificados:
-  ☑ 0 imágenes (ninguna en esta sección)
-  ☑ 2 archivos con código (requieren sintaxis exacta)
-  ☑ 2 archivos con tablas (convertir a formato RST)
-  ☑ 4 archivos con listas (mantener jerarquía)
-  ☑ 3 links externos importantes (mantener URLs)
-  ☑ 2 includes de Jekyll (convertir a toctree)
+ [OK] 0 imágenes (ninguna en esta sección)
+ [OK] 2 archivos con código (requieren sintaxis exacta)
+ [OK] 2 archivos con tablas (convertir a formato RST)
+ [OK] 4 archivos con listas (mantener jerarquía)
+ [OK] 3 links externos importantes (mantener URLs)
+ [OK] 2 includes de Jekyll (convertir a toctree)
 
-═══════════════════════════════════════════════════════════════════════════════
+===============================================================================
 
 PASO 0.5: PREPARACIÓN DE HERRAMIENTAS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-☑ 21. La estructura de directorios está creada (/original/, /traduccion/)
-☑ 22. Los 14 archivos originales están copiados en /original/
-☑ 23. El script de análisis está configurado con Sección 09
-☑ 24. Tengo acceso al inventario y checklist
 
-═══════════════════════════════════════════════════════════════════════════════
+[OK] 21. La estructura de directorios está creada (/original/, /traduccion/)
+[OK] 22. Los 14 archivos originales están copiados en /original/
+[OK] 23. El script de análisis está configurado con Sección 09
+[OK] 24. Tengo acceso al inventario y checklist
+
+===============================================================================
 
 RESUMEN DE VERIFICACIÓN
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 
 Total de checks: 24
 Checks completados: 24
-Porcentaje: 100% ✅
+Porcentaje: 100% [OK]
 
-═══════════════════════════════════════════════════════════════════════════════
+===============================================================================
 
 DECISIÓN: ¿Listo para empezar traducción?
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Si TODOS los checks están ✓ → SÍ, listo para FASE 1
 
-Si CUALQUIER check está ☐ → NO, completar primero
+Si TODOS los checks están [OK] -> SÍ, listo para FASE 1
 
-ESTADO ACTUAL: ✅ LISTO PARA FASE 1
+Si CUALQUIER check está [ ] -> NO, completar primero
 
-═══════════════════════════════════════════════════════════════════════════════
+ESTADO ACTUAL: [OK] LISTO PARA FASE 1
+
+===============================================================================
 
 INFORMACIÓN ADICIONAL
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 
 Tiempo invertido en PASO 0: ~25 minutos
 
 ROI (Retorno de Inversión):
-  • Inversión: 25 minutos
-  • Retorno: Prevención de omisiones (ahorro de horas de retrabajo)
-  • Lección de Sección 07: Omitir PASO 0 = 6 secciones omitidas + retrabajo
-  • Lección de Sección 08: Ejecutar PASO 0 = 100% completitud + cero retrabajo
+ • Inversión: 25 minutos
+ • Retorno: Prevención de omisiones (ahorro de horas de retrabajo)
+ • Lección de Sección 07: Omitir PASO 0 = 6 secciones omitidas + retrabajo
+ • Lección de Sección 08: Ejecutar PASO 0 = 100% completitud + cero retrabajo
 
 Archivos generados en PASO 0:
-  1. ANALISIS_PROFUNDO_FUNCIONAL.json (script automático)
-  2. ANALISIS_PROFUNDO_FUNCIONAL.txt (script automático)
-  3. INVENTARIO_SECCION_09.txt (inventario manual detallado)
-  4. CHECKLIST_PRE_TRADUCCION_SECCION_09.txt (este archivo)
+ 1. ANALISIS_PROFUNDO_FUNCIONAL.json (script automático)
+ 2. ANALISIS_PROFUNDO_FUNCIONAL.txt (script automático)
+ 3. INVENTARIO_SECCION_09.txt (inventario manual detallado)
+ 4. CHECKLIST_PRE_TRADUCCION_SECCION_09.txt (este archivo)
 
-═══════════════════════════════════════════════════════════════════════════════
+===============================================================================
 
 NOTAS IMPORTANTES ANTES DE EMPEZAR
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 
 1. ADR (Architecture Decision Record):
-   • NO traducir el acrónimo "ADR"
-   • Es terminología estándar internacional
-   • Traducir contenido pero mantener "ADR"
+ • NO traducir el acrónimo "ADR"
+ • Es terminología estándar internacional
+ • Traducir contenido pero mantener "ADR"
 
 2. Nombres propios:
-   • Michael Nygard → mantener
-   • HTML Sanity Checker (HTMLSC) → mantener
-   • Trainings Planning Utility (TPU) → mantener
-   • Estructura Nygard → mantener "Nygard"
+ • Michael Nygard -> mantener
+ • HTML Sanity Checker (HTMLSC) -> mantener
+ • Trainings Planning Utility (TPU) -> mantener
+ • Estructura Nygard -> mantener "Nygard"
 
 3. URLs y links:
-   • thinkrelevance.com → NO traducir
-   • cognitect.com → NO traducir
-   • adr.github.io → NO traducir
-   • Mantener TODAS las URLs exactamente igual
+ • thinkrelevance.com -> NO traducir
+ • cognitect.com -> NO traducir
+ • adr.github.io -> NO traducir
+ • Mantener TODAS las URLs exactamente igual
 
 4. Tabla Nygard:
-   • Estructura: Title, Context, Decision, Status, Consequences
-   • Traducir descripciones de columnas
-   • Mantener formato RST de tabla
+ • Estructura: Title, Context, Decision, Status, Consequences
+ • Traducir descripciones de columnas
+ • Mantener formato RST de tabla
 
 5. Includes de Jekyll:
-   • {% include example.md category="decisions" %} → convertir a toctree
-   • {% include further-info.md ... %} → convertir a nota/referencia
+ • {% include example.md category="decisions" %} -> convertir a toctree
+ • {% include further-info.md ... %} -> convertir a nota/referencia
 
 6. Tips recientes (2022):
-   • Tips 9-8, 9-9, 9-10 son de enero 2022
-   • Pueden contener referencias modernas
-   • Prestar atención a terminología actual
+ • Tips 9-8, 9-9, 9-10 son de enero 2022
+ • Pueden contener referencias modernas
+ • Prestar atención a terminología actual
 
-═══════════════════════════════════════════════════════════════════════════════
+===============================================================================
 
 Checklist creado: 2026-01-28
-PASO 0 completado: ✅ SÍ
+PASO 0 completado: [OK] SÍ
 Estado: LISTO PARA FASE 1
 
-═══════════════════════════════════════════════════════════════════════════════
+===============================================================================
