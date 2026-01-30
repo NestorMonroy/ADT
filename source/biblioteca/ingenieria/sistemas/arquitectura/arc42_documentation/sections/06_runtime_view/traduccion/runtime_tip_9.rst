@@ -13,7 +13,7 @@ Tip 6-9: ¡Usa una notación textual para describir escenarios de tiempo de ejec
 
 Nuestra sugerencia para equipos de desarrollo: Usa `PlantUML <https://plantuml.com/>`_ para describir o especificar **escenarios de tiempo de ejecución**. Tiene una sintaxis textual ligera (DSL) para **diagramas de secuencia** y **diagramas de actividad** - fácil de entender y una opción ligera para discutir y visualizar actividades y **procesos**.
 
-.. code-block:: plantuml
+.. code-block:: text
 
    @startuml
    skinparam componentStyle uml2

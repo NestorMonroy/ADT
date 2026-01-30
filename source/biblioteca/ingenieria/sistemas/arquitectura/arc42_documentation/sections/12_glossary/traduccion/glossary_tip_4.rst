@@ -124,6 +124,9 @@ Casos de Uso para Glosario Multi-idioma
    - Kasse
    -
 
+
+
+
 **Opción 2: Múltiples Definiciones (para matices)**
 
 .. list-table::
@@ -142,6 +145,9 @@ Casos de Uso para Glosario Multi-idioma
    - Regular payment for insurance coverage
    - Prämie / Beitrag
    - Regelmäßige Zahlung für Versicherungsschutz
+
+
+
 
 ----
 
@@ -162,15 +168,19 @@ Casos de Uso para Glosario Multi-idioma
  * - Una sola traducción sin alternativas
    - Mostrar sinónimos si existen
 
+
+
 2. **Consistencia en Todo el Proyecto**
 
  .. code-block:: text
 
  [OK] HACER:
+ 
  - Usar SIEMPRE la misma traducción del glosario
  - Actualizar código, UI, docs con término consistente
 
  [ERROR] EVITAR:
+ 
  - Código usa "Bestellung"
  - UI usa "Auftrag"
  - Docs usan "Order"
@@ -214,6 +224,9 @@ Casos de Uso para Glosario Multi-idioma
  * - **Sphinx i18n**
    - Integrado con docs
    - Curva de aprendizaje
+
+
+
 
 ----
 
@@ -293,6 +306,7 @@ Casos de Uso para Glosario Multi-idioma
 ----
 
 .. seealso::
+ 
  * **Tip 12-2** - Documentar glosario como tabla
  * **Tip 12-5** - Mantener glosario compacto
  * **Sección 8** - Conceptos Transversales (i18n strategy)

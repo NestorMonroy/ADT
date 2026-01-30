@@ -40,7 +40,7 @@ Compara el diagrama (compacto) debajo con la versión (aburrida y mucho más lar
 
 Por cierto: ambos diagramas fueron generados desde una descripción textual PlantUML, el código para el último se da debajo:
 
-.. code-block:: plantuml
+.. code-block:: text
 
    @startuml
    note right of F: before start, a1-a5 have completed

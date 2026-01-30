@@ -10,6 +10,10 @@ Documentación de referencia, recursos externos y material complementario.
  :depth: 2
  :local:
 
+
+
+
+
 ----
 
 Contenido Disponible
@@ -25,6 +29,7 @@ Referencia rápida completa de reStructuredText.
 Ver: :doc:`cheatsheets/cheatsheet_rst`
 
 **Incluye:**
+
 - Encabezados y títulos
 - Formato de texto
 - Listas, tablas, código
@@ -43,6 +48,7 @@ Comandos más usados en proyectos ADT.
 Ver: :doc:`comandos_utiles`
 
 **Incluye:**
+
 - Sphinx (compilación, verificación)
 - Git (workflow, branches, historial)
 - Búsqueda y análisis
@@ -60,6 +66,7 @@ Enlaces a recursos oficiales y herramientas externas.
 Ver: :doc:`recursos_externos`
 
 **Incluye:**
+
 - Documentación oficial
 - Tutoriales y guías
 - Herramientas online
@@ -134,6 +141,9 @@ Subsecciones
  comandos_utiles
  recursos_externos
 
+
+
+
 ----
 
 Relación con Otras Secciones
@@ -185,6 +195,9 @@ Estado de Desarrollo
    - [RUNNING] Planeado
    - Pendiente
 
+
+
+
 ----
 
 Contribuir Referencias
@@ -213,6 +226,7 @@ Si encuentras recursos útiles:
 ----
 
 .. seealso::
+ 
  * :doc:`../07_guias_uso/faq` - Preguntas frecuentes
  * :doc:`../07_guias_uso/troubleshooting` - Solución de problemas
  * :doc:`../10_apendices/glosario_adt` - Glosario ADT

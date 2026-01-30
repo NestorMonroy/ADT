@@ -168,7 +168,7 @@ Form
 **Verifiqué mi traducción del Tip 7-1:**
 
 ```rst
-.. _deployment_tip_1:
+.. _deployment_tip_1_analysis:
 
 Tip 7-1: ¡Documenta tu infraestructura técnica (hardware)!
 
