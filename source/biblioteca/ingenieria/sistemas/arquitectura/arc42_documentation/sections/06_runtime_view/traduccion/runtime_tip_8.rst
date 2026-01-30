@@ -22,7 +22,7 @@ Echa un vistazo al siguiente ejemplo - que muestra la *modularización* o *parti
 
 El diagrama de arriba fue renderizado por PlantUML con el siguiente código:
 
-.. code-block:: plantuml
+.. code-block:: text
 
    @startuml
    partition Checker {

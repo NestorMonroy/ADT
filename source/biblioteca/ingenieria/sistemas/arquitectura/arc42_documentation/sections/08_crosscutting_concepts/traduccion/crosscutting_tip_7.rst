@@ -36,7 +36,7 @@ Fuente PlantUML
 
 El diagrama anterior se generó automáticamente a partir de la siguiente fuente PlantUML:
 
-.. code-block:: plantuml
+.. code-block:: text
 
    @startuml
    

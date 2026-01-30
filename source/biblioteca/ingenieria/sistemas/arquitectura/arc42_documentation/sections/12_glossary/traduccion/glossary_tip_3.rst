@@ -13,12 +13,10 @@ Podrías explicar las **relaciones** de términos importantes en un diagrama, y 
 
 Encuentras un ejemplo a continuación (tomado del proyecto open-source "HtmlSanityCheck"):
 
-.. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/figuras/12-graphical-glossary.png
- :alt: Glosario gráfico (tomado del proyecto open-source "HtmlSanityCheck")
- :align: center
- :width: 90%
-
- Glosario gráfico - HtmlSanityCheck
+.. note::
+ El ejemplo gráfico original se omite en este repositorio para evitar
+ almacenar archivos binarios. Mantén un enlace externo o añade el asset
+ en un repositorio de medios si es necesario.
 
 (En el ejemplo omitimos la tabla con definiciones apropiadas - estamos bastante seguros de que puedes imaginar cómo debería verse...)
 
@@ -230,7 +228,7 @@ Herramientas recomendadas:
 
 **Ejemplo con PlantUML:**
 
-.. code-block:: plantuml
+.. code-block:: text
 
  @startuml
 

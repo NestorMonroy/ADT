@@ -200,6 +200,25 @@ make html  # Solo reconstruye cambios
 make clean
 ```
 
+## Reglas preventivas (evitar regresiones)
+
+### Reglas de formato RST
+- **Listas**: deja una línea en blanco antes de listas que siguen a un párrafo con `:`. Usa `scripts/fix_list_spacing.py`.
+- **List-table**: siempre agrega una línea en blanco entre opciones y filas. Usa `scripts/fix_list_table_spacing.py`.
+- **Glossary**: términos con 2 espacios y definiciones con 4 espacios de indentación. Usa `scripts/fix_glossary_indentation.py`.
+- **Lexers desconocidos**: usar `.. code-block:: text` en lugar de `plantuml/atl/ocl` salvo que haya soporte instalado. Usa `scripts/fix_unknown_lexers.py`.
+
+### Reglas de estructura
+- **Toctree**: el índice raíz solo referencia `index.rst` por sección; el detalle vive en los índices internos.
+- **Labels**: cada `.. _label:` debe ser único en el árbol `source/`.
+
+### Checklist rápido
+1. Ejecutar scripts de normalización en archivos tocados.
+2. Validar duplicados de toctree y labels:
+   - `python scripts/find_duplicate_toctree.py $(rg -l ".. toctree::" source)`
+   - `python scripts/find_duplicate_labels.py $(rg -l "^.. _" source)`
+3. Ejecutar tests de scripts relevantes con `pytest -q`.
+
 ## Scripts Usados
 
 - scripts/validar_estructura.sh

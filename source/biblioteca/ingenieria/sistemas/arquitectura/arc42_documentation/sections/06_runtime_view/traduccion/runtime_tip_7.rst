@@ -32,7 +32,7 @@ Encuentras un ejemplo debajo - donde las actividades realizadas por cada uno de 
 
 El diagrama de arriba fue renderizado por PlantUML con el siguiente código:
 
-.. code-block:: plantuml
+.. code-block:: text
 
    @startuml
    |GUI|

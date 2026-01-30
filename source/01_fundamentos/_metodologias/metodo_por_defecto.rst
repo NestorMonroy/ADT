@@ -11,6 +11,10 @@ Método por Defecto de ADT
  :depth: 2
  :local:
 
+
+
+
+
 ----
 
 Introducción
@@ -75,12 +79,18 @@ Los Tres Pilares del Método
    - Términos individuales
    - Términos individuales
 
+
+
+
 **Decisión de segmentación:**
 
 .. important::
  Trabajamos a nivel de **SECCIÓN**, pero respetamos la jerarquía completa.
 
  NO traducimos palabra por palabra NI documento completo de una vez.
+
+
+
 
 **Ejemplo:**
 
@@ -144,12 +154,18 @@ Los Tres Pilares del Método
    - ``:cite:``
    - Citación
 
+
+
+
 **Decisión de rendición:**
 
 .. important::
  Nivel de COMANDO: Cada comando LaTeX se mapea a equivalente RST.
 
  NO copiamos texto literal NI reescribimos completamente.
+
+
+
 
 3. Preferencia
 
@@ -186,7 +202,10 @@ Los Tres Pilares del Método
    - Confiar en RST
  * - Referencia
    - ``\ref{label}``
-   - ``:ref:`label```
+   - ``:ref:label``
+
+
+
 
 **Decisión de preferencia:**
 
@@ -194,6 +213,9 @@ Los Tres Pilares del Método
  En caso de duda: **Preservar contenido semántico**, adaptar forma.
 
  Excepción: Código fuente (donde forma = contenido).
+
+
+
 
 ----
 
@@ -496,6 +518,10 @@ Conclusión
 
 El método por defecto de ADT consta de:
 
+
+
+
+
 1. **Segmentación:** Nivel de sección
 2. **Rendición:** Nivel de comando
 3. **Preferencia:** Signifié (contenido) sobre Signifiant (forma)
@@ -518,6 +544,10 @@ El método por defecto de ADT consta de:
 **Valor:**
 
 Este método proporciona:
+
+
+
+
 - [OK] Consistencia entre traducciones
 - [OK] Eficiencia (no reinventar cada vez)
 - [OK] Calidad predecible

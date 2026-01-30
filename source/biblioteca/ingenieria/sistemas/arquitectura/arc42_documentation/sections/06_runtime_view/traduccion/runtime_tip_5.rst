@@ -24,7 +24,7 @@ Ejemplo: Renderizar Diagramas de Secuencia con PlantUML
 
 Considera un ejemplo: En el siguiente listado encuentras la descripción de una secuencia simple, mostrada en la figura debajo:
 
-.. code-block:: plantuml
+.. code-block:: text
 
    @startuml
    G -> G : init

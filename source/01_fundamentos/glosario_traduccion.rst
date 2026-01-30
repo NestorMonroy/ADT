@@ -11,6 +11,11 @@ Glosario de Términos de Traducción ADT
  :depth: 2
  :local:
 
+
+
+
+
+
 ----
 
 Introducción
@@ -30,503 +35,516 @@ Conceptos Fundamentales
 
 .. glossary::
 
- Signifiant
- **Significante.** La FORMA externa observable del signo.
+  Signifiant
+    **Significante.** La FORMA externa observable del signo.
 
- En LaTeX: ``\textbf{texto}`` (el comando específico)
+    En LaTeX: ``\textbf{texto}`` (el comando específico)
 
- En RST: ``**texto**`` (la sintaxis específica)
+    En RST: ``**texto**`` (la sintaxis específica)
 
- Ver: :doc:`_fundamentos_conceptuales/signifiant_vs_signifie`
+    Ver: :doc:`_fundamentos_conceptuales/signifiant_vs_signifie`
 
- Signifié
- **Significado.** El CONTENIDO conceptual al que apunta el signo.
+  Signifié
+    **Significado.** El CONTENIDO conceptual al que apunta el signo.
 
- Ejemplo: "Énfasis fuerte" (función semántica)
+    Ejemplo: "Énfasis fuerte" (función semántica)
 
- En ADT: Preferimos preservar Signifié sobre Signifiant
+    En ADT: Preferimos preservar Signifié sobre Signifiant
 
- Ver: :doc:`_fundamentos_conceptuales/signifiant_vs_signifie`
+    Ver: :doc:`_fundamentos_conceptuales/signifiant_vs_signifie`
 
- Texto Fuente
- Source Text
- El documento original a traducir.
+  Texto Fuente
+    Source Text
+    El documento original a traducir.
 
- En ADT: Documento LaTeX original
+    En ADT: Documento LaTeX original
 
- Equivalente MDA: Platform-Independent Model (PIM)
+    Equivalente MDA: Platform-Independent Model (PIM)
 
- Texto Destino
- Target Text
- El documento resultante de la traducción.
+  Texto Destino
+    Target Text
+    El documento resultante de la traducción.
 
- En ADT: Documento RST/Sphinx compilado a HTML
+    En ADT: Documento RST/Sphinx compilado a HTML
 
- Equivalente MDA: Platform-Specific Model (PSM)
+    Equivalente MDA: Platform-Specific Model (PSM)
 
- Vorlage
- Término alemán para el texto base del cual se traduce.
+  Vorlage
+    Término alemán para el texto base del cual se traduce.
 
- En estudios bíblicos: El texto hebreo original
+    En estudios bíblicos: El texto hebreo original
 
- En ADT: El LaTeX original proporcionado por el autor
+    En ADT: El LaTeX original proporcionado por el autor
 
 Método por Defecto
 ===================
 
 .. glossary::
 
- Segmentación
- El nivel de granularidad al que trabajamos.
+  Segmentación
+    El nivel de granularidad al que trabajamos.
 
- **En Peshitta:** Nivel de frase
+    **En Peshitta:** Nivel de frase
 
- **En ADT:** Nivel de sección
+    **En ADT:** Nivel de sección
 
- Ver: :doc:`_metodologias/metodo_por_defecto`
+    Ver: :doc:`_metodologias/metodo_por_defecto`
 
- Rendición
- Cómo traducimos cada elemento dentro de la segmentación.
+  Rendición
+    Cómo traducimos cada elemento dentro de la segmentación.
 
- **En Peshitta:** Palabra por palabra
+    **En Peshitta:** Palabra por palabra
 
- **En ADT:** Comando por comando (LaTeX -> RST)
+    **En ADT:** Comando por comando (LaTeX -> RST)
 
- Preferencia
- Qué preservamos cuando hay conflicto.
+  Preferencia
+    Qué preservamos cuando hay conflicto.
 
- **En ADT:** Signifié (contenido) sobre Signifiant (forma)
+    **En ADT:** Signifié (contenido) sobre Signifiant (forma)
 
- Excepción: Código fuente (forma = contenido)
+    Excepción: Código fuente (forma = contenido)
 
 Objetivos de Traducción
 ========================
 
 .. glossary::
 
- Domesticación
- Adaptation
- Adaptar el texto al contexto destino.
+  Domesticación
+    Adaptation
+    Adaptar el texto al contexto destino.
 
- Ejemplo: ``\begin{enumerate}`` -> ``1. 2. 3.`` (natural en RST)
+    Ejemplo: ``\begin{enumerate}`` -> ``1. 2. 3.`` (natural en RST)
 
- Opuesto: Extranjerización (preservar extrañeza del original)
+    Opuesto: Extranjerización (preservar extrañeza del original)
 
- Claridad
- Clarity
- Hacer el texto comprensible para la audiencia destino.
+  Claridad
+    Clarity
+    Hacer el texto comprensible para la audiencia destino.
 
- Táctica común: Agregar ``.. note::`` para aclaraciones
+    Táctica común: Agregar ``.. note::`` para aclaraciones
 
- Balance: No sobre-explicar
+    Balance: No sobre-explicar
 
- Consistencia
- Consistency
- Resolver inconsistencias del original.
+  Consistencia
+    Consistency
+    Resolver inconsistencias del original.
 
- Ejemplo: Unificar ``\textbf{}`` y ``\emph{}`` cuando se usan para lo mismo
+    Ejemplo: Unificar ``\textbf{}`` y ``\emph{}`` cuando se usan para lo mismo
 
- Decisión: Documentar en notas de traducción
+    Decisión: Documentar en notas de traducción
 
- Simplificación
- Simplification
- Reducir complejidad innecesaria.
+  Simplificación
+    Simplification
+    Reducir complejidad innecesaria.
 
- Ejemplo: Omitir ``\vspace{}`` (no semántico en RST)
+    Ejemplo: Omitir ``\vspace{}`` (no semántico en RST)
 
- Criterio: ¿Añade valor semántico?
+    Criterio: ¿Añade valor semántico?
 
 Tácticas de Traducción
 =======================
 
 .. glossary::
 
- Adición
- Addition
- Agregar contenido no presente en el original.
+  Adición
+    Addition
+    Agregar contenido no presente en el original.
 
- Uso: Para claridad o domesticación
+    Uso: Para claridad o domesticación
 
- Ejemplo: ``.. note::`` explicativa
+    Ejemplo: ``.. note::`` explicativa
 
- Omisión
- Omission
- Eliminar contenido del original.
+  Omisión
+    Omission
+    Eliminar contenido del original.
 
- Uso: Cuando no es semántico o es redundante
+    Uso: Cuando no es semántico o es redundante
 
- Ejemplo: Omitir ``\noindent``
+    Ejemplo: Omitir ``\noindent``
 
- Sustitución
- Substitution
- Reemplazar un elemento por otro.
+  Sustitución
+    Substitution
+    Reemplazar un elemento por otro.
 
- Uso: Mapeo comando LaTeX -> elemento RST
+    Uso: Mapeo comando LaTeX -> elemento RST
 
- Ejemplo: ``\ref{}`` -> ``:ref:``
+    Ejemplo: ``\ref{}`` -> ``:ref:``
 
- Cambio de Orden
- Transposition
- Reordenar elementos.
+  Cambio de Orden
+    Transposition
+    Reordenar elementos.
 
- Uso: Mejorar legibilidad o flujo
+    Uso: Mejorar legibilidad o flujo
 
- Ejemplo: Mover figura cerca de referencia
+    Ejemplo: Mover figura cerca de referencia
 
- Especificación
- Specification
- Hacer más específico un elemento vago.
+  Especificación
+    Specification
+    Hacer más específico un elemento vago.
 
- Uso: Para claridad
+    Uso: Para claridad
 
- Ejemplo: "[1]" -> "Smith (2020) :cite:`smith2020`"
+    Ejemplo: "[1]" -> "Smith (2020) :cite:`smith2020`"
 
- Generalización
- Generalization
- Hacer más general un elemento específico.
+  Generalización
+    Generalization
+    Hacer más general un elemento específico.
 
- Uso: Unificar variantes
+    Uso: Unificar variantes
 
- Ejemplo: Múltiples estilos de énfasis -> uno solo
+    Ejemplo: Múltiples estilos de énfasis -> uno solo
 
- Explicación
- Explicitation
- Hacer explícito lo implícito.
+  Explicación
+    Explicitation
+    Hacer explícito lo implícito.
 
- Uso: Claridad
+    Uso: Claridad
 
- Ejemplo: "como se dijo" -> :ref:`seccion-anterior`
+    Ejemplo: "como se dijo" -> :ref:`seccion-anterior`
 
- Normalización
- Normalization
- Estandarizar variaciones.
+  Normalización
+    Normalization
+    Estandarizar variaciones.
 
- Uso: Consistencia
+    Uso: Consistencia
 
- Ejemplo: Unificar nomenclatura de términos
+    Ejemplo: Unificar nomenclatura de términos
 
- Modulación
- Modulation
- Cambiar perspectiva o punto de vista.
+  Modulación
+    Modulation
+    Cambiar perspectiva o punto de vista.
 
- Uso: Naturalización al idioma destino
+    Uso: Naturalización al idioma destino
 
- Ejemplo: Voz activa -> voz pasiva
+    Ejemplo: Voz activa -> voz pasiva
 
- Compensación
- Compensation
- Recuperar pérdida de información en otro lugar.
+  Compensación
+    Compensation
+    Recuperar pérdida de información en otro lugar.
 
- Uso: Cuando traducción directa pierde matiz
+    Uso: Cuando traducción directa pierde matiz
 
- Ejemplo: Nota al pie explicativa
+    Ejemplo: Nota al pie explicativa
 
- Amplificación
- Amplification
- Expandir contenido comprimido.
+  Amplificación
+    Amplification
+    Expandir contenido comprimido.
 
- Uso: Claridad
+    Uso: Claridad
 
- Ejemplo: Sigla -> nombre completo + sigla
+    Ejemplo: Sigla -> nombre completo + sigla
 
- Condensación
- Condensation
- Comprimir contenido verboso.
+  Condensación
+    Condensation
+    Comprimir contenido verboso.
 
- Uso: Simplificación
+    Uso: Simplificación
 
- Ejemplo: Resumir explicación redundante
+    Ejemplo: Resumir explicación redundante
 
- Literalización
- Literalization
- Preservar forma exacta.
+  Literalización
+    Literalization
+    Preservar forma exacta.
 
- Uso: Código fuente, ecuaciones
+    Uso: Código fuente, ecuaciones
 
- Ejemplo: Código Python sin cambios
+    Ejemplo: Código Python sin cambios
 
- Adaptación Cultural
- Cultural Adaptation
- Adaptar referencias culturales.
+  Adaptación Cultural
+    Cultural Adaptation
+    Adaptar referencias culturales.
 
- Uso: En traducciones entre culturas
+    Uso: En traducciones entre culturas
 
- En ADT: Menos relevante (documentación técnica)
+    En ADT: Menos relevante (documentación técnica)
 
 Niveles de Análisis
 ====================
 
 .. glossary::
 
- Global Translation Technique
- Técnica Global
- Decisiones estratégicas del documento completo.
+  Global Translation Technique
+    Técnica Global
+    Decisiones estratégicas del documento completo.
 
- Ejemplos:
- - ¿Modo 1 (Alta Fidelidad) o Modo 2 (Marcado Visual)?
- - ¿Preservar todos los espacios verticales?
- - ¿Audiencia técnica o general?
+    Ejemplos:
+    
+    - ¿Modo 1 (Alta Fidelidad) o Modo 2 (Marcado Visual)?
+    - ¿Preservar todos los espacios verticales?
+    - ¿Audiencia técnica o general?
 
- Local Translation Technique
- Técnica Local
- Decisiones tácticas elemento por elemento.
+  Local Translation Technique
+    Técnica Local
+    Decisiones tácticas elemento por elemento.
 
- Ejemplos:
- - ¿Este ``\emph{}`` es semántico o estilístico?
- - ¿Preservar este ``\vspace{}`` específico?
- - ¿Esta figura necesita adaptación?
+    Ejemplos:
+    
+    - ¿Este ``\emph{}`` es semántico o estilístico?
+    - ¿Preservar este ``\vspace{}`` específico?
+    - ¿Esta figura necesita adaptación?
 
 Tipos de Divergencias
 ======================
 
 .. glossary::
 
- Divergencia Intencional
- Intentional Divergence
- Desviación del método por defecto para lograr un objetivo.
+  Divergencia Intencional
+    Intentional Divergence
+    Desviación del método por defecto para lograr un objetivo.
 
- Características:
- - Consciente y documentada
- - Justificada por objetivo específico
- - Mejora la traducción
+    Características:
+    
+    - Consciente y documentada
+    - Justificada por objetivo específico
+    - Mejora la traducción
 
- Opuesto: Error
+    Opuesto: Error
 
- Error
- Unintentional Divergence
- Desviación no intencional del método por defecto.
+  Error
+    Unintentional Divergence
+    Desviación no intencional del método por defecto.
 
- Tipos:
- - Error de lectura
- - Incomprensión del original
- - Error de tipeo
- - Pérdida accidental de contenido
+    Tipos:
+    
+    - Error de lectura
+    - Incomprensión del original
+    - Error de tipeo
+    - Pérdida accidental de contenido
 
- Solución: Corrección en revisión
+    Solución: Corrección en revisión
 
 Elementos de Documento
 =======================
 
 .. glossary::
 
- Sección
- Section
- Unidad estructural principal en LaTeX y RST.
+  Sección
+    Section
+    Unidad estructural principal en LaTeX y RST.
 
- LaTeX: ``\section{Título}``
+    LaTeX: ``\section{Título}``
 
- RST:
+    RST:
 
- .. code-block:: rst
+    .. code-block:: rst
 
- Título
- ======
+       Título
+       ======
 
- Subsección
- Subsection
- Unidad subordinada a sección.
+  Subsección
+    Subsection
+    Unidad subordinada a sección.
 
- LaTeX: ``\subsection{Título}``
+    LaTeX: ``\subsection{Título}``
 
- RST:
+    RST:
 
- .. code-block:: rst
+    .. code-block:: rst
 
- Título
- ------
+       Título
+       ------
 
- Figura
- Figure
- Imagen con caption y label.
+  Figura
+    Figure
+    Imagen con caption y label.
 
- LaTeX: ``\begin{figure}...\end{figure}``
+    LaTeX: ``\begin{figure}...\end{figure}``
 
- RST: ``.. figure::``
+    RST: ``.. figure::``
 
- Tabla
- Table
- Datos tabulares.
+  Tabla
+    Table
+    Datos tabulares.
 
- LaTeX: ``\begin{table}...\end{table}``
+    LaTeX: ``\begin{table}...\end{table}``
 
- RST: ``.. list-table::`` o tabla simple
+    RST: ``.. list-table::`` o tabla simple
 
- Ecuación
- Equation
- Expresión matemática.
+  Ecuación
+    Equation
+    Expresión matemática.
 
- LaTeX: ``\begin{equation}...\end{equation}``
+    LaTeX: ``\begin{equation}...\end{equation}``
 
- RST: ``.. math::``
+    RST: ``.. math::``
 
- Lista
- List
- Enumeración de ítems.
+  Lista
+    List
+    Enumeración de ítems.
 
- Tipos:
- - Numerada (enumerate/``1. 2. 3.``)
- - No numerada (itemize/``- - -``)
- - Descriptiva (description/``term : definition``)
+    Tipos:
+    
+    - Numerada (enumerate/``1. 2. 3.``)
+    - No numerada (itemize/``- - -``)
+    - Descriptiva (description/``term : definition``)
 
- Referencia Cruzada
- Cross-reference
- Enlace a otra parte del documento.
+  Referencia Cruzada
+    Cross-reference
+    Enlace a otra parte del documento.
 
- LaTeX: ``\ref{label}``
+    LaTeX: ``\ref{label}``
 
- RST: ``:ref:`label```
+    RST: ``:ref:`label```
 
- Citación
- Citation
- Referencia bibliográfica.
+  Citación
+    Citation
+    Referencia bibliográfica.
 
- LaTeX: ``\cite{key}``
+    LaTeX: ``\cite{key}``
 
- RST: ``:cite:`key```
+    RST: ``:cite:`key```
 
 Formatos y Medios
 =================
 
 .. glossary::
 
- LaTeX
- Sistema de composición tipográfica.
+  LaTeX
+    Sistema de composición tipográfica.
 
- En ADT: Formato fuente común
+    En ADT: Formato fuente común
 
- Características: Alto control tipográfico, sintaxis compleja
+    Características: Alto control tipográfico, sintaxis compleja
 
- RST
- reStructuredText
- Lenguaje de marcado ligero.
+  RST
+    reStructuredText
+    Lenguaje de marcado ligero.
 
- En ADT: Formato destino
+    En ADT: Formato destino
 
- Características: Legible, extensible vía Sphinx
+    Características: Legible, extensible vía Sphinx
 
- Sphinx
- Generador de documentación basado en RST.
+  Sphinx
+    Generador de documentación basado en RST.
 
- En ADT: Motor de compilación
+    En ADT: Motor de compilación
 
- Output: HTML, PDF, ePub, etc.
+    Output: HTML, PDF, ePub, etc.
 
- Markdown
- Lenguaje de marcado simple.
+  Markdown
+    Lenguaje de marcado simple.
 
- En ADT: Formato alternativo
+    En ADT: Formato alternativo
 
- Relación con RST: Más simple, menos potente
+    Relación con RST: Más simple, menos potente
 
 Calidad y Validación
 =====================
 
 .. glossary::
 
- Preservación Semántica
- Semantic Preservation
- Mantener el contenido significativo del original.
+  Preservación Semántica
+    Semantic Preservation
+    Mantener el contenido significativo del original.
 
- Métrica: ¿El lector obtiene la misma información?
+    Métrica: ¿El lector obtiene la misma información?
 
- Prioridad: ALTA (fundamental en ADT)
+    Prioridad: ALTA (fundamental en ADT)
 
- Fidelidad Formal
- Formal Fidelity
- Mantener la forma del original.
+  Fidelidad Formal
+    Formal Fidelity
+    Mantener la forma del original.
 
- Métrica: ¿Qué tan similar es la sintaxis?
+    Métrica: ¿Qué tan similar es la sintaxis?
 
- Prioridad: BAJA (excepto en código fuente)
+    Prioridad: BAJA (excepto en código fuente)
 
- Compilación
- Build
- Proceso de generar HTML desde RST.
+  Compilación
+    Build
+    Proceso de generar HTML desde RST.
 
- Comando: ``make html``
+    Comando: ``make html``
 
- Validación: Debe compilar sin errores
+    Validación: Debe compilar sin errores
 
- Revisión de Calidad
- Quality Review
- Verificación sistemática de la traducción.
+  Revisión de Calidad
+    Quality Review
+    Verificación sistemática de la traducción.
 
- Aspectos:
- - Completitud
- - Preservación semántica
- - Calidad visual
- - Enlaces funcionales
+    Aspectos:
+    
+    - Completitud
+    - Preservación semántica
+    - Calidad visual
+    - Enlaces funcionales
 
 Métodos y Modos
 ===============
 
 .. glossary::
 
- Modo Alta Fidelidad
- Mode 1
- Traducción preservando máxima estructura.
+  Modo Alta Fidelidad
+    Mode 1
+    Traducción preservando máxima estructura.
 
- Características:
- - Preserva espaciado
- - Preserva orden exacto
- - Mínimas adaptaciones
+    Características:
+    
+    - Preserva espaciado
+    - Preserva orden exacto
+    - Mínimas adaptaciones
 
- Uso: Documentos formales, libros
+    Uso: Documentos formales, libros
 
- Modo Marcado Visual
- Mode 2
- Traducción con marcadores visuales.
+  Modo Marcado Visual
+    Mode 2
+    Traducción con marcadores visuales.
 
- Características:
- - Marca conceptos clave
- - Añade claridad visual
- - Más adaptaciones
+    Características:
+    
+    - Marca conceptos clave
+    - Añade claridad visual
+    - Más adaptaciones
 
- Uso: Material didáctico, tutoriales
+    Uso: Material didáctico, tutoriales
 
- Workflow
- Flujo de Trabajo
- Secuencia de pasos para traducir.
+  Workflow
+    Flujo de Trabajo
+    Secuencia de pasos para traducir.
 
- Pasos típicos:
- 1. Análisis
- 2. Traducción
- 3. Validación
- 4. Revisión
- 5. Publicación
+    Pasos típicos:
+    
+    1. Análisis
+    2. Traducción
+    3. Validación
+    4. Revisión
+    5. Publicación
 
 Conceptos Avanzados
 ===================
 
 .. glossary::
 
- Isomorfismo Metodológico
- Methodological Isomorphism
- Correspondencia estructural entre dominios.
+  Isomorfismo Metodológico
+    Methodological Isomorphism
+    Correspondencia estructural entre dominios.
 
- En ADT: Traducción ≈ Transformación de modelos
+    En ADT: Traducción ≈ Transformación de modelos
 
- Ver: :doc:`metamodelos/framework_universal_transformacion`
+    Ver: :doc:`metamodelos/framework_universal_transformacion`
 
- PIM
- Platform-Independent Model
- Modelo independiente de plataforma (MDA).
+  PIM
+    Platform-Independent Model
+    Modelo independiente de plataforma (MDA).
 
- Equivalente: Texto fuente (LaTeX)
+    Equivalente: Texto fuente (LaTeX)
 
- PSM
- Platform-Specific Model
- Modelo específico de plataforma (MDA).
+  PSM
+    Platform-Specific Model
+    Modelo específico de plataforma (MDA).
 
- Equivalente: Texto destino (RST/HTML)
+    Equivalente: Texto destino (RST/HTML)
 
- Transformación
- Transformation
- Proceso de convertir modelo en otro.
+  Transformación
+    Transformation
+    Proceso de convertir modelo en otro.
 
- En ADT: Traducción como transformación
+    En ADT: Traducción como transformación
 
- Ver: :doc:`_fundamentos_conceptuales/traduccion_como_transformacion`
+    Ver: :doc:`_fundamentos_conceptuales/traduccion_como_transformacion`
+
+
+
+
 
 ----
 

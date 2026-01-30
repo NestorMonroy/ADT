@@ -127,8 +127,8 @@ Estructura de Tabla Recomendada
 
  **Diferencias sutiles:**
 
- * **Ubiquitous Language:** Vivo, evoluciona en conversaciones, código, tests
- * **Glosario arc42:** Documentado, formal, referencia escrita
+  * **Ubiquitous Language:** Vivo, evoluciona en conversaciones, código, tests
+  * **Glosario arc42:** Documentado, formal, referencia escrita
 
  **Recomendación:** Mantener ambos sincronizados.
 
@@ -138,36 +138,36 @@ Estructura de Tabla Recomendada
 
 1. **Orden Alfabético**
 
- * [OK] Facilita búsqueda rápida
- * [OK] Convención estándar
+   * [OK] Facilita búsqueda rápida
+   * [OK] Convención estándar
 
 2. **Definiciones Concisas**
 
- * [OK] 1-3 oraciones por término
- * [OK] Evitar definiciones circulares
- * [ERROR] NO: "Cliente es un tipo de usuario"
- * [OK] SÍ: "Cliente es una persona u organización que compra productos"
+   * [OK] 1-3 oraciones por término
+   * [OK] Evitar definiciones circulares
+   * [ERROR] NO: "Cliente es un tipo de usuario"
+   * [OK] SÍ: "Cliente es una persona u organización que compra productos"
 
 3. **Incluir Sinónimos**
 
- .. code-block:: text
+   .. code-block:: text
 
- Pedido (Order, Solicitud)
- -> Indicar sinónimos comunes
- -> Ayuda en búsquedas
+     Pedido (Order, Solicitud)
+     -> Indicar sinónimos comunes
+     -> Ayuda en búsquedas
 
 4. **Marcar Términos Deprecated**
 
- .. code-block:: text
+   .. code-block:: text
 
- Cliente Premium (DEPRECATED - usar "Cliente VIP")
+     Cliente Premium (DEPRECATED - usar "Cliente VIP")
 
 5. **Cross-referencias**
 
- .. code-block:: text
+   .. code-block:: text
 
- Carrito de Compra
- -> Ver también: Checkout, Pedido
+     Carrito de Compra
+     -> Ver también: Checkout, Pedido
 
 ----
 

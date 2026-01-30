@@ -69,10 +69,6 @@ Contenido Principal
  :numbered:
 
  01_fundamentos/index
- 01_fundamentos/glosario_traduccion
- 01_fundamentos/principios_fundamentales
- 01_fundamentos/taxonomias/index
- 01_fundamentos/metamodelos/index
 
 .. toctree::
  :maxdepth: 2
@@ -80,11 +76,6 @@ Contenido Principal
  :numbered:
 
  02_procedimientos/index
- 02_procedimientos/workflow_general
- 02_procedimientos/modo_alta_fidelidad/index
- 02_procedimientos/modo_marcado_visual/index
- 02_procedimientos/verificacion_calidad/index
- 02_procedimientos/correccion_errores/index
 
 .. toctree::
  :maxdepth: 2
@@ -92,10 +83,6 @@ Contenido Principal
  :numbered:
 
  03_estandares/index
- 03_estandares/terminologia/index
- 03_estandares/formato_por_medio/index
- 03_estandares/calidad/index
- 03_estandares/restricciones/index
 
 .. toctree::
  :maxdepth: 2
@@ -103,9 +90,6 @@ Contenido Principal
  :numbered:
 
  04_reglas_operativas/index
- 04_reglas_operativas/reglas_traduccion/index
- 04_reglas_operativas/escenarios_traduccion/index
- 04_reglas_operativas/matrices_decision/index
 
 .. toctree::
  :maxdepth: 2
@@ -113,10 +97,6 @@ Contenido Principal
  :numbered:
 
  05_herramientas_medios/index
- 05_herramientas_medios/latex/index
- 05_herramientas_medios/sphinx/index
- 05_herramientas_medios/markdown/index
- 05_herramientas_medios/equivalencias/index
 
 .. toctree::
  :maxdepth: 2
@@ -124,10 +104,6 @@ Contenido Principal
  :numbered:
 
  06_casos_practicos/index
- 06_casos_practicos/antes_despues/index
- 06_casos_practicos/errores_comunes/index
- 06_casos_practicos/casos_exito/index
- 06_casos_practicos/ejercicios_practica/index
 
 .. toctree::
  :maxdepth: 2
@@ -135,10 +111,6 @@ Contenido Principal
  :numbered:
 
  07_guias_uso/index
- 07_guias_uso/guia_rapida
- 07_guias_uso/tutorial_completo
- 07_guias_uso/faq
- 07_guias_uso/troubleshooting
 
 .. toctree::
  :maxdepth: 2
@@ -146,11 +118,6 @@ Contenido Principal
  :numbered:
 
  08_prompts/index
- 08_prompts/prompt_maestro_latex
- 08_prompts/prompt_maestro_sphinx
- 08_prompts/prompt_maestro_markdown
- 08_prompts/prompts_condicionales/index
- 08_prompts/plantillas/index
 
 .. toctree::
  :maxdepth: 2
@@ -158,10 +125,6 @@ Contenido Principal
  :numbered:
 
  09_referencias/index
- 09_referencias/bibliografia
- 09_referencias/recursos_externos
- 09_referencias/documentacion_oficial/index
- 09_referencias/cheatsheets/index
 
 .. toctree::
  :maxdepth: 2
@@ -169,10 +132,6 @@ Contenido Principal
  :numbered:
 
  10_apendices/index
- 10_apendices/historia_versiones
- 10_apendices/contribuidores
- 10_apendices/licencia
- 10_apendices/roadmap
 
 Características Principales
 ============================
