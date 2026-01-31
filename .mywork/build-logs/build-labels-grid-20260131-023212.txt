@@ -1,0 +1,106 @@
+sphinx-build -b html -d _build/doctrees   source _build/html
+Running Sphinx v8.2.3
+loading translations [es]... done
+Initializing Spelling Checker 8.0.2
+loading pickled environment... The configuration has changed (5 options: 'html_css_files', 'html_js_files', 'html_static_path', 'mathjax3_config', 'pygments_dark_style')
+done
+loading intersphinx inventory 'python' from https://docs.python.org/3/objects.inv ...
+loading intersphinx inventory 'sphinx' from https://www.sphinx-doc.org/en/master/objects.inv ...
+WARNING: failed to reach any of the inventories with the following issues:
+intersphinx inventory 'https://docs.python.org/3/objects.inv' not fetchable due to <class 'requests.exceptions.ProxyError'>: HTTPSConnectionPool(host='docs.python.org', port=443): Max retries exceeded with url: /3/objects.inv (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+WARNING: failed to reach any of the inventories with the following issues:
+intersphinx inventory 'https://www.sphinx-doc.org/en/master/objects.inv' not fetchable due to <class 'requests.exceptions.ProxyError'>: HTTPSConnectionPool(host='www.sphinx-doc.org', port=443): Max retries exceeded with url: /en/master/objects.inv (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+myst v5.0.0: MdParserConfig(commonmark_only=False, gfm_only=False, enable_extensions={'html_image', 'tasklist', 'dollarmath', 'replacements', 'html_admonition', 'colon_fence', 'smartquotes', 'deflist'}, disable_syntax=[], all_links_external=False, links_external_new_tab=False, url_schemes=('http', 'https', 'mailto', 'ftp'), ref_domains=None, fence_as_directive=set(), number_code_blocks=[], title_to_header=False, heading_anchors=3, heading_slug_func=None, html_meta={}, footnote_sort=True, footnote_transition=True, words_per_minute=200, substitutions={}, linkify_fuzzy_links=True, dmath_allow_labels=True, dmath_allow_space=True, dmath_allow_digits=True, dmath_double_inline=False, update_mathjax=True, mathjax_classes='tex2jax_process|mathjax_process|math|output_area', enable_checkboxes=False, suppress_warnings=[], highlight_code_blocks=True)
+building [mo]: targets for 0 po files that are out of date
+writing output... 
+building [html]: targets for 33 source files that are out of date
+updating environment: 0 added, 6 changed, 0 removed
+reading sources... [ 17%] 01_fundamentos/_fundamentos_conceptuales/index
+reading sources... [ 33%] 01_fundamentos/index
+reading sources... [ 50%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/index
+reading sources... [ 67%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro
+reading sources... [ 83%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/seccion_01_introduccion_objetivos
+reading sources... [100%] index
+
+source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:2: ERROR: Document or section may not begin with a transition. [docutils]
+source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:2: ERROR: Document or section may not begin with a transition. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:192: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:195: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:198: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:201: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:204: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:207: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:210: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:213: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:217: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:220: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:223: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:226: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:235: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:245: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:268: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:116: WARNING: duplicate label arc42-metadata-estado-traduccion, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/index.rst
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... WARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.
+done
+copying assets... 
+copying static files... 
+Writing evaluated template result to /tmp/ADT/_build/html/_static/basic.css
+Writing evaluated template result to /tmp/ADT/_build/html/_static/documentation_options.js
+Writing evaluated template result to /tmp/ADT/_build/html/_static/language_data.js
+Writing evaluated template result to /tmp/ADT/_build/html/_static/copybutton.js
+copying static files: done
+copying extra files... 
+copying extra files: done
+copying assets: done
+writing output... [  3%] 01_fundamentos/_fundamentos_conceptuales/index
+writing output... [  5%] 01_fundamentos/index
+writing output... [  8%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/index
+writing output... [ 11%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro
+writing output... [ 14%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/seccion_01_introduccion_objetivos
+writing output... [ 16%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/2016-03-01-t-12-4
+writing output... [ 19%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/2016-03-01-t-12-5
+writing output... [ 22%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/2016-03-01-t-12-6
+writing output... [ 24%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/README
+writing output... [ 27%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_ejemplo_htmlsc
+writing output... [ 30%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_1
+writing output... [ 32%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_2
+writing output... [ 35%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_3
+writing output... [ 38%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_4
+writing output... [ 41%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_5
+writing output... [ 43%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_6
+writing output... [ 46%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/seccion_12_glosario
+writing output... [ 49%] diataxis/index
+writing output... [ 51%] docs/INTEGRACION_FRAMEWORKS
+writing output... [ 54%] docs/PHANTOMJS_STATUS
+writing output... [ 57%] docs/index
+writing output... [ 59%] docs_maestros/ARQUITECTURA_DOCUMENTAL_TRADUCCION
+writing output... [ 62%] docs_maestros/ARQUITECTURA_TRADUCCION_IACT
+writing output... [ 65%] docs_maestros/ESTRUCTURA_DE_BIBLIOTECA_-_Versión_Correcta
+writing output... [ 68%] docs_maestros/GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL
+writing output... [ 70%] docs_maestros/METODO_TRADUCCION_PESHITTA_ZACHARIAS
+writing output... [ 73%] docs_maestros/PLAN_CONTENIDO
+writing output... [ 76%] docs_maestros/PLAN_FINAL_REORGANIZACION
+writing output... [ 78%] docs_maestros/PLAN_INCREMENTAL_CON_ARCHIVADO
+writing output... [ 81%] docs_maestros/PROMPT_MAESTRO_SPHINX_TRADUCCION
+writing output... [ 84%] docs_maestros/PROPUESTA_REORGANIZACION
+writing output... [ 86%] docs_maestros/PROPUESTA_REORGANIZACION_CORRECTA
+writing output... [ 89%] docs_maestros/README
+writing output... [ 92%] docs_maestros/REGLAS_ESTRUCTURA_PROYECTO
+writing output... [ 95%] docs_maestros/RESUMEN_GUIA_CLASIFICACION
+writing output... [ 97%] docs_maestros/SINTESIS_METODOLOGICA_ADT
+writing output... [100%] index
+
+/tmp/ADT/source/docs_maestros/METODO_TRADUCCION_PESHITTA_ZACHARIAS.md:1172: WARNING: Lexing literal_block '# Analogía en ATL\nrule DefaultVerbTranslation {\n    from\n        h : Hebrew!Verb\n    to\n        s : Syriac!Verb (\n            tense <- h.getTemporalSituation(),  # Signifié\n            # NO: form <- h.form  # Signifiant\n        )\n}\n' as "python" resulted in an error at token: '!'. Retrying in relaxed mode. [misc.highlighting_failure]
+generating indices... genindex done
+highlighting module code... 
+writing additional pages... search done
+dumping search index in Spanish (code: es)... done
+dumping object inventory... done
+build succeeded, 22 warnings.
+
+The HTML pages are in _build/html.
+
+Construcción finalizada. Los archivos HTML están en _build/html.

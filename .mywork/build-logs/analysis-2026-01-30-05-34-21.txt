@@ -1,0 +1,46 @@
+======================================================================
+REPORTE DE ANÁLISIS DE BUILD SPHINX
+======================================================================
+
+📊 RESUMEN POR SEVERIDAD
+----------------------------------------------------------------------
+CRITICAL    :   93
+ERROR       :  111
+WARNING     :  919
+TOTAL       : 1123
+
+📋 CATEGORIZACIÓN
+----------------------------------------------------------------------
+
+CRITICAL:
+  other                    :   88
+  section_structure        :    5
+
+ERROR:
+  other                    :   65
+  indentation              :   30
+  missing_content          :   16
+
+WARNING:
+  other                    :  778
+  missing_images           :   98
+  duplicate_labels         :   25
+  list_formatting          :    8
+  content_parsing          :    6
+  toctree                  :    2
+  title_underline          :    2
+
+🔝 TOP 10 ARCHIVOS CON MÁS ISSUES
+----------------------------------------------------------------------
+ 103  /tmp/ADT/source/02_procedimientos/workflow_general.rst
+  78  /tmp/ADT/source/docs_maestros/GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL.rst
+  66  /tmp/ADT/source/05_herramientas_medios/equivalencias/latex_rst_equivalencias.rst
+  58  /tmp/ADT/source/06_casos_practicos/errores_comunes/error_01_omisiones.rst
+  31  /tmp/ADT/source/docs_maestros/SINTESIS_METODOLOGICA_ADT.rst
+  27  /tmp/ADT/source/02_procedimientos/WORKFLOW_v1_6_0_ACTUALIZACION.rst
+  25  /tmp/ADT/source/06_casos_practicos/antes_despues/caso_01_seccion_breve.rst
+  23  /tmp/ADT/source/09_referencias/cheatsheets/cheatsheet_rst.rst
+  16  /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst
+  14  /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md.rst
+
+======================================================================

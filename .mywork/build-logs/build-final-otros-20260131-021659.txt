@@ -1,0 +1,72 @@
+sphinx-build -b html -d _build/doctrees   source _build/html
+Running Sphinx v8.2.3
+loading translations [es]... done
+Initializing Spelling Checker 8.0.2
+loading pickled environment... The configuration has changed (5 options: 'html_css_files', 'html_js_files', 'html_static_path', 'mathjax3_config', 'pygments_dark_style')
+done
+loading intersphinx inventory 'python' from https://docs.python.org/3/objects.inv ...
+loading intersphinx inventory 'sphinx' from https://www.sphinx-doc.org/en/master/objects.inv ...
+WARNING: failed to reach any of the inventories with the following issues:
+intersphinx inventory 'https://www.sphinx-doc.org/en/master/objects.inv' not fetchable due to <class 'requests.exceptions.ProxyError'>: HTTPSConnectionPool(host='www.sphinx-doc.org', port=443): Max retries exceeded with url: /en/master/objects.inv (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+WARNING: failed to reach any of the inventories with the following issues:
+intersphinx inventory 'https://docs.python.org/3/objects.inv' not fetchable due to <class 'requests.exceptions.ProxyError'>: HTTPSConnectionPool(host='docs.python.org', port=443): Max retries exceeded with url: /3/objects.inv (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+myst v5.0.0: MdParserConfig(commonmark_only=False, gfm_only=False, enable_extensions={'replacements', 'colon_fence', 'deflist', 'dollarmath', 'html_admonition', 'tasklist', 'html_image', 'smartquotes'}, disable_syntax=[], all_links_external=False, links_external_new_tab=False, url_schemes=('http', 'https', 'mailto', 'ftp'), ref_domains=None, fence_as_directive=set(), number_code_blocks=[], title_to_header=False, heading_anchors=3, heading_slug_func=None, html_meta={}, footnote_sort=True, footnote_transition=True, words_per_minute=200, substitutions={}, linkify_fuzzy_links=True, dmath_allow_labels=True, dmath_allow_space=True, dmath_allow_digits=True, dmath_double_inline=False, update_mathjax=True, mathjax_classes='tex2jax_process|mathjax_process|math|output_area', enable_checkboxes=False, suppress_warnings=[], highlight_code_blocks=True)
+building [mo]: targets for 0 po files that are out of date
+writing output... 
+building [html]: targets for 1 source files that are out of date
+updating environment: 0 added, 6 changed, 0 removed
+reading sources... [ 17%] 01_fundamentos/_fundamentos_conceptuales/index
+reading sources... [ 33%] 01_fundamentos/index
+reading sources... [ 50%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/index
+reading sources... [ 67%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro
+reading sources... [ 83%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/seccion_01_introduccion_objetivos
+reading sources... [100%] index
+
+source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:2: ERROR: Document or section may not begin with a transition. [docutils]
+source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:2: ERROR: Document or section may not begin with a transition. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:190: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:193: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:196: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:199: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:202: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:205: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:208: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:211: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:215: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:218: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:221: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:224: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:233: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:243: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:266: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+copying assets... 
+copying static files... 
+Writing evaluated template result to /tmp/ADT/_build/html/_static/basic.css
+Writing evaluated template result to /tmp/ADT/_build/html/_static/documentation_options.js
+Writing evaluated template result to /tmp/ADT/_build/html/_static/language_data.js
+Writing evaluated template result to /tmp/ADT/_build/html/_static/copybutton.js
+copying static files: done
+copying extra files... 
+copying extra files: done
+copying assets: done
+writing output... [ 17%] 01_fundamentos/_fundamentos_conceptuales/index
+writing output... [ 33%] 01_fundamentos/index
+writing output... [ 50%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/index
+writing output... [ 67%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro
+writing output... [ 83%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/seccion_01_introduccion_objetivos
+writing output... [100%] index
+
+generating indices... genindex done
+highlighting module code... 
+writing additional pages... search done
+dumping search index in Spanish (code: es)... done
+dumping object inventory... done
+build succeeded, 19 warnings.
+
+The HTML pages are in _build/html.
+
+Construcción finalizada. Los archivos HTML están en _build/html.

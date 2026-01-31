@@ -1,0 +1,249 @@
+sphinx-build -b html -d _build/doctrees   source _build/html
+Running Sphinx v8.2.3
+loading translations [es]... done
+Initializing Spelling Checker 8.0.2
+loading pickled environment... The configuration has changed (5 options: 'html_css_files', 'html_js_files', 'html_static_path', 'mathjax3_config', 'pygments_dark_style')
+done
+myst v5.0.0: MdParserConfig(commonmark_only=False, gfm_only=False, enable_extensions={'dollarmath', 'deflist', 'html_image', 'replacements', 'smartquotes', 'tasklist', 'colon_fence', 'html_admonition'}, disable_syntax=[], all_links_external=False, links_external_new_tab=False, url_schemes=('http', 'https', 'mailto', 'ftp'), ref_domains=None, fence_as_directive=set(), number_code_blocks=[], title_to_header=False, heading_anchors=3, heading_slug_func=None, html_meta={}, footnote_sort=True, footnote_transition=True, words_per_minute=200, substitutions={}, linkify_fuzzy_links=True, dmath_allow_labels=True, dmath_allow_space=True, dmath_allow_digits=True, dmath_double_inline=False, update_mathjax=True, mathjax_classes='tex2jax_process|mathjax_process|math|output_area', enable_checkboxes=False, suppress_warnings=[], highlight_code_blocks=True)
+building [mo]: targets for 0 po files that are out of date
+writing output... 
+building [html]: targets for 198 source files that are out of date
+updating environment: 0 added, 5 changed, 0 removed
+reading sources... [ 20%] 01_fundamentos/_fundamentos_conceptuales/index
+reading sources... [ 40%] 01_fundamentos/index
+reading sources... [ 60%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/index
+reading sources... [ 80%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/seccion_01_introduccion_objetivos
+reading sources... [100%] index
+
+source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:2: ERROR: Document or section may not begin with a transition. [docutils]
+source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:2: ERROR: Document or section may not begin with a transition. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:46: WARNING: duplicate label metadata-estado-traduccion, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... WARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.
+done
+copying assets... 
+copying static files... 
+Writing evaluated template result to /tmp/ADT/_build/html/_static/basic.css
+Writing evaluated template result to /tmp/ADT/_build/html/_static/documentation_options.js
+Writing evaluated template result to /tmp/ADT/_build/html/_static/language_data.js
+Writing evaluated template result to /tmp/ADT/_build/html/_static/copybutton.js
+copying static files: done
+copying extra files... 
+copying extra files: done
+copying assets: done
+writing output... [  0%] 01_fundamentos/_fundamentos_conceptuales/index
+writing output... [  1%] 01_fundamentos/index
+writing output... [  1%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/index
+writing output... [  2%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/seccion_01_introduccion_objetivos
+writing output... [  2%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_6
+writing output... [  3%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_7
+writing output... [  3%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_8
+writing output... [  4%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_9
+writing output... [  4%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/seccion_06_vista_runtime
+writing output... [  5%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/ANALISIS_FUENTES_DE_VERDAD
+writing output... [  5%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/APLICACION_BUCLE_VERIFICACION_SECCION_07
+writing output... [  6%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/SECCION_07_FINAL_CHECKPOINT
+writing output... [  6%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/glosario_seccion
+writing output... [  7%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/notas_traduccion
+writing output... [  7%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/07-deployment-example-tpu-1
+writing output... [  8%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/07-deployment-sample-htmlsc-1
+writing output... [  8%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/07-deployment-sample-tpu-2
+writing output... [  9%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-1
+writing output... [  9%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-2
+writing output... [ 10%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-3
+writing output... [ 10%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-4
+writing output... [ 11%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-5
+writing output... [ 11%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-6
+writing output... [ 12%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-7
+writing output... [ 12%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-8
+writing output... [ 13%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-9
+writing output... [ 13%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-02-t-7-10
+writing output... [ 14%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/README
+writing output... [ 14%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_ejemplo_htmlsc
+writing output... [ 15%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_ejemplo_tpu_1
+writing output... [ 15%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_ejemplo_tpu_2
+writing output... [ 16%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_1
+writing output... [ 16%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_10
+writing output... [ 17%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_2
+writing output... [ 17%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_3
+writing output... [ 18%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_4
+writing output... [ 18%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_5
+writing output... [ 19%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_6
+writing output... [ 19%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_7
+writing output... [ 20%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_8
+writing output... [ 20%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_9
+writing output... [ 21%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/seccion_07_vista_despliegue
+writing output... [ 21%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/glosario_seccion
+writing output... [ 22%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/notas_traduccion
+writing output... [ 22%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/08-concept-example-htmlsc-1
+writing output... [ 23%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/08-concept-example-htmlsc-2
+writing output... [ 23%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/08-concept-example-tpu-1
+writing output... [ 24%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/08-concept-example-tpu-2
+writing output... [ 24%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-1
+writing output... [ 25%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-2
+writing output... [ 25%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-3
+writing output... [ 26%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-4
+writing output... [ 26%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-5
+writing output... [ 27%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-6
+writing output... [ 27%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-7
+writing output... [ 28%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-8
+writing output... [ 28%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-9
+writing output... [ 29%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-02-t-8-10
+writing output... [ 29%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2022-07-01-t-8-11
+writing output... [ 30%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/README
+writing output... [ 30%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/index
+writing output... [ 31%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-1
+writing output... [ 31%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-2
+writing output... [ 32%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-3
+writing output... [ 32%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-4
+writing output... [ 33%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-5
+writing output... [ 33%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-6
+writing output... [ 34%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-7
+writing output... [ 34%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-8
+writing output... [ 35%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-9
+writing output... [ 35%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-02-t-8-10
+writing output... [ 36%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2022-07-01-t-8-11
+writing output... [ 36%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/section-8
+writing output... [ 37%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_1
+writing output... [ 37%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_10
+writing output... [ 38%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_11
+writing output... [ 38%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_2
+writing output... [ 39%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_3
+writing output... [ 39%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_4
+writing output... [ 40%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_5
+writing output... [ 40%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_6
+writing output... [ 41%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_7
+writing output... [ 41%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_8
+writing output... [ 42%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_9
+writing output... [ 42%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/seccion_08_conceptos_transversales
+writing output... [ 43%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/glosario_seccion
+writing output... [ 43%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/index
+writing output... [ 44%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/notas_traduccion
+writing output... [ 44%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/09-decision-example-adr
+writing output... [ 45%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/09-decision-example-htmlsc-1
+writing output... [ 45%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/09-decision-example-tpu-2
+writing output... [ 46%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2016-03-01-t-9-1
+writing output... [ 46%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2016-03-01-t-9-2
+writing output... [ 47%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2016-03-01-t-9-3
+writing output... [ 47%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2016-03-01-t-9-4
+writing output... [ 48%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2016-03-01-t-9-5
+writing output... [ 48%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2016-03-01-t-9-6
+writing output... [ 49%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2016-03-01-t-9-7
+writing output... [ 49%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2022-01-14-t-9-8
+writing output... [ 50%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2022-01-28-t-9-9
+writing output... [ 50%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2022-01-29-t-9-10
+writing output... [ 50%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/README
+writing output... [ 51%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/section-9
+writing output... [ 51%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_ejemplo_adr
+writing output... [ 52%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_ejemplo_htmlsc_1
+writing output... [ 52%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_ejemplo_tpu_2
+writing output... [ 53%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_1
+writing output... [ 53%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_10
+writing output... [ 54%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_2
+writing output... [ 54%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_3
+writing output... [ 55%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_4
+writing output... [ 55%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_5
+writing output... [ 56%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_6
+writing output... [ 56%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_7
+writing output... [ 57%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_8
+writing output... [ 57%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_9
+writing output... [ 58%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/seccion_09_decisiones_arquitectonicas
+writing output... [ 58%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/SECCION_10_FINAL_CHECKPOINT
+writing output... [ 59%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/glosario_seccion
+writing output... [ 59%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/notas_traduccion
+writing output... [ 60%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/10-quality-scenario-example-htmlsc-2
+writing output... [ 60%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/10-quality-scenario-example-tpu-1
+writing output... [ 61%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-1
+writing output... [ 61%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-2
+writing output... [ 62%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-3
+writing output... [ 62%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-4
+writing output... [ 63%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-5
+writing output... [ 63%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-6
+writing output... [ 64%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-7
+writing output... [ 64%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-8
+writing output... [ 65%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/README
+writing output... [ 65%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_ejemplo_htmlsc_2
+writing output... [ 66%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_ejemplo_tpu_1
+writing output... [ 66%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_1
+writing output... [ 67%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_2
+writing output... [ 67%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_3
+writing output... [ 68%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_4
+writing output... [ 68%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_5
+writing output... [ 69%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_6
+writing output... [ 69%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_7
+writing output... [ 70%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_8
+writing output... [ 70%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad
+writing output... [ 71%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/SECCION_11_FINAL_CHECKPOINT
+writing output... [ 71%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/glosario_seccion
+writing output... [ 72%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/notas_traduccion
+writing output... [ 72%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/11-risk-example-htmlsc
+writing output... [ 73%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/11-risk-example-tpu
+writing output... [ 73%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/2016-03-01-t-11-1
+writing output... [ 74%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/2016-03-01-t-11-2
+writing output... [ 74%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/2016-03-01-t-11-3
+writing output... [ 75%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/2016-03-01-t-11-4
+writing output... [ 75%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/2016-03-01-t-11-5
+writing output... [ 76%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/2016-03-01-t-11-6
+writing output... [ 76%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/README
+writing output... [ 77%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/risks_ejemplo_htmlsc
+writing output... [ 77%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/risks_ejemplo_tpu
+writing output... [ 78%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/risks_tip_1
+writing output... [ 78%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/risks_tip_2
+writing output... [ 79%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/risks_tip_3
+writing output... [ 79%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/risks_tip_4
+writing output... [ 80%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/risks_tip_5
+writing output... [ 80%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/risks_tip_6
+writing output... [ 81%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/seccion_11_riesgos_deuda_tecnica
+writing output... [ 81%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/SECCION_12_FINAL_CHECKPOINT
+writing output... [ 82%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/glosario_seccion
+writing output... [ 82%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/notas_traduccion
+writing output... [ 83%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/12-glossary-example-htmlsc-1
+writing output... [ 83%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/2016-03-01-t-12-1
+writing output... [ 84%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/2016-03-01-t-12-2
+writing output... [ 84%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/2016-03-01-t-12-3
+writing output... [ 85%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/2016-03-01-t-12-4
+writing output... [ 85%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/2016-03-01-t-12-5
+writing output... [ 86%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/2016-03-01-t-12-6
+writing output... [ 86%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/README
+writing output... [ 87%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_ejemplo_htmlsc
+writing output... [ 87%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_1
+writing output... [ 88%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_2
+writing output... [ 88%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_3
+writing output... [ 89%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_4
+writing output... [ 89%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_5
+writing output... [ 90%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_6
+writing output... [ 90%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/seccion_12_glosario
+writing output... [ 91%] diataxis/index
+writing output... [ 91%] docs/INTEGRACION_FRAMEWORKS
+writing output... [ 92%] docs/PHANTOMJS_STATUS
+writing output... [ 92%] docs/index
+writing output... [ 93%] docs_maestros/ARQUITECTURA_DOCUMENTAL_TRADUCCION
+writing output... [ 93%] docs_maestros/ARQUITECTURA_TRADUCCION_IACT
+writing output... [ 94%] docs_maestros/ESTRUCTURA_DE_BIBLIOTECA_-_Versión_Correcta
+writing output... [ 94%] docs_maestros/GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL
+writing output... [ 95%] docs_maestros/METODO_TRADUCCION_PESHITTA_ZACHARIAS
+writing output... [ 95%] docs_maestros/PLAN_CONTENIDO
+writing output... [ 96%] docs_maestros/PLAN_FINAL_REORGANIZACION
+writing output... [ 96%] docs_maestros/PLAN_INCREMENTAL_CON_ARCHIVADO
+writing output... [ 97%] docs_maestros/PROMPT_MAESTRO_SPHINX_TRADUCCION
+writing output... [ 97%] docs_maestros/PROPUESTA_REORGANIZACION
+writing output... [ 98%] docs_maestros/PROPUESTA_REORGANIZACION_CORRECTA
+writing output... [ 98%] docs_maestros/README
+writing output... [ 99%] docs_maestros/REGLAS_ESTRUCTURA_PROYECTO
+writing output... [ 99%] docs_maestros/RESUMEN_GUIA_CLASIFICACION
+writing output... [100%] docs_maestros/SINTESIS_METODOLOGICA_ADT
+writing output... [100%] index
+
+/tmp/ADT/source/docs_maestros/METODO_TRADUCCION_PESHITTA_ZACHARIAS.md:1172: WARNING: Lexing literal_block '# Analogía en ATL\nrule DefaultVerbTranslation {\n    from\n        h : Hebrew!Verb\n    to\n        s : Syriac!Verb (\n            tense <- h.getTemporalSituation(),  # Signifié\n            # NO: form <- h.form  # Signifiant\n        )\n}\n' as "python" resulted in an error at token: '!'. Retrying in relaxed mode. [misc.highlighting_failure]
+generating indices... genindex done
+highlighting module code... 
+writing additional pages... search done
+dumping search index in Spanish (code: es)... done
+dumping object inventory... done
+build succeeded, 5 warnings.
+
+The HTML pages are in _build/html.
+
+Construcción finalizada. Los archivos HTML están en _build/html.

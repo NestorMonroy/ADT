@@ -1,0 +1,688 @@
+sphinx-build -b html -d _build/doctrees   source _build/html
+Running Sphinx v8.2.3
+loading translations [es]... done
+Initializing Spelling Checker 8.0.2
+loading pickled environment... The configuration has changed (5 options: 'html_css_files', 'html_js_files', 'html_static_path', 'mathjax3_config', 'pygments_dark_style')
+done
+loading intersphinx inventory 'python' from https://docs.python.org/3/objects.inv ...
+loading intersphinx inventory 'sphinx' from https://www.sphinx-doc.org/en/master/objects.inv ...
+WARNING: failed to reach any of the inventories with the following issues:
+intersphinx inventory 'https://docs.python.org/3/objects.inv' not fetchable due to <class 'requests.exceptions.ProxyError'>: HTTPSConnectionPool(host='docs.python.org', port=443): Max retries exceeded with url: /3/objects.inv (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+WARNING: failed to reach any of the inventories with the following issues:
+intersphinx inventory 'https://www.sphinx-doc.org/en/master/objects.inv' not fetchable due to <class 'requests.exceptions.ProxyError'>: HTTPSConnectionPool(host='www.sphinx-doc.org', port=443): Max retries exceeded with url: /en/master/objects.inv (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+myst v5.0.0: MdParserConfig(commonmark_only=False, gfm_only=False, enable_extensions={'html_admonition', 'tasklist', 'deflist', 'colon_fence', 'replacements', 'html_image', 'dollarmath', 'smartquotes'}, disable_syntax=[], all_links_external=False, links_external_new_tab=False, url_schemes=('http', 'https', 'mailto', 'ftp'), ref_domains=None, fence_as_directive=set(), number_code_blocks=[], title_to_header=False, heading_anchors=3, heading_slug_func=None, html_meta={}, footnote_sort=True, footnote_transition=True, words_per_minute=200, substitutions={}, linkify_fuzzy_links=True, dmath_allow_labels=True, dmath_allow_space=True, dmath_allow_digits=True, dmath_double_inline=False, update_mathjax=True, mathjax_classes='tex2jax_process|mathjax_process|math|output_area', enable_checkboxes=False, suppress_warnings=[], highlight_code_blocks=True)
+building [mo]: targets for 0 po files that are out of date
+writing output... 
+building [html]: targets for 210 source files that are out of date
+updating environment: 0 added, 128 changed, 0 removed
+reading sources... [  1%] 01_fundamentos/_fundamentos_conceptuales/index
+reading sources... [  2%] 01_fundamentos/index
+reading sources... [  2%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/index
+reading sources... [  3%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/home
+reading sources... [  4%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10
+reading sources... [  5%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-3
+reading sources... [  5%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-4
+reading sources... [  6%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-5
+reading sources... [  7%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-6
+reading sources... [  8%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-7
+reading sources... [  9%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-8
+reading sources... [  9%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-10
+reading sources... [ 10%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-12
+reading sources... [ 11%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-13
+reading sources... [ 12%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-14
+reading sources... [ 12%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-15
+reading sources... [ 13%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-17
+reading sources... [ 14%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-18
+reading sources... [ 15%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/06-runtime/2016-03-01-t-6-3
+reading sources... [ 16%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/07-deployment/2016-03-01-t-7-4
+reading sources... [ 16%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/10-quality/2016-03-01-t-10-3
+reading sources... [ 17%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/10-quality/2016-03-01-t-10-4
+reading sources... [ 18%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_ejemplo-3
+reading sources... [ 19%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_ejemplo-htmlsc-1
+reading sources... [ 20%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-10
+reading sources... [ 20%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-12
+reading sources... [ 21%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-14
+reading sources... [ 22%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-23
+reading sources... [ 23%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-4
+reading sources... [ 23%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-6
+reading sources... [ 24%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-9
+reading sources... [ 25%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/seccion_01_introduccion_objetivos
+reading sources... [ 26%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/seccion_1_2_quality_goals
+reading sources... [ 27%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/seccion_1_3_stakeholders
+reading sources... [ 27%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-3
+reading sources... [ 28%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-4
+reading sources... [ 29%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-5
+reading sources... [ 30%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-6
+reading sources... [ 30%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-7
+reading sources... [ 31%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-8
+reading sources... [ 32%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-10
+reading sources... [ 33%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-12
+reading sources... [ 34%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-13
+reading sources... [ 34%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-14
+reading sources... [ 35%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-15
+reading sources... [ 36%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-17
+reading sources... [ 37%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-18
+reading sources... [ 38%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_negocio_1
+reading sources... [ 38%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_negocio_2
+reading sources... [ 39%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_negocio_3
+reading sources... [ 40%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_negocio_4
+reading sources... [ 41%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_tecnico_1
+reading sources... [ 41%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_tecnico_4
+reading sources... [ 42%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_1
+reading sources... [ 43%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_10
+reading sources... [ 44%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_12
+reading sources... [ 45%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_13
+reading sources... [ 45%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_14
+reading sources... [ 46%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_15
+reading sources... [ 47%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_17
+reading sources... [ 48%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_18
+reading sources... [ 48%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_2
+reading sources... [ 49%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_3
+reading sources... [ 50%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_4
+reading sources... [ 51%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_5
+reading sources... [ 52%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_6
+reading sources... [ 52%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_7
+reading sources... [ 53%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_8
+reading sources... [ 54%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc
+reading sources... [ 55%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_status
+reading sources... [ 55%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_tpu_nivel_1
+reading sources... [ 56%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_tpu_nivel_2
+reading sources... [ 57%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_10
+reading sources... [ 58%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_13
+reading sources... [ 59%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_15
+reading sources... [ 59%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_18
+reading sources... [ 60%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_19
+reading sources... [ 61%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_2
+reading sources... [ 62%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_20
+reading sources... [ 62%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_21
+reading sources... [ 63%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_24
+reading sources... [ 64%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_25
+reading sources... [ 65%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_26
+reading sources... [ 66%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_27
+reading sources... [ 66%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_4
+reading sources... [ 67%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/seccion_05_vista_bloques
+reading sources... [ 68%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-3
+reading sources... [ 69%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-5
+reading sources... [ 70%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-6
+reading sources... [ 70%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-7
+reading sources... [ 71%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-8
+reading sources... [ 72%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-9
+reading sources... [ 73%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-02-t-6-11
+reading sources... [ 73%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_ejemplo_htmlsc
+reading sources... [ 74%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_ejemplo_mama
+reading sources... [ 75%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_ejemplo_tpu
+reading sources... [ 76%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_10
+reading sources... [ 77%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_11
+reading sources... [ 77%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_3
+reading sources... [ 78%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_5
+reading sources... [ 79%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_6
+reading sources... [ 80%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_7
+reading sources... [ 80%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_8
+reading sources... [ 81%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_9
+reading sources... [ 82%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-4
+reading sources... [ 83%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_ejemplo_htmlsc
+reading sources... [ 84%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_ejemplo_tpu_1
+reading sources... [ 84%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_ejemplo_tpu_2
+reading sources... [ 85%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_1
+reading sources... [ 86%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_3
+reading sources... [ 87%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_4
+reading sources... [ 88%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_5
+reading sources... [ 88%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_6
+reading sources... [ 89%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_7
+reading sources... [ 90%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-7
+reading sources... [ 91%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-7
+reading sources... [ 91%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_1
+reading sources... [ 92%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_10
+reading sources... [ 93%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_7
+reading sources... [ 94%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/seccion_08_conceptos_transversales
+reading sources... [ 95%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-3
+reading sources... [ 95%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-4
+reading sources... [ 96%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_2
+reading sources... [ 97%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_3
+reading sources... [ 98%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_4
+reading sources... [ 98%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad
+reading sources... [ 99%] docs_maestros/METODO_TRADUCCION_PESHITTA_ZACHARIAS
+reading sources... [100%] index
+
+source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:2: ERROR: Document or section may not begin with a transition. [docutils]
+source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:2: ERROR: Document or section may not begin with a transition. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:46: WARNING: duplicate label biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/index:estado de traducción, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/index.rst [autosectionlabel.biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/index]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/home.md.rst:52: WARNING: Document headings start at H2, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/home.md.rst:54: WARNING: 'image': Invalid options format: expected key to start at column 0 [myst.directive_option]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/home.md.rst:57: WARNING: Document headings start at H2, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/home.md.rst:62: WARNING: Document headings start at H2, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/home.md.rst:72: WARNING: Document headings start at H2, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/home.md:: WARNING: image file not readable: images/faq-icon.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/home.md:59: WARNING: image file not readable: images/contact-icon.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md.rst:8: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md.rst:13: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md.rst:20: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md.rst:25: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md.rst:36: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md.rst:40: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md.rst:46: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md.rst:53: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md.rst:65: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md.rst:70: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md.rst:86: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md.rst:109: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md.rst:113: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md.rst:121: WARNING: Document headings start at H2, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md:123: WARNING: image file not readable: images/10-quality/arc42-system-qualities-overview.svg [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md:40: WARNING: duplicate label biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10:content, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md [autosectionlabel.biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md:46: WARNING: duplicate label biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10:motivation, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md [autosectionlabel.biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md:70: WARNING: duplicate label biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10:content, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md [autosectionlabel.biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md:86: WARNING: duplicate label biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10:form, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md [autosectionlabel.biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md:113: WARNING: duplicate label biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10:further information, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10.md [autosectionlabel.biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-3.md:22: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/%7B%7Bsite.imageurl%7D%7D/03-context-user-product-service.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-4.md.rst:27: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-4.md:23: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/%7B%7Bsite.imageurl%7D%7D/03-context-with-risk.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-5.md.rst:9: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-5.md.rst:14: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-5.md:19: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/%7B%7Bsite.imageurl%7D%7D/03-overly-detailed-context.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-6.md:17: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/%7B%7Bsite.imageurl%7D%7D/03-context-abstractions.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-7.md.rst:19: WARNING: Document headings start at H2, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-7.md:24: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/%7B%7Bsite.imageurl%7D%7D/03-context-extensive.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-7.md:30: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/%7B%7Bsite.imageurl%7D%7D/03-context-compact.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-8.md:: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/%7B%7Bsite.imageurl%7D%7D/03-context-with-ports.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-8.md:: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/%7B%7Bsite.imageurl%7D%7D/03-big-context.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-10.md.rst:16: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-10.md.rst:23: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-10.md:21: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/%7B%7Bsite.imageurl%7D%7D/03-technical-context-automotive.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-10.md:33: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/%7B%7Bsite.imageurl%7D%7D/03-technical-context-info-sys.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-12.md:39: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/%7B%7Bsite.imageurl%7D%7D/03-context-different-dependencies.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-13.md:21: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/%7B%7Bsite.imageurl%7D%7D/03-context-different-dependencies.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-14.md.rst:22: WARNING: Document headings start at H2, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-14.md:19: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/%7B%7Bsite.imageurl%7D%7D/03-context-with-quality-goals.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-15.md.rst:22: WARNING: Document headings start at H2, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-15.md:13: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/%7B%7Bsite.imageurl%7D%7D/03-technical-context-automotive.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-17.md:17: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/%7B%7Bsite.imageurl%7D%7D/03-business-context-with-technical-info.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-18.md:26: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/%7B%7Bsite.imageurl%7D%7D/03-context-for-mapping.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/06-runtime/2016-03-01-t-6-3.md.rst:24: WARNING: Document headings start at H4, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/06-runtime/2016-03-01-t-6-3.md:22: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/06-runtime/%7B%7Bsite.imageurl%7D%7D/07-schematic-sequence.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/06-runtime/2016-03-01-t-6-3.md:26: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/06-runtime/%7B%7Bsite.imageurl%7D%7D/07-level-1-for-schematic-sequence.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/07-deployment/2016-03-01-t-7-4.md:14: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/07-deployment/%7B%7Bsite.imageurl%7D%7D/07-deployment-hierarchy.jpg [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/10-quality/2016-03-01-t-10-3.md:18: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/10-quality/%7B%7Bsite.imageurl%7D%7D/10-quality-tree-mindmap-example.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/10-quality/2016-03-01-t-10-4.md:28: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/10-quality/%7B%7Bsite.imageurl%7D%7D/10-quality-tree-mindmap-example.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_ejemplo-3.rst:79: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/tpu-1-UseCases.jpg [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_ejemplo-htmlsc-1.rst:54: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/htmlsc-1-1-overview.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_ejemplo-htmlsc-1.rst:64: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/htmlsc-1-1-sample-report.jpg [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-10.rst:40: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-eGPM.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-12.rst:45: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-quality-scenarios-schematic.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-14.rst:33: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-ISO-25010-EN.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-23.rst:37: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-stakeholder-prio-EN.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-4.rst:43: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-requirements-cluster.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-6.rst:39: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-simple-activity.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-9.rst:68: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-simple-activity.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/seccion_1_2_quality_goals.rst:83: WARNING: Explicit markup ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/seccion_1_2_quality_goals.rst:34: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-ISO-25010-EN.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/seccion_1_3_stakeholders.rst:61: WARNING: Explicit markup ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/seccion_1_3_stakeholders.rst:143: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-stakeholder-prio-EN.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-3.md:22: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/%7B%7Bsite.imageurl%7D%7D/03-context-user-product-service.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-4.md.rst:27: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-4.md:23: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/%7B%7Bsite.imageurl%7D%7D/03-context-with-risk.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-5.md.rst:9: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-5.md.rst:14: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-5.md:19: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/%7B%7Bsite.imageurl%7D%7D/03-overly-detailed-context.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-6.md:17: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/%7B%7Bsite.imageurl%7D%7D/03-context-abstractions.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-7.md.rst:19: WARNING: Document headings start at H2, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-7.md:24: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/%7B%7Bsite.imageurl%7D%7D/03-context-extensive.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-7.md:30: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/%7B%7Bsite.imageurl%7D%7D/03-context-compact.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-8.md:: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/%7B%7Bsite.imageurl%7D%7D/03-context-with-ports.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-8.md:: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/%7B%7Bsite.imageurl%7D%7D/03-big-context.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-10.md.rst:16: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-10.md.rst:23: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-10.md:21: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/%7B%7Bsite.imageurl%7D%7D/03-technical-context-automotive.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-10.md:33: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/%7B%7Bsite.imageurl%7D%7D/03-technical-context-info-sys.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-12.md:39: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/%7B%7Bsite.imageurl%7D%7D/03-context-different-dependencies.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-13.md:21: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/%7B%7Bsite.imageurl%7D%7D/03-context-different-dependencies.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-14.md.rst:22: WARNING: Document headings start at H2, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-14.md:19: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/%7B%7Bsite.imageurl%7D%7D/03-context-with-quality-goals.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-15.md.rst:22: WARNING: Document headings start at H2, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-15.md:13: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/%7B%7Bsite.imageurl%7D%7D/03-technical-context-automotive.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-17.md:17: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/%7B%7Bsite.imageurl%7D%7D/03-business-context-with-technical-info.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-18.md:26: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/%7B%7Bsite.imageurl%7D%7D/03-context-for-mapping.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_negocio_1.rst:22: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/3-hsc-business-context.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_negocio_2.rst:25: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/3-Mama-Business-Context.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_negocio_3.rst:24: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/31-tpu-business-context.jpg [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_negocio_4.rst:24: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-context-status.drawio.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_tecnico_1.rst:27: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/3-hsc-technical-context.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_tecnico_4.rst:22: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/32-tpu-technical-context.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_1.rst:23: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-simple-context.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_10.rst:24: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-technical-context-automotive.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_10.rst:40: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-technical-context-info-sys.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_12.rst:40: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-context-different-dependencies.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_13.rst:19: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-context-different-dependencies.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_14.rst:23: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-context-with-quality-goals.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_15.rst:19: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-technical-context-automotive.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_17.rst:21: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-business-context-with-technical-info.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_18.rst:34: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-context-for-mapping.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_2.rst:27: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-big-context.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_3.rst:26: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-context-user-product-service.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_4.rst:32: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-context-with-risk.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_5.rst:27: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-overly-detailed-context.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_6.rst:19: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-context-abstractions.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_7.rst:30: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-context-extensive.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_7.rst:39: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-context-compact.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_8.rst:23: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-context-with-ports.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_8.rst:30: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/figuras/03-big-context.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc.rst:20: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/5-whitebox-hsc-level-1.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc.rst:64: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/5-2-1-hsc-core.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc.rst:140: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/5-3-results-collector.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc.rst:74: WARNING: duplicate label biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc:razonamiento, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc.rst [autosectionlabel.biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc.rst:87: WARNING: duplicate label biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc:cajas negras contenidas, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc.rst [autosectionlabel.biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc.rst:150: WARNING: duplicate label biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc:razonamiento, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc.rst [autosectionlabel.biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc.rst:161: WARNING: duplicate label biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc:cajas negras contenidas, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc.rst [autosectionlabel.biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_status.rst:20: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-building-blocks-status.drawio.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_tpu_nivel_1.rst:22: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/51-tpu-BuildingBlocks.jpg [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_tpu_nivel_2.rst:22: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/52-tpu-BuildingBlocks.jpg [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_10.rst:26: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-similar-building-blocks.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_10.rst:38: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-concepts-instead.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_13.rst:24: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-mapping-code-to-blocks.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_15.rst:21: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-simple-mapping.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_18.rst:27: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-infrastructure-in-building-block-view.jpg [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_19.rst:25: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-third-party-element.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_2.rst:23: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-building-block-hierarchy.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_20.rst:27: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-third-party-element.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_21.rst:23: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-interface-simple-variant.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_24.rst:29: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-whitebox-with-other-info.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_25.rst:25: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-mutual-refinement.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_26.rst:26: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-mutual-refinement.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_26.rst:40: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-mutual-refinement-graphical.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_27.rst:25: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-refine-only-few-blocks.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_4.rst:21: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-whitebox-level-1-consistent.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/seccion_05_vista_bloques.rst:46: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/figuras/05-building-block-hierarchy.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-3.md.rst:24: WARNING: Document headings start at H4, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-3.md:22: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/%7B%7Bsite.imageurl%7D%7D/07-schematic-sequence.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-3.md:26: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/%7B%7Bsite.imageurl%7D%7D/07-level-1-for-schematic-sequence.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-5.md.rst:19: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-6.md.rst:16: WARNING: Document headings start at H2, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-7.md.rst:43: WARNING: Document headings start at H2, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-9.md.rst:53: WARNING: Document headings start at H2, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-02-t-6-11.md.rst:13: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-02-t-6-11.md.rst:21: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-02-t-6-11.md.rst:49: WARNING: Document headings start at H3, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_ejemplo_htmlsc.rst:37: WARNING: Enumerated list ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_ejemplo_htmlsc.rst:26: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/examples/htmlsc/6-main-loop.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_ejemplo_htmlsc.rst:46: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/examples/htmlsc/6-2-1-report-results.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_ejemplo_mama.rst:36: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/examples/mama/9-getRawFile.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_ejemplo_mama.rst:59: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/examples/mama/9-validateRawData.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_ejemplo_tpu.rst:34: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/examples/tpu/III61_MeasurementPropagationSD.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_ejemplo_tpu.rst:45: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/examples/tpu/III61_MeasurementPropagationCD.jpg [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_ejemplo_tpu.rst:54: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/examples/tpu/III61_MeasurementPropagationAD.jpg [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_ejemplo_tpu.rst:63: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/examples/tpu/III61_MeasurementPropagationAD-EXT.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_10.rst:21: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/06-mixed-abstraction-levels.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_11.rst:24: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/06-short-and-interesting.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_3.rst:25: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/07-schematic-sequence.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_3.rst:35: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/07-level-1-for-schematic-sequence.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_5.rst:41: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/06-plantuml-example.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_6.rst:19: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/06-long-and-mostly-boring.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_6.rst:37: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/06-short-and-interesting.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_7.rst:29: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/06-activity-with-swimlane.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_8.rst:19: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/06-activity-with-partition.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_9.rst:55: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/figuras/06-textual-sequence.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-4.md:14: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/%7B%7Bsite.imageurl%7D%7D/07-deployment-hierarchy.jpg [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_ejemplo_htmlsc.rst:21: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/figuras/examples/htmlsc/7_1-deployment.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_ejemplo_tpu_1.rst:21: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/figuras/examples/tpu/71-HardwareVonOben.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_ejemplo_tpu_1.rst:33: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/figuras/examples/tpu/71-Infrastructure.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_ejemplo_tpu_2.rst:22: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/figuras/examples/tpu/72-VideoCards.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_ejemplo_tpu_2.rst:31: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/figuras/examples/tpu/73-VideoboardMit2Insertern.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_ejemplo_tpu_2.rst:38: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/figuras/examples/tpu/74-CodecBoard.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_1.rst:25: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/figuras/07-infrastructure-with-symbols.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_3.rst:21: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/figuras/07-deployment-overview.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_4.rst:21: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/figuras/07-deployment-hierarchy.jpg [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_5.rst:25: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/figuras/07-deployment-options.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_6.rst:22: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/figuras/07-deployment-diagram.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_7.rst:50: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/figuras/07-deployment-diagram.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-7.md.rst:25: WARNING: Document headings start at H4, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-7.md.rst:25: WARNING: Document headings start at H4, not H1 [myst.header]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_1.rst:25: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/{{site.imageurl}}/8-concepts/08-concepts-EN.drawio.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_10.rst:15: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/{{site.imageurl}}/8-concepts/08-concepts-EN.drawio.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_7.rst:29: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/{{site.imageurl}}/08-hospital-domain-EN.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/seccion_08_conceptos_transversales.rst:26: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/{{site.imageurl}}/8-concepts/08-concepts-EN.drawio.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-3.md:18: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/%7B%7Bsite.imageurl%7D%7D/10-quality-tree-mindmap-example.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-4.md:28: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/%7B%7Bsite.imageurl%7D%7D/10-quality-tree-mindmap-example.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_2.rst:50: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/figuras/10-quality-tree-example.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_3.rst:21: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/figuras/10-quality-tree-mindmap-example.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_4.rst:26: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/figuras/01-ISO-25010-EN.webp [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_4.rst:45: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/figuras/10-quality-tree-mindmap-example.png [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad.rst:157: WARNING: image file not readable: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/figuras/arc42-system-qualities-overview.svg [image.not_readable]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad.rst:56: WARNING: duplicate label biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad:contenido, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad.rst [autosectionlabel.biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad.rst:63: WARNING: duplicate label biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad:motivación, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad.rst [autosectionlabel.biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad.rst:97: WARNING: duplicate label biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad:contenido, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad.rst [autosectionlabel.biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad.rst:112: WARNING: duplicate label biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad:forma, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad.rst [autosectionlabel.biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad]
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad.rst:141: WARNING: duplicate label biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad:información adicional, other instance in /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad.rst [autosectionlabel.biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad]
+/tmp/ADT/source/docs_maestros/METODO_TRADUCCION_PESHITTA_ZACHARIAS.md:7: ERROR: Document or section may not begin with a transition. [docutils]
+/tmp/ADT/source/index.rst:187: WARNING: Explicit markup ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/index.rst:194: WARNING: Explicit markup ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/index.rst:201: WARNING: Explicit markup ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/index.rst:207: WARNING: Explicit markup ends without a blank line; unexpected unindent. [docutils]
+/tmp/ADT/source/index.rst:183: WARNING: All children of a 'grid-row' should be 'grid-item' [design.grid] [design.grid]
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... WARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.
+done
+copying assets... 
+copying static files... 
+Writing evaluated template result to /tmp/ADT/_build/html/_static/basic.css
+Writing evaluated template result to /tmp/ADT/_build/html/_static/documentation_options.js
+Writing evaluated template result to /tmp/ADT/_build/html/_static/language_data.js
+Writing evaluated template result to /tmp/ADT/_build/html/_static/copybutton.js
+copying static files: done
+copying extra files... 
+copying extra files: done
+copying assets: done
+writing output... [  0%] 01_fundamentos/_fundamentos_conceptuales/index
+writing output... [  1%] 01_fundamentos/index
+writing output... [  1%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/index
+writing output... [  1%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/home
+writing output... [  2%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_pages/section-10
+writing output... [  2%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-3
+writing output... [  2%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-4
+writing output... [  3%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-5
+writing output... [  3%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-6
+writing output... [  3%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-7
+writing output... [  4%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-01-t-3-8
+writing output... [  4%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-10
+writing output... [  4%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-12
+writing output... [  5%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-13
+writing output... [  5%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-14
+writing output... [  5%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-15
+writing output... [  6%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-17
+writing output... [  6%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/03-context/2016-03-02-t-3-18
+writing output... [  6%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/06-runtime/2016-03-01-t-6-3
+writing output... [  7%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/07-deployment/2016-03-01-t-7-4
+writing output... [  7%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/10-quality/2016-03-01-t-10-3
+writing output... [  7%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/original/_posts/10-quality/2016-03-01-t-10-4
+writing output... [  8%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_ejemplo-3
+writing output... [  8%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_ejemplo-htmlsc-1
+writing output... [  8%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-10
+writing output... [  9%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-12
+writing output... [  9%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-14
+writing output... [  9%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-23
+writing output... [ 10%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-4
+writing output... [ 10%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-6
+writing output... [ 10%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/introduccion_tip-9
+writing output... [ 11%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/seccion_01_introduccion_objetivos
+writing output... [ 11%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/seccion_1_2_quality_goals
+writing output... [ 11%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/traduccion/seccion_1_3_stakeholders
+writing output... [ 12%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-3
+writing output... [ 12%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-4
+writing output... [ 12%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-5
+writing output... [ 13%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-6
+writing output... [ 13%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-7
+writing output... [ 13%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-01-t-3-8
+writing output... [ 14%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-10
+writing output... [ 14%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-12
+writing output... [ 14%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-13
+writing output... [ 15%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-14
+writing output... [ 15%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-15
+writing output... [ 15%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-17
+writing output... [ 16%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/original/2016-03-02-t-3-18
+writing output... [ 16%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_negocio_1
+writing output... [ 16%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_negocio_2
+writing output... [ 17%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_negocio_3
+writing output... [ 17%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_negocio_4
+writing output... [ 17%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_tecnico_1
+writing output... [ 18%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_ejemplo_tecnico_4
+writing output... [ 18%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_1
+writing output... [ 18%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_10
+writing output... [ 19%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_12
+writing output... [ 19%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_13
+writing output... [ 19%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_14
+writing output... [ 20%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_15
+writing output... [ 20%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_17
+writing output... [ 20%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_18
+writing output... [ 21%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_2
+writing output... [ 21%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_3
+writing output... [ 21%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_4
+writing output... [ 22%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_5
+writing output... [ 22%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_6
+writing output... [ 22%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_7
+writing output... [ 23%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/contexto_tip_8
+writing output... [ 23%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/03_context_scope/traduccion/seccion_03_contexto_alcance
+writing output... [ 23%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_hsc
+writing output... [ 24%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_status
+writing output... [ 24%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_tpu_nivel_1
+writing output... [ 24%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_ejemplo_tpu_nivel_2
+writing output... [ 25%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_10
+writing output... [ 25%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_13
+writing output... [ 25%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_15
+writing output... [ 26%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_18
+writing output... [ 26%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_19
+writing output... [ 26%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_2
+writing output... [ 27%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_20
+writing output... [ 27%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_21
+writing output... [ 27%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_24
+writing output... [ 28%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_25
+writing output... [ 28%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_26
+writing output... [ 28%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_27
+writing output... [ 29%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/bloques_tip_4
+writing output... [ 29%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/05_building_blocks/traduccion/seccion_05_vista_bloques
+writing output... [ 29%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-3
+writing output... [ 30%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-5
+writing output... [ 30%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-6
+writing output... [ 30%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-7
+writing output... [ 31%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-8
+writing output... [ 31%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-01-t-6-9
+writing output... [ 31%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/original/2016-03-02-t-6-11
+writing output... [ 32%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_ejemplo_htmlsc
+writing output... [ 32%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_ejemplo_mama
+writing output... [ 32%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_ejemplo_tpu
+writing output... [ 33%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_10
+writing output... [ 33%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_11
+writing output... [ 33%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_2
+writing output... [ 34%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_3
+writing output... [ 34%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_4
+writing output... [ 34%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_5
+writing output... [ 35%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_6
+writing output... [ 35%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_7
+writing output... [ 35%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_8
+writing output... [ 36%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/runtime_tip_9
+writing output... [ 36%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/06_runtime_view/traduccion/seccion_06_vista_runtime
+writing output... [ 36%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/ANALISIS_FUENTES_DE_VERDAD
+writing output... [ 37%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/APLICACION_BUCLE_VERIFICACION_SECCION_07
+writing output... [ 37%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/SECCION_07_FINAL_CHECKPOINT
+writing output... [ 37%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/glosario_seccion
+writing output... [ 38%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/notas_traduccion
+writing output... [ 38%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/07-deployment-example-tpu-1
+writing output... [ 38%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/07-deployment-sample-htmlsc-1
+writing output... [ 39%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/07-deployment-sample-tpu-2
+writing output... [ 39%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-1
+writing output... [ 39%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-2
+writing output... [ 40%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-3
+writing output... [ 40%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-4
+writing output... [ 40%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-5
+writing output... [ 41%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-6
+writing output... [ 41%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-7
+writing output... [ 41%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-8
+writing output... [ 42%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-01-t-7-9
+writing output... [ 42%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/2016-03-02-t-7-10
+writing output... [ 42%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/original/README
+writing output... [ 43%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_ejemplo_htmlsc
+writing output... [ 43%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_ejemplo_tpu_1
+writing output... [ 43%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_ejemplo_tpu_2
+writing output... [ 44%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_1
+writing output... [ 44%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_10
+writing output... [ 44%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_2
+writing output... [ 45%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_3
+writing output... [ 45%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_4
+writing output... [ 45%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_5
+writing output... [ 46%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_6
+writing output... [ 46%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_7
+writing output... [ 46%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_8
+writing output... [ 47%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/deployment_tip_9
+writing output... [ 47%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/07_deployment_view/traduccion/seccion_07_vista_despliegue
+writing output... [ 47%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/glosario_seccion
+writing output... [ 48%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/notas_traduccion
+writing output... [ 48%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/08-concept-example-htmlsc-1
+writing output... [ 48%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/08-concept-example-htmlsc-2
+writing output... [ 49%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/08-concept-example-tpu-1
+writing output... [ 49%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/08-concept-example-tpu-2
+writing output... [ 49%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-1
+writing output... [ 50%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-2
+writing output... [ 50%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-3
+writing output... [ 50%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-4
+writing output... [ 50%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-5
+writing output... [ 51%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-6
+writing output... [ 51%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-7
+writing output... [ 51%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-8
+writing output... [ 52%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-01-t-8-9
+writing output... [ 52%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2016-03-02-t-8-10
+writing output... [ 52%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/2022-07-01-t-8-11
+writing output... [ 53%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_concepts/original/README
+writing output... [ 53%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/index
+writing output... [ 53%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-1
+writing output... [ 54%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-2
+writing output... [ 54%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-3
+writing output... [ 54%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-4
+writing output... [ 55%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-5
+writing output... [ 55%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-6
+writing output... [ 55%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-7
+writing output... [ 56%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-8
+writing output... [ 56%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-01-t-8-9
+writing output... [ 56%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2016-03-02-t-8-10
+writing output... [ 57%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/2022-07-01-t-8-11
+writing output... [ 57%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/original/section-8
+writing output... [ 57%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_1
+writing output... [ 58%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_10
+writing output... [ 58%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_11
+writing output... [ 58%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_2
+writing output... [ 59%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_3
+writing output... [ 59%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_4
+writing output... [ 59%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_5
+writing output... [ 60%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_6
+writing output... [ 60%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_7
+writing output... [ 60%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_8
+writing output... [ 61%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/crosscutting_tip_9
+writing output... [ 61%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/08_crosscutting_concepts/traduccion/seccion_08_conceptos_transversales
+writing output... [ 61%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/glosario_seccion
+writing output... [ 62%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/index
+writing output... [ 62%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/notas_traduccion
+writing output... [ 62%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/09-decision-example-adr
+writing output... [ 63%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/09-decision-example-htmlsc-1
+writing output... [ 63%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/09-decision-example-tpu-2
+writing output... [ 63%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2016-03-01-t-9-1
+writing output... [ 64%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2016-03-01-t-9-2
+writing output... [ 64%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2016-03-01-t-9-3
+writing output... [ 64%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2016-03-01-t-9-4
+writing output... [ 65%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2016-03-01-t-9-5
+writing output... [ 65%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2016-03-01-t-9-6
+writing output... [ 65%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2016-03-01-t-9-7
+writing output... [ 66%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2022-01-14-t-9-8
+writing output... [ 66%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2022-01-28-t-9-9
+writing output... [ 66%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/2022-01-29-t-9-10
+writing output... [ 67%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/README
+writing output... [ 67%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/original/section-9
+writing output... [ 67%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_ejemplo_adr
+writing output... [ 68%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_ejemplo_htmlsc_1
+writing output... [ 68%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_ejemplo_tpu_2
+writing output... [ 68%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_1
+writing output... [ 69%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_10
+writing output... [ 69%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_2
+writing output... [ 69%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_3
+writing output... [ 70%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_4
+writing output... [ 70%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_5
+writing output... [ 70%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_6
+writing output... [ 71%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_7
+writing output... [ 71%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_8
+writing output... [ 71%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/decision_tip_9
+writing output... [ 72%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/09_architecture_decisions/traduccion/seccion_09_decisiones_arquitectonicas
+writing output... [ 72%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/SECCION_10_FINAL_CHECKPOINT
+writing output... [ 72%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/glosario_seccion
+writing output... [ 73%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/notas_traduccion
+writing output... [ 73%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/10-quality-scenario-example-htmlsc-2
+writing output... [ 73%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/10-quality-scenario-example-tpu-1
+writing output... [ 74%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-1
+writing output... [ 74%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-2
+writing output... [ 74%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-3
+writing output... [ 75%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-4
+writing output... [ 75%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-5
+writing output... [ 75%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-6
+writing output... [ 76%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-7
+writing output... [ 76%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/2016-03-01-t-10-8
+writing output... [ 76%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/original/README
+writing output... [ 77%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_ejemplo_htmlsc_2
+writing output... [ 77%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_ejemplo_tpu_1
+writing output... [ 77%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_1
+writing output... [ 78%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_2
+writing output... [ 78%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_3
+writing output... [ 78%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_4
+writing output... [ 79%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_5
+writing output... [ 79%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_6
+writing output... [ 79%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_7
+writing output... [ 80%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/quality_tip_8
+writing output... [ 80%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/traduccion/seccion_10_requisitos_calidad
+writing output... [ 80%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/SECCION_11_FINAL_CHECKPOINT
+writing output... [ 81%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/glosario_seccion
+writing output... [ 81%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/notas_traduccion
+writing output... [ 81%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/11-risk-example-htmlsc
+writing output... [ 82%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/11-risk-example-tpu
+writing output... [ 82%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/2016-03-01-t-11-1
+writing output... [ 82%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/2016-03-01-t-11-2
+writing output... [ 83%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/2016-03-01-t-11-3
+writing output... [ 83%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/2016-03-01-t-11-4
+writing output... [ 83%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/2016-03-01-t-11-5
+writing output... [ 84%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/2016-03-01-t-11-6
+writing output... [ 84%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/original/README
+writing output... [ 84%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/risks_ejemplo_htmlsc
+writing output... [ 85%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/risks_ejemplo_tpu
+writing output... [ 85%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/risks_tip_1
+writing output... [ 85%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/risks_tip_2
+writing output... [ 86%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/risks_tip_3
+writing output... [ 86%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/risks_tip_4
+writing output... [ 86%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/risks_tip_5
+writing output... [ 87%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/risks_tip_6
+writing output... [ 87%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/11_risks_tech_debt/traduccion/seccion_11_riesgos_deuda_tecnica
+writing output... [ 87%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/SECCION_12_FINAL_CHECKPOINT
+writing output... [ 88%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/glosario_seccion
+writing output... [ 88%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/notas_traduccion
+writing output... [ 88%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/12-glossary-example-htmlsc-1
+writing output... [ 89%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/2016-03-01-t-12-1
+writing output... [ 89%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/2016-03-01-t-12-2
+writing output... [ 89%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/2016-03-01-t-12-3
+writing output... [ 90%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/2016-03-01-t-12-4
+writing output... [ 90%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/2016-03-01-t-12-5
+writing output... [ 90%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/2016-03-01-t-12-6
+writing output... [ 91%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/original/README
+writing output... [ 91%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_ejemplo_htmlsc
+writing output... [ 91%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_1
+writing output... [ 92%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_2
+writing output... [ 92%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_3
+writing output... [ 92%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_4
+writing output... [ 93%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_5
+writing output... [ 93%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/glossary_tip_6
+writing output... [ 93%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/12_glossary/traduccion/seccion_12_glosario
+writing output... [ 94%] diataxis/index
+writing output... [ 94%] docs/INTEGRACION_FRAMEWORKS
+writing output... [ 94%] docs/PHANTOMJS_STATUS
+writing output... [ 95%] docs/index
+writing output... [ 95%] docs_maestros/ARQUITECTURA_DOCUMENTAL_TRADUCCION
+writing output... [ 95%] docs_maestros/ARQUITECTURA_TRADUCCION_IACT
+writing output... [ 96%] docs_maestros/ESTRUCTURA_DE_BIBLIOTECA_-_Versión_Correcta
+writing output... [ 96%] docs_maestros/GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL
+writing output... [ 96%] docs_maestros/METODO_TRADUCCION_PESHITTA_ZACHARIAS
+writing output... [ 97%] docs_maestros/PLAN_CONTENIDO
+writing output... [ 97%] docs_maestros/PLAN_FINAL_REORGANIZACION
+writing output... [ 97%] docs_maestros/PLAN_INCREMENTAL_CON_ARCHIVADO
+writing output... [ 98%] docs_maestros/PROMPT_MAESTRO_SPHINX_TRADUCCION
+writing output... [ 98%] docs_maestros/PROPUESTA_REORGANIZACION
+writing output... [ 98%] docs_maestros/PROPUESTA_REORGANIZACION_CORRECTA
+writing output... [ 99%] docs_maestros/README
+writing output... [ 99%] docs_maestros/REGLAS_ESTRUCTURA_PROYECTO
+writing output... [ 99%] docs_maestros/RESUMEN_GUIA_CLASIFICACION
+writing output... [100%] docs_maestros/SINTESIS_METODOLOGICA_ADT
+writing output... [100%] index
+
+/tmp/ADT/source/docs_maestros/METODO_TRADUCCION_PESHITTA_ZACHARIAS.md:1172: WARNING: Lexing literal_block '# Analogía en ATL\nrule DefaultVerbTranslation {\n    from\n        h : Hebrew!Verb\n    to\n        s : Syriac!Verb (\n            tense <- h.getTemporalSituation(),  # Signifié\n            # NO: form <- h.form  # Signifiant\n        )\n}\n' as "python" resulted in an error at token: '!'. Retrying in relaxed mode. [misc.highlighting_failure]
+generating indices... genindex done
+highlighting module code... 
+writing additional pages... search done
+dumping search index in Spanish (code: es)... done
+dumping object inventory... done
+build succeeded, 218 warnings.
+
+The HTML pages are in _build/html.
+
+Construcción finalizada. Los archivos HTML están en _build/html.
