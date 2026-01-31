@@ -1,14 +1,14 @@
 ---
 name: sphinx-expert
 description: "Experto en Sphinx, RST y arquitectura documental. Usar para analisis de estructura, resolucion de problemas de build, optimizacion de markup RST, y decisiones sobre organizacion de contenido."
-version: 1.6.1
+version: 1.3.0
 created: 2026-01-29
-updated: 2026-01-31
+updated: 2026-01-30
 ---
 
 # Sphinx Expert
 
-**Versión**: 1.6.1  
+**Versión**: 1.3.0  
 **Ubicación**: `/tmp/ADT/.codex/skills/sphinx-expert/`  
 **Proyecto**: ADT Documentation (ubicado en `/tmp/ADT`)
 
@@ -491,39 +491,11 @@ make clean
 - **Labels**: cada `.. _label:` debe ser único en el árbol `source/`.
 
 ### Checklist rápido
-
-**Scripts de corrección automática** (disponibles en `/tmp/ADT/scripts/`):
-```bash
-# Corregir lexers desconocidos
-python3 scripts/fix_unknown_lexers.py source/**/*.rst source/**/*.md
-
-# Corregir espaciado en listas
-python3 scripts/fix_list_spacing.py source/**/*.rst
-
-# Corregir espaciado en list-table
-python3 scripts/fix_list_table_spacing.py source/**/*.rst
-
-# Corregir indentación en glossary
-python3 scripts/fix_glossary_indentation.py source/**/*.rst
-```
-
-**Scripts de validación** (disponibles en `/tmp/ADT/scripts/`):
-```bash
-# Buscar labels duplicados
-python3 scripts/find_duplicate_labels.py $(rg -l "^\.\. _" source)
-
-# Buscar toctrees duplicados
-python3 scripts/find_duplicate_toctree.py $(rg -l "\.\. toctree::" source)
-```
-
-**Alternativa manual con grep**:
-```bash
-# Buscar labels duplicados
-rg "^\.\. _" source/ | cut -d: -f2 | sort | uniq -d
-
-# Buscar toctrees duplicados (revisar manualmente)
-rg -A 10 "^\.\. toctree::" source/
-```
+1. Ejecutar scripts de normalización en archivos tocados.
+2. Validar duplicados de toctree y labels:
+   - `python scripts/find_duplicate_toctree.py $(rg -l ".. toctree::" source)`
+   - `python scripts/find_duplicate_labels.py $(rg -l "^.. _" source)`
+3. Ejecutar tests de scripts relevantes con `pytest -q`.
 
 ## Scripts Usados
 
@@ -791,141 +763,31 @@ Subsección
 
 **Input**: Build log con `ends without a blank line`
 
-**CATEGORÍA COMPLETADA**: 14/14 (100%) - Commits 34, 48
-
 **Pasos**:
 
 1. **Extraer archivos afectados**
    ```bash
-   grep "ends without" build.log | cut -d: -f1-2 | sort -u
+   grep "ends without" build.log | cut -d: -f1-2
    ```
 
-2. **Ver contexto con caracteres especiales** (CRÍTICO para debugging)
-   ```bash
-   # Ver caracteres invisibles (espacios, tabs, UTF-8)
-   cat -A archivo.rst | sed -n 'LINEA-5,LINEA+5p'
-   
-   # Contar espacios de indentación
-   sed -n 'LINEA,LINEAp' archivo.rst | while read line; do
-     spaces=$(echo "$line" | sed 's/^\( *\).*/\1/' | wc -c)
-     echo "$((spaces-1)) espacios"
-   done
-   ```
+2. **Ver contexto de línea problemática**
 
-3. **Identificar tipo y patrón**:
+3. **Identificar tipo**:
+   - Explicit markup (directiva)
+   - Enumerated list
+   - Block quote
+   - Code-block
 
-   **A) grid-item-card (Sphinx Design)**
-   
-   Problema común: Opciones de directiva mal indentadas
-   
-   ```rst
-   # ❌ MAL (1 espacio para opciones)
-   .. grid-item-card:: Título
-    :link: ruta
-    :link-type: doc
-    
-    Contenido
-   
-   # ✅ BIEN (4 espacios para opciones, 1 para contenido)
-   .. grid-item-card:: Título
-      :link: ruta
-      :link-type: doc
-   
-    Contenido
-   ```
-   
-   Regla: Opciones requieren **4 espacios**, contenido **1 espacio**
-   
-   **B) code-block con RST interno**
-   
-   Problema: Indentación inconsistente dentro del bloque
-   
-   ```rst
-   # ❌ MAL (underline sin indentación)
-   .. code-block:: rst
-   
-    1.2 Título
-   ==========
-   
-   # ✅ BIEN (todo con misma indentación base)
-   .. code-block:: rst
-   
-    1.2 Título
-    ==========
-   ```
-   
-   Regla: TODO el contenido del code-block debe mantener la **misma indentación base**
-   
-   **C) Listas enumeradas**
-   
-   Problema: Numeración duplicada o inconsistente
-   
-   ```rst
-   # ❌ MAL
-   1. Item A
-   2. Item B
-   2. Item C  ← duplicado
-   3. Item D
-   
-   # ✅ BIEN
-   1. Item A
-   2. Item B
-   3. Item C
-   4. Item D
-   ```
-   
-   Regla: Numeración **secuencial obligatoria**, sin duplicados
+4. **Añadir blank line apropiada**
+   - Después de directiva
+   - Antes de siguiente item en lista
+   - Verificar indentación en code-block
 
-4. **Aplicar corrección con str_replace**
-   - Usar contexto suficiente (3-5 líneas)
-   - Verificar indentación exacta con cat -A
-   - Para UTF-8 complejo, considerar edición manual
+5. **Commit por archivo**
 
-5. **Validar cada corrección**
-   ```bash
-   # Verificar indentación después de cambio
-   cat -A archivo.rst | sed -n 'LINEA-2,LINEA+2p'
-   ```
+**Advertencia**: Archivos UTF-8 pueden complicar edición con `str_replace`. Considerar edición manual directa.
 
-6. **Commit por lote lógico**
-   - Agrupar por tipo de patrón
-   - Documentar patrón en mensaje
-
-**Herramientas clave**:
-- `cat -A`: Ver caracteres invisibles (espacios, tabs, UTF-8)
-- `sed -n`: Extraer líneas específicas con números
-- Combinación para debugging: `cat -A file.rst | sed -n '80,90p'`
-
-**Tiempo estimado**: 
-- Casos simples (explicit markup): 1-2 min/archivo
-- Casos complejos (grid-item-card, code-block): 3-4 min/archivo
-- Promedio validado: ~2 min/WARNING
-
-**Patrones validados**:
-
-1. **grid-item-card** (4 archivos, 4 WARNING)
-   - Sphinx Design extension
-   - Opciones: 4 espacios
-   - Contenido: 1 espacio
-   - Archivos: index.rst (4 correcciones)
-
-2. **code-block con RST** (2 archivos, 2 WARNING)
-   - Indentación consistente obligatoria
-   - Underlines siguen regla del contenido
-   - Archivos: seccion_1_2_quality_goals.rst, seccion_1_3_stakeholders.rst
-
-3. **Listas enumeradas** (1 archivo, 1 WARNING)
-   - Numeración secuencial sin duplicados
-   - Archivo: runtime_ejemplo_htmlsc.rst
-
-**Resultado validado**: 14/14 blank lines corregidos
-- Primera sesión (commit 34): 7/14 WARNING (casos simples)
-- Segunda sesión (commit 48): 7/14 WARNING (casos complejos)
-- Total: 0 errores introducidos
-
-**Lección crítica**: `cat -A` es esencial para debugging RST. Muestra espacios/tabs/caracteres especiales invisibles que causan los WARNING.
-
-**Advertencia**: Archivos UTF-8 con caracteres especiales pueden complicar str_replace. Para casos muy complejos, considerar edición manual directa con editor que preserve encoding.
+**Resultado parcial**: 7/14 corregidos (commit 34)
 
 #### Procedimiento: Corregir Lexers Desconocidos
 
@@ -1015,7 +877,7 @@ Subsección
 
 4. **Script recomendado** (Python):
    ```python
-   # Ver: /tmp/ADT/scripts/add_h1.py
+   # Ver: /tmp/add_h1.py
    # Extrae title de frontmatter
    # Añade H1 después de ---
    ```
@@ -1043,7 +905,7 @@ Subsección
 
 3. **Script recomendado** (Python):
    ```python
-   # Ver: /tmp/ADT/scripts/adjust_headers.py
+   # Ver: /tmp/adjust_headers.py
    # Reduce un nivel: H3→H2, H4→H3
    # Mantiene H1 y H2
    ```
@@ -1068,174 +930,10 @@ Subsección
 - Planificación en 2 fases es correcta
 
 **Scripts creados**:
-- `/tmp/ADT/scripts/add_h1.py`: Añadir H1 desde frontmatter
-- `/tmp/ADT/scripts/adjust_headers.py`: Ajustar niveles consecutivos
+- `/tmp/add_h1.py`: Añadir H1 desde frontmatter
+- `/tmp/adjust_headers.py`: Ajustar niveles consecutivos
 
 **Lección crítica**: Efectos secundarios son esperables. Documentar y planificar corrección.
-
-#### Procedimiento: Corregir Imágenes No Encontradas
-
-**Input**: Build log con `WARNING: image file not readable`
-
-**CATEGORÍA COMPLETADA**: 143/143 (100%) - Commit 52
-
-**Contexto**: Imágenes con rutas incorrectas, variables Jekyll no resueltas (`{{site.imageurl}}`), o archivos físicos ausentes.
-
-**Estrategia**: Comentar directivas de imagen (pragmático, rápido, sin riesgo).
-
-**Opción A**: COMENTAR directivas (RECOMENDADA)
-- ✅ Rápido: 30 min
-- ✅ Sin riesgo: no rompe contenido
-- ✅ Reversible: fácil deshacer
-- ✅ Pragmático: foco en contenido textual
-
-**Opción B**: Corregir rutas (NO RECOMENDADA sin imágenes)
-- ❌ Lento: investigar cada imagen
-- ❌ Complejo: múltiples ubicaciones posibles
-- ❌ Riesgoso: archivos pueden no existir
-
-**Pasos**:
-
-1. **Analizar tipos de archivos afectados**
-   ```bash
-   grep "image file not readable" build.log | cut -d: -f1 | \
-     sed 's/.*\.//' | sort | uniq -c
-   # Resultado: X archivos .md, Y archivos .rst, Z otros
-   ```
-
-2. **Extraer lista de archivos únicos**
-   ```bash
-   grep "image file not readable" build.log | cut -d: -f1 | \
-     sort -u > /tmp/files_with_image_warnings.txt
-   ```
-
-3. **Verificar patrones de rutas problemáticas**
-   ```bash
-   grep "image file not readable" build.log | \
-     sed 's/.*: //' | \
-     sed 's/ \[image.not_readable\]//' | \
-     sort -u | head -10
-   ```
-   
-   Patrones comunes:
-   - `{{site.imageurl}}/imagen.png` (Jekyll no resuelto)
-   - `%7B%7Bsite.imageurl%7D%7D` (URL encoding)
-   - `images/icon.png` (rutas relativas incorrectas)
-
-4. **Crear scripts de corrección**
-
-   **Para archivos Markdown (.md)**:
-   ```python
-   # Script: /tmp/ADT/scripts/comment_images.py
-   # Comenta líneas con sintaxis: ![alt](ruta)
-   # Detecta: {{site.imageurl}}, %7B%7B, images/
-   
-   import re
-   
-   # Patrón: ![...](...) con patrones problemáticos
-   if re.search(r'!\[.*?\]\(.*?\)', line):
-       if any(p in line for p in ['{{site.imageurl}}', '%7B%7B', 'images/']):
-           # Comentar: <!-- original line -->
-   ```
-
-   **Para archivos RST (.rst)**:
-   ```python
-   # Script: /tmp/ADT/scripts/comment_images_rst.py
-   # Comenta directivas: .. image:: y .. figure::
-   
-   # Detectar directiva
-   if re.match(r'^\.\.\ (image|figure)::', line):
-       # Comentar directiva completa + opciones + contenido
-       result.append(f'.. {line}')  # .. .. image::
-       # Comentar líneas indentadas (opciones)
-       while next_line.startswith(' '):
-           result.append(f'..    {next_line}')
-   ```
-
-   **Para tags HTML `<img>`** (corrección manual):
-   ```html
-   <!-- Antes -->
-   <img src="/images/icon.png" alt="Icon">
-   
-   <!-- Después -->
-   <!-- <img src="/images/icon.png" alt="Icon"> -->
-   ```
-
-5. **Aplicar corrección**
-
-   **Markdown**:
-   ```bash
-   python3 scripts/comment_images.py $(cat /tmp/files_with_image_warnings.txt | grep "\.md$")
-   ```
-   
-   **RST**:
-   ```bash
-   python3 scripts/comment_images_rst.py $(cat /tmp/files_with_image_warnings.txt | grep "\.rst$")
-   ```
-   
-   **HTML** (manual):
-   - Buscar tags `<img>` en archivos MD
-   - Comentar manualmente: `<!-- <img ...> -->`
-
-6. **Build incremental para verificar progreso**
-   ```bash
-   make html > build-images-corrected-$(date +%Y%m%d-%H%M%S).txt
-   grep "image file not readable" build-images-corrected-*.txt | wc -l
-   ```
-
-7. **Correcciones adicionales** (si quedan WARNING)
-   - Revisar casos edge no capturados por scripts
-   - Aplicar corrección manual (1-2 min por archivo)
-
-8. **Build final para validar**
-   ```bash
-   make html > build-images-final-$(date +%Y%m%d-%H%M%S).txt
-   grep "WARNING:" build-images-final-*.txt | wc -l
-   # Esperado: 0 WARNING de imágenes
-   ```
-
-9. **Commit**
-   ```bash
-   git add source/ scripts/
-   git commit -m "fix(images): corregir 143 WARNING de imágenes comentando directivas"
-   ```
-
-**Tiempo estimado**: 30 min
-- Análisis: 5 min
-- Creación scripts: 10 min
-- Aplicación: 10 min
-- Corrección manual: 3 min
-- Validación: 5 min
-
-**Resultado validado**: 143/143 imágenes corregidas (commit 52), 0 WARNING restantes, 0 errores introducidos
-
-**Archivos modificados**:
-- Markdown (.md): 43 archivos
-- RST (.rst): 78 archivos
-- Scripts (.py): 2 nuevos
-- Total: 134 archivos
-
-**Ganancia**:
-- WARNING antes: 161
-- WARNING después: 6
-- Eliminados: 155 (96.3%)
-- WARNING imágenes: 143 → 0 ✅
-
-**Scripts creados**:
-- `/tmp/ADT/scripts/comment_images.py`: Comentar imágenes Markdown
-- `/tmp/ADT/scripts/comment_images_rst.py`: Comentar imágenes RST
-
-**Lecciones críticas**:
-1. **Pragmatismo > Perfección**: Comentar es más rápido y seguro que investigar rutas
-2. **Scripts especializados**: MD y RST requieren lógica diferente
-3. **Patrones identificables**: Jekyll, URL encoding, rutas relativas
-4. **Validación incremental**: Build después de cada tipo de archivo
-
-**Casos edge**:
-- Tags HTML `<img>` en MD: requieren corrección manual
-- Directivas con sintaxis compleja: verificar indentación
-- Imágenes comentadas previamente: no duplicar comentarios
-
 
 ### Herramientas de Análisis
 
@@ -1288,413 +986,7 @@ CATEGORÍA X: Nombre (N WARNING)
 
 ---
 
-## Anti-patrones y Errores Comunes
-
-Esta sección documenta errores reales cometidos durante correcciones de WARNING para **prevenir repetición**.
-
-### ❌ Anti-patrón 1: Sesgo en Conteo de WARNING
-
-**Error cometido**: 2026-01-31 durante corrección de "Otros WARNING"
-
-**Síntoma**:
-- Build muestra: `build succeeded, 5 warnings`
-- Asumí: Solo hay 5 WARNING
-- Realidad: Había 582 WARNING
-
-**Causa raíz**:
-- El resumen final solo cuenta CIERTOS tipos de WARNING
-- No hice `grep "WARNING:" build.log | wc -l` para contar TODOS
-- Leí solo el resumen sin analizar el log completo
-
-**Consecuencia**:
-- Conclusiones incorrectas
-- Plan de acción equivocado
-- Pérdida de tiempo
-
-**Corrección**:
-```bash
-# ❌ MAL: Confiar en el resumen
-tail -5 build.log  # "build succeeded, 5 warnings"
-
-# ✅ BIEN: Contar TODOS los WARNING
-grep "WARNING:" build.log | wc -l
-
-# ✅ MEJOR: Categorizar para entender
-grep "WARNING:" build.log | \
-  sed 's/.*WARNING: //' | \
-  sed 's/ \[.*\]//' | \
-  sort | uniq -c | sort -rn
-```
-
-**Lección**:
-- NUNCA confiar en el resumen final del build
-- SIEMPRE contar y categorizar WARNING manualmente
-- El resumen puede ser engañoso (5 vs 582 es 116x diferencia)
-
----
-
-### ❌ Anti-patrón 2: No Consultar Procedimientos Existentes
-
-**Error cometido**: 2026-01-31 durante corrección de Grid Design
-
-**Síntoma**:
-- Ya había documentado "Procedimiento: Corregir Blank Lines"
-- Ya había documentado "Procedimiento: Corregir Headers"
-- NO los consulté antes de empezar correcciones
-
-**Causa raíz**:
-- Actuar por intuición en lugar de seguir procedimientos
-- No usar `view` tool para leer sphinx-expert ANTES de actuar
-- Asumir que "ya sé cómo hacerlo"
-
-**Consecuencia**:
-- Cambios introdujeron 15 WARNING nuevos
-- Tuve que revertir cambios
-- 50 minutos perdidos en pivotes
-
-**Corrección**:
-```bash
-# ✅ SIEMPRE leer procedimientos ANTES de actuar
-view /tmp/ADT/.codex/skills/sphinx-expert/SKILL.md
-
-# ✅ Buscar procedimiento específico
-grep -n "Procedimiento: Corregir" /tmp/ADT/.codex/skills/sphinx-expert/SKILL.md
-
-# ✅ Leer procedimiento completo antes de aplicar
-```
-
-**Lección**:
-- SIEMPRE consultar sphinx-expert ANTES de cualquier corrección
-- Los procedimientos están documentados por algo (evitar repetir errores)
-- "Ya lo hice antes" NO significa que recuerdo los detalles
-
-**Referencia**: Similar a Protección #1 en `incremental-correction-methodology`
-
----
-
-### ❌ Anti-patrón 3: Pivotes Sin Análisis Previo
-
-**Error cometido**: 2026-01-31 - intentar corregir grid-design sin analizar impacto
-
-**Síntoma**:
-- Intento 1: Cambiar indentación en grid-item-card
-  - Resultado: 6 WARNING → 21 WARNING ❌
-- Intento 2: Cambiar directiva meta
-  - Resultado: Introduce 15 WARNING de listas numeradas ❌
-- Múltiples reversiones necesarias
-
-**Causa raíz**:
-- No analizar TODOS los WARNING antes de elegir cuál corregir
-- Elegir WARNING que "parecía fácil" sin entender interdependencias
-- No hacer análisis de impacto (qué otros archivos pueden afectarse)
-
-**Consecuencia**:
-- Efectos cascada inesperados
-- Más WARNING introducidos que eliminados
-- Tiempo perdido en reversiones
-
-**Corrección**:
-```bash
-# ❌ MAL: Empezar a corregir inmediatamente
-str_replace ...  # Sin análisis
-
-# ✅ BIEN: Análisis primero
-# 1. Categorizar TODOS los WARNING
-grep "WARNING:" build.log | sort | uniq -c | sort -rn
-
-# 2. Identificar archivos afectados
-grep "WARNING_TYPE" build.log | cut -d: -f1 | sort -u
-
-# 3. Ver contexto antes de cambiar
-view archivo.rst
-
-# 4. Búsqueda de patrones similares
-grep -r "patron_problematico" source/
-
-# 5. ENTONCES decidir qué corregir
-```
-
-**Lección**:
-- Análisis ANTES de acción
-- Cambios pequeños tienen efectos grandes (indentación afecta parsing)
-- Algunos WARNING es mejor IGNORAR que intentar corregir
-
-**Documentar pivotes**:
-- Crear `.mywork/analisis-[categoria].md` para documentar intentos
-- Ayuda a no repetir el mismo error
-
----
-
-### ❌ Anti-patrón 4: Ignorar `make clean`
-
-**Error común**: Build incremental oculta problemas
-
-**Síntoma**:
-- Cambio parece funcionar en build incremental
-- Pero build limpio muestra WARNING nuevos
-
-**Causa raíz**:
-- Sphinx cachea resultados
-- Build incremental no reprocesa todo
-- Cache puede ocultar errores
-
-**Corrección**:
-```bash
-# ❌ MAL: Solo make html
-make html
-
-# ✅ BIEN: Siempre limpiar primero
-make clean
-make html
-```
-
-**Lección**:
-- **NUNCA confiar en build incremental para validar**
-- Ver "Procedimiento de Build Correcto" en este skill
-- `make clean` es OBLIGATORIO, no opcional
-
----
-
-### 📝 Cómo Documentar Errores Nuevos
-
-Cuando cometas un error nuevo:
-
-1. **Reconocer el error** (sin excusas)
-2. **Identificar causa raíz** (no solo síntoma)
-3. **Documentar corrección** (qué hacer en su lugar)
-4. **Extraer lección** (principio general)
-5. **Añadir a este skill** (para no repetir)
-
-**Template**:
-```markdown
-### ❌ Anti-patrón N: [Nombre Descriptivo]
-
-**Error cometido**: [Fecha] durante [contexto]
-
-**Síntoma**: [Qué se observó]
-
-**Causa raíz**: [Por qué pasó]
-
-**Consecuencia**: [Impacto del error]
-
-**Corrección**: [Qué hacer correctamente]
-
-**Lección**: [Principio general]
-```
-
----
-
 ## Changelog
-
-### v1.6.1 - 2026-01-31
-
-**Nueva Sección**: Anti-patrones y Errores Comunes
-
-Documentación de errores reales cometidos durante correcciones para prevenir repetición.
-
-**Anti-patrones documentados** (4):
-
-1. **Sesgo en Conteo de WARNING**
-   - Error: Confiar en resumen final del build (5 vs 582 WARNING reales)
-   - Causa: No hacer grep manual para contar TODOS los WARNING
-   - Corrección: Siempre `grep "WARNING:" build.log | wc -l`
-   - Lección: El resumen puede ser engañoso (116x diferencia)
-
-2. **No Consultar Procedimientos Existentes**
-   - Error: No leer sphinx-expert antes de corregir grid-design
-   - Causa: Actuar por intuición en lugar de seguir procedimientos
-   - Corrección: Siempre `view sphinx-expert/SKILL.md` ANTES de actuar
-   - Lección: Procedimientos existen para evitar repetir errores
-
-3. **Pivotes Sin Análisis Previo**
-   - Error: Cambiar grid-item-card sin analizar impacto (6 → 21 WARNING)
-   - Causa: No categorizar WARNING antes de elegir cuál corregir
-   - Corrección: Análisis completo ANTES de modificar archivos
-   - Lección: Cambios pequeños tienen efectos grandes (interdependencias)
-
-4. **Ignorar `make clean`**
-   - Error: Confiar en build incremental
-   - Causa: Cache de Sphinx oculta errores
-   - Corrección: SIEMPRE `make clean` antes de `make html`
-   - Lección: Build incremental NO valida correctamente
-
-**Template añadido**:
-- Guía para documentar errores nuevos
-- 5 pasos: Reconocer → Causa raíz → Corrección → Lección → Documentar
-- Template markdown para consistencia
-
-**Contexto**:
-- Errores identificados durante intento de corregir "Otros WARNING"
-- 582 WARNING reales (no 5 como indicaba el resumen)
-- 50 minutos invertidos en pivotes que podrían haberse evitado
-- Lección validada: Consultar skills ANTES de actuar
-
-**Valor**:
-- Conocimiento permanente de errores a evitar
-- Previene repetición de mismos errores
-- Template para documentar futuros errores
-- Referencia rápida de "qué NO hacer"
-
-Backup: SKILL_backup_v1.6.0.md
-
-### v1.6.0 - 2026-01-31
-
-**Procedimiento Nuevo**: Corregir Imágenes No Encontradas
-
-Categoría COMPLETADA: 143/143 (100%) - Commit 52
-
-**Problema resuelto**:
-- 143 WARNING "image file not readable"
-- Rutas con `{{site.imageurl}}` (Jekyll no resuelto)
-- URL encoding: `%7B%7Bsite.imageurl%7D%7D`
-- Rutas relativas incorrectas: `images/icon.png`
-- Imágenes sin archivos físicos en repositorio
-
-**Estrategia aplicada**: Comentar directivas (pragmático, rápido, sin riesgo)
-- ✅ Opción A: COMENTAR (elegida)
-  - Tiempo: 30 min
-  - Sin riesgo: no rompe contenido
-  - Reversible: fácil deshacer
-- ❌ Opción B: Corregir rutas (descartada)
-  - Requiere investigar cada imagen
-  - Archivos pueden no existir
-
-**Scripts creados** (2 nuevos):
-- ✅ `comment_images.py`: Comenta imágenes Markdown `![alt](ruta)`
-- ✅ `comment_images_rst.py`: Comenta directivas RST `.. image::` y `.. figure::`
-
-**Resultados**:
-- WARNING antes: 161
-- WARNING después: 6
-- Ganancia: 155 WARNING eliminados (96.3%)
-- WARNING imágenes: 143 → 0 ✅
-- Archivos modificados: 134 (43 MD + 78 RST + 2 scripts + 11 logs)
-- Tiempo: 30 minutos
-- Errores introducidos: 0
-
-**Procedimiento documentado**:
-- Análisis de tipos de archivos
-- Identificación de patrones problemáticos
-- Scripts especializados por formato (MD, RST, HTML)
-- Validación incremental
-- Corrección manual de casos edge
-- 9 pasos detallados con ejemplos
-
-**Lecciones críticas**:
-1. Pragmatismo > Perfección (comentar > corregir rutas)
-2. Scripts especializados por formato
-3. Identificación de patrones es clave
-4. Validación incremental detecta casos edge
-
-**Progreso FASE 2**:
-- Categorías completadas: 6/7 (85.7%)
-- WARNING totales: 230 → 6 (97.4% completado)
-- Promedio: ~1.4 min/WARNING
-
-Backup: SKILL_backup_v1.5.0.md
-
-### v1.5.0 - 2026-01-30
-
-**Scripts Creados** (7 nuevos scripts funcionales):
-
-Scripts de validación:
-- ✅ `find_duplicate_labels.py`: Detecta labels RST/MyST duplicados
-- ✅ `find_duplicate_toctree.py`: Detecta entradas duplicadas en toctree
-
-Scripts de corrección automática:
-- ✅ `fix_unknown_lexers.py`: Convierte lexers desconocidos → text
-- ✅ `fix_list_spacing.py`: Añade blank line antes de listas
-- ✅ `fix_list_table_spacing.py`: Añade blank line en list-table
-- ✅ `fix_glossary_indentation.py`: Corrige indentación glossary (2/4 espacios)
-
-Scripts de utilidades:
-- ✅ `generar_glosario.py`: Genera glosario consolidado desde múltiples archivos
-
-**Referencias Actualizadas**:
-- Sección "Reglas preventivas" actualizada con scripts disponibles
-- Checklist rápido con comandos funcionales
-- Alternativas manuales con grep incluidas
-
-**Ubicación**: `/tmp/ADT/scripts/`
-
-**Basado en**: Conocimiento validado en FASE 2 (Commits 42-48)
-
-**Todos los scripts incluyen**:
-- Headers con ubicación y uso
-- Ejemplos de comandos
-- Manejo de errores
-- Encoding UTF-8 seguro
-- Permisos ejecutables
-
-Backup: SKILL_backup_v1.4.1.md
-
-### v1.4.1 - 2026-01-30
-
-**Corrección de Referencias**:
-- ✅ Scripts movidos de `/tmp/` a `/tmp/ADT/scripts/`
-- ✅ Referencias actualizadas en toda la documentación:
-  - `/tmp/add_h1.py` → `/tmp/ADT/scripts/add_h1.py`
-  - `/tmp/adjust_headers.py` → `/tmp/ADT/scripts/adjust_headers.py`
-- ✅ Documentación mejorada en headers de scripts
-- ✅ Creado `scripts/README_FASE2.md` con uso y ejemplos
-
-**Scripts actualizados**:
-- `add_h1.py`: Header mejorado con ubicación correcta y ejemplos
-- `adjust_headers.py`: Header mejorado con problema/solución
-
-**Ubicación correcta**: `/tmp/ADT/scripts/`
-
-Backup: SKILL_backup_v1.4.0.md
-
-### v1.4.0 - 2026-01-30
-
-**Procedimiento Actualizado**:
-- ✅ "Procedimiento: Corregir Blank Lines" - COMPLETADO
-  - De resultado parcial (7/14) a completo (14/14)
-  - 3 patrones identificados y documentados
-  - Herramienta clave: cat -A para debugging RST
-  - Validado: 14/14 corregidos (commits 34, 48)
-
-**Patrones Nuevos Documentados**:
-
-1. **grid-item-card (Sphinx Design)**
-   - Opciones: 4 espacios de indentación
-   - Contenido: 1 espacio de indentación
-   - Diferencia crítica documentada
-   - Caso: index.rst (4 WARNING)
-
-2. **code-block con RST interno**
-   - Indentación consistente obligatoria
-   - Underlines siguen regla del contenido
-   - Casos: seccion_1_2_quality_goals.rst, seccion_1_3_stakeholders.rst
-
-3. **Listas enumeradas**
-   - Numeración secuencial sin duplicados
-   - RST es estricto con numeración
-   - Caso: runtime_ejemplo_htmlsc.rst
-
-**Herramientas de Debugging Añadidas**:
-- `cat -A`: Ver caracteres invisibles (espacios, tabs, UTF-8)
-- `sed -n + cat -A`: Combinación para contar espacios
-- Scripts de validación de indentación
-
-**Conocimiento Validado**:
-- cat -A es esencial para debugging problemas de indentación
-- Extensiones Sphinx (grid-item-card) tienen reglas propias
-- code-block preserva indentación de todo el contenido
-- UTF-8 complejo puede requerir edición manual
-
-**Métricas**:
-- Tiempo: ~2 min/WARNING promedio
-- Segunda sesión: 7 WARNING en 15 min
-- Total categoría: 14/14 (100%)
-
-**Resultado FASE 2 Actualizado**:
-- 91/230 WARNING corregidos (39.6%)
-- Categorías completadas: 5/7 (71%)
-- Commits 33-48: 16 commits
-
-Backup: SKILL_backup_v1.3.0.md
 
 ### v1.3.0 - 2026-01-30
 
@@ -1739,8 +1031,8 @@ Backup: SKILL_backup_v1.3.0.md
 4. Validar patrón con 2-3 archivos antes de script masivo
 
 **Scripts Creados**:
-- `/tmp/ADT/scripts/add_h1.py`: Extraer title de frontmatter → H1
-- `/tmp/ADT/scripts/adjust_headers.py`: Bajar niveles (H3→H2, H4→H3)
+- `/tmp/add_h1.py`: Extraer title de frontmatter → H1
+- `/tmp/adjust_headers.py`: Bajar niveles (H3→H2, H4→H3)
 
 **Referencias**:
 - Commits: 42-45 (Lexers), 46 (Headers)

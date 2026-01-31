@@ -1,9 +1,6 @@
 ---
 name: work-logger
 description: "Sistema de logging estructurado de trabajo. Usar cuando se complete tarea importante, traduccion, o implementacion que deba quedar documentada."
-version: 1.0.0
-created: 2026-01-29
-updated: 2026-01-30
 ---
 
 # Work Logger - Documentacion de Trabajo
@@ -261,14 +258,3 @@ mv .mywork/work-logs/2025-*.md .mywork/work-logs/archive/2025/
 - Incluir suficiente contexto
 - Documentar decisiones NO obvias
 - Escribir pensando en "yo del futuro"
-
----
-
-## Changelog
-
-### v1.0.0 - 2026-01-30
-- Versión inicial con versionamiento añadido
-- Estructura base de work logging
-- Templates y ejemplos incluidos
-- Integración con estructura .mywork/
-

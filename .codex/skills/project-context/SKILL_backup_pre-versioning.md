@@ -1,9 +1,6 @@
 ---
 name: project-context
 description: "Proporciona contexto metodologico completo del proyecto ADT. Usar cuando el usuario necesite entender metodologia ADT, frameworks (Diataxis, arc42), estructura del proyecto, o terminologia clave."
-version: 1.0.0
-created: 2026-01-29
-updated: 2026-01-30
 ---
 
 # Project Context - ADT Documentation

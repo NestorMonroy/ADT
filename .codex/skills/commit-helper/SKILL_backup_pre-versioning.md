@@ -1,9 +1,6 @@
 ---
 name: commit-helper
 description: "Ayuda a crear commits siguiendo Conventional Commits. Usar cuando el usuario necesite hacer un commit o escribir un mensaje de commit."
-version: 1.0.0
-created: 2026-01-29
-updated: 2026-01-30
 ---
 
 # Commit Helper - Conventional Commits

@@ -1,7 +1,7 @@
 ---
 name: spec-driven-dev
 description: "Desarrollo guiado por especificaciones en 4 fases. Usar para features complejas, cambios arquitectonicos, o cualquier trabajo que requiera planificacion estructurada."
-version: 1.1.0
+version: 1.0.0
 created: 2026-01-29
 updated: 2026-01-30
 ---
@@ -22,9 +22,7 @@ updated: 2026-01-30
 
 OBJETIVO: Definir QUE se necesita
 
-DIRECTORIO: `.mywork/changes/YYYY-MM-DD-HH-MM-brief-desc/`
-
-**Nota**: Usar formato con timestamp completo según `changes-directory-management`
+DIRECTORIO: `.mywork/changes/YYYY-MM-DD-brief-desc/`
 
 ARCHIVO: `YYYY-MM-DD-HH-MM-titulo.md`
 
@@ -83,12 +81,7 @@ RNF-001: [Descripcion]
 ```
 
 PROCESO:
-1. Crear directorio de trabajo (ver `changes-directory-management` para procedimiento)
-   ```bash
-   TIMESTAMP=$(date "+%Y-%m-%d-%H-%M")
-   NOMBRE="brief-desc"
-   mkdir -p ".mywork/changes/${TIMESTAMP}-${NOMBRE}"
-   ```
+1. Crear directorio de trabajo
 2. Generar archivo `YYYY-MM-DD-HH-MM-titulo.md`
 3. **SOLICITAR APROBACION AL USUARIO**
 4. **NO CONTINUAR SIN APROBACION EXPLICITA**
@@ -447,52 +440,3 @@ Metodologia basada en:
 - Documenta decisiones para futuro
 - Facilita onboarding
 - Permite rollback seguro
-
----
-
-## Relaciones con Otras Skills
-
-### changes-directory-management
-- **Uso**: Crear y gestionar directorios en `.mywork/changes/`
-- **Cuándo**: En FASE 1 (Requirements), al crear directorio de trabajo
-- **Formato**: Usar `YYYY-MM-DD-HH-MM-brief-desc/` con timestamp completo
-- **Referencia**: Ver `changes-directory-management` para procedimiento completo
-
-### work-logger
-- **Diferencia**: spec-driven-dev es para trabajo EN PROGRESO
-- **Cuándo usar work-logger**: Al completar las 4 fases, crear log final
-- **Flujo**:
-  1. Trabajar en `.mywork/changes/YYYY-MM-DD-HH-MM-proyecto/` (spec-driven-dev)
-  2. Al completar, crear `.mywork/work-logs/YYYY-MM-DD-HH-MM-proyecto.md` (work-logger)
-
-### commit-helper
-- **Uso**: Commits con mensajes estándar durante implementación
-- **Cuándo**: En FASE 4 (Implementation), al hacer commits
-
----
-
-## Changelog
-
-### v1.1.0 - 2026-01-30
-
-**Actualizaciones de formato**:
-- ✅ DIRECTORIO actualizado: `YYYY-MM-DD-brief-desc/` → `YYYY-MM-DD-HH-MM-brief-desc/`
-- ✅ Proceso FASE 1 actualizado con comando para crear directorio
-- ✅ Añadida referencia a `changes-directory-management`
-- ✅ Sección "Relaciones con Otras Skills" añadida
-
-**Razón**:
-- Estandarizar formato de directorios con timestamp completo
-- Consistencia con `changes-directory-management` v1.0.0
-- Mejorar trazabilidad temporal de proyectos
-
-**Referencias**:
-- changes-directory-management v1.0.0
-- Renombrado de directorio actual (2026-01-30-15-17-correccion-completa-manual)
-
-### v1.0.0 - 2026-01-29
-
-- Versión inicial
-- Metodología en 4 fases
-- Templates y ejemplos
-- Proceso de aprobación

@@ -1,9 +1,6 @@
 ---
 name: validation-suite
 description: "Suite completa de validacion para Sphinx y contenido RST. Usar para verificar builds, validar estructura, detectar errores, y asegurar calidad antes de commits."
-version: 1.0.0
-created: 2026-01-29
-updated: 2026-01-30
 ---
 
 # Validation Suite - Quality Assurance

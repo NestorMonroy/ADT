@@ -1,9 +1,6 @@
 ---
 name: translation-workflow
 description: "Workflow completo de traduccion siguiendo metodologia ADT. Usar cuando el usuario necesite traducir contenido, aplicar modos de traduccion, o ejecutar proceso de transformacion documental."
-version: 1.0.0
-created: 2026-01-29
-updated: 2026-01-30
 ---
 
 # Translation Workflow - Metodologia ADT
