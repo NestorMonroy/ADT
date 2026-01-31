@@ -1,15 +1,18 @@
 .. _contexto_tip_7:
 
-===============================================================
+
+
+
 Tip 3-7: ¡Si hay muchos sistemas externos involucrados, agrégalos (agrúpalos) por criterios explícitos!
-===============================================================
+=======================================================================================================
 
 .. tip::
    **Consejo de Contexto arc42**
    
    Si tu sistema interactúa con muchos sistemas externos, puedes combinar varios de estos sistemas externos por criterios explícitos. Debes declarar explícitamente estos criterios.
 
-----
+
+
 
 Tales criterios pueden incluir sistemas que:
 
@@ -20,34 +23,36 @@ Tales criterios pueden incluir sistemas que:
 * Tienen tareas de dominio o técnicas similares a resolver (todos los sistemas que imprimen documentos, que tratan con tarjetas chip, etc.)
 
 Ejemplos: Con y Sin Agregación
-===============================
+==============================
 
 El siguiente diagrama (la versión detallada) muestra tres **sistemas vecinos** específicos, todos estereotipados con la categoría << logística >>.
 
-.. figure:: ../figuras/03-context-extensive.png
-   :alt: Diagrama de contexto extensivo
-   :align: center
-   :width: 80%
+.. .. figure:: ../figuras/03-context-extensive.png
+..       :alt: Diagrama de contexto extensivo
+..       :align: center
+..       :width: 80%
    
-   Versión detallada: tres sistemas de logística separados
+..       Versión detallada: tres sistemas de logística separados
 
 El siguiente diagrama agrupa estos **vecinos** en un solo sistema externo "Logistics" a la izquierda, estereotipado como << categoría >>.
 
-.. figure:: ../figuras/03-context-compact.png
-   :alt: Diagrama de contexto compacto
-   :align: center
-   :width: 80%
+.. .. figure:: ../figuras/03-context-compact.png
+..       :alt: Diagrama de contexto compacto
+..       :align: center
+..       :width: 80%
    
-   Versión compacta: sistemas de logística agrupados en categoría única
+..       Versión compacta: sistemas de logística agrupados en categoría única
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_03` - Contexto y Alcance
    * :ref:`contexto_tip_6` - Categorización
    * :ref:`contexto_tip_8` - Puertos para agrupar
 
-----
+
+
 
 :Tip: 3-7
 :Tema: Agregación por criterios

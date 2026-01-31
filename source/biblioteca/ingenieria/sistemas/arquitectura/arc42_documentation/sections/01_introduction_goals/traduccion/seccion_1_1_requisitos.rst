@@ -7,9 +7,11 @@
 
 .. _seccion-1-1-requisitos:
 
-===================================================================
+
+
+
 1.1 Visión General de Requisitos
-===================================================================
+================================
 
 Contenido
 =========
@@ -18,7 +20,8 @@ Descripción breve de los requisitos funcionales, factores determinantes, extrac
 (o resumen) de requisitos. Enlaces a los documentos de requisitos (esperemos que
 existan), con información sobre dónde encontrarlos.
 
-----
+
+
 
 Motivación
 ==========
@@ -26,7 +29,8 @@ Motivación
 Desde el punto de vista de los usuarios finales, un sistema se crea o modifica para
 mejorar el soporte de una actividad empresarial y/o mejorar la calidad.
 
-----
+
+
 
 Forma
 =====
@@ -39,7 +43,8 @@ esos documentos.
 **Mantén estos extractos lo más cortos posible.** Balancea la legibilidad de este
 documento con la posible redundancia respecto a los documentos de requisitos.
 
-----
+
+
 
 Ejemplos
 ========
@@ -47,7 +52,8 @@ Ejemplos
 - :ref:`introduccion-ejemplo-3` - Traffic Pursuit Unit
 - :ref:`introduccion-ejemplo-htmlsc-1` - HTML Sanity Checker
 
-----
+
+
 
 Plantilla
 =========
@@ -55,30 +61,31 @@ Plantilla
 .. code-block:: rst
 
  1.1 Visión General de Requisitos
- =================================
+=================================
 
  [Inserta aquí la visión general de requisitos del sistema]
 
  Requisitos Funcionales Principales
- -----------------------------------
+===================================
 
  - [Requisito funcional 1]
  - [Requisito funcional 2]
  - [Requisito funcional 3]
 
  Factores Determinantes
- ----------------------
+=======================
 
  - [Factor determinante 1]
  - [Factor determinante 2]
 
  Referencias
- -----------
+============
 
  - Documento de requisitos: [enlace o ubicación]
  - Especificaciones funcionales: [enlace o ubicación]
 
-----
+
+
 
 Tips Relacionados
 =================
@@ -96,7 +103,8 @@ Ver:
 - :ref:`introduccion-tip-9` - Texto semi-formal
 - :ref:`introduccion-tip-10` - Modelos de procesos
 
-----
+
+
 
 .. note::
  **Información de traducción:**

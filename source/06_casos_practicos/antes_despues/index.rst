@@ -1,15 +1,18 @@
 .. _casos_antes_despues:
 
-===============================================
+
+
+
 Casos Antes/Después
-===============================================
+===================
 
 Casos prácticos reales mostrando el **proceso completo de traducción** con resultados verificables.
 
 **Base empírica:**
  Ejemplos extraídos de la traducción de arc42 (196 archivos).
 
-----
+
+
 
 Casos Disponibles
 =================
@@ -20,10 +23,11 @@ Casos Disponibles
 
  caso_01_seccion_breve
 
-----
+
+
 
 Estructura de Cada Caso
-========================
+=======================
 
 Cada caso práctico incluye:
 
@@ -35,7 +39,8 @@ Cada caso práctico incluye:
 6. **Resultado:** Métricas finales
 7. **Lecciones:** Lo que funcionó/mejorar
 
-----
+
+
 
 Uso de estos Casos
 ==================
@@ -49,10 +54,11 @@ Uso de estos Casos
 **Para Planificar:**
  Usa métricas reales para estimar tu proyecto.
 
-----
+
+
 
 Próximos Casos Planeados
-=========================
+========================
 
 .. code-block:: text
 
@@ -60,7 +66,8 @@ Próximos Casos Planeados
  [RUNNING] caso_03_seccion_compleja.rst (Sección 10 de arc42)
  [RUNNING] caso_04_tip_enriquecido.rst (Tips individuales)
 
-----
+
+
 
 .. note::
  Estos casos están basados en traducciones reales completadas en 2026-01-28. Todos los datos son verificables en checkpoints originales.

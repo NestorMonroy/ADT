@@ -1,4 +1,4 @@
-=====================================
+
 Reglas de Estructura del Proyecto ADT
 =====================================
 
@@ -12,11 +12,12 @@ Reglas de Estructura del Proyecto ADT
  Todo cambio estructural debe seguir estas directrices.
 
 Regla Fundamental de Ubicación
-===============================
+==============================
 
 **REGLA MAESTRA:**
 
 .. note::
+ 
  **Solo va a** ``source/`` **el contenido que se documenta/compila en HTML.**
 
  **Las herramientas y scripts de proyecto quedan en la raíz.**
@@ -24,10 +25,10 @@ Regla Fundamental de Ubicación
 Esta regla es la base de toda la organización del proyecto y debe ser **SIEMPRE** respetada.
 
 Estructura Obligatoria
-=======================
+======================
 
 Raíz del Proyecto (``/tmp/ADT/``)
-----------------------------------
+=================================
 
 **QUÉ VA EN LA RAÍZ:**
 
@@ -46,7 +47,7 @@ Raíz del Proyecto (``/tmp/ADT/``)
 NO contenido a documentar.
 
 Carpeta source/ (``/tmp/ADT/source/``)
----------------------------------------
+======================================
 
 **QUÉ VA EN source/:**
 
@@ -71,10 +72,10 @@ Carpeta source/ (``/tmp/ADT/source/``)
 **CRITERIO:** Todo lo que se **compila a HTML** y es parte de la **documentación**.
 
 Casos de Uso: Dónde Ubicar Archivos
-====================================
+===================================
 
 Pregúntate: ¿Esto va en ``source/`` o en la raíz?
---------------------------------------------------
+=================================================
 
 **Usa este árbol de decisión:**
 
@@ -101,10 +102,10 @@ Pregúntate: ¿Esto va en ``source/`` o en la raíz?
  • Archivos .tar.gz de backups
 
 Ejemplos Específicos
-=====================
+====================
 
 Contenido Documental (-> ``source/``)
--------------------------------------
+=====================================
 
 .. list-table::
  :header-rows: 1
@@ -128,7 +129,7 @@ Contenido Documental (-> ``source/``)
    - Tutorial (se compila a HTML)
 
 Herramientas/Utilidades (-> raíz)
----------------------------------
+=================================
 
 .. list-table::
  :header-rows: 1
@@ -150,10 +151,10 @@ Herramientas/Utilidades (-> raíz)
    - Archivo de respaldo (no se documenta)
 
 Excepciones y Casos Especiales
-===============================
+==============================
 
 build/ - Salida Compilada
---------------------------
+=========================
 
 .. note::
  ``build/`` contiene el HTML generado por Sphinx.
@@ -164,11 +165,12 @@ build/ - Salida Compilada
  - Se regenera con ``make html``
 
 _static/ y _templates/ en source/
-----------------------------------
+=================================
 
 .. note::
  Estas carpetas van en ``source/`` aunque no son "contenido" en sí:
 
+ 
  - ``_static/``: Recursos estáticos (CSS, JS, imágenes) para la documentación
  - ``_templates/``: Templates de Sphinx para personalizar HTML
 
@@ -176,10 +178,10 @@ _static/ y _templates/ en source/
  para generar el HTML correcto.
 
 Validación de la Estructura
-============================
+===========================
 
 Checklist de Validación
-------------------------
+=======================
 
 Antes de hacer commit, verifica:
 
@@ -194,7 +196,7 @@ Antes de hacer commit, verifica:
  [ ] ¿build/ está en .gitignore?
 
 Comando de Verificación
-------------------------
+=======================
 
 Para verificar la estructura:
 
@@ -212,7 +214,7 @@ Para verificar la estructura:
  # Debe mostrar solo carpetas de contenido documental
 
 Consecuencias de NO Seguir las Reglas
-======================================
+=====================================
 
 Si NO se sigue esta estructura:
 
@@ -225,10 +227,10 @@ Si NO se sigue esta estructura:
 5. Estructura inconsistente y difícil de mantener
 
 Migración de Archivos
-======================
+=====================
 
 Si encuentras un archivo en el lugar incorrecto
-------------------------------------------------
+===============================================
 
 **Procedimiento:**
 
@@ -255,7 +257,7 @@ Si encuentras un archivo en el lugar incorrecto
 5. **Verifica** que todo funciona
 
 Historial de Cambios
-=====================
+====================
 
 .. list-table::
  :header-rows: 1
@@ -277,12 +279,14 @@ Referencias
 - :doc:`ESTRUCTURA_DE_BIBLIOTECA`
 
 .. important::
+ 
  **ESTE DOCUMENTO ES NORMATIVO**
 
  Todas las personas que trabajen en el proyecto ADT deben conocer y
  seguir estas reglas sin excepción.
 
-----
+
+
 
 :Documento: REGLAS_ESTRUCTURA_PROYECTO.rst
 :Ubicación: ``source/docs_maestros/``

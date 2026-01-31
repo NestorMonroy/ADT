@@ -1,8 +1,10 @@
 .. _prompts:
 
-===============================================
+
+
+
 Prompts y Plantillas
-===============================================
+====================
 
 Prompts de IA y plantillas para automatizar y mejorar la traducción con ADT.
 
@@ -10,7 +12,8 @@ Prompts de IA y plantillas para automatizar y mejorar la traducción con ADT.
  :depth: 2
  :local:
 
-----
+
+
 
 Introducción
 ============
@@ -29,18 +32,20 @@ Esta sección contiene **prompts optimizados** para usar con modelos de lenguaje
  Los prompts son **asistentes**, NO reemplazos del traductor humano.
 
  SIEMPRE:
+ 
  - Revisar output del LLM
  - Verificar contra checklists ADT
  - Aplicar PASO 0 manualmente
  - Validar terminología (MD-004)
 
-----
+
+
 
 Prompts Disponibles
 ===================
 
 Prompts Maestros
-----------------
+================
 
 **Prompt Maestro de Traducción:**
 
@@ -73,7 +78,7 @@ Prompt para verificar traducción contra criterios de calidad ADT.
  Uso: QA post-traducción
 
 Prompts Condicionales
----------------------
+=====================
 
 Prompts que se activan según condiciones específicas.
 
@@ -96,7 +101,7 @@ Prompts que se activan según condiciones específicas.
 Ver: :doc:`prompts_condicionales/index`
 
 Plantillas
-----------
+==========
 
 Plantillas reutilizables para diferentes tipos de documentos.
 
@@ -108,15 +113,17 @@ Plantillas reutilizables para diferentes tipos de documentos.
 
 Ver: :doc:`plantillas/index`
 
-----
+
+
 
 Estructura de un Prompt ADT
-============================
+===========================
 
 Componentes Esenciales
------------------------
+======================
 
 Un prompt ADT efectivo incluye:
+
 
 **1. Contexto ADT:**
 
@@ -158,13 +165,14 @@ Un prompt ADT efectivo incluye:
  [ ] Sintaxis RST correcta
  [ ] Enriquecimiento en rango
 
-----
+
+
 
 Uso de Prompts con LLMs
-========================
+=======================
 
 Con Claude
-----------
+==========
 
 **Proceso recomendado:**
 
@@ -183,13 +191,15 @@ Con Claude
 
  [Prompt maestro ADT completo]
 
- ---
+
+
 
  DOCUMENTO A TRADUCIR:
 
  [Pegar contenido original]
 
- ---
+
+
 
  INSTRUCCIONES:
  - Modo: 2 (Transformación LaTeX->RST)
@@ -199,7 +209,7 @@ Con Claude
  Traduce siguiendo PASO 0 completo.
 
 Con ChatGPT
------------
+===========
 
 Similar a Claude, pero:
 
@@ -219,7 +229,7 @@ Similar a Claude, pero:
  4. Pedir explicación de decisiones
 
 Con Modelos Locales
---------------------
+===================
 
 Para modelos como LLaMA, Mistral, etc.:
 
@@ -238,13 +248,14 @@ Para modelos como LLaMA, Mistral, etc.:
  3. Dividir tareas complejas
  4. Más revisión manual
 
-----
+
+
 
 Mejores Prácticas
 =================
 
 DO: Buenas Prácticas
---------------------
+====================
 
 .. code-block:: text
 
@@ -256,7 +267,7 @@ DO: Buenas Prácticas
  [OK] Documentar prompts exitosos
 
 DON'T: Malas Prácticas
------------------------
+======================
 
 .. code-block:: text
 
@@ -268,7 +279,7 @@ DON'T: Malas Prácticas
  [ERROR] Usar prompts genéricos sin ADT
 
 Iteración y Mejora
-------------------
+==================
 
 .. code-block:: text
 
@@ -279,13 +290,14 @@ Iteración y Mejora
  5. Documentar mejoras
  6. Compartir con equipo
 
-----
+
+
 
 Limitaciones de LLMs
 ====================
 
 Qué LLMs Hacen Bien
--------------------
+===================
 
 .. code-block:: text
 
@@ -296,7 +308,7 @@ Qué LLMs Hacen Bien
  [OK] Sugerir enriquecimientos
 
 Qué LLMs Hacen Mal
--------------------
+==================
 
 .. code-block:: text
 
@@ -308,7 +320,7 @@ Qué LLMs Hacen Mal
  [ERROR] Verificación de completitud
 
 Por Qué Siempre Revisar
-------------------------
+=======================
 
 **Errores comunes de LLMs:**
 
@@ -328,13 +340,14 @@ Por Qué Siempre Revisar
  - Sintaxis RST puede tener errores sutiles
  - Solución: Compilar y verificar
 
-----
+
+
 
 Plantillas de Prompts
 =====================
 
 Plantilla Base
---------------
+==============
 
 .. code-block:: text
 
@@ -365,7 +378,7 @@ Plantilla Base
  [Cualquier limitación específica]
 
 Plantilla para Tips Breves
----------------------------
+==========================
 
 .. code-block:: text
 
@@ -398,13 +411,14 @@ Plantilla para Tips Breves
  [ ] Compilación RST válida
  [ ] Terminología consistente
 
-----
+
+
 
 Próximos Desarrollos
 ====================
 
 En Progreso
------------
+===========
 
 .. code-block:: text
 
@@ -417,7 +431,7 @@ En Progreso
  - Casos de uso específicos
 
 Planeado
---------
+========
 
 .. code-block:: text
 
@@ -435,7 +449,8 @@ Planeado
  - Fix de errores comunes
  - Mejora de enriquecimiento
 
-----
+
+
 
 Contribuir Prompts
 ==================
@@ -471,9 +486,11 @@ Si desarrollas prompts efectivos:
  Limitaciones conocidas:
  [qué no funciona bien]
 
-----
+
+
 
 .. seealso::
+ 
  * :doc:`../07_guias_uso/tutorial_completo` - Tutorial ADT
  * :doc:`../04_reglas_operativas/matrices_decision/MD_002_cuando_enriquecer` - Reglas de enriquecimiento
  * :doc:`../03_estandares/calidad/criterios_calidad` - Criterios de calidad
@@ -481,7 +498,8 @@ Si desarrollas prompts efectivos:
 .. warning::
  Recordatorio: Los LLMs son herramientas de **asistencia**, no remplazan el criterio humano ni la verificación sistemática ADT.
 
-----
+
+
 
 .. toctree::
  :maxdepth: 2

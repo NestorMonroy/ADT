@@ -1,20 +1,23 @@
 .. _risks_tip_6:
 
-===============================================================
+
+
+
 Tip 11-6: ¡Analiza el código fuente para problemas y riesgos!
-===============================================================
+=============================================================
 
 :Tema: Riesgos en código fuente
 :Palabras clave: risk, problem, source-code
 
-----
+
+
 
 Deberías aplicar **análisis de código fuente** para identificar **riesgos** y problemas:
 
 Tanto el análisis **estático** (lines-of-code, coupling, cyclomatic complexity, etc.) como el análisis **dinámico** (es decir, cobertura de tests, análisis de performance/threads) pueden ayudar a identificar **riesgos** o problemas.
 
 Análisis Estático de Código
-============================
+===========================
 
 **Métricas de Código**
 
@@ -76,10 +79,11 @@ Análisis Estático de Código
 
  **Solución:** DRY principle, extract method/class
 
-----
+
+
 
 Herramientas de Análisis Estático
-==================================
+=================================
 
 **Por Lenguaje:**
 
@@ -116,10 +120,11 @@ Herramientas de Análisis Estático
 * [INFO] **Code Smells**: Problemas de mantenibilidad
 * **Coverage**: Gaps en testing
 
-----
+
+
 
 Análisis Dinámico de Código
-============================
+===========================
 
 **1. Cobertura de Tests**
 
@@ -183,10 +188,11 @@ Análisis Dinámico de Código
 * .NET: Concurrency Visualizer
 * Python: threading profiler
 
-----
+
+
 
 Código Legacy como Riesgo
-==========================
+=========================
 
 **Características de Código Legacy:**
 
@@ -221,7 +227,8 @@ Código Legacy como Riesgo
  * Automatizar con Dependabot, Renovate
  * Actualizar regularmente, no esperar años
 
-----
+
+
 
 **Ejemplo de Análisis de Código:**
 
@@ -244,20 +251,21 @@ Código Legacy como Riesgo
 
  Deuda Técnica Identificada:
  1. Función processPayment() tiene complexity 45
- -> Refactor usando Command pattern (5 días)
+   -> Refactor usando Command pattern (5 días)
 
  2. 12% código duplicado
- -> Extract common logic (2 días)
+   -> Extract common logic (2 días)
 
  3. Coverage 35%
- -> Agregar tests (3 días)
+   -> Agregar tests (3 días)
 
  4. 3 SQL injection risks
- -> Usar prepared statements (1 día) [URGENTE]
+   -> Usar prepared statements (1 día) [URGENTE]
 
  Prioridad: 4 (urgente) > 1 > 3 > 2
 
-----
+
+
 
 **Pipeline de Code Quality:**
 
@@ -277,7 +285,8 @@ Código Legacy como Riesgo
  - Security vulnerabilities
  - Code duplica > 5%
 
-----
+
+
 
 **Métricas de Calidad de Código:**
 
@@ -310,7 +319,8 @@ Código Legacy como Riesgo
    - 5-10%
    - >10%
 
-----
+
+
 
 .. seealso::
  * **Tip 11-4** - Analizar procesos para riesgos

@@ -1,8 +1,10 @@
 .. _estrategia_ejemplo_2:
 
-===============================================================
+
+
+
 Ejemplo de Estrategia de Solución: MaMa
-===============================================================
+=======================================
 
 .. note::
    **Ejemplo arc42**
@@ -11,11 +13,13 @@ Ejemplo de Estrategia de Solución: MaMa
    
    Explica brevemente cómo logras los requisitos de calidad más importantes.
 
-----
+
+
 
 4. Estrategia de Solución
 
-==========================
+
+
 
 Por favor nota:
 
@@ -42,7 +46,8 @@ Por favor nota:
      - Tratar imágenes como caso especial, almacenar imágenes en filesystem en lugar de base de datos, crear ruta/nombre de archivo único basado en ID de cliente, incluir pruebas de carga en build automático, crear generador de datos de prueba
      - Incluir caso especial para persistencia de imágenes en generador de código, Sección 8.1
 
-----
+
+
 
 Análisis
 ========
@@ -65,13 +70,15 @@ Puntos Clave
 
 **Optimización de Performance:** Decisiones específicas para lograr throughput requerido (250k imágenes/24hrs), como almacenamiento en filesystem.
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_04` - Estrategia de Solución
    * :ref:`estrategia_ejemplo_1` - Ejemplo HTML Sanity Checker
 
-----
+
+
 
 :Sistema: MaMa
 :Tipo: Ejemplo de estrategia de solución (tabla)

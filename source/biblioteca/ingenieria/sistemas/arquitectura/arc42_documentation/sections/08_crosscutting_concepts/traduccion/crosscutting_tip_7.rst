@@ -1,4 +1,5 @@
 =========================================================================
+
 Tip 8-7: ¡Documente (al menos) el modelo de datos (de negocio o dominio)!
 =========================================================================
 
@@ -25,11 +26,11 @@ Tome lo siguiente como un ejemplo breve (basado en una idea de `uml-diagrams.org
 Carece de definiciones o explicaciones adicionales de las entidades y sus relaciones... 
 en realidad, debería ser más minucioso...
 
-.. figure:: {{ site.imageurl }}/08-hospital-domain-EN.png
-   :width: 70%
-   :alt: Ejemplo breve de un modelo de datos, dominio hospitalario
+.. .. figure:: {{ site.imageurl }}/08-hospital-domain-EN.png
+..       :width: 70%
+..       :alt: Ejemplo breve de un modelo de datos, dominio hospitalario
    
-   Ejemplo breve de un modelo de datos, dominio hospitalario
+..       Ejemplo breve de un modelo de datos, dominio hospitalario
 
 Fuente PlantUML
 ===============

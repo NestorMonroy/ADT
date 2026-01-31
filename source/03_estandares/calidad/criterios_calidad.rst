@@ -1,8 +1,10 @@
 .. _criterios_calidad:
 
-===============================================
+
+
+
 Criterios de Calidad de Traducción ADT
-===============================================
+======================================
 
 :Sección: 03_estandares/calidad
 :Base: Experiencia real con arc42 (196 archivos traducidos)
@@ -13,7 +15,8 @@ Criterios de Calidad de Traducción ADT
  :depth: 3
  :local:
 
-----
+
+
 
 Introducción
 ============
@@ -26,13 +29,14 @@ Este documento define los **criterios de calidad** que aseguran traducciones pro
 **Propósito:**
  Proveer estándares claros y verificables para evaluar la calidad de cualquier traducción en ADT.
 
-----
+
+
 
 Los 5 Criterios Fundamentales
-==============================
+=============================
 
 Criterio 1: Completitud (100%)
--------------------------------
+==============================
 
 **Definición:**
  TODO el contenido del documento original debe estar presente en la traducción.
@@ -124,10 +128,11 @@ Criterio 1: Completitud (100%)
  - Crear checklist exhaustivo
  - Verificar 100% elementos
 
-----
+
+
 
 Criterio 2: Precisión Técnica (100%)
--------------------------------------
+====================================
 
 **Definición:**
  La terminología técnica y los conceptos deben traducirse con **precisión absoluta**.
@@ -217,10 +222,11 @@ Criterio 2: Precisión Técnica (100%)
 
  Razón: Conceptos generales con traducción estándar
 
-----
+
+
 
 Criterio 3: Enriquecimiento Apropiado
---------------------------------------
+=====================================
 
 **Definición:**
  El enriquecimiento debe ser **proporcional a la complejidad** del original y **agregar valor real**.
@@ -339,10 +345,11 @@ Criterio 3: Enriquecimiento Apropiado
  [OK] Contexto que facilita comprensión
  [OK] Aclaraciones de puntos ambiguos
 
-----
+
+
 
 Criterio 4: Formato y Compilación (100%)
------------------------------------------
+========================================
 
 **Definición:**
  El documento debe compilar correctamente en Sphinx y seguir estándares RST.
@@ -382,15 +389,19 @@ Criterio 4: Formato y Compilación (100%)
 
  [OK] Títulos con líneas de igual longitud:
 
- ==================
+
+
+
  Título de Sección
- ==================
+==================
 
  [ERROR] NO hacer:
 
- ==================
+
+
+
  Título
- ==================
+=======
 
  .. code-block:: rst
 
@@ -430,10 +441,11 @@ Criterio 4: Formato y Compilación (100%)
 
  Tiempo de compilación: ~30 segundos
 
-----
+
+
 
 Criterio 5: Verificación Sistemática (100%)
---------------------------------------------
+===========================================
 
 **Definición:**
  Aplicar **checklist de verificación** contra el original antes de considerar completa la traducción.
@@ -514,18 +526,19 @@ Criterio 5: Verificación Sistemática (100%)
  +======================================================+
 
  1. [OK] Título '12. Glossary'
- [OK] PRESENTE
+   [OK] PRESENTE
 
  2. [OK] Content (líneas 12-15 del original)
- [OK] PRESENTE
+   [OK] PRESENTE
 
  3. [OK] Content - multi-language (línea 15)
- [OK] PRESENTE
+   [OK] PRESENTE
 
- ...
+
+
 
  13. [OK] Ejemplo traducido
- [OK] PRESENTE
+   [OK] PRESENTE
 
 
 
@@ -535,10 +548,11 @@ Criterio 5: Verificación Sistemática (100%)
 
  Resultado: 13/13 elementos [OK] PRESENTE (100%)
 
-----
+
+
 
 Matriz de Evaluación de Calidad
-================================
+===============================
 
 **Evaluación Global:**
 
@@ -589,13 +603,14 @@ Matriz de Evaluación de Calidad
  = 30 + 25 + 20 + 15 + 10
  = 100% [OK] APROBADA
 
-----
+
+
 
 Casos de Uso de los Criterios
-==============================
+=============================
 
 Caso 1: Evaluación de Traducción Nueva
----------------------------------------
+======================================
 
 **Escenario:**
  Acabas de terminar de traducir una nueva sección.
@@ -633,7 +648,7 @@ Caso 1: Evaluación de Traducción Nueva
  -> Traducción COMPLETA
 
 Caso 2: Revisión de Traducción Existente
------------------------------------------
+========================================
 
 **Escenario:**
  Revisar calidad de traducción hecha hace tiempo.
@@ -653,7 +668,7 @@ Caso 2: Revisión de Traducción Existente
  7. Re-traducir si necesario
 
 Caso 3: Traducción Colaborativa
---------------------------------
+===============================
 
 **Escenario:**
  Múltiples personas traducen secciones diferentes.
@@ -672,10 +687,11 @@ Caso 3: Traducción Colaborativa
 
  Resultado: Calidad consistente entre traductores
 
-----
+
+
 
 Lecciones Aprendidas de arc42
-==============================
+=============================
 
 **De 196 archivos traducidos:**
 
@@ -732,7 +748,8 @@ Lecciones Aprendidas de arc42
 
  Lección: No esperar al final para compilar
 
-----
+
+
 
 Resumen Ejecutivo
 =================
@@ -755,7 +772,8 @@ Resumen Ejecutivo
 - Usar: :doc:`checklist_revision` para verificación
 - Ver: :doc:`../casos_practicos/casos_exito/exito_01_arc42_completo` para ejemplos
 
-----
+
+
 
 .. seealso::
  * :doc:`metricas_traduccion` - Métricas cuantitativas detalladas

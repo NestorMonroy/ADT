@@ -1,8 +1,10 @@
 .. _introduccion-tip-7:
 
-===================================================================
+
+
+
 Consejo 1-7: ¡Usa diagramas BPMN!
-===================================================================
+=================================
 
 .. meta::
    :layout: post
@@ -16,7 +18,8 @@ Consejo 1-7: ¡Usa diagramas BPMN!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Stakeholders de negocio
 
-----
+
+
 
 Recomendación
 =============
@@ -29,7 +32,8 @@ se dirige explícitamente a stakeholders de negocio y, por lo tanto, puede verse
 como una alternativa a los diagramas de actividad para describir procesos de 
 negocio o técnicos.
 
-----
+
+
 
 .. note::
    **Información de traducción:**

@@ -1,14 +1,17 @@
 .. _tip-2-5:
 
-======================================================================
+
+
+
 Tip 2-5: Diferencia entre diferentes categorías de restricciones
-======================================================================
+================================================================
 
 Si es necesario, diferencia entre restricciones técnicas, organizacionales 
 y políticas, o convenciones superpuestas (por ejemplo, lineamientos de 
 programación, convenciones de documentación, nomenclatura u organizacionales).
 
-----
+
+
 
 .. seealso::
    

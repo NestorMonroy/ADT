@@ -1,6 +1,5 @@
-====================================
 Objetivos y Tácticas de Traducción
-====================================
+==================================
 
 :Categoría: Fundamentos
 :Ubicación: 01_fundamentos/
@@ -11,7 +10,8 @@ Objetivos y Tácticas de Traducción
  :depth: 3
  :local:
 
-----
+
+
 
 Introducción
 ============
@@ -24,13 +24,14 @@ decisiones de traducción en ADT.
 
  Para el 10-20% restante, usamos OBJETIVOS y TÁCTICAS.
 
-----
+
+
 
 Los Cuatro Objetivos de Traducción
-===================================
+==================================
 
 Objetivo 1: Domesticación
--------------------------
+=========================
 
 **Definición:**
  Adaptar el contenido al medio/contexto destino (RST/Sphinx).
@@ -70,7 +71,7 @@ Objetivo 1: Domesticación
  El RST resultante es idiomático y natural para usuarios de Sphinx.
 
 Objetivo 2: Claridad
---------------------
+====================
 
 **Definición:**
  Hacer el contenido más comprensible para el lector.
@@ -94,7 +95,7 @@ Objetivo 2: Claridad
    - "Ver :ref:`seccion-anterior`"
    - Especificación
  * - "[1]"
-   - "Smith (2020) :cite:`smith2020`"
+   - "Smith (2020) [smith2020]"
    - Especificación
  * - "Este concepto..."
    - ".. note:: Este concepto es fundamental..."
@@ -116,7 +117,7 @@ Objetivo 2: Claridad
  No sobre-explicar. Balance entre claridad y concisión.
 
 Objetivo 3: Consistencia
--------------------------
+========================
 
 **Definición:**
  Resolver inconsistencias del documento original.
@@ -166,7 +167,7 @@ Objetivo 3: Consistencia
  SIEMPRE documentar decisiones de consistencia en notas de traducción.
 
 Objetivo 4: Simplificación
----------------------------
+==========================
 
 **Definición:**
  Reducir complejidad innecesaria del original.
@@ -209,13 +210,14 @@ Objetivo 4: Simplificación
 **Precaución:**
  NUNCA omitir contenido semántico. Solo complejidad innecesaria.
 
-----
+
+
 
 Las 14+ Tácticas de Traducción
-===============================
+==============================
 
 Táctica 1: Adición (Addition)
-------------------------------
+=============================
 
 **Definición:**
  Agregar contenido NO presente en el original.
@@ -244,7 +246,7 @@ Táctica 1: Adición (Addition)
  No cambiar el mensaje del autor. Solo aclarar.
 
 Táctica 2: Omisión (Omission)
-------------------------------
+=============================
 
 **Definición:**
  Eliminar contenido presente en el original.
@@ -279,7 +281,7 @@ Táctica 2: Omisión (Omission)
  NUNCA omitir contenido semántico.
 
 Táctica 3: Sustitución (Substitution)
---------------------------------------
+=====================================
 
 **Definición:**
  Reemplazar un elemento por su equivalente.
@@ -310,7 +312,7 @@ Táctica 3: Sustitución (Substitution)
  Casi siempre - es la táctica MÁS COMÚN.
 
 Táctica 4: Cambio de Orden (Transposition)
--------------------------------------------
+==========================================
 
 **Definición:**
  Reordenar elementos.
@@ -345,7 +347,7 @@ Táctica 4: Cambio de Orden (Transposition)
  - Adaptar a convenciones del medio destino
 
 Táctica 5: Especificación (Specification)
-------------------------------------------
+=========================================
 
 **Definición:**
  Hacer más específico un elemento vago.
@@ -373,7 +375,7 @@ Táctica 5: Especificación (Specification)
  - Pronombres ambiguos
 
 Táctica 6: Generalización (Generalization)
--------------------------------------------
+==========================================
 
 **Definición:**
  Hacer más general un elemento específico.
@@ -401,7 +403,7 @@ Táctica 6: Generalización (Generalization)
  - Estandarizar terminología
 
 Táctica 7: Explicación (Explicitation)
----------------------------------------
+======================================
 
 **Definición:**
  Hacer explícito lo implícito.
@@ -432,7 +434,7 @@ Táctica 7: Explicación (Explicitation)
  Solo si la audiencia lo necesita. No sobre-explicar.
 
 Táctica 8: Normalización (Normalization)
------------------------------------------
+========================================
 
 **Definición:**
  Estandarizar variaciones.
@@ -464,7 +466,7 @@ Táctica 8: Normalización (Normalization)
  - Convenciones locales vs internacionales
 
 Táctica 9: Modulación (Modulation)
------------------------------------
+==================================
 
 **Definición:**
  Cambiar perspectiva o punto de vista.
@@ -489,7 +491,7 @@ Táctica 9: Modulación (Modulation)
  - Naturalización de construcciones extrañas
 
 Táctica 10: Compensación (Compensation)
-----------------------------------------
+=======================================
 
 **Definición:**
  Recuperar pérdida de información en otro lugar.
@@ -518,7 +520,7 @@ Táctica 10: Compensación (Compensation)
  - Información que se pierde en traducción
 
 Táctica 11: Amplificación (Amplification)
-------------------------------------------
+=========================================
 
 **Definición:**
  Expandir contenido comprimido.
@@ -545,7 +547,7 @@ Táctica 11: Amplificación (Amplification)
  - Referencias que necesitan contexto
 
 Táctica 12: Condensación (Condensation)
-----------------------------------------
+=======================================
 
 **Definición:**
  Comprimir contenido verboso.
@@ -576,7 +578,7 @@ Táctica 12: Condensación (Condensation)
  Preservar TODO el contenido semántico.
 
 Táctica 13: Literalización (Literalization)
---------------------------------------------
+===========================================
 
 **Definición:**
  Preservar forma exacta del original.
@@ -609,7 +611,7 @@ Táctica 13: Literalización (Literalization)
  - Ejemplos que deben replicarse exactamente
 
 Táctica 14: Adaptación Cultural (Cultural Adaptation)
-------------------------------------------------------
+=====================================================
 
 **Definición:**
  Adaptar referencias culturales.
@@ -637,13 +639,14 @@ Táctica 14: Adaptación Cultural (Cultural Adaptation)
 **En ADT:**
  Menos relevante (documentación técnica es más universal).
 
-----
+
+
 
 Matriz de Decisión: Objetivos × Tácticas
-=========================================
+========================================
 
 Tabla de Compatibilidad
-------------------------
+=======================
 
 .. list-table::
  :widths: 20 15 15 15 15 20
@@ -747,13 +750,14 @@ Tabla de Compatibilidad
 - [WARNING] = Uso posible pero raro
 - [ERROR] = Generalmente incompatible
 
-----
+
+
 
 Proceso de Aplicación
-======================
+=====================
 
 Paso 1: Identificar Necesidad
-------------------------------
+=============================
 
 .. code-block:: text
 
@@ -767,7 +771,7 @@ Paso 1: Identificar Necesidad
  -> Ir a Paso 2
 
 Paso 2: Seleccionar Objetivo
------------------------------
+============================
 
 .. code-block:: text
 
@@ -781,7 +785,7 @@ Paso 2: Seleccionar Objetivo
  -> Seleccionar UNO (o máximo dos)
 
 Paso 3: Elegir Táctica(s)
---------------------------
+=========================
 
 .. code-block:: text
 
@@ -793,7 +797,7 @@ Paso 3: Elegir Táctica(s)
  Para SIMPLIFICACIÓN -> Omisión, Condensación
 
 Paso 4: Aplicar Táctica
-------------------------
+=======================
 
 .. code-block:: text
 
@@ -805,7 +809,7 @@ Paso 4: Aplicar Táctica
  - ¿No se introdujeron nuevos problemas?
 
 Paso 5: Documentar
--------------------
+==================
 
 .. code-block:: rst
 
@@ -816,13 +820,14 @@ Paso 5: Documentar
  Táctica: [nombre de táctica]
  Razón: [explicación breve]
 
-----
+
+
 
 Ejemplos Integrados
 ===================
 
 Ejemplo 1: Figura Lejana (Objetivo: Claridad)
-----------------------------------------------
+=============================================
 
 **Original (LaTeX):**
 
@@ -870,7 +875,7 @@ Ejemplo 1: Figura Lejana (Objetivo: Claridad)
  Objetivo: Claridad. Táctica: Cambio de orden.
 
 Ejemplo 2: Énfasis Inconsistente (Objetivo: Consistencia)
-----------------------------------------------------------
+=========================================================
 
 **Original (LaTeX):**
 
@@ -908,7 +913,7 @@ Ejemplo 2: Énfasis Inconsistente (Objetivo: Consistencia)
  Objetivo: Consistencia. Táctica: Generalización.
 
 Ejemplo 3: Espacio Vertical (Objetivo: Simplificación)
--------------------------------------------------------
+======================================================
 
 **Original (LaTeX):**
 
@@ -948,10 +953,11 @@ Ejemplo 3: Espacio Vertical (Objetivo: Simplificación)
  Sphinx maneja espaciado automáticamente.
  Objetivo: Simplificación. Táctica: Omisión.
 
-----
+
+
 
 Checklist de Aplicación
-========================
+=======================
 
 .. code-block:: text
 
@@ -970,7 +976,8 @@ Checklist de Aplicación
  [ ] ¿Compiló sin errores?
  [ ] ¿Se ve bien en HTML?
 
-----
+
+
 
 Conclusión
 ==========
@@ -987,7 +994,8 @@ Conclusión
 
  Traducciones consistentes, justificadas, y mejorables.
 
-----
+
+
 
 Referencias
 ===========
@@ -997,7 +1005,8 @@ Referencias
 - :doc:`/docs_maestros/METODO_TRADUCCION_PESHITTA_ZACHARIAS`
 - Micheli, D. (2014). Translation Technique in Peshitta Zechariah
 
-----
+
+
 
 **Versión:** 1.0
 **Fecha:** 2026-01-27

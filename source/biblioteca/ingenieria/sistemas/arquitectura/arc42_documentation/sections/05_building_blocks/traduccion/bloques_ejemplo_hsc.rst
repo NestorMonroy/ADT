@@ -1,28 +1,31 @@
 .. _bloques_ejemplo_hsc:
 
-===============================================================
+
+
+
 Ejemplo de Vista de Bloques: HTML Sanity Checker
-===============================================================
+================================================
 
 .. note::
    **Ejemplo arc42**
    
    Este ejemplo contiene varios niveles de la **vista de bloques de construcción** - desde el nivel de visión general 1 hasta el muy específico y bajo nivel 3.
 
-----
+
+
 
 5.1 Caja Blanca HtmlSanityChecker
-==================================
+=================================
 
-.. figure:: ../figuras/5-whitebox-hsc-level-1.png
-   :alt: Caja blanca (HtmlSC)
-   :align: center
-   :width: 80%
+.. .. figure:: ../figuras/5-whitebox-hsc-level-1.png
+..       :alt: Caja blanca (HtmlSC)
+..       :align: center
+..       :width: 80%
    
-   Caja blanca HtmlSanityChecker - Nivel 1
+..       Caja blanca HtmlSanityChecker - Nivel 1
 
 Razonamiento
-------------
+============
 
 Usamos *descomposición funcional* para separar **responsabilidades**:
 
@@ -30,7 +33,7 @@ Usamos *descomposición funcional* para separar **responsabilidades**:
 * ``Plugins`` y ``GraphicalUI`` encapsulan todos los aspectos de *uso*
 
 Cajas Negras Contenidas
-------------------------
+=======================
 
 .. list-table:: Bloques de Construcción Nivel 1
    :header-rows: 1
@@ -49,23 +52,26 @@ Cajas Negras Contenidas
    * - ``HSC Graphical UI``
      - (planificado, no implementado)
 
-----
+
+
 
 5.2 Bloques de Construcción - Nivel 2
-======================================
+=====================================
 
 5.2.1 HSC Core (Caja Blanca)
------------------------------
+============================
 
-.. figure:: ../figuras/5-2-1-hsc-core.png
-   :alt: HSC-Core (Caja blanca)
-   :align: center
-   :width: 80%
+.. .. figure:: ../figuras/5-2-1-hsc-core.png
+..       :alt: HSC-Core (Caja blanca)
+..       :align: center
+..       :width: 80%
    
-   Caja blanca HSC Core - Nivel 2
+..       Caja blanca HSC Core - Nivel 2
+
+.. _hsc-core-razonamiento:
 
 Razonamiento
-^^^^^^^^^^^^
+============
 
 La **estructura interna** de ``HSC Core`` sigue una **descomposición** funcional:
 
@@ -75,8 +81,10 @@ La **estructura interna** de ``HSC Core`` sigue una **descomposición** funciona
 * Creación de sugerencias
 * Recolección de resultados de verificación
 
+.. _hsc-core-cajas-negras:
+
 Cajas Negras Contenidas
-^^^^^^^^^^^^^^^^^^^^^^^^
+=======================
 
 .. list-table:: Bloques de Construcción HSC Core
    :header-rows: 1
@@ -96,14 +104,14 @@ Cajas Negras Contenidas
      - En caso de problemas de verificación, sugiere alternativas (*¿quisiste decir xyz?*). Las sugerencias se incluyen en los resultados.
 
 5.2.1.1 Checker (Caja Negra)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+============================
 
 La clase abstracta ``Checker`` proporciona la **interfaz** uniforme (``public void check()``) a diferentes algoritmos de verificación.
 
 Basado en polimorfismo, la verificación real es manejada por subclases de la clase abstracta ``Checker``, usa el patrón template-method. Usa el concepto de algoritmos de verificación extensibles.
 
 5.2.1.2 Suggester (Caja Negra)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+==============================
 
 Para una entrada dada (*target*), ``Suggester`` busca dentro de un conjunto de valores posibles (*options*) para encontrar los n valores más similares. Por ejemplo:
 
@@ -120,23 +128,26 @@ La implementación se basa en la `distancia Jaro-Winkler <https://en.wikipedia.o
 
 Fuente: ``package org.aim42.htmlsanitycheck.suggest.Suggester``
 
-----
+
+
 
 5.3 Bloques de Construcción - Nivel 3
-======================================
+=====================================
 
 5.3.1 ResultsCollector (Caja Blanca)
--------------------------------------
+====================================
 
-.. figure:: ../figuras/5-3-results-collector.png
-   :alt: Results Collector (Caja blanca)
-   :align: center
-   :width: 80%
+.. .. figure:: ../figuras/5-3-results-collector.png
+..       :alt: Results Collector (Caja blanca)
+..       :align: center
+..       :width: 80%
    
-   Caja blanca ResultsCollector - Nivel 3
+..       Caja blanca ResultsCollector - Nivel 3
+
+.. _resultscollector-razonamiento:
 
 Razonamiento
-^^^^^^^^^^^^
+============
 
 Esta estructura sigue la jerarquía de verificaciones, administrando resultados para:
 
@@ -144,8 +155,10 @@ Esta estructura sigue la jerarquía de verificaciones, administrando resultados 
 2. Una sola página HTML (``SinglePageResults``) y finalmente
 3. Los resultados de una sola verificación, por ejemplo, el ``MissingImagesChecker`` (``SingleCheckResults``)
 
+.. _resultscollector-cajas-negras:
+
 Cajas Negras Contenidas
-^^^^^^^^^^^^^^^^^^^^^^^^
+=======================
 
 .. list-table:: Bloques de Construcción ResultsCollector
    :header-rows: 1
@@ -162,13 +175,15 @@ Cajas Negras Contenidas
    * - ``Finding``
      - Un solo hallazgo (por ejemplo, "imagen 'logo.png' faltante"). Puede contener sugerencias.
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_05` - Vista de Bloques de Construcción
    * :ref:`seccion_5_1` - Caja Blanca del Sistema General
 
-----
+
+
 
 :Ejemplo: HTML Sanity Checker
 :Sistema: HtmlSC

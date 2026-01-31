@@ -1,16 +1,19 @@
 .. _seccion_04:
 
-============================================================
+
+
 4. Estrategia de Solución
 
-============================================================
+
+
 
 .. note::
  **Traducción con Paso 3.4 (Traducción Arquitectónica)**
 
  Esta sección aplica terminología arquitectónica coherente con arc42.
 
-----
+
+
 
 Contenido
 =========
@@ -53,7 +56,8 @@ Podrías usar una lista de **enfoques de solución** o una tabla similar a la si
    - *<Texto>*
    - *<Enlace>*
 
-----
+
+
 
 Plantilla
 =========
@@ -61,15 +65,16 @@ Plantilla
 .. code-block:: text
 
  4. Estrategia de Solución
- =========================
+==========================
 
  <inserta estrategia de solución>
 
- _lista o tabla_
+ *lista o tabla*
 
 Ver ejemplos a continuación para casos reales de estrategias de solución.
 
-----
+
+
 
 Ejemplos
 ========
@@ -93,7 +98,8 @@ Tips y Consejos
  estrategia_tip_5
  estrategia_tip_6
 
-----
+
+
 
 Referencias
 ===========
@@ -102,7 +108,8 @@ Referencias
 * **Sección 5:** Vistas de Bloques de Construcción (detalles estructurales)
 * **Sección 8:** Conceptos Transversales
 
-----
+
+
 
 .. note::
  **Términos Arquitectónicos Clave (Paso 3.4):**

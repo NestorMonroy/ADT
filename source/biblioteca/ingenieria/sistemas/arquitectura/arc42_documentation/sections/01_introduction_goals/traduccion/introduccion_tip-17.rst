@@ -7,16 +7,19 @@
 
 .. _introduccion-tip-17:
 
-===================================================================
+
+
+
 Consejo 1-17: ¡Combina con estrategia de solución!
-===================================================================
+==================================================
 
 :Subtítulo: Atributos de calidad objetivo y decisiones arquitectónicas
 :Tema: Relación entre calidad y decisiones
 :Categoría: Requisitos
 :Audiencia: Arquitectos
 
-----
+
+
 
 Recomendación
 =============
@@ -32,7 +35,8 @@ Proponemos que pongas tal tabla en la sección 4 de arc42 (estrategia de soluci�
 Aquí, en la sección 1.2 de arc42 (atributos de calidad objetivo), entonces solo
 agregas una referencia.
 
-----
+
+
 
 .. note::
  **Información de traducción:**

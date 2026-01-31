@@ -1,6 +1,6 @@
-===============================================
+
 Signifiant vs Signifié: Forma vs Contenido
-===============================================
+==========================================
 
 :Categoría: Fundamentos Conceptuales
 :Ubicación: 01_fundamentos/_fundamentos_conceptuales/
@@ -11,7 +11,8 @@ Signifiant vs Signifié: Forma vs Contenido
  :depth: 2
  :local:
 
-----
+
+
 
 Introducción
 ============
@@ -23,13 +24,14 @@ Introducción
 Esta dicotomía, expresada en términos lingüísticos como **Signifiant** (significante)
 vs **Signifié** (significado), es la decisión más importante en traducción.
 
-----
+
+
 
 Definiciones
 ============
 
 Signifiant (Significante)
---------------------------
+=========================
 
 **Definición:**
  La FORMA externa, observable, del signo lingüístico.
@@ -59,7 +61,7 @@ Signifiant (Significante)
  La sintaxis {contenido}
 
 Signifié (Significado)
-----------------------
+======================
 
 **Definición:**
  El CONTENIDO conceptual, el significado al que apunta el signo.
@@ -87,13 +89,14 @@ Signifié (Significado)
  Concepto: Esta palabra debe destacarse
  Función: Llamar la atención del lector
 
-----
+
+
 
 La Dicotomía en Traducción
-===========================
+==========================
 
 Preferencia por Signifiant (Traducción Literal)
-------------------------------------------------
+===============================================
 
 **Características:**
 
@@ -137,7 +140,7 @@ Preferencia por Signifiant (Traducción Literal)
  # Problema: Preserva forma pero pierde funcionalidad
 
 Preferencia por Signifié (Traducción Funcional)
-------------------------------------------------
+===============================================
 
 **Características:**
 
@@ -179,13 +182,14 @@ Preferencia por Signifié (Traducción Funcional)
  # Preserva: Lista numerada (Signifié) [OK]
  # Adapta: Sintaxis natural de RST (Signifiant) [OK]
 
-----
+
+
 
 Aplicación al Método Peshitta
-==============================
+=============================
 
 Decisión de Micheli
--------------------
+===================
 
 En su análisis de Peshitta Zacarías, Micheli identifica:
 
@@ -193,11 +197,11 @@ En su análisis de Peshitta Zacarías, Micheli identifica:
 
 .. code-block:: text
 
- Método por Defecto:
- -------------------
- 1. Segmentación: Nivel de frase
- 2. Rendición: Nivel de palabra
- 3. Preferencia: SIGNIFIÉ (contenido) sobre SIGNIFIANT (forma)
+   Método por Defecto:
+   ====================
+   1. Segmentación: Nivel de frase
+   2. Rendición: Nivel de palabra
+   3. Preferencia: SIGNIFIÉ (contenido) sobre SIGNIFIANT (forma)
 
 **Ejemplo del análisis:**
 
@@ -213,7 +217,7 @@ En su análisis de Peshitta Zacarías, Micheli identifica:
  - Relaciones semánticas (Signifié)
 
 Aplicación a ADT
-----------------
+================
 
 **Adoptamos la misma preferencia:**
 
@@ -234,13 +238,14 @@ Aplicación a ADT
  -> Si NO: omitir
  -> Si SÍ: convertir a equivalente semántico RST
 
-----
+
+
 
 Ejemplos Concretos en ADT
-==========================
+=========================
 
 Ejemplo 1: Énfasis
-------------------
+==================
 
 **Caso:** ``\textbf{}`` y ``\emph{}``
 
@@ -264,7 +269,7 @@ Ejemplo 1: Énfasis
 - **Signifié preservado:** "Énfasis fuerte" [OK]
 
 Ejemplo 2: Listas
------------------
+=================
 
 **Caso:** Listas numeradas
 
@@ -285,7 +290,7 @@ Ejemplo 2: Listas
 **Signifié preservado:** "Lista ordenada con ítems numerados"
 
 Ejemplo 3: Títulos de Sección
-------------------------------
+=============================
 
 **Caso:** Jerarquía de secciones
 
@@ -298,11 +303,12 @@ Ejemplo 3: Títulos de Sección
 .. code-block:: rst
 
  # RST
+
  Título
- ======
+=======
 
  Subtítulo
- ---------
+==========
 
 **Análisis:**
 
@@ -320,7 +326,7 @@ Ejemplo 3: Títulos de Sección
 **Decisión:** Preservar Signifié (jerarquía), adaptar Signifiant (sintaxis)
 
 Ejemplo 4: Referencias Cruzadas
---------------------------------
+===============================
 
 **Caso:** Referencias internas
 
@@ -340,7 +346,7 @@ Ejemplo 4: Referencias Cruzadas
 - **Signifié:** "Referencia a sección de introducción" -> **Preservado** [OK]
 
 Ejemplo 5: Caso Problemático - Espaciado Vertical
---------------------------------------------------
+=================================================
 
 **Caso:** ¿Preservar espacios verticales explícitos?
 
@@ -371,13 +377,14 @@ C. **Signifiant:** No semántico, puramente visual
 
 **Decisión en ADT:** Generalmente opción C (omitir), excepto si añade valor semántico.
 
-----
+
+
 
 Tácticas Basadas en Signifiant/Signifié
-========================================
+=======================================
 
 Táctica 1: Sustitución
-----------------------
+======================
 
 **Definición:** Cambiar Signifiant, preservar Signifié
 
@@ -391,7 +398,7 @@ Táctica 1: Sustitución
  Cambia: Sintaxis (Signifiant)
 
 Táctica 2: Adición (para Claridad)
------------------------------------
+==================================
 
 **Definición:** Agregar Signifiant para aclarar Signifié
 
@@ -410,7 +417,7 @@ Táctica 2: Adición (para Claridad)
  Justificación: Aumentar claridad
 
 Táctica 3: Omisión (de Signifiant No Semántico)
-------------------------------------------------
+===============================================
 
 **Definición:** Eliminar Signifiant que no aporta Signifié
 
@@ -431,7 +438,7 @@ Táctica 3: Omisión (de Signifiant No Semántico)
  Justificación: RST no tiene sangría de párrafo por defecto
 
 Táctica 4: Explicación (Expandir Signifié)
--------------------------------------------
+==========================================
 
 **Definición:** Hacer explícito Signifié implícito
 
@@ -449,7 +456,8 @@ Táctica 4: Explicación (Expandir Signifié)
  Signifié expandido: "[1]" -> "Smith (2020)"
  Justificación: Claridad para el lector
 
-----
+
+
 
 Matriz de Decisión
 ==================
@@ -480,7 +488,8 @@ Matriz de Decisión
    - [WARNING] Depende
    - [OK] Sí (contenido)
 
-----
+
+
 
 Conclusión
 ==========
@@ -518,7 +527,8 @@ Esta preferencia por Signifié justifica decisiones como:
 - ``\ref{}`` -> ``:ref:`` (función de referencia preservada)
 - ``\noindent`` -> [omitido] (no semántico en RST)
 
-----
+
+
 
 Referencias
 ===========
@@ -528,7 +538,8 @@ Referencias
 - Saussure, F. (1916). Course in General Linguistics
 - Micheli, D. (2014). Translation Technique in Peshitta Zechariah
 
-----
+
+
 
 **Versión:** 1.0
 **Fecha:** 2026-01-27

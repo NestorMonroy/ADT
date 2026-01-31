@@ -1,4 +1,4 @@
-=============================
+
 Fundamentos de Traducción ADT
 =============================
 
@@ -7,7 +7,8 @@ Fundamentos de Traducción ADT
  proyecto ADT, basados en el Método Peshitta (Micheli, 2014) y estándares
  ISO 1087/704.
 
-----
+
+
 
 Introducción
 ============
@@ -15,11 +16,13 @@ Introducción
 Los fundamentos de ADT establecen la base metodológica para traducción técnica
 de alta calidad, combinando:
 
+
 - **Translation Studies** (50+ años de investigación)
 - **MDA/MDE** (Model-Driven Architecture)
 - **ISO 1087/704** (Terminología y metodologías)
 
-----
+
+
 
 Documentos Principales
 ======================
@@ -33,10 +36,11 @@ Documentos Principales
  objetivos_tacticas
  metodo_segmentacion
 
-----
+
+
 
 Base Teórica (Carpetas Privadas)
-=================================
+================================
 
 **Fundamentos Conceptuales** (_fundamentos_conceptuales/)
  Base teórica según ISO 1087
@@ -54,10 +58,11 @@ Base Teórica (Carpetas Privadas)
 
  - :doc:`_metadata/micheli_2014`
 
-----
+
+
 
 Modelos de Alto Nivel
-======================
+=====================
 
 .. toctree::
  :maxdepth: 2
@@ -65,13 +70,14 @@ Modelos de Alto Nivel
 
  metamodelos/framework_universal_transformacion
 
-----
+
+
 
 Conceptos Clave
 ===============
 
 Isomorfismo Fundamental
------------------------
+=======================
 
 **Traducción ≈ Transformación de Modelos**
 
@@ -84,7 +90,7 @@ Isomorfismo Fundamental
 **Base:** 50+ años Translation Studies aplicados a ingeniería de software
 
 Los Tres Pilares del Método
-----------------------------
+===========================
 
 1. **Segmentación**
 
@@ -99,9 +105,10 @@ Los Tres Pilares del Método
  Signifié (contenido) sobre Signifiant (forma)
 
 Los Cuatro Objetivos
----------------------
+====================
 
 Razones para desviarse del método por defecto:
+
 
 1. **Domesticación** - Adaptar a plataforma destino
 2. **Claridad** - Hacer comprensible
@@ -109,9 +116,10 @@ Razones para desviarse del método por defecto:
 4. **Simplificación** - Reducir complejidad
 
 Las 14+ Tácticas
-----------------
+================
 
 Operaciones concretas para lograr objetivos:
+
 
 - Adición, Omisión, Sustitución
 - Cambio de orden, Especificación, Generalización
@@ -119,7 +127,8 @@ Operaciones concretas para lograr objetivos:
 - Modulación, Compensación, Amplificación
 - Condensación, Literalización
 
-----
+
+
 
 Flujo de Aprendizaje
 ====================
@@ -146,32 +155,34 @@ Flujo de Aprendizaje
 
  Procedimiento paso a paso
 
-----
+
+
 
 Conexiones con Otros Documentos
-================================
+===============================
 
 Documentos Maestros
--------------------
+===================
 
 - :doc:`/docs_maestros/METODO_TRADUCCION_PESHITTA_ZACHARIAS`
 - :doc:`/docs_maestros/SINTESIS_METODOLOGICA_ADT`
 - :doc:`/docs_maestros/ARQUITECTURA_TRADUCCION_IACT`
 
 Procedimientos
---------------
+==============
 
 - :doc:`/02_procedimientos/workflow_general`
 - :doc:`/02_procedimientos/modo_alta_fidelidad/index`
 - :doc:`/02_procedimientos/modo_marcado_visual/index`
 
 Prompts
--------
+=======
 
 - :doc:`/08_prompts/prompt_maestro_latex`
 - :doc:`/08_prompts/prompt_maestro_sphinx`
 
-----
+
+
 
 Resumen Visual
 ==============
@@ -179,7 +190,7 @@ Resumen Visual
 .. code-block:: text
 
  FUNDAMENTOS ADT
- ===========================================================
+ ================
 
  BASE TEÓRICA (Carpetas Privadas _)
  +- Fundamentos Conceptuales (ISO 1087)
@@ -203,7 +214,8 @@ Resumen Visual
  +-> Procedimientos (02_procedimientos/)
  +-> Prompts (08_prompts/)
 
-----
+
+
 
 Referencias
 ===========
@@ -224,7 +236,8 @@ Referencias
 - OMG (2003). MDA Guide v1.0.1
 - MOF (Meta Object Facility)
 
-----
+
+
 
 **Versión:** 1.0
 **Fecha:** 2026-01-27

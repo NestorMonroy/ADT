@@ -1,8 +1,10 @@
 .. _introduccion-ejemplo-3:
 
-===================================================================
+
+
+
 Ejemplo de Vista General: Unidad de Persecución de Tráfico
-===================================================================
+==========================================================
 
 .. meta::
    :layout: post
@@ -18,11 +20,13 @@ Ejemplo de Vista General: Unidad de Persecución de Tráfico
    se presenta una tabla de objetivos clave del proyecto y una vista general 
    de la funcionalidad mostrada como diagrama de casos de uso con tabla adjunta.
 
-----
+
+
 
 1. Introducción
 
-===============
+
+
 
 Este documento describe la Unidad de Persecución de Tráfico, en inglés Traffic 
 Pursuit Unit (TPU), que es un dispositivo de medición de velocidad equipado con 
@@ -66,17 +70,18 @@ Se han establecido los siguientes objetivos para este sistema:
      - El rango de temperatura operable debe ampliarse a un rango de al menos 
        -25 a 85 grados Celsius
 
-----
+
+
 
 1.1 Requisitos
 ==============
 
-.. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/tpu-1-UseCases.jpg
-   :alt: Introducción - Casos de Uso
-   :align: center
-   :width: 80%
+.. .. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/tpu-1-UseCases.jpg
+..       :alt: Introducción - Casos de Uso
+..       :align: center
+..       :width: 80%
 
-   Diagrama de Casos de Uso del sistema TPU
+..       Diagrama de Casos de Uso del sistema TPU
 
 .. list-table:: Requisitos Funcionales
    :header-rows: 1
@@ -112,7 +117,8 @@ Se han establecido los siguientes objetivos para este sistema:
      - En estado inactivo, el sistema debe mostrar información por defecto 
        como fecha y hora y la velocidad actual
 
-----
+
+
 
 .. note::
    **Información de traducción:**

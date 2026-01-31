@@ -1,8 +1,10 @@
 .. _cheatsheet_rst:
 
-===============================================
+
+
+
 Cheatsheet reStructuredText
-===============================================
+===========================
 
 :Tipo: Referencia Rápida
 :Uso: Mantener abierto durante traducción
@@ -12,45 +14,46 @@ Cheatsheet reStructuredText
  :depth: 2
  :local:
 
-----
+
+
 
 Encabezados y Títulos
 =====================
 
 Niveles de Sección
-------------------
+==================
 
 .. code-block:: rst
 
- #################
- Parte (Nivel 0)
- #################
+   Parte (Nivel 0)
+   ================
 
- *******************
- Capítulo (Nivel 1)
- *******************
+   *******************
+   Capítulo (Nivel 1)
+   *******************
 
- Sección (Nivel 2)
- =================
+   Sección (Nivel 2)
+   ==================
 
- Subsección (Nivel 3)
- --------------------
+   Subsección (Nivel 3)
+   =====================
 
- Sub-subsección (Nivel 4)
- ^^^^^^^^^^^^^^^^^^^^^^^^
+   Sub-subsección (Nivel 4)
+   =========================
 
- Párrafo (Nivel 5)
- """""""""""""""""
+   Párrafo (Nivel 5)
+   ==================
 
 **Regla:** Subrayado debe tener ≥ longitud del título
 
-----
+
+
 
 Formato de Texto
 ================
 
 Énfasis y Estilos
------------------
+=================
 
 .. code-block:: rst
 
@@ -64,13 +67,14 @@ Formato de Texto
 
 **Nota:** Debe haber espacio o puntuación alrededor del marcador
 
-----
+
+
 
 Listas
 ======
 
 Lista No Numerada
------------------
+=================
 
 .. code-block:: rst
 
@@ -79,7 +83,7 @@ Lista No Numerada
  - Item 3
 
 Lista Numerada
---------------
+==============
 
 .. code-block:: rst
 
@@ -92,7 +96,7 @@ Lista Numerada
  #. Segundo
 
 Lista Anidada
--------------
+=============
 
 .. code-block:: rst
 
@@ -106,7 +110,7 @@ Lista Anidada
 **Regla:** Línea vacía + 2 espacios para anidar
 
 Lista de Definiciones
----------------------
+=====================
 
 .. code-block:: rst
 
@@ -116,13 +120,14 @@ Lista de Definiciones
  Término 2
  Definición del término 2.
 
-----
+
+
 
 Enlaces y Referencias
 =====================
 
 Enlaces Externos
-----------------
+================
 
 .. code-block:: rst
 
@@ -138,7 +143,7 @@ Enlaces Externos
  .. _Texto del enlace: https://ejemplo.com
 
 Referencias Internas
---------------------
+====================
 
 .. code-block:: rst
 
@@ -146,7 +151,7 @@ Referencias Internas
  .. _mi_seccion:
 
  Mi Sección
- ==========
+===========
 
  # Referenciar
  Ver :ref:`mi_seccion`
@@ -155,7 +160,7 @@ Referencias Internas
  Ver :ref:`el texto aquí <mi_seccion>`
 
 Referencias a Documentos
--------------------------
+========================
 
 .. code-block:: rst
 
@@ -163,20 +168,21 @@ Referencias a Documentos
 
  :doc:`texto personalizado <archivo>`
 
-----
+
+
 
 Bloques de Código
 =================
 
 Código Inline
--------------
+=============
 
 .. code-block:: rst
 
  Use ``código inline`` para comandos o variables.
 
 Bloque de Código
-----------------
+================
 
 .. code-block:: rst
 
@@ -193,7 +199,7 @@ Bloque de Código
  yaml, rst, latex, html, css, cpp, c, rust, go, ruby
 
 Bloque Literal
---------------
+==============
 
 .. code-block:: rst
 
@@ -203,13 +209,14 @@ Bloque Literal
  Preserva espacios
  Y formato
 
-----
+
+
 
 Tablas
 ======
 
 Tabla Simple (ASCII)
---------------------
+====================
 
 .. code-block:: rst
 
@@ -222,7 +229,7 @@ Tabla Simple (ASCII)
  +--------+--------+--------+
 
 Tabla List-Table (Recomendado)
--------------------------------
+==============================
 
 .. code-block:: rst
 
@@ -239,13 +246,14 @@ Tabla List-Table (Recomendado)
 
 **Ventaja:** Más fácil de mantener
 
-----
+
+
 
 Imágenes y Figuras
 ==================
 
 Imagen Simple
--------------
+=============
 
 .. code-block:: rst
 
@@ -254,7 +262,7 @@ Imagen Simple
  :alt: Texto alternativo
 
 Figura con Caption
-------------------
+==================
 
 .. code-block:: rst
 
@@ -264,13 +272,14 @@ Figura con Caption
 
  Caption de la figura aquí.
 
-----
+
+
 
 Admonitions (Cajas de Nota)
-============================
+===========================
 
 Tipos Disponibles
------------------
+=================
 
 .. code-block:: rst
 
@@ -299,7 +308,7 @@ Tipos Disponibles
  Esto es un error.
 
 Admonition Personalizado
--------------------------
+========================
 
 .. code-block:: rst
 
@@ -307,13 +316,14 @@ Admonition Personalizado
 
  Contenido del admonition.
 
-----
+
+
 
 Directivas Comunes
 ==================
 
 Contenidos (TOC)
-----------------
+================
 
 .. code-block:: rst
 
@@ -322,7 +332,7 @@ Contenidos (TOC)
  :local:
 
 Toctree
--------
+=======
 
 .. code-block:: rst
 
@@ -336,14 +346,14 @@ Toctree
  directorio/archivo3
 
 Incluir Archivo
----------------
+===============
 
 .. code-block:: rst
 
  .. include:: otro_archivo.rst
 
 Sidebar
--------
+=======
 
 .. code-block:: rst
 
@@ -351,20 +361,21 @@ Sidebar
 
  Contenido que aparece al lado.
 
-----
+
+
 
 Matemáticas
 ===========
 
 Inline
-------
+======
 
 .. code-block:: rst
 
  Fórmula inline: :math:`E = mc^2`
 
 Display
--------
+=======
 
 .. code-block:: rst
 
@@ -374,13 +385,14 @@ Display
 
  F = ma
 
-----
+
+
 
 Comentarios
 ===========
 
 Comentario Simple
------------------
+=================
 
 .. code-block:: rst
 
@@ -388,7 +400,7 @@ Comentario Simple
  No aparece en la salida
 
 Comentario Multilínea
-----------------------
+=====================
 
 .. code-block:: rst
 
@@ -398,13 +410,14 @@ Comentario Multilínea
 
  Tampoco aparece
 
-----
+
+
 
 Roles Comunes
 =============
 
 Roles de Sphinx
----------------
+===============
 
 .. code-block:: rst
 
@@ -418,13 +431,14 @@ Roles de Sphinx
  :kbd:`Ctrl+C`
  :menuselection:`Archivo --> Guardar`
 
-----
+
+
 
 Caracteres Especiales
 =====================
 
 Escapar Caracteres
-------------------
+==================
 
 .. code-block:: rst
 
@@ -433,7 +447,7 @@ Escapar Caracteres
  Para backslash literal: \\
 
 Espacios No-breaking
---------------------
+====================
 
 .. code-block:: rst
 
@@ -442,13 +456,14 @@ Espacios No-breaking
  .. |nbsp| unicode:: 0xA0
  :trim:
 
-----
+
+
 
 Secciones Especiales
 ====================
 
 Epígrafe (Cita)
----------------
+===============
 
 .. code-block:: rst
 
@@ -459,7 +474,7 @@ Epígrafe (Cita)
  -- Autor
 
 Pull-quote
-----------
+==========
 
 .. code-block:: rst
 
@@ -468,7 +483,7 @@ Pull-quote
  Texto destacado de un párrafo.
 
 Highlights
-----------
+==========
 
 .. code-block:: rst
 
@@ -476,13 +491,14 @@ Highlights
 
  Puntos destacados del documento.
 
-----
+
+
 
 Campos y Metadatos
 ==================
 
 Lista de Campos
----------------
+===============
 
 .. code-block:: rst
 
@@ -491,55 +507,60 @@ Lista de Campos
  :Versión: 1.0
  :Contacto: email@ejemplo.com
 
-----
+
+
 
 Sustituciones
 =============
 
 Definir Sustitución
--------------------
+===================
 
 .. code-block:: rst
 
  .. |nombre| replace:: Texto de reemplazo
 
 Usar Sustitución
-----------------
+================
 
 .. code-block:: rst
 
  El |nombre| aparece aquí.
 
-----
+
+
 
 Líneas y Separadores
 ====================
 
 Línea Horizontal
-----------------
+================
 
 .. code-block:: rst
 
- ----
+
+
 
 Transición
-----------
+==========
 
 .. code-block:: rst
 
  Párrafo antes.
 
- ----
+
+
 
  Párrafo después.
 
-----
+
+
 
 Consejos Rápidos
 ================
 
 Sintaxis Básica
----------------
+===============
 
 .. code-block:: rst
 
@@ -550,30 +571,33 @@ Sintaxis Básica
  [OK] Línea vacía antes de listas anidadas
 
 Errores Comunes
----------------
+===============
 
 .. code-block:: rst
 
- [ERROR] ..note:: (falta espacio)
- [OK] .. note::
+   [ERROR] ..note:: (falta espacio)
+   [OK] .. note::
 
- [ERROR] *texto*fuera (sin espacios)
- [OK] *texto* fuera
+   [ERROR] *texto*fuera (sin espacios)
+   [OK] *texto* fuera
 
- [ERROR] ========= (subrayado corto)
- Título Largo
- =========
- [OK] ==============
- Título Largo
- ==============
+   [ERROR] ========= (subrayado corto)
 
-----
+   Título Largo
+   =============
+   [OK] ==============
+
+   Título Largo
+   =============
+
+
+
 
 Recursos Adicionales
 ====================
 
 Documentación Oficial
----------------------
+=====================
 
 .. code-block:: text
 
@@ -586,68 +610,68 @@ Documentación Oficial
  Sphinx RST Primer:
  https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 
-----
+
+
 
 Plantillas Útiles
 =================
 
 Plantilla de Documento
-----------------------
+======================
 
 .. code-block:: rst
 
- .. _mi_documento:
+   .. _mi_documento:
 
- ===============
- Título Principal
- ===============
+   Título Principal
+   =================
 
- :Autor: Tu Nombre
- :Fecha: |today|
+   :Autor: Tu Nombre
+   :Fecha: |today|
 
- .. contents:: Contenido
- :depth: 2
- :local:
+   .. contents:: Contenido
+      :depth: 2
+      :local:
 
- Introducción
- ============
+   Introducción
+   =============
 
- Contenido aquí.
+   Contenido aquí.
 
- Sección 1
- =========
+   Sección 1
+   ==========
 
- Subsección 1.1
- --------------
+   Subsección 1.1
+   ===============
 
- Contenido.
+   Contenido.
 
  Conclusión
- ==========
+===========
 
  Conclusiones finales.
 
  Referencias
- ===========
+============
 
  .. [1] Referencia 1
  .. [2] Referencia 2
 
 Plantilla de API
-----------------
+================
 
 .. code-block:: rst
 
  .. _funcion_nombre:
 
  ``funcion_nombre()``
- ====================
+=====================
 
  .. code-block:: python
 
- def funcion_nombre(param1, param2):
- """Descripción breve."""
- pass
+    def funcion_nombre(param1, param2):
+        """Descripción breve."""
+        pass
 
  Descripción detallada de la función.
 
@@ -659,12 +683,15 @@ Plantilla de API
  :rtype: tipo
  :raises ValueError: Cuándo se lanza
 
- Ejemplo::
+ Ejemplo de uso:
 
- >>> funcion_nombre(1, 2)
- resultado
+ .. code-block:: python
 
-----
+    >>> funcion_nombre(1, 2)
+    resultado
+
+
+
 
 .. seealso::
  * :doc:`../05_herramientas_medios/equivalencias/latex_rst_equivalencias` - Equivalencias LaTeX->RST

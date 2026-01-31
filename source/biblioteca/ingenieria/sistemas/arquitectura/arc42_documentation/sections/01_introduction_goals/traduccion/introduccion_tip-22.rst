@@ -1,8 +1,10 @@
 .. _introduccion-tip-22:
 
-===================================================================
+
+
+
 Consejo 1-22: ¡Omite duplicar si ya existe!
-===================================================================
+===========================================
 
 .. meta::
    :layout: post
@@ -16,7 +18,8 @@ Consejo 1-22: ¡Omite duplicar si ya existe!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Gestores de proyecto
 
-----
+
+
 
 Recomendación
 =============
@@ -25,7 +28,8 @@ No documentes la tabla de stakeholders si tu gestión ya mantiene una vista gene
 consistente de stakeholders (incluyendo sus respectivas expectativas con respecto 
 al trabajo de arquitectura).
 
-----
+
+
 
 Consideración
 =============
@@ -45,7 +49,8 @@ stakeholders con respecto a la arquitectura y su documentación.
 Por lo tanto, proponemos que los arquitectos usualmente mantengan la tabla de 
 stakeholders ellos mismos...
 
-----
+
+
 
 .. note::
    **Información de traducción:**

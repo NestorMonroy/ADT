@@ -1,22 +1,27 @@
 .. _risks_ejemplo_htmlsc:
 
-===============================================================
+
+
+
 Ejemplo de Riesgos: HTML Sanity Checker
-===============================================================
+=======================================
 
 :Sistema: HTML Sanity Checker (HtmlSC)
 :Categoría: Herramienta de validación HTML
 :Palabras clave: risks, example
 
-----
+
+
 
 Este ejemplo muestra **riesgos** y **deuda técnica** para HTML Sanity Checker (HtmlSC), una herramienta que verifica la sanidad/validez de documentos HTML.
 
-----
+
+
 
 11. Riesgos y Deuda Técnica
 
-============================
+
+
 
 .. note::
  **Observación:** En nuestro pequeño ejemplo no vemos **riesgos** *reales* para arquitectura e implementación.
@@ -37,7 +42,8 @@ Este ejemplo muestra **riesgos** y **deuda técnica** para HTML Sanity Checker (
  * - **Sistema depende de `gradle` - que puede no estar disponible en computadoras objetivo**
    - Aunque el Java Runtime está instalado en muchas computadoras, podría no estar disponible para cada usuario potencial de HtmlSC.
 
-----
+
+
 
 **Análisis de Riesgos Técnicos:**
 
@@ -90,10 +96,11 @@ Este ejemplo muestra **riesgos** y **deuda técnica** para HTML Sanity Checker (
 
  Estado: [WARNING] PARCIALMENTE MITIGADO (standalone JAR existe)
 
-----
+
+
 
 11.2 Riesgos de Negocio o Dominio
-==================================
+=================================
 
 .. list-table:: Riesgos de Negocio
  :header-rows: 1
@@ -104,7 +111,8 @@ Este ejemplo muestra **riesgos** y **deuda técnica** para HTML Sanity Checker (
  * - **Sistema podría volverse obsoleto**
    - En caso de que procesadores AsciiDoc o Markdown implementen verificación HTML nativamente, HtmlSC podría volverse obsoleto.
 
-----
+
+
 
 **Análisis de Riesgos de Negocio:**
 
@@ -118,13 +126,13 @@ Este ejemplo muestra **riesgos** y **deuda técnica** para HTML Sanity Checker (
  Escenarios de Obsolescencia:
 
  1. AsciiDoctor agrega HTML validation nativa
- -> Usuarios de AsciiDoc ya no necesitan HtmlSC
+   -> Usuarios de AsciiDoc ya no necesitan HtmlSC
 
  2. Markdown processors (pandoc, etc.) agregan checks
- -> Usuarios de Markdown migran
+   -> Usuarios de Markdown migran
 
  3. IDEs/editores agregan HTML validation mejorada
- -> Usuarios prefieren solución integrada
+   -> Usuarios prefieren solución integrada
 
  Impacto: Alto (pérdida completa de usuarios)
  Probabilidad: Baja-Media (en 2-5 años)
@@ -132,23 +140,24 @@ Este ejemplo muestra **riesgos** y **deuda técnica** para HTML Sanity Checker (
  Estrategias de Mitigación:
 
  1. DIFERENCIACIÓN
- +- Agregar features únicos (accessibility checks)
- +- Mejor reporting y analytics
- +- Integraciones con herramientas populares
+   +- Agregar features únicos (accessibility checks)
+   +- Mejor reporting y analytics
+   +- Integraciones con herramientas populares
 
  2. ECOSISTEMA
- +- Plugins para editores populares (VS Code, IntelliJ)
- +- Integraciones CI/CD (GitHub Actions, Jenkins)
- +- API pública para terceros
+   +- Plugins para editores populares (VS Code, IntelliJ)
+   +- Integraciones CI/CD (GitHub Actions, Jenkins)
+   +- API pública para terceros
 
  3. PIVOTE
- +- Expandir a validación de otros formatos (XML, JSON)
- +- Ofrecer como servicio (SaaS)
- +- Licenciar a empresas
+   +- Expandir a validación de otros formatos (XML, JSON)
+   +- Ofrecer como servicio (SaaS)
+   +- Licenciar a empresas
 
  Estado: [WARNING] MONITOREAR (review trimestral de competencia)
 
-----
+
+
 
 **Resumen de Riesgos:**
 
@@ -181,7 +190,8 @@ Este ejemplo muestra **riesgos** y **deuda técnica** para HTML Sanity Checker (
    - Baja
    - [WARNING] MONITOREAR
 
-----
+
+
 
 **Lecciones Aprendidas:**
 
@@ -190,7 +200,8 @@ Este ejemplo muestra **riesgos** y **deuda técnica** para HTML Sanity Checker (
 3. **Competencia nativa** es amenaza real para herramientas standalone
 4. **Diversificación** de funcionalidad protege contra obsolescencia
 
-----
+
+
 
 .. seealso::
  * **Ejemplo TPU** - Riesgos en sistema embebido más complejo

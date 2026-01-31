@@ -11,9 +11,11 @@
 
 .. _proc-002-workflow-general-v1-6-0:
 
-=============================
+
+
+
 Workflow General de Traducción
-=============================
+==============================
 
 :Versión: 1.6.0
 :Categoría: Procedimientos
@@ -35,16 +37,19 @@ Workflow General de Traducción
  :depth: 3
  :local:
 
-----
+
+
 
 [TARGET] CAMBIOS IMPORTANTES EN v1.6.0
-=================================
+======================================
 
 .. important::
+ 
  **FASE 5.5: Documentación de Sección (NUEVA - OBLIGATORIA)**
 
  Después de completar una sección/capítulo, SIEMPRE crear:
 
+ 
  1. **section-X.txt** - Documento de referencia completo
  2. **section-X.json** - Metadata estructurada
  3. **Verificar completitud** contra documento original
@@ -54,6 +59,7 @@ Workflow General de Traducción
  rápida sin compilar, y facilitar auditorías de completitud.
 
 .. note::
+ 
  **Lecciones Aprendidas - Sección 01 (arc42):**
 
  - [OK] Verificar SIEMPRE contra documento original completo
@@ -62,10 +68,11 @@ Workflow General de Traducción
  - [OK] Subsecciones de plantilla son PARTE del contenido
  - [OK] Mantener consistencia con secciones previas
 
-----
+
+
 
 Resumen General del Workflow
-=============================
+============================
 
 **Diagrama de Fases:**
 
@@ -111,12 +118,14 @@ Resumen General del Workflow
 
 **Tiempo estimado total:** 3-6 horas por capítulo (depende de complejidad)
 
-----
+
+
 
 FASE 5.5: Documentación de Sección (NUEVA - OBLIGATORIA)
-==========================================================
+========================================================
 
 .. important::
+ 
  **CUÁNDO EJECUTAR:**
 
  - Después de traducir TODA una sección/capítulo completo
@@ -125,9 +134,11 @@ FASE 5.5: Documentación de Sección (NUEVA - OBLIGATORIA)
  - ANTES de pasar a la siguiente sección
 
 .. warning::
+ 
  **NUNCA OMITIR ESTA FASE**
 
  Sin esta fase:
+ 
  - [ERROR] No hay forma de verificar completitud
  - [ERROR] Inconsistencia entre secciones
  - [ERROR] Pérdida de contenido (subsecciones, plantillas)
@@ -135,9 +146,10 @@ FASE 5.5: Documentación de Sección (NUEVA - OBLIGATORIA)
  - [ERROR] Dificulta auditorías futuras
 
 Paso 5.5.1: Verificación de Completitud
---------------------------------------------
+=======================================
 
 .. important::
+ 
  **ESTE ES EL PASO MÁS CRÍTICO DE LA FASE 5.5**
 
  Verificar que TODO el contenido del documento original esté traducido.
@@ -213,9 +225,11 @@ Paso 5.5.1: Verificación de Completitud
 **Ejemplo - Lección de Sección 01 (arc42):**
 
 .. note::
+ 
  **CASO REAL - Lo que descubrimos:**
 
  Inicialmente tradujimos:
+ 
  - [OK] 4 ejemplos
  - [OK] 24 tips
  - [ERROR] FALTABAN las 3 subsecciones de plantilla (1.1, 1.2, 1.3)
@@ -229,9 +243,10 @@ Paso 5.5.1: Verificación de Completitud
  no asumir que todo está traducido.
 
 Paso 5.5.2: Creación de section-X.txt
-------------------------------------------
+=====================================
 
 .. important::
+ 
  **ARCHIVO OBLIGATORIO**
 
  Cada sección DEBE tener un archivo section-X.txt con el contenido
@@ -249,61 +264,63 @@ Paso 5.5.2: Creación de section-X.txt
 
 .. code-block:: text
 
- ================================================================================
- SECTION X: [TÍTULO EN INGLÉS]
- ================================================================================
- arc42 / [Nombre del Libro]
- Translated to Spanish | Método Peshitta + Workflow v1.X.X
- ================================================================================
+   SECTION X: [TÍTULO EN INGLÉS]
+   ==============================
+   arc42 / [Nombre del Libro]
 
- SOURCE DOCUMENT: section-X ([Título])
- TRANSLATION DATE: YYYY-MM-DD
- WORKFLOW VERSION: v1.X.X
- STATUS: [OK] 100% COMPLETE (X files)
+   Translated to Spanish | Método Peshitta + Workflow v1.X.X
+   ==========================================================
 
- ================================================================================
- CONTENT OVERVIEW
- ================================================================================
+   SOURCE DOCUMENT: section-X ([Título])
+   TRANSLATION DATE: YYYY-MM-DD
+   WORKFLOW VERSION: v1.X.X
+   STATUS: [OK] 100% COMPLETE (X files)
 
- [Descripción general del contenido de la sección]
 
- ================================================================================
- STRUCTURE
- ================================================================================
+   CONTENT OVERVIEW
+   =================
 
- SECTION X: [TÍTULO]
- |
- +- X.1 [SUBSECCIÓN 1]
- | +- [Descripción]
- |
- +- X.2 [SUBSECCIÓN 2]
- | +- [Descripción]
- |
- +- X.3 [SUBSECCIÓN 3]
- +- [Descripción]
+   [Descripción general del contenido de la sección]
 
- ================================================================================
- TRANSLATED FILES (X TOTAL)
- ================================================================================
 
- SUBSECTIONS (X files):
- ------------------------------------------------------------------------
- 1. seccion_X_1.rst
- - X.1 [Título]
- - [Descripción]
- - Terminology: "term" -> "traducción"
+   STRUCTURE
+   ==========
 
- EXAMPLES (X files):
- ------------------------------------------------------------------------
- ...
+   SECTION X: [TÍTULO]
+   |
+   +- X.1 [SUBSECCIÓN 1]
+   |  +- [Descripción]
+   |
+   +- X.2 [SUBSECCIÓN 2]
+   |  +- [Descripción]
+   |
+   +- X.3 [SUBSECCIÓN 3]
+      +- [Descripción]
 
- TIPS (X files):
- ------------------------------------------------------------------------
- ...
 
- ================================================================================
+   TRANSLATED FILES (X TOTAL)
+   ===========================
+
+   SUBSECTIONS (X files):
+   =======================
+   1. seccion_X_1.rst
+      - X.1 [Título]
+      - [Descripción]
+      - Terminology: "term" -> "traducción"
+
+   EXAMPLES (X files):
+
+
+   TIPS (X files):
+
+
+
+
+
+
+
  ARCHITECTURAL TERMINOLOGY (Step 3.4 Applied)
- ================================================================================
+=============================================
 
  CRITICAL TRANSLATIONS:
  +---------------------+----------------------------------------------+
@@ -313,9 +330,11 @@ Paso 5.5.2: Creación de section-X.txt
  | | [ERROR] NOT "[traducción literal incorrecta]" |
  +---------------------+----------------------------------------------+
 
- ================================================================================
+
+
+
  SUBSECTION X.1: [TÍTULO]
- ================================================================================
+=========================
 
  CONTENT:
  [Qué contiene]
@@ -330,42 +349,53 @@ Paso 5.5.2: Creación de section-X.txt
  [Ejemplos disponibles]
 
  TEMPLATE:
- ```
+==========
+
  [Plantilla lista para copiar]
- ```
+==============================
 
  [Repetir para cada subsección]
 
- ================================================================================
+
+
+
  TRANSLATION STATISTICS
- ================================================================================
+=======================
 
  [Métricas de traducción]
 
- ================================================================================
+
+
+
  REFERENCES
- ================================================================================
+===========
 
  [Referencias oficiales]
 
- ================================================================================
+
+
+
  LICENSE
- ================================================================================
+========
 
  Original content: [Licencia]
  Translation: [Licencia]
 
- ================================================================================
+
+
+
  TRANSLATION INFORMATION
- ================================================================================
+========================
 
  Method: Peshitta Method + ADT Workflow v1.X.X
  Date: YYYY-MM-DD
  Status: [OK] 100% COMPLETE
 
- ================================================================================
+
+
+
  END OF SECTION X CONTENT
- ================================================================================
+=========================
 
 **Ubicación:**
 
@@ -392,9 +422,10 @@ Paso 5.5.2: Creación de section-X.txt
  # Debe tener ~500-1000 líneas dependiendo del contenido
 
 Paso 5.5.3: Creación de section-X.json
--------------------------------------------
+======================================
 
 .. important::
+ 
  **ARCHIVO OBLIGATORIO**
 
  Cada sección DEBE tener un archivo section-X.json con metadata
@@ -547,9 +578,10 @@ Paso 5.5.3: Creación de section-X.json
  python3 -m json.tool section-X.json > /dev/null && echo "[OK] JSON válido" || echo "[ERROR] JSON inválido"
 
 Paso 5.5.4: Actualización de Archivo Principal
---------------------------------------------------
+==============================================
 
 .. important::
+ 
  **ACTUALIZAR TOCTREE**
 
  El archivo principal de la sección debe tener el toctree completo
@@ -572,7 +604,7 @@ Paso 5.5.4: Actualización de Archivo Principal
  .. code-block:: rst
 
  Subsecciones de la Plantilla
- =============================
+=============================
 
  .. toctree::
  :maxdepth: 2
@@ -582,7 +614,7 @@ Paso 5.5.4: Actualización de Archivo Principal
  seccion_X_3
 
  Ejemplos Prácticos
- ==================
+===================
 
  .. toctree::
  :maxdepth: 1
@@ -591,39 +623,40 @@ Paso 5.5.4: Actualización de Archivo Principal
  ejemplo_2
 
  Tips y Consejos
- ===============
+================
 
  .. toctree::
  :maxdepth: 1
 
  tip_1
+
  tip_2
- ...
+======
  tip_N
 
 3. **Agregar nota de estado:**
 
  .. code-block:: rst
 
- .. note::
- **Estado de traducción:**
+    .. note::
+       **Estado de traducción:**
 
- - [OK] Subsecciones: X/X
- - [OK] Ejemplos: X/X
- - [OK] Tips: X/X
+       - [OK] Subsecciones: X/X
+       - [OK] Ejemplos: X/X
+       - [OK] Tips: X/X
 
- ** SECCIÓN XX COMPLETADA: XX/XX archivos (100%) **
+    ** SECCIÓN XX COMPLETADA: XX/XX archivos (100%) **
 
 4. **Actualizar metadata del archivo:**
 
  .. code-block:: rst
 
- :Sección: XX - [Nombre]
- :Estado: [OK] 100% COMPLETADO (XX archivos)
- :Workflow: v1.X.X
+    :Sección: XX - [Nombre]
+    :Estado: [OK] 100% COMPLETADO (XX archivos)
+    :Workflow: v1.X.X
 
 Paso 5.5.5: Checklist Final de FASE 5.5
-------------------------------------------
+=======================================
 
 .. code-block:: text
 
@@ -660,12 +693,14 @@ Paso 5.5.5: Checklist Final de FASE 5.5
 
 **Si algo está [ERROR] -> Regresar al paso correspondiente**
 
-----
+
+
 
 Lecciones Aprendidas - Sección 01 (arc42)
-==========================================
+=========================================
 
 .. note::
+ 
  **PROCESO REAL - Qué funcionó y qué no:**
 
 **[OK] Lo que FUNCIONÓ:**
@@ -763,10 +798,11 @@ Lecciones Aprendidas - Sección 01 (arc42)
  - Paso 3.4 aplicado: Sí
  - Traducciones literales: 0
 
-----
+
+
 
 Checklist General Actualizado (v1.6.0)
-=======================================
+======================================
 
 .. code-block:: text
 
@@ -811,9 +847,11 @@ Checklist General Actualizado (v1.6.0)
 
 **Si TODO está [OK] -> Sección COMPLETA**
 
-----
+
+
 
 .. important::
+ 
  **RESUMEN DE CAMBIOS v1.6.0:**
 
  1. [OK] FASE 5.5 agregada (OBLIGATORIA)
@@ -827,9 +865,11 @@ Checklist General Actualizado (v1.6.0)
  **Propósito:** Garantizar que NO se pierda contenido y mantener
  consistencia entre secciones.
 
-----
+
+
 
 .. note::
+ 
  **Para documentación completa del Workflow v1.5.0 (sin cambios):**
 
  Ver: :doc:`/02_procedimientos/workflow_general_v1_5_0_backup`
@@ -839,10 +879,11 @@ Checklist General Actualizado (v1.6.0)
  - v1.5.0: Hasta FASE 5 (Validación)
  - v1.6.0: Agrega FASE 5.5 (Documentación de Sección) - OBLIGATORIA
 
-----
+
+
 
 Historial de Versiones
-=======================
+======================
 
 .. list-table::
  :header-rows: 1
@@ -881,9 +922,11 @@ Historial de Versiones
    - MAJOR
    - Versión inicial
 
-----
+
+
 
 .. note::
+ 
  **Información del documento:**
 
  :Versión: 1.6.0

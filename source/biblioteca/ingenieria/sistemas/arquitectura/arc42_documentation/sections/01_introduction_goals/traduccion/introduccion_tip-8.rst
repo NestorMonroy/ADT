@@ -1,8 +1,10 @@
 .. _introduccion-tip-8:
 
-===================================================================
+
+
+
 Consejo 1-8: ¡Usa una lista numerada!
-===================================================================
+=====================================
 
 .. meta::
    :layout: post
@@ -16,7 +18,8 @@ Consejo 1-8: ¡Usa una lista numerada!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Analistas
 
-----
+
+
 
 Recomendación
 =============
@@ -36,7 +39,8 @@ de la siguiente manera:
 
 4. Crear factura
 
-----
+
+
 
 Consideración
 =============
@@ -44,7 +48,8 @@ Consideración
 En caso de que tengas que describir procesos concurrentes, los diagramas de 
 actividad (ver :ref:`introduccion-tip-6`) son la mejor opción.
 
-----
+
+
 
 .. note::
    **Información de traducción:**

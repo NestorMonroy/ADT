@@ -1,9 +1,11 @@
 .. _seccion_05:
 
-============================================================
+
+
 5. Vista de Bloques de Construcción
 
-============================================================
+
+
 
 .. note::
  **Traducción con Paso 3.4 (Traducción Arquitectónica)**
@@ -18,7 +20,8 @@
  Traducción: Método Peshitta + Paso 3.4
  Workflow: v1.6.0
 
-----
+
+
 
 Contenido
 =========
@@ -40,18 +43,19 @@ Forma
 
 La **vista de bloques de construcción** es una colección jerárquica de **cajas blancas** y **cajas negras** (ver figura abajo) y sus descripciones.
 
-.. figure:: ../figuras/05-building-block-hierarchy.png
- :alt: Jerarquía de bloques de construcción
- :align: center
- :width: 80%
+.. .. figure:: ../figuras/05-building-block-hierarchy.png
+..     :alt: Jerarquía de bloques de construcción
+..     :align: center
+..     :width: 80%
 
- Alcance y Contexto, Diagrama de Nivel 1 y Nivel 2
+..     Alcance y Contexto, Diagrama de Nivel 1 y Nivel 2
 
 * **Nivel 1** es la descripción de **caja blanca** del sistema general junto con descripciones de **caja negra** de todos los **bloques de construcción** contenidos.
 * **Nivel 2** hace zoom en algunos **bloques de construcción** del nivel 1. Así contiene la descripción de **caja blanca** de **bloques de construcción** seleccionados del nivel 1, junto con descripciones de **caja negra** de sus **bloques de construcción** internos.
 * **Nivel 3** (no mostrado en el diagrama arriba) hace zoom en detalles de **bloques de construcción** seleccionados del nivel 2, y así sucesivamente.
 
-----
+
+
 
 Subsecciones
 ============
@@ -109,7 +113,8 @@ Tips y Consejos
  bloques_tip_27
  bloques_tip_28
 
-----
+
+
 
 .. note::
  **Términos Arquitectónicos Clave (Paso 3.4):**

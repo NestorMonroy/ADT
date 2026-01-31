@@ -1,8 +1,10 @@
 .. _MD_005_estructura_salida:
 
-===============================================
+
+
+
 MD-005: Estructura de Salida
-===============================================
+============================
 
 :ID: MD-005
 :Tipo: Matriz de Decisión
@@ -14,7 +16,8 @@ MD-005: Estructura de Salida
  :depth: 2
  :local:
 
-----
+
+
 
 Pregunta Central
 ================
@@ -27,13 +30,14 @@ Pregunta Central
 - Claridad para colaboradores
 - Mantenimiento a largo plazo
 
-----
+
+
 
 Las Tres Estructuras
 ====================
 
 Estructura 1: Plana
--------------------
+===================
 
 **Descripción:** Todos los archivos en un solo directorio.
 
@@ -64,7 +68,7 @@ Estructura 1: Plana
 - Prototipos o POCs
 
 Estructura 2: Por Temas
-------------------------
+=======================
 
 **Descripción:** Directorios por tema o sección.
 
@@ -105,7 +109,7 @@ Estructura 2: Por Temas
 - Proyectos medianos a grandes
 
 Estructura 3: Numerada
------------------------
+======================
 
 **Descripción:** Directorios numerados por orden.
 
@@ -131,7 +135,7 @@ Estructura 3: Numerada
 
 **Ventajas:**
 - [OK] Orden explícito garantizado
-- [OK] Fácil añadir entre secciones (01.5_)
+- [OK] Fácil añadir entre secciones (01.5)
 - [OK] Clara secuencia de lectura
 
 **Desventajas:**
@@ -143,13 +147,14 @@ Estructura 3: Numerada
 - Tutoriales paso a paso
 - Cursos o training materials
 
-----
+
+
 
 Matriz de Decisión
 ==================
 
 Por Tamaño del Proyecto
------------------------
+=======================
 
 .. list-table::
  :header-rows: 1
@@ -177,7 +182,7 @@ Por Tamaño del Proyecto
    - [WARNING] Posible
 
 Por Tipo de Contenido
-----------------------
+=====================
 
 .. list-table::
  :header-rows: 1
@@ -208,13 +213,14 @@ Por Tipo de Contenido
    - [OK] Bueno
    - [OK] Ideal
 
-----
+
+
 
 Convenciones de Nomenclatura
-=============================
+============================
 
 Para Directorios
-----------------
+================
 
 **Recomendaciones:**
 
@@ -241,7 +247,7 @@ Para Directorios
  [ERROR] 01.Fundamentos/
 
 Para Archivos
--------------
+=============
 
 **Recomendaciones:**
 
@@ -266,13 +272,14 @@ Para Archivos
  [ERROR] API-Referencia.rst
  [ERROR] FAQ.RST
 
-----
+
+
 
 Estructura Recomendada ADT
-===========================
+==========================
 
 Para Proyecto ADT
------------------
+=================
 
 .. code-block:: text
 
@@ -319,13 +326,14 @@ Para Proyecto ADT
 - Escalable hasta 100+ archivos
 - Clara para colaboradores
 
-----
+
+
 
 Directorios Especiales
-=======================
+======================
 
 _static/
---------
+========
 
 **Propósito:** Archivos estáticos (CSS, JS, imágenes)
 
@@ -341,7 +349,7 @@ _static/
  +- diagrams/
 
 _templates/
------------
+===========
 
 **Propósito:** Plantillas personalizadas de Sphinx
 
@@ -352,7 +360,7 @@ _templates/
  +- page.html
 
 images/
--------
+=======
 
 **Propósito:** Imágenes del contenido
 
@@ -365,13 +373,14 @@ images/
  +- capturas/
  +- screenshot_01.png
 
-----
+
+
 
 Checklist de Estructura
-========================
+=======================
 
 Al Inicio del Proyecto
------------------------
+======================
 
 .. code-block:: text
 
@@ -384,7 +393,7 @@ Al Inicio del Proyecto
  [ ] Documenté estructura para equipo
 
 Durante el Proyecto
---------------------
+===================
 
 .. code-block:: text
 
@@ -394,7 +403,7 @@ Durante el Proyecto
  [ ] Sin archivos huérfanos
 
 Al Finalizar
-------------
+============
 
 .. code-block:: text
 
@@ -403,7 +412,8 @@ Al Finalizar
  [ ] Sin directorios vacíos
  [ ] Documentación de estructura actualizada
 
-----
+
+
 
 .. seealso::
  * :doc:`MD_003_nivel_segmentacion` - Nivel de segmentación

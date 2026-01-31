@@ -1,18 +1,21 @@
 .. _deployment_tip_9:
 
-===============================================================
+
+
+
 Tip 7-9: ¡Explica qué (más) es relevante para el uso productivo (aka operación) del sistema!
-===============================================================
+============================================================================================
 
 .. tip::
    **Consejo de Vista de Despliegue arc42**
    
    Aparte de compilar, integrar y probar (aka *construir*) un sistema, tareas adicionales necesitan completarse para poner cualquier sistema suficientemente complicado *en funcionamiento* en una plataforma objetivo.
 
-----
+
+
 
 Desafíos para Poner un Sistema en Producción
-=============================================
+============================================
 
 Aparte de compilar, integrar y probar (aka *construir*) un sistema, tareas adicionales necesitan completarse para poner cualquier sistema suficientemente complicado *en funcionamiento* en una plataforma objetivo:
 
@@ -51,14 +54,16 @@ Si tú y tu equipo todavía no son parte de ninguna experiencia *devops*, echa u
 * `Salt <https://saltstack.com/>`_
 * `Rudder <https://www.normation.com/en/>`_
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_07` - Vista de Despliegue
    * :ref:`deployment_tip_1` - Documentar infraestructura técnica
    * :ref:`deployment_tip_3` - Documentar varios entornos
 
-----
+
+
 
 :Tip: 7-9
 :Tema: Operación productiva del sistema

@@ -1,20 +1,23 @@
 .. _glossary_tip_6:
 
-===============================================================
+
+
+
 Tip 12-6: Haz a tu 'product owner' o 'project manager' responsable del glosario
-===============================================================
+===============================================================================
 
 :Tema: Responsabilidad del glosario
 :Palabras clave: glossary, lean
 
-----
+
+
 
 En configuraciones de proyecto *ágiles*, el *product owner* puede ser responsable de mantener el **glosario**.
 
 En configuraciones más tradicionales, esto podría ser el project manager.
 
 Asignación de Responsabilidad
-==============================
+=============================
 
 **Por qué Necesitas un Responsable:**
 
@@ -35,7 +38,8 @@ Asignación de Responsabilidad
  * - [ERROR] Nuevos términos no documentados
    - [OK] Proceso de adición definido
 
-----
+
+
 
 **Responsable Ideal por Tipo de Proyecto:**
 
@@ -65,7 +69,8 @@ Asignación de Responsabilidad
    - Maintainer Principal
    - Dueño del proyecto
 
-----
+
+
 
 **Responsabilidades del Responsable del Glosario:**
 
@@ -113,7 +118,8 @@ Asignación de Responsabilidad
  +- Buscar gaps (términos no definidos)
  +- Presentar métricas (# términos, adiciones, etc.)
 
-----
+
+
 
 **Delegación y Colaboración:**
 
@@ -144,7 +150,8 @@ Asignación de Responsabilidad
  +- Si OK -> Aprueba y publica
  +- Notifica a equipo
 
-----
+
+
 
 **Herramientas para el Responsable:**
 
@@ -171,7 +178,8 @@ Asignación de Responsabilidad
    - Crear tickets para definiciones
    - Integrado con workflow
 
-----
+
+
 
 **Proceso de Gestión del Glosario:**
 
@@ -211,7 +219,8 @@ Asignación de Responsabilidad
  - ¿Qué términos causaron confusión?
  - ¿Proceso de actualización funciona?
 
-----
+
+
 
 **Métricas para el Responsable:**
 
@@ -235,7 +244,8 @@ Asignación de Responsabilidad
  +- Términos sin ejemplo: 8 [WARNING]
  +- Términos obsoletos (>6 meses sin uso): 2
 
-----
+
+
 
 **Ejemplo de RACI para Glosario:**
 
@@ -290,7 +300,8 @@ Asignación de Responsabilidad
 - **C** = Consulted (consultado)
 - **I** = Informed (informado)
 
-----
+
+
 
 **Señales de que el Glosario Necesita Responsable:**
 
@@ -306,7 +317,8 @@ Asignación de Responsabilidad
 
  **Solución:** Asignar responsable AHORA
 
-----
+
+
 
 **Transición de Responsabilidad:**
 
@@ -327,7 +339,8 @@ Asignación de Responsabilidad
 
 **Tiempo estimado de handover:** 2-4 horas
 
-----
+
+
 
 **Ejemplo de Anuncio de Responsabilidad:**
 
@@ -352,7 +365,8 @@ Asignación de Responsabilidad
 
  - Tech Lead
 
-----
+
+
 
 .. seealso::
  * **Tip 12-1** - Tomarse el glosario en serio

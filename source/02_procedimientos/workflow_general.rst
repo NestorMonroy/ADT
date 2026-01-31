@@ -11,9 +11,11 @@
 
 .. _proc-002-workflow-general:
 
-=============================
+
+
+
 Workflow General de Traducción
-=============================
+==============================
 
 :Versión: 1.7.2
 :Categoría: Procedimientos
@@ -38,7 +40,8 @@ Workflow General de Traducción
  :depth: 3
  :local:
 
-----
+
+
 
 Introducción
 ============
@@ -54,16 +57,17 @@ técnica de LaTeX a RST/Sphinx usando la metodología ADT.
  - Familiaridad con LaTeX y RST básico
  - Sphinx instalado y configurado
 
-----
+
+
 
 Integración con Biblioteca y Clasificación
-===========================================
+==========================================
 
 **IMPORTANTE:** Este workflow trabaja con la estructura de **biblioteca/** y utiliza
 la **Guía Metodológica de Clasificación Documental**.
 
 Estructura Base
----------------
+===============
 
 .. code-block:: text
 
@@ -88,7 +92,7 @@ Estructura Base
  | +-- figuras/
 
 Sistema de Clasificación
--------------------------
+========================
 
 **Código:** CATEGORÍA.SUBCATEGORÍA.ESPECIALIDAD.NÚMERO
 
@@ -104,18 +108,19 @@ Sistema de Clasificación
 - :doc:`/docs_maestros/ESTRUCTURA_DE_BIBLIOTECA_-_Versión_Correcta`
 - :doc:`/biblioteca/_metadata_biblioteca/META_BIB_001_Sistema_Clasificacion_1_0_0`
 
-----
+
+
 
 Visión General del Workflow
-============================
+===========================
 
 Diagrama de Flujo
------------------
+=================
 
 .. code-block:: text
 
  WORKFLOW ADT - 7 FASES (+ PASO 0 y FASE 3.7 NUEVOS v1.7.2)
- ===========================================================
+===========================================================
 
  PASO 0: LECTURA DE FUENTE COMPLETA (NUEVO v1.7.2)
  +- Obtener plantilla completa de la sección
@@ -177,7 +182,7 @@ Diagrama de Flujo
  Genera: JSON + TXT en raíz de sección
 
 Tiempo Estimado
----------------
+===============
 
 **Por capítulo de libro** (en estructura biblioteca/):
 
@@ -214,19 +219,20 @@ Tiempo Estimado
 
 **Total por libro típico (10-15 capítulos):** 15-30 horas
 
-----
+
+
 
 Herramientas y Scripts Disponibles
-===================================
+==================================
 
 **NUEVA SECCIÓN v1.2.0:** Esta sección documenta las herramientas Python y scripts bash
 disponibles para facilitar el proceso de traducción.
 
 Scripts Python
---------------
+==============
 
 analizar_seccion.py
-~~~~~~~~~~~~~~~~~~~
+===================
 
 **Propósito:**
  Análisis automático de archivos Markdown de una sección.
@@ -251,6 +257,7 @@ analizar_seccion.py
 - Estructura jerárquica (headings H1-H6)
 - Elementos especiales:
 
+ 
  - Imágenes, tablas, bloques de código
  - Enlaces, DIVs HTML, listas
 
@@ -262,10 +269,10 @@ analizar_seccion.py
  - Para verificar contenido de sección
 
 Scripts Bash
-------------
+============
 
 redistribuir_arc42_CORRECTO.sh
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==============================
 
 **Propósito:**
  Redistribuir archivos del repositorio arc42 desde ``original/`` a secciones.
@@ -275,7 +282,7 @@ redistribuir_arc42_CORRECTO.sh
  [OK] Usar la estructura real del repositorio fuente.
 
 validar_estructura.sh
-~~~~~~~~~~~~~~~~~~~~~
+=====================
 
 **Propósito:**
  Validar que un libro cumple con NOM_001 y estructura de biblioteca.
@@ -287,19 +294,21 @@ validar_estructura.sh
  ./scripts/validar_estructura.sh biblioteca/.../arc42_documentation
 
 progreso_libro.sh
-~~~~~~~~~~~~~~~~~
+=================
 
 **Propósito:**
  Calcular progreso de traducción de un libro.
 
 Ver más detalles en: :doc:`/scripts/README`
 
-----
+
+
 
 PASO 0: LECTURA DE FUENTE COMPLETA (CRÍTICO)
-==================================================
+============================================
 
 .. important::
+ 
  **OBLIGATORIO:** Este paso NO puede saltarse.
 
  Previene el error más común: **omitir contenido de plantillas**.
@@ -312,14 +321,16 @@ ANTES de crear estructura de carpetas.
 
 **Tiempo estimado:** 15-30 minutos
 
-----
+
+
 
 Paso 0.1: Obtener Plantilla Completa de la Sección
----------------------------------------------------
+==================================================
 
 **Para traducciones arc42:**
 
 Cada sección arc42 tiene DOS tipos de contenido:
+
 
 1. **Plantilla de sección** (documento principal)
 2. **Archivos individuales** (tips, ejemplos)
@@ -358,10 +369,11 @@ Solo leer archivos en ``/original/`` y asumir que eso es todo.
 - Usuario proporciona documento con estructura completa
 - O consultar: https://arc42.org/sections (para referencia)
 
-----
+
+
 
 Paso 0.2: Crear Inventario COMPLETO
-------------------------------------
+===================================
 
 **Método 1: Automático con Script (RECOMENDADO)**
 
@@ -413,7 +425,8 @@ Usar script de análisis funcional:
  Generado con: analisis_profundo_funcional.py
  Fecha: 2026-01-27
 
- ===========================================================
+
+
 
  RESUMEN (del JSON):
  • Total archivos: 13
@@ -424,7 +437,8 @@ Usar script de análisis funcional:
  • Archivos con imágenes: 9
  • Total imágenes: 12
 
- -----------------------------------------------------------
+
+
 
  A. ARCHIVO PRINCIPAL:
  Título e introducción
@@ -439,12 +453,14 @@ Usar script de análisis funcional:
 
  B. TIPS (del JSON: archivos_individuales):
  Tip 7-1: 27 líneas, 136 palabras, tiene imágenes
+
  Tip 7-2: 22 líneas, 114 palabras, tiene tablas
- ...
+===============================================
 
  C. EJEMPLOS:
+
  Ejemplo 1: 63 líneas, tiene imágenes
- ...
+=====================================
 
 **Guardar como:**
 
@@ -470,12 +486,14 @@ Si el script no está disponible, crear inventario manualmente:
 
  B. TIPS INDIVIDUALES:
  Tip X-1 (archivo: XXX.md)
+
  Tip X-2 (archivo: XXX.md)
- ...
+==========================
 
  C. EJEMPLOS:
+
  Ejemplo 1 (archivo: XXX.md)
- ...
+============================
 
 **Tiempo:**
 
@@ -483,16 +501,18 @@ Si el script no está disponible, crear inventario manualmente:
 - Manual: 20-30 min
 
 .. important::
+ 
  **Recomendación:** Usar SIEMPRE el script si está disponible.
 
  El script está en: ``/tmp/ADT/scripts/analisis_profundo_funcional.py``
 
  Guardar JSON como referencia en raíz de sección.
 
-----
+
+
 
 Paso 0.3: Verificar Fuentes de Verdad
---------------------------------------
+=====================================
 
 **Para cada tipo de documento, identificar la fuente correcta:**
 
@@ -516,6 +536,7 @@ Paso 0.3: Verificar Fuentes de Verdad
 **Sobre docs.arc42.org:**
 
 .. warning::
+ 
  **docs.arc42.org NO es una fuente diferente.**
 
  Es el renderizado Jekyll de los archivos .md:
@@ -545,17 +566,18 @@ Paso 0.3: Verificar Fuentes de Verdad
  NO hay confusión sobre qué archivo usar
  NO voy a usar docs.arc42.org como fuente
 
-----
+
+
 
 Paso 0.4: Checklist Pre-Traducción
------------------------------------
+==================================
 
 **Antes de pasar a FASE 1, verificar:**
 
 .. code-block:: text
 
  CHECKLIST PRE-TRADUCCIÓN:
- ===========================================================
+==========================
 
  LECTURA:
  Leí la plantilla arc42 COMPLETA de la sección
@@ -584,7 +606,8 @@ Paso 0.4: Checklist Pre-Traducción
  Tengo plantilla de sección a mano
  Creé estructura de carpetas (/original, /traduccion)
 
- ===========================================================
+
+
 
  Solo SI TODOS están [OK] -> Pasar a FASE 1
 
@@ -604,9 +627,11 @@ Paso 0.4: Checklist Pre-Traducción
 - Ahorra horas de retrabajo
 - Garantiza traducción completa desde el inicio
 
-----
+
+
 
 .. important::
+ 
  **Regla de Oro del PASO 0:**
 
  **"Nunca empieces a traducir sin saber TODO lo que vas a traducir."**
@@ -614,20 +639,22 @@ Paso 0.4: Checklist Pre-Traducción
  25 minutos en PASO 0 ahorran horas de correcciones posteriores.
 
 .. note::
+ 
  **Script de automatización:**
 
  Ubicación: ``/tmp/ADT/scripts/analisis_profundo_funcional.py``
 
  Documentación: ``/tmp/README_analisis_profundo.md``
 
-----
+
+
 
 
 FASE 1: Preparación
 ===================
 
 Paso 1.1: Análisis del Documento Fuente y Clasificación
----------------------------------------------------------
+=======================================================
 
 **Objetivo:**
  Entender qué vamos a traducir y clasificarlo según la Guía Metodológica.
@@ -687,7 +714,7 @@ Paso 1.1: Análisis del Documento Fuente y Clasificación
  +-- Modern_Full_Stack_Development_Zammetti_2ed/
 
 Paso 1.2: Configuración de Estructura en Biblioteca
-----------------------------------------------------
+===================================================
 
 **Objetivo:**
  Crear estructura correcta en ``biblioteca/`` según clasificación.
@@ -755,9 +782,11 @@ Paso 1.2: Configuración de Estructura en Biblioteca
  :progreso: 0%
  :clasificacion: INF.PRG.FST.001
 
- ========================================
+
+
+
  Modern Full-Stack Development (2nd Ed)
- ========================================
+=======================================
 
  Título Original
  Modern Full-Stack Development
@@ -812,7 +841,7 @@ Paso 1.2: Configuración de Estructura en Biblioteca
  ]
 
 Paso 1.3: Planificación
-------------------------
+=======================
 
 **Objetivo:**
  Decidir estrategia de traducción.
@@ -822,17 +851,17 @@ Paso 1.3: Planificación
 1. **¿Modo 1 (Alta Fidelidad) o Modo 2 (Marcado Visual)?**
 
  .. list-table::
- :widths: 50 50
- :header-rows: 1
+   :widths: 50 50
+   :header-rows: 1
 
- * - Modo 1: Alta Fidelidad
-   - Modo 2: Marcado Visual
- * - Preserva estructura original
-   - Añade marcadores visuales
- * - Mínimas adaptaciones
-   - Más adaptaciones para claridad
- * - Para: Libros formales, papers
-   - Para: Tutoriales, material didáctico
+   * - Modo 1: Alta Fidelidad
+     - Modo 2: Marcado Visual
+   * - Preserva estructura original
+     - Añade marcadores visuales
+   * - Mínimas adaptaciones
+     - Más adaptaciones para claridad
+   * - Para: Libros formales, papers
+     - Para: Tutoriales, material didáctico
 
 2. **¿Qué objetivos son prioritarios?**
 
@@ -848,15 +877,16 @@ Paso 1.3: Planificación
 
  **Recomendación:** Sección por sección, compilando frecuentemente.
 
-----
+
+
 
 FASE 2: Análisis Estructural
-=============================
+============================
 
 **ACTUALIZADO v1.2.0:** Esta fase ahora incluye herramientas automatizadas.
 
 Paso 2.1: Identificar Jerarquía y Ubicación en Biblioteca
------------------------------------------------------------
+=========================================================
 
 **Objetivo:**
  Mapear estructura del documento y planificar ubicación en biblioteca.
@@ -879,6 +909,7 @@ Paso 2.1: Identificar Jerarquía y Ubicación en Biblioteca
 
  El script identifica automáticamente:
 
+ 
  - Total de archivos y tipos
  - Front matter YAML (metadatos)
  - Estructura de headings (jerarquía)
@@ -894,9 +925,11 @@ Paso 2.1: Identificar Jerarquía y Ubicación en Biblioteca
  +- 1 Ejemplo (HTML Sanity Checker)
  +- 5 Tips (2-1 al 2-5)
 
- Propuesta RST:
- ===============
- restricciones.rst
+Propuesta RST:
+
+restricciones.rst
+=================
+
  +- Introducción
  +- Ejemplo
  +- Tips 2-1 al 2-5
@@ -925,7 +958,7 @@ Paso 2.1: Identificar Jerarquía y Ubicación en Biblioteca
  [Proceso existente]
 
 Paso 2.2: Mapear Elementos Especiales
---------------------------------------
+=====================================
 
 **Objetivo:**
  Identificar elementos que requieren atención especial.
@@ -1002,7 +1035,7 @@ El script ``analizar_seccion.py`` identifica automáticamente:
  [ ] Planificar equivalente RST/Sphinx
 
 Paso 2.3: Detectar Inconsistencias
------------------------------------
+==================================
 
 **Objetivo:**
  Identificar problemas del original que corregiremos.
@@ -1068,7 +1101,7 @@ Crear ``FASE_2_ANALISIS_SECCION.txt`` con:
 .. code-block:: text
 
  FASE 2: ANÁLISIS ESTRUCTURAL - Sección XX
- ==========================================
+==========================================
 
  ARCHIVOS ENCONTRADOS:
  [Lista completa]
@@ -1087,13 +1120,14 @@ Crear ``FASE_2_ANALISIS_SECCION.txt`` con:
 - Con herramienta automatizada: 5-10 min
 - Sin herramienta (manual): 10-15 min
 
-----
+
+
 
 FASE 3: Traducción Inicial (Método por Defecto)
-================================================
+===============================================
 
 Paso 3.1: Segmentación
------------------------
+======================
 
 **Nivel de trabajo:** CAPÍTULO/SECCIÓN (dentro de biblioteca/)
 
@@ -1119,9 +1153,10 @@ Paso 3.1: Segmentación
  **Principio fundamental:**
 
  .. important::
- **"Un archivo original -> Un archivo traducido"**
+ 
+    **"Un archivo original -> Un archivo traducido"**
 
- Mantener correspondencia 1:1 entre archivos originales y traducidos.
+    Mantener correspondencia 1:1 entre archivos originales y traducidos.
 
  **Para repositorios con múltiples archivos:**
 
@@ -1167,21 +1202,21 @@ Paso 3.1: Segmentación
  - Usando toctree en archivo índice para organizar
 
 Paso 3.2: Rendición (Comando por Comando)
-------------------------------------------
+=========================================
 
 **Nivel de mapeo:** COMANDO LaTeX -> ELEMENTO RST
 
 **Tabla de rendición básica:**
 
 .. list-table::
- :widths: 30 35 35
- :header-rows: 1
+   :widths: 30 35 35
+   :header-rows: 1
 
- * - LaTeX
-   - RST
-   - Notas
- * - ``\section{X}``
-   - | ``X``
+   * - LaTeX
+     - RST
+     - Notas
+   * - ``\section{X}``
+     - ``X``
 
  | ``===``
    - Nivel 1
@@ -1242,7 +1277,7 @@ Paso 3.2: Rendición (Comando por Comando)
  3. Si NO existe -> marcar para revisión
 
 Paso 3.3: Preferencia (Signifié sobre Signifiant) + Revisión
--------------------------------------------------------------
+============================================================
 
 **Principio:**
  Preservar CONTENIDO (función semántica), adaptar FORMA (sintaxis).
@@ -1305,31 +1340,33 @@ Paso 3.3: Preferencia (Signifié sobre Signifiant) + Revisión
 **Checklist de Revisión de Signifié:**
 
 .. important::
+ 
  **DESPUÉS de traducir cada sección, revisar:**
 
 .. code-block:: text
 
- PRESERVACIÓN DE CONTENIDO (Signifié):
- -------------------------------------
- [ ] ¿El lector obtiene la MISMA INFORMACIÓN?
- [ ] ¿Se preserva la FUNCIÓN de cada elemento?
- [ ] ¿Las relaciones semánticas están intactas?
- [ ] ¿El significado es equivalente al original?
+   PRESERVACIÓN DE CONTENIDO (Signifié):
+   ======================================
+   [ ] ¿El lector obtiene la MISMA INFORMACIÓN?
+   [ ] ¿Se preserva la FUNCIÓN de cada elemento?
+   [ ] ¿Las relaciones semánticas están intactas?
+   [ ] ¿El significado es equivalente al original?
 
- ADAPTACIÓN DE FORMA (Signifiant):
- -------------------------------------
- [ ] ¿Usamos sintaxis NATURAL de RST?
- [ ] ¿Evitamos ser demasiado literales?
- [ ] ¿Adaptamos comandos a idioma destino?
- [ ] ¿Omitimos elementos puramente estilísticos?
+   ADAPTACIÓN DE FORMA (Signifiant):
+   ==================================
+   [ ] ¿Usamos sintaxis NATURAL de RST?
+   [ ] ¿Evitamos ser demasiado literales?
+   [ ] ¿Adaptamos comandos a idioma destino?
+   [ ] ¿Omitimos elementos puramente estilísticos?
 
  EVITAR TRADUCCIÓN LITERAL:
- -------------------------------------
+===========================
  [ ] ¿Hay traducciones palabra-por-palabra innecesarias?
  [ ] ¿Hay elementos que deberían omitirse?
  [ ] ¿La traducción suena "natural" en RST?
 
  SI CUALQUIER RESPUESTA ES "NO":
+ 
  -> Revisar y ajustar la traducción
 
 **Ejemplos de qué EVITAR:**
@@ -1405,12 +1442,14 @@ Si aplicaste adaptaciones significativas, documentar en ``notas_traduccion.rst``
 - Con segmentación clara: 30-45 min por sección/capítulo
 - Incluye: traducción + aplicación de checklist + documentación inicial
 
-----
+
+
 
 Paso 3.4: Traducción Arquitectónica (CRÍTICO - arc42)
-======================================================
+=====================================================
 
 .. danger::
+ 
  **ESTE PASO ES OBLIGATORIO PARA CONTENIDO TÉCNICO/ARQUITECTÓNICO**
 
  Para traducciones de arc42, documentación arquitectónica, o contenido
@@ -1418,16 +1457,17 @@ Paso 3.4: Traducción Arquitectónica (CRÍTICO - arc42)
  arquitectónico**.
 
 Principio Fundamental
----------------------
+=====================
 
 .. important::
+ 
  **Traducir el CONCEPTO, no las palabras individuales**
 
  En arquitectura de software, muchos términos tienen significados técnicos
  específicos que NO coinciden con su traducción literal del inglés.
 
 Problema de Traducción Literal
--------------------------------
+==============================
 
 **Ejemplo del problema:**
 
@@ -1452,7 +1492,7 @@ Problema de Traducción Literal
 - "fuerzas impulsoras" suena extraño y no técnico en español
 
 Tabla de Términos Arquitectónicos
-----------------------------------
+=================================
 
 **Términos que SIEMPRE requieren traducción contextual:**
 
@@ -1501,7 +1541,7 @@ Tabla de Términos Arquitectónicos
    - **justificación**, razón de ser
 
 Ejemplos Completos: Literal vs Contextual
-------------------------------------------
+=========================================
 
 **Ejemplo 1: Driving Forces**
 
@@ -1555,7 +1595,7 @@ Ejemplos Completos: Literal vs Contextual
  organizados jerárquicamente (nivel 1, nivel 2, nivel 3...).
 
 Checklist de Traducción Arquitectónica
----------------------------------------
+======================================
 
 Antes de finalizar cualquier traducción de arc42, verificar:
 
@@ -1571,7 +1611,7 @@ Antes de finalizar cualquier traducción de arc42, verificar:
  Glosario actualizado con definiciones arquitectónicas
 
 Términos Técnicos Internacionales
-----------------------------------
+=================================
 
 **Preservar SIN traducir** (términos técnicos estándar):
 
@@ -1591,18 +1631,20 @@ proyectos, arquitectura de software e ingeniería de software (PMBoK,
 ISO/IEC 42010, SWEBOK).
 
 Coherencia Terminológica
--------------------------
+========================
 
 .. important::
+ 
  **Una vez elegida una traducción, mantenerla en TODO el documento**
 
  Si eliges "factores determinantes" para "driving forces":
+ 
  -> Usar SIEMPRE "factores determinantes"
  -> NO cambiar a "impulsores" en otro capítulo
  -> Documentar en glosario
 
 Documentación de Decisiones
-----------------------------
+===========================
 
 **En el glosario, agregar:**
 
@@ -1620,7 +1662,7 @@ Documentación de Decisiones
  determinantes".
 
 Referencias de Estándares
---------------------------
+=========================
 
 **Validar traducciones con:**
 
@@ -1631,7 +1673,7 @@ Referencias de Estándares
 - PMBoK (Project Management Body of Knowledge)
 
 Tiempo Estimado Paso 3.4
--------------------------
+========================
 
 - Primera revisión arquitectónica: +15 min por sección
 - Consulta de glosario: +5 min
@@ -1640,18 +1682,21 @@ Tiempo Estimado Paso 3.4
 **Total adicional:** ~30 min (inversión que evita correcciones posteriores)
 
 .. note::
+ 
  **Este paso PREVIENE correcciones masivas posteriores**
 
  Aplicar traducción arquitectónica desde el inicio es más eficiente que
  corregir todos los archivos después (como sucedió en Lote 1 de sección 01).
 
-----
+
+
 
 
 Paso 3.5: Enriquecimiento Opcional [WARNING] (DECISIÓN CONSCIENTE)
-------------------------------------------------------------
+==================================================================
 
 .. warning::
+ 
  **Este paso es OPCIONAL y debe aplicarse con criterio consciente.**
 
  Solo agregar contenido complementario cuando mejore REALMENTE la comprensión,
@@ -1669,7 +1714,7 @@ El problema NO es "agregar contenido". El problema es:
 [OK] **CORRECTO:** Traducir TODO el original PRIMERO, luego opcionalmente agregar contenido MARCADO
 
 Flujo Correcto
-~~~~~~~~~~~~~~
+==============
 
 .. code-block:: text
 
@@ -1680,7 +1725,7 @@ Flujo Correcto
  NO AL REVÉS.
 
 Paso 3.5.1: Identificar Oportunidades de Enriquecimiento
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+========================================================
 
 **Preguntas a responder:**
 
@@ -1692,10 +1737,10 @@ Paso 3.5.1: Identificar Oportunidades de Enriquecimiento
 **Si la respuesta es "SÍ" a alguna pregunta, proceder al siguiente paso.**
 
 Paso 3.5.2: Evaluar Si Agregar Contenido
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+========================================
 
 Criterios de Decisión
-^^^^^^^^^^^^^^^^^^^^^
+=====================
 
 **[OK] SÍ AGREGAR cuando:**
 
@@ -1706,10 +1751,10 @@ Criterios de Decisión
 
  .. code-block:: rst
 
- .. note::
- **Contenido complementario en español**
+    .. note::
+       **Contenido complementario en español**
 
- **Tipos de Cohesión:**
+       **Tipos de Cohesión:**
 
  - **Cohesión Funcional** (ideal): Elementos realizan única función
  - **Cohesión Secuencial**: Salida de A es entrada de B
@@ -1721,10 +1766,10 @@ Criterios de Decisión
 
  .. code-block:: rst
 
- .. note::
- **Contenido complementario en español**
+    .. note::
+       **Contenido complementario en español**
 
- **Ejemplo visual:**
+       **Ejemplo visual:**
 
  .. uml::
 
@@ -1740,10 +1785,10 @@ Criterios de Decisión
 
  .. code-block:: rst
 
- .. note::
- **Contenido complementario en español**
+    .. note::
+       **Contenido complementario en español**
 
- **Ejemplo en Java:**
+       **Ejemplo en Java:**
 
  .. code-block:: java
 
@@ -1757,18 +1802,18 @@ Criterios de Decisión
 
  .. code-block:: rst
 
- .. note::
- **Contenido complementario en español**
+    .. note::
+       **Contenido complementario en español**
 
- .. list-table:: Cuándo refinar a nivel 2 vs 3
- :header-rows: 1
+       .. list-table:: Cuándo refinar a nivel 2 vs 3
+          :header-rows: 1
 
- * - Criterio
-   - Nivel 2
-   - Nivel 3
- * - Complejidad
-   - Media
-   - Alta
+          * - Criterio
+            - Nivel 2
+            - Nivel 3
+          * - Complejidad
+            - Media
+            - Alta
 
 **[ERROR] NO AGREGAR cuando:**
 
@@ -1800,19 +1845,21 @@ Criterios de Decisión
  - **Resultado:** Traducción incorrecta
 
 Paso 3.5.3: Formato OBLIGATORIO para Contenido Agregado
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=======================================================
 
 .. important::
+ 
  **TODO contenido agregado DEBE estar marcado con la directiva RST apropiada.**
 
 Formato Estándar
-^^^^^^^^^^^^^^^^
+================
 
 .. code-block:: rst
 
  [Traducción completa del original aquí]
 
- ----
+
+
 
  .. note::
  **Contenido complementario en español**
@@ -1822,12 +1869,13 @@ Formato Estándar
 
  [Contenido agregado aquí]
 
- ----
+
+
 
  [Continuar con resto de traducción o referencias]
 
 Formatos Alternativos
-^^^^^^^^^^^^^^^^^^^^^^
+=====================
 
 **Para ejemplos adicionales:**
 
@@ -1857,7 +1905,7 @@ Formatos Alternativos
  [Aclaración agregada]
 
 Paso 3.5.4: Ubicación Correcta del Contenido Agregado
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=====================================================
 
 **Orden correcto dentro del documento:**
 
@@ -1882,16 +1930,20 @@ Paso 3.5.4: Ubicación Correcta del Contenido Agregado
 
  .. _ejemplo_tip:
 
- =======================================
+
+
+
  Tip X: Título del Consejo
- =======================================
+==========================
 
  .. tip::
- **Consejo Principal**
+ 
+    **Consejo Principal**
 
- Resumen del consejo en 1-2 líneas.
+    Resumen del consejo en 1-2 líneas.
 
- ----
+
+
 
  [FASE 1: TRADUCCIÓN COMPLETA DEL ORIGINAL]
 
@@ -1900,31 +1952,37 @@ Paso 3.5.4: Ubicación Correcta del Contenido Agregado
 
  [FIN DE TRADUCCIÓN ORIGINAL]
 
- ----
+
+
 
  [FASE 3.5: ENRIQUECIMIENTO OPCIONAL - SI APLICA]
 
  .. note::
- **Contenido complementario en español**
+ 
+    **Contenido complementario en español**
 
- Esta sección fue agregada para mejorar la comprensión.
+    Esta sección fue agregada para mejorar la comprensión.
 
  [Contenido adicional aquí: diagrama, tabla, ejemplo]
 
- ----
+
+
 
  Ver También
- ===========
+============
 
  * Referencia 1
  * Referencia 2
 
- ----
+
+
 
  .. seealso::
- * :ref:`seccion_relacionada`
+ 
+    * :ref:`seccion_relacionada`
 
- ----
+
+
 
  :Tip: X-Y
  :Tema: Descripción
@@ -1932,7 +1990,7 @@ Paso 3.5.4: Ubicación Correcta del Contenido Agregado
  :Workflow: v1.7.0
 
 Checklist de Enriquecimiento
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============================
 
 **Antes de agregar contenido, verificar:**
 
@@ -1961,7 +2019,7 @@ Checklist de Enriquecimiento
  [ ] Workflow actualizado a v1.7.0
 
 Ejemplos de Enriquecimiento Apropiado
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=====================================
 
 **Ejemplo 1: Aclaración de Concepto Técnico**
 
@@ -1970,7 +2028,8 @@ Ejemplos de Enriquecimiento Apropiado
  [Traducción del original:]
  La cohesión es uno de los principios más fundamentales.
 
- ----
+
+
 
  .. note::
  **Contenido complementario en español**
@@ -1988,7 +2047,8 @@ Ejemplos de Enriquecimiento Apropiado
  [Traducción del original:]
  Los bloques de construcción forman una jerarquía.
 
- ----
+
+
 
  .. note::
  **Contenido complementario en español**
@@ -2013,7 +2073,8 @@ Ejemplos de Enriquecimiento Apropiado
  [Traducción del original:]
  Decide cuándo refinar a niveles más profundos.
 
- ----
+
+
 
  .. note::
  **Contenido complementario en español**
@@ -2032,9 +2093,10 @@ Ejemplos de Enriquecimiento Apropiado
    - Complejidad baja/media
 
 Regla de Oro del Enriquecimiento
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+================================
 
 .. important::
+ 
  **"Cuando tengas duda sobre agregar contenido, NO lo agregues."**
 
  La traducción completa y fiel del original es SIEMPRE suficiente.
@@ -2042,7 +2104,7 @@ Regla de Oro del Enriquecimiento
  El enriquecimiento es un EXTRA opcional, no un requisito.
 
 Tiempo Estimado Paso 3.5
-~~~~~~~~~~~~~~~~~~~~~~~~~
+========================
 
 **Si NO se agrega contenido:** 0 min (paso se omite)
 
@@ -2051,6 +2113,7 @@ Tiempo Estimado Paso 3.5
 - Evaluación de oportunidades: 5-10 min
 - Creación de contenido (por elemento):
 
+ 
  - Aclaración texto: 5-10 min
  - Diagrama PlantUML simple: 10-15 min
  - Tabla comparativa: 10-15 min
@@ -2059,15 +2122,17 @@ Tiempo Estimado Paso 3.5
 **Total estimado:** 15-60 min (dependiendo de cantidad de enriquecimiento)
 
 .. note::
+ 
  **Este paso es completamente OPCIONAL**
 
  Si el documento original es claro y completo, puedes omitir este paso
  y proceder directamente a FASE 3.6: Revisión de Literalidad.
 
 FASE 3.6: Revisión de Literalidad (CRÍTICO)
-============================================
+===========================================
 
 .. important::
+ 
  **Este paso es OBLIGATORIO y NO debe saltarse.**
 
  Después de completar la traducción inicial (FASE 3), SIEMPRE revisar
@@ -2078,7 +2143,7 @@ FASE 3.6: Revisión de Literalidad (CRÍTICO)
  técnicos ya estarán correctamente traducidos.
 
 Paso 3.6.1: Revisión Sistemática
----------------------------------
+================================
 
 **Objetivo:**
  Verificar que NO fuimos demasiado literales en las traducciones.
@@ -2164,7 +2229,7 @@ Paso 3.6.1: Revisión Sistemática
  -> [OK] "los stakeholders del proyecto"
 
 Paso 3.6.2: Documentar Problemas Encontrados
----------------------------------------------
+============================================
 
 **Crear documento de revisión:**
 
@@ -2175,16 +2240,17 @@ Paso 3.6.2: Documentar Problemas Encontrados
  Contenido:
 
  ARCHIVO 1: nombre_archivo.rst
- ----------------------------------------
+==============================
 
  PROBLEMAS ENCONTRADOS:
+ 
  1. Línea 15: "Debes aclarar" -> "Aclara"
  2. Línea 22: Metadatos innecesarios
 
  DECISIÓN: AJUSTAR
 
  ARCHIVO 2: otro_archivo.rst
- ----------------------------------------
+============================
 
  PROBLEMAS ENCONTRADOS:
  Ninguno
@@ -2192,7 +2258,7 @@ Paso 3.6.2: Documentar Problemas Encontrados
  DECISIÓN: OK como está
 
 Paso 3.6.3: Aplicar Ajustes
-----------------------------
+===========================
 
 **Para cada problema identificado:**
 
@@ -2219,17 +2285,17 @@ Paso 3.6.3: Aplicar Ajustes
  .. code-block:: rst
 
  Ajustes Aplicados en Revisión de Literalidad
- =============================================
+=============================================
 
  Archivo: restricciones_tip-2.rst
- --------------------------------
+=================================
 
  Problema: "Debes aclarar" (literal de "You should clarify")
  Ajuste: "Aclara" (imperativo directo, más natural)
  Razón: En español técnico, imperativo es más idiomático
 
 Paso 3.6.4: Validación Post-Ajustes
-------------------------------------
+===================================
 
 **Verificar que ajustes no rompieron nada:**
 
@@ -2251,16 +2317,19 @@ Paso 3.6.4: Validación Post-Ajustes
 **Regla de oro:**
 
 .. important::
+ 
  **"Si no revisaste la literalidad, no terminaste FASE 3"**
 
  Este paso es TAN importante como la traducción misma.
 
-----
+
+
 
 FASE 3.7: VERIFICACIÓN CONTRA ORIGINAL (CON BUCLE)
-=======================================================
+==================================================
 
 .. important::
+ 
  **OBLIGATORIO:** Verificación sistemática con bucle.
 
  Esta fase previene declarar "completo" prematuramente.
@@ -2273,10 +2342,11 @@ ANTES de declarar "traducción completa".
 
 **Tiempo estimado:** 20-40 minutos (puede repetirse 2-3 veces)
 
-----
+
+
 
 Paso 3.7.1: Comparar Contra Inventario
----------------------------------------
+======================================
 
 **Método 1: Automático con Script (RECOMENDADO)**
 
@@ -2326,10 +2396,11 @@ Ejecutar script nuevamente DESPUÉS de traducir:
 3. **similitud_promedio:**
 
  .. important::
- La similitud baja (< 5%) es NORMAL en .md -> .rst
 
- Razón: Formato diferente (Markdown vs reStructuredText)
- NO indica traducciones incompletas.
+    La similitud baja (< 5%) es NORMAL en .md -> .rst
+
+    Razón: Formato diferente (Markdown vs reStructuredText)
+    NO indica traducciones incompletas.
 
 **Ventajas del script:**
 
@@ -2376,13 +2447,14 @@ Usar inventario creado en PASO 0:
  VERIFICACIÓN - TIPS:
 
  Tip X-1 -> ¿Completo? (comparar líneas)
+
  Tip X-2 -> ¿Completo?
- ...
+======================
 
  VERIFICACIÓN - EJEMPLOS:
 
  Ejemplo 1 -> ¿Completo?
- ...
+========================
 
 **Criterios de completitud:**
 
@@ -2405,12 +2477,14 @@ Usar inventario creado en PASO 0:
 - Con script: 10-15 min
 - Manual: 30-40 min
 
-----
+
+
 
 Paso 3.7.2: Pregunta Crítica
------------------------------
+============================
 
 .. important::
+ 
  **¿Está TODO traducido?**
 
  Esta pregunta determina si continuar o regresar.
@@ -2436,10 +2510,11 @@ Paso 3.7.2: Pregunta Crítica
 - **SÍ** -> Pasar a Paso 3.7.4 (documentar) y luego a FASE 4
 - **NO** -> Ejecutar Paso 3.7.3 (bucle)
 
-----
+
+
 
 Paso 3.7.3: BUCLE DE VERIFICACIÓN
-----------------------------------
+=================================
 
 **Si respuesta fue NO, ejecutar este bucle:**
 
@@ -2514,14 +2589,16 @@ Paso 3.7.3: BUCLE DE VERIFICACIÓN
 
 - Máximo recomendado: 3 iteraciones
 - Si después de 3 iteraciones aún falta contenido:
+ 
  - Revisar inventario (¿está mal el inventario?)
  - Revisar fuentes (¿estás usando fuente correcta?)
  - Pedir ayuda / revisión externa
 
-----
+
+
 
 Paso 3.7.4: Documentar Verificación
-------------------------------------
+===================================
 
 **Crear archivo de documentación:**
 
@@ -2537,10 +2614,11 @@ Paso 3.7.4: Documentar Verificación
  VERIFICACIÓN DE COMPLETITUD
  Sección: XX - Nombre de Sección
 
- ===========================================================
 
- ITERACIÓN 1
- -----------------------------------------------------------
+
+
+ITERACIÓN 1
+============
  Fecha: YYYY-MM-DD HH:MM
 
  Pregunta: ¿Está TODO traducido?
@@ -2548,18 +2626,21 @@ Paso 3.7.4: Documentar Verificación
 
  Faltantes identificados:
  • Archivo principal:
+ 
  - Sección "Motivation" (omitida)
  - Plantilla X.1 (incompleta, faltan subsecciones)
- • Tip X-5:
+   • Tip X-5:
+ 
  - Traducido solo 60% (falta sección "Delegate")
 
  Acción tomada: VOLVER a FASE 3
  Tiempo invertido en traducir faltantes: 45 minutos
 
- ===========================================================
 
- ITERACIÓN 2
- -----------------------------------------------------------
+
+
+ITERACIÓN 2
+============
  Fecha: YYYY-MM-DD HH:MM
 
  Pregunta: ¿Está TODO traducido?
@@ -2575,7 +2656,8 @@ Paso 3.7.4: Documentar Verificación
 
  Acción tomada: CONTINUAR a FASE 4
 
- ===========================================================
+
+
 
  RESULTADO FINAL: VERIFICACIÓN EXITOSA
  Total iteraciones: 2
@@ -2595,9 +2677,11 @@ Paso 3.7.4: Documentar Verificación
 - JSONs del script (antes y después de traducir)
 - Ubicación: Raíz de la sección
 
-----
+
+
 
 .. warning::
+ 
  **PROHIBIDO:**
 
  • NO pasar a FASE 4 sin ejecutar FASE 3.7
@@ -2606,6 +2690,7 @@ Paso 3.7.4: Documentar Verificación
  • NO crear checkpoints antes de completar FASE 3.7
 
 .. important::
+ 
  **Regla de Oro de FASE 3.7:**
 
  **"Solo se declara 'completo' después de verificar contra inventario."**
@@ -2613,6 +2698,7 @@ Paso 3.7.4: Documentar Verificación
  El bucle puede parecer tedioso, pero previene horas de retrabajo.
 
 .. note::
+ 
  **Uso correcto del script:**
 
  1. Ejecutar ANTES de traducir (PASO 0) -> Genera baseline
@@ -2621,20 +2707,22 @@ Paso 3.7.4: Documentar Verificación
 
  **Ubicación:** ``/tmp/ADT/scripts/analisis_profundo_funcional.py``
 
-----
+
+
 
 **Pasar a:** FASE 4 (solo si verificación exitosa)
 
-----
 
 
-----
+
+
+
 
 FASE 4: Aplicación de Tácticas
-===============================
+==============================
 
 Paso 4.1: Identificar Necesidad de Divergencia
------------------------------------------------
+==============================================
 
 **Pregunta:**
  ¿El método por defecto es suficiente o necesitamos desviarnos?
@@ -2654,7 +2742,7 @@ Paso 4.1: Identificar Necesidad de Divergencia
  [ ] No hay objetivo claro para divergencia
 
 Paso 4.2: Seleccionar Objetivo
--------------------------------
+==============================
 
 **Los 4 objetivos:**
 
@@ -2666,7 +2754,7 @@ Paso 4.2: Seleccionar Objetivo
 **Seleccionar UNO (máximo dos) más relevante.**
 
 Paso 4.3: Aplicar Táctica Apropiada
-------------------------------------
+===================================
 
 **Consultar:** :doc:`/01_fundamentos/objetivos_tacticas`
 
@@ -2701,7 +2789,7 @@ Paso 4.3: Aplicar Táctica Apropiada
  Como se mencionó en :ref:`seccion-introduccion`...
 
 Paso 4.4: Documentar Decisión
-------------------------------
+=============================
 
 **SIEMPRE documentar divergencias significativas:**
 
@@ -2716,13 +2804,14 @@ Paso 4.4: Documentar Decisión
  Táctica: Especificación
  Resultado: :ref:`seccion-introduccion` (explícito)
 
-----
+
+
 
 FASE 5: Validación
 ==================
 
 Paso 5.1: Compilación
----------------------
+=====================
 
 **Después de traducir cada capítulo:**
 
@@ -2751,7 +2840,7 @@ Paso 5.1: Compilación
  [ ] Figuras se muestran correctamente
 
 Paso 5.2: Preservación Semántica
----------------------------------
+================================
 
 **Checklist de completitud:**
 
@@ -2777,7 +2866,7 @@ Paso 5.2: Preservación Semántica
  [ ] Números/datos exactos
 
 Paso 5.3: Calidad Visual
--------------------------
+========================
 
 **Revisar HTML generado:**
 
@@ -2799,12 +2888,14 @@ Paso 5.3: Calidad Visual
  [ ] Enlaces internos funcionan
  [ ] Enlaces externos (si hay) funcionan
 
-----
+
+
 
 FASE 5.5: Documentación de Sección (NUEVA - OBLIGATORIA)
-==========================================================
+========================================================
 
 .. important::
+ 
  **CUÁNDO EJECUTAR:**
 
  - Después de traducir TODA una sección/capítulo completo
@@ -2813,10 +2904,12 @@ FASE 5.5: Documentación de Sección (NUEVA - OBLIGATORIA)
  - ANTES de pasar a la siguiente sección
 
 .. warning::
+ 
  **NUNCA OMITIR ESTA FASE**
 
  Sin esta fase:
 
+ 
  - [ERROR] No hay forma de verificar completitud
  - [ERROR] Inconsistencia entre secciones
  - [ERROR] Pérdida de contenido (subsecciones, plantillas)
@@ -2824,9 +2917,10 @@ FASE 5.5: Documentación de Sección (NUEVA - OBLIGATORIA)
  - [ERROR] Dificulta auditorías futuras
 
 Paso 5.5.1: Verificación de Completitud
---------------------------------------------
+=======================================
 
 .. important::
+ 
  **ESTE ES EL PASO MÁS CRÍTICO DE LA FASE 5.5**
 
  Verificar que TODO el contenido del documento original esté traducido.
@@ -2902,10 +2996,12 @@ Paso 5.5.1: Verificación de Completitud
 **Ejemplo - Lección de Sección 01 (arc42):**
 
 .. note::
+ 
  **CASO REAL - Lo que descubrimos:**
 
  Inicialmente tradujimos:
 
+ 
  - [OK] 4 ejemplos
  - [OK] 24 tips
  - [ERROR] FALTABAN las 3 subsecciones de plantilla (1.1, 1.2, 1.3)
@@ -2920,9 +3016,10 @@ Paso 5.5.1: Verificación de Completitud
  no asumir que todo está traducido.
 
 Paso 5.5.2: Creación de section-X.txt
-------------------------------------------
+=====================================
 
 .. important::
+ 
  **ARCHIVO OBLIGATORIO**
 
  Cada sección DEBE tener un archivo section-X.txt con el contenido
@@ -2940,27 +3037,31 @@ Paso 5.5.2: Creación de section-X.txt
 
 .. code-block:: text
 
- ================================================================================
- SECTION X: [TÍTULO EN INGLÉS]
- ================================================================================
- arc42 / [Nombre del Libro]
+   SECTION X: [TÍTULO EN INGLÉS]
+   ==============================
+   arc42 / [Nombre del Libro]
+
  Translated to Spanish | Método Peshitta + Workflow v1.X.X
- ================================================================================
+==========================================================
 
  SOURCE DOCUMENT: section-X ([Título])
  TRANSLATION DATE: YYYY-MM-DD
  WORKFLOW VERSION: v1.X.X
  STATUS: [OK] 100% COMPLETE (X files)
 
- ================================================================================
+
+
+
  CONTENT OVERVIEW
- ================================================================================
+=================
 
  [Descripción general del contenido de la sección]
 
- ================================================================================
+
+
+
  STRUCTURE
- ================================================================================
+==========
 
  SECTION X: [TÍTULO]
  |
@@ -2973,28 +3074,33 @@ Paso 5.5.2: Creación de section-X.txt
  +- X.3 [SUBSECCIÓN 3]
  +- [Descripción]
 
- ================================================================================
- TRANSLATED FILES (X TOTAL)
- ================================================================================
 
- SUBSECTIONS (X files):
- ------------------------------------------------------------------------
- 1. seccion_X_1.rst
- - X.1 [Título]
+
+   TRANSLATED FILES (X TOTAL)
+   ===========================
+
+   SUBSECTIONS (X files):
+   =======================
+   1. seccion_X_1.rst
+      - X.1 [Título]
  - [Descripción]
  - Terminology: "term" -> "traducción"
 
  EXAMPLES (X files):
- ------------------------------------------------------------------------
- ...
+
+
+
 
  TIPS (X files):
- ------------------------------------------------------------------------
- ...
 
- ================================================================================
+
+
+
+
+
+
  ARCHITECTURAL TERMINOLOGY (Step 3.4 Applied - if applicable)
- ================================================================================
+=============================================================
 
  CRITICAL TRANSLATIONS:
  +---------------------+----------------------------------------------+
@@ -3004,9 +3110,11 @@ Paso 5.5.2: Creación de section-X.txt
  | | [ERROR] NOT "[traducción literal incorrecta]" |
  +---------------------+----------------------------------------------+
 
- ================================================================================
+
+
+
  SUBSECTION X.1: [TÍTULO]
- ================================================================================
+=========================
 
  CONTENT:
  [Qué contiene]
@@ -3021,42 +3129,53 @@ Paso 5.5.2: Creación de section-X.txt
  [Ejemplos disponibles]
 
  TEMPLATE:
- ```
+==========
+
  [Plantilla lista para copiar]
- ```
+==============================
 
  [Repetir para cada subsección]
 
- ================================================================================
+
+
+
  TRANSLATION STATISTICS
- ================================================================================
+=======================
 
  [Métricas de traducción]
 
- ================================================================================
+
+
+
  REFERENCES
- ================================================================================
+===========
 
  [Referencias oficiales]
 
- ================================================================================
+
+
+
  LICENSE
- ================================================================================
+========
 
  Original content: [Licencia]
  Translation: [Licencia]
 
- ================================================================================
+
+
+
  TRANSLATION INFORMATION
- ================================================================================
+========================
 
  Method: Peshitta Method + ADT Workflow v1.X.X
  Date: YYYY-MM-DD
  Status: [OK] 100% COMPLETE
 
- ================================================================================
+
+
+
  END OF SECTION X CONTENT
- ================================================================================
+=========================
 
 **Ubicación:**
 
@@ -3083,9 +3202,10 @@ Paso 5.5.2: Creación de section-X.txt
  # Esperado: ~500-1000 líneas dependiendo del contenido
 
 Paso 5.5.3: Creación de section-X.json
--------------------------------------------
+======================================
 
 .. important::
+ 
  **ARCHIVO OBLIGATORIO**
 
  Cada sección DEBE tener un archivo section-X.json con metadata
@@ -3231,9 +3351,10 @@ Paso 5.5.3: Creación de section-X.json
  python3 -m json.tool section-X.json | less
 
 Paso 5.5.4: Actualización de Archivo Principal
---------------------------------------------------
+==============================================
 
 .. important::
+ 
  **ACTUALIZAR TOCTREE**
 
  El archivo principal de la sección debe tener el toctree completo
@@ -3256,7 +3377,7 @@ Paso 5.5.4: Actualización de Archivo Principal
  .. code-block:: rst
 
  Subsecciones de la Plantilla
- =============================
+=============================
 
  .. toctree::
  :maxdepth: 2
@@ -3266,7 +3387,7 @@ Paso 5.5.4: Actualización de Archivo Principal
  seccion_X_3
 
  Ejemplos Prácticos
- ==================
+===================
 
  .. toctree::
  :maxdepth: 1
@@ -3275,28 +3396,30 @@ Paso 5.5.4: Actualización de Archivo Principal
  ejemplo_2
 
  Tips y Consejos
- ===============
+================
 
  .. toctree::
  :maxdepth: 1
 
  tip_1
+
  tip_2
- ...
+ ======
  tip_N
+ ======
 
 3. **Agregar nota de estado:**
 
  .. code-block:: rst
 
- .. note::
- **Estado de traducción:**
+    .. note::
+       **Estado de traducción:**
 
- - [OK] Subsecciones: X/X
- - [OK] Ejemplos: X/X
- - [OK] Tips: X/X
+       - [OK] Subsecciones: X/X
+       - [OK] Ejemplos: X/X
+       - [OK] Tips: X/X
 
- ** SECCIÓN XX COMPLETADA: XX/XX archivos (100%) **
+    ** SECCIÓN XX COMPLETADA: XX/XX archivos (100%) **
 
 4. **Actualizar metadata del archivo:**
 
@@ -3307,7 +3430,7 @@ Paso 5.5.4: Actualización de Archivo Principal
  :Workflow: v1.X.X
 
 Paso 5.5.5: Checklist Final de FASE 5.5
-------------------------------------------
+=======================================
 
 .. code-block:: text
 
@@ -3345,22 +3468,26 @@ Paso 5.5.5: Checklist Final de FASE 5.5
 
 **Si algo está [ERROR] -> Regresar al paso correspondiente**
 
-----
+
+
 
 FASE 5.6: Validación de Completitud y Fidelidad (NUEVA - OBLIGATORIA)
-========================================================================
+=====================================================================
 
-.. critical::
- **EJECUTAR DESPUÉS DE CADA ARCHIVO TRADUCIDO**
+.. danger::
+ 
+   **EJECUTAR DESPUÉS DE CADA ARCHIVO TRADUCIDO**
 
- Esta fase previene dos tipos de errores sistemáticos:
+   Esta fase previene dos tipos de errores sistemáticos:
 
+ 
  - **ERROR TIPO A:** Esqueletos sin contenido completo
  - **ERROR TIPO B:** Contenido agregado no presente en el original
 
  Basado en análisis de errores en Secciones 3 y 5 (ver ``ANALISIS_ERRORES_TRADUCCIONES_SEC3_SEC5.md``)
 
 .. important::
+ 
  **CUÁNDO EJECUTAR:**
 
  - [OK] Después de traducir CADA archivo individual
@@ -3369,19 +3496,22 @@ FASE 5.6: Validación de Completitud y Fidelidad (NUEVA - OBLIGATORIA)
  - [OK] OBLIGATORIO para todos los archivos (tips, subsecciones, ejemplos)
 
 .. warning::
+ 
  **NUNCA OMITIR ESTA FASE**
 
  Sin esta validación:
 
+ 
  - [ERROR] Archivos con solo estructura/encabezados (ERROR TIPO A)
  - [ERROR] Contenido inventado mezclado con oficial (ERROR TIPO B)
  - [ERROR] Divergencia del documento original
  - [ERROR] Trabajo de corrección posterior (~3 horas en Secciones 3 y 5)
 
 Paso 5.6.1: Verificación de Longitud
------------------------------------------
+====================================
 
 .. important::
+ 
  **Indicador principal de calidad de traducción**
 
  La longitud del archivo traducido debe estar en un rango esperado
@@ -3446,21 +3576,22 @@ Paso 5.6.1: Verificación de Longitud
  [ALERT] DETENER SI:
 
  1. Ratio < 1.5x
- -> Probable ERROR TIPO A (esqueleto sin contenido)
- -> REVISAR Y COMPLETAR
+   -> Probable ERROR TIPO A (esqueleto sin contenido)
+   -> REVISAR Y COMPLETAR
 
  2. Ratio > 3.5x
- -> Probable ERROR TIPO B (contenido agregado)
- -> VERIFICAR CONTRA ORIGINAL
+   -> Probable ERROR TIPO B (contenido agregado)
+   -> VERIFICAR CONTRA ORIGINAL
 
  3. Archivo <30 líneas con original >40 líneas
- -> Casi seguro ERROR TIPO A
- -> COMPLETAR URGENTE
+   -> Casi seguro ERROR TIPO A
+   -> COMPLETAR URGENTE
 
 Paso 5.6.2: Verificación de Secciones
-------------------------------------------
+=====================================
 
 .. important::
+ 
  **Previene agregar contenido no oficial**
 
  SOLO deben existir secciones que estén en el documento original.
@@ -3500,12 +3631,13 @@ Paso 5.6.2: Verificación de Secciones
 4. **Identificar agregados:**
 
  .. warning::
- **Secciones típicas que indican ERROR TIPO B:**
+ 
+    **Secciones típicas que indican ERROR TIPO B:**
 
- - "Ventajas de..."
- - "Tipos de..."
- - "Ejemplos de..."
- - "Casos de uso..."
+    - "Ventajas de..."
+    - "Tipos de..."
+    - "Ejemplos de..."
+    - "Casos de uso..."
  - "Cuándo usar/no usar..."
  - "Mejores prácticas..."
 
@@ -3524,9 +3656,10 @@ Paso 5.6.2: Verificación de Secciones
  5. VOLVER a ejecutar FASE 5.6
 
 Paso 5.6.3: Verificación de Ejemplos
-----------------------------------------
+====================================
 
 .. important::
+ 
  **Ejemplos inventados violan fidelidad**
 
  El número y tipo de ejemplos debe coincidir con el original.
@@ -3576,9 +3709,10 @@ Paso 5.6.3: Verificación de Ejemplos
 - Ejemplos con contenido elaborado: VERIFICAR ORIGEN
 
 Paso 5.6.4: Check Visual Rápido
-----------------------------------
+===============================
 
 .. important::
+ 
  **Inspección visual en 30 segundos**
 
  Detecta patrones comunes de ERROR TIPO B.
@@ -3630,9 +3764,10 @@ Paso 5.6.4: Check Visual Rápido
  4. SI existe en original -> VERIFICAR que sea traducción fiel
 
 Paso 5.6.5: Verificación de Fidelidad al Contenido
--------------------------------------------------------
+==================================================
 
 .. important::
+ 
  **Regla de Oro de Traducción**
 
  Traducción = COMPLETA (100% contenido) + FIEL (0% agregados)
@@ -3686,9 +3821,10 @@ Paso 5.6.5: Verificación de Fidelidad al Contenido
  [ERROR] Decidir qué debería incluir el documento
 
 Paso 5.6.6: Checklist Pre-Commit
--------------------------------------
+================================
 
 .. important::
+ 
  **COMPLETAR ANTES DE CONSIDERAR ARCHIVO "TERMINADO"**
 
  No continuar al siguiente archivo hasta que TODAS las casillas estén marcadas.
@@ -3746,9 +3882,10 @@ Paso 5.6.6: Checklist Pre-Commit
  -> VOLVER a ejecutar FASE 5.6 completa
 
 Paso 5.6.7: Señales de Advertencia
---------------------------------------
+==================================
 
 .. danger::
+ 
  **DETENER Y REVISAR INMEDIATAMENTE SI:**
 
 **Señal 1: Longitud sospechosa**
@@ -3800,7 +3937,7 @@ Paso 5.6.7: Señales de Advertencia
  - "Ventajas de..."
  - "Tipos de..."
  - "Mejores prácticas..."
- ACCIÓN:
+   ACCIÓN:
  1. STOP inmediatamente
  2. NO escribir esa sección
  3. Continuar con contenido original únicamente
@@ -3829,13 +3966,13 @@ Paso 5.6.7: Señales de Advertencia
  - Tu rol es TRADUCIR, no MEJORAR
  - Si el original es breve, la traducción es breve
  - No decides qué debería incluir el documento
- ACCIÓN:
+   ACCIÓN:
  1. STOP
  2. Traducir TAL CUAL está en original
  3. NO agregar explicaciones extra
 
 Paso 5.6.8: Reporte de Validación (Opcional)
----------------------------------------------
+============================================
 
 Para auditoría y trazabilidad, opcionalmente documentar:
 
@@ -3856,13 +3993,14 @@ Para auditoría y trazabilidad, opcionalmente documentar:
  Fecha validación: 2026-01-27
  Validador: [nombre]
 
-----
+
+
 
 FASE 6: Revisión y Mejora
-==========================
+=========================
 
 Paso 6.1: Revisión de Enlaces
-------------------------------
+=============================
 
 **Verificar todos los enlaces:**
 
@@ -3883,7 +4021,7 @@ Paso 6.1: Revisión de Enlaces
  # 3. Verificar que está en un archivo incluido en toctree
 
 Paso 6.2: Optimización de Redacción
-------------------------------------
+===================================
 
 **Mejorar sin cambiar contenido:**
 
@@ -3900,7 +4038,7 @@ Paso 6.2: Optimización de Redacción
  - ¿Estilo consistente?
 
 Paso 6.3: Aplicar Feedback
----------------------------
+==========================
 
 **Si hay revisión por pares:**
 
@@ -3921,13 +4059,14 @@ Paso 6.3: Aplicar Feedback
  Revisor sugirió aclarar término "API"
  -> Agregado: API (Application Programming Interface)
 
-----
+
+
 
 FASE 7: Publicación
 ===================
 
 Paso 7.1: Compilación Final
-----------------------------
+===========================
 
 **Compilación completa y limpia:**
 
@@ -3943,7 +4082,7 @@ Paso 7.1: Compilación Final
  # Objetivo: 0 errors, mínimos warnings
 
 Paso 7.2: Control de Calidad Final
------------------------------------
+==================================
 
 **Checklist pre-publicación:**
 
@@ -3970,7 +4109,7 @@ Paso 7.2: Control de Calidad Final
  [ ] Cambios significativos registrados
 
 Paso 7.3: Despliegue
---------------------
+====================
 
 **Publicar libro en biblioteca:**
 
@@ -4002,7 +4141,8 @@ Paso 7.3: Despliegue
 - Notificar a equipo de revisión
 - Agregar a catálogo de libros completados
 
-----
+
+
 
 Lecciones Aprendidas
 ====================
@@ -4011,7 +4151,7 @@ Esta sección documenta experiencias y aprendizajes clave obtenidos durante
 la aplicación del workflow en proyectos reales.
 
 Sección 01 - arc42 (Introducción y Objetivos)
-----------------------------------------------
+=============================================
 
 **Proyecto:** Traducción de arc42 Documentation - Section 1
 **Fecha:** 2026-01-27
@@ -4019,13 +4159,14 @@ Sección 01 - arc42 (Introducción y Objetivos)
 **Resultado:** 31 archivos traducidos (100% completitud)
 
 .. note::
+ 
  **CONTEXTO DEL PROYECTO:**
 
  Primera sección completa de arc42 traducida al español aplicando
  el Workflow ADT con Paso 3.4 (Traducción Arquitectónica).
 
 [OK] **Lo que FUNCIONÓ:**
-~~~~~~~~~~~~~~~~~~~~~~~
+=========================
 
 1. **Workflow v1.5.0 con Paso 3.4 desde el inicio**
 
@@ -4071,7 +4212,7 @@ Sección 01 - arc42 (Introducción y Objetivos)
  - Construcción progresiva de vocabulario técnico
 
 [ERROR] **Lo que NO FUNCIONÓ (y cómo se corrigió):**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================
 
 1. **Asumir que todo estaba traducido sin verificar**
 
@@ -4151,7 +4292,7 @@ Sección 01 - arc42 (Introducción y Objetivos)
  (arc42, ISO, IEEE) son OBLIGATORIAS, no opcionales
 
 [TARGET] **Recomendaciones para Futuras Secciones:**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================
 
 **Al INICIAR una sección nueva:**
 
@@ -4176,31 +4317,33 @@ Sección 01 - arc42 (Introducción y Objetivos)
 5. **FASE 5.5.5:** Ejecutar checklist final
 
 [TABLE] **Métricas de Éxito - Sección 01:**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===========================================
 
 **Eficiencia:**
 
 .. code-block:: text
 
- Workflow v1.4.0: ~60 min/archivo + correcciones
- Workflow v1.5.0: ~18 min/archivo + 0 correcciones
- -----------------------------------------------
- Mejora: 70% más rápido
+   Workflow v1.4.0: ~60 min/archivo + correcciones
+
+   Workflow v1.5.0: ~18 min/archivo + 0 correcciones
+   ==================================================
+   Mejora: 70% más rápido
 
 **Calidad:**
 
 .. code-block:: text
 
- Lote 1 (v1.4.0): 12 correcciones necesarias
- Lotes 2-4 (v1.5.0): 0 correcciones
- -----------------------------------------------
- Mejora: 100% reducción de correcciones
+   Lote 1 (v1.4.0): 12 correcciones necesarias
+
+   Lotes 2-4 (v1.5.0): 0 correcciones
+   ===================================
+   Mejora: 100% reducción de correcciones
 
 **Terminología:**
 
 .. code-block:: text
 
- Coherencia: 100% (31 archivos)
+   Coherencia: 100% (31 archivos)
  Paso 3.4: Aplicado desde inicio
  Traducciones literales incorrectas: 0
 
@@ -4208,17 +4351,20 @@ Sección 01 - arc42 (Introducción y Objetivos)
 
 .. code-block:: text
 
- Inicial: 28/31 archivos (90%)
- Final: 31/31 archivos (100%)
- -----------------------------------------------
- Incremento: +3 archivos (subsecciones plantilla)
+   Inicial: 28/31 archivos (90%)
+
+   Final: 31/31 archivos (100%)
+   =============================
+   Incremento: +3 archivos (subsecciones plantilla)
 
 [PROCESSING] **Cambios al Workflow Resultantes:**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==================================================
 
 Basado en estas lecciones, se creó:
 
+
 **Workflow v1.6.0** con:
+
 
 1. **FASE 5.5:** Documentación de Sección (OBLIGATORIA)
 
@@ -4234,19 +4380,22 @@ Basado en estas lecciones, se creó:
  - Prevenir repetición de errores
  - Compartir mejores prácticas
 
-----
+
+
 
 Plantillas y Herramientas
 =========================
 
 Template de Sección
--------------------
+===================
 
 .. code-block:: rst
 
- ================
+
+
+
  Título de Sección
- ================
+==================
 
  .. Metadata
  :Autor: [Nombre]
@@ -4256,25 +4405,28 @@ Template de Sección
 
  .. Notas de traducción
  .. note::
+ 
  **Decisiones de traducción:**
 
  - [Decisión 1]
  - [Decisión 2]
 
- ----
+
+
 
  [Contenido aquí]
 
- ----
+
+
 
  Referencias
- ===========
+============
 
  .. [#] Referencia 1
  .. [#] Referencia 2
 
 Scripts Útiles
---------------
+==============
 
 **Verificar compilación:**
 
@@ -4316,13 +4468,14 @@ Scripts Útiles
  # Actualizar metadata_libro.rst
  sed -i "s/:progreso:.*/:progreso: $(($traducidos * 100 / $total_capitulos))%/" "$LIBRO/metadata_libro.rst"
 
-----
+
+
 
 Troubleshooting Común
 =====================
 
 Problema 1: No Compila
------------------------
+======================
 
 **Síntoma:**
  ``make html`` falla con error.
@@ -4341,7 +4494,7 @@ Problema 1: No Compila
 - Archivo faltante -> Verificar paths en ``.. figure::``
 
 Problema 2: Referencias No Funcionan
--------------------------------------
+====================================
 
 **Síntoma:**
  Clic en referencia no va a destino.
@@ -4360,7 +4513,7 @@ Problema 2: Referencias No Funcionan
 - Ortografía -> Verificar mayúsculas/guiones
 
 Problema 3: Figuras No Aparecen
---------------------------------
+===============================
 
 **Síntoma:**
  Espacio en blanco donde debería estar figura.
@@ -4378,7 +4531,8 @@ Problema 3: Figuras No Aparecen
 - Path incorrecto -> Ajustar en ``.. figure::``
 - Formato no soportado -> Convertir a PNG/JPG
 
-----
+
+
 
 Métricas de Calidad
 ===================
@@ -4386,7 +4540,7 @@ Métricas de Calidad
 **Objetivo:** Medir calidad de la traducción
 
 Métrica 1: Tasa de Compilación
--------------------------------
+==============================
 
 .. code-block:: text
 
@@ -4395,7 +4549,7 @@ Métrica 1: Tasa de Compilación
  Objetivo: 100%
 
 Métrica 2: Preservación de Contenido
--------------------------------------
+====================================
 
 .. code-block:: text
 
@@ -4406,7 +4560,7 @@ Métrica 2: Preservación de Contenido
  Objetivo: 100%
 
 Métrica 3: Calidad Visual
---------------------------
+=========================
 
 .. code-block:: text
 
@@ -4417,7 +4571,7 @@ Métrica 3: Calidad Visual
  Objetivo: ≥ 95% (19/20)
 
 Métrica 4: Tiempo por Sección
-------------------------------
+=============================
 
 .. code-block:: text
 
@@ -4427,15 +4581,16 @@ Métrica 4: Tiempo por Sección
 
  Objetivo: Mejorar eficiencia con experiencia
 
-----
+
+
 
 Casos Especiales y Lecciones Aprendidas
-========================================
+=======================================
 
 **NUEVA SECCIÓN v1.2.0:** Casos especiales encontrados y lecciones aprendidas.
 
 Repositorios GitHub Pre-Organizados
-------------------------------------
+===================================
 
 **Caso: arc42 documentation**
 
@@ -4473,7 +4628,7 @@ El repositorio arc42 (``docs.arc42.org-site``) está pre-organizado:
  cp _posts/02-constraints/* -> sections/02_constraints/original/
 
 Validación de Distribución de Archivos
----------------------------------------
+======================================
 
 **Proceso recomendado:**
 
@@ -4489,7 +4644,7 @@ Validación de Distribución de Archivos
 5. Re-analizar para confirmar
 
 Archivos con Front Matter YAML
--------------------------------
+==============================
 
 **Uso del front matter:**
 
@@ -4507,12 +4662,12 @@ Archivos con Front Matter YAML
  .. _tip-2-1:
 
  Tip 2-1: [Título del front matter traducido]
- ---------------------------------------------
+=============================================
 
  [Contenido]
 
 Numeración en Secciones
-------------------------
+=======================
 
 **¿Violan NOM_001 las carpetas con números?**
 
@@ -4532,7 +4687,7 @@ Numeración en Secciones
 Los números en secciones son útiles para orden y navegación.
 
 Referencias Cruzadas Bidireccionales
--------------------------------------
+====================================
 
 **Situación:**
  Tips que se referencian mutuamente
@@ -4552,14 +4707,15 @@ Referencias Cruzadas Bidireccionales
  Ver también :ref:`tip-2-3`
 
 Typos en Material Original
----------------------------
+==========================
 
 **Decisión:**
 
 - **Error menor:** Corregir silenciosamente en traducción
 - **Error significativo:** Documentar y considerar reportar
 
-----
+
+
 
 Conclusión
 ==========
@@ -4581,10 +4737,12 @@ Conclusión
  Aplicar este workflow en un libro real usando la estructura de biblioteca/.
 
  Ver ejemplos en:
+ 
  - :doc:`/biblioteca/arc42/index` (ejemplo en progreso)
  - :doc:`/docs_maestros/ESTRUCTURA_DE_BIBLIOTECA_-_Versión_Correcta`
 
-----
+
+
 
 Referencias
 ===========
@@ -4595,20 +4753,23 @@ Referencias
 - :doc:`modo_alta_fidelidad/index`
 - :doc:`modo_marcado_visual/index`
 
-----
+
+
 
 **Versión:** 1.4.0
 **Fecha:** 2026-01-27
 **Estado:** Aprobado - Procedimiento operativo principal
 **Actualizaciones v1.4.0:**
- - **FASE 3.5 agregada (CRÍTICA):** Revisión de Literalidad obligatoria
- - Checklist de revisión sistemática archivo por archivo
- - Patrones comunes de literalidad a detectar
- - Proceso de ajustes prioritizados y documentados
- - Regla: "Si no revisaste literalidad, no terminaste FASE 3"
+
+- **FASE 3.5 agregada (CRÍTICA):** Revisión de Literalidad obligatoria
+- Checklist de revisión sistemática archivo por archivo
+- Patrones comunes de literalidad a detectar
+- Proceso de ajustes prioritizados y documentados
+- Regla: "Si no revisaste literalidad, no terminaste FASE 3"
 
 **Actualizaciones v1.3.0:**
- - Estructura 1:1 explícita en Paso 3.1 (un archivo original -> un archivo traducido)
+
+- Estructura 1:1 explícita en Paso 3.1 (un archivo original -> un archivo traducido)
  - Checklist de revisión Signifié en Paso 3.3 (evitar traducciones literales)
  - Ejemplos de qué evitar (traducciones demasiado literales)
 

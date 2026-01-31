@@ -1,15 +1,18 @@
 .. _seccion_07:
 
-===============================================================
+
+
+
 Sección 07: Vista de Despliegue (Deployment View)
-===============================================================
+=================================================
 
 .. tip::
    **Vista de Despliegue arc42**
    
    La **vista de despliegue** describe el **entorno** técnico en el cual el sistema se ejecuta: **hardware**, **infraestructura**, **nodos** y **mapeo** de **bloques de construcción** al **hardware**.
 
-----
+
+
 
 Introducción
 ============
@@ -37,10 +40,11 @@ Los elementos típicos incluyen:
 * **Entornos** de **ejecución** (producción, staging, desarrollo)
 * **Mapeo** de software (bloques de construcción) a **hardware**
 
-----
+
+
 
 Contenido de la Sección
-========================
+=======================
 
 Esta sección contiene:
 
@@ -50,10 +54,11 @@ Esta sección contiene:
 **Ejemplos de Aplicación (3 ejemplos)**
    Casos reales de **vistas de despliegue** en sistemas
 
-----
+
+
 
 Tips de Vista de Despliegue
-============================
+===========================
 
 .. toctree::
    :maxdepth: 1
@@ -70,10 +75,11 @@ Tips de Vista de Despliegue
    deployment_tip_9
    deployment_tip_10
 
-----
+
+
 
 Ejemplos de Deployment View
-============================
+===========================
 
 .. toctree::
    :maxdepth: 1
@@ -83,7 +89,8 @@ Ejemplos de Deployment View
    deployment_ejemplo_htmlsc
    deployment_ejemplo_tpu_2
 
-----
+
+
 
 Motivación
 ==========
@@ -98,7 +105,8 @@ Debes documentar la **vista de despliegue** si:
 * Decisiones de **hardware** impactan la arquitectura
 * Se requiere planificación de capacidad o escalabilidad
 
-----
+
+
 
 Forma y Notación
 ================
@@ -121,10 +129,11 @@ Existen varias notaciones para describir el **despliegue**:
   * Descripciones textuales de **nodos**
   * Diagramas de arquitectura en **nube**
 
-----
+
+
 
 Relación con Otras Secciones
-=============================
+============================
 
 **Sección 05 (Building Block View)**
    Los **bloques de construcción** se mapean a **nodos** de **hardware** en la **vista de despliegue**
@@ -135,10 +144,11 @@ Relación con Otras Secciones
 **Sección 08 (Conceptos Transversales)**
    Conceptos como seguridad, logging, monitoreo se implementan en la **infraestructura**
 
-----
+
+
 
 7.1 Infraestructura Nivel 1
-============================
+===========================
 
 Describe (usualmente en una combinación de diagramas, tablas y texto):
 
@@ -154,57 +164,59 @@ Para múltiples **entornos** o **despliegues** alternativos, por favor copia est
    < insertar diagrama de vista general de infraestructura >
 
 Motivación
-----------
+==========
 
 .. code-block:: text
 
    < insertar descripción de motivación o explicación en forma de texto >
 
 Características de Calidad y/o Desempeño (opcional)
-----------------------------------------------------
+===================================================
 
 .. code-block:: text
 
    < opcionalmente insertar descripción de características de calidad o desempeño >
 
 Mapeo
------
+=====
 
 .. code-block:: text
 
    < insertar descripción del mapeo de bloques de construcción >
 
-----
+
+
 
 7.2 Infraestructura Nivel 2
-============================
+===========================
 
 Aquí puedes incluir la estructura interna de (algunos) elementos de **infraestructura** del **nivel de infraestructura** 1.
 
 Por favor copia la estructura del nivel 1 para cada elemento seleccionado.
 
 7.2.1 <Elemento de Infraestructura 1>
---------------------------------------
+=====================================
 
 .. code-block:: text
 
    < insertar diagrama + explicación >
 
 7.2.2 <Elemento de Infraestructura 2>
---------------------------------------
+=====================================
 
 .. code-block:: text
 
    < insertar diagrama + explicación >
 
 7.2.n <Elemento de Infraestructura n>
---------------------------------------
+=====================================
 
 .. code-block:: text
 
    < insertar diagrama + explicación >
 
-----
+
+
 
 Información Adicional
 =====================
@@ -220,14 +232,16 @@ Para más información sobre **vista de despliegue**, consulta:
 **Ejemplos de Aplicación**
    Revisa los 3 ejemplos arriba para ver casos reales de **vistas de despliegue**.
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_05` - Vista de Bloques de Construcción
    * :ref:`seccion_06` - Vista de Tiempo de Ejecución
    * :ref:`seccion_08` - Conceptos Transversales
 
-----
+
+
 
 :Sección: 07
 :Título: Vista de Despliegue

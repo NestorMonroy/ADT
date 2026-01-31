@@ -9,12 +9,11 @@
 
 .. _libro-arc42-documentation:
 
-=====================================================================
 arc42 Documentation - 144 tips and 35 examples how to use the arc42 template
-=====================================================================
+============================================================================
 
 Información Bibliográfica
-==========================
+=========================
 
 Título Original (Completo)
  arc42 Documentation - 144 tips and 35 examples how to use the arc42 template
@@ -70,7 +69,7 @@ Licencia
  Ver: https://arc42.org/license
 
 Clasificación según Guía Metodológica
-======================================
+=====================================
 
 Código de Clasificación
  ING.SIS.ARC.001
@@ -111,8 +110,10 @@ Palabras Clave
  Documentación de sistemas, Decisiones de diseño (ADR), Stakeholders,
  Requisitos de calidad, Contexto de sistema
 
+.. _metadata-estado-traduccion:
+
 Estado de Traducción
-=====================
+====================
 
 Progreso Global
  0% completado (0 de 12 secciones principales)
@@ -156,7 +157,7 @@ Metodología
  Método de Traducción de la Peshitta (Dr. Zacharias) + ADT Workflow v1.1.0
 
 Procedimientos Aplicados
-=========================
+========================
 
 - :doc:`/02_procedimientos/workflow_general` (v1.1.0)
 - :doc:`/01_fundamentos/principios_fundamentales`
@@ -169,7 +170,7 @@ Modo: Alta Fidelidad
 Enfoque: Documentación técnica profesional
 
 Contenido del Libro
-====================
+===================
 
 arc42 Documentation es una guía completa que contiene:
 
@@ -183,52 +184,52 @@ arc42 Documentation es una guía completa que contiene:
  Guías detalladas para cada sección del template arc42
 
 Estructura de 12 Secciones
-===========================
+==========================
 
 El template arc42 consta de 12 secciones principales:
 
 1. **Introduction and Goals** - Introducción y Objetivos
- Requisitos fundamentales, stakeholders, objetivos de calidad
+  Requisitos fundamentales, stakeholders, objetivos de calidad
 
 2. **Constraints** - Restricciones
- Restricciones técnicas y organizacionales
+  Restricciones técnicas y organizacionales
 
 3. **Context and Scope** - Contexto y Alcance
- Contexto del sistema, límites del sistema, interfaces externas
+  Contexto del sistema, límites del sistema, interfaces externas
 
 4. **Solution Strategy** - Estrategia de Solución
- Decisiones arquitectónicas fundamentales, estrategia global
+  Decisiones arquitectónicas fundamentales, estrategia global
 
 5. **Building Block View** - Vista de Bloques de Construcción
- Estructura estática del sistema (whitebox/blackbox)
+  Estructura estática del sistema (whitebox/blackbox)
 
 6. **Runtime View** - Vista de Tiempo de Ejecución
- Comportamiento dinámico, escenarios de runtime
+  Comportamiento dinámico, escenarios de runtime
 
 7. **Deployment View** - Vista de Despliegue
- Infraestructura técnica, mapping software a hardware
+  Infraestructura técnica, mapping software a hardware
 
 8. **Concepts** - Conceptos (Transversales)
- Conceptos que afectan múltiples bloques de construcción
- (seguridad, logging, manejo de errores, persistencia, etc.)
+  Conceptos que afectan múltiples bloques de construcción
+  (seguridad, logging, manejo de errores, persistencia, etc.)
 
 9. **Architecture Decisions** - Decisiones Arquitectónicas
- Decisiones importantes con justificación (ADRs)
+  Decisiones importantes con justificación (ADRs)
 
 10. **Quality** - Calidad
- Árbol de calidad, escenarios de calidad, requisitos de calidad
+  Árbol de calidad, escenarios de calidad, requisitos de calidad
 
 11. **Risks and Technical Debt** - Riesgos y Deuda Técnica
- Riesgos conocidos, problemas técnicos, deuda técnica
+  Riesgos conocidos, problemas técnicos, deuda técnica
 
 12. **Glossary** - Glosario
- Términos importantes del dominio y técnicos
+  Términos importantes del dominio y técnicos
 
 Notas de Traducción
-====================
+===================
 
 Decisiones Importantes
-----------------------
+======================
 
 1. **Terminología Clave:**
  - "Building Block" -> "Bloque de Construcción"
@@ -269,7 +270,7 @@ Decisiones Importantes
  - Contextualización de casos de uso
 
 Características Técnicas
-=========================
+========================
 
 Formato Original
  - Archivos Markdown (.md)
@@ -319,7 +320,8 @@ Esta Traducción
  © Equipo ADT 2026
  Bajo la misma licencia CC BY-SA 4.0
 
-----
+
+
 
 **Versión Metadata:** 1.0.0
 **Fecha Creación:** 2026-01-27

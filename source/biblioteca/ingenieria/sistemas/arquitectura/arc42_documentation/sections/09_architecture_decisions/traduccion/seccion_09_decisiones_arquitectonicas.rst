@@ -1,9 +1,11 @@
 .. _seccion-9:
 
-================================
+
+
 9. Decisiones de Arquitectura
 
-================================
+
+
 
 .. meta::
    :category: arc42-doc-section
@@ -45,7 +47,7 @@ Cuando se trata de decisiones de arquitectura, los equipos de desarrollo a menud
 Por lo tanto, debe documentar algunas decisiones importantes junto con su motivación y razonamiento.
 
 Nuestra propuesta concerniente a las decisiones
-================================================
+===============================================
 
 Mantenga una colección de decisiones *arquitectónicamente significativas*,
 aquellas decisiones que afectan la estructura, características de calidad, dependencias importantes (especialmente externas) e interfaces, o técnicas de construcción (gracias a Michael Nygard por `esta propuesta <https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions>`_).

@@ -1,8 +1,10 @@
 .. _errores_comunes:
 
-===============================================
+
+
+
 Errores Comunes y Correcciones
-===============================================
+==============================
 
 Errores reales cometidos durante traducción y **cómo fueron corregidos**.
 
@@ -12,7 +14,8 @@ Errores reales cometidos durante traducción y **cómo fueron corregidos**.
 **Propósito:**
  Aprender de errores reales para evitarlos en el futuro.
 
-----
+
+
 
 Errores Disponibles
 ===================
@@ -23,10 +26,11 @@ Errores Disponibles
 
  error_01_omisiones
 
-----
+
+
 
 Estructura de Cada Error
-=========================
+========================
 
 Cada caso de error incluye:
 
@@ -39,7 +43,8 @@ Cada caso de error incluye:
 7. **Prevención:** Cómo evitarlo
 8. **Aplicabilidad:** Dónde puede ocurrir
 
-----
+
+
 
 Uso de estos Casos
 ==================
@@ -53,10 +58,11 @@ Uso de estos Casos
 **Para Corregir:**
  Sigue pasos de corrección documentados.
 
-----
+
+
 
 Top 3 Errores Más Comunes
-==========================
+=========================
 
 1. **Omisiones** (Error #1)
 
@@ -84,10 +90,11 @@ Top 3 Errores Más Comunes
  Frecuencia: 25% de traducciones sin estándar
  Prevención: Aplicar MD-004 + glosario
 
-----
+
+
 
 Señales de Advertencia
-=======================
+======================
 
 **[ALERT] Estás en riesgo de errores si:**
 
@@ -109,10 +116,11 @@ Señales de Advertencia
  [OK] Revisión contra original
  [OK] Compilación + verificación manual
 
-----
+
+
 
 Próximos Errores a Documentar
-==============================
+=============================
 
 .. code-block:: text
 
@@ -120,7 +128,8 @@ Próximos Errores a Documentar
  [RUNNING] error_03_terminologia_inconsistente.rst
  [RUNNING] error_04_verificacion_incompleta.rst
 
-----
+
+
 
 .. warning::
  Los errores documentados aquí son **reales** y **costosos**. Error #1 (omisiones) costó 2 horas de re-trabajo. Leer esta sección puede ahorrar días de trabajo.

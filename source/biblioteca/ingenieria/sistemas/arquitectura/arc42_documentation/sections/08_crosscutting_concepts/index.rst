@@ -1,8 +1,10 @@
 .. _seccion-08-index:
 
-========================================
+
+
+
 Sección 08: Conceptos Transversales
-========================================
+===================================
 
 Esta sección describe conceptos transversales (prácticas, patrones, regulaciones o ideas de solución).
 Tales conceptos están frecuentemente relacionados con múltiples bloques de construcción.

@@ -1,8 +1,10 @@
 .. _MD_003_nivel_segmentacion:
 
-===============================================
+
+
+
 MD-003: Nivel de Segmentación
-===============================================
+=============================
 
 :ID: MD-003
 :Tipo: Matriz de Decisión
@@ -14,7 +16,8 @@ MD-003: Nivel de Segmentación
  :depth: 3
  :local:
 
-----
+
+
 
 Pregunta Central
 ================
@@ -27,13 +30,14 @@ Esta decisión afecta:
 - **Performance:** Tiempo de compilación
 - **Experiencia del usuario:** Claridad de la estructura
 
-----
+
+
 
 Los Tres Niveles
 ================
 
 Nivel 1: Monolítico (Un solo archivo grande)
----------------------------------------------
+============================================
 
 **Filosofía:** Todo el contenido en un archivo único
 
@@ -66,7 +70,7 @@ Nivel 1: Monolítico (Un solo archivo grande)
 - Un solo autor
 
 Nivel 2: Moderado (Archivos por subsección principal)
-------------------------------------------------------
+=====================================================
 
 **Filosofía:** Dividir por subsecciones lógicas principales
 
@@ -97,7 +101,7 @@ Nivel 2: Moderado (Archivos por subsección principal)
 - Equipo colaborativo
 
 Nivel 3: Granular (Archivo por cada elemento)
-----------------------------------------------
+=============================================
 
 **Filosofía:** Máxima división, un archivo por tip/ejemplo/concepto
 
@@ -133,13 +137,14 @@ Nivel 3: Granular (Archivo por cada elemento)
 - Contenido reutilizable
 - Proyecto grande (100+ archivos)
 
-----
+
+
 
 Matriz de Decisión
 ==================
 
 Por Tamaño de Contenido
-------------------------
+=======================
 
 .. list-table::
  :header-rows: 1
@@ -167,7 +172,7 @@ Por Tamaño de Contenido
    - [OK] **Recomendado**
 
 Por Tipo de Contenido
-----------------------
+=====================
 
 .. list-table::
  :header-rows: 1
@@ -203,7 +208,7 @@ Por Tipo de Contenido
    - [WARNING]
 
 Por Contexto de Proyecto
--------------------------
+========================
 
 .. list-table::
  :header-rows: 1
@@ -234,13 +239,14 @@ Por Contexto de Proyecto
    - [OK]
    - [WARNING]
 
-----
+
+
 
 Árbol de Decisión
 =================
 
 Proceso Paso a Paso
--------------------
+===================
 
 .. code-block:: text
 
@@ -267,13 +273,14 @@ Proceso Paso a Paso
 
 **Regla de oro:** Cuando dudes, usa **Nivel 2** (balance óptimo)
 
-----
+
+
 
 Casos Reales de arc42
 =====================
 
 Sección 12: Glosario (Nivel 3)
--------------------------------
+==============================
 
 **Decisión:** Nivel 3 (Granular)
 
@@ -312,7 +319,7 @@ Sección 12: Glosario (Nivel 3)
 **Éxito:** [OK] 8/8 archivos, navegación excelente
 
 Sección 10: Quality Requirements (Nivel 2)
--------------------------------------------
+==========================================
 
 **Decisión:** Nivel 2 (Moderado)
 
@@ -342,7 +349,7 @@ Sección 10: Quality Requirements (Nivel 2)
  +- quality_ejemplo_escenarios.rst (ejemplo separado)
 
 Sección 01: Introduction (Nivel 1)
------------------------------------
+==================================
 
 **Decisión:** Nivel 1 (Monolítico)
 
@@ -369,13 +376,14 @@ Sección 01: Introduction (Nivel 1)
  seccion_01_introduccion/
  +- seccion_01_introduccion.rst (todo en un archivo)
 
-----
+
+
 
 Ventajas y Desventajas
 ======================
 
 Comparación Detallada
----------------------
+=====================
 
 .. list-table::
  :header-rows: 1
@@ -411,7 +419,7 @@ Comparación Detallada
    - [STAR][STAR][STAR][STAR][STAR]
 
 Tiempo de Gestión
------------------
+=================
 
 .. list-table::
  :header-rows: 1
@@ -442,13 +450,14 @@ Tiempo de Gestión
    - Pocos conflictos
    - Muy pocos
 
-----
+
+
 
 Recomendaciones Prácticas
-==========================
+=========================
 
 Guía Rápida
------------
+===========
 
 **Usa Nivel 1 si:**
 
@@ -481,7 +490,7 @@ Guía Rápida
  [OK] Reutilización importante
 
 Reglas de Oro
--------------
+=============
 
 **1. No sobre-segmentar**
 
@@ -515,7 +524,7 @@ Reglas de Oro
  Si NO -> Reorganizar
 
 Checklist de Decisión
-----------------------
+=====================
 
 .. code-block:: text
 
@@ -535,13 +544,14 @@ Checklist de Decisión
  [ ] Fácil encontrar contenido
  [ ] Compilación exitosa
 
-----
+
+
 
 Errores Comunes
 ===============
 
 Error 1: Sobre-segmentación
-----------------------------
+===========================
 
 **Problema:**
 
@@ -562,7 +572,7 @@ Error 1: Sobre-segmentación
  Usar Nivel 2 en lugar de Nivel 3
 
 Error 2: Sub-segmentación
---------------------------
+=========================
 
 **Problema:**
 
@@ -583,7 +593,7 @@ Error 2: Sub-segmentación
  Usar Nivel 2 o Nivel 3
 
 Error 3: Segmentación Arbitraria
----------------------------------
+================================
 
 **Problema:**
 
@@ -602,7 +612,8 @@ Error 3: Segmentación Arbitraria
  concepto_seguridad.rst
  concepto_performance.rst
 
-----
+
+
 
 Conclusión
 ==========
@@ -630,7 +641,8 @@ Después de decidir nivel:
 - Crear índices (index.rst)
 - Configurar toctrees
 
-----
+
+
 
 .. seealso::
  * :doc:`MD_001_modo_1_vs_modo_2` - Decisión de modo de traducción

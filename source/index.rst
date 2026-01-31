@@ -1,8 +1,10 @@
 .. ADT - Procedimientos de Traducción Técnica documentation master file
 
-====================================================
+
+
+
 ADT - Procedimientos de Traducción Técnica
-====================================================
+==========================================
 
 **Sistema Integrado de Documentación Arquitectónica y Traducción Técnica**
 
@@ -134,10 +136,10 @@ Contenido Principal
  10_apendices/index
 
 Características Principales
-============================
+===========================
 
 Alta Fidelidad
---------------
+==============
 
 Traducción que preserva exactamente la estructura, formato y significado
 del documento original.
@@ -150,13 +152,13 @@ del documento original.
  elegante pero imprecisa.
 
 Marcado Visual
---------------
+==============
 
 Sistema de marcado pedagógico que resalta términos técnicos en su primera
 aparición: ``español (:term:`inglés`)``.
 
 Múltiples Medios
-----------------
+================
 
 Soporte completo para:
 
@@ -165,7 +167,7 @@ Soporte completo para:
 - **Markdown** - Tutoriales y guías ligeras
 
 Control de Calidad
-------------------
+==================
 
 Múltiples checklists de verificación:
 
@@ -178,34 +180,39 @@ Múltiples checklists de verificación:
 Casos de Uso
 ============
 
-.. grid:: 2
- :gutter: 3
+.. TODO: Grid con indentación problemática - requiere revisión
+   Ver WARNING: All children of 'grid-row' should be 'grid-item'
+   
+   .. .. grid:: 2
+   ..  :gutter: 3
+   ..
+   ..  .. grid-item-card:: Traducir Libro Técnico
+   ..     :link: 06_casos_practicos/casos_exito/exito_01_libro_BPM
+   ..     :link-type: doc
+   ..
+   ..  Proceso completo de traducción de un libro técnico,
+   ..  desde el PDF original hasta la versión final en Sphinx.
+   ..
+   ..  .. grid-item-card:: Traducir Manual LaTeX
+   ..     :link: 06_casos_practicos/casos_exito/exito_02_manual_latex
+   ..     :link-type: doc
+   ..
+   ..  Traducción de manual académico preservando toda
+   ..  la estructura LaTeX nativa.
+   ..
+   ..  .. grid-item-card:: [DEBUG] Evitar Errores Comunes
+   ..     :link: 06_casos_practicos/errores_comunes/index
+   ..     :link-type: doc
+   ..
+   ..  Aprende de los 7 errores más comunes y cómo evitarlos.
+   ..
+   ..  .. grid-item-card:: [TARGET] Tutorial Completo
+   ..     :link: 07_guias_uso/tutorial_completo
+   ..     :link-type: doc
+   ..
+   ..  Tutorial paso a paso de traducción desde cero.
 
- .. grid-item-card:: Traducir Libro Técnico
- :link: 06_casos_practicos/casos_exito/exito_01_libro_BPM
- :link-type: doc
-
- Proceso completo de traducción de un libro técnico,
- desde el PDF original hasta la versión final en Sphinx.
-
- .. grid-item-card:: Traducir Manual LaTeX
- :link: 06_casos_practicos/casos_exito/exito_02_manual_latex
- :link-type: doc
-
- Traducción de manual académico preservando toda
- la estructura LaTeX nativa.
-
- .. grid-item-card:: [DEBUG] Evitar Errores Comunes
- :link: 06_casos_practicos/errores_comunes/index
- :link-type: doc
-
- Aprende de los 7 errores más comunes y cómo evitarlos.
-
- .. grid-item-card:: [TARGET] Tutorial Completo
- :link: 07_guias_uso/tutorial_completo
- :link-type: doc
-
- Tutorial paso a paso de traducción desde cero.
+*(Sección de Casos de Uso temporalmente deshabilitada - ver referencias en la sección Guías y Tutoriales)*
 
 Estadísticas
 ============
@@ -293,7 +300,7 @@ Idioma y Localización
 * :doc:`01_fundamentos/glosario_traduccion` - Glosario de términos
 
 Información del Proyecto
-=========================
+========================
 
 :Proyecto: ADT (Arc42-Diátaxis-Traducción)
 :Versión: |version|
@@ -306,6 +313,7 @@ Información del Proyecto
 
  **Última actualización:** |today|
 
-----
+
+
 
 **¿Listo para empezar?** Ve a :doc:`07_guias_uso/guia_rapida`

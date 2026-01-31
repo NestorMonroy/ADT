@@ -1,8 +1,10 @@
 .. _seccion-09-index:
 
-========================================
+
+
+
 Sección 09: Decisiones de Arquitectura
-========================================
+======================================
 
 Esta sección describe las decisiones de arquitectura importantes, costosas, 
 de gran escala o riesgosas, incluyendo su justificación.

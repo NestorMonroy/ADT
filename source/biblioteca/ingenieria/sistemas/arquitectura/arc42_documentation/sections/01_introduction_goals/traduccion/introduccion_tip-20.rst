@@ -1,8 +1,10 @@
 .. _introduccion-tip-20:
 
-===================================================================
+
+
+
 Consejo 1-20: ¡Describe las expectativas de stakeholders!
-===================================================================
+=========================================================
 
 .. meta::
    :layout: post
@@ -15,7 +17,8 @@ Consejo 1-20: ¡Describe las expectativas de stakeholders!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Gestores de proyecto
 
-----
+
+
 
 Recomendación
 =============
@@ -25,7 +28,8 @@ su documentación.
 
 Pregunta por el contenido esperado, la forma y eventualmente los detalles requeridos.
 
-----
+
+
 
 Beneficios
 ==========
@@ -41,7 +45,8 @@ incluso si no suena necesariamente como trabajo arquitectónico:
 
 - Evitas documentar cosas que podrían no ser relevantes.
 
-----
+
+
 
 .. note::
    **Información de traducción:**

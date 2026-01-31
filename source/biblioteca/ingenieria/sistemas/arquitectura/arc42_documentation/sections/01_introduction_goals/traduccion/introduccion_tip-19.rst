@@ -1,8 +1,10 @@
 .. _introduccion-tip-19:
 
-===================================================================
+
+
+
 Consejo 1-19: ¡Busca ampliamente stakeholders!
-===================================================================
+==============================================
 
 .. meta::
    :layout: post
@@ -15,7 +17,8 @@ Consejo 1-19: ¡Busca ampliamente stakeholders!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Gestores de proyecto
 
-----
+
+
 
 Recomendación
 =============
@@ -27,10 +30,11 @@ Para darte algunas ideas, elaboramos una lista aterradoramente larga de posibles
 stakeholders. Todas estas personas o roles pueden tener un interés en la 
 arquitectura o su documentación...
 
-----
+
+
 
 Lista de Stakeholders Potenciales
-==================================
+=================================
 
 Analista, Analista de Negocio, (otros) arquitectos, auditor, consejo supervisor, 
 patrocinador del proyecto, autoridad pública, consejo, gestor de compilación, 
@@ -45,7 +49,8 @@ despliegue, Scrum Master, oficiales de seguridad, integrador de sistemas, tester
 diseñadores UX, proyectos relacionados, equipo de mantenimiento, diseñadores, 
 proveedores.
 
-----
+
+
 
 .. note::
    **Información de traducción:**

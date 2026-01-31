@@ -1,8 +1,10 @@
 .. _equivalencias:
 
-===============================================
+
+
+
 Tablas de Equivalencias
-===============================================
+=======================
 
 Tablas de referencia para conversión entre formatos.
 

@@ -1,6 +1,6 @@
-==================================================================================
+
 META_BIB_003: Esquema de Codificación - Tabla Maestra de Códigos
-==================================================================================
+=================================================================
 
 :Código: META_BIB_003
 :Versión: 1.0.0
@@ -14,7 +14,8 @@ META_BIB_003: Esquema de Codificación - Tabla Maestra de Códigos
  :depth: 3
  :local:
 
-----
+
+
 
 Propósito
 =========
@@ -29,13 +30,14 @@ clasificación utilizados en el sistema de biblioteca ADT.
 3. Prevención de colisiones de códigos
 4. Historial de códigos aprobados
 
-----
+
+
 
 Formato de Código
 =================
 
 Estructura General
-------------------
+==================
 
 .. code-block:: text
 
@@ -46,7 +48,7 @@ Estructura General
  +------------- CATEGORÍA (3 letras mayúsculas)
 
 Reglas de Formación
--------------------
+===================
 
 1. **Categorías, Subcategorías, Especialidades:**
 
@@ -85,10 +87,11 @@ Reglas de Formación
  INF PRG FST 001 [ERROR] Espacios en lugar de puntos
  INF-PRG-FST-001 [ERROR] Guiones en lugar de puntos
 
-----
+
+
 
 Tabla Maestra: Categorías
-==========================
+=========================
 
 .. list-table:: Categorías (Nivel 1)
  :header-rows: 1
@@ -113,13 +116,14 @@ Tabla Maestra: Categorías
 
 **Total Categorías Activas:** 3
 
-----
+
+
 
 Tabla Maestra: Subcategorías
-==============================
+============================
 
 Informática (INF)
------------------
+=================
 
 .. list-table:: Subcategorías INF
  :header-rows: 1
@@ -173,7 +177,7 @@ Informática (INF)
 **Total Subcategorías INF:** 10
 
 Ingeniería (ING)
-----------------
+================
 
 .. list-table:: Subcategorías ING
  :header-rows: 1
@@ -211,7 +215,7 @@ Ingeniería (ING)
 **Total Subcategorías ING:** 6
 
 Ciencias (CIE)
---------------
+==============
 
 .. list-table:: Subcategorías CIE
  :header-rows: 1
@@ -242,13 +246,14 @@ Ciencias (CIE)
 
 **TOTAL SUBCATEGORÍAS SISTEMA:** 20
 
-----
+
+
 
 Tabla Maestra: Especialidades
-==============================
+=============================
 
 Programación (INF.PRG)
-----------------------
+======================
 
 .. list-table:: Especialidades INF.PRG
  :header-rows: 1
@@ -338,7 +343,7 @@ Programación (INF.PRG)
 **Total Especialidades PRG:** 19
 
 Inteligencia Artificial (INF.IAR)
-----------------------------------
+=================================
 
 .. list-table:: Especialidades INF.IAR
  :header-rows: 1
@@ -372,7 +377,7 @@ Inteligencia Artificial (INF.IAR)
 **Total Especialidades IAR:** 5
 
 DevOps y Cloud (INF.DVC)
--------------------------
+========================
 
 .. list-table:: Especialidades INF.DVC
  :header-rows: 1
@@ -422,7 +427,7 @@ DevOps y Cloud (INF.DVC)
 **Total Especialidades DVC:** 9
 
 Arquitectura (ING.ARQ)
-----------------------
+======================
 
 .. list-table:: Especialidades ING.ARQ
  :header-rows: 1
@@ -460,7 +465,7 @@ Arquitectura (ING.ARQ)
 **Total Especialidades ARQ:** 6
 
 Otras Especialidades
---------------------
+====================
 
 **Bases de Datos (INF.BDD):**
 
@@ -493,20 +498,21 @@ Otras Especialidades
 
 **TOTAL ESPECIALIDADES DEFINIDAS:** 50+
 
-----
+
+
 
 Proceso de Aprobación de Nuevos Códigos
-========================================
+=======================================
 
 Propuesta de Nueva Especialidad
---------------------------------
+===============================
 
 **Plantilla:**
 
 .. code-block:: rst
 
  PROPUESTA DE NUEVA ESPECIALIDAD
- ================================
+================================
 
  Solicitante: [Nombre]
  Fecha: [YYYY-MM-DD]
@@ -534,7 +540,7 @@ Propuesta de Nueva Especialidad
  Aprobado por: [Nombre]
 
 Criterios de Aprobación
-------------------------
+=======================
 
 **SE APRUEBA si:**
 
@@ -553,7 +559,7 @@ Criterios de Aprobación
 [ERROR] Puede usar especialidad GEN (General)
 
 Proceso de Registro
---------------------
+===================
 
 **Pasos al aprobar nuevo código:**
 
@@ -582,13 +588,14 @@ Proceso de Registro
 
  - Registrar en changelog de este documento
 
-----
+
+
 
 Códigos Reservados
 ==================
 
 Códigos NO Disponibles
------------------------
+======================
 
 **Reservados para uso futuro:**
 
@@ -608,7 +615,7 @@ Códigos NO Disponibles
 **NO usar sin aprobación previa.**
 
 Códigos Obsoletos
------------------
+=================
 
 **Actualmente:** Ninguno
 
@@ -619,13 +626,14 @@ Códigos Obsoletos
 - Razón
 - Código de reemplazo (si aplica)
 
-----
+
+
 
 Tabla de Referencia Rápida
-===========================
+==========================
 
 Códigos por Frecuencia de Uso Estimada
----------------------------------------
+======================================
 
 .. list-table:: Top 20 Especialidades (estimado)
  :header-rows: 1
@@ -717,7 +725,7 @@ Códigos por Frecuencia de Uso Estimada
    - ING.ARQ.DDD.XXX
 
 Índice Alfabético de Códigos
------------------------------
+============================
 
 .. code-block:: text
 
@@ -801,13 +809,14 @@ Códigos por Frecuencia de Uso Estimada
 
  WEB -> Desarrollo Web (INF.WEB)
 
-----
+
+
 
 Estadísticas del Sistema
-=========================
+========================
 
 Conteo Actual
--------------
+=============
 
 .. code-block:: text
 
@@ -823,7 +832,7 @@ Conteo Actual
  Capacidad Total Sistema: ~51,000 libros antes de colisiones
 
 Distribución
-------------
+============
 
 .. code-block:: text
 
@@ -842,28 +851,30 @@ Distribución
  - Especialidades: ~5
  - Porcentaje: ~10%
 
-----
+
+
 
 Referencias
 ===========
 
 Documentos Relacionados
------------------------
+=======================
 
 - :doc:`META_BIB_001_Sistema_Clasificacion_1_0_0` - Sistema de clasificación
 - :doc:`META_BIB_002_Guia_Organizacion_1_0_0` - Guía de organización
 - :doc:`catalogo_numeros` - Registro de números asignados
 
 Estándares
-----------
+==========
 
 - ISO 12620-2:2022 - Data category specifications
 - Unicode Technical Standard #35 - Locale Data Markup Language
 
-----
+
+
 
 Historial de Versiones
-=======================
+======================
 
 .. list-table::
  :widths: 10 15 15 60
@@ -878,7 +889,8 @@ Historial de Versiones
    - Sistema ADT
    - Versión inicial - 73+ códigos definidos
 
-----
+
+
 
 **Documento:** META_BIB_003_Esquema_Codificacion_1_0_0.rst
 **Ubicación:** ``/biblioteca/_metadata_biblioteca/``

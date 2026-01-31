@@ -1,9 +1,11 @@
 .. _sec-02-restricciones:
 
-====================================
+
+
 2. Restricciones (Constraints)
 
-====================================
+
+
 
 :Sección: 02 - Restricciones
 :Estado: Traducido
@@ -23,10 +25,11 @@ desarrollo del sistema. Estas restricciones pueden ser:
 **Importancia:** Documentar restricciones ayuda a que el equipo de desarrollo 
 entienda los límites dentro de los cuales debe trabajar.
 
-----
+
+
 
 Contenido de esta Sección
-==========================
+=========================
 
 .. toctree::
    :maxdepth: 2
@@ -38,7 +41,8 @@ Contenido de esta Sección
    restricciones_tip-4
    restricciones_tip-5
 
-----
+
+
 
 Referencias
 ===========
@@ -47,7 +51,8 @@ Referencias
 - Sección 2 Constraints: https://docs.arc42.org/section-2/
 - Q42 Quality Model: https://quality.arc42.org
 
-----
+
+
 
 .. note::
    **Información de traducción:**

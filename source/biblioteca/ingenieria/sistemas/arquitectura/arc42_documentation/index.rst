@@ -1,8 +1,10 @@
 .. _arc42-documentation-index:
 
-=====================================================================
+
+
+
 arc42 Documentation - 144 tips and 35 examples
-=====================================================================
+==============================================
 
 .. include:: metadata_libro.rst
  :start-after: Información Bibliográfica
@@ -12,7 +14,8 @@ arc42 Documentation - 144 tips and 35 examples
 **Progreso:** 0% (0 de 12 secciones traducidas)
 **Última actualización:** 2026-01-27
 
-----
+
+
 
 Sobre Este Libro
 ================
@@ -42,7 +45,7 @@ utilizado por miles de proyectos alrededor del mundo.
 **Licencia:** CC BY-SA 4.0 (Creative Commons)
 
 Estructura del Template arc42
-==============================
+=============================
 
 El template arc42 está organizado en **12 secciones principales**, cada una enfocada
 en un aspecto específico de la documentación arquitectónica:
@@ -66,7 +69,7 @@ en un aspecto específico de la documentación arquitectónica:
  sections/12_glossary/index
 
 Resumen de Secciones
-=====================
+====================
 
 **Sección 1: Introduction and Goals**
  Requisitos fundamentales, stakeholders principales, objetivos de calidad del sistema.
@@ -118,8 +121,10 @@ Resumen de Secciones
 
 **Total:** 182 archivos originales distribuidos en 12 secciones
 
+.. _arc42-estado-traduccion:
+
 Estado de Traducción
-=====================
+====================
 
 .. list-table:: Progreso por Sección
  :header-rows: 1
@@ -203,7 +208,7 @@ Glosario Acumulativo
  glosario_acumulativo
 
 Metodología de Traducción
-==========================
+=========================
 
 Esta traducción sigue la **Arquitectura de Traducción IACT v2.0.0**
 y el **Método de Traducción de la Peshitta** del Dr. Zacharias.
@@ -254,7 +259,7 @@ Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 * [ERROR] No puedes: Aplicar restricciones adicionales
 
 Información del Proyecto
-=========================
+========================
 
 .. include:: metadata_libro.rst
  :start-after: Clasificación según Guía Metodológica
@@ -275,7 +280,8 @@ Notas
  arc42 es independiente de tecnología, proceso y herramientas.
  Puede usarse con UML, SysML, diagramas informales, C4, o cualquier notación que prefieras.
 
-----
+
+
 
 :Versión: 1.0.0
 :Fecha: 2026-01-27

@@ -1,8 +1,10 @@
 .. _metricas_traduccion:
 
-===============================================
+
+
+
 Métricas de Traducción ADT
-===============================================
+==========================
 
 :Sección: 03_estandares/calidad
 :Base: Análisis cuantitativo de arc42 (196 archivos)
@@ -13,7 +15,8 @@ Métricas de Traducción ADT
  :depth: 3
  :local:
 
-----
+
+
 
 Introducción
 ============
@@ -26,13 +29,14 @@ Este documento define las **métricas cuantitativas** para evaluar traducciones 
 **Propósito:**
  Proveer rangos numéricos objetivos para evaluar calidad y consistencia de traducciones.
 
-----
+
+
 
 Métrica 1: Enriquecimiento por Tamaño
-======================================
+=====================================
 
 Definición
-----------
+==========
 
 **Enriquecimiento:**
  Porcentaje de expansión del contenido traducido respecto al original.
@@ -55,7 +59,7 @@ Definición
  = 273%
 
 Rangos Estándar por Tamaño
----------------------------
+==========================
 
 **Basado en arc42:**
 
@@ -85,7 +89,7 @@ Rangos Estándar por Tamaño
    - section-10.md (123 líneas)
 
 Datos Detallados por Sección de arc42
---------------------------------------
+=====================================
 
 **Sección 10: Quality Requirements (123 líneas originales)**
 
@@ -219,7 +223,7 @@ Datos Detallados por Sección de arc42
 **Promedio Sección 12:** +771%
 
 Análisis de Tendencias
-----------------------
+======================
 
 **Observación clave:**
 
@@ -249,13 +253,14 @@ Análisis de Tendencias
  - Enriquecimiento es mayormente formato
  - Agregar mucho contenido puede diluir mensaje
 
-----
+
+
 
 Métrica 2: Completitud
 ======================
 
 Definición
-----------
+==========
 
 **Completitud:**
  Porcentaje de elementos del original presentes en la traducción.
@@ -269,7 +274,7 @@ Definición
 **Umbral de Aprobación:** 100% (no se permite omitir contenido)
 
 Mediciones Reales de arc42
----------------------------
+==========================
 
 **Sección 12: Glossary**
 
@@ -311,7 +316,7 @@ Mediciones Reales de arc42
  Lección: PASO 0 es crítico para lograr 100%
 
 Checklist de Elementos Típicos
--------------------------------
+==============================
 
 **Para archivo principal de sección:**
 
@@ -342,19 +347,20 @@ Checklist de Elementos Típicos
  [ ] Énfasis (negrita, cursiva)
  [ ] Referencias cruzadas
 
-----
+
+
 
 Métrica 3: Tamaño Total
 =======================
 
 Definición
-----------
+==========
 
 **Tamaño Total:**
  Volumen total del contenido traducido en KB.
 
 Datos por Sección de arc42
----------------------------
+==========================
 
 .. list-table::
  :header-rows: 1
@@ -429,7 +435,7 @@ Datos por Sección de arc42
 **Total arc42:** 196 archivos, ~582 KB, promedio 3.0 KB/archivo
 
 Distribución de Tamaños
------------------------
+=======================
 
 .. code-block:: text
 
@@ -437,19 +443,20 @@ Distribución de Tamaños
  Archivos medianos (2-5 KB): 38% (secciones principales)
  Archivos grandes (> 5 KB): 20% (tips muy enriquecidos)
 
-----
+
+
 
 Métrica 4: Velocidad de Traducción
-===================================
+==================================
 
 Definición
-----------
+==========
 
 **Velocidad:**
  Archivos traducidos por unidad de tiempo.
 
 Datos Empíricos de arc42
--------------------------
+========================
 
 **Por Sección:**
 
@@ -496,19 +503,20 @@ Datos Empíricos de arc42
  - Muchas tablas/diagramas
  - Alto enriquecimiento requerido
 
-----
+
+
 
 Métrica 5: Calidad de Compilación
-==================================
+=================================
 
 Definición
-----------
+==========
 
 **Calidad de Compilación:**
  Relación entre warnings y tamaño del proyecto.
 
 Datos de arc42 Completo
------------------------
+=======================
 
 .. code-block:: text
 
@@ -557,19 +565,20 @@ Datos de arc42 Completo
 
  arc42: 0 warnings críticos [OK]
 
-----
+
+
 
 Métrica 6: Consistencia Terminológica
-======================================
+=====================================
 
 Definición
-----------
+==========
 
 **Consistencia:**
  Porcentaje de términos técnicos usados consistentemente.
 
 Medición en arc42
------------------
+=================
 
 **Términos Técnicos Clave:**
 
@@ -622,13 +631,14 @@ Medición en arc42
  4. Revisar consistencia en checkpoints
  5. Herramientas: grep, búsqueda en IDE
 
-----
+
+
 
 Métricas Comparativas
 =====================
 
 Comparación entre Secciones
-----------------------------
+===========================
 
 **Enriquecimiento Promedio:**
 
@@ -636,8 +646,9 @@ Comparación entre Secciones
 
  Sección 12 (Glossary): +771% Más enriquecida
  Sección 11 (Risks): +616%
+
  Sección 10 (Quality): +207%
- ...
+============================
 
  Tendencia: Secciones recientes más enriquecidas
 
@@ -651,7 +662,7 @@ Comparación entre Secciones
  - Lecciones aprendidas aplicadas
 
 Comparación con Estándares de Industria
-----------------------------------------
+=======================================
 
 **Traducción Técnica Estándar:**
 
@@ -670,13 +681,14 @@ Comparación con Estándares de Industria
  Diferencia:
  ADT agrega valor sustancial vs traducción literal
 
-----
+
+
 
 Uso de las Métricas
 ===================
 
 Caso 1: Planificación de Proyecto
-----------------------------------
+=================================
 
 **Estimar tiempo necesario:**
 
@@ -696,10 +708,10 @@ Caso 1: Planificación de Proyecto
 
  Total: ~17 horas de traducción pura
  + 30% para verificación y correcciones
- = ~22 horas totales
+   = ~22 horas totales
 
 Caso 2: Evaluación de Calidad
-------------------------------
+=============================
 
 **Evaluar traducción completada:**
 
@@ -724,7 +736,7 @@ Caso 2: Evaluación de Calidad
  [ ] Revisar warnings
 
 Caso 3: Mejora Continua
------------------------
+=======================
 
 **Comparar con proyectos anteriores:**
 
@@ -746,10 +758,11 @@ Caso 3: Mejora Continua
  Acción:
  Analizar qué cambió para replicar en futuro
 
-----
+
+
 
 Resumen de Métricas Clave
-==========================
+=========================
 
 **Tabla de Referencia Rápida:**
 
@@ -790,7 +803,8 @@ Resumen de Métricas Clave
    - 0
    - Obligatorio
 
-----
+
+
 
 .. seealso::
  * :doc:`criterios_calidad` - Criterios cualitativos de traducción

@@ -1,8 +1,10 @@
 .. _seccion-1-3-stakeholders:
 
-===================================================================
+
+
+
 1.3 Stakeholders
-===================================================================
+================
 
 .. meta::
    :subseccion: 1.3
@@ -23,7 +25,8 @@ roles u organizaciones que:
 - Necesitan la documentación de la arquitectura para su trabajo
 - Deben tomar decisiones sobre el sistema o su desarrollo
 
-----
+
+
 
 Motivación
 ==========
@@ -37,7 +40,8 @@ de desarrollo.
 Estos stakeholders determinan el alcance y el nivel de detalle de tu trabajo y 
 sus resultados.
 
-----
+
+
 
 Forma
 =====
@@ -45,7 +49,8 @@ Forma
 Tabla con nombres de roles, nombres de personas y sus expectativas con respecto 
 a la arquitectura y su documentación.
 
-----
+
+
 
 Plantilla
 =========
@@ -53,7 +58,7 @@ Plantilla
 .. code-block:: rst
 
    1.3 Stakeholders
-   ================
+   ===================
    
    .. list-table:: Tabla de Stakeholders
       :header-rows: 1
@@ -82,10 +87,11 @@ Plantilla
         - [Vista de despliegue, requisitos de infraestructura,
           procedimientos operacionales]
 
-----
+
+
 
 Ejemplos de Stakeholders Comunes
-=================================
+================================
 
 **Gestión y Negocio:**
 
@@ -126,19 +132,20 @@ Ejemplos de Stakeholders Comunes
 - Equipo de mantenimiento
 - Hotline/Help desk
 
-----
+
+
 
 Clasificación por Interés e Influencia
-=======================================
+======================================
 
 Para priorizar stakeholders bajo presión de tiempo, puedes clasificarlos:
 
-.. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-stakeholder-prio-EN.png
-   :alt: Clasificación de stakeholders por interés e influencia
-   :align: center
-   :width: 70%
+.. .. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-stakeholder-prio-EN.png
+..       :alt: Clasificación de stakeholders por interés e influencia
+..       :align: center
+..       :width: 70%
 
-   Matriz de priorización de stakeholders
+..       Matriz de priorización de stakeholders
 
 **Alto impacto, gran interés:**
    Involucra intensivamente. Comunícate proactivamente.
@@ -152,14 +159,16 @@ Para priorizar stakeholders bajo presión de tiempo, puedes clasificarlos:
 **Bajo impacto, bajo interés:**
    Monitorea, información mínima.
 
-----
+
+
 
 Ejemplos
 ========
 
 Ver :ref:`introduccion-tip-21` para ejemplos detallados de tablas de stakeholders.
 
-----
+
+
 
 Tips Relacionados
 =================
@@ -172,7 +181,8 @@ Ver:
 - :ref:`introduccion-tip-22` - Evita duplicación
 - :ref:`introduccion-tip-23` - Clasifica por interés e influencia
 
-----
+
+
 
 .. important::
    **Reglas clave para Stakeholders:**
@@ -183,7 +193,8 @@ Ver:
    4. **Priorización** - Identifica stakeholders críticos
    5. **Actualización** - Revisa y actualiza regularmente
 
-----
+
+
 
 .. note::
    **Información de traducción:**

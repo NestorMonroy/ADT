@@ -1,8 +1,10 @@
 .. _tutorial_completo:
 
-===============================================
+
+
+
 Tutorial Completo ADT
-===============================================
+=====================
 
 :Tiempo: 2-3 horas
 :Nivel: Principiante a Intermedio
@@ -13,7 +15,8 @@ Tutorial Completo ADT
  :depth: 3
  :local:
 
-----
+
+
 
 Introducción
 ============
@@ -52,15 +55,16 @@ Este tutorial te guía **paso a paso** a través de todo el sistema ADT.
  Módulo 4: Verificación Avanzada (30 min)
  Módulo 5: Proyecto Completo (45 min)
 
-----
+
+
 
 Módulo 1: Fundamentos del Sistema ADT
-======================================
+=====================================
 
 Duración: 30 minutos
 
 1.1 Conceptos Fundamentales
-----------------------------
+===========================
 
 **El Isomorfismo Básico**
 
@@ -118,10 +122,10 @@ La decisión fundamental en traducción:
  Signifiant RST:
 
  Introduction
- ============
+=============
 
 1.2 Los 5 Criterios de Calidad
--------------------------------
+==============================
 
 **Repaso de** :doc:`../03_estandares/calidad/criterios_calidad`
 
@@ -209,7 +213,7 @@ La decisión fundamental en traducción:
  Calidad total: 100% [OK]
 
 1.3 Las 2 Matrices Críticas
-----------------------------
+===========================
 
 **MD-002: Cuándo Enriquecer**
 
@@ -266,15 +270,16 @@ Tabla de referencia rápida:
  4. "Decisión arquitectónica" -> Ya está en español [OK]
  5. "ATAM" -> CONSERVAR (metodología/acrónimo)
 
-----
+
+
 
 Módulo 2: PASO 0 en Profundidad
-================================
+===============================
 
 Duración: 30 minutos
 
 2.1 Por Qué PASO 0 es Crítico
-------------------------------
+=============================
 
 **Caso Real: Sección 07 de arc42**
 
@@ -309,7 +314,7 @@ Duración: 30 minutos
  - Re-trabajo: 10% del tiempo
 
 2.2 PASO 0: Procedimiento Detallado
-------------------------------------
+===================================
 
 **Sub-paso 1: Abrir y Verificar (2 min)**
 
@@ -379,13 +384,15 @@ Aplica PASO 0 a este documento:
 .. code-block:: text
 
  --- (línea 1)
+
  title: "Quality Scenarios"
- ---
+===========================
 
  Quality scenarios are concrete examples of
  quality requirements.
 
  Types:
+ 
  - Use scenarios
  - Change scenarios
  - Failure scenarios
@@ -430,7 +437,7 @@ Aplica PASO 0 a este documento:
  Tiempo estimado: 1-2 horas
 
 2.3 Herramientas para PASO 0
------------------------------
+============================
 
 **Script de Ayuda:**
 
@@ -502,25 +509,27 @@ Aplica PASO 0 a este documento:
 
 .. code-block:: bash
 
- $ bash paso_0_helper.sh document.md
+   $ bash paso_0_helper.sh document.md
 
- Archivo: document.md
- Líneas totales: 35
- ...
- Tipo: B (20-50) líneas
- Enriquecimiento objetivo: +100% a +300%
+   Archivo: document.md
+
+   Líneas totales: 35
+   ===================
+   Tipo: B (20-50) líneas
+   Enriquecimiento objetivo: +100% a +300%
 
 **Plantilla de Inventario:**
 
 .. code-block:: text
 
- INVENTARIO - PASO 0
- ===================
+   INVENTARIO - PASO 0
+====================
 
  Archivo: _______________________
  Fecha: _______________________
 
  INFORMACIÓN BÁSICA:
+ 
  - Total líneas: _____
  - Tipo (A/B/C/D): _____
  - Complejidad: Baja / Media / Alta
@@ -550,6 +559,7 @@ Aplica PASO 0 a este documento:
  Total archivos: _____
 
  ESTIMACIÓN:
+ 
  - Enriquecimiento objetivo: _____
  - Tiempo estimado: _____
  - Fecha inicio: _____
@@ -562,15 +572,16 @@ Aplica PASO 0 a este documento:
  [ ] Estimé tiempo y enriquecimiento
  [ ] Listo para traducir
 
-----
+
+
 
 Módulo 3: Decisiones de Traducción
-===================================
+==================================
 
 Duración: 45 minutos
 
 3.1 Decisión de Enriquecimiento (MD-002)
------------------------------------------
+========================================
 
 **Proceso de Decisión Detallado:**
 
@@ -673,7 +684,7 @@ Decide enriquecimiento para:
  Total traducido: ~87 líneas (+625%) [OK]
 
 3.2 Decisión de Terminología (MD-004)
---------------------------------------
+=====================================
 
 **Proceso de Decisión Detallado:**
 
@@ -745,37 +756,37 @@ Decide para estos términos:
 .. code-block:: text
 
  1. "Microservice"
- Categoría: _______________
- Decisión: _______________
- Razón: _______________
+   Categoría: _______________
+   Decisión: _______________
+   Razón: _______________
 
  2. "Deployment Pipeline"
- Categoría: _______________
- Decisión: _______________
- Razón: _______________
+   Categoría: _______________
+   Decisión: _______________
+   Razón: _______________
 
  3. "Arquitectura"
- Decisión: _______________
+   Decisión: _______________
 
 **Respuestas:**
 
 .. code-block:: text
 
  1. "Microservice"
- Categoría: Estilo arquitectónico
- Decisión: Microservicio (adaptado al español)
- Razón: Ampliamente usado en español, tiene forma hispanizada
+   Categoría: Estilo arquitectónico
+   Decisión: Microservicio (adaptado al español)
+   Razón: Ampliamente usado en español, tiene forma hispanizada
 
  2. "Deployment Pipeline"
- Categoría: Término técnico compuesto
- Decisión: Pipeline de deployment
- Razón: "Pipeline" técnico, "deployment" conservado en contexto
+   Categoría: Término técnico compuesto
+   Decisión: Pipeline de deployment
+   Razón: "Pipeline" técnico, "deployment" conservado en contexto
 
  3. "Arquitectura"
- Decisión: Ya está en español [OK]
+   Decisión: Ya está en español [OK]
 
 3.3 Decisiones en Tiempo Real
-------------------------------
+=============================
 
 **Durante traducción surgen preguntas:**
 
@@ -821,15 +832,16 @@ Decide para estos términos:
  -> Si lista es simple (< 5 items): No necesario
  -> Si lista tiene estructura (columnas): Sí, usar tabla
 
-----
+
+
 
 Módulo 4: Verificación Avanzada
-================================
+===============================
 
 Duración: 30 minutos
 
 4.1 Verificación en 3 Niveles
-------------------------------
+=============================
 
 **Nivel 1: Verificación Automática (5 min)**
 
@@ -891,20 +903,21 @@ Duración: 30 minutos
 
  VERIFICACIÓN ELEMENTO POR ELEMENTO
 
- Abrir original y traducción lado a lado
+   Abrir original y traducción lado a lado
 
- [ ] Línea 1 original -> ¿Presente en traducción?
- [ ] Línea 2 original -> ¿Presente en traducción?
- ...
- [ ] Línea N original -> ¿Presente en traducción?
+   [ ] Línea 1 original -> ¿Presente en traducción?
 
- VERIFICACIÓN POR TIPO DE ELEMENTO
+   [ ] Línea 2 original -> ¿Presente en traducción?
+   =================================================
+   [ ] Línea N original -> ¿Presente en traducción?
 
- Títulos:
- [ ] ___________ -> [ ] Traducido
- [ ] ___________ -> [ ] Traducido
+   VERIFICACIÓN POR TIPO DE ELEMENTO
 
- Párrafos:
+   Títulos:
+   [ ] ___________ -> [ ] Traducido
+   [ ] ___________ -> [ ] Traducido
+
+   Párrafos:
  [ ] Párrafo 1 -> [ ] Presente
  [ ] Párrafo 2 -> [ ] Presente
 
@@ -959,7 +972,7 @@ Duración: 30 minutos
  [ ] Checkpoint creado
 
 4.2 Compilación y Depuración
------------------------------
+============================
 
 **Compilar Frecuentemente:**
 
@@ -984,14 +997,16 @@ Duración: 30 minutos
  Title underline too short.
 
  CAUSA:
- ===============
+=======
+
  Título Muy Largo
- ===============
+=================
 
  SOLUCIÓN:
- =========================
+==========
+
  Título Muy Largo
- =========================
+=================
 
 **Error 2: Lista Mal Indentada**
 
@@ -1022,10 +1037,10 @@ Duración: 30 minutos
  SOLUCIÓN:
  1. Verificar que label existe
  2. Crear label si falta:
- .. _seccion_5:
+   .. _seccion_5:
 
 4.3 Herramientas de Verificación Avanzadas
--------------------------------------------
+==========================================
 
 **Script de Verificación Completa:**
 
@@ -1082,15 +1097,16 @@ Duración: 30 minutos
 
  echo "[OK] Verificación completada"
 
-----
+
+
 
 Módulo 5: Proyecto Completo
-============================
+===========================
 
 Duración: 45 minutos
 
 5.1 Ejercicio Final: Traducir Sección Completa
------------------------------------------------
+==============================================
 
 **Contexto:**
 
@@ -1100,9 +1116,11 @@ Vas a traducir una sección completa simulada del estilo arc42.
 
 .. code-block:: text
 
- ---
+
+
+
  title: "Section 9: Architecture Decisions"
- ---
+===========================================
 
  # 9. Architecture Decisions
 
@@ -1124,6 +1142,7 @@ Vas a traducir una sección completa simulada del estilo arc42.
 
  Use Architecture Decision Records (ADR) format:
 
+ 
  - Title
  - Status (proposed/accepted/deprecated)
  - Context
@@ -1194,7 +1213,7 @@ Vas a traducir una sección completa simulada del estilo arc42.
 ... (continúa con solución paso a paso)
 
 5.2 Revisión y Feedback
------------------------
+=======================
 
 **Auto-Evaluación:**
 
@@ -1222,7 +1241,7 @@ Vas a traducir una sección completa simulada del estilo arc42.
  Calidad total: ____%
 
 5.3 Próximos Pasos
-------------------
+==================
 
 **Después de este tutorial:**
 
@@ -1256,7 +1275,8 @@ Vas a traducir una sección completa simulada del estilo arc42.
 
  Criterios de calidad en profundidad
 
-----
+
+
 
 Conclusión
 ==========
@@ -1295,9 +1315,11 @@ Recuerda siempre:
 
 ¡Éxito en tus traducciones!
 
-----
+
+
 
 .. seealso::
+ 
  * :doc:`guia_rapida` - Repaso rápido de 15 minutos
  * :doc:`../06_casos_practicos/index` - Más ejemplos reales
  * :doc:`../02_procedimientos/workflow_general` - Referencia completa del workflow

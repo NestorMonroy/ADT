@@ -8,9 +8,11 @@
  :autor: Equipo ADT
  :clasificacion: Interno
 
-====================================================================
+
+
+
 Actualización Workflow v1.5.0 - Traducción Arquitectónica Integrada
-====================================================================
+===================================================================
 
 :Fecha: 2026-01-27
 :Workflow: PROC_002_Workflow_General
@@ -19,7 +21,8 @@ Actualización Workflow v1.5.0 - Traducción Arquitectónica Integrada
 :Tipo de cambio: MINOR
 :Estado: [OK] COMPLETADO
 
-----
+
+
 
 Resumen Ejecutivo
 =================
@@ -33,16 +36,18 @@ paso OBLIGATORIO para traducciones de arc42 y contenido técnico/arquitectónico
 **Objetivo:** Garantizar que TODAS las traducciones futuras usen terminología
 arquitectónica correcta desde el inicio, evitando correcciones masivas posteriores.
 
-----
+
+
 
 Motivación del Cambio
 =====================
 
 Problema Identificado
----------------------
+=====================
 
 Durante la traducción del **Lote 1** de la sección 01_introduction_goals, se
 detectó que la traducción literal de términos arquitectónicos generaba:
+
 
 1. **Ambigüedad semántica**
  - "fuerzas impulsoras" en lugar de "factores determinantes"
@@ -57,7 +62,7 @@ detectó que la traducción literal de términos arquitectónicos generaba:
  - Tiempo adicional de ~2 horas de trabajo correctivo
 
 Solución Implementada
----------------------
+=====================
 
 Integrar la guía arquitectónica **directamente en el workflow** para que:
 
@@ -66,14 +71,16 @@ Integrar la guía arquitectónica **directamente en el workflow** para que:
 [OK] NO se requieran correcciones posteriores
 [OK] Se mantenga coherencia en todo el proyecto
 
-----
+
+
 
 Cambios Detallados
 ==================
 
 1. Versión Actualizada
 
-----------------------
+
+
 
 .. code-block:: rst
 
@@ -82,7 +89,8 @@ Cambios Detallados
 
 2. Registro de Cambios Actualizado
 
------------------------------------
+
+
 
 **Agregado:**
 
@@ -95,7 +103,8 @@ Cambios Detallados
 
 3. Nuevo Paso 3.4: Traducción Arquitectónica
 
----------------------------------------------
+
+
 
 **Ubicación:** Entre Paso 3.3 y FASE 3.5
 
@@ -141,7 +150,8 @@ Cambios Detallados
 
 4. FASE 3.5 Actualizada
 
------------------------
+
+
 
 **Cambios:**
 
@@ -176,13 +186,14 @@ c) **Patrones comunes expandidos:**
  [ERROR] "los objetivos de calidad incluyen..."
  -> [OK] "los atributos de calidad objetivo incluyen..."
 
-----
+
+
 
 Impacto del Cambio
 ==================
 
 Para Traducciones Futuras
---------------------------
+=========================
 
 **ANTES (v1.4.0):**
 
@@ -207,7 +218,7 @@ Para Traducciones Futuras
 **Ahorro:** ~1.5 horas por sección + mejor calidad
 
 Para Lotes Futuros de Sección 01
----------------------------------
+================================
 
 .. list-table:: Comparación de Tiempos
  :header-rows: 1
@@ -231,13 +242,14 @@ Para Lotes Futuros de Sección 01
 
 **Mejora:** 40% reducción de tiempo + 100% mejor calidad
 
-----
+
+
 
 Flujo de Trabajo Actualizado
-=============================
+============================
 
 FASE 3: Traducción Inicial (ACTUALIZADA)
------------------------------------------
+========================================
 
 .. code-block:: text
 
@@ -254,13 +266,14 @@ FASE 3: Traducción Inicial (ACTUALIZADA)
 
 **Clave:** Aplicar Paso 3.4 hace que FASE 3.5 sea significativamente más rápida.
 
-----
+
+
 
 Documentación de Referencia
-============================
+===========================
 
 Archivos Relacionados
----------------------
+=====================
 
 1. **Workflow actualizado:**
 
@@ -275,9 +288,10 @@ Archivos Relacionados
  - ``01_introduction_goals/CORRECCIONES_ARQUITECTONICAS_LOTE_1.rst``
 
 Estándares de Referencia
--------------------------
+========================
 
 Los términos arquitectónicos se validaron contra:
+
 
 - ISO/IEC/IEEE 42010 (Architecture description)
 - ISO/IEC 25010 (Systems and software Quality Models)
@@ -285,13 +299,14 @@ Los términos arquitectónicos se validaron contra:
 - SWEBOK v3.0 (Software Engineering Body of Knowledge)
 - PMBoK (Project Management Body of Knowledge)
 
-----
+
+
 
 Instrucciones para Traductores
-===============================
+==============================
 
 Uso del Paso 3.4
------------------
+================
 
 1. **ANTES de iniciar cualquier traducción de arc42:**
 
@@ -312,7 +327,7 @@ Uso del Paso 3.4
  c. Proceder a FASE 3.5 con confianza
 
 Checklist Rápido
-----------------
+================
 
 .. code-block:: text
 
@@ -331,13 +346,14 @@ Checklist Rápido
  [ ] Confirmo coherencia terminológica
  [ ] Glosario actualizado correctamente
 
-----
+
+
 
 Migración de Proyectos Existentes
-==================================
+=================================
 
 Para Secciones Ya Traducidas
------------------------------
+============================
 
 **Sección 02_constraints:**
 
@@ -351,22 +367,24 @@ Para Secciones Ya Traducidas
 - [OK] Lotes 2-4 usarán v1.5.0 desde el inicio
 
 Para Nuevas Secciones
-----------------------
+=====================
 
 **TODAS las secciones futuras** de arc42 DEBEN:
+
 
 1. [OK] Usar workflow v1.5.0
 2. [OK] Aplicar Paso 3.4 obligatoriamente
 3. [OK] Verificar términos en checklist FASE 3.5
 4. [OK] Documentar en glosario con definiciones arquitectónicas
 
-----
+
+
 
 Lecciones Aprendidas
 ====================
 
 Del Proceso de Actualización
------------------------------
+============================
 
 1. **Prevención mejor que corrección**
 
@@ -386,7 +404,8 @@ Del Proceso de Actualización
  - Mejora continua basada en experiencia real
  - Versionado semántico claro
 
-----
+
+
 
 Conclusión
 ==========
@@ -408,10 +427,11 @@ en la calidad y eficiencia del proceso de traducción arquitectónica.
 2. Validar efectividad del cambio
 3. Documentar resultados en próximo reporte
 
-----
+
+
 
 Historial de Revisiones
-========================
+=======================
 
 .. list-table::
  :header-rows: 1
@@ -424,7 +444,8 @@ Historial de Revisiones
    - 2026-01-27
    - Reporte inicial de actualización workflow v1.5.0
 
-----
+
+
 
 Referencias
 ===========
@@ -433,9 +454,11 @@ Referencias
 - ``ADT_GUIA_TRADUCCION_ARQUITECTONICA.md``
 - ``01_introduction_goals/CORRECCIONES_ARQUITECTONICAS_LOTE_1.rst``
 
-----
+
+
 
 .. note::
+ 
  **Workflow actualizado:** v1.4.0 -> v1.5.0
 
  **Cambio crítico:** Paso 3.4 Traducción Arquitectónica (OBLIGATORIO)

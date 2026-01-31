@@ -1,8 +1,10 @@
 .. _restricciones-ejemplo-1:
 
-====================================
+
+
+
 Ejemplo: HTML Sanity Checker
-====================================
+============================
 
 .. note::
    **Ejemplo arc42:**
@@ -11,7 +13,7 @@ Ejemplo: HTML Sanity Checker
    enumeración en texto plano.
 
 Restricciones para HTML Sanity Checker
-=======================================
+======================================
 
 El HTML Sanity Checker debe ser:
 
@@ -24,7 +26,8 @@ El HTML Sanity Checker debe ser:
 
 * **Desarrollado** bajo una licencia open-source liberal
 
-----
+
+
 
 .. seealso::
    

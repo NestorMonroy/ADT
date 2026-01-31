@@ -1,6 +1,6 @@
-============================================
+
 Traducción como Transformación de Modelos
-============================================
+=========================================
 
 :Categoría: Fundamentos Conceptuales
 :Ubicación: 01_fundamentos/_fundamentos_conceptuales/
@@ -11,7 +11,8 @@ Traducción como Transformación de Modelos
  :depth: 2
  :local:
 
-----
+
+
 
 Introducción
 ============
@@ -23,13 +24,14 @@ y transformación de modelos, base teórica del proyecto ADT.
  La traducción de documentación técnica ES una transformación de modelos,
  donde preservamos contenido semántico mientras adaptamos forma sintáctica.
 
-----
+
+
 
 El Isomorfismo Básico
-======================
+=====================
 
 Mapeo Conceptual
-----------------
+================
 
 .. list-table::
  :header-rows: 1
@@ -58,7 +60,7 @@ Mapeo Conceptual
    - Sintaxis de plataforma
 
 Aplicación a ADT
-----------------
+================
 
 En el contexto ADT:
 
@@ -80,10 +82,11 @@ En el contexto ADT:
 
 .. code-block:: rst
 
- # RST (Texto Destino / PSM)
- Introducción
- ============
- Este es un **concepto importante**.
+   # RST (Texto Destino / PSM)
+
+   Introducción
+   =============
+   Este es un **concepto importante**.
 
 **Preservado (Semántica):**
 - Estructura: Sección con título "Introducción"
@@ -94,13 +97,14 @@ En el contexto ADT:
 - ``\section{}`` -> Título subrayado con ``=``
 - ``\textbf{}`` -> Marcadores ``**``
 
-----
+
+
 
 Niveles de Abstracción
-=======================
+======================
 
 Nivel Meta (M3): Framework Universal
--------------------------------------
+====================================
 
 **Concepto abstracto de transformación:**
 
@@ -123,7 +127,7 @@ Nivel Meta (M3): Framework Universal
 - **Transformación MDA:** PIM -> PSM
 
 Nivel de Modelo (M2): Técnica de Traducción
---------------------------------------------
+===========================================
 
 **Método por defecto + Divergencias:**
 
@@ -141,7 +145,7 @@ Nivel de Modelo (M2): Técnica de Traducción
  - Simplificación (reducir complejidad)
 
 Nivel de Instancia (M1): Transformación Específica
----------------------------------------------------
+==================================================
 
 **Aplicación concreta en ADT:**
 
@@ -171,13 +175,14 @@ Para traducir un libro LaTeX -> RST/Sphinx:
  - Verificar preservación semántica
  - Revisar calidad visual
 
-----
+
+
 
 Propiedades del Isomorfismo
-============================
+===========================
 
 Inyectividad (One-to-One)
---------------------------
+=========================
 
 **Pregunta:** ¿Cada elemento fuente mapea a exactamente un elemento destino?
 
@@ -205,7 +210,7 @@ Inyectividad (One-to-One)
 **Razón:** Contexto determina mapeo apropiado.
 
 Suryectividad (Onto)
---------------------
+====================
 
 **Pregunta:** ¿Cada elemento destino viene de algún elemento fuente?
 
@@ -222,7 +227,7 @@ Suryectividad (Onto)
  # NO existe en LaTeX original
 
 Preservación Estructural
--------------------------
+========================
 
 **Propiedad clave:** Relaciones estructurales se preservan
 
@@ -242,40 +247,41 @@ Preservación Estructural
 
 Donde :math:`T` es la función de transformación.
 
-----
+
+
 
 Aplicaciones Prácticas
-=======================
+======================
 
 Diseño de Procedimientos
--------------------------
+========================
 
 **Template basado en isomorfismo:**
 
 .. code-block:: rst
 
- PROC_XXX: [Nombre Procedimiento]
- =================================
+   PROC_XXX: [Nombre Procedimiento]
+   =================================
 
- 1. Análisis del Fuente (PIM)
- =============================
- - Identificar estructura
- - Mapear elementos
- - Detectar casos especiales
+   1. Análisis del Fuente (PIM)
+   =============================
+   - Identificar estructura
+   - Mapear elementos
+   - Detectar casos especiales
 
- 2. Aplicar Transformación
- =========================
- - Método por defecto: [...]
- - Tácticas: [...]
+   2. Aplicar Transformación
+   ==========================
+   - Método por defecto: [...]
+   - Tácticas: [...]
 
- 3. Validación del Destino (PSM)
- ===============================
- - Compilar
- - Verificar preservación
- - Revisar calidad
+   3. Validación del Destino (PSM)
+   ================================
+   - Compilar
+   - Verificar preservación
+   - Revisar calidad
 
 Detección de Errores
---------------------
+====================
 
 **Errores por violación del isomorfismo:**
 
@@ -307,7 +313,7 @@ Detección de Errores
  -> Violación: Semántica alterada
 
 Optimización de Flujo
-----------------------
+=====================
 
 **Usando el isomorfismo para eficiencia:**
 
@@ -327,13 +333,14 @@ Optimización de Flujo
 
  return doc_rst
 
-----
+
+
 
 Conexión con Literatura
-========================
+=======================
 
 Translation Studies
--------------------
+===================
 
 **Autores clave:**
 
@@ -347,7 +354,7 @@ Translation Studies
 - Equivalencia dinámica ≈ Preservar Signifié (contenido)
 
 MDA/MDE
--------
+=======
 
 **Estándares:**
 
@@ -361,7 +368,8 @@ MDA/MDE
 - Model transformations
 - Traceability
 
-----
+
+
 
 Conclusión
 ==========
@@ -383,7 +391,8 @@ Podemos aprovechar 50+ años de investigación en Translation Studies
 Y 20+ años de desarrollo en MDA/MDE para crear una metodología
 de traducción técnica de clase mundial.
 
-----
+
+
 
 Referencias
 ===========
@@ -393,7 +402,8 @@ Referencias
 - Micheli, D. (2014). Translation Technique in Peshitta Zechariah
 - OMG (2003). MDA Guide v1.0.1
 
-----
+
+
 
 **Versión:** 1.0
 **Fecha:** 2026-01-27

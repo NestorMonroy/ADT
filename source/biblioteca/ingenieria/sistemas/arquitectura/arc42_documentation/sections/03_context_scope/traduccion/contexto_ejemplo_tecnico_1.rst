@@ -1,31 +1,35 @@
 .. _contexto_ejemplo_tecnico_1:
 
-============================================================
+
+
+
 Ejemplo de Contexto Técnico: HTML Sanity Checker
-============================================================
+================================================
 
 .. note::
    **Ejemplo arc42**
    
    Este es un ejemplo muy simple, creado con Enterprise Architect™.
 
-----
+
+
 
 3. Vista de Contexto
 
-====================
+
+
 
 3.2 Contexto Técnico
---------------------
+====================
 
 El siguiente diagrama muestra las computadoras participantes (nodos) con sus conexiones técnicas más los artefactos principales de HtmlSC, el hsc-plugin-binary.
 
-.. figure:: ../figuras/3-hsc-technical-context.png
-   :alt: Contexto técnico
-   :align: center
-   :width: 80%
+.. .. figure:: ../figuras/3-hsc-technical-context.png
+..       :alt: Contexto técnico
+..       :align: center
+..       :width: 80%
    
-   Diagrama de contexto técnico del HTML Sanity Checker
+..       Diagrama de contexto técnico del HTML Sanity Checker
 
 Nodos y Artefactos
 ==================
@@ -47,7 +51,8 @@ Nodos y Artefactos
    * - **build.gradle**
      - Script de construcción Gradle que configura (entre otras cosas) el plugin HtmlSC para realizar la verificación HTML.
 
-----
+
+
 
 Observaciones
 =============
@@ -65,7 +70,8 @@ Para detalles ver la vista de despliegue.
    * :ref:`seccion_3_2` - Plantilla de Contexto Técnico
    * :ref:`seccion_03` - Contexto y Alcance completo
 
-----
+
+
 
 :Ejemplo: Contexto Técnico
 :Sistema: HTML Sanity Checker

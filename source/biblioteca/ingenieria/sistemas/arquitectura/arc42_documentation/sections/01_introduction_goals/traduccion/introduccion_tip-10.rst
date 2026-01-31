@@ -1,8 +1,10 @@
 .. _introduccion-tip-10:
 
-===================================================================
+
+
+
 Consejo 1-10: ¡Usa modelos de procesos ejemplares!
-===================================================================
+==================================================
 
 .. meta::
    :layout: post
@@ -16,7 +18,8 @@ Consejo 1-10: ¡Usa modelos de procesos ejemplares!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Stakeholders
 
-----
+
+
 
 Recomendación
 =============
@@ -26,21 +29,23 @@ Puedes describir requisitos funcionales como "modelo de proceso de negocio ejemp
 Estos describen procesos desde el punto de vista del stakeholder y las herramientas 
 y materiales utilizados.
 
-----
+
+
 
 Ejemplo
 =======
 
 Considera el siguiente ejemplo:
 
-.. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-eGPM.webp
-   :alt: Modelo de proceso de negocio ejemplar
-   :align: center
-   :width: 80%
+.. .. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-eGPM.webp
+..       :alt: Modelo de proceso de negocio ejemplar
+..       :align: center
+..       :width: 80%
 
-   Modelo de proceso de negocio ejemplar (exemplary business process model)
+..       Modelo de proceso de negocio ejemplar (exemplary business process model)
 
-----
+
+
 
 .. note::
    **Información de traducción:**

@@ -1,9 +1,11 @@
 .. _seccion_03:
 
-=====================================
+
+
 3. Contexto y Alcance
 
-=====================================
+
+
 
 .. note::
  **Traducción con Paso 3.4 (Traducción Arquitectónica)**
@@ -23,7 +25,8 @@
  Workflow: v1.6.0
  Método: Peshitta + Paso 3.4
 
-----
+
+
 
 Contenido
 =========
@@ -48,7 +51,8 @@ Ejemplos
 
 Ver a continuación, separados en contexto de negocio y contexto técnico.
 
-----
+
+
 
 Subsecciones
 ============
@@ -98,7 +102,8 @@ Tips y Consejos
  contexto_tip_18
  contexto_tip_19
 
-----
+
+
 
 .. note::
  **Términos Arquitectónicos Clave (Paso 3.4):**

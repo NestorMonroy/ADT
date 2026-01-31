@@ -1,6 +1,6 @@
-================================================
+
 Framework Universal de Transformación
-================================================
+=====================================
 
 :Tipo: Metamodelo
 :Ubicación: 01_fundamentos/metamodelos/
@@ -11,7 +11,8 @@ Framework Universal de Transformación
  :depth: 2
  :local:
 
-----
+
+
 
 Introducción
 ============
@@ -29,14 +30,16 @@ mientras adapta forma a nuevo contexto.
 [OK] Migración de plataforma (Python 2 -> Python 3)
 [OK] Traducción técnica (LaTeX -> RST)
 
-----
+
+
 
 El Framework en 5 Componentes
-==============================
+=============================
 
 1. Entrada (Source)
 
--------------------
+
+
 
 **Definición:**
  El artefacto de partida que contiene el contenido a preservar.
@@ -71,7 +74,8 @@ El Framework en 5 Componentes
 
 2. Salida (Target)
 
-------------------
+
+
 
 **Definición:**
  El artefacto resultante que preserva el contenido pero adapta la forma.
@@ -106,7 +110,8 @@ El Framework en 5 Componentes
 
 3. Método por Defecto
 
----------------------
+
+
 
 **Definición:**
  El procedimiento estándar aplicado en ausencia de condiciones especiales.
@@ -151,7 +156,8 @@ c) **Preferencia:**
 
 4. Objetivos (Goals)
 
---------------------
+
+
 
 **Definición:**
  Razones explícitas para desviarse del método por defecto.
@@ -159,16 +165,16 @@ c) **Preferencia:**
 **Los 4 Objetivos Universales:**
 
 1. **Domesticación (Adaptation):**
- Adaptar al contexto/plataforma destino
+  Adaptar al contexto/plataforma destino
 
 2. **Claridad (Clarity):**
- Hacer comprensible para audiencia destino
+  Hacer comprensible para audiencia destino
 
 3. **Consistencia (Consistency):**
- Resolver inconsistencias del original
+  Resolver inconsistencias del original
 
 4. **Simplificación (Simplification):**
- Reducir complejidad innecesaria
+  Reducir complejidad innecesaria
 
 **Aplicación en dominios:**
 
@@ -189,7 +195,8 @@ c) **Preferencia:**
 
 5. Tácticas (Tactics)
 
----------------------
+
+
 
 **Definición:**
  Operaciones concretas para lograr objetivos.
@@ -246,13 +253,14 @@ c) **Preferencia:**
    - Preservar forma
    - Código fuente
 
-----
+
+
 
 Proceso de Aplicación
-======================
+=====================
 
 Paso 1: Análisis de Entrada
-----------------------------
+===========================
 
 .. code-block:: text
 
@@ -262,7 +270,7 @@ Paso 1: Análisis de Entrada
  4. Documentar contexto
 
 Paso 2: Aplicar Método por Defecto
------------------------------------
+==================================
 
 .. code-block:: text
 
@@ -272,7 +280,7 @@ Paso 2: Aplicar Método por Defecto
  4. Validar preservación básica
 
 Paso 3: Identificar Necesidad de Divergencia
----------------------------------------------
+============================================
 
 .. code-block:: text
 
@@ -286,7 +294,7 @@ Paso 3: Identificar Necesidad de Divergencia
  -> Ir a Paso 4
 
 Paso 4: Aplicar Tácticas según Objetivos
------------------------------------------
+========================================
 
 .. code-block:: text
 
@@ -297,7 +305,7 @@ Paso 4: Aplicar Tácticas según Objetivos
  4. Validar preservación
 
 Paso 5: Validación Final
--------------------------
+========================
 
 .. code-block:: text
 
@@ -306,13 +314,14 @@ Paso 5: Validación Final
  3. ¿Objetivos logrados?
  4. ¿Funciona en plataforma destino?
 
-----
+
+
 
 Propiedades Formales
 ====================
 
 Preservación Semántica
-----------------------
+======================
 
 **Propiedad fundamental:**
 
@@ -323,7 +332,7 @@ Preservación Semántica
 Donde :math:`T` es la función de transformación.
 
 Adaptación Sintáctica
----------------------
+=====================
 
 .. math::
 
@@ -332,19 +341,20 @@ Adaptación Sintáctica
 (En general, con excepciones para literalización)
 
 Trazabilidad
-------------
+============
 
 .. math::
 
  \forall y \in \text{Salida}: \exists x \in \text{Entrada}: T(x) \rightarrow y
 
-----
+
+
 
 Aplicación Trans-Dominio
 ========================
 
 Tabla Maestra de Aplicabilidad
--------------------------------
+==============================
 
 .. list-table::
  :widths: 20 20 20 20 20
@@ -381,7 +391,8 @@ Tabla Maestra de Aplicabilidad
    - [OK] 90%
    - [OK] 85%
 
-----
+
+
 
 Conclusión
 ==========
@@ -405,7 +416,8 @@ transformación preservadora de contenido:
 - [OK] Práctico y operacional
 - [OK] Mejora iterativa posible
 
-----
+
+
 
 Referencias
 ===========
@@ -416,7 +428,8 @@ Referencias
 - :doc:`comparacion_mda_traduccion`
 - :doc:`isomorfismo_metodologico`
 
-----
+
+
 
 **Versión:** 1.0
 **Fecha:** 2026-01-27

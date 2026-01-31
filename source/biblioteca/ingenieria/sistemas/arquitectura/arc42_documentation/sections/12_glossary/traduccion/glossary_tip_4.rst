@@ -1,13 +1,16 @@
 .. _glossary_tip_4:
 
-===============================================================
+
+
+
 Tip 12-4: ¡Incluye traducciones en el glosario!
-===============================================================
+===============================================
 
 :Tema: Glosario multi-idioma
 :Palabras clave: glossary, i18n, translation, thorough
 
-----
+
+
 
 ¿Conoces la situación?
 
@@ -33,10 +36,11 @@ Simplemente agrega una columna a tu tabla de **glosario** por cada idioma que ne
    - *<definition-2>*
    - *<German-translation-for-term-2>*
 
-----
+
+
 
 Casos de Uso para Glosario Multi-idioma
-========================================
+=======================================
 
 **Escenario 1: Equipos Distribuidos Globalmente**
 
@@ -93,36 +97,37 @@ Casos de Uso para Glosario Multi-idioma
  | Data Privacy | Datenschutz | | Protection of... |
  | GDPR | DSGVO | GDPR | EU regulation... |
 
-----
+
+
 
 **Estructura de Glosario Multi-idioma:**
 
 **Opción 1: Idioma Base + Traducciones**
 
 .. list-table::
- :header-rows: 1
- :widths: 20 35 15 15 15
+   :header-rows: 1
+   :widths: 20 35 15 15 15
 
- * - **Term (EN)**
-   - **Definition (EN)**
-   - **Español**
-   - **Deutsch**
-   - ****
- * - Order
-   - Purchase transaction with items, shipping, payment
-   - Pedido
-   - Bestellung
-   -
- * - Customer
-   - Registered user who makes purchases
-   - Cliente
-   - Kunde
-   -
- * - Checkout
-   - Process to finalize purchase
-   - Pago
-   - Kasse
-   -
+   * - **Term (EN)**
+     - **Definition (EN)**
+     - **Español**
+     - **Deutsch**
+     - **Français**
+   * - Order
+     - Purchase transaction with items, shipping, payment
+     - Pedido
+     - Bestellung
+     - Commande
+   * - Customer
+     - Registered user who makes purchases
+     - Cliente
+     - Kunde
+     - Client
+   * - Checkout
+     - Process to finalize purchase
+     - Pago
+     - Kasse
+     - Paiement
 
 
 
@@ -149,7 +154,7 @@ Casos de Uso para Glosario Multi-idioma
 
 
 
-----
+
 
 **Mejores Prácticas para Traducciones:**
 
@@ -184,7 +189,7 @@ Casos de Uso para Glosario Multi-idioma
  - Código usa "Bestellung"
  - UI usa "Auftrag"
  - Docs usan "Order"
- -> Todo debería usar término del glosario
+   -> Todo debería usar término del glosario
 
 3. **Notas Culturales/Regionales**
 
@@ -198,7 +203,8 @@ Casos de Uso para Glosario Multi-idioma
 
  Nota en glosario ayuda a developers evitar bugs.
 
-----
+
+
 
 **Herramientas para Glosario Multi-idioma:**
 
@@ -228,7 +234,7 @@ Casos de Uso para Glosario Multi-idioma
 
 
 
-----
+
 
 **Ejemplo Completo: Sistema Bancario Internacional**
 
@@ -279,31 +285,33 @@ Casos de Uso para Glosario Multi-idioma
    - SWIFT
    - SWIFT
 
-----
+
+
 
 **Proceso de Mantenimiento:**
 
 .. code-block:: text
 
  1. Nuevo término identificado en reunión
- v
+   v
  2. Product Owner agrega en columna idioma base (EN)
- v
+   v
  3. Notificar a traductores profesionales
- v
+   v
  4. Traductores agregan columnas DE, ES, etc.
- v
+   v
  5. Expertos de dominio de cada región validan
- v
+   v
  6. Publicar versión actualizada
- v
+   v
  7. Equipos actualizan código/UI/docs
- v
+   v
  8. QA verifica consistencia
 
 **Ciclo: Cada 2 semanas o cuando se agreguen >5 términos**
 
-----
+
+
 
 .. seealso::
  

@@ -1,15 +1,18 @@
 .. _estandares_calidad:
 
-===============================================
+
+
+
 Estándares de Calidad de Traducción
-===============================================
+===================================
 
 Esta subsección contiene los **estándares de calidad** que aseguran traducciones profesionales y consistentes en el proyecto ADT.
 
 **Base empírica:**
    Estos estándares están basados en la traducción exitosa de **12 secciones de arc42** (196 archivos, ~582 KB).
 
-----
+
+
 
 Documentos Disponibles
 ======================
@@ -22,10 +25,11 @@ Documentos Disponibles
    metricas_traduccion
    checklist_revision
 
-----
+
+
 
 Uso de estos Documentos
-========================
+=======================
 
 **Para comenzar un proyecto:**
    1. Leer :doc:`criterios_calidad` para entender qué se espera
@@ -41,16 +45,18 @@ Uso de estos Documentos
    - Documentar métricas de :doc:`metricas_traduccion`
    - Completar todos los checks de :doc:`checklist_revision`
 
-----
+
+
 
 Relación con Otras Secciones
-=============================
+============================
 
 * **02_procedimientos** - Workflow que aplica estos estándares
 * **04_reglas_operativas** - Reglas específicas de decisión
 * **06_casos_practicos** - Ejemplos de aplicación de estándares
 
-----
+
+
 
 .. note::
    Estos estándares evolucionan con cada proyecto. La versión actual refleja lecciones aprendidas de arc42 (2026-01-28).

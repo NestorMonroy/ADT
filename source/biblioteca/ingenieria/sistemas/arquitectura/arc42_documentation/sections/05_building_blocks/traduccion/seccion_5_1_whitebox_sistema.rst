@@ -1,8 +1,10 @@
 .. _seccion_5_1:
 
-=====================================
+
+
+
 5.1 Caja Blanca del Sistema General
-=====================================
+===================================
 
 .. note::
  **Plantilla arc42 - Traducción Arquitectónica (Paso 3.4)**
@@ -13,7 +15,8 @@
  * Building block -> Bloque de construcción
  * Decomposition -> Descomposición
 
-----
+
+
 
 Aquí describes la **descomposición** del sistema general usando la siguiente **plantilla de caja blanca**.
 Contiene:
@@ -31,25 +34,26 @@ Dado que hay muchas formas de especificar **interfaces**, no proporcionamos una 
 
 En el mejor de los casos, te irá bien con ejemplos o firmas simples.
 
-----
+
+
 
 Plantilla de Caja Blanca
-=========================
+========================
 
 .. code-block:: text
 
  5.1 Caja Blanca del Sistema General
- ====================================
+====================================
 
  **<inserta diagrama de visión general del sistema general>**
 
  Motivación
- ----------
+===========
 
  **<describe motivación/razonamiento para la descomposición del sistema general>**
 
  Bloques de Construcción Contenidos
- -----------------------------------
+===================================
 
  **<describe bloques de construcción contenidos (cajas negras)>**
 
@@ -91,19 +95,20 @@ A veces puede ser útil complementar la tabla con columnas adicionales:
    - ---"---
 
 Interfaces Importantes (Opcional)
-----------------------------------
+=================================
 
 **<(opcional) describe interfaces importantes>**
 
-----
+
+
 
 Plantilla de Caja Negra
-========================
+=======================
 
 Aquí describes <caja negra 1> según la siguiente **plantilla de caja negra**:
 
 Elementos de la Plantilla
---------------------------
+=========================
 
 * **Propósito/Responsabilidad**
 * **Interfaz(ces)**, cuando no se extraen como párrafos separados. Estas **interfaces** pueden incluir cualidades y características de rendimiento.
@@ -115,7 +120,7 @@ Elementos de la Plantilla
 Puedes usar una tabla o texto.
 
 Ejemplo de Plantilla
----------------------
+====================
 
 .. code-block:: text
 
@@ -140,7 +145,7 @@ Ejemplo de Plantilla
  _<(opcional) Problemas/Asuntos/Riesgos Abiertos>_
 
 Repetir para Cada Caja Negra
------------------------------
+============================
 
 .. code-block:: text
 
@@ -153,17 +158,19 @@ Repetir para Cada Caja Negra
  _<plantilla de caja negra>_
 
 Interfaces Opcionales
----------------------
+=====================
 
 .. code-block:: text
 
  _<Nombre interfaz 1>_
 
- ...
+
+
 
  _<Nombre interfaz m>_
 
-----
+
+
 
 Referencias
 ===========

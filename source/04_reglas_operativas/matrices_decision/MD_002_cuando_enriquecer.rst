@@ -1,8 +1,10 @@
 .. _md_cuando_enriquecer:
 
-===============================================
+
+
+
 MD-002: Cuándo y Cuánto Enriquecer
-===============================================
+==================================
 
 :Tipo: Matriz de Decisión
 :Código: MD-002
@@ -14,7 +16,8 @@ MD-002: Cuándo y Cuánto Enriquecer
  :depth: 3
  :local:
 
-----
+
+
 
 Pregunta de Decisión
 ====================
@@ -31,10 +34,11 @@ Pregunta de Decisión
 **Objetivo:**
  Proveer guía objetiva basada en datos reales de 196 archivos.
 
-----
+
+
 
 Matriz de Decisión Principal
-=============================
+============================
 
 **Basado en tamaño del contenido original:**
 
@@ -79,13 +83,14 @@ Matriz de Decisión Principal
  Traducido: 164 líneas
  Enriquecimiento = ((164 - 44) / 44) × 100 = 273%
 
-----
+
+
 
 Decisión por Tamaño: Casos Detallados
-======================================
+=====================================
 
 Caso 1: Tips Muy Breves (< 20 líneas)
---------------------------------------
+=====================================
 
 **Características del original:**
 
@@ -122,47 +127,48 @@ Caso 1: Tips Muy Breves (< 20 líneas)
 **Ejemplo Real - Tip 12-1: "Tomarse el glosario en serio"**
 
 .. list-table::
- :header-rows: 1
- :widths: 50 50
+   :header-rows: 1
+   :widths: 50 50
 
- * - **Original (12 líneas)**
-   - **Traducido (140 líneas)**
- * - ::
+   * - **Original (12 líneas)**
+     - **Traducido (140 líneas)**
+   * - ::
 
- You should take the glossary
- seriously. Terms must be defined
- and used consistently.
+          You should take the glossary
+          seriously. Terms must be defined
+          and used consistently.
 
- Having different terms for the
- same concept or using one term
- for different concepts will
- confuse people.
+          Having different terms for the
+          same concept or using one term
+          for different concepts will
+          confuse people.
 
- Therefore: Take care of your
- glossary. Seriously.
-   - **Introducción** (contexto)
+          Therefore: Take care of your
+          glossary. Seriously.
+     - **Introducción** (contexto)
 
- **Problema** (tabla comparativa):
-   - Con glosario vs sin glosario
+       **Problema** (tabla comparativa):
+       - Con glosario vs sin glosario
 
- **Regla "Mejor explícito que implícito"**
+       **Regla "Mejor explícito que implícito"**
 
- **Ejemplos de problemas** (3 casos):
-   - Término ambiguo
-   - Múltiples sinónimos
-   - Homónimos
+       **Ejemplos de problemas** (3 casos):
+       - Término ambiguo
+       - Múltiples sinónimos
+       - Homónimos
 
- **Cómo tomarse en serio** (4 pasos):
- 1. Crear glosario desde inicio
- 2. Revisión en cada sprint
- 3. Asignar responsable
- 4. Educar al equipo
+       **Cómo tomarse en serio** (4 pasos):
 
- **Métricas de éxito**:
-   - % términos documentados
-   - Tiempo resolver ambigüedades
+       1. Crear glosario desde inicio
+       2. Revisión en cada sprint
+       3. Asignar responsable
+       4. Educar al equipo
 
- **Herramientas**: Confluence, Notion
+       **Métricas de éxito**:
+       - % términos documentados
+       - Tiempo resolver ambigüedades
+
+       **Herramientas**: Confluence, Notion
 
 **Qué agregar:**
 
@@ -204,10 +210,11 @@ Caso 1: Tips Muy Breves (< 20 líneas)
 
 **Promedio Tips Sección 12:** +771%
 
-----
+
+
 
 Caso 2: Secciones Cortas (20-50 líneas)
-----------------------------------------
+=======================================
 
 **Características del original:**
 
@@ -238,44 +245,44 @@ Caso 2: Secciones Cortas (20-50 líneas)
 **Ejemplo Real - section-12.md: "Glossary"**
 
 .. list-table::
- :header-rows: 1
- :widths: 50 50
+   :header-rows: 1
+   :widths: 50 50
 
- * - **Original (44 líneas)**
-   - **Traducido (164 líneas)**
- * - ::
+   * - **Original (44 líneas)**
+     - **Traducido (164 líneas)**
+   * - ::
 
- # 12. Glossary
+          # 12. Glossary
 
- ## Content
- Terms, definitions
- Multi-language translations
+          ## Content
+          Terms, definitions
+          Multi-language translations
 
- ## Motivation
- Identical understanding
- Avoid synonyms/homonyms
+          ## Motivation
+          Identical understanding
+          Avoid synonyms/homonyms
 
- ## Form
- Simple table
- Term | Definition
+          ## Form
+          Simple table
+          Term | Definition
 
- [Example table]
+          [Example table]
 
- [Template]
+          [Template]
 
- ## Further Information
- FAQ link
-   - **Título y metadata**
+          ## Further Information
+          FAQ link
+     - **Título y metadata**
 
- **Introducción** (tip contextual):
-   - Por qué glosario es crítico
+       **Introducción** (tip contextual):
+       - Por qué glosario es crítico
 
- **Content** (expandido):
-   - Términos de dominio
-   - Términos técnicos
-   - Traducciones multi-idioma
+       **Content** (expandido):
+       - Términos de dominio
+       - Términos técnicos
+       - Traducciones multi-idioma
 
- **Motivation** (expandido):
+       **Motivation** (expandido):
    - Entendimiento idéntico
    - Evitar sinónimos
    - Evitar homónimos
@@ -331,10 +338,11 @@ Caso 2: Secciones Cortas (20-50 líneas)
 
 **Promedio Secciones 40-50 líneas:** +273% a +353%
 
-----
+
+
 
 Caso 3: Secciones Medianas (50-100 líneas)
--------------------------------------------
+==========================================
 
 **Características del original:**
 
@@ -365,28 +373,28 @@ Caso 3: Secciones Medianas (50-100 líneas)
 **Ejemplo Real - section-11.md: "Risks and Technical Debt"**
 
 .. list-table::
- :header-rows: 1
- :widths: 50 50
+   :header-rows: 1
+   :widths: 50 50
 
- * - **Original (72 líneas)**
-   - **Traducido (variable por archivo)**
- * - Contenido ya estructurado:
+   * - **Original (72 líneas)**
+     - **Traducido (variable por archivo)**
+   * - Contenido ya estructurado:
 
-   - Introducción
-   - Content
-   - Motivation
-   - Form
-   - Subsecciones 11.1, 11.2
-   - Ejemplos
-   - Referencias
-   - Enriquecimiento por archivo:
+       - Introducción
+       - Content
+       - Motivation
+       - Form
+       - Subsecciones 11.1, 11.2
+       - Ejemplos
+       - Referencias
+     - Enriquecimiento por archivo:
 
-   - Principal: +353%
-   - Tips: +427% a +1009%
-   - Promedio: +616%
+       - Principal: +353%
+       - Tips: +427% a +1009%
+       - Promedio: +616%
 
- Nota: Tips muy breves explican
- el promedio alto
+       Nota: Tips muy breves explican
+       el promedio alto
 
 **Qué agregar:**
 
@@ -406,10 +414,11 @@ Caso 3: Secciones Medianas (50-100 líneas)
  - Explicaciones obvias
  - Subsecciones innecesarias
 
-----
+
+
 
 Caso 4: Secciones Extensas (> 100 líneas)
-------------------------------------------
+=========================================
 
 **Características del original:**
 
@@ -441,38 +450,43 @@ Caso 4: Secciones Extensas (> 100 líneas)
 **Ejemplo Real - section-10.md: "Quality Requirements"**
 
 .. list-table::
- :header-rows: 1
- :widths: 50 50
+   :header-rows: 1
+   :widths: 50 50
 
- * - **Original (123 líneas)**
-   - **Traducido (222 líneas)**
- * - Contenido extenso:
+   * - **Original (123 líneas)**
+     - **Traducido (222 líneas)**
+   * - Contenido extenso:
 
-   - Introducción (16 líneas)
-   - Content
-   - Motivation
-   - Further Information
-   - 10.1 completo (23 líneas)
- * Content
- * Motivation
- * Form
-   - 10.2 completo (50 líneas)
- * Content
- * Forma corta
- * Forma larga
- * Referencias
-   - Enriquecimiento: +80%
+       - Introducción (16 líneas)
+       - Content
+       - Motivation
+       - Further Information
+       - 10.1 completo (23 líneas)
 
- Agregado:
-   - Formato mejorado de tablas
-   - Aclaraciones puntuales
-   - Toctrees completos
-   - Relaciones con otras secciones
+         * Content
+         * Motivation
+         * Form
 
- NO agregado:
-   - Ejemplos extensos (ya hay)
-   - Subsecciones nuevas
-   - Contenido redundante
+       - 10.2 completo (50 líneas)
+
+         * Content
+         * Forma corta
+         * Forma larga
+         * Referencias
+     - Enriquecimiento: +80%
+
+       Agregado:
+
+       - Formato mejorado de tablas
+       - Aclaraciones puntuales
+       - Toctrees completos
+       - Relaciones con otras secciones
+
+       NO agregado:
+
+       - Ejemplos extensos (ya hay)
+       - Subsecciones nuevas
+       - Contenido redundante
 
 **Qué agregar:**
 
@@ -499,48 +513,50 @@ Caso 4: Secciones Extensas (> 100 líneas)
  section-10.md: 123 líneas -> 222 líneas (+80%)
  - Agregado: Formato, toctrees, aclaraciones selectivas
 
-----
+
+
 
 Árbol de Decisión Visual
-=========================
+========================
 
 **Proceso paso a paso:**
 
 .. code-block:: text
 
  1. ¿Cuántas líneas tiene el original?
- +- < 20 líneas
- | +- Objetivo: +300% a +1000%
- | +- Agregar ejemplos prácticos [OK]
- | +- Agregar checklist [OK]
- | +- Agregar tabla comparativa [OK]
- | +- Agregar casos de uso [OK]
- |
- +- 20-50 líneas
- | +- Objetivo: +100% a +300%
- | +- Agregar tip contextual [OK]
- | +- Agregar 1-2 ejemplos [OK]
- | +- Mejorar formato [OK]
- |
- +- 50-100 líneas
- | +- Objetivo: +80% a +150%
- | +- Aclarar puntos ambiguos [OK]
- | +- Mejorar formato [OK]
- | +- Ejemplos inline selectivos [OK]
- |
- +- > 100 líneas
- +- Objetivo: +50% a +100%
- +- Formato RST [OK]
- +- Toctrees [OK]
- +- Aclaraciones mínimas [OK]
+   +- < 20 líneas
+   | +- Objetivo: +300% a +1000%
+   | +- Agregar ejemplos prácticos [OK]
+   | +- Agregar checklist [OK]
+   | +- Agregar tabla comparativa [OK]
+   | +- Agregar casos de uso [OK]
+   |
+   +- 20-50 líneas
+   | +- Objetivo: +100% a +300%
+   | +- Agregar tip contextual [OK]
+   | +- Agregar 1-2 ejemplos [OK]
+   | +- Mejorar formato [OK]
+   |
+   +- 50-100 líneas
+   | +- Objetivo: +80% a +150%
+   | +- Aclarar puntos ambiguos [OK]
+   | +- Mejorar formato [OK]
+   | +- Ejemplos inline selectivos [OK]
+   |
+   +- > 100 líneas
+   +- Objetivo: +50% a +100%
+   +- Formato RST [OK]
+   +- Toctrees [OK]
+   +- Aclaraciones mínimas [OK]
 
-----
+
+
 
 Casos Especiales
 ================
 
 Caso Especial 1: Tips con Código
----------------------------------
+================================
 
 **Decisión:**
 
@@ -567,7 +583,7 @@ Caso Especial 1: Tips con Código
  Enriquecimiento: +380%
 
 Caso Especial 2: Contenido con Diagramas
------------------------------------------
+========================================
 
 **Decisión:**
 
@@ -589,7 +605,7 @@ Caso Especial 2: Contenido con Diagramas
  Enriquecimiento: +100% (moderado)
 
 Caso Especial 3: Listas Largas
--------------------------------
+==============================
 
 **Decisión:**
 
@@ -611,10 +627,11 @@ Caso Especial 3: Listas Largas
 
  Enriquecimiento: +20% a +50%
 
-----
+
+
 
 Verificación de Decisión
-=========================
+========================
 
 **Checklist después de decidir:**
 
@@ -638,13 +655,14 @@ Verificación de Decisión
  [ ] 4. ¿Mi decisión está justificada?
  Razón: _________________________
 
-----
+
+
 
 Errores Comunes y Correcciones
-===============================
+==============================
 
 Error 1: Enriquecer Muy Poco
------------------------------
+============================
 
 **Síntoma:**
 
@@ -674,7 +692,7 @@ Error 1: Enriquecer Muy Poco
  Enriquecimiento: +567% [OK]
 
 Error 2: Enriquecer Demasiado
-------------------------------
+=============================
 
 **Síntoma:**
 
@@ -708,7 +726,7 @@ Error 2: Enriquecer Demasiado
  Enriquecimiento: +67% [OK]
 
 Error 3: Enriquecimiento Inconsistente
----------------------------------------
+======================================
 
 **Síntoma:**
 
@@ -735,7 +753,8 @@ Error 3: Enriquecimiento Inconsistente
  Re-trabajar Tip 1 y Tip 3
  para alcanzar rango
 
-----
+
+
 
 Resumen Ejecutivo
 =================
@@ -776,7 +795,8 @@ Resumen Ejecutivo
 
  Correlación inversa verificada en 196 archivos [OK]
 
-----
+
+
 
 .. seealso::
  * :doc:`../../03_estandares/calidad/metricas_traduccion` - Métricas detalladas

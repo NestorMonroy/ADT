@@ -1,22 +1,27 @@
 .. _risks_ejemplo_tpu:
 
-===============================================================
+
+
+
 Ejemplo de Riesgos: TrafficPursuitUnit
-===============================================================
+======================================
 
 :Sistema: TrafficPursuitUnit (TPU)
 :Categoría: Sistema embebido automotriz
 :Palabras clave: risks, example
 
-----
+
+
 
 Este ejemplo muestra **riesgos** para TrafficPursuitUnit (TPU), un sistema embebido de persecución de tráfico policial, con énfasis en **riesgos de hardware** en entornos automotrices.
 
-----
+
+
 
 11. Riesgos y Deuda Técnica
 
-============================
+
+
 
 Riesgos de Hardware
 ===================
@@ -28,7 +33,7 @@ Dado que no teníamos ninguna experiencia extendida con la mayoría de los compo
 * **Vibraciones**
 
 Dependencia de Proveedores
----------------------------
+==========================
 
 .. warning::
  **Riesgo Crítico: Incapacidad de Diagnóstico Autónomo**
@@ -63,10 +68,11 @@ Dependencia de Proveedores
    - No podemos ofrecer garantía completa
    - Pérdida de competitividad
 
-----
+
+
 
 Robustez de Discos Duros Bajo Condiciones Severas
-==================================================
+=================================================
 
 **Contexto Tecnológico:**
 
@@ -75,7 +81,7 @@ En el momento del desarrollo del sistema, los **discos de estado sólido** (SSDs
 El sistema tenía que basarse en **discos duros** (HDDs).
 
 Discos Duros Reforzados
-------------------------
+=======================
 
 Ciertamente, existían **discos duros especiales reforzados** adecuados para condiciones automotrices, pero no pudimos probarlos por adelantado durante varios miles de kilómetros bajo las condiciones de manejo ásperas que pueden ocurrir en un coche de policía.
 
@@ -129,7 +135,8 @@ Ciertamente, existían **discos duros especiales reforzados** adecuados para con
 
  **RIESGO:** Fallos en campo que no se manifestaron en testing
 
-----
+
+
 
 Riesgos de Software
 ===================
@@ -195,7 +202,8 @@ Algunos de los cuales solo están disponibles en **código binario**, imponen un
 
  Tiempo de diagnóstico: IMPREDECIBLE (días a semanas)
 
-----
+
+
 
 **Matriz de Riesgos Consolidada:**
 
@@ -239,7 +247,8 @@ Algunos de los cuales solo están disponibles en **código binario**, imponen un
    - Alta
    - Warranty limitada + disclaimer
 
-----
+
+
 
 **Estrategias de Mitigación Implementadas:**
 
@@ -263,7 +272,8 @@ Algunos de los cuales solo están disponibles en **código binario**, imponen un
  * [OK] Expectativas claras con cliente
  * [WARNING] Puede afectar competitividad
 
-----
+
+
 
 **Lecciones Aprendidas:**
 
@@ -293,7 +303,8 @@ Este ejemplo es particularmente valioso para:
 * Sistemas **críticos** con requisitos de robustez
 * [TOOL] Proyectos con dependencia de **hardware de terceros**
 
-----
+
+
 
 .. seealso::
  * **Ejemplo HTMLSC** - Riesgos en proyecto open source

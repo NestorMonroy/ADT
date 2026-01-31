@@ -1,15 +1,18 @@
 .. _contexto_tip_3:
 
-===============================================================
+
+
+
 Tip 3-3: ¡Combina el diagrama de contexto con una tabla!
-===============================================================
+========================================================
 
 .. tip::
    **Consejo de Contexto arc42**
    
    Siempre debes complementar el diagrama de contexto con una tabla. De esta manera puedes reducir la cantidad de etiquetas en el diagrama y agregar fácilmente explicaciones, razonamiento o referencias cruzadas.
 
-----
+
+
 
 El diagrama de contexto comprensivo requiere una explicación tabular.
 
@@ -20,12 +23,12 @@ Mostramos solo extractos de la tabla correspondiente, pero debes considerar algu
 
 Ver el siguiente ejemplo:
 
-.. figure:: ../figuras/03-context-user-product-service.png
-   :alt: Contexto de usuario, producto y servicio
-   :align: center
-   :width: 80%
+.. .. figure:: ../figuras/03-context-user-product-service.png
+..       :alt: Contexto de usuario, producto y servicio
+..       :align: center
+..       :width: 80%
    
-   Contexto de usuario, producto y servicio
+..       Contexto de usuario, producto y servicio
 
 .. list-table:: Descripción de vecinos
    :header-rows: 1
@@ -40,13 +43,15 @@ Ver el siguiente ejemplo:
    * - **PaymentService**
      - Maneja la autenticación y todos los demás pasos requeridos para el pago real. NO involucra facturación.
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_03` - Contexto y Alcance
    * :ref:`contexto_tip_2` - Diagrama de contexto
 
-----
+
+
 
 :Tip: 3-3
 :Tema: Diagrama + Tabla

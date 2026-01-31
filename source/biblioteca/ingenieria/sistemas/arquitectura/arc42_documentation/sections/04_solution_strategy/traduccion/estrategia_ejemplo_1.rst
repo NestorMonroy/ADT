@@ -1,8 +1,10 @@
 .. _estrategia_ejemplo_1:
 
-===============================================================
+
+
+
 Ejemplo de Estrategia de Solución: HTML Sanity Checker
-===============================================================
+======================================================
 
 .. note::
    **Ejemplo arc42**
@@ -11,11 +13,13 @@ Ejemplo de Estrategia de Solución: HTML Sanity Checker
    
    Explica brevemente cómo logras los requisitos de calidad más importantes.
 
-----
+
+
 
 4. Estrategia de Solución
 
-==========================
+
+
 
 1. Implementar HtmlSC principalmente en el lenguaje de programación Groovy y parcialmente en Java con dependencias externas mínimas.
 
@@ -31,7 +35,8 @@ Ejemplo de Estrategia de Solución: HTML Sanity Checker
 
    * Para el plugin de Maven, esto podría llevar a problemas.
 
-----
+
+
 
 Análisis
 ========
@@ -45,13 +50,15 @@ Este ejemplo muestra cómo una **estrategia de solución** simple y concisa pued
 
 La estrategia es breve pero suficientemente detallada para guiar decisiones de implementación posteriores.
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_04` - Estrategia de Solución
    * :ref:`estrategia_ejemplo_2` - Ejemplo MaMa
 
-----
+
+
 
 :Sistema: HTML Sanity Checker
 :Tipo: Ejemplo de estrategia de solución

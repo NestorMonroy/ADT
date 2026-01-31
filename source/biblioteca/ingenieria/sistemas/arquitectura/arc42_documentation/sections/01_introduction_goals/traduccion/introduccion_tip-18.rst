@@ -1,8 +1,10 @@
 .. _introduccion-tip-18:
 
-===================================================================
+
+
+
 Consejo 1-18: ¡Difiere detalles a la sección 10!
-===================================================================
+================================================
 
 .. meta::
    :layout: post
@@ -16,7 +18,8 @@ Consejo 1-18: ¡Difiere detalles a la sección 10!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Documentadores
 
-----
+
+
 
 Recomendación
 =============
@@ -29,7 +32,8 @@ críticos de tales requisitos.
 Recopila el resto en la sección 10 de arc42 (requisitos de calidad), con escenarios 
 detallados y específicos.
 
-----
+
+
 
 .. note::
    **Información de traducción:**

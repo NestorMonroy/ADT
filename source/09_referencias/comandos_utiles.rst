@@ -1,8 +1,10 @@
 .. _comandos_utiles:
 
-===============================================
+
+
+
 Comandos Útiles
-===============================================
+===============
 
 Comandos de terminal más usados en proyectos ADT.
 
@@ -10,13 +12,14 @@ Comandos de terminal más usados en proyectos ADT.
    :depth: 2
    :local:
 
-----
+
+
 
 Sphinx
 ======
 
 Compilación
------------
+===========
 
 .. code-block:: bash
 
@@ -33,7 +36,7 @@ Compilación
    make clean && make html
 
 Verificación
-------------
+============
 
 .. code-block:: bash
 
@@ -50,7 +53,7 @@ Verificación
    make html | tail -20
 
 Live Reload
------------
+===========
 
 .. code-block:: bash
 
@@ -63,13 +66,14 @@ Live Reload
    # Abrir en navegador
    # http://127.0.0.1:8000
 
-----
+
+
 
 Git
 ===
 
 Workflow Básico
----------------
+===============
 
 .. code-block:: bash
 
@@ -89,7 +93,7 @@ Workflow Básico
    git push origin main
 
 Branches
---------
+========
 
 .. code-block:: bash
 
@@ -106,7 +110,7 @@ Branches
    git branch -d traduccion-seccion-05
 
 Historial
----------
+=========
 
 .. code-block:: bash
 
@@ -119,13 +123,14 @@ Historial
    # Ver quién cambió qué
    git blame archivo.rst
 
-----
+
+
 
 Búsqueda y Análisis
 ===================
 
 Buscar en Archivos
-------------------
+==================
 
 .. code-block:: bash
 
@@ -142,7 +147,7 @@ Buscar en Archivos
    grep -i "término" source/*.rst
 
 Contar Elementos
-----------------
+================
 
 .. code-block:: bash
 
@@ -159,7 +164,7 @@ Contar Elementos
    grep -o "término" archivo.rst | wc -l
 
 Estadísticas
-------------
+============
 
 .. code-block:: bash
 
@@ -172,13 +177,14 @@ Estadísticas
    # Archivos más grandes
    find source -name "*.rst" -exec du -h {} \; | sort -rh | head -10
 
-----
+
+
 
 Edición en Masa
 ===============
 
 Reemplazar Texto
-----------------
+================
 
 .. code-block:: bash
 
@@ -192,7 +198,7 @@ Reemplazar Texto
    sed 's/viejo/nuevo/g' archivo.rst
 
 Renombrar Archivos
-------------------
+==================
 
 .. code-block:: bash
 
@@ -203,7 +209,7 @@ Renombrar Archivos
    rename 's/\.txt$/.rst/' *.txt
 
 Convertir Line Endings
------------------------
+======================
 
 .. code-block:: bash
 
@@ -213,13 +219,14 @@ Convertir Line Endings
    # Unix (LF) a Windows (CRLF)
    unix2dos archivo.rst
 
-----
+
+
 
 Pandoc
 ======
 
 Conversiones Básicas
---------------------
+====================
 
 .. code-block:: bash
 
@@ -233,7 +240,7 @@ Conversiones Básicas
    pandoc input.html -f html -t rst -o output.rst
 
 Opciones Avanzadas
-------------------
+==================
 
 .. code-block:: bash
 
@@ -246,13 +253,14 @@ Opciones Avanzadas
    # Con tabla de contenidos
    pandoc input.md --toc -o output.html
 
-----
+
+
 
 Validación y QA
 ===============
 
 Validar RST
------------
+===========
 
 .. code-block:: bash
 
@@ -263,7 +271,7 @@ Validar RST
    find source -name "*.rst" -exec rst2html {} \; > /dev/null 2>&1
 
 Spell Check
------------
+===========
 
 .. code-block:: bash
 
@@ -277,7 +285,7 @@ Spell Check
    aspell list < archivo.rst
 
 Detectar Problemas Comunes
----------------------------
+==========================
 
 .. code-block:: bash
 
@@ -290,13 +298,14 @@ Detectar Problemas Comunes
    # Encontrar espacios al final de línea
    grep -n " $" archivo.rst
 
-----
+
+
 
 Python y pip
 ============
 
 Gestión de Entornos
--------------------
+===================
 
 .. code-block:: bash
 
@@ -313,7 +322,7 @@ Gestión de Entornos
    deactivate
 
 Instalación de Paquetes
------------------------
+=======================
 
 .. code-block:: bash
 
@@ -330,7 +339,7 @@ Instalación de Paquetes
    pip install --upgrade sphinx
 
 Gestión de Dependencias
-------------------------
+=======================
 
 .. code-block:: bash
 
@@ -343,13 +352,14 @@ Gestión de Dependencias
    # Ver información de paquete
    pip show sphinx
 
-----
+
+
 
 Productividad
 =============
 
 Alias Útiles
-------------
+============
 
 .. code-block:: bash
 
@@ -369,7 +379,7 @@ Alias Útiles
    alias gp='git push'
 
 Scripts Útiles
---------------
+==============
 
 **Contador de líneas por archivo:**
 
@@ -398,13 +408,14 @@ Scripts Útiles
    grep -rl "término_viejo" source/ | \
    xargs sed -i 's/término_viejo/término_nuevo/g'
 
-----
+
+
 
 Troubleshooting
 ===============
 
 Build Muy Lento
----------------
+===============
 
 .. code-block:: bash
 
@@ -418,7 +429,7 @@ Build Muy Lento
    make clean
 
 Problemas de Encoding
----------------------
+=====================
 
 .. code-block:: bash
 
@@ -432,7 +443,7 @@ Problemas de Encoding
    grep -P "[^\x00-\x7F]" archivo.rst
 
 Espacio en Disco
-----------------
+================
 
 .. code-block:: bash
 
@@ -445,13 +456,14 @@ Espacio en Disco
    # Encontrar archivos grandes
    find build -type f -size +10M
 
-----
+
+
 
 Automatización
 ==============
 
 Makefile Personalizado
-----------------------
+======================
 
 .. code-block:: makefile
 
@@ -471,7 +483,7 @@ Makefile Personalizado
        rsync -av build/html/ usuario@servidor:/ruta/docs/
 
 Pre-commit Hooks
-----------------
+================
 
 .. code-block:: bash
 
@@ -489,13 +501,14 @@ Pre-commit Hooks
    echo "Build exitoso."
    exit 0
 
-----
+
+
 
 Recursos Adicionales
 ====================
 
 Documentación Oficial
----------------------
+=====================
 
 .. code-block:: text
 
@@ -505,7 +518,7 @@ Documentación Oficial
    RST: https://docutils.sourceforge.io/rst.html
 
 Herramientas Online
--------------------
+===================
 
 .. code-block:: text
 
@@ -513,9 +526,11 @@ Herramientas Online
    Table Generator: https://www.tablesgenerator.com/text_tables
    Regex Tester: https://regex101.com/
 
-----
+
+
 
 .. seealso::
+   
    * :doc:`cheatsheets/cheatsheet_rst` - Cheatsheet RST
    * :doc:`../07_guias_uso/troubleshooting` - Solución de problemas
    * :doc:`../05_herramientas_medios/index` - Herramientas y medios

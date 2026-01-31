@@ -1,6 +1,6 @@
-=========================================
+
 Principios Fundamentales de ADT
-=========================================
+===============================
 
 :Categoría: Fundamentos
 :Ubicación: 01_fundamentos/
@@ -11,7 +11,8 @@ Principios Fundamentales de ADT
  :depth: 2
  :local:
 
-----
+
+
 
 Introducción
 ============
@@ -25,13 +26,14 @@ proyecto ADT (Arc42-Diátaxis-Traducción).
 **Respuesta:**
  Siguiendo principios sistemáticos basados en 50+ años de Translation Studies.
 
-----
+
+
 
 Los 10 Principios Fundamentales
-================================
+===============================
 
 Principio 1: Traducción como Transformación
---------------------------------------------
+===========================================
 
 .. important::
  La traducción de documentación NO es "copiar y cambiar sintaxis".
@@ -51,11 +53,12 @@ Principio 1: Traducción como Transformación
 **Ver:** :doc:`_fundamentos_conceptuales/traduccion_como_transformacion`
 
 Principio 2: Preferencia por Signifié sobre Signifiant
--------------------------------------------------------
+======================================================
 
 .. important::
  Cuando hay conflicto entre preservar FORMA vs CONTENIDO:
 
+ 
  **Preservamos CONTENIDO (Signifié), adaptamos FORMA (Signifiant)**
 
 **Justificación:**
@@ -88,7 +91,7 @@ Principio 2: Preferencia por Signifié sobre Signifiant
 **Ver:** :doc:`_fundamentos_conceptuales/signifiant_vs_signifie`
 
 Principio 3: Método por Defecto + Divergencias
------------------------------------------------
+==============================================
 
 .. important::
  Aplicamos MÉTODO POR DEFECTO en el 80-90% de casos.
@@ -105,6 +108,7 @@ Principio 3: Método por Defecto + Divergencias
 
 Solo para lograr uno de los 4 objetivos:
 
+
 1. Domesticación (adaptar a RST)
 2. Claridad (hacer comprensible)
 3. Consistencia (resolver inconsistencias)
@@ -113,7 +117,7 @@ Solo para lograr uno de los 4 objetivos:
 **Ver:** :doc:`_metodologias/metodo_por_defecto`
 
 Principio 4: Objetivos Explícitos
-----------------------------------
+=================================
 
 .. important::
  TODA divergencia del método por defecto debe tener un objetivo explícito.
@@ -146,7 +150,7 @@ Principio 4: Objetivos Explícitos
  4. Valida que el objetivo se logró
 
 Principio 5: Tácticas Catalogadas
-----------------------------------
+=================================
 
 .. important::
  Usamos tácticas probadas, no inventamos ad-hoc.
@@ -190,11 +194,12 @@ Para cada objetivo, hay tácticas preferidas:
    - Omisión, Condensación
 
 Principio 6: Preservación Semántica
-------------------------------------
+===================================
 
 .. important::
  La propiedad MÁS IMPORTANTE de una traducción:
 
+ 
  **Preservar el contenido semántico del original**
 
 **Definición formal:**
@@ -228,7 +233,7 @@ Donde :math:`T` es la función de transformación.
  [ ] Todas las citas presentes
 
 Principio 7: Adaptación Sintáctica
------------------------------------
+==================================
 
 .. important::
  La forma (sintaxis) DEBE adaptarse al medio destino.
@@ -262,7 +267,7 @@ Principio 7: Adaptación Sintáctica
 - Referencias: Usar ``:ref:``, NO tratar de usar ``\ref{}``
 
 Principio 8: Validación Continua
----------------------------------
+================================
 
 .. important::
  Validamos CONTINUAMENTE, no solo al final.
@@ -295,7 +300,7 @@ Principio 8: Validación Continua
 4. **Funcional:** ¿Enlaces/referencias funcionan?
 
 Principio 9: Documentación de Decisiones
------------------------------------------
+========================================
 
 .. important::
  Documentamos decisiones importantes, especialmente divergencias.
@@ -330,7 +335,7 @@ Principio 9: Documentación de Decisiones
 - Razonamiento breve
 
 Principio 10: Mejora Iterativa
--------------------------------
+==============================
 
 .. important::
  La traducción NO es perfecta en el primer intento.
@@ -359,48 +364,49 @@ Principio 10: Mejora Iterativa
 
  Pero: "Iteramos hasta alcanzar calidad profesional"
 
-----
+
+
 
 Aplicación de los Principios
-=============================
+============================
 
 Caso de Uso: Traducir una Sección
-----------------------------------
+=================================
 
 **Aplicando los 10 principios:**
 
 1. **Principio 1 (Transformación):**
- Entender que esto es transformación sistemática
+  Entender que esto es transformación sistemática
 
 2. **Principio 2 (Signifié):**
- Identificar función semántica de cada elemento
+  Identificar función semántica de cada elemento
 
 3. **Principio 3 (Método defecto):**
- Aplicar segmentación-rendición-preferencia
+  Aplicar segmentación-rendición-preferencia
 
 4. **Principio 4 (Objetivos):**
- Identificar si se necesita domesticación, claridad, etc.
+  Identificar si se necesita domesticación, claridad, etc.
 
 5. **Principio 5 (Tácticas):**
- Seleccionar táctica apropiada al objetivo
+  Seleccionar táctica apropiada al objetivo
 
 6. **Principio 6 (Preservación):**
- Verificar que contenido está completo
+  Verificar que contenido está completo
 
 7. **Principio 7 (Adaptación):**
- Usar sintaxis nativa RST
+  Usar sintaxis nativa RST
 
 8. **Principio 8 (Validación):**
- Compilar y verificar
+  Compilar y verificar
 
 9. **Principio 9 (Documentación):**
- Documentar decisiones importantes
+  Documentar decisiones importantes
 
 10. **Principio 10 (Iteración):**
- Revisar y mejorar
+  Revisar y mejorar
 
 Checklist Rápida
-----------------
+================
 
 .. code-block:: text
 
@@ -420,10 +426,11 @@ Checklist Rápida
  [ ] Documento decisiones importantes (P9)
  [ ] Planeo iteración de mejora (P10)
 
-----
+
+
 
 Relación con Otros Documentos
-==============================
+=============================
 
 **Estos principios se desarrollan en:**
 
@@ -433,7 +440,8 @@ Relación con Otros Documentos
 - :doc:`objetivos_tacticas` (P4, P5)
 - :doc:`/docs_maestros/SINTESIS_METODOLOGICA_ADT` (todos)
 
-----
+
+
 
 Conclusión
 ==========
@@ -441,6 +449,7 @@ Conclusión
 **Síntesis:**
 
 Los 10 principios fundamentales de ADT proporcionan:
+
 
 1. **Base teórica** sólida (P1, P2)
 2. **Método sistemático** (P3, P4, P5)
@@ -455,7 +464,8 @@ Los 10 principios fundamentales de ADT proporcionan:
 
  Estudiar :doc:`objetivos_tacticas` para aplicación práctica.
 
-----
+
+
 
 Referencias
 ===========
@@ -465,7 +475,8 @@ Referencias
 - Toury, G. (1995). Descriptive Translation Studies
 - ISO 1087:2019 - Terminology work
 
-----
+
+
 
 **Versión:** 1.0
 **Fecha:** 2026-01-27

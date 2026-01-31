@@ -1,8 +1,10 @@
 .. _introduccion-tip-3:
 
-===================================================================
+
+
+
 Consejo 1-3: ¡Destaca los objetivos de negocio del sistema!
-===================================================================
+===========================================================
 
 .. meta::
    :layout: post
@@ -15,7 +17,8 @@ Consejo 1-3: ¡Destaca los objetivos de negocio del sistema!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Stakeholders
 
-----
+
+
 
 Recomendación
 =============
@@ -27,7 +30,8 @@ especificaciones de requisitos...
 Los objetivos de negocio suelen ser más globales y de un nivel más alto en 
 comparación con los requisitos del sistema más detallados.
 
-----
+
+
 
 .. note::
    **Información de traducción:**

@@ -7,16 +7,19 @@
 
 .. _introduccion-tip-16:
 
-===================================================================
+
+
+
 Consejo 1-16: ¡Describe solo los top 3-5!
-===================================================================
+=========================================
 
 :Subtítulo: Atributos de calidad objetivo en la introducción
 :Tema: Priorización de requisitos de calidad
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Documentadores
 
-----
+
+
 
 Recomendación
 =============
@@ -32,7 +35,8 @@ palabras clave.
 Todos los demás atributos de calidad objetivo y requisitos se pueden encontrar en
 la especificación de requisitos o en el árbol de calidad en la sección 10 de arc42.
 
-----
+
+
 
 .. note::
  **Información de traducción:**
@@ -40,5 +44,5 @@ la especificación de requisitos o en el árbol de calidad en la sección 10 de 
  - Archivo original: 2016-03-02-t-1-16.md
  - Método: Peshitta + Terminología arquitectónica (Workflow v1.5.0)
  - Paso 3.4 aplicado: "quality goals" -> "atributos de calidad objetivo",
- "stakeholders" preservado
+   "stakeholders" preservado
  - Fecha: 2026-01-27

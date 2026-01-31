@@ -1,8 +1,10 @@
 .. _apendices:
 
-===============================================
+
+
+
 Apéndices
-===============================================
+=========
 
 Material de referencia y complementario del proyecto ADT.
 
@@ -10,7 +12,8 @@ Material de referencia y complementario del proyecto ADT.
  :depth: 2
  :local:
 
-----
+
+
 
 Apéndices Disponibles
 =====================
@@ -20,13 +23,14 @@ Apéndices Disponibles
 
  glosario_adt
 
-----
+
+
 
 Contenido de Apéndices
-=======================
+======================
 
 A. Glosario ADT
----------------
+===============
 
 Glosario completo de términos usados en el sistema ADT.
 
@@ -39,7 +43,8 @@ Glosario completo de términos usados en el sistema ADT.
 
 **Ver:** :doc:`glosario_adt`
 
-----
+
+
 
 Apéndices Planeados
 ===================
@@ -76,13 +81,14 @@ Apéndices Planeados
  [RUNNING] Features planeados
  [RUNNING] Mejoras propuestas
 
-----
+
+
 
 Uso de los Apéndices
-=====================
+====================
 
 Durante el Trabajo
-------------------
+==================
 
 **Glosario:**
 - Consulta rápida de términos
@@ -90,27 +96,31 @@ Durante el Trabajo
 - Verificación de convenciones
 
 Durante el Aprendizaje
-----------------------
+======================
 
 **Glosario:**
 - Entender conceptos ADT
 - Familiarizarse con terminología
 - Clarificar dudas de vocabulario
 
-----
+
+
 
 Relación con Otras Secciones
-=============================
+============================
 
 Los apéndices complementan:
+
 
 * **01_fundamentos** - Glosario expande términos fundamentales
 * **07_guias_uso/faq** - FAQ responde preguntas, glosario define términos
 * **09_referencias** - Referencias profundizan, glosario define
 
-----
+
+
 
 .. seealso::
+ 
  * :doc:`../01_fundamentos/glosario_traduccion` - Glosario original de traducción
  * :doc:`../07_guias_uso/faq` - Preguntas frecuentes
  * :doc:`../09_referencias/index` - Referencias y recursos

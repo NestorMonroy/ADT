@@ -1,6 +1,6 @@
-============================
+
 Método por Defecto de ADT
-============================
+=========================
 
 :Categoría: Metodologías
 :Ubicación: 01_fundamentos/_metodologias/
@@ -15,7 +15,7 @@ Método por Defecto de ADT
 
 
 
-----
+
 
 Introducción
 ============
@@ -27,14 +27,16 @@ traducción en ADT, a menos que haya razón específica para desviarse.
  Basado en el análisis de Micheli (2014) del método de traducción en
  Peshitta Zacarías, adaptado a traducción técnica LaTeX->RST.
 
-----
+
+
 
 Los Tres Pilares del Método
-============================
+===========================
 
 1. Segmentación
 
----------------
+
+
 
 **Definición:**
  El nivel de granularidad al que trabajamos.
@@ -112,7 +114,8 @@ Los Tres Pilares del Método
 
 2. Rendición
 
-------------
+
+
 
 **Definición:**
  Cómo traducimos cada elemento dentro de la segmentación.
@@ -169,7 +172,8 @@ Los Tres Pilares del Método
 
 3. Preferencia
 
---------------
+
+
 
 **Definición:**
  Cuando hay conflicto entre preservar forma vs contenido, ¿qué elegimos?
@@ -217,13 +221,13 @@ Los Tres Pilares del Método
 
 
 
-----
+
 
 Aplicación del Método
 =====================
 
 Paso 1: Análisis del Segmento
-------------------------------
+=============================
 
 **Para cada sección LaTeX:**
 
@@ -243,7 +247,7 @@ Paso 1: Análisis del Segmento
  [ ] ¿Hay citas bibliográficas?
 
 Paso 2: Aplicar Rendición Estándar
------------------------------------
+==================================
 
 **Mapeo automático:**
 
@@ -267,7 +271,7 @@ Paso 2: Aplicar Rendición Estándar
  **importante**
 
 Paso 3: Verificar Preferencia
-------------------------------
+=============================
 
 **Para cada decisión:**
 
@@ -283,7 +287,7 @@ Paso 3: Verificar Preferencia
  -> Ver Objetivos de Traducción
 
 Paso 4: Validación del Segmento
---------------------------------
+===============================
 
 **Después de traducir sección:**
 
@@ -292,17 +296,18 @@ Paso 4: Validación del Segmento
 3. **Verificar semántica:** ¿Preserva el contenido original?
 4. **Comprobar enlaces:** ¿Referencias cruzadas funcionan?
 
-----
+
+
 
 Cuándo Desviarse del Método por Defecto
-========================================
+=======================================
 
 El método por defecto se aplica en el 80-90% de los casos.
 
 **Situaciones que requieren divergencia:**
 
 Objetivo 1: Domesticación
---------------------------
+=========================
 
 **Cuándo:** El original usa construcciones que no existen en RST
 
@@ -316,7 +321,7 @@ Objetivo 1: Domesticación
 **Divergencia:** Interpretar función semántica y mapear a RST apropiado
 
 Objetivo 2: Claridad
---------------------
+====================
 
 **Cuándo:** El original es ambiguo o confuso
 
@@ -335,7 +340,7 @@ Objetivo 2: Claridad
  Como se mencionó en :ref:`seccion-anterior`...
 
 Objetivo 3: Consistencia
--------------------------
+========================
 
 **Cuándo:** El original tiene inconsistencias
 
@@ -352,7 +357,7 @@ Objetivo 3: Consistencia
 **Divergencia:** Unificar a un solo estilo
 
 Objetivo 4: Simplificación
----------------------------
+==========================
 
 **Cuándo:** El original tiene complejidad innecesaria
 
@@ -370,10 +375,11 @@ Objetivo 4: Simplificación
  # RST: Simple
  **Título**
 
-----
+
+
 
 Plantilla de Aplicación
-========================
+=======================
 
 **Template para cada sección:**
 
@@ -397,13 +403,14 @@ Plantilla de Aplicación
  [ ] Semántica preservada
  [ ] Enlaces funcionan
 
-----
+
+
 
 Casos de Uso
 ============
 
 Caso 1: Sección Simple
-----------------------
+======================
 
 **Input LaTeX:**
 
@@ -419,6 +426,7 @@ Caso 1: Sección Simple
  - ``\section{}`` -> Título con ``====``
  - ``\textbf{}`` -> ``**...**``
  - ``\emph{}`` -> ``*...*``
+
 3. **Preferencia:** Signifié preservado [OK]
 
 **Output RST:**
@@ -431,7 +439,7 @@ Caso 1: Sección Simple
  Este es un texto **importante** con *énfasis*.
 
 Caso 2: Sección con Figura
----------------------------
+==========================
 
 **Input LaTeX:**
 
@@ -453,6 +461,7 @@ Caso 2: Sección con Figura
  - ``\section{}`` -> Título
  - ``\ref{}`` -> ``:ref:``
  - ``figure`` -> ``.. figure::``
+
 3. **Preferencia:** Signifié (referencia funciona)
 
 **Output RST:**
@@ -460,7 +469,7 @@ Caso 2: Sección con Figura
 .. code-block:: rst
 
  Resultados
- ==========
+ ===========
 
  Ver :numref:`fig-resultado`.
 
@@ -469,7 +478,8 @@ Caso 2: Sección con Figura
 
  Resultado
 
-----
+
+
 
 Métricas de Calidad
 ===================
@@ -477,14 +487,14 @@ Métricas de Calidad
 **¿Cómo saber si aplicamos bien el método?**
 
 Métrica 1: Tasa de Compilación
--------------------------------
+==============================
 
 .. code-block:: text
 
  Objetivo: 100% de las secciones compilan sin errores
 
 Métrica 2: Preservación Semántica
-----------------------------------
+=================================
 
 .. code-block:: text
 
@@ -493,7 +503,7 @@ Métrica 2: Preservación Semántica
  Método: Revisión manual o automática
 
 Métrica 3: Naturalidad en RST
-------------------------------
+=============================
 
 .. code-block:: text
 
@@ -501,7 +511,7 @@ Métrica 3: Naturalidad en RST
  ¿O parece "traducción automática"?
 
 Métrica 4: Tasa de Divergencias
---------------------------------
+===============================
 
 .. code-block:: text
 
@@ -509,7 +519,8 @@ Métrica 4: Tasa de Divergencias
 
  Si >20%: Revisar si método por defecto es apropiado
 
-----
+
+
 
 Conclusión
 ==========
@@ -553,7 +564,8 @@ Este método proporciona:
 - [OK] Calidad predecible
 - [OK] Base para mejora iterativa
 
-----
+
+
 
 Referencias
 ===========
@@ -563,7 +575,8 @@ Referencias
 - :doc:`../_fundamentos_conceptuales/signifiant_vs_signifie`
 - :doc:`objetivos_tacticas`
 
-----
+
+
 
 **Versión:** 1.0
 **Fecha:** 2026-01-27

@@ -1,15 +1,18 @@
 .. _contexto_tip_11:
 
-===============================================================
+
+
+
 Tip 3-11: ¡En el contexto de negocio, muestra flujos de datos (en lugar de dependencias)!
-===============================================================
+=========================================================================================
 
 .. tip::
    **Consejo de Contexto arc42**
    
    Este tip es válido principalmente para sistemas de información, menos para sistemas de tiempo real, embebidos u orientados a hardware.
 
-----
+
+
 
 Estarás usando el **contexto** para discusiones con varios stakeholders, quienes probablemente tendrán habilidades limitadas de modelado y conocimiento limitado (o ¡ninguno!) de UML u otros lenguajes de modelado (formales).
 
@@ -27,13 +30,15 @@ Para usuarios UML menos puristas: inventa una nueva flecha (por ejemplo, línea 
 
 (Los veteranos de IT reconocen aquí los buenos y viejos diagramas de contexto del análisis estructurado.)
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_3_1` - Contexto de Negocio
    * :ref:`contexto_tip_10` - Diferenciación business/technical
 
-----
+
+
 
 :Tip: 3-11
 :Tema: Flujos de datos en contexto de negocio

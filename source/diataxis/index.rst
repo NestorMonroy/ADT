@@ -1,6 +1,6 @@
-============================
+
 Framework Diátaxis
-============================
+==================
 
 .. note::
    Diátaxis es un framework sistemático para documentación técnica que organiza
@@ -14,7 +14,7 @@ técnica de forma que sea útil y accesible para diferentes tipos de usuarios y
 necesidades.
 
 Las Cuatro Categorías
-======================
+=====================
 
 **Tutoriales** (Learning-Oriented)
    Orientados al aprendizaje. Guían al usuario paso a paso a través de un proyecto
@@ -35,6 +35,7 @@ Aplicación en ADT
 El proyecto ADT utiliza Diátaxis como framework base para organizar toda su
 documentación de traducción:
 
+
 - **Tutoriales:** Guías paso a paso de traducción
 - **Guías:** Procedimientos específicos de traducción
 - **Explicaciones:** Fundamentos y principios de traducción
@@ -44,6 +45,7 @@ Recursos
 ========
 
 Para más información sobre Diátaxis:
+
 
 - `Sitio oficial de Diátaxis <https://diataxis.fr/>`_
 - Documentación de integración en :doc:`/docs/INTEGRACION_FRAMEWORKS`

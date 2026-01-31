@@ -1,8 +1,10 @@
 .. _reglas_operativas:
 
-===============================================
+
+
+
 Reglas Operativas de Traducción
-===============================================
+===============================
 
 Esta sección contiene **reglas de decisión concretas** para situaciones específicas durante traducción.
 
@@ -12,7 +14,8 @@ Esta sección contiene **reglas de decisión concretas** para situaciones espec�
 **Propósito:**
  Proveer guía objetiva para decisiones en tiempo real durante traducción.
 
-----
+
+
 
 Subsecciones
 ============
@@ -25,7 +28,8 @@ Subsecciones
  reglas_traduccion/index
  escenarios_traduccion/index
 
-----
+
+
 
 Tipos de Reglas
 ===============
@@ -45,7 +49,8 @@ Tipos de Reglas
 
  Ejemplo: ET-001 "Documento breve"
 
-----
+
+
 
 Uso de esta Sección
 ===================
@@ -85,7 +90,8 @@ Uso de esta Sección
  * - ¿Cómo estructurar salida?
    - [RUNNING] MD-005 (planificado)
 
-----
+
+
 
 Estado de Desarrollo
 ====================
@@ -107,20 +113,22 @@ Estado de Desarrollo
    - [RUNNING] Planificado
    - Pendiente
 
-----
+
+
 
 Relación con Otras Secciones
-=============================
+============================
 
 * **01_fundamentos** - Base teórica de las reglas
 * **02_procedimientos** - Workflow que aplica estas reglas
 * **03_estandares** - Estándares que justifican decisiones
 * **06_casos_practicos** - Ejemplos de aplicación
 
-----
+
+
 
 Próximas Reglas Planeadas
-==========================
+=========================
 
 **Matrices de Decisión:**
 
@@ -142,7 +150,8 @@ Próximas Reglas Planeadas
 - [RUNNING] ET-003: Múltiples archivos
 - [RUNNING] ET-004: Con diagramas
 
-----
+
+
 
 .. note::
  Esta sección está en desarrollo activo. Prioridad actual: Matrices de Decisión críticas (MD-002 [OK], MD-004 [OK]).

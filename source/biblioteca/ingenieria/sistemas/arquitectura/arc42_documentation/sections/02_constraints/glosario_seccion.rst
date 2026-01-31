@@ -1,6 +1,8 @@
 .. _glosario-02-restricciones:
 
-====================================
+
+
+
 Glosario: Sección 02 - Restricciones
 ====================================
 
@@ -10,7 +12,8 @@ Glosario: Sección 02 - Restricciones
 
 Este glosario contiene los términos técnicos clave de la sección de restricciones.
 
-----
+
+
 
 Términos Principales
 ====================
@@ -64,7 +67,8 @@ Términos Principales
       
       **Ejemplos:** MIT, Apache 2.0, GPL, BSD.
 
-----
+
+
 
 Referencias
 ===========

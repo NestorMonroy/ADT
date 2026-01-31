@@ -1,15 +1,18 @@
 .. _estrategia_tip_4:
 
-===============================================================
+
+
+
 Tip 4-4: ¡En la estrategia de solución, refiere a conceptos, vistas o código!
-===============================================================
+=============================================================================
 
 .. tip::
    **Consejo de Estrategia de Solución arc42**
    
    Evita redundancia, no repitas información de vistas o conceptos.
 
-----
+
+
 
 Evita redundancia, no repitas información de vistas o conceptos.
 
@@ -17,7 +20,8 @@ En la versión tabular de la **estrategia de solución** (mostrada en tip 4-2 y 
 
 Los enlaces a documentos externos o referencias están bien, siempre que tus stakeholders puedan encontrar y acceder fácilmente a tales documentos referidos.
 
-----
+
+
 
 Principio de Referencia
 =======================
@@ -28,13 +32,15 @@ Principio de Referencia
 
 Este enfoque evita duplicación y mantiene la **estrategia de solución** concisa.
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_04` - Estrategia de Solución
    * :ref:`estrategia_tip_1` - Compacidad
 
-----
+
+
 
 :Tip: 4-4
 :Tema: Referencias a detalles

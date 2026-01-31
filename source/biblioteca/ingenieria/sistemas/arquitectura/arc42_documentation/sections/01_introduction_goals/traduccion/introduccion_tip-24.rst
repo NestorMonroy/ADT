@@ -7,15 +7,18 @@
 
 .. _introduccion-tip-24:
 
-===================================================================
+
+
+
 Consejo 1-24: ¡Usa el modelo de calidad arc42!
-===================================================================
+==============================================
 
 :Tema: Recursos para requisitos de calidad
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Analistas de calidad
 
-----
+
+
 
 Recomendación
 =============
@@ -29,7 +32,8 @@ Por eso comenzamos a recopilar ejemplos - disponibles libremente como
 .. note::
  Esa colección no es completa ni perfecta - ¡úsala como punto de partida!
 
-----
+
+
 
 .. note::
  **Información de traducción:**

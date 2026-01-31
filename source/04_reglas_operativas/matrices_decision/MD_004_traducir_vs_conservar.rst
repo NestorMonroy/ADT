@@ -1,8 +1,10 @@
 .. _md_traducir_vs_conservar:
 
-===============================================
+
+
+
 MD-004: Traducir vs Conservar Término
-===============================================
+=====================================
 
 :Tipo: Matriz de Decisión
 :Código: MD-004
@@ -14,7 +16,8 @@ MD-004: Traducir vs Conservar Término
  :depth: 3
  :local:
 
-----
+
+
 
 Pregunta de Decisión
 ====================
@@ -31,7 +34,8 @@ Pregunta de Decisión
 **Objetivo:**
  Proveer criterios objetivos basados en 196 archivos de arc42 donde se mantuvo 100% consistencia terminológica.
 
-----
+
+
 
 Árbol de Decisión
 =================
@@ -58,13 +62,14 @@ Pregunta de Decisión
  +- NO -> TRADUCIR
  Ejemplo: "Quality" -> "Calidad"
 
-----
+
+
 
 Categorías de Términos
 ======================
 
 Categoría 1: SIEMPRE CONSERVAR
--------------------------------
+==============================
 
 **1.1 Acrónimos Técnicos**
 
@@ -293,10 +298,11 @@ Categoría 1: SIEMPRE CONSERVAR
 
  Regla: Traducir en títulos formales, conservar en términos técnicos compuestos
 
-----
+
+
 
 Categoría 2: SIEMPRE TRADUCIR
-------------------------------
+=============================
 
 **2.1 Conceptos Generales**
 
@@ -425,10 +431,11 @@ Categoría 2: SIEMPRE TRADUCIR
 
 **Uso en arc42:** 100% traducidos consistentemente
 
-----
+
+
 
 Categoría 3: CASO POR CASO
----------------------------
+==========================
 
 **3.1 Términos Compuestos**
 
@@ -532,10 +539,11 @@ Categoría 3: CASO POR CASO
 
  Decisión: DEPENDE del contexto
 
-----
+
+
 
 Verificación de Decisión
-=========================
+========================
 
 **Checklist antes de decidir:**
 
@@ -581,10 +589,11 @@ Verificación de Decisión
  "Interesado" (contexto PM): 45,000,000 resultados
  Ratio: 54x -> CONSERVAR "Stakeholder" [OK]
 
-----
+
+
 
 Tabla de Referencia Rápida
-===========================
+==========================
 
 **Términos Comunes en Documentación Técnica:**
 
@@ -649,13 +658,14 @@ Tabla de Referencia Rápida
    - Glosario
    - [OK]
 
-----
+
+
 
 Casos de Uso de la Matriz
-==========================
+=========================
 
 Caso 1: Traduciendo Título de Sección
---------------------------------------
+=====================================
 
 **Escenario:**
  Estás traduciendo "5. Building Block View"
@@ -683,7 +693,7 @@ Caso 1: Traduciendo Título de Sección
  RESULTADO: "5. Vista de Bloques de Construcción" [OK]
 
 Caso 2: Párrafo con Términos Mixtos
-------------------------------------
+===================================
 
 **Original:**
 
@@ -711,7 +721,7 @@ Caso 2: Párrafo con Términos Mixtos
  bloques de construcción usando la metodología ATAM." [OK]
 
 Caso 3: Código con Comentarios
--------------------------------
+==============================
 
 **Original:**
 
@@ -738,13 +748,14 @@ Caso 3: Código con Comentarios
 
  Nota: "Singleton" conservado porque es nombre de patrón
 
-----
+
+
 
 Errores Comunes
 ===============
 
 Error 1: Traducir Todo Literalmente
-------------------------------------
+===================================
 
 **Incorrecto:**
 
@@ -768,7 +779,7 @@ Error 1: Traducir Todo Literalmente
  - Alineado con industria
 
 Error 2: Conservar Todo en Inglés
-----------------------------------
+=================================
 
 **Incorrecto:**
 
@@ -791,7 +802,7 @@ Error 2: Conservar Todo en Inglés
  - Español natural
 
 Error 3: Inconsistencia
------------------------
+=======================
 
 **Incorrecto:**
 
@@ -811,10 +822,11 @@ Error 3: Inconsistencia
 
  [OK] Consistencia 100%
 
-----
+
+
 
 Mantenimiento del Glosario
-===========================
+==========================
 
 **Crear Glosario de Decisiones:**
 
@@ -827,8 +839,9 @@ Mantenimiento del Glosario
  | Stakeholder | Conservar | Rol establecido | Todas |
  | Quality | Traducir -> Calidad | Concepto general | Todas |
  | Building Block | Traducir -> Bloque | Término arc42 | 5 |
+
  | ATAM | Conservar | Metodología | 10 |
- ...
+========================================
 
 **Actualizar con Cada Decisión:**
 
@@ -839,7 +852,8 @@ Mantenimiento del Glosario
  3. Verificar consistencia con decisiones previas
  4. Buscar y reemplazar si hay inconsistencia
 
-----
+
+
 
 Resumen Ejecutivo
 =================
@@ -868,7 +882,8 @@ Resumen Ejecutivo
  [OK] 0 variaciones en términos clave
  [OK] Comunicación clara y profesional
 
-----
+
+
 
 .. seealso::
  * :doc:`MD_002_cuando_enriquecer` - Cuánto enriquecer

@@ -1,8 +1,10 @@
 .. _introduccion-tip-5:
 
-===================================================================
+
+
+
 Consejo 1-5: ¡Asegúrate de poder referenciar requisitos!
-===================================================================
+========================================================
 
 .. meta::
    :layout: post
@@ -15,7 +17,8 @@ Consejo 1-5: ¡Asegúrate de poder referenciar requisitos!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Desarrolladores
 
-----
+
+
 
 Recomendación
 =============
@@ -26,14 +29,15 @@ asegurar que estos requisitos puedan ser identificados de manera única, mediant
 una clave corta o algo similar.
 
 Opciones
---------
+========
 
 - A veces puedes tomar esos IDs de la documentación de requisitos.
 - Si tus requisitos están gestionados por una herramienta (por ejemplo, un issue 
   tracker), puedes usar esos IDs - con algunas herramientas incluso tienes URLs 
   estables.
 
-----
+
+
 
 .. note::
    **Información de traducción:**

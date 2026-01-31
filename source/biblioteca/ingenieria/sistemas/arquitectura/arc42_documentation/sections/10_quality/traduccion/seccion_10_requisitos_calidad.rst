@@ -1,20 +1,25 @@
 .. _seccion_10:
 
-===============================================================
+
+
+
 Sección 10: Requisitos de Calidad (Quality Requirements)
-===============================================================
+========================================================
 
 .. tip::
    **Requisitos de Calidad arc42**
    
    Los **requisitos de calidad** son fundamentales para las **decisiones arquitectónicas**. Esta sección captura todos los **requisitos de calidad** relevantes, desde los críticos (ya descritos en objetivos de calidad) hasta los deseables.
 
-----
+
+
 
 Introducción
 ============
 
 Esta sección contiene todos los **requisitos de calidad** relevantes para el sistema.
+
+.. _seccion10-contenido:
 
 Contenido
 =========
@@ -25,28 +30,37 @@ Los más importantes de estos requisitos ya han sido descritos en la sección 1.
 
 En esta sección 10 también deberías capturar **requisitos de calidad** de menor importancia, que no crearán riesgos altos cuando no se logren completamente (pero podrían ser *nice-to-have*).
 
+.. _seccion10-motivacion:
+
 Motivación
 ==========
 
 Dado que los **requisitos de calidad** tendrán mucha influencia en las **decisiones arquitectónicas**, debes saber qué cualidades son realmente importantes para tus **stakeholders**, de una manera específica y medible.
+
+.. _seccion10-info-adicional:
 
 Información Adicional
 =====================
 
 Ver el extenso `modelo de calidad Q42 en https://quality.arc42.org <https://quality.arc42.org>`_.
 
-----
+
+
 
 10.1 Resumen de Requisitos de Calidad
-======================================
+=====================================
+
+.. _seccion10-1-contenido:
 
 Contenido
----------
+=========
 
 Un resumen u overview de los **requisitos de calidad**.
 
+.. _seccion10-1-motivacion:
+
 Motivación
-----------
+==========
 
 A menudo encontramos docenas (o incluso cientos) de **requisitos de calidad** detallados.
 
@@ -54,8 +68,10 @@ En esta sección de resumen deberías intentar resumir, por ejemplo describiendo
 
 Si estas descripciones resumidas ya son suficientemente precisas, específicas y medibles, puedes omitir la sección 10.2.
 
+.. _seccion10-1-forma:
+
 Forma
------
+=====
 
 Usa una tabla simple en la cual cada línea contiene una categoría o tema y una breve descripción del **requisito de calidad**.
 
@@ -69,13 +85,16 @@ En la literatura, también se ha descrito la idea de un *quality attribute tree*
 
 *< Proporciona aquí un resumen de requisitos de calidad >*
 
-----
+
+
 
 10.2 Escenarios de Calidad
-===========================
+==========================
+
+.. _seccion10-2-contenido:
 
 Contenido
----------
+=========
 
 Los **escenarios de calidad** hacen concretos los **requisitos de calidad** y permiten decidir si se cumplen (en el sentido de criterios de aceptación).
 
@@ -87,8 +106,10 @@ Dos tipos de escenarios son especialmente útiles:
 
 * **Escenarios de cambio** describen el efecto deseado de una modificación o extensión del sistema o de su entorno inmediato. **Ejemplo:** Se implementa funcionalidad adicional o cambian los requisitos para un atributo de calidad, y se mide el esfuerzo o duración del cambio.
 
+.. _seccion10-2-forma:
+
 Forma
------
+=====
 
 La información típica para escenarios detallados incluye lo siguiente:
 
@@ -110,12 +131,14 @@ La información típica para escenarios detallados incluye lo siguiente:
 * **Medida de Respuesta**: Los criterios o métrica por los cuales se evalúa la respuesta del sistema.
 
 Ejemplos
---------
+========
 
 Ver `el sitio web del modelo de calidad Q42 <https://quality.arc42.org>`_ para ejemplos detallados de **requisitos de calidad**.
 
+.. _seccion10-2-info-adicional:
+
 Información Adicional
----------------------
+=====================
 
 * Len Bass, Paul Clements, Rick Kazman: "Software Architecture in Practice", 4th Edition, Addison-Wesley, 2021.
 
@@ -123,30 +146,33 @@ Información Adicional
 
 *< Describe aquí los escenarios de calidad >*
 
-----
+
+
 
 Ver También
 ===========
 
 Desde enero de 2023, arc42 proporciona un `modelo de calidad pragmático <https://quality.arc42.org>`_ que propone *etiquetar* **requisitos de calidad** con *hashtags* o *etiquetas* como #flexible, #efficient, #usable, #operable, #testable, #secure, #safe y #reliable.
 
-.. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/figuras/arc42-system-qualities-overview.svg
-   :alt: Q42, el modelo de calidad arc42, con ocho etiquetas para cualidades del sistema
-   :align: center
-   :width: 80%
+.. .. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/figuras/arc42-system-qualities-overview.svg
+..       :alt: Q42, el modelo de calidad arc42, con ocho etiquetas para cualidades del sistema
+..       :align: center
+..       :width: 80%
    
-   Q42, el modelo de calidad arc42, con ocho etiquetas para cualidades del sistema
+..       Q42, el modelo de calidad arc42, con ocho etiquetas para cualidades del sistema
 
-----
+
+
 
 Relación con Otras Secciones
-=============================
+============================
 
 * **Sección 1.2 (Objetivos de Calidad):** Los **requisitos de calidad** más importantes ya están descritos allí
 * **Sección 3 (Alcance del Sistema y Contexto):** El contexto influye en los **requisitos de calidad**
 * **Sección 11 (Riesgos y Deuda Técnica):** Los **requisitos de calidad** no cumplidos pueden convertirse en riesgos
 
-----
+
+
 
 Tips y Consejos
 ===============
@@ -164,7 +190,8 @@ Tips y Consejos
    quality_tip_7
    quality_tip_8
 
-----
+
+
 
 Ejemplos de Aplicación
 ======================
@@ -176,7 +203,8 @@ Ejemplos de Aplicación
    quality_ejemplo_htmlsc_2
    quality_ejemplo_tpu_1
 
-----
+
+
 
 Referencias
 ===========

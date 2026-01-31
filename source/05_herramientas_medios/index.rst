@@ -1,15 +1,18 @@
 .. _herramientas_medios:
 
-===============================================
+
+
+
 Herramientas y Medios de Salida
-===============================================
+===============================
 
 Esta sección contiene **herramientas y tablas de referencia** para trabajar con diferentes formatos y medios.
 
 **Propósito:**
  Facilitar la conversión entre formatos y el trabajo con herramientas específicas.
 
-----
+
+
 
 Subsecciones
 ============
@@ -23,13 +26,14 @@ Subsecciones
  latex/index
  markdown/index
 
-----
+
+
 
 Contenido Disponible
-=====================
+====================
 
 Tablas de Equivalencias
-------------------------
+=======================
 
 **[OK] LaTeX -> RST**
 
@@ -48,7 +52,8 @@ Ver: :doc:`equivalencias/latex_rst_equivalencias`
 - Herramientas de conversión
 - Errores comunes
 
-----
+
+
 
 Uso de esta Sección
 ===================
@@ -63,7 +68,8 @@ Uso de esta Sección
  4. Aplica equivalente RST
  5. Compila para verificar
 
-----
+
+
 
 Estado de Desarrollo
 ====================
@@ -88,8 +94,10 @@ Estado de Desarrollo
    - [RUNNING] Planificado
    - Pendiente
 
-----
+
+
 
 .. seealso::
+ 
  * :doc:`equivalencias/latex_rst_equivalencias` - Tabla LaTeX->RST completa
  * :doc:`../07_guias_uso/guia_rapida` - Guía rápida de ADT

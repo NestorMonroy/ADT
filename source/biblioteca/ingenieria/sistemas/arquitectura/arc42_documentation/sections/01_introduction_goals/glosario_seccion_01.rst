@@ -1,15 +1,18 @@
 .. _glosario-seccion-01:
 
-============================================
+
+
+
 Glosario - Sección 01: Introducción y Objetivos
-============================================
+===============================================
 
 :Sección: 01 - Introducción y Objetivos
 :Estado: En progreso - Lote 1 completado
 :Términos: 18
 :Última actualización: 2026-01-27
 
-----
+
+
 
 Términos Técnicos
 =================
@@ -83,9 +86,9 @@ Términos Técnicos
       - Availability: 99.9% uptime
       - Maintainability: < 4 horas para hotfix
       
-      **Nota de traducción:** NO traducir simplemente como "objetivos de calidad" 
-      (demasiado literal). Usar "atributos de calidad objetivo" o preservar el 
-      término técnico "quality goals".
+        **Nota de traducción:** NO traducir simplemente como "objetivos de calidad" 
+        (demasiado literal). Usar "atributos de calidad objetivo" o preservar el 
+        término técnico "quality goals".
 
    Robustness (Robustez)
       Capacidad del sistema para funcionar correctamente bajo condiciones 
@@ -110,7 +113,8 @@ Términos Técnicos
       Diagrama UML que muestra las interacciones entre actores (usuarios) y 
       el sistema para lograr objetivos específicos.
 
-----
+
+
 
 Siglas y Acrónimos
 ==================
@@ -135,10 +139,11 @@ Siglas y Acrónimos
    UML
       Unified Modeling Language - Lenguaje de Modelado Unificado
 
-----
+
+
 
 Términos Específicos del Dominio
-=================================
+================================
 
 .. glossary::
 
@@ -150,13 +155,14 @@ Términos Específicos del Dominio
       Error en HTML que no impide el renderizado pero afecta la corrección o 
       funcionalidad (ej: enlace roto).
 
-----
+
+
 
 Notas de Traducción
 ===================
 
 Decisiones de Traducción
--------------------------
+========================
 
 1. **"Driving forces"**: Traducido como "fuerzas impulsoras" en lugar de 
    "fuerzas conductoras" para mantener el sentido de motivación/impulso.
@@ -174,7 +180,8 @@ Decisiones de Traducción
 5. **"MeasuringUnit"**: Mantenido en inglés al ser un nombre específico de 
    componente del sistema TPU.
 
-----
+
+
 
 Referencias
 ===========
@@ -183,7 +190,8 @@ Referencias
 - ISO/IEC 25010 (Modelo de Calidad de Software)
 - IEEE 1471 (Descripción de Arquitectura)
 
-----
+
+
 
 .. note::
    **Estado del glosario:**

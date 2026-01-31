@@ -1,9 +1,11 @@
 .. _seccion-8:
 
-================================
+
+
 8. Conceptos Transversales
 
-================================
+
+
 
 .. meta::
    :category: arc42-doc-section
@@ -21,10 +23,10 @@ Esta sección describe conceptos transversales (prácticas, patrones, regulacion
 Tales conceptos están frecuentemente relacionados con múltiples bloques de construcción.
 Pueden incluir muchos temas diferentes, como los temas mostrados en el siguiente diagrama:
 
-.. figure:: {{ site.imageurl }}/8-concepts/08-concepts-EN.drawio.png
-   :alt: Diagrama de conceptos transversales
+.. .. figure:: {{ site.imageurl }}/8-concepts/08-concepts-EN.drawio.png
+..       :alt: Diagrama de conceptos transversales
 
-   Diagrama de conceptos transversales
+..       Diagrama de conceptos transversales
 
 Motivación
 ==========
@@ -46,7 +48,7 @@ La forma puede ser variada:
 * extractos de modelos transversales o escenarios usando notaciones de las vistas de arquitectura
 
 Estructura de esta Sección
-===========================
+==========================
 
 Elija **solo** los temas más necesarios para su sistema y asigne a cada uno un encabezado de nivel 2 en esta sección (por ejemplo, 8.1, 8.2, etc.).
 
@@ -76,12 +78,16 @@ Algunos ejemplos de la vida real:
 * (tomado del HTML Sanity Checker, ver abajo):
   Todos los (7+) componentes checker dentro del sistema están estructurados según el patrón estrategia.
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Ejemplos
-   :glob:
+.. .. toctree::
+..    :maxdepth: 1
+..    :caption: Ejemplos
+..    :glob:
+..
+..    traduccion/crosscutting_*ejemplo*
 
-   traduccion/crosscutting_*ejemplo*
+.. note::
+   Los archivos de ejemplo para conceptos transversales están pendientes de traducción.
+   Actualmente no hay archivos que coincidan con el patrón ``crosscutting_*ejemplo*``.
 
 .. note::
    **Información adicional**

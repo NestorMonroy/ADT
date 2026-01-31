@@ -1,8 +1,10 @@
 .. _faq:
 
-===============================================
+
+
+
 Preguntas Frecuentes (FAQ)
-===============================================
+==========================
 
 Respuestas a las preguntas más comunes sobre el sistema ADT.
 
@@ -10,13 +12,14 @@ Respuestas a las preguntas más comunes sobre el sistema ADT.
  :depth: 2
  :local:
 
-----
+
+
 
 Preguntas Generales
 ===================
 
 ¿Qué es ADT?
-------------
+============
 
 **Respuesta:**
 
@@ -32,7 +35,7 @@ ADT (Arquitectura de Documentación Técnica) es un **sistema completo** para tr
 **Basado en:** 196 archivos reales traducidos (arc42)
 
 ¿Para quién es ADT?
--------------------
+===================
 
 **Respuesta:**
 
@@ -45,7 +48,7 @@ ADT es para:
 [OK] **Estudiantes** aprendiendo traducción técnica
 
 ¿Cuánto tiempo toma aprender ADT?
-----------------------------------
+=================================
 
 **Respuesta:**
 
@@ -71,7 +74,7 @@ Depende del nivel que busques:
 **Recomendado:** Invertir 3 horas (guía + tutorial)
 
 ¿ADT funciona para cualquier idioma?
--------------------------------------
+====================================
 
 **Respuesta:**
 
@@ -83,13 +86,14 @@ Depende del nivel que busques:
 
 **Nota:** Los ejemplos actuales son Inglés->Español, pero la metodología es aplicable a cualquier dirección.
 
-----
+
+
 
 Preguntas sobre Inicio
 ======================
 
 ¿Por dónde empiezo?
--------------------
+===================
 
 **Respuesta:**
 
@@ -98,24 +102,24 @@ Preguntas sobre Inicio
 .. code-block:: text
 
  1. Lee guia_rapida.rst (15 min)
- -> Entiendes el sistema básico
+   -> Entiendes el sistema básico
 
  2. Haz el ejercicio práctico incluido
- -> Primera traducción
+   -> Primera traducción
 
  3. Lee tutorial_completo.rst (2-3h)
- -> Dominas fundamentos
+   -> Dominas fundamentos
 
  4. Estudia un caso práctico (1h)
- -> Ves aplicación real
+   -> Ves aplicación real
 
  5. Aplica a documento real
- -> ¡Listo para producción!
+   -> ¡Listo para producción!
 
 **Total:** 4-5 horas hasta estar productivo
 
 ¿Necesito experiencia previa?
-------------------------------
+=============================
 
 **Respuesta:**
 
@@ -132,7 +136,7 @@ Preguntas sobre Inicio
 **El sistema te enseña todo lo demás.**
 
 ¿Qué herramientas necesito?
-----------------------------
+===========================
 
 **Respuesta:**
 
@@ -153,13 +157,14 @@ Preguntas sobre Inicio
  pip install sphinx
  # Ya estás listo
 
-----
+
+
 
 Preguntas sobre Workflow
-=========================
+========================
 
 ¿Cuánto tiempo toma traducir un documento?
--------------------------------------------
+==========================================
 
 **Respuesta:**
 
@@ -194,7 +199,7 @@ Preguntas sobre Workflow
 **Tu velocidad mejorará con práctica:** 2x-3x después de 10-20 archivos
 
 ¿Qué es PASO 0 y por qué es tan importante?
---------------------------------------------
+===========================================
 
 **Respuesta:**
 
@@ -221,7 +226,7 @@ Preguntas sobre Workflow
 **Conclusión:** PASO 0 no es opcional, es **crítico**.
 
 ¿Cuánto debo enriquecer el contenido?
---------------------------------------
+=====================================
 
 **Respuesta:**
 
@@ -251,7 +256,7 @@ Preguntas sobre Workflow
 **Ver completo:** :doc:`../04_reglas_operativas/matrices_decision/MD_002_cuando_enriquecer`
 
 ¿Qué términos debo traducir y cuáles conservar?
-------------------------------------------------
+===============================================
 
 **Respuesta:**
 
@@ -270,13 +275,14 @@ Preguntas sobre Workflow
 
 **Ver completo:** :doc:`../04_reglas_operativas/matrices_decision/MD_004_traducir_vs_conservar`
 
-----
+
+
 
 Preguntas sobre Calidad
-========================
+=======================
 
 ¿Cómo sé si mi traducción es de calidad?
------------------------------------------
+========================================
 
 **Respuesta:**
 
@@ -285,30 +291,30 @@ Preguntas sobre Calidad
 .. code-block:: text
 
  1. Completitud: 100% contenido presente
- [ ] Todos los párrafos
- [ ] Todas las listas
- [ ] Todas las tablas
- [ ] Todas las referencias
+   [ ] Todos los párrafos
+   [ ] Todas las listas
+   [ ] Todas las tablas
+   [ ] Todas las referencias
 
  2. Precisión: Terminología correcta
- [ ] Términos técnicos precisos
- [ ] Consistencia 100%
+   [ ] Términos técnicos precisos
+   [ ] Consistencia 100%
 
  3. Enriquecimiento: Apropiado según tamaño
- [ ] En rango MD-002
+   [ ] En rango MD-002
 
  4. Compilación: Exitosa
- [ ] make html sin errores
+   [ ] make html sin errores
 
  5. Verificación: Sistemática
- [ ] Checklist completo
+   [ ] Checklist completo
 
 **Umbral de aprobación:** ≥95%
 
 **Ver completo:** :doc:`../03_estandares/calidad/criterios_calidad`
 
 ¿Qué hago si omití contenido?
-------------------------------
+=============================
 
 **Respuesta:**
 
@@ -317,28 +323,28 @@ Preguntas sobre Calidad
 .. code-block:: text
 
  1. PASO 0 retrospectivo:
- [ ] Leer archivo completo ahora
- [ ] Identificar TODO el contenido
- [ ] Crear checklist exhaustivo
+   [ ] Leer archivo completo ahora
+   [ ] Identificar TODO el contenido
+   [ ] Crear checklist exhaustivo
 
  2. Comparar con traducción actual:
- [ ] Marcar qué falta
- [ ] Priorizar omisiones
+   [ ] Marcar qué falta
+   [ ] Priorizar omisiones
 
  3. Agregar contenido faltante:
- [ ] Insertar en posición correcta
- [ ] Mantener coherencia
+   [ ] Insertar en posición correcta
+   [ ] Mantener coherencia
 
  4. Verificar completitud:
- [ ] Checklist 100%
- [ ] Compilar y verificar
+   [ ] Checklist 100%
+   [ ] Compilar y verificar
 
 **Prevención futura:** NUNCA saltarse PASO 0
 
 **Ver caso real:** :doc:`../06_casos_practicos/errores_comunes/error_01_omisiones`
 
 ¿Puedo usar traductores automáticos?
--------------------------------------
+====================================
 
 **Respuesta:**
 
@@ -363,13 +369,14 @@ Preguntas sobre Calidad
 
 **Regla de oro:** Traductor automático = Asistente, NO reemplazo
 
-----
+
+
 
 Preguntas sobre Herramientas
-=============================
+============================
 
 ¿Cómo convierto LaTeX a RST?
------------------------------
+============================
 
 **Respuesta:**
 
@@ -394,7 +401,7 @@ Usa la tabla de equivalencias:
 **[WARNING] Requiere revisión manual completa**
 
 ¿Qué editor recomiendas para RST?
-----------------------------------
+=================================
 
 **Respuesta:**
 
@@ -416,7 +423,7 @@ Usa la tabla de equivalencias:
 **Mínimo:** Cualquier editor de texto plano
 
 ¿Cómo compilo la documentación?
---------------------------------
+===============================
 
 **Respuesta:**
 
@@ -444,13 +451,14 @@ Usa la tabla de equivalencias:
  # Limpiar y recompilar
  make clean && make html
 
-----
+
+
 
 Preguntas sobre Casos Específicos
-==================================
+=================================
 
 ¿Cómo traduzco código fuente?
-------------------------------
+=============================
 
 **Respuesta:**
 
@@ -483,7 +491,7 @@ Preguntas sobre Casos Específicos
 - [ERROR] Imports
 
 ¿Cómo manejo las imágenes?
----------------------------
+==========================
 
 **Respuesta:**
 
@@ -508,7 +516,7 @@ Preguntas sobre Casos Específicos
 **Recomendación:** Conservar originales si el texto no es crítico
 
 ¿Cómo traduzco diagramas?
---------------------------
+=========================
 
 **Respuesta:**
 
@@ -531,13 +539,14 @@ Preguntas sobre Casos Específicos
 
 **Nota:** Diagramas claros trascienden idiomas
 
-----
+
+
 
 Preguntas sobre Proyectos Reales
-=================================
+================================
 
 ¿Puedo usar ADT en proyectos comerciales?
-------------------------------------------
+=========================================
 
 **Respuesta:**
 
@@ -552,7 +561,7 @@ Preguntas sobre Proyectos Reales
 **No hay restricciones de licencia para el uso del método.**
 
 ¿Cómo empiezo un proyecto grande?
-----------------------------------
+=================================
 
 **Respuesta:**
 
@@ -584,7 +593,7 @@ Preguntas sobre Proyectos Reales
 **Ver ejemplo:** :doc:`../06_casos_practicos/antes_despues/caso_01_seccion_breve`
 
 ¿Puedo trabajar en equipo?
----------------------------
+==========================
 
 **Respuesta:**
 
@@ -611,13 +620,14 @@ Preguntas sobre Proyectos Reales
 
 **Resultado:** Calidad consistente entre traductores
 
-----
+
+
 
 Preguntas sobre Problemas Comunes
-==================================
+=================================
 
 Mi traducción es muy larga, ¿está bien?
-----------------------------------------
+=======================================
 
 **Respuesta:**
 
@@ -642,7 +652,7 @@ Mi traducción es muy larga, ¿está bien?
 **Si estás fuera de rango:** Revisa qué agregaste y ajusta
 
 La compilación da muchos warnings, ¿es grave?
-----------------------------------------------
+=============================================
 
 **Respuesta:**
 
@@ -665,7 +675,7 @@ La compilación da muchos warnings, ¿es grave?
 **Ver:** :doc:`troubleshooting` para soluciones
 
 ¿Cómo manejo referencias rotas?
---------------------------------
+===============================
 
 **Respuesta:**
 
@@ -683,23 +693,24 @@ La compilación da muchos warnings, ¿es grave?
 .. code-block:: text
 
  1. Buscar label en archivo destino:
- grep "_seccion" archivo.rst
+   grep "_seccion" archivo.rst
 
  2. Usar nombre exacto:
- :ref:`seccion_5` (con underscore)
+   :ref:`seccion_5` (con underscore)
 
  3. Crear label si falta:
- .. _seccion_5:
+   .. _seccion_5:
 
 **Prevención:** Mantener lista de labels durante traducción
 
-----
+
+
 
 Preguntas sobre Mejora Continua
-================================
+===============================
 
 ¿Cómo mejoro mi velocidad?
----------------------------
+==========================
 
 **Respuesta:**
 
@@ -724,7 +735,7 @@ Preguntas sobre Mejora Continua
 **[WARNING] NO sacrifiques calidad por velocidad**
 
 ¿Cómo contribuyo al proyecto ADT?
-----------------------------------
+=================================
 
 **Respuesta:**
 
@@ -741,10 +752,11 @@ Preguntas sobre Mejora Continua
 
 **El proyecto ADT crece con la comunidad.**
 
-----
+
+
 
 ¿No encuentras tu pregunta?
-============================
+===========================
 
 **Recursos adicionales:**
 
@@ -756,9 +768,11 @@ Preguntas sobre Mejora Continua
 
 Consulta la documentación completa en :doc:`../index`
 
-----
+
+
 
 .. seealso::
+ 
  * :doc:`troubleshooting` - Solución de problemas
  * :doc:`guia_rapida` - Inicio rápido
  * :doc:`tutorial_completo` - Tutorial completo

@@ -1,15 +1,18 @@
 .. _bloques_tip_27:
 
-===============================================================
+
+
+
 Tip 5-27: ¡Refina solo unos pocos bloques de construcción!
-===============================================================
+==========================================================
 
 .. tip::
    **Consejo de Vista de Bloques arc42**
    
    Los diagramas de **caja blanca** dentro de la **vista de bloques de construcción** forman una estructura de árbol con el diagrama de **contexto** como raíz de esta **jerarquía**.
 
-----
+
+
 
 Los diagramas de **caja blanca** dentro de la **vista de bloques de construcción** forman una estructura de árbol con el diagrama de **contexto** como raíz de esta **jerarquía**.
 
@@ -19,15 +22,15 @@ El siguiente diagrama muestra tal árbol parcial: El sistema general se refina e
 
 Solo ``A`` es luego refinado y detallado en el nivel 2.
 
-.. figure:: ../figuras/05-refine-only-few-blocks.webp
-   :alt: Refinamiento de solo unos pocos bloques de construcción
-   :align: center
-   :width: 85%
+.. .. figure:: ../figuras/05-refine-only-few-blocks.webp
+..       :alt: Refinamiento de solo unos pocos bloques de construcción
+..       :align: center
+..       :width: 85%
    
-   Árbol parcial: Solo algunos bloques se refinan a niveles más profundos
+..       Árbol parcial: Solo algunos bloques se refinan a niveles más profundos
 
 Principio de Relevancia Sobre Completitud
-==========================================
+=========================================
 
 No necesitas refinar todos los **bloques de construcción**:
 
@@ -37,7 +40,7 @@ No necesitas refinar todos los **bloques de construcción**:
 * **Evita redundancia:** No documentes lo obvio o auto-explicativo
 
 Criterios para Decidir Qué Refinar
-===================================
+==================================
 
 **Sí refinar cuando:**
 
@@ -54,14 +57,16 @@ Criterios para Decidir Qué Refinar
 * No agrega valor arquitectónico
 * Cambiaría frecuentemente (alto mantenimiento)
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_05` - Vista de Bloques de Construcción
    * :ref:`bloques_tip_2` - Jerarquía de bloques
    * :ref:`bloques_tip_3` - Nivel 1 es obligatorio
 
-----
+
+
 
 :Tip: 5-27
 :Tema: Refinamiento selectivo

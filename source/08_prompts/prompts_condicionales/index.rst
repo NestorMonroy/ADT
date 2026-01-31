@@ -1,8 +1,10 @@
 .. _prompts_condicionales:
 
-===============================================
+
+
+
 Prompts Condicionales
-===============================================
+=====================
 
 Prompts específicos que se aplican según condiciones del contenido a traducir.
 
@@ -22,7 +24,7 @@ Prompts por Tamaño
  - Tips contextuales
 
 Prompts por Tipo
-=================
+================
 
 [RUNNING] **prompt_codigo_fuente.rst**
  - Traducir comentarios, NO código
@@ -36,7 +38,8 @@ Prompts por Tipo
  - Traducir labels
  - Preservar estructura
 
-----
+
+
 
 .. note::
  Prompts condicionales en desarrollo. Contribuciones bienvenidas.

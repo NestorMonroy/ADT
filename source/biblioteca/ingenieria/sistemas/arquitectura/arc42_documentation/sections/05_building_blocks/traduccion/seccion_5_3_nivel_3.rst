@@ -1,8 +1,10 @@
 .. _seccion_5_3:
 
-=====================================
+
+
+
 5.3 Nivel 3
-=====================================
+===========
 
 .. note::
  **Plantilla arc42 - Traducción Arquitectónica (Paso 3.4)**
@@ -13,13 +15,15 @@
  * Building block -> Bloque de construcción
  * Additional levels -> Niveles adicionales
 
-----
+
+
 
 Aquí puedes especificar la **estructura interna** de (algunos) **bloques de construcción** del nivel 2 como **cajas blancas**.
 
 Cuando necesites niveles más detallados de tu arquitectura, por favor copia esta parte de arc42 para niveles adicionales.
 
-----
+
+
 
 Plantilla Nivel 3
 =================
@@ -27,28 +31,29 @@ Plantilla Nivel 3
 .. code-block:: text
 
  5.3 Nivel 3
- ===========
+============
 
  5.3.1 Caja Blanca <bloque de construcción x.1>
- -----------------------------------------------
+===============================================
 
- Especifica la estructura interna de _bloque de construcción x.1_.
+ Especifica la estructura interna de *bloque de construcción x.1*.
 
- _<inserta plantilla de caja blanca del bloque de construcción x.1>_
+ *<inserta plantilla de caja blanca del bloque de construcción x.1>*
 
 
  5.3.2 Caja Blanca <bloque de construcción x.2>
- -----------------------------------------------
+===============================================
 
  _<inserta plantilla de caja blanca del bloque de construcción x.2>_
 
 
  5.3.3 Caja Blanca <bloque de construcción y.1>
- -----------------------------------------------
+===============================================
 
  _<inserta plantilla de caja blanca del bloque de construcción y.1>_
 
-----
+
+
 
 Subsecciones
 ============
@@ -56,23 +61,24 @@ Subsecciones
 Para cada **bloque de construcción** del nivel 2 que se descompone en nivel 3, crea una subsección 5.3.x como:
 
 5.3.1 Caja Blanca _<bloque de construcción x.1>_
--------------------------------------------------
+================================================
 
 Especifica la **estructura interna** de *bloque de construcción x.1*.
 
 **<inserta plantilla de caja blanca del bloque de construcción x.1>**
 
 5.3.2 Caja Blanca _<bloque de construcción x.2>_
--------------------------------------------------
+================================================
 
 **<inserta plantilla de caja blanca del bloque de construcción x.2>**
 
 5.3.3 Caja Blanca _<bloque de construcción y.1>_
--------------------------------------------------
+================================================
 
 **<inserta plantilla de caja blanca del bloque de construcción y.1>**
 
-----
+
+
 
 Niveles Adicionales
 ===================
@@ -102,7 +108,8 @@ Ten cuidado de no crear demasiados niveles de **descomposición**. Usualmente, 2
 * Mezclar arquitectura con detalles de implementación
 * Volverse obsoletos rápidamente
 
-----
+
+
 
 Guía de Profundidad
 ===================
@@ -119,7 +126,8 @@ Guía de Profundidad
 **Nivel 4+:** Casos especiales (raro)
  Solo cuando sea absolutamente necesario para sistemas muy complejos.
 
-----
+
+
 
 Referencias
 ===========

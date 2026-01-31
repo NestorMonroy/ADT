@@ -1,8 +1,10 @@
 .. _introduccion-tip-1:
 
-===================================================================
+
+
+
 Consejo 1-1: ¡Proporciona un resumen compacto de requisitos!
-===================================================================
+============================================================
 
 .. meta::
    :layout: post
@@ -15,7 +17,8 @@ Consejo 1-1: ¡Proporciona un resumen compacto de requisitos!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Desarrolladores
 
-----
+
+
 
 Contexto
 ========
@@ -23,7 +26,8 @@ Contexto
 Para varios lectores, la sección 1.1 de arc42 será lo primero que aprendan 
 sobre el sistema.
 
-----
+
+
 
 Recomendación
 =============
@@ -44,7 +48,8 @@ Limítate a lo que es realmente importante, la esencia del sistema.
 puede contener un diagrama si apoya el contenido. Debes referenciar documentos 
 de requisitos si están presentes.
 
-----
+
+
 
 Excepciones
 ===========
@@ -55,7 +60,8 @@ Excepciones
 - Para sistemas con requisitos de negocio complejos o extensos
 - Para sistemas sin una documentación de requisitos existente (y razonable)
 
-----
+
+
 
 .. note::
    **Información de traducción:**

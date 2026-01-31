@@ -12,19 +12,24 @@
 
 .. _arquitectura-traduccion-iact-v2:
 
-==============================================================================
+
+
+
 Arquitectura Documental: Biblioteca de Traducción Técnica IACT v2.0.0
-==============================================================================
+=====================================================================
 
 .. contents:: Contenido
    :depth: 4
    :local:
 
-----
+
+
+
 
 1. Propósito
 
-============
+
+
 
 Este documento establece la arquitectura completa de la **Biblioteca de 
 Traducción Técnica** siguiendo la nomenclatura y estándares del proyecto 
@@ -38,13 +43,16 @@ IACT v2.0.0.
 - [OK] Metodología de organización jerárquica por libro completo
 - [OK] Análisis estándares ISO de terminología (ISO 1087, ISO 704, etc.)
 
-----
+
+
 
 2. Alcance
 
-==========
+
+
 
 La arquitectura define:
+
 
 1. Estructura de carpetas y subcarpetas
 2. Nomenclatura de artefactos (archivos .rst)
@@ -54,14 +62,16 @@ La arquitectura define:
 6. Organización de biblioteca de libros traducidos
 7. Sistema de clasificación documental
 
-----
+
+
 
 3. Conformidad con Estándares
 
-==============================
+
+
 
 3.1. Cumplimiento NOM_001 v2.0.0
----------------------------------
+================================
 
 [OK] Prefijos en MAYÚSCULAS: 34 prefijos definidos
 [OK] 3 dígitos para artefactos globales (PROC_001, STD_001)
@@ -77,7 +87,7 @@ La arquitectura define:
 **Cumplimiento:** 100%
 
 3.2. Cumplimiento STD_001 v1.1.0
----------------------------------
+================================
 
 [OK] Sin emojis, usar [OK], [ERROR], [WARN]
 [OK] Metadatos obligatorios en todos los artefactos
@@ -86,14 +96,16 @@ La arquitectura define:
 
 **Cumplimiento:** 100%
 
-----
+
+
 
 4. Estructura de Carpetas
 
-==========================
+
+
 
 4.1. Vista General
-------------------
+==================
 
 ::
 
@@ -147,14 +159,17 @@ La arquitectura define:
             ├── CAT_003_Indice_Por_Autor_1_0_0.rst
             └── CAT_004_Indice_Cronologico_1_0_0.rst
 
-----
+
+
+
 
 5. Definición de Prefijos
 
-==========================
+
+
 
 5.1. Prefijos de Procedimientos (30 prefijos)
-----------------------------------------------
+=============================================
 
 .. list-table::
    :widths: 15 30 55
@@ -255,7 +270,7 @@ La arquitectura define:
      - Ontología terminológica (ISO 1087)
 
 5.2. Prefijos de Metadata (2 prefijos)
----------------------------------------
+======================================
 
 .. list-table::
    :widths: 15 30 55
@@ -272,7 +287,7 @@ La arquitectura define:
      - Metodologías de trabajo (ISO 704)
 
 5.3. Prefijos de Biblioteca (4 prefijos) ✨ NUEVO v2.0.0
----------------------------------------------------------
+=======================================================
 
 .. list-table::
    :widths: 15 30 55
@@ -296,14 +311,16 @@ La arquitectura define:
 
 **Total Prefijos:** 34 prefijos
 
-----
+
+
 
 6. Sección 1: Fundamentos
 
-==========================
+
+
 
 6.1. Estructura de ``fundamentos/``
-------------------------------------
+===================================
 
 ::
 
@@ -348,8 +365,9 @@ La arquitectura define:
         ├── METH_03_Relacion_Conceptos_1_0_0.rst
         └── METH_04_Traduccion_Asistida_CAT_1_0_0.rst
 
+
 6.2. Justificación Carpetas Privadas
--------------------------------------
+====================================
 
 **Carpetas con prefijo _ (privadas):**
 
@@ -388,14 +406,16 @@ La arquitectura define:
 - Basadas en estándares ISO (teoría formal)
 - Usuarios finales consultan procedimientos, no ontologías
 
-----
+
+
 
 7. Sección 2: Procedimientos
 
-=============================
+
+
 
 7.1. Estructura de ``procedimientos/``
----------------------------------------
+======================================
 
 ::
 
@@ -411,8 +431,9 @@ La arquitectura define:
     ├── PROC_008_Revision_Tecnica_1_0_0.rst
     └── PROC_009_Publicacion_Documentos_1_0_0.rst
 
+
 7.2. PROC_001: Primer Procedimiento (NUEVO v2.0.0)
-----------------------------------------------------
+==================================================
 
 **Nombre:** ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 
@@ -437,14 +458,16 @@ La arquitectura define:
 - NOM_001 v2.0.0
 - STD_001 v1.1.0
 
-----
+
+
 
 8. Sección 3: Estándares
 
-========================
+
+
 
 8.1. Estructura de ``estandares/``
------------------------------------
+==================================
 
 ::
 
@@ -461,14 +484,17 @@ La arquitectura define:
     ├── STD_009_Estandar_Control_Calidad_1_0_0.rst
     └── STD_010_Estandar_Clasificacion_Biblioteca_1_0_0.rst  ✨ NUEVO
 
-----
+
+
+
 
 9. Sección 4: Reglas Operativas
 
-================================
+
+
 
 9.1. Estructura de ``reglas_operativas/``
-------------------------------------------
+=========================================
 
 ::
 
@@ -497,14 +523,16 @@ La arquitectura define:
         ├── ESC_03_Traduccion_Articulo_Cientifico_1_0_0.rst
         └── ESC_04_Traduccion_Tutorial_1_0_0.rst
 
-----
+
+
 
 10. Sección 5: Biblioteca (NUEVA v2.0.0)
 
-=========================================
+
+
 
 10.1. Estructura de ``biblioteca/``
-------------------------------------
+===================================
 
 ::
 
@@ -567,7 +595,7 @@ La arquitectura define:
         └── CAT_004_Indice_Cronologico_1_0_0.rst
 
 10.2. Nomenclatura de Capítulos
---------------------------------
+===============================
 
 **Regla:** Sin números en nombres de carpetas (cumple NOM_001)
 
@@ -575,6 +603,7 @@ La arquitectura define:
 ::
 
     nombre_descriptivo_del_capitulo/
+
 
 **Ejemplos:**
 ::
@@ -591,6 +620,7 @@ La arquitectura define:
     01_Server_Side_Action/                # Viola NOM_001
     chapter1/                             # Poco descriptivo
 
+
 **Preservar orden con metadata:**
 
 .. code-block:: rst
@@ -601,7 +631,7 @@ La arquitectura define:
       :titulo_original: Server-Side Action: Node and NPM
 
 10.3. Sistema de Clasificación Documental
-------------------------------------------
+=========================================
 
 **Basado en:** Guía Metodológica de Clasificación Documental
 
@@ -636,7 +666,7 @@ La arquitectura define:
 Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 
 10.4. Metadata de Libro
-------------------------
+=======================
 
 **Archivo:** ``metadata_libro.rst``
 
@@ -670,7 +700,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 **Ver:** Ejemplo completo en sección 10.6
 
 10.5. Glosario de Capítulo
----------------------------
+==========================
 
 **Archivo:** ``glosario_capitulo.rst``
 
@@ -693,7 +723,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
          Node Package Manager...
 
 10.6. Glosario Acumulativo
----------------------------
+==========================
 
 **Archivo:** ``glosario_acumulativo.rst``
 
@@ -707,71 +737,75 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 - Capítulos donde aparece cada término
 - Frecuencia de uso
 
-----
+
+
 
 11. Catálogos de Biblioteca
 
-============================
+
+
 
 11.1. CAT_001: Índice Alfabético
----------------------------------
+================================
 
 **Formato:**
 
 .. code-block:: rst
 
    A
-   ===
+   ====
    - Advanced TypeScript (Zammetti, 2024) → INF.PRG.FST.001, Cap. 6
 
    B
-   ===
+   ====
    - BattleJong Client (Zammetti, 2024) → INF.PRG.FST.001, Cap. 11
 
 11.2. CAT_002: Índice por Dominio
-----------------------------------
+=================================
 
 **Formato:**
 
 .. code-block:: rst
 
    Informática
-   ===========
+   ==============
    
    Programación
-   ------------
+   ===============
    - Modern Full-Stack Development (Zammetti, 2024) → INF.PRG.FST.001
 
 11.3. CAT_003: Índice por Autor
---------------------------------
+===============================
 
 **Formato:**
 
 .. code-block:: rst
 
    Zammetti, Frank
-   ===============
+   ==================
    - Modern Full-Stack Development (2024) → INF.PRG.FST.001
 
 11.4. CAT_004: Índice Cronológico
-----------------------------------
+=================================
 
 **Formato:**
 
 .. code-block:: rst
 
    2024
-   ====
+   =======
    - Modern Full-Stack Development (Zammetti) → INF.PRG.FST.001
 
-----
+
+
 
 12. Mapeo de Contenido Existente
 
-=================================
+
+
 
 12.1. Documentos de Sesión Previa → v2.0.0
--------------------------------------------
+==========================================
 
 .. list-table::
    :widths: 50 50
@@ -791,7 +825,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
      - PROMPT_002_Maestro_Sphinx_1_0_0.rst
 
 12.2. Nuevos Documentos v2.0.0
--------------------------------
+==============================
 
 .. list-table::
    :widths: 50 50
@@ -808,14 +842,16 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
    * - Estándar Clasificación
      - STD_010_Estandar_Clasificacion_1_0_0.rst
 
-----
+
+
 
 13. Base en Estándares ISO
 
-===========================
+
+
 
 13.1. Fundamentos Teóricos
----------------------------
+==========================
 
 **ISO 1087:2019** - Terminology work and terminology science — Vocabulary
 
@@ -839,7 +875,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 - Proporciona: Gobernanza de repositorios terminológicos
 
 13.2. Formatos y Representación
---------------------------------
+===============================
 
 **ISO 16642:2017** - Terminological Markup Framework (TMF)
 
@@ -853,14 +889,16 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 
 **Ver:** ``ANALISIS_ESTANDARES_ISO_TERMINOLOGIA.md`` para detalles completos
 
-----
+
+
 
 14. Versionado Semántico
 
-=========================
+
+
 
 14.1. Reglas de Versionado
----------------------------
+==========================
 
 **Formato:** ``_[MAJOR]_[MINOR]_[PATCH].rst``
 
@@ -889,7 +927,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 - Mejoras menores sin cambios estructurales
 
 14.2. Historia de Versiones
-----------------------------
+===========================
 
 .. list-table::
    :widths: 10 15 75
@@ -909,14 +947,16 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
      - Versión inicial con 10 secciones, 30 prefijos, estructura base
        siguiendo nomenclatura IACT v2.0.0
 
-----
+
+
 
 15. Ventajas de la Arquitectura v2.0.0
 
-=======================================
+
+
 
 15.1. Ventajas Técnicas
-------------------------
+=======================
 
 [OK] **Conformidad Total:** 100% con NOM_001 y STD_001
 [OK] **Escalabilidad:** Fácil añadir nuevos libros y categorías
@@ -926,7 +966,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 [OK] **Versionado:** Control de versiones por capítulo y por libro
 
 15.2. Ventajas Operativas
---------------------------
+=========================
 
 [OK] **Separación Clara:** Procedimientos vs Productos (biblioteca)
 [OK] **Clasificación Múltiple:** Por dominio, idioma, tipo, estado
@@ -936,7 +976,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 [OK] **Build Independiente:** Sphinx puede compilar cada libro
 
 15.3. Ventajas Metodológicas
------------------------------
+============================
 
 [OK] **Base en ISO:** Fundamentos en ISO 1087, ISO 704
 [OK] **Guía Metodológica:** Clasificación sistemática y verificable
@@ -944,14 +984,16 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 [OK] **Aplicabilidad:** Adaptable a diferentes dominios
 [OK] **Documentación Completa:** Cada decisión justificada
 
-----
+
+
 
 16. Próximos Pasos
 
-==================
+
+
 
 16.1. Implementación Inmediata
--------------------------------
+==============================
 
 1. Crear ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 2. Crear ``STD_010_Estandar_Clasificacion_Biblioteca_1_0_0.rst``
@@ -960,7 +1002,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 5. Implementar primer libro: Modern Full-Stack Development
 
 16.2. Documentación Complementaria
------------------------------------
+==================================
 
 1. Actualizar ``index.rst`` principal con nueva sección biblioteca
 2. Crear tutoriales de clasificación
@@ -969,7 +1011,7 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 5. Generar catálogos automáticamente
 
 16.3. Validación
-----------------
+================
 
 1. Verificar cumplimiento NOM_001 en todos los archivos
 2. Verificar cumplimiento STD_001 en todos los archivos
@@ -977,20 +1019,22 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 4. Revisar metadatos con scripts de validación
 5. Obtener feedback del equipo de traducción
 
-----
+
+
 
 17. Referencias
 
-===============
+
+
 
 17.1. Estándares IACT
-----------------------
+=====================
 
 - NOM_001_Nomenclatura_Proyecto_IACT_2_0_0.rst
 - STD_001_Estandares_Documentacion_Sin_Emojis_1_1_0.rst
 
 17.2. Estándares ISO
---------------------
+====================
 
 - ISO 1087:2019 - Terminology work and terminology science
 - ISO 704:2022 - Terminology work — Principles and methods
@@ -999,20 +1043,22 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 - ISO 30042:2019 - TermBase eXchange (TBX)
 
 17.3. Documentos de Análisis
------------------------------
+============================
 
 - ANALISIS_ESTANDARES_ISO_TERMINOLOGIA.md
 - ANALISIS_CUMPLIMIENTO_NOM_STD.md
 - Guía_Metodológica_para_Clasificación_Documental.txt
 
-----
+
+
 
 18. Apéndices
 
-=============
+
+
 
 18.1. Ejemplo Completo: Modern Full-Stack Development
-------------------------------------------------------
+=====================================================
 
 **Ver sección 10.1** para estructura completa de carpetas.
 
@@ -1027,16 +1073,17 @@ Ver ``PROC_001_Organizacion_Biblioteca_Libros_1_0_0.rst``
 - Tracking de progreso: 35% completado
 
 18.2. Template de Metadata de Libro
-------------------------------------
+===================================
 
 Ver ejemplo completo en respuesta anterior (metadata_libro.rst)
 
 18.3. Template de Glosario de Capítulo
----------------------------------------
+======================================
 
 Ver ejemplo completo en respuesta anterior (glosario_capitulo.rst)
 
-----
+
+
 
 **Documento controlado. Versión 2.0.0. Fecha: 2026-01-08.**
 

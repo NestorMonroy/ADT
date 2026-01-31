@@ -1,13 +1,16 @@
 .. _glossary_tip_2:
 
-===============================================================
+
+
+
 Tip 12-2: ¡Documenta el glosario como una tabla!
-===============================================================
+================================================
 
 :Tema: Formato de glosario
 :Palabras clave: glossary, lean
 
-----
+
+
 
 Documenta el **glosario** como una tabla ordenada alfabéticamente de los términos más importantes que se usan en arquitectura y desarrollo.
 
@@ -18,7 +21,7 @@ Puedes incluir traducciones normativas a otros idiomas, si los **stakeholders** 
 El **glosario** podría ser idéntico o similar al "**ubiquitous language**" del Domain-Driven-Design (y por lo tanto también puede estar contenido en la `sección 8 de arc42 (conceptos transversales) </section-8>`_).
 
 Estructura de Tabla Recomendada
-================================
+===============================
 
 **Tabla Básica (Un Idioma):**
 
@@ -58,7 +61,8 @@ Estructura de Tabla Recomendada
    - **Pago**
    - **Kasse**
 
-----
+
+
 
 **Qué Incluir en el Glosario:**
 
@@ -85,7 +89,8 @@ Estructura de Tabla Recomendada
    - [OK] SÍ
    - "SLA", "API", "GDPR"
 
-----
+
+
 
 **Ejemplo Completo de Glosario:**
 
@@ -116,7 +121,8 @@ Estructura de Tabla Recomendada
  * - **SKU** (Stock Keeping Unit)
    - Identificador único alfanumérico de 8 caracteres asignado a cada variante de producto (ej: color, tamaño).
 
-----
+
+
 
 **Relación con Domain-Driven Design:**
 
@@ -132,7 +138,8 @@ Estructura de Tabla Recomendada
 
  **Recomendación:** Mantener ambos sincronizados.
 
-----
+
+
 
 **Mejores Prácticas:**
 
@@ -169,7 +176,8 @@ Estructura de Tabla Recomendada
      Carrito de Compra
      -> Ver también: Checkout, Pedido
 
-----
+
+
 
 **Herramientas para Glosario:**
 
@@ -208,7 +216,8 @@ Estructura de Tabla Recomendada
  Cliente Final
  Usuario registrado que realiza compras.
 
-----
+
+
 
 .. seealso::
  * **Tip 12-1** - Tomarse el glosario en serio

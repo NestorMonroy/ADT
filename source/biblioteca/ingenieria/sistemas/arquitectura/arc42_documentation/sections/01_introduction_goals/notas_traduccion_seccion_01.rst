@@ -1,8 +1,10 @@
 .. _notas-traduccion-seccion-01:
 
-============================================
+
+
+
 Notas de Traducción - Sección 01
-============================================
+================================
 
 :Sección: 01 - Introducción y Objetivos
 :Archivos traducidos: 5/28 (Lote 1)
@@ -10,13 +12,14 @@ Notas de Traducción - Sección 01
 :Fecha: 2026-01-27
 :Traductor: Equipo ADT
 
-----
+
+
 
 Resumen de Traducción
-======================
+=====================
 
 Estado Actual
--------------
+=============
 
 .. list-table:: Progreso de Traducción
  :header-rows: 1
@@ -45,13 +48,14 @@ Estado Actual
 
 **Total progreso:** 5/28 archivos (17.9%)
 
-----
+
+
 
 Archivos Traducidos - Lote 1
-=============================
+============================
 
 Ejemplos
---------
+========
 
 1. **introduccion_ejemplo-3.rst**
 
@@ -103,7 +107,7 @@ Ejemplos
  * Atributos: Accuracy, Robustness, Ease of use
 
 Tips y Consejos
----------------
+===============
 
 5. **introduccion_tip-1.rst**
 
@@ -117,13 +121,14 @@ Tips y Consejos
  * Regla de oro: menos de una página
  * Enfocado en la sección 1.1 de arc42
 
-----
+
+
 
 Decisiones de Traducción Importantes
-=====================================
+====================================
 
 Nombres Propios y Marcas
--------------------------
+========================
 
 Los siguientes términos se mantuvieron en inglés por ser nombres propios:
 
@@ -134,7 +139,7 @@ Los siguientes términos se mantuvieron en inglés por ser nombres propios:
 - **Gradle**: Nombre de herramienta
 
 Términos Arquitectónicos (según Guía ADT)
-------------------------------------------
+=========================================
 
 Aplicando la **Guía de Traducción Arquitectónica ADT**, los siguientes términos
 se tradujeron contexto arquitectónico, NO literalmente:
@@ -159,18 +164,18 @@ se tradujeron contexto arquitectónico, NO literalmente:
 **Justificación:**
 
 - **"driving forces"**: En arquitectura de software NO significa "fuerzas"
- físicas sino factores que impulsan decisiones. "Factores determinantes"
- captura mejor el concepto arquitectónico.
+  físicas sino factores que impulsan decisiones. "Factores determinantes"
+  captura mejor el concepto arquitectónico.
 
 - **"quality goals"**: NO son simplemente "objetivos" - son ATRIBUTOS
- MEDIBLES Y ESPECÍFICOS de la arquitectura (ej: Performance < 2s,
- Availability 99.9%). Por eso se traduce como "atributos de calidad objetivo".
+  MEDIBLES Y ESPECÍFICOS de la arquitectura (ej: Performance < 2s,
+  Availability 99.9%). Por eso se traduce como "atributos de calidad objetivo".
 
 - **"stakeholder"**: Término técnico internacional estándar en gestión de
- proyectos y arquitectura. Se preserva en inglés.
+  proyectos y arquitectura. Se preserva en inglés.
 
 Atributos de Calidad
---------------------
+====================
 
 Los atributos de calidad se tradujeron con referencia al original:
 
@@ -204,7 +209,7 @@ Los atributos de calidad se tradujeron con referencia al original:
    - [OK]
 
 Estructura y Formato
---------------------
+====================
 
 1. **Front matter YAML -> Metadata RST**
 
@@ -230,13 +235,14 @@ Estructura y Formato
 
  Las footnotes ``[^nota]`` se convirtieron a directiva ``.. [#nota]``.
 
-----
+
+
 
 Tácticas ADT Aplicadas
-=======================
+======================
 
 FASE 3: Traducción Inicial
----------------------------
+==========================
 
 [OK] **Método Peshitta** aplicado a todos los archivos:
 
@@ -246,7 +252,7 @@ FASE 3: Traducción Inicial
 - Sin interpretaciones o adaptaciones
 
 FASE 3.5: Revisión de Literalidad
-----------------------------------
+=================================
 
 [RUNNING] **Pendiente:** Se aplicará después de completar Lote 1
 
@@ -257,10 +263,11 @@ Checklist a verificar:
 - [ ] Todos los enlaces funcionales
 - [ ] Metadata completa
 
-----
+
+
 
 Problemas Encontrados y Soluciones
-===================================
+==================================
 
 1. **Imagen TPU no disponible**
 
@@ -279,41 +286,43 @@ Problemas Encontrados y Soluciones
  - Problema: Footnote ``[^doubt]`` con texto largo
  - Solución: Convertida a ``.. [#duda]`` con formato RST apropiado
 
-----
+
+
 
 Lecciones Aprendidas
-=====================
+====================
 
 Del Lote 1
-----------
+==========
 
 1. **Tablas complejas**: Las tablas con múltiples columnas y contenido largo
- se benefician de ``list-table`` sobre ``table`` simple.
+  se benefician de ``list-table`` sobre ``table`` simple.
 
 2. **Metadata consistente**: Usar siempre la misma estructura en
- ``.. meta::`` para facilitar automatización futura.
+  ``.. meta::`` para facilitar automatización futura.
 
 3. **Figuras centralizadas**: Mejor usar directorio ``figuras/`` común que
- subdirectorios por archivo.
+  subdirectorios por archivo.
 
 4. **Etiquetas únicas**: Cada archivo debe tener su propia etiqueta
- (``.. _nombre:``).
+  (``.. _nombre:``).
 
 Comparación con Sección 02
----------------------------
+==========================
 
 - Sección 01 tiene **4x más archivos** que sección 02
 - Mayor variedad de ejemplos (2 sistemas diferentes: TPU y HtmlSC)
 - Más tablas de requisitos y objetivos de calidad
 - Tips más enfocados en proceso que en contenido técnico
 
-----
+
+
 
 Próximos Pasos
 ==============
 
 Inmediatos
-----------
+==========
 
 1. [OK] Ejecutar **FASE 3.5: Revisión de Literalidad** en Lote 1
 2. [OK] Copiar imágenes necesarias al directorio ``figuras/``
@@ -321,12 +330,13 @@ Inmediatos
 4. [OK] Ejecutar **FASE 5: Validación** (compilar con Sphinx)
 
 Siguiente Lote
---------------
+==============
 
 5. [RUNNING] Iniciar **Lote 2**: Tips 2-10 (9 archivos)
 6. [RUNNING] Repetir FASES 3-5 para Lote 2
 
-----
+
+
 
 Referencias
 ===========
@@ -335,7 +345,8 @@ Referencias
 - :doc:`glosario_seccion_01`
 - :doc:`seccion_01_introduccion_objetivos`
 
-----
+
+
 
 .. note::
  **Última actualización:** 2026-01-27

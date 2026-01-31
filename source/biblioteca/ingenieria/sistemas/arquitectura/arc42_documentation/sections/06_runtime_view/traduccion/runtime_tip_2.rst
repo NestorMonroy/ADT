@@ -1,18 +1,21 @@
 .. _runtime_tip_2:
 
-===============================================================
+
+
+
 Tip 6-2: ¡Documenta solo unos pocos escenarios de tiempo de ejecución!
-===============================================================
+======================================================================
 
 .. tip::
    **Consejo de Vista de Tiempo de Ejecución arc42**
    
    Los **escenarios de tiempo de ejecución** consumen mucho tiempo para crear y mantener. Enfócate en los importantes y mantén solo unos pocos en tu documentación.
 
-----
+
+
 
 Los Escenarios Consumen Tiempo para Crear
-==========================================
+=========================================
 
 Como los **escenarios de tiempo de ejecución** son bastante consumidores de tiempo para crear y mantener, enfócate en:
 
@@ -23,7 +26,7 @@ Como los **escenarios de tiempo de ejecución** son bastante consumidores de tie
    Usa **escenarios** primariamente para identificar y discutir comportamiento de **bloques de construcción**, y mantén **solo unos pocos escenarios para tu documentación**.
 
 Mantén Solo Unos Pocos Escenarios en tu Documentación
-======================================================
+=====================================================
 
 Documenta solo **escenarios** que:
 
@@ -43,14 +46,16 @@ Ver También
 * Tip 6-3 (escenarios esquemáticos)
 * Tip 6-5 (escenarios para discusión)
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_06` - Vista de Tiempo de Ejecución
    * :ref:`runtime_tip_3` - Escenarios esquemáticos
    * :ref:`runtime_tip_5` - Escenarios para descubrir bloques
 
-----
+
+
 
 :Tip: 6-2
 :Tema: Documentar pocos escenarios

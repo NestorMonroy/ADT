@@ -1,6 +1,7 @@
 ==================================================================================
+
 Guía Metodológica de Clasificación Documental
-==================================================================================
+=============================================
 
 :Código: META_BIB_001
 :Versión: 1.0.0
@@ -14,7 +15,8 @@ Guía Metodológica de Clasificación Documental
  :depth: 4
  :local:
 
-----
+
+
 
 Resumen Ejecutivo
 =================
@@ -35,33 +37,35 @@ y escalable de la biblioteca.
  - Desarrolladores de herramientas de automatización
  - Usuarios que buscan documentos específicos
 
-----
+
+
 
 Parte 1: Fundamentos de Clasificación
-======================================
+=====================================
 
 1.1. Objetivo del Sistema de Clasificación
--------------------------------------------
+==========================================
 
 El sistema de clasificación documental ADT busca:
 
+
 1. **Organización Lógica:**
- Agrupar documentos por área de conocimiento, facilitando la navegación
+  Agrupar documentos por área de conocimiento, facilitando la navegación
 
 2. **Escalabilidad:**
- Soportar crecimiento ilimitado de la biblioteca sin reestructuración
+  Soportar crecimiento ilimitado de la biblioteca sin reestructuración
 
 3. **Consistencia:**
- Garantizar que dos traductores clasifiquen el mismo libro de manera idéntica
+  Garantizar que dos traductores clasifiquen el mismo libro de manera idéntica
 
 4. **Búsqueda Eficiente:**
- Permitir localización rápida por código o por navegación jerárquica
+  Permitir localización rápida por código o por navegación jerárquica
 
 5. **Interoperabilidad:**
- Facilitar integración con sistemas externos (catálogos, bases de datos)
+  Facilitar integración con sistemas externos (catálogos, bases de datos)
 
 1.2. Principios Rectores
--------------------------
+========================
 
 **Principio 1: Jerarquía de 4 Niveles**
 
@@ -93,6 +97,7 @@ Sistema de códigos basado en abreviaturas nemotécnicas:
 
 Cada libro ocupa **una carpeta completa** que contiene:
 
+
 - Capítulos originales
 - Capítulos traducidos
 - Metadata
@@ -101,9 +106,10 @@ Cada libro ocupa **una carpeta completa** que contiene:
 - Notas de traducción
 
 1.3. Base Teórica
------------------
+=================
 
 El sistema ADT se inspira en:
+
 
 **Dewey Decimal Classification (DDC):**
  Sistema decimal jerárquico de 10 categorías principales
@@ -117,24 +123,25 @@ El sistema ADT se inspira en:
 **Adaptaciones Específicas para ADT:**
 
 1. **Foco en Tecnología:**
- Prioridad a Informática, Ingeniería Software y Ciencias Aplicadas
+  Prioridad a Informática, Ingeniería Software y Ciencias Aplicadas
 
 2. **Granularidad por Especialidad:**
- Nivel adicional para tecnologías específicas (React, Docker, Python)
+  Nivel adicional para tecnologías específicas (React, Docker, Python)
 
 3. **Multilingüismo:**
- Estructura original + traducción en cada libro
+  Estructura original + traducción en cada libro
 
 4. **Integración con Traducción:**
- Metadata de progreso, glosarios acumulativos, notas de traducción
+  Metadata de progreso, glosarios acumulativos, notas de traducción
 
-----
+
+
 
 Parte 2: Taxonomía Completa
-============================
+===========================
 
 2.1. Categorías Principales (Nivel 1)
---------------------------------------
+=====================================
 
 El sistema ADT define **3 categorías principales** expandibles a futuro:
 
@@ -177,65 +184,65 @@ El sistema ADT define **3 categorías principales** expandibles a futuro:
 - **"Computational Biology":** CIE (prioridad a dominio científico)
 
 2.2. Subcategorías Informática (Nivel 2)
------------------------------------------
+========================================
 
 .. list-table:: Subcategorías INF
- :header-rows: 1
- :widths: 15 20 65
+   :header-rows: 1
+   :widths: 15 20 65
 
- * - Código
-   - Nombre
-   - Ámbito y Ejemplos
- * - **PRG**
-   - Programación
-   - Lenguajes, paradigmas, desarrollo de software
-
- *Ej: Python, JavaScript, Functional Programming*
- * - **IAR**
-   - Inteligencia Artificial
-   - Machine Learning, Deep Learning, NLP, Computer Vision
-
- *Ej: TensorFlow, PyTorch, Neural Networks*
- * - **RED**
-   - Redes
-   - Protocolos, arquitecturas de red, comunicaciones
-
- *Ej: TCP/IP, HTTP, Network Security*
- * - **SEG**
-   - Seguridad
-   - Ciberseguridad, criptografía, ethical hacking
-
- *Ej: Penetration Testing, Cryptography, Security Audit*
- * - **BDD**
-   - Bases de Datos
-   - SQL, NoSQL, diseño de esquemas, optimización
-
- *Ej: PostgreSQL, MongoDB, Database Design*
- * - **SOP**
-   - Sistemas Operativos
-   - Linux, Windows, administración de sistemas
-
- *Ej: Linux Kernel, System Administration, Shell Scripting*
- * - **WEB**
-   - Desarrollo Web
-   - Frontend, Backend, Full-Stack (cuando no cabe en PRG)
-
- *Ej: HTML5, CSS3, Web APIs (si es genérico)*
- * - **MOV**
-   - Desarrollo Móvil
-   - iOS, Android, multiplataforma
-
- *Ej: Swift, Kotlin, React Native*
- * - **DVC**
-   - DevOps y Cloud
-   - CI/CD, containerización, orquestación, cloud computing
-
- *Ej: Kubernetes, AWS, Azure, DevOps Practices*
- * - **ALG**
-   - Algoritmos
-   - Estructuras de datos, algoritmos, complejidad
-
- *Ej: Data Structures, Algorithm Analysis*
+   * - Código
+     - Nombre
+     - Ámbito y Ejemplos
+   * - **PRG**
+     - Programación
+     - Lenguajes, paradigmas, desarrollo de software
+       
+       *Ej: Python, JavaScript, Functional Programming*
+   * - **IAR**
+     - Inteligencia Artificial
+     - Machine Learning, Deep Learning, NLP, Computer Vision
+       
+       *Ej: TensorFlow, PyTorch, Neural Networks*
+   * - **RED**
+     - Redes
+     - Protocolos, arquitecturas de red, comunicaciones
+       
+       *Ej: TCP/IP, HTTP, Network Security*
+   * - **SEG**
+     - Seguridad
+     - Ciberseguridad, criptografía, ethical hacking
+       
+       *Ej: Penetration Testing, Cryptography, Security Audit*
+   * - **BDD**
+     - Bases de Datos
+     - SQL, NoSQL, diseño de esquemas, optimización
+       
+       *Ej: PostgreSQL, MongoDB, Database Design*
+   * - **SOP**
+     - Sistemas Operativos
+     - Linux, Windows, administración de sistemas
+       
+       *Ej: Linux Kernel, System Administration, Shell Scripting*
+   * - **WEB**
+     - Desarrollo Web
+     - Frontend, Backend, Full-Stack (cuando no cabe en PRG)
+       
+       *Ej: HTML5, CSS3, Web APIs (si es genérico)*
+   * - **MOV**
+     - Desarrollo Móvil
+     - iOS, Android, multiplataforma
+       
+       *Ej: Swift, Kotlin, React Native*
+   * - **DVC**
+     - DevOps y Cloud
+     - CI/CD, containerización, orquestación, cloud computing
+       
+       *Ej: Kubernetes, AWS, Azure, DevOps Practices*
+   * - **ALG**
+     - Algoritmos
+     - Estructuras de datos, algoritmos, complejidad
+       
+       *Ej: Data Structures, Algorithm Analysis*
 
 **Expansión Futura:**
 
@@ -249,68 +256,68 @@ El sistema permite agregar nuevas subcategorías según necesidad:
  INF.VRA -> Realidad Virtual y Aumentada
 
 2.3. Subcategorías Ingeniería (Nivel 2)
-----------------------------------------
+=======================================
 
 .. list-table:: Subcategorías ING
- :header-rows: 1
- :widths: 15 20 65
+   :header-rows: 1
+   :widths: 15 20 65
 
- * - Código
-   - Nombre
-   - Ámbito y Ejemplos
- * - **SIS**
-   - Sistemas
-   - Arquitectura de sistemas, diseño de sistemas complejos
-
- *Ej: System Design, Distributed Systems*
- * - **ARQ**
-   - Arquitectura
-   - Arquitectura de software, patrones arquitectónicos
-
- *Ej: Clean Architecture, Microservices, arc42*
- * - **MET**
-   - Metodologías
-   - Agile, Scrum, DevOps, metodologías de desarrollo
-
- *Ej: Scrum Guide, Agile Practices, Lean Software*
- * - **REQ**
-   - Requisitos
-   - Ingeniería de requisitos, análisis de requisitos
-
- *Ej: Requirements Engineering, User Stories*
- * - **PRU**
-   - Pruebas
-   - Testing, QA, automatización de pruebas
-
- *Ej: Test-Driven Development, Unit Testing, QA*
- * - **MOD**
-   - Modelado
-   - UML, modelado de procesos, especificación formal
-
- *Ej: UML Guide, BPMN, Formal Methods*
+   * - Código
+     - Nombre
+     - Ámbito y Ejemplos
+   * - **SIS**
+     - Sistemas
+     - Arquitectura de sistemas, diseño de sistemas complejos
+       
+       *Ej: System Design, Distributed Systems*
+   * - **ARQ**
+     - Arquitectura
+     - Arquitectura de software, patrones arquitectónicos
+       
+       *Ej: Clean Architecture, Microservices, arc42*
+   * - **MET**
+     - Metodologías
+     - Agile, Scrum, DevOps, metodologías de desarrollo
+       
+       *Ej: Scrum Guide, Agile Practices, Lean Software*
+   * - **REQ**
+     - Requisitos
+     - Ingeniería de requisitos, análisis de requisitos
+       
+       *Ej: Requirements Engineering, User Stories*
+   * - **PRU**
+     - Pruebas
+     - Testing, QA, automatización de pruebas
+       
+       *Ej: Test-Driven Development, Unit Testing, QA*
+   * - **MOD**
+     - Modelado
+     - UML, modelado de procesos, especificación formal
+       
+       *Ej: UML Guide, BPMN, Formal Methods*
 
 2.4. Subcategorías Ciencias (Nivel 2)
---------------------------------------
+=====================================
 
 .. list-table:: Subcategorías CIE
- :header-rows: 1
- :widths: 15 20 65
+   :header-rows: 1
+   :widths: 15 20 65
 
- * - Código
-   - Nombre
-   - Ámbito y Ejemplos
- * - **MAT**
-   - Matemáticas
-   - Matemáticas aplicadas, cálculo, álgebra para CS
-
- *Ej: Linear Algebra for ML, Calculus for CS*
- * - **EST**
-   - Estadística
-   - Estadística, probabilidad, análisis de datos
-
- *Ej: Statistical Analysis, Probability Theory*
- * - **FIS**
-   - Física
+   * - Código
+     - Nombre
+     - Ámbito y Ejemplos
+   * - **MAT**
+     - Matemáticas
+     - Matemáticas aplicadas, cálculo, álgebra para CS
+       
+       *Ej: Linear Algebra for ML, Calculus for CS*
+   * - **EST**
+     - Estadística
+     - Estadística, probabilidad, análisis de datos
+       
+       *Ej: Statistical Analysis, Probability Theory*
+   * - **FIS**
+     - Física
    - Física computacional, simulaciones
 
  *Ej: Computational Physics, Simulations*
@@ -321,7 +328,7 @@ El sistema permite agregar nuevas subcategorías según necesidad:
  *Ej: Bioinformatics, Genomics Analysis*
 
 2.5. Especialidades Programación (Nivel 3)
--------------------------------------------
+==========================================
 
 Especialidades más comunes en **INF.PRG**:
 
@@ -398,7 +405,7 @@ Cuando aparezca un nuevo framework/lenguaje relevante:
  INF.PRG.ELM -> Elm (Frontend funcional)
 
 2.6. Especialidades Otras Subcategorías
-----------------------------------------
+=======================================
 
 **Inteligencia Artificial (INF.IAR):**
 
@@ -432,13 +439,14 @@ Cuando aparezca un nuevo framework/lenguaje relevante:
  ING.ARQ.ARC -> arc42 (plantilla documentación)
  ING.ARQ.HEX -> Hexagonal Architecture
 
-----
+
+
 
 Parte 3: Proceso de Clasificación
-==================================
+=================================
 
 3.1. Flujo de Decisión Principal
----------------------------------
+================================
 
 **Diagrama de Flujo:**
 
@@ -484,7 +492,7 @@ Parte 3: Proceso de Clasificación
  +-------------------------------------+
 
 3.2. Paso 1: Determinar Categoría
-----------------------------------
+=================================
 
 **Método: Análisis del Título y Contenido**
 
@@ -548,7 +556,7 @@ Parte 3: Proceso de Clasificación
    - Diseño de sistemas (domina sobre implementación)
 
 3.3. Paso 2: Determinar Subcategoría
--------------------------------------
+====================================
 
 **Método: Análisis de Temas Principales**
 
@@ -612,7 +620,7 @@ Parte 3: Proceso de Clasificación
  -> Especialidad: FST (Full-Stack)
 
 3.4. Paso 3: Determinar Especialidad
--------------------------------------
+====================================
 
 **Método: Identificar Tecnología/Framework Principal**
 
@@ -647,7 +655,8 @@ Parte 3: Proceso de Clasificación
 
  Clasificación: INF.PRG.FST
 
-----
+
+
 
 .. code-block:: rst
 
@@ -659,7 +668,8 @@ Parte 3: Proceso de Clasificación
 
  Clasificación: INF.PRG.REA
 
-----
+
+
 
 .. code-block:: rst
 
@@ -705,7 +715,7 @@ Parte 3: Proceso de Clasificación
    - MIC
 
 3.5. Paso 4: Asignar Número Secuencial
----------------------------------------
+======================================
 
 **Método: Verificación de Últimos Números Usados**
 
@@ -756,13 +766,14 @@ Mantener archivo de catálogo:
  INF.PRG.PYT.001 -> Python_Complete_Guide_2025
  INF.IAR.MLF.001 -> Machine_Learning_Basics_2024
 
-----
+
+
 
 Parte 4: Estructura de Carpetas
-================================
+===============================
 
 4.1. Jerarquía Completa
------------------------
+=======================
 
 **Plantilla de Estructura:**
 
@@ -838,7 +849,7 @@ Parte 4: Estructura de Carpetas
  +-- Linear_Algebra_for_ML_2024/
 
 4.2. Estructura Interna de Libro
----------------------------------
+================================
 
 **Cada carpeta de libro contiene:**
 
@@ -897,13 +908,14 @@ Parte 4: Estructura de Carpetas
  [WARNING] glosario_capitulo.rst (por capítulo)
  [WARNING] notas_traduccion.rst (por capítulo)
 
-----
+
+
 
 Parte 5: Codificación y Nomenclatura
-=====================================
+====================================
 
 5.1. Formato del Código de Clasificación
------------------------------------------
+========================================
 
 **Estructura Completa:**
 
@@ -936,7 +948,7 @@ Parte 5: Codificación y Nomenclatura
  INF.PRG.FST.1000 [ERROR] (número > 999)
 
 5.2. Abreviaturas Estándar
----------------------------
+==========================
 
 **Categorías (3 letras):**
 
@@ -1006,7 +1018,7 @@ Parte 5: Codificación y Nomenclatura
  ARC -> arc42
 
 5.3. Reglas de Creación de Abreviaturas
-----------------------------------------
+=======================================
 
 **Para Nuevas Subcategorías/Especialidades:**
 
@@ -1046,13 +1058,14 @@ Parte 5: Codificación y Nomenclatura
  4. Actualizar tabla maestra de códigos
  5. Aprobar en revisión de metadata
 
-----
+
+
 
 Parte 6: Metadata del Libro
-============================
+===========================
 
 6.1. Plantilla metadata_libro.rst
-----------------------------------
+=================================
 
 **Archivo:** ``metadata_libro.rst``
 
@@ -1067,12 +1080,14 @@ Parte 6: Metadata del Libro
  :progreso: 35%
  :clasificacion: INF.PRG.FST.001
 
- ==========================================================================
+
+
+
  [Título Traducido del Libro]
- ==========================================================================
+=============================
 
  Información Bibliográfica
- ==========================
+==========================
 
  Título Original
  [Título completo en idioma original]
@@ -1100,7 +1115,7 @@ Parte 6: Metadata del Libro
  - Destino: [Español (es), etc.]
 
  Clasificación según Guía Metodológica
- ======================================
+======================================
 
  Código Clasificación
  [INF.PRG.FST.001]
@@ -1129,7 +1144,7 @@ Parte 6: Metadata del Libro
  [lista, de, palabras, clave, separadas, por, comas]
 
  Estado de Traducción
- =====================
+=====================
 
  Progreso Global
  [XX% completado (Y de Z capítulos)]
@@ -1150,7 +1165,7 @@ Parte 6: Metadata del Libro
  [YYYY-MM-DD]
 
  Equipo de Traducción
- ====================
+=====================
 
  Traductor Principal
  [Nombre]
@@ -1164,7 +1179,7 @@ Parte 6: Metadata del Libro
  - [...]
 
  Estadísticas de Traducción
- ===========================
+===========================
 
  Total Páginas Original
  [XXX páginas]
@@ -1193,7 +1208,7 @@ Parte 6: Metadata del Libro
  - Comentarios traducidos: [XXX ejemplos]
 
  Procedimientos Aplicados
- =========================
+=========================
 
  Workflow
  :doc:`/procedimientos/PROC_001_Workflow_General_1_0_0`
@@ -1208,7 +1223,7 @@ Parte 6: Metadata del Libro
  reStructuredText (Sphinx)
 
  Control de Calidad
- ==================
+===================
 
  Verificaciones por Capítulo
  - [OK] Checklist contenido completo
@@ -1225,7 +1240,7 @@ Parte 6: Metadata del Libro
  [Listado por capítulo]
 
  Enlaces y Referencias
- =====================
+======================
 
  Repositorio Original
  [URL del repositorio o fuente]
@@ -1240,7 +1255,7 @@ Parte 6: Metadata del Libro
  ``make html`` en carpeta raíz del libro
 
  Notas Especiales
- ================
+=================
 
  Consideraciones Técnicas
  [Notas específicas del libro]
@@ -1252,7 +1267,7 @@ Parte 6: Metadata del Libro
  [Criterios aplicados en este libro específico]
 
  Referencias Cruzadas
- ====================
+=====================
 
  Libros Relacionados en Biblioteca
  [Enlaces a libros relacionados]
@@ -1261,7 +1276,7 @@ Parte 6: Metadata del Libro
  [Enlaces a procedimientos aplicados]
 
  Historial de Versiones Traducción
- ==================================
+==================================
 
  .. list-table::
  :widths: 10 15 15 60
@@ -1276,12 +1291,13 @@ Parte 6: Metadata del Libro
  - [Nombre]
  - [Descripción de cambios]
 
- ----
+
+
 
  **Última actualización:** [YYYY-MM-DD]
 
 6.2. Campos Obligatorios vs Opcionales
----------------------------------------
+======================================
 
 **Campos OBLIGATORIOS (sin estos, metadata inválida):**
 
@@ -1326,13 +1342,14 @@ Parte 6: Metadata del Libro
  [INFO] Notas Especiales
  [INFO] Referencias Cruzadas
 
-----
+
+
 
 Parte 7: Casos de Uso Completos
-================================
+===============================
 
 7.1. Caso 1: Clasificar "Modern Full-Stack Development (2nd Edition)"
-----------------------------------------------------------------------
+=====================================================================
 
 **Información del Libro:**
 
@@ -1399,7 +1416,7 @@ Parte 7: Casos de Uso Completos
  :clasificacion: INF.PRG.FST.001
 
 7.2. Caso 2: Clasificar "Machine Learning with Python"
--------------------------------------------------------
+======================================================
 
 **Información del Libro:**
 
@@ -1454,7 +1471,7 @@ Parte 7: Casos de Uso Completos
  Machine_Learning_with_Python_Johnson_2025/
 
 7.3. Caso 3: Clasificar "Software Architecture: The Hard Parts"
-----------------------------------------------------------------
+===============================================================
 
 **Información del Libro:**
 
@@ -1504,7 +1521,7 @@ Parte 7: Casos de Uso Completos
  Software_Architecture_Hard_Parts_Ford_2023/
 
 7.4. Caso 4: Clasificar "arc42 Documentation Template"
--------------------------------------------------------
+======================================================
 
 **Información del Libro:**
 
@@ -1554,7 +1571,7 @@ Parte 7: Casos de Uso Completos
  /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/
 
 7.5. Caso 5: Clasificar "Docker Deep Dive"
--------------------------------------------
+==========================================
 
 **Información del Libro:**
 
@@ -1603,13 +1620,14 @@ Parte 7: Casos de Uso Completos
  /biblioteca/informatica/devops/docker/
  Docker_Deep_Dive_Poulton_2024/
 
-----
+
+
 
 Parte 8: Mantenimiento y Evolución
-===================================
+==================================
 
 8.1. Actualización de la Taxonomía
------------------------------------
+==================================
 
 **¿Cuándo agregar nueva categoría/subcategoría/especialidad?**
 
@@ -1637,7 +1655,7 @@ Parte 8: Mantenimiento y Evolución
  6. Comunicar a equipo de traducción
 
 8.2. Reorganización de Libros
-------------------------------
+=============================
 
 **¿Qué pasa si cambiamos la clasificación de un libro?**
 
@@ -1647,7 +1665,7 @@ Parte 8: Mantenimiento y Evolución
 
  PASOS:
  1. Crear nueva ubicación:
- /informatica/inteligencia_artificial/machine_learning/
+   /informatica/inteligencia_artificial/machine_learning/
 
  2. Mover carpeta completa del libro
 
@@ -1674,7 +1692,7 @@ Parte 8: Mantenimiento y Evolución
  -> Documentar siempre el motivo del cambio
 
 8.3. Control de Versiones de la Guía
--------------------------------------
+====================================
 
 **Versionado Semántico de la Guía:**
 
@@ -1699,7 +1717,7 @@ Parte 8: Mantenimiento y Evolución
  [Versiones futuras aquí]
 
 8.4. Métricas y Reportes
--------------------------
+========================
 
 **Estadísticas a Mantener:**
 
@@ -1736,38 +1754,37 @@ Parte 8: Mantenimiento y Evolución
  Total Páginas Traducidas: XXX páginas
  Total Términos en Glosarios: XXX términos
 
-----
+
+
 
 Parte 9: Herramientas y Automatización
-=======================================
+======================================
 
 9.1. Script de Clasificación Asistida
---------------------------------------
+=====================================
 
 **Pseudocódigo:**
 
 .. code-block:: python
 
- def clasificar_libro(titulo, autor, contenido_toc):
- """
- Asiste en la clasificación de un nuevo libro
- """
- # PASO 1: Analizar título
- palabras_clave = extraer_palabras_clave(titulo)
+   def clasificar_libro(titulo, autor, contenido_toc):
+       """Asiste en la clasificación de un nuevo libro"""
+       # PASO 1: Analizar título
+       palabras_clave = extraer_palabras_clave(titulo)
 
- # PASO 2: Sugerir categoría
- categoria_sugerida = inferir_categoria(palabras_clave)
- categoria = input(f"Categoría sugerida: {categoria_sugerida}. ¿Confirmar? (S/n)")
+       # PASO 2: Sugerir categoría
+       categoria_sugerida = inferir_categoria(palabras_clave)
+       categoria = input(f"Categoría sugerida: {categoria_sugerida}. ¿Confirmar? (S/n)")
 
- # PASO 3: Sugerir subcategoría
- subcategorias_disponibles = obtener_subcategorias(categoria)
- subcategoria_sugerida = inferir_subcategoria(palabras_clave, contenido_toc)
- subcategoria = seleccionar(subcategorias_disponibles, subcategoria_sugerida)
+       # PASO 3: Sugerir subcategoría
+       subcategorias_disponibles = obtener_subcategorias(categoria)
+       subcategoria_sugerida = inferir_subcategoria(palabras_clave, contenido_toc)
+       subcategoria = seleccionar(subcategorias_disponibles, subcategoria_sugerida)
 
- # PASO 4: Sugerir especialidad
- especialidades_disponibles = obtener_especialidades(categoria, subcategoria)
- especialidad_sugerida = inferir_especialidad(palabras_clave, contenido_toc)
- especialidad = seleccionar(especialidades_disponibles, especialidad_sugerida)
+       # PASO 4: Sugerir especialidad
+       especialidades_disponibles = obtener_especialidades(categoria, subcategoria)
+       especialidad_sugerida = inferir_especialidad(palabras_clave, contenido_toc)
+       especialidad = seleccionar(especialidades_disponibles, especialidad_sugerida)
 
  # PASO 5: Asignar número
  ultimo_numero = obtener_ultimo_numero(categoria, subcategoria, especialidad)
@@ -1798,87 +1815,84 @@ Parte 9: Herramientas y Automatización
  }
 
 9.2. Script de Validación
---------------------------
+=========================
 
 **Verificar Integridad de la Biblioteca:**
 
 .. code-block:: python
 
- def validar_biblioteca():
- """
- Verifica que todos los libros cumplan las reglas
- """
- errores = []
+   def validar_biblioteca():
+       """Verifica que todos los libros cumplan las reglas"""
+       errores = []
 
- for libro in recorrer_biblioteca():
- # Verificar metadata_libro.rst existe
- if not existe(f"{libro}/metadata_libro.rst"):
- errores.append(f"{libro}: Falta metadata_libro.rst")
+       for libro in recorrer_biblioteca():
+           # Verificar metadata_libro.rst existe
+           if not existe(f"{libro}/metadata_libro.rst"):
+               errores.append(f"{libro}: Falta metadata_libro.rst")
 
- # Verificar código válido
- codigo = extraer_codigo(libro)
- if not validar_formato_codigo(codigo):
- errores.append(f"{libro}: Código inválido {codigo}")
+           # Verificar código válido
+           codigo = extraer_codigo(libro)
+           if not validar_formato_codigo(codigo):
+               errores.append(f"{libro}: Código inválido {codigo}")
 
- # Verificar consistencia ruta vs código
- ruta_esperada = generar_ruta_desde_codigo(codigo)
- if libro != ruta_esperada:
- errores.append(f"{libro}: Ruta no coincide con código")
+           # Verificar consistencia ruta vs código
+           ruta_esperada = generar_ruta_desde_codigo(codigo)
+           if libro != ruta_esperada:
+               errores.append(f"{libro}: Ruta no coincide con código")
 
- # Verificar número secuencial
- if not verificar_numero_secuencial(codigo):
- errores.append(f"{libro}: Número no secuencial")
+           # Verificar número secuencial
+           if not verificar_numero_secuencial(codigo):
+               errores.append(f"{libro}: Número no secuencial")
 
- return errores
+       return errores
 
 9.3. Generador de Catálogos
-----------------------------
+===========================
 
 **Generar Catálogo Completo:**
 
 .. code-block:: python
 
- def generar_catalogo():
- """
- Genera catálogo completo en RST
- """
- catalogo = []
+   def generar_catalogo():
+       """Genera catálogo completo en RST"""
+       catalogo = []
 
- catalogo.append("=" * 80)
- catalogo.append("Catálogo Completo de la Biblioteca ADT")
- catalogo.append("=" * 80)
- catalogo.append("")
+       catalogo.append("=" * 80)
+       catalogo.append("Catálogo Completo de la Biblioteca ADT")
+       catalogo.append("=" * 80)
+       catalogo.append("")
 
- for categoria in CATEGORIAS:
- catalogo.append(f"{categoria.nombre}")
- catalogo.append("=" * len(categoria.nombre))
- catalogo.append("")
+       for categoria in CATEGORIAS:
+           catalogo.append(f"{categoria.nombre}")
+           catalogo.append("=" * len(categoria.nombre))
+           catalogo.append("")
 
- for subcategoria in categoria.subcategorias:
- catalogo.append(f"{subcategoria.nombre}")
- catalogo.append("-" * len(subcategoria.nombre))
- catalogo.append("")
+           for subcategoria in categoria.subcategorias:
+               catalogo.append(f"{subcategoria.nombre}")
+               catalogo.append("-" * len(subcategoria.nombre))
+               catalogo.append("")
 
- for especialidad in subcategoria.especialidades:
- if especialidad.libros:
- catalogo.append(f"**{especialidad.nombre}**")
- catalogo.append("")
+               for especialidad in subcategoria.especialidades:
+                   if especialidad.libros:
+                       catalogo.append(f"**{especialidad.nombre}**")
+                       catalogo.append("")
 
- for libro in especialidad.libros:
- catalogo.append(f"- {libro.codigo}: {libro.titulo}")
- catalogo.append(f" {libro.autor} ({libro.año})")
+                       for libro in especialidad.libros:
+                           catalogo.append(f"- {libro.codigo}: {libro.titulo}")
+                           catalogo.append(f"  {libro.autor} ({libro.año})")
  catalogo.append(f" Estado: {libro.estado} ({libro.progreso}%)")
  catalogo.append("")
 
  escribir_archivo("catalogo_completo.rst", "\n".join(catalogo))
 
-----
+
+
 
 Parte 10: Casos Especiales y FAQ
-=================================
+================================
 
 10.1. Casos Especiales
------------------------
+======================
 
 **Caso 1: Libro Multidominio**
 
@@ -1931,7 +1945,7 @@ Parte 10: Casos Especiales y FAQ
  - Consultar con equipo si duda persiste
 
 10.2. Preguntas Frecuentes (FAQ)
----------------------------------
+================================
 
 **P1: ¿Puedo cambiar la clasificación después de asignarla?**
 
@@ -1968,7 +1982,7 @@ Parte 10: Casos Especiales y FAQ
 
  R: Dos opciones:
  1. Crear sub-especialidad más granular
- Ej: INF.PRG.PYT.999 -> Dividir en PYT.WEB, PYT.DAT, etc.
+   Ej: INF.PRG.PYT.999 -> Dividir en PYT.WEB, PYT.DAT, etc.
  2. Extender a 4 dígitos (requiere cambio MAJOR en guía)
 
 **P5: ¿Puedo tener un libro en dos categorías?**
@@ -2024,15 +2038,17 @@ Parte 10: Casos Especiales y FAQ
  - Seguir siempre esta guía
  - Si necesitas extensión, proponer cambio a la guía
 
-----
+
+
 
 Conclusiones y Recomendaciones
-===============================
+==============================
 
 Resumen de Puntos Clave
-------------------------
+=======================
 
 Esta Guía Metodológica de Clasificación Documental establece:
+
 
 1. **Sistema jerárquico de 4 niveles** (Categoría -> Subcategoría -> Especialidad -> Número)
 
@@ -2047,7 +2063,7 @@ Esta Guía Metodológica de Clasificación Documental establece:
 6. **Mantenimiento y evolución** del sistema
 
 Beneficios del Sistema
-----------------------
+======================
 
 .. code-block:: rst
 
@@ -2059,7 +2075,7 @@ Beneficios del Sistema
  [OK] PROFESIONALISMO: Base sólida para biblioteca técnica
 
 Próximos Pasos
---------------
+==============
 
 1. **Aplicar esta guía** a todos los libros nuevos
 
@@ -2071,13 +2087,14 @@ Próximos Pasos
 
 5. **Documentar cambios** en historial de versiones
 
-----
+
+
 
 Referencias
 ===========
 
 Estándares y Metodologías
---------------------------
+=========================
 
 - **ISO 12620-2:2022** - Data category specifications for language resources
 - **Dewey Decimal Classification** - Sistema decimal de clasificación bibliográfica
@@ -2085,7 +2102,7 @@ Estándares y Metodologías
 - **Dublin Core Metadata** - Estándar de metadata para recursos digitales
 
 Documentos Relacionados ADT
-----------------------------
+===========================
 
 - :doc:`ARQUITECTURA_TRADUCCION_IACT` - Arquitectura completa del sistema
 - :doc:`SINTESIS_METODOLOGICA_ADT` - Base metodológica del proyecto
@@ -2093,20 +2110,21 @@ Documentos Relacionados ADT
 - :doc:`REGLAS_ESTRUCTURA_PROYECTO` - Reglas operativas de estructura
 
 Archivos de la Biblioteca
---------------------------
+=========================
 
 - ``/biblioteca/_metadata_biblioteca/META_BIB_002_Guia_Organizacion_1_0_0.rst``
 - ``/biblioteca/_metadata_biblioteca/META_BIB_003_Esquema_Codificacion_1_0_0.rst``
 - ``/biblioteca/_metadata_biblioteca/catalogo_completo.rst``
 - ``/biblioteca/_metadata_biblioteca/catalogo_numeros.txt``
 
-----
+
+
 
 Apéndice A: Tabla Maestra de Códigos
-=====================================
+====================================
 
 A.1. Categorías (3 letras)
----------------------------
+==========================
 
 .. list-table::
  :header-rows: 1
@@ -2126,7 +2144,7 @@ A.1. Categorías (3 letras)
    - Ciencias Aplicadas
 
 A.2. Subcategorías Completas
------------------------------
+============================
 
 **INFORMÁTICA (INF):**
 
@@ -2219,7 +2237,7 @@ A.2. Subcategorías Completas
    - Bioinformática
 
 A.3. Especialidades Más Comunes
---------------------------------
+===============================
 
 **Programación (INF.PRG):**
 
@@ -2275,77 +2293,85 @@ A.3. Especialidades Más Comunes
  ARC -> arc42
  HEX -> Hexagonal Architecture
 
-----
+
+
 
 Apéndice B: Plantillas
-=======================
+======================
 
 B.1. Plantilla Propuesta Nueva Especialidad
---------------------------------------------
+===========================================
 
 .. code-block:: rst
 
  PROPUESTA DE NUEVA ESPECIALIDAD
- ================================
+================================
 
  Fecha: [YYYY-MM-DD]
  Propuesto por: [Nombre]
 
  Nombre de la Especialidad
- --------------------------
+==========================
  [Nombre completo]
 
  Código Propuesto (3 letras)
- ----------------------------
+============================
  [XXX]
 
- Verificación de Colisiones
- ---------------------------
+Verificación de Colisiones
+===========================
+
  ¿Existe código XXX? [NO]
  ¿Existe especialidad similar? [NO]
 
- Categoría y Subcategoría
- -------------------------
+Categoría y Subcategoría
+=========================
+
  Categoría: [INF/ING/CIE]
  Subcategoría: [XXX]
 
- Justificación
- -------------
+Justificación
+=============
+
  [¿Por qué necesitamos esta especialidad?]
  [¿Cuántos libros potenciales?]
  [¿Es tendencia sostenida?]
 
- Libros que se Clasificarían Aquí
- ----------------------------------
+Libros que se Clasificarían Aquí
+=================================
+
  1. [Libro 1]
  2. [Libro 2]
  3. [...]
 
- Especialidad Alternativa (si no se aprueba)
- --------------------------------------------
+Especialidad Alternativa (si no se aprueba)
+============================================
+
  [¿Dónde clasificaríamos estos libros si no se crea?]
 
- Decisión
- --------
+Decisión
+========
+
  [ ] Aprobado
  [ ] Rechazado
  [ ] Requiere más discusión
 
- Comentarios
- -----------
+Comentarios
+===========
+
  [Comentarios del comité]
 
 B.2. Checklist de Clasificación
---------------------------------
+================================
 
 .. code-block:: rst
 
- CHECKLIST DE CLASIFICACIÓN
- ===========================
+   CHECKLIST DE CLASIFICACIÓN
+   ===========================
 
- Libro: [Título del libro]
- Clasificador: [Nombre]
- Fecha: [YYYY-MM-DD]
+   Libro: [Título del libro]
+   Clasificador: [Nombre]
+   Fecha: [YYYY-MM-DD]
 
  [ ] PASO 1: Categoría determinada
  Categoría: [ ] INF [ ] ING [ ] CIE
@@ -2379,18 +2405,20 @@ B.2. Checklist de Clasificación
  Revisor: _______
  ¿Aprobado? [ ] Sí [ ] No
 
- [ ] Clasificación finalizada
+   [ ] Clasificación finalizada
 
- Comentarios
- -----------
- ________________________________
- ________________________________
+   Comentarios
+   ============
+   ________________________________
+   ________________________________
 
-----
+
+
 
 **FIN DE LA GUÍA**
 
-----
+
+
 
 Metadata del Documento
 ======================
@@ -2405,6 +2433,7 @@ Metadata del Documento
 :Revisores: Pendiente
 :Ubicación: ``/biblioteca/_metadata_biblioteca/``
 :Referencias:
+ 
  - ISO 12620-2:2022
  - Dewey Decimal Classification
  - Library of Congress Classification
@@ -2412,7 +2441,7 @@ Metadata del Documento
  - SINTESIS_METODOLOGICA_ADT.rst
 
 Historial de Versiones
------------------------
+======================
 
 .. list-table::
  :widths: 10 15 15 60

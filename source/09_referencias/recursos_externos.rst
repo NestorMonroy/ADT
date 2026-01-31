@@ -1,8 +1,10 @@
 .. _recursos_externos:
 
-===============================================
+
+
+
 Recursos Externos
-===============================================
+=================
 
 Enlaces a documentación oficial, tutoriales y herramientas externas útiles.
 
@@ -10,13 +12,14 @@ Enlaces a documentación oficial, tutoriales y herramientas externas útiles.
    :depth: 2
    :local:
 
-----
+
+
 
 Documentación Oficial
 =====================
 
 Sphinx
-------
+======
 
 **Sitio oficial:**
    https://www.sphinx-doc.org/
@@ -31,7 +34,7 @@ Sphinx
    - Terceros: https://github.com/yoloseem/awesome-sphinxdoc
 
 reStructuredText
-----------------
+================
 
 **Especificación:**
    https://docutils.sourceforge.io/rst.html
@@ -43,7 +46,7 @@ reStructuredText
    https://github.com/ralsina/rst-cheatsheet
 
 Pandoc
-------
+======
 
 **Sitio oficial:**
    https://pandoc.org/
@@ -55,7 +58,7 @@ Pandoc
    https://pandoc.org/demos.html
 
 Git
----
+===
 
 **Documentación:**
    https://git-scm.com/doc
@@ -66,13 +69,14 @@ Git
 **Tutoriales interactivos:**
    https://learngitbranching.js.org/
 
-----
+
+
 
 Tutoriales y Guías
 ==================
 
 Sphinx
-------
+======
 
 **Real Python - Sphinx Tutorial:**
    https://realpython.com/python-sphinx-documentation/
@@ -84,7 +88,7 @@ Sphinx
    https://sphinx-book-theme.readthedocs.io/
 
 reStructuredText
-----------------
+================
 
 **Sphinx Tutorial:**
    https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
@@ -93,7 +97,7 @@ reStructuredText
    https://docutils.sourceforge.io/docs/user/rst/quickstart.html
 
 LaTeX
------
+=====
 
 **LaTeX Wikibook:**
    https://en.wikibooks.org/wiki/LaTeX
@@ -105,7 +109,7 @@ LaTeX
    https://www.ctan.org/
 
 Markdown
---------
+========
 
 **Markdown Guide:**
    https://www.markdownguide.org/
@@ -116,13 +120,14 @@ Markdown
 **GitHub Flavored Markdown:**
    https://github.github.com/gfm/
 
-----
+
+
 
 Herramientas Online
 ===================
 
 Editores y Previsualización
-----------------------------
+===========================
 
 **RST Online Editor:**
    - LiveSphinx: https://livesphinx.herokuapp.com/
@@ -137,7 +142,7 @@ Editores y Previsualización
    - CoCalc: https://cocalc.com/
 
 Generadores
------------
+===========
 
 **Tabla de Contenidos:**
    - DocToc: https://github.com/thlorenz/doctoc
@@ -152,7 +157,7 @@ Generadores
    - Draw.io: https://app.diagrams.net/
 
 Conversores
------------
+===========
 
 **Pandoc Online:**
    https://pandoc.org/try/
@@ -164,7 +169,7 @@ Conversores
    https://markdowntohtml.com/
 
 Validadores
------------
+===========
 
 **RST Lint:**
    https://github.com/twolfson/restructuredtext-lint
@@ -175,13 +180,14 @@ Validadores
 **Regex Tester:**
    https://regex101.com/
 
-----
+
+
 
 Temas y Plantillas
 ==================
 
 Temas Sphinx
-------------
+============
 
 **Read the Docs Theme:**
    https://sphinx-rtd-theme.readthedocs.io/
@@ -199,7 +205,7 @@ Temas Sphinx
    https://bashtage.github.io/sphinx-material/
 
 Plantillas de Proyecto
------------------------
+======================
 
 **Sphinx Quickstart Templates:**
    https://github.com/readthedocs/template
@@ -210,13 +216,14 @@ Plantillas de Proyecto
 **Sphinx Starter:**
    https://github.com/sphinx-templates/sphinx-quickstart-templates
 
-----
+
+
 
 Extensiones Útiles
 ==================
 
 Sphinx Extensions
------------------
+=================
 
 **Myst Parser (Markdown):**
    https://myst-parser.readthedocs.io/
@@ -234,7 +241,7 @@ Sphinx Extensions
    https://sphinx-design.readthedocs.io/
 
 Diagramas y Visualización
---------------------------
+=========================
 
 **Sphinx-PlantUML:**
    https://github.com/sphinx-contrib/plantuml
@@ -246,7 +253,7 @@ Diagramas y Visualización
    https://www.sphinx-doc.org/en/master/usage/extensions/graphviz.html
 
 Multimedia
-----------
+==========
 
 **Sphinx-Inline-Tabs:**
    https://sphinx-inline-tabs.readthedocs.io/
@@ -257,13 +264,14 @@ Multimedia
 **Sphinx-Panels:**
    https://sphinx-panels.readthedocs.io/
 
-----
+
+
 
 Hosting y Despliegue
 ====================
 
 Servicios de Hosting
---------------------
+====================
 
 **Read the Docs:**
    - Sitio: https://readthedocs.org/
@@ -281,7 +289,7 @@ Servicios de Hosting
    - Docs: https://docs.netlify.com/
 
 Acciones CI/CD
---------------
+==============
 
 **GitHub Actions:**
    - Sphinx Build: https://github.com/marketplace/actions/sphinx-build
@@ -292,13 +300,14 @@ Acciones CI/CD
 **Travis CI:**
    - Docs: https://docs.travis-ci.com/
 
-----
+
+
 
 Comunidad y Soporte
 ===================
 
 Foros y Discusión
------------------
+=================
 
 **Stack Overflow:**
    - Sphinx: https://stackoverflow.com/questions/tagged/python-sphinx
@@ -312,7 +321,7 @@ Foros y Discusión
    https://discord.gg/sphinx-doc
 
 Listas de Correo
-----------------
+================
 
 **Sphinx Users:**
    https://groups.google.com/g/sphinx-users
@@ -321,7 +330,7 @@ Listas de Correo
    https://sourceforge.net/p/docutils/mailman/
 
 Blogs y Artículos
------------------
+=================
 
 **Real Python:**
    https://realpython.com/search?q=sphinx
@@ -332,13 +341,14 @@ Blogs y Artículos
 **Python Weekly:**
    https://www.pythonweekly.com/
 
-----
+
+
 
 Libros Recomendados
 ===================
 
 Documentación Técnica
----------------------
+=====================
 
 **"Docs for Developers"** - Jared Bhatti et al.
    Apress, 2021
@@ -350,7 +360,7 @@ Documentación Técnica
    XML Press, 2012
 
 Python y Sphinx
----------------
+===============
 
 **"Python Documentation with Sphinx"** - Online Courses
    Various platforms
@@ -359,7 +369,7 @@ Python y Sphinx
    Apress (Free online: https://git-scm.com/book)
 
 LaTeX
------
+=====
 
 **"The LaTeX Companion"** - Frank Mittelbach et al.
    Addison-Wesley, 2004
@@ -367,13 +377,14 @@ LaTeX
 **"LaTeX Beginner's Guide"** - Stefan Kottwitz
    Packt, 2011
 
-----
+
+
 
 Canales de YouTube
 ==================
 
 Tutoriales en Video
--------------------
+===================
 
 **Corey Schafer:**
    https://www.youtube.com/c/Coreyms
@@ -387,7 +398,8 @@ Tutoriales en Video
    https://www.youtube.com/c/Freecodecamp
    - Full courses en documentación
 
-----
+
+
 
 Awesome Lists
 =============
@@ -404,13 +416,14 @@ Awesome Lists
 **Awesome LaTeX:**
    https://github.com/egeerardyn/awesome-LaTeX
 
-----
+
+
 
 Herramientas de Escritura
-==========================
+=========================
 
 Editores de Texto
------------------
+=================
 
 **VS Code:**
    - Sitio: https://code.visualstudio.com/
@@ -427,7 +440,7 @@ Editores de Texto
    - rst-mode: Built-in
 
 Correctores
------------
+===========
 
 **LanguageTool:**
    https://languagetool.org/
@@ -439,7 +452,7 @@ Correctores
    https://hemingwayapp.com/
 
 Gestión de Referencias
------------------------
+======================
 
 **Zotero:**
    https://www.zotero.org/
@@ -450,7 +463,8 @@ Gestión de Referencias
 **BibTeX:**
    http://www.bibtex.org/
 
-----
+
+
 
 Accesibilidad
 =============
@@ -464,7 +478,8 @@ Accesibilidad
 **Color Contrast Checker:**
    https://webaim.org/resources/contrastchecker/
 
-----
+
+
 
 SEO y Analytics
 ===============
@@ -478,9 +493,11 @@ SEO y Analytics
 **Google Analytics:**
    https://analytics.google.com/
 
-----
+
+
 
 .. seealso::
+   
    * :doc:`cheatsheets/cheatsheet_rst` - Cheatsheet RST
    * :doc:`comandos_utiles` - Comandos útiles
    * :doc:`../07_guias_uso/tutorial_completo` - Tutorial ADT

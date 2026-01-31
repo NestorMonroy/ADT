@@ -1,8 +1,10 @@
 .. _tip-2-3:
 
-=======================================================
+
+
+
 Tip 2-3: Documenta las restricciones organizacionales
-=======================================================
+=====================================================
 
 Las restricciones organizacionales como tiempo y presupuesto son impopulares 
 (con razón) entre los equipos de desarrollo, porque limitan fuertemente la 
@@ -14,7 +16,8 @@ contratación de terceros o asuntos legales. Discute esto con tu gerencia.
 
 Ver también :ref:`tip-2-4` (restricciones técnicas).
 
-----
+
+
 
 .. seealso::
    
@@ -27,6 +30,6 @@ Ver también :ref:`tip-2-4` (restricciones técnicas).
    - :term:`Legal Concerns`
    - :term:`Management`
    
-   **Tips relacionados:**
+     **Tips relacionados:**
    
    - :ref:`tip-2-4` (restricciones de diseño y desarrollo)

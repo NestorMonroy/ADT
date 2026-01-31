@@ -1,6 +1,8 @@
 .. _bloques_tip_6:
 
-===============================================================
+
+
+
 Tip 5-6: ¡Oculta el funcionamiento interno de las cajas negras!
 ===============================================================
 
@@ -9,7 +11,8 @@ Tip 5-6: ¡Oculta el funcionamiento interno de las cajas negras!
    
    Las **cajas negras** respetan el principio de ocultamiento de información: Para usar una **caja negra**, solo necesitas conocer su **responsabilidad** y sus **interfaces** de entrada y salida.
 
-----
+
+
 
 Las **cajas negras** respetan el principio de ocultamiento de información: Para usar una **caja negra**, solo necesitas conocer su **responsabilidad** y sus **interfaces** de entrada y salida. Detalles adicionales de su funcionamiento interno (usualmente) no son requeridos.
 
@@ -22,12 +25,12 @@ Este ocultamiento proporciona una serie de ventajas:
 En casos extremos, restringes la **vista de bloques de construcción** al nivel 1 (ver tip 5-3, 'el nivel 1 es tu amigo'), la **caja blanca** del sistema general - sin detallar ninguno de los **bloques de construcción** de nivel superior.
 
 Información A Veces Requerida
-==============================
+=============================
 
 Según la "teoría de cajas negras", conocer la **responsabilidad** e **interfaz** de tal **caja negra** es suficiente. Pero en realidad, a veces se requieren propiedades adicionales de tal **bloque de construcción** - por ejemplo, propiedades de tiempo de ejecución o **despliegue** u otros tipos de cualidades.
 
 Ejemplo: Función Raíz Cuadrada
--------------------------------
+==============================
 
 Consideremos una **caja negra** simple - la función raíz cuadrada (abreviado "sqrt") tiene una **interfaz** ("API") muy simple:
 
@@ -47,14 +50,16 @@ Para una **caja negra** sqrt, las siguientes propiedades adicionales podrían se
 
 De los ejemplos ves que varias "Cualidades" podrían ser relevantes para tus **cajas negras**.
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_05` - Vista de Bloques de Construcción
    * :ref:`bloques_tip_3` - Nivel 1 es tu amigo
    * :ref:`bloques_tip_5` - Responsabilidad de cajas negras
 
-----
+
+
 
 :Tip: 5-6
 :Tema: Ocultamiento de información

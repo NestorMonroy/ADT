@@ -1,20 +1,23 @@
 .. _bloques_tip_7:
 
-===============================================================
+
+
+
 Tip 5-7: ¡Usa tablas para documentar/especificar cajas negras eficientemente!
-===============================================================
+=============================================================================
 
 .. tip::
    **Consejo de Vista de Bloques arc42**
    
    Una manera simple y eficiente de documentar o especificar **cajas negras** son las tablas, como se muestra en las siguientes secciones.
 
-----
+
+
 
 Una manera simple y eficiente de documentar o especificar **cajas negras** son las tablas, como se muestra en las siguientes secciones.
 
 Plantilla Mínima de Caja Negra
-===============================
+==============================
 
 .. list-table:: Plantilla Mínima
    :header-rows: 0
@@ -26,7 +29,7 @@ Plantilla Mínima de Caja Negra
      - <breve descripción de interfaz(ces)>
 
 Plantilla Completa de Caja Negra
-=================================
+================================
 
 .. list-table:: Plantilla Completa
    :header-rows: 0
@@ -56,14 +59,16 @@ Observaciones
 
 * Agrega requisitos cumplidos solo si **realmente** necesitas trazabilidad. Es costoso y crea un esfuerzo enorme... Piénsalo dos veces.
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_05` - Vista de Bloques de Construcción
    * :ref:`seccion_5_1` - Plantilla de caja negra
    * :ref:`bloques_tip_5` - Responsabilidad de cajas negras
 
-----
+
+
 
 :Tip: 5-7
 :Tema: Tablas para cajas negras

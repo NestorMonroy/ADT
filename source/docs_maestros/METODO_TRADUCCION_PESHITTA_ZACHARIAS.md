@@ -1680,7 +1680,7 @@ Errores:
 **Si eres diseñador de transformaciones** (ej. diseñando reglas ATL):
 
 1. **Define método por defecto claro**:
-   ```atl
+   ```text
    rule DefaultMapping {
        from s : Source!Element
        to t : Target!Element (
@@ -1698,7 +1698,7 @@ Errores:
    ```
 
 3. **Diseña tácticas para cada objetivo**:
-   ```atl
+   ```text
    -- Para optimización
    lazy rule OptimizeForPerformance { ... }
    
@@ -1716,7 +1716,7 @@ Errores:
    ```
 
 5. **Implementa validación**:
-   ```ocl
+   ```text
    context Target::Element
    inv: self.isWellFormed()
    inv: self.preservesSemantics()

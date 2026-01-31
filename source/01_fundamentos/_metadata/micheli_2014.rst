@@ -1,12 +1,13 @@
-========================================
+
 Micheli, Dalia (2014) - Referencia
-========================================
+==================================
 
 :Tipo: Metadata Bibliográfica
 :Ubicación: 01_fundamentos/_metadata/
 :Categoría: Tesis Doctoral - Translation Studies
 
-----
+
+
 
 Referencia Completa
 ===================
@@ -25,7 +26,8 @@ Referencia Completa
 
 **Idioma:** Inglés
 
-----
+
+
 
 Resumen
 =======
@@ -40,7 +42,8 @@ la traducción siríaca del libro bíblico de Zacarías desde el hebreo.
 - Identificación de objetivos de traducción
 - Catalogación de tácticas (14+)
 
-----
+
+
 
 Relevancia para ADT
 ===================
@@ -71,10 +74,11 @@ Relevancia para ADT
    - Macro (Global Translation Technique)
    - Micro (Local Translation Technique)
 
-----
+
+
 
 Documentos ADT que Citan esta Referencia
-=========================================
+========================================
 
 - :doc:`/docs_maestros/METODO_TRADUCCION_PESHITTA_ZACHARIAS`
 - :doc:`/docs_maestros/SINTESIS_METODOLOGICA_ADT`
@@ -82,14 +86,16 @@ Documentos ADT que Citan esta Referencia
 - :doc:`../_fundamentos_conceptuales/signifiant_vs_signifie`
 - :doc:`../_metodologias/metodo_por_defecto`
 
-----
+
+
 
 Citas Clave
 ===========
 
 [Pendiente: Agregar citas específicas del documento original]
 
-----
+
+
 
 **Versión:** 1.0  
 **Fecha:** 2026-01-27  

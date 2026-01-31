@@ -1,6 +1,5 @@
-========================================================
 PLAN DE CONTENIDO - Proyecto ADT
-========================================================
+================================
 
 :Fecha: 2026-01-27
 :Versión: 1.0
@@ -14,7 +13,7 @@ Resumen Ejecutivo
 =================
 
 Estado Actual
--------------
+=============
 
 .. list-table::
  :header-rows: 1
@@ -84,15 +83,15 @@ Estado Actual
 **TOTAL FALTANTE:** ~47 archivos principales + subcarpetas
 
 Archivos Faltantes por Prioridad
-=================================
+================================
 
 PRIORIDAD 1: CRÍTICA (Núcleo del Proyecto)
--------------------------------------------
+==========================================
 
 Estos documentos son fundamentales para que el proyecto sea útil.
 
 07_guias_uso/ (5 archivos)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================
 
 .. list-table::
  :header-rows: 1
@@ -114,7 +113,7 @@ Estos documentos son fundamentales para que el proyecto sea útil.
 **Razón:** Sin guías de uso, nadie puede usar el proyecto.
 
 01_fundamentos/ (5 archivos)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============================
 
 .. list-table::
  :header-rows: 1
@@ -136,7 +135,7 @@ Estos documentos son fundamentales para que el proyecto sea útil.
 **Razón:** Fundamentos necesarios para entender el proyecto.
 
 08_prompts/ (6 archivos)
-~~~~~~~~~~~~~~~~~~~~~~~~~
+========================
 
 .. list-table::
  :header-rows: 1
@@ -160,10 +159,10 @@ Estos documentos son fundamentales para que el proyecto sea útil.
 **Razón:** Los prompts son la herramienta principal de trabajo.
 
 PRIORIDAD 2: ALTA (Procedimientos y Estándares)
-------------------------------------------------
+===============================================
 
 02_procedimientos/ (6 archivos)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===============================
 
 .. list-table::
  :header-rows: 1
@@ -185,7 +184,7 @@ PRIORIDAD 2: ALTA (Procedimientos y Estándares)
    - Cómo corregir errores
 
 03_estandares/ (5 archivos)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===========================
 
 .. list-table::
  :header-rows: 1
@@ -205,7 +204,7 @@ PRIORIDAD 2: ALTA (Procedimientos y Estándares)
    - Restricciones y límites
 
 04_reglas_operativas/ (4 archivos)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==================================
 
 .. list-table::
  :header-rows: 1
@@ -223,10 +222,10 @@ PRIORIDAD 2: ALTA (Procedimientos y Estándares)
    - Matrices para tomar decisiones
 
 PRIORIDAD 3: MEDIA (Herramientas y Casos)
-------------------------------------------
+=========================================
 
 05_herramientas_medios/ (5 archivos)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================
 
 .. list-table::
  :header-rows: 1
@@ -246,7 +245,7 @@ PRIORIDAD 3: MEDIA (Herramientas y Casos)
    - Equivalencias entre formatos
 
 06_casos_practicos/ (5 archivos)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+================================
 
 .. list-table::
  :header-rows: 1
@@ -266,10 +265,10 @@ PRIORIDAD 3: MEDIA (Herramientas y Casos)
    - Ejercicios para practicar
 
 PRIORIDAD 4: BAJA (Referencias y Apéndices)
---------------------------------------------
+===========================================
 
 09_referencias/ (5 archivos)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============================
 
 .. list-table::
  :header-rows: 1
@@ -289,7 +288,7 @@ PRIORIDAD 4: BAJA (Referencias y Apéndices)
    - Hojas de referencia rápida
 
 10_apendices/ (4 archivos)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================
 
 .. list-table::
  :header-rows: 1
@@ -307,10 +306,10 @@ PRIORIDAD 4: BAJA (Referencias y Apéndices)
    - Información de licencia
 
 Plan de Implementación
-=======================
+======================
 
 Fase 1: MVP (Minimum Viable Product)
--------------------------------------
+====================================
 
 **Objetivo:** Hacer el proyecto USABLE
 
@@ -340,7 +339,7 @@ Fase 1: MVP (Minimum Viable Product)
 **Resultado:** Proyecto mínimamente usable con guía rápida y prompt principal.
 
 Fase 2: Core (Núcleo Funcional)
---------------------------------
+===============================
 
 **Objetivo:** Documentación completa de procedimientos
 
@@ -358,7 +357,7 @@ Fase 2: Core (Núcleo Funcional)
 **Resultado:** Metodología completa documentada.
 
 Fase 3: Expansión (Herramientas y Casos)
------------------------------------------
+========================================
 
 **Objetivo:** Contenido práctico y ejemplos
 
@@ -375,7 +374,7 @@ Fase 3: Expansión (Herramientas y Casos)
 **Resultado:** Guías prácticas y casos de uso completos.
 
 Fase 4: Completar (Referencias y Apéndices)
---------------------------------------------
+===========================================
 
 **Objetivo:** Documentación de referencia
 
@@ -392,7 +391,7 @@ Fase 4: Completar (Referencias y Apéndices)
 **Resultado:** Proyecto 100% completo.
 
 Fase 5: arc42 (Biblioteca Completa)
-------------------------------------
+===================================
 
 **Objetivo:** Completar traducción arc42
 
@@ -403,21 +402,23 @@ Fase 5: arc42 (Biblioteca Completa)
 **Resultado:** Biblioteca arc42 completa.
 
 Plantillas de Contenido
-========================
+=======================
 
 Plantilla para index.rst
--------------------------
+========================
 
 .. code-block:: rst
 
- =============================
+
+
+
  Título de la Sección
- =============================
+=====================
 
  Breve descripción de qué contiene esta sección y por qué es importante.
 
  Contenido
- =========
+==========
 
  .. toctree::
  :maxdepth: 2
@@ -428,38 +429,41 @@ Plantilla para index.rst
  subcarpeta/index
 
  Vista General
- =============
+==============
 
  Explicación general de los conceptos cubiertos en esta sección.
 
  .. note::
- Notas importantes sobre el uso de esta sección.
+
+    Notas importantes sobre el uso de esta sección.
 
 Plantilla para Documento Principal
------------------------------------
+==================================
 
 .. code-block:: rst
 
- =============================
+
+
+
  Título del Documento
- =============================
+=====================
 
  :Autor: Equipo ADT
  :Fecha: 2026-01-27
  :Versión: 1.0
 
  Introducción
- ============
+=============
 
  Qué problema resuelve este documento.
 
  Conceptos Principales
- =====================
+======================
 
  Explicación detallada con ejemplos.
 
  Ejemplos
- ========
+=========
 
  .. code-block:: python
 
@@ -467,59 +471,59 @@ Plantilla para Documento Principal
  ejemplo = "contenido"
 
  Referencias
- ===========
+============
 
  - :doc:`/docs_maestros/REGLAS_ESTRUCTURA_PROYECTO`
  - Enlaces externos
 
 Métricas de Progreso
-=====================
+====================
 
 .. list-table::
- :header-rows: 1
- :widths: 20 20 20 20 20
+   :header-rows: 1
+   :widths: 20 20 20 20 20
 
- * - Fase
-   - Archivos
-   - Tiempo Est.
-   - Prioridad
-   - Estado
- * - Fase 1 (MVP)
-   - 9
-   - 7-8h
-   - CRÍTICA
-   - [RUNNING] Pendiente
- * - Fase 2 (Core)
-   - 21
-   - 30-40h
-   - ALTA
-   - [RUNNING] Pendiente
- * - Fase 3 (Expansión)
-   - 15
-   - 30-40h
-   - MEDIA
-   - [RUNNING] Pendiente
- * - Fase 4 (Referencias)
-   - 11
-   - 10-15h
-   - BAJA
-   - [RUNNING] Pendiente
- * - Fase 5 (arc42)
-   - 9 secciones
-   - Variable
-   - MEDIA
-   - [RUNNING] Pendiente
- * - **TOTAL**
-   - **56+**
-   - **~100h**
-   -
-   - **0% completo**
+   * - Fase
+     - Archivos
+     - Tiempo Est.
+     - Prioridad
+     - Estado
+   * - Fase 1 (MVP)
+     - 9
+     - 7-8h
+     - CRÍTICA
+     - [RUNNING] Pendiente
+   * - Fase 2 (Core)
+     - 21
+     - 30-40h
+     - ALTA
+     - [RUNNING] Pendiente
+   * - Fase 3 (Expansión)
+     - 15
+     - 30-40h
+     - MEDIA
+     - [RUNNING] Pendiente
+   * - Fase 4 (Referencias)
+     - 11
+     - 10-15h
+     - BAJA
+     - [RUNNING] Pendiente
+   * - Fase 5 (arc42)
+     - 9 secciones
+     - Variable
+     - MEDIA
+     - [RUNNING] Pendiente
+   * - **TOTAL**
+     - **56+**
+     - **~100h**
+     - \-
+     - **0% completo**
 
 Recomendaciones
-================
+===============
 
 Orden de Ejecución
-------------------
+==================
 
 1. **EMPEZAR CON:** Fase 1 (MVP)
 
@@ -543,9 +547,10 @@ Orden de Ejecución
  - Biblioteca arc42
 
 Estrategia de Contenido
-------------------------
+=======================
 
 Para cada documento:
+
 
 1. **Empezar simple:** Crear esqueleto básico
 2. **Iterar:** Expandir con ejemplos
@@ -553,9 +558,10 @@ Para cada documento:
 4. **Pulir:** Mejorar formato y claridad
 
 Automatización
---------------
+==============
 
 Considerar crear:
+
 
 - Script para generar esqueletos de index.rst
 - Template de documento estándar
@@ -565,7 +571,7 @@ Próximos Pasos
 ==============
 
 Acción Inmediata
-----------------
+================
 
 **¿Qué hacer ahora?**
 
@@ -576,7 +582,8 @@ Acción Inmediata
 
 **Recomendación:** Empezar con Fase 1 (MVP) - solo 9 archivos críticos.
 
-----
+
+
 
 :Documento: PLAN_CONTENIDO.rst
 :Ubicación: ``source/docs_maestros/``

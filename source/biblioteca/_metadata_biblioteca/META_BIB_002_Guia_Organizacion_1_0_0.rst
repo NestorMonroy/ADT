@@ -1,6 +1,6 @@
-==================================================================================
+
 META_BIB_002: Guía de Organización Jerárquica por Libro Completo
-==================================================================================
+=================================================================
 
 :Código: META_BIB_002
 :Versión: 1.0.0
@@ -14,7 +14,8 @@ META_BIB_002: Guía de Organización Jerárquica por Libro Completo
  :depth: 3
  :local:
 
-----
+
+
 
 Principio Fundamental
 =====================
@@ -31,13 +32,14 @@ Cada libro traducido ocupa **exactamente una carpeta** que contiene:
 
 **NO** distribuir capítulos de un mismo libro en múltiples ubicaciones.
 
-----
+
+
 
 Metodología de Organización
-============================
+===========================
 
 Nivel 1: Por Categoría
------------------------
+======================
 
 **Criterio:** Ámbito general del conocimiento
 
@@ -64,7 +66,7 @@ Nivel 1: Por Categoría
  CATEGORÍA: ciencias/
 
 Nivel 2: Por Subcategoría
---------------------------
+=========================
 
 **Criterio:** Área específica de conocimiento
 
@@ -92,7 +94,7 @@ Nivel 2: Por Subcategoría
 - Nombres **singulares** o **plurales** según convenga
 
 Nivel 3: Por Especialidad
---------------------------
+=========================
 
 **Criterio:** Tecnología o framework específico
 
@@ -123,7 +125,7 @@ Nivel 3: Por Especialidad
 - Nombres **técnicos** originales (``nodejs`` no ``nodo_js``)
 
 Nivel 4: Carpeta del Libro
----------------------------
+==========================
 
 **Criterio:** Nombre del libro + autor/edición
 
@@ -170,13 +172,14 @@ Nivel 4: Carpeta del Libro
  * - "Docker: Up & Running"
    - ``Docker_Up_And_Running_Kane_2023/``
 
-----
+
+
 
 Estructura Interna del Libro
-=============================
+============================
 
 Archivos en la Raíz del Libro
-------------------------------
+=============================
 
 **Obligatorios:**
 
@@ -196,7 +199,7 @@ Archivos en la Raíz del Libro
  +-- notas_generales.rst [WARNING] Notas del equipo de traducción
 
 Organización de Capítulos
---------------------------
+=========================
 
 **Nomenclatura de Carpetas de Capítulos:**
 
@@ -242,7 +245,7 @@ Organización de Capítulos
 5. **Glosario por capítulo** para términos nuevos
 
 Material Preliminar y Final
-----------------------------
+===========================
 
 **Front Matter (Material Preliminar):**
 
@@ -276,13 +279,14 @@ Material Preliminar y Final
  +-- appendix_B_References/
  +-- appendix_C_Glossary/
 
-----
+
+
 
 Ejemplos Completos
 ==================
 
 Ejemplo 1: Libro de Full-Stack
--------------------------------
+==============================
 
 .. code-block:: text
 
@@ -325,7 +329,7 @@ Ejemplo 1: Libro de Full-Stack
 **Código de Clasificación:** ``INF.PRG.FST.001``
 
 Ejemplo 2: Libro de arc42
---------------------------
+=========================
 
 .. code-block:: text
 
@@ -357,7 +361,7 @@ Ejemplo 2: Libro de arc42
 **Código de Clasificación:** ``ING.SIS.ARC.001``
 
 Ejemplo 3: Libro de Machine Learning
--------------------------------------
+====================================
 
 .. code-block:: text
 
@@ -390,13 +394,14 @@ Ejemplo 3: Libro de Machine Learning
 
 **Código de Clasificación:** ``INF.IAR.MLF.001``
 
-----
+
+
 
 Reglas de Mantenimiento
-========================
+=======================
 
 Cuando Agregar un Libro Nuevo
-------------------------------
+=============================
 
 **Checklist:**
 
@@ -414,7 +419,7 @@ Cuando Agregar un Libro Nuevo
  [ ] 10. Actualizar estadisticas_biblioteca.rst
 
 Cuando Reorganizar un Libro
-----------------------------
+===========================
 
 **Proceso:**
 
@@ -429,7 +434,7 @@ Cuando Reorganizar un Libro
 **Evitar reorganizaciones innecesarias.**
 
 Cuando Eliminar un Libro
--------------------------
+========================
 
 **Proceso:**
 
@@ -440,13 +445,14 @@ Cuando Eliminar un Libro
 5. **Documentar razón** de eliminación
 6. **Actualizar estadísticas**
 
-----
+
+
 
 Herramientas de Soporte
-========================
+=======================
 
 Script de Creación de Estructura
----------------------------------
+================================
 
 Ver: ``clasificador_biblioteca.py`` (script funcional completo)
 
@@ -460,7 +466,7 @@ Funciones disponibles:
  actualizar_catalogos(codigo, titulo, autor)
 
 Validación Automática
-----------------------
+=====================
 
 .. code-block:: bash
 
@@ -471,7 +477,7 @@ Validación Automática
  python clasificador_biblioteca.py --validar-todo
 
 Generación de Reportes
------------------------
+======================
 
 .. code-block:: bash
 
@@ -481,23 +487,25 @@ Generación de Reportes
  # Generar estadísticas
  python clasificador_biblioteca.py --estadisticas
 
-----
+
+
 
 Referencias
 ===========
 
 Documentos Relacionados
------------------------
+=======================
 
 - :doc:`META_BIB_001_Sistema_Clasificacion_1_0_0` - Sistema de clasificación
 - :doc:`META_BIB_003_Esquema_Codificacion_1_0_0` - Tabla de códigos
 - :doc:`catalogo_completo` - Catálogo de libros
 - :doc:`estadisticas_biblioteca` - Métricas
 
-----
+
+
 
 Historial de Versiones
-=======================
+======================
 
 .. list-table::
  :widths: 10 15 15 60
@@ -512,7 +520,8 @@ Historial de Versiones
    - Sistema ADT
    - Versión inicial de guía de organización
 
-----
+
+
 
 **Documento:** META_BIB_002_Guia_Organizacion_1_0_0.rst
 **Ubicación:** ``/biblioteca/_metadata_biblioteca/``

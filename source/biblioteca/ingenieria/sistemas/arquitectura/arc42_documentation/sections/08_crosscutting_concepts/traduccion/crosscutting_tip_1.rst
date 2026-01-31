@@ -1,6 +1,7 @@
 =====================================
+
 Tip 8-1: ¡Explique los Conceptos!
-=====================================
+=================================
 
 .. meta::
    :layout: post
@@ -21,7 +22,7 @@ A menudo puede ahorrar mucho esfuerzo de documentación explicando conceptos, en
 
 Encuentre algunos temas *potenciales* para tales conceptos transversales en el siguiente diagrama:
 
-.. figure:: {{ site.imageurl}}/8-concepts/08-concepts-EN.drawio.png
-   :alt: Ejemplos de Conceptos Transversales
+.. .. figure:: {{ site.imageurl}}/8-concepts/08-concepts-EN.drawio.png
+..       :alt: Ejemplos de Conceptos Transversales
    
-   Ejemplos de Conceptos Transversales
+..       Ejemplos de Conceptos Transversales

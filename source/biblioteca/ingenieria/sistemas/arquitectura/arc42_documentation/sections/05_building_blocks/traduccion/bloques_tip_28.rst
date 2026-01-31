@@ -1,22 +1,25 @@
 .. _bloques_tip_28:
 
-===============================================================
+
+
+
 Tip 5-28: ¡Explica conceptos en lugar de bloques de construcción!
-===============================================================
+=================================================================
 
 .. tip::
    **Consejo de Vista de Bloques arc42**
    
    Este tip podría sonar extraño en contexto con **bloques de construcción** - pero a veces es fácil o útil explicar los conceptos fundamentales o transversales (otros términos son *principios*, *estilos*, *estereotipos* o *patrones*) en lugar de todos los **bloques de construcción**.
 
-----
+
+
 
 Este tip podría sonar extraño en contexto con **bloques de construcción** - pero a veces es fácil o útil explicar los conceptos fundamentales o transversales (otros términos son *principios*, *estilos*, *estereotipos* o *patrones*) en lugar de todos los **bloques de construcción**.
 
 Por ejemplo, si construyes un sistema basado en microservicios o construiste un sistema como una arquitectura de tubos-y-filtros (pipe-and-filter), la explicación de los principios fundamentales podría ser más útil que la discusión elaborada de **bloques de construcción** individuales.
 
 Cuándo Usar Este Enfoque
-=========================
+========================
 
 Este enfoque es particularmente efectivo cuando:
 
@@ -33,14 +36,14 @@ Este enfoque es particularmente efectivo cuando:
 * **Event-driven:** Documenta el patrón de eventos, no cada productor/consumidor
 
 Pero: Debes Tener una Vista de Bloques de Construcción Nivel 1
-===============================================================
+==============================================================
 
 Por favor, ten en mente el tip 5-3 (el nivel 1 es tu amigo).
 
 Incluso cuando uses conceptos para explicar la estructura general, el **nivel 1** de la **vista de bloques de construcción** sigue siendo obligatorio. Proporciona la visión general esencial del sistema.
 
 Balance Entre Conceptos y Bloques
-==================================
+=================================
 
 **Enfoque ideal:**
 
@@ -56,12 +59,13 @@ Este enfoque:
 * Enfoca en lo importante
 
 Tips Relacionados
-==================
+=================
 
 * Debes denotar qué conceptos se aplican en ciertos **bloques de construcción**, ver tip 5-10.
 * Debes nombrar conceptos importantes, y usar estos nombres en **bloques de construcción**, ver tip 8-11.
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_05` - Vista de Bloques de Construcción
@@ -69,7 +73,8 @@ Tips Relacionados
    * :ref:`bloques_tip_10` - Conceptos transversales
    * Sección 8 de arc42 - Conceptos Transversales
 
-----
+
+
 
 :Tip: 5-28
 :Tema: Conceptos vs bloques individuales

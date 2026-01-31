@@ -1,9 +1,11 @@
 .. _sec-01-introduccion-objetivos:
 
-====================================================
+
+
 1. Introducción y Objetivos (Introduction & Goals)
 
-====================================================
+
+
 
 :Sección: 01 - Introducción y Objetivos
 :Estado: [OK] 100% COMPLETADO (31 archivos)
@@ -17,12 +19,13 @@ Describe los requisitos relevantes y los **factores determinantes** que los arqu
 de software y el equipo de desarrollo deben considerar. Estos incluyen:
 
 - Objetivos de negocio subyacentes, características esenciales y requisitos funcionales
- para el sistema
+  para el sistema
 
 - **Atributos de calidad objetivo** para la arquitectura
 - Stakeholders relevantes y sus expectativas
 
-----
+
+
 
 Motivación
 ==========
@@ -33,10 +36,11 @@ mejorar el soporte de una actividad empresarial y/o mejorar la calidad.
 **Importancia:** Esta sección es a menudo la primera que leen los stakeholders,
 por lo que debe ser clara, concisa y accesible.
 
-----
+
+
 
 Subsecciones de la Plantilla arc42
-===================================
+==================================
 
 .. toctree::
  :maxdepth: 2
@@ -45,7 +49,8 @@ Subsecciones de la Plantilla arc42
  seccion_1_2_quality_goals
  seccion_1_3_stakeholders
 
-----
+
+
 
 Ejemplos Prácticos
 ==================
@@ -58,7 +63,8 @@ Ejemplos Prácticos
  requisitos_calidad_ejemplo-1
  requisitos_calidad_ejemplo-3
 
-----
+
+
 
 Tips y Consejos
 ===============
@@ -91,13 +97,14 @@ Tips y Consejos
  introduccion_tip-23
  introduccion_tip-24
 
-----
+
+
 
 Recursos Adicionales
-=====================
+====================
 
 Glosario
---------
+========
 
 .. toctree::
  :maxdepth: 1
@@ -105,14 +112,15 @@ Glosario
  glosario_seccion_01
 
 Notas de Traducción
--------------------
+===================
 
 .. toctree::
  :maxdepth: 1
 
  notas_traduccion_seccion_01
 
-----
+
+
 
 .. note::
  **Estado de traducción:**
@@ -123,7 +131,8 @@ Notas de Traducción
 
  ** SECCIÓN 01 COMPLETADA: 31/31 archivos (100%) **
 
-----
+
+
 
 .. important::
  **Terminología Arquitectónica Aplicada:**
@@ -137,7 +146,8 @@ Notas de Traducción
 
  Coherencia terminológica: **100%** en toda la sección
 
-----
+
+
 
 Referencias
 ===========
@@ -147,7 +157,8 @@ Referencias
 - Q42 Quality Model: https://quality.arc42.org
 - ISO/IEC 25010:2011 Software Quality Model
 
-----
+
+
 
 .. note::
  **Información de traducción:**

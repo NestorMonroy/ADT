@@ -1,8 +1,10 @@
 .. _introduccion-tip-6:
 
-===================================================================
+
+
+
 Consejo 1-6: ¡Usa diagramas de actividad!
-===================================================================
+=========================================
 
 .. meta::
    :layout: post
@@ -16,7 +18,8 @@ Consejo 1-6: ¡Usa diagramas de actividad!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Analistas
 
-----
+
+
 
 Recomendación
 =============
@@ -27,19 +30,21 @@ alternativas, paralelismos o secuencias.
 
 Una desventaja potencial es el costo relativamente alto de creación y mantenimiento.
 
-----
+
+
 
 Ejemplo
 =======
 
-.. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-simple-activity.png
-   :alt: Diagrama de actividad 'Crear factura'
-   :align: center
-   :width: 40%
+.. .. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-simple-activity.png
+..       :alt: Diagrama de actividad 'Crear factura'
+..       :align: center
+..       :width: 40%
 
-   Diagrama de actividad 'Crear factura'
+..       Diagrama de actividad 'Crear factura'
 
-----
+
+
 
 .. note::
    **Información de traducción:**

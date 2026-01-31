@@ -31,7 +31,7 @@ import sys
 import warnings
 from pathlib import Path
 from pygments.lexers.special import TextLexer
-from sphinx.deprecation import RemovedInSphinx90Warning
+# from sphinx.deprecation import RemovedInSphinx90Warning  # Obsoleto en Sphinx 9+
 
 
 def _normalize_inventory_path(value):
@@ -108,7 +108,7 @@ sys.path.insert(0, str(REPO_ROOT))
 warnings.filterwarnings(
     "ignore",
     message="The str interface for _JavaScript objects is deprecated.",
-    category=RemovedInSphinx90Warning,
+    category=DeprecationWarning,  # Actualizado para Sphinx 9+
 )
 
 # -- Información General del Proyecto ----------------------------------------
@@ -126,10 +126,10 @@ release = "1.0.0"
 # Add any Sphinx extension names here, as strings
 extensions = [
     # Extensiones base (navegación, links, calidad de documentación)
-    "sphinx.ext.intersphinx",       # Link to other projects' documentation
+    # "sphinx.ext.intersphinx",       # Link to other projects' documentation (DESHABILITADO: ProxyError 403 en build)
     "sphinx.ext.todo",              # Support for todo items
     "sphinx.ext.viewcode",          # Add links to highlighted source code
-    "sphinx.ext.autosectionlabel",  # Auto-generate section labels
+    # "sphinx.ext.autosectionlabel",  # Auto-generate section labels (DESHABILITADO: causaba labels duplicados)
 
     # Extensiones para documentar código Python (listas para usarse cuando aplique)
     "sphinx.ext.autodoc",           # Auto-generate documentation from docstrings
@@ -311,7 +311,7 @@ autosectionlabel_maxdepth = 3
 # sphinx.ext.todo
 todo_include_todos = True
 
-# sphinx.ext.intersphinx
+# sphinx.ext.intersphinx (DESHABILITADO: ProxyError 403 en build)
 # Variables disponibles:
 # - SPHINX_INTERSPHINX_PYTHON / SPHINX_INTERSPHINX_SPHINX (URL base)
 # - SPHINX_INTERSPHINX_PYTHON_INV / SPHINX_INTERSPHINX_SPHINX_INV (ruta local)
@@ -319,10 +319,10 @@ todo_include_todos = True
 #   - python-objects.inv o cpython/Doc/objects.inv
 #   - sphinx-objects.inv o sphinx/doc/objects.inv
 # - SPHINX_SKIP_INTERSPHINX=1 para deshabilitar el mapping
-intersphinx_mapping = resolve_intersphinx_mapping(
-    os.environ,
-    REPO_ROOT / "tools" / "_downloads",
-)
+# intersphinx_mapping = resolve_intersphinx_mapping(
+#     os.environ,
+#     REPO_ROOT / "tools" / "_downloads",
+# )
 
 # Alias de lexers para evitar warnings por lenguajes desconocidos
 pygments_lexers = {

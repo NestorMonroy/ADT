@@ -1,8 +1,10 @@
 .. _checklist_revision:
 
-===============================================
+
+
+
 Checklist de Revisión de Traducción
-===============================================
+===================================
 
 :Sección: 03_estandares/calidad
 :Base: Workflow v1.7.2 + Scripts de verificación arc42
@@ -13,7 +15,8 @@ Checklist de Revisión de Traducción
  :depth: 3
  :local:
 
-----
+
+
 
 Introducción
 ============
@@ -26,17 +29,18 @@ Este documento provee **checklists accionables** para cada fase del proceso de t
 **Propósito:**
  Asegurar que ningún paso crítico se omita durante traducción y verificación.
 
-----
+
+
 
 PASO 0: Pre-Traducción (CRÍTICO)
-=================================
+================================
 
 **Duración:** 5-10 minutos
 **Importancia:** CRÍTICA
 **Omitir este paso:** [ERROR] Causa omisiones de contenido
 
 Checklist PASO 0
-----------------
+================
 
 .. code-block:: text
 
@@ -71,8 +75,9 @@ Checklist PASO 0
  Listar TODOS los archivos a traducir:
  1. ___________________________
  2. ___________________________
+
  3. ___________________________
- ...
+===============================
 
  [ ] 5. Estimar complejidad
 
@@ -128,17 +133,18 @@ Checklist PASO 0
  Corrección: Aplicar PASO 0 correctamente
  Resultado final: 0 omisiones, 14/14 archivos [OK]
 
-----
+
+
 
 PASO 1: Durante la Traducción
-==============================
+=============================
 
 **Duración:** Variable según tamaño
 **Importancia:** CRÍTICA
 **Objetivo:** Traducir TODO sin omitir nada
 
 Checklist por Lote
-------------------
+==================
 
 **Para cada lote de archivos:**
 
@@ -203,17 +209,18 @@ Checklist por Lote
  [ ] Verificar HTML generado
  [ ] Corregir errores inmediatamente
 
-----
+
+
 
 PASO 2: Verificación Post-Traducción
-=====================================
+====================================
 
 **Duración:** 30-60 minutos
 **Importancia:** 🟡 ALTA
 **Objetivo:** Asegurar calidad antes de considerar completo
 
 Checklist de Verificación Automatizada
----------------------------------------
+======================================
 
 **Ejecutar script de verificación:**
 
@@ -302,7 +309,7 @@ Checklist de Verificación Automatizada
  [ ] ¿Todos resueltos? SÍ / NO
 
 Checklist de Completitud Específica
-------------------------------------
+===================================
 
 **Para archivo principal:**
 
@@ -312,8 +319,9 @@ Checklist de Completitud Específica
 
  [ ] Línea 1-10: _____________________
  [ ] Línea 11-20: _____________________
+
  [ ] Línea 21-30: _____________________
- ...
+ =======================================
  [ ] Última línea: _____________________
 
  Elementos especiales:
@@ -348,17 +356,18 @@ Checklist de Completitud Específica
  [ ] Lecciones aprendidas
  [ ] Referencias
 
-----
+
+
 
 PASO 3: Documentación Final
-============================
+===========================
 
 **Duración:** 15-30 minutos
 **Importancia:** 🟢 MEDIA
 **Objetivo:** Documentar el trabajo realizado
 
 Checklist de Checkpoint
-------------------------
+=======================
 
 .. code-block:: text
 
@@ -387,8 +396,9 @@ Checklist de Checkpoint
 
  Formato:
  1. archivo_1.rst (X.X KB) - Descripción
+
  2. archivo_2.rst (X.X KB) - Descripción
- ...
+========================================
 
  [ ] 4. Identificar referencias pendientes
 
@@ -404,7 +414,7 @@ Checklist de Checkpoint
  [ ] ¿Tiempo real vs estimado?
 
 Plantilla de Checkpoint
-------------------------
+=======================
 
 .. code-block:: markdown
 
@@ -415,7 +425,8 @@ Plantilla de Checkpoint
  **Workflow:** vX.Y.Z
  **Estado:** [OK] COMPLETADA 100% (N/N archivos)
 
- ---
+
+
 
  ## ARCHIVOS COMPLETADOS
 
@@ -429,17 +440,19 @@ Plantilla de Checkpoint
  ### Tips (N archivos)
 
  1. `nombre_tip_1.rst` (X.X KB) - Descripción
+
  2. `nombre_tip_2.rst` (X.X KB) - Descripción
- ...
+=============================================
 
  ### Ejemplos (N archivos)
 
  1. `nombre_ejemplo_1.rst` (X.X KB) - Descripción
- ...
+=================================================
 
  **Tamaño total:** XX KB (N archivos)
 
- ---
+
+
 
  ## VERIFICACIÓN
 
@@ -447,7 +460,8 @@ Plantilla de Checkpoint
  [OK] Compilación exitosa
  [OK] 0 omisiones detectadas
 
- ---
+
+
 
  ## MÉTRICAS
 
@@ -455,7 +469,8 @@ Plantilla de Checkpoint
  - Tiempo invertido: X horas
  - Velocidad: X archivos/hora
 
- ---
+
+
 
  ## LECCIONES APRENDIDAS
 
@@ -467,13 +482,14 @@ Plantilla de Checkpoint
  - Item 1
  - Item 2
 
-----
+
+
 
 Checklists por Tipo de Archivo
-===============================
+==============================
 
 Tips Breves (< 20 líneas originales)
--------------------------------------
+====================================
 
 .. code-block:: text
 
@@ -504,7 +520,7 @@ Tips Breves (< 20 líneas originales)
  [ ] Referencias a secciones relevantes
 
 Secciones Principales (40-100 líneas)
---------------------------------------
+=====================================
 
 .. code-block:: text
 
@@ -544,7 +560,7 @@ Secciones Principales (40-100 líneas)
  [ ] Compila exitosamente
 
 Ejemplos
---------
+========
 
 .. code-block:: text
 
@@ -573,15 +589,16 @@ Ejemplos
  [ ] Código con syntax highlighting
  [ ] Todos los elementos explicados
 
-----
+
+
 
 Checklist de Emergencia
-========================
+=======================
 
 **Si encuentras problema durante verificación:**
 
 Problema: Contenido Omitido
-----------------------------
+===========================
 
 .. code-block:: text
 
@@ -594,7 +611,7 @@ Problema: Contenido Omitido
  [ ] 7. Continuar solo si 100%
 
 Problema: Compilación Falla
-----------------------------
+===========================
 
 .. code-block:: text
 
@@ -606,7 +623,7 @@ Problema: Compilación Falla
  [ ] 6. Repetir hasta make html exitoso
 
 Problema: Warnings Excesivos
------------------------------
+============================
 
 .. code-block:: text
 
@@ -617,7 +634,8 @@ Problema: Warnings Excesivos
  [ ] 3. Documentar no-críticos
  [ ] 4. Verificar que no-críticos son esperados
 
-----
+
+
 
 Resumen de Checklists
 =====================
@@ -655,7 +673,8 @@ Resumen de Checklists
 
 **Beneficio:** 0 omisiones, calidad garantizada
 
-----
+
+
 
 .. seealso::
  * :doc:`criterios_calidad` - Criterios de evaluación

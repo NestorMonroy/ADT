@@ -1,20 +1,23 @@
 .. _risks_tip_5:
 
-===============================================================
+
+
+
 Tip 11-5: ¡Analiza los datos o estructuras de datos para problemas y riesgos!
-===============================================================
+=============================================================================
 
 :Tema: Riesgos en datos y estructuras
 :Palabras clave: risk, problem
 
-----
+
+
 
 Tanto las **estructuras de datos** *como* el **contenido de datos** pueden ser fuente de **riesgos** o problemas.
 
 Incluso la **distribución**, **replicación**, **backup** o **sincronización** de datos pueden contener **riesgos** o problemas.
 
 Riesgos en Estructuras de Datos
-================================
+===============================
 
 **1. Esquemas Mal Diseñados**
 
@@ -55,10 +58,11 @@ Riesgos en Estructuras de Datos
 
  **Solución:** Schema versioning + backward compatibility
 
-----
+
+
 
 Riesgos en Contenido de Datos
-==============================
+=============================
 
 **1. Calidad de Datos**
 
@@ -106,10 +110,11 @@ Riesgos en Contenido de Datos
 
  **Solución:** Sanitize logs, no loguear PII
 
-----
+
+
 
 Riesgos en Distribución de Datos
-=================================
+================================
 
 **1. Replicación**
 
@@ -142,10 +147,11 @@ Riesgos en Distribución de Datos
  * - Manual sync
    - Error humano, datos perdidos
 
-----
+
+
 
 Riesgos en Backup y Recovery
-=============================
+============================
 
 **Problemas Comunes:**
 
@@ -186,7 +192,8 @@ Riesgos en Backup y Recovery
  * Medir RTO/RPO real
  * Documentar runbooks
 
-----
+
+
 
 **Ejemplo de Análisis de Datos:**
 
@@ -225,7 +232,8 @@ Riesgos en Backup y Recovery
  Impacto: Desastre regional = pérdida
  Mitigación: Cross-region backup replication
 
-----
+
+
 
 **Checklist de Análisis de Datos:**
 
@@ -250,7 +258,8 @@ Riesgos en Backup y Recovery
  * - [ ] ¿Hay monitoring de lag de replicación?
    - Configurar alertas
 
-----
+
+
 
 .. seealso::
  * **Tip 11-4** - Analizar procesos para riesgos

@@ -1,13 +1,16 @@
 .. _quality_tip_8:
 
-===============================================================
+
+
+
 Tip 10-8: ¡Usa escenarios (de calidad) para análisis o evaluación de arquitectura!
-===============================================================
+==================================================================================
 
 :Tema: Evaluación de arquitectura con escenarios
 :Palabras clave: quality, quality-scenario, scenario, atam
 
-----
+
+
 
 Usa **escenarios de calidad** para analizar o evaluar sistemáticamente tu arquitectura, similar al `método ATAM <https://www.sei.cmu.edu/architecture/tools/evaluate/atam.cfm>`_.
 
@@ -33,7 +36,8 @@ Tabla de Evaluación
    - *<Texto>*
    - *<risk-2>*
 
-----
+
+
 
 **Método de Evaluación Paso a Paso:**
 
@@ -91,7 +95,8 @@ Ejemplo Completo
    - CI/CD pipeline, feature flags, blue-green deployment
    - Bajo: Requiere disciplina de equipo
 
-----
+
+
 
 **Método ATAM (Architecture Tradeoff Analysis Method)**
 
@@ -114,7 +119,8 @@ El método ATAM del SEI usa **escenarios de calidad** como mecanismo central:
 * [OK] Validación de **decisiones arquitectónicas**
 * [OK] Consenso entre **stakeholders**
 
-----
+
+
 
 **Template de Análisis Detallado:**
 
@@ -142,7 +148,8 @@ Para análisis más profundo, considera agregar estas columnas:
 * **Trade-off**: ¿Qué se sacrifica para lograr este objetivo?
 * **Sensibilidad**: ¿Qué tan sensible es a cambios en parámetros/carga?
 
-----
+
+
 
 **Resultado del Análisis:**
 
@@ -154,7 +161,8 @@ Al completar esta evaluación, deberías poder:
 4. **Justificar** decisiones arquitectónicas
 5. **Planificar** iteraciones futuras de arquitectura
 
-----
+
+
 
 .. seealso::
  * **Tip 4-2** - Enfoque de solución como tabla

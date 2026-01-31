@@ -1,6 +1,6 @@
-===============================================
+
 Fundamentos Conceptuales (Carpeta Privada)
-===============================================
+==========================================
 
 .. note::
    Esta es una carpeta **privada** (prefijo ``_``) que contiene los fundamentos
@@ -8,7 +8,8 @@ Fundamentos Conceptuales (Carpeta Privada)
    
    Para contenido público, ver los documentos en la raíz de ``01_fundamentos/``.
 
-----
+
+
 
 Propósito
 =========
@@ -19,7 +20,8 @@ Esta carpeta contiene la **base conceptual teórica** del proyecto ADT, incluyen
 - Isomorfismos metodológicos
 - Definiciones formales
 
-----
+
+
 
 Contenido
 =========
@@ -31,7 +33,8 @@ Contenido
    signifiant_vs_signifie
    segmentacion
 
-----
+
+
 
 Relación con Estándares
 =======================
@@ -42,7 +45,8 @@ Relación con Estándares
 - Establece terminología
 - Proporciona framework conceptual
 
-----
+
+
 
 **Ubicación:** ``source/01_fundamentos/_fundamentos_conceptuales/``  
 **Tipo:** Carpeta privada (base teórica)  

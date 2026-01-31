@@ -1,13 +1,16 @@
 .. _risks_tip_2:
 
-===============================================================
+
+
+
 Tip 11-2: ¡Analiza las interfaces (externas) para problemas y riesgos!
-===============================================================
+======================================================================
 
 :Tema: Riesgos en interfaces externas
 :Palabras clave: risk, problem, external-interface, interface
 
-----
+
+
 
 Las **interfaces** (a menudo **interfaces externas**) son fuentes de problemas, o al menos conllevan **riesgos** significativos, con respecto a algunos **requisitos de calidad** del sistema, es decir:
 
@@ -16,7 +19,7 @@ Las **interfaces** (a menudo **interfaces externas**) son fuentes de problemas, 
 * **Seguridad** (Security)
 
 Tipos de Riesgos en Interfaces
-===============================
+==============================
 
 **1. Riesgos de Disponibilidad**
 
@@ -61,7 +64,8 @@ Tipos de Riesgos en Interfaces
 
  Ejemplo: Interfaz vulnerable a SQL injection o XSS
 
-----
+
+
 
 **Análisis Sistemático de Interfaces:**
 
@@ -116,7 +120,8 @@ Para cada interfaz, pregunta:
    - Medio: posible XSS
    - Validación estricta + sanitización
 
-----
+
+
 
 **Estrategias de Mitigación Comunes:**
 
@@ -128,7 +133,8 @@ Para cada interfaz, pregunta:
 * [TABLE] **Monitoring & Alerting**: Detectar problemas rápido
 * [MASK] **Fallback & Degradación**: Funcionalidad reducida vs fallo total
 
-----
+
+
 
 Ver También
 ===========
@@ -137,7 +143,8 @@ Ver También
 * **Tip 3-14** - Requisitos de calidad en interfaces externas
 * **Tip 11-3** - Identificar riesgos por evaluación cualitativa
 
-----
+
+
 
 .. seealso::
  * **Sección 3.1** - Contexto de Negocio (interfaces de negocio)

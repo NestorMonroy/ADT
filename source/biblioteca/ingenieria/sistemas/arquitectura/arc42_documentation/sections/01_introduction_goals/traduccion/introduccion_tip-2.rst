@@ -1,8 +1,10 @@
 .. _introduccion-tip-2:
 
-===================================================================
+
+
+
 Consejo 1-2: ¡Limítate a las tareas y casos de uso esenciales!
-===================================================================
+==============================================================
 
 .. meta::
    :layout: post
@@ -15,7 +17,8 @@ Consejo 1-2: ¡Limítate a las tareas y casos de uso esenciales!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Analistas
 
-----
+
+
 
 Recomendación
 =============
@@ -28,7 +31,8 @@ Limítate a un nivel de abstracción que permita que incluso personas externas
 puedan obtener una vista general de las tareas principales en un corto período 
 de tiempo.
 
-----
+
+
 
 .. note::
    **Información de traducción:**

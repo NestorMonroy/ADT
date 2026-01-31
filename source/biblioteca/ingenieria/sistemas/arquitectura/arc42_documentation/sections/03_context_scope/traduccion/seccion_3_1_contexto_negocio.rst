@@ -1,8 +1,10 @@
 .. _seccion_3_1:
 
-=====================================
+
+
+
 3.1 Contexto de Negocio
-=====================================
+=======================
 
 .. note::
  **Plantilla arc42 - Traducción Arquitectónica (Paso 3.4)**
@@ -12,7 +14,8 @@
  * Communication partner -> Socio de comunicación
  * Domain interface -> Interfaz de dominio
 
-----
+
+
 
 Contenido
 =========
@@ -36,7 +39,8 @@ Alternativamente (o adicionalmente) puedes usar una tabla. El título de la tabl
 .. seealso::
  Ver ejemplos de contexto de negocio en la sección de ejemplos
 
-----
+
+
 
 Plantilla
 =========
@@ -44,19 +48,19 @@ Plantilla
 .. code-block:: text
 
  3.1 Contexto de Negocio
- =======================
+========================
 
  **<inserta diagrama o tabla>**
 
  Descripción de socios de comunicación externos:
 
- +------------------------+-------------------+-------------------+
- | Socio de Comunicación | Entradas | Salidas |
- +========================+===================+===================+
- | <nombre del socio 1> | <datos recibidos> | <datos enviados> |
- +------------------------+-------------------+-------------------+
- | <nombre del socio 2> | <datos recibidos> | <datos enviados> |
- +------------------------+-------------------+-------------------+
++------------------------+-------------------+-------------------+
+| Socio de Comunicación  | Entradas          | Salidas           |
++========================+===================+===================+
+| <nombre del socio 1>   | <datos recibidos> | <datos enviados>  |
++------------------------+-------------------+-------------------+
+| <nombre del socio 2>   | <datos recibidos> | <datos enviados>  |
++------------------------+-------------------+-------------------+
 
  **(Opcional:) Explicación de las interfaces de dominio externas**
 
@@ -65,7 +69,8 @@ Plantilla
  <Descripción detallada de la interfaz, formatos de datos,
  protocolos de comunicación específicos del dominio>
 
-----
+
+
 
 Referencias
 ===========

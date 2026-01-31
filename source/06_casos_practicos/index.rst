@@ -1,8 +1,10 @@
 .. _casos_practicos:
 
-===============================================
+
+
+
 Casos Prácticos de Traducción
-===============================================
+=============================
 
 Esta sección contiene **ejemplos reales** de traducciones, errores y soluciones del proyecto ADT.
 
@@ -12,7 +14,8 @@ Esta sección contiene **ejemplos reales** de traducciones, errores y soluciones
 **Propósito:**
  Aprender por ejemplos concretos en lugar de teoría abstracta.
 
-----
+
+
 
 Subsecciones
 ============
@@ -26,7 +29,8 @@ Subsecciones
  casos_exito/index
  ejercicios_practica/index
 
-----
+
+
 
 Tipos de Casos
 ==============
@@ -70,7 +74,8 @@ Tipos de Casos
 
  Ver: :doc:`ejercicios_practica/index` ([RUNNING] planificado)
 
-----
+
+
 
 Uso de esta Sección
 ===================
@@ -80,13 +85,13 @@ Uso de esta Sección
 .. code-block:: text
 
  1. Lee :doc:`antes_despues/caso_01_seccion_breve`
- -> Entiende proceso completo
+   -> Entiende proceso completo
 
  2. Lee :doc:`errores_comunes/error_01_omisiones`
- -> Aprende qué NO hacer
+   -> Aprende qué NO hacer
 
  3. Compara con tus propias traducciones
- -> Identifica mejoras
+   -> Identifica mejoras
 
 **Para Resolver Problemas:**
 
@@ -111,7 +116,8 @@ Uso de esta Sección
 
  Basado en 196 archivos reales
 
-----
+
+
 
 Casos Disponibles
 =================
@@ -148,10 +154,11 @@ Casos Disponibles
 - Error 02: Enriquecimiento Excesivo
 - Error 03: Terminología Inconsistente
 
-----
+
+
 
 Conexión con Otras Secciones
-=============================
+============================
 
 **Esta sección APLICA:**
 
@@ -170,10 +177,11 @@ Conexión con Otras Secciones
  v
  APLICACIÓN (Tu proyecto)
 
-----
+
+
 
 Métricas Globales de Casos
-===========================
+==========================
 
 **Basado en casos documentados:**
 
@@ -205,7 +213,8 @@ Métricas Globales de Casos
 **Conclusión:**
  Aplicar workflow correctamente -> 100% completitud garantizada
 
-----
+
+
 
 Estado de Desarrollo
 ====================
@@ -230,7 +239,8 @@ Estado de Desarrollo
    - [RUNNING] Planificado
    - Pendiente
 
-----
+
+
 
 Valor de esta Sección
 =====================
@@ -263,26 +273,27 @@ Valor de esta Sección
  - Enriquecimiento apropiado: 90%
  - Re-trabajo: 10% del tiempo
 
-----
+
+
 
 Próximos Pasos Sugeridos
-=========================
+========================
 
 **Si eres nuevo en ADT:**
 
 .. code-block:: text
 
  1. Lee :doc:`antes_despues/caso_01_seccion_breve`
- -> Entiende proceso completo
+   -> Entiende proceso completo
 
  2. Lee :doc:`errores_comunes/error_01_omisiones`
- -> Aprende prevención
+   -> Aprende prevención
 
  3. Consulta :doc:`../../04_reglas_operativas/matrices_decision/MD_002_cuando_enriquecer`
- -> Aprende decisiones
+   -> Aprende decisiones
 
  4. Practica con documento pequeño
- -> Aplica lo aprendido
+   -> Aplica lo aprendido
 
 **Si ya tienes experiencia:**
 
@@ -293,12 +304,14 @@ Próximos Pasos Sugeridos
  3. Aplica técnicas exitosas
  4. Documenta tus propios casos
 
-----
+
+
 
 .. note::
  Esta sección crece con cada proyecto. Los casos actuales son de arc42 (2026-01-28). Futuros proyectos agregarán más ejemplos.
 
 .. seealso::
+ 
  * :doc:`../02_procedimientos/workflow_general` - Proceso aplicado en casos
  * :doc:`../03_estandares/calidad/criterios_calidad` - Estándares verificados
  * :doc:`../04_reglas_operativas/matrices_decision/MD_002_cuando_enriquecer` - Decisiones tomadas

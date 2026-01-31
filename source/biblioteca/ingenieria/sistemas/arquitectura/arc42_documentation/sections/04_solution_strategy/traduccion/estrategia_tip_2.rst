@@ -1,15 +1,18 @@
 .. _estrategia_tip_2:
 
-===============================================================
+
+
+
 Tip 4-2: ¡Describe los enfoques de solución como una tabla!
-===============================================================
+===========================================================
 
 .. tip::
    **Consejo de Estrategia de Solución arc42**
    
    Describe los **enfoques de solución** como una tabla conteniendo las siguientes columnas.
 
-----
+
+
 
 Describe los **enfoques de solución** como una tabla conteniendo las siguientes columnas:
 
@@ -35,7 +38,8 @@ Describe los **enfoques de solución** como una tabla conteniendo las siguientes
      - *<Texto>*
      - *<Enlace>*
 
-----
+
+
 
 Ventajas de la Tabla
 ====================
@@ -46,13 +50,15 @@ Ventajas de la Tabla
 
 **Enlaces:** Referencias directas a detalles técnicos en otras secciones.
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_04` - Estrategia de Solución
    * :ref:`estrategia_ejemplo_2` - Ejemplo MaMa (usa tabla)
 
-----
+
+
 
 :Tip: 4-2
 :Tema: Tabla de estrategia

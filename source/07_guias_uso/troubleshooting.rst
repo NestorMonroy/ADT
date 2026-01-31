@@ -1,8 +1,10 @@
 .. _troubleshooting:
 
-===============================================
+
+
+
 Solución de Problemas (Troubleshooting)
-===============================================
+=======================================
 
 Soluciones a los problemas más comunes al usar ADT.
 
@@ -10,13 +12,14 @@ Soluciones a los problemas más comunes al usar ADT.
  :depth: 3
  :local:
 
-----
+
+
 
 Problemas de Compilación
-=========================
+========================
 
 Error: "Title underline too short"
------------------------------------
+==================================
 
 **Problema:**
 
@@ -35,17 +38,21 @@ El subrayado del título es más corto que el texto.
 
 .. code-block:: rst
 
- ================
+
+
+
  Título Muy Largo Que No Calza
- ================
+==============================
 
 **Solución:**
 
 .. code-block:: rst
 
- ===================================
+
+
+
  Título Muy Largo Que No Calza
- ===================================
+==============================
 
 **Regla:** El subrayado debe tener **exactamente** la misma longitud o más que el título.
 
@@ -60,7 +67,7 @@ El subrayado del título es más corto que el texto.
  print("=" * len(titulo))
 
 Error: "Unexpected indentation"
---------------------------------
+===============================
 
 **Problema:**
 
@@ -89,7 +96,7 @@ Error: "Unexpected indentation"
 **Regla:** Entre niveles de lista siempre incluir **línea vacía** + **2 espacios de indentación**.
 
 Error: "Unknown directive type"
---------------------------------
+===============================
 
 **Problema:**
 
@@ -114,7 +121,7 @@ Error: "Unknown directive type"
  Contenido
 
 Error: "Pygments lexer not known"
-----------------------------------
+=================================
 
 **Problema:**
 
@@ -128,11 +135,11 @@ Error: "Pygments lexer not known"
 
 .. code-block:: rst
 
- .. code-block:: text # En lugar de plantuml
+   .. code-block:: text # En lugar de plantuml
 
- @startuml
- ...
- @enduml
+   @startuml
+   ==========
+   @enduml
 
 **Solución 2 - Ignorar warning:**
 
@@ -145,7 +152,7 @@ Este warning no es crítico. El código se mostrará sin syntax highlighting.
  pip install sphinxcontrib-plantuml
 
 Error: "undefined label"
--------------------------
+========================
 
 **Problema:**
 
@@ -168,7 +175,7 @@ Error: "undefined label"
  .. _seccion_5:
 
  Sección 5
- =========
+==========
 
 **Solución 3 - Corregir nombre:**
 
@@ -177,13 +184,14 @@ Error: "undefined label"
  # Si label es "seccion_05" con cero
  :ref:`seccion_05` # No seccion_5
 
-----
+
+
 
 Problemas de Contenido
-=======================
+======================
 
 He omitido contenido, ¿cómo lo recupero?
------------------------------------------
+========================================
 
 **Síntomas:**
 
@@ -200,29 +208,29 @@ He omitido contenido, ¿cómo lo recupero?
 .. code-block:: text
 
  1. PASO 0 Retrospectivo:
- [ ] Abrir archivo original
- [ ] Leer COMPLETO (línea 1 a N)
- [ ] Crear checklist de TODO el contenido
+   [ ] Abrir archivo original
+   [ ] Leer COMPLETO (línea 1 a N)
+   [ ] Crear checklist de TODO el contenido
 
  2. Comparar contra traducción actual:
- [ ] Marcar qué está presente
- [ ] Identificar qué falta
- [ ] Listar omisiones
+   [ ] Marcar qué está presente
+   [ ] Identificar qué falta
+   [ ] Listar omisiones
 
  3. Agregar contenido faltante:
- [ ] En posición correcta del documento
- [ ] Mantener coherencia
- [ ] Aplicar mismo nivel de enriquecimiento
+   [ ] En posición correcta del documento
+   [ ] Mantener coherencia
+   [ ] Aplicar mismo nivel de enriquecimiento
 
  4. Verificar completitud:
- [ ] Checklist 100% completo
- [ ] Recompilar
- [ ] Revisar HTML
+   [ ] Checklist 100% completo
+   [ ] Recompilar
+   [ ] Revisar HTML
 
 **Ver caso completo:** :doc:`../06_casos_practicos/errores_comunes/error_01_omisiones`
 
 Mi traducción es muy corta/larga
----------------------------------
+================================
 
 **Problema:** Enriquecimiento fuera de rango
 
@@ -270,7 +278,7 @@ Mi traducción es muy corta/larga
 **Ver completo:** :doc:`../04_reglas_operativas/matrices_decision/MD_002_cuando_enriquecer`
 
 Terminología inconsistente
----------------------------
+==========================
 
 **Problema:** Mismo término traducido de formas diferentes
 
@@ -289,28 +297,29 @@ Terminología inconsistente
 .. code-block:: text
 
  1. Crear glosario del proyecto:
- | Término | Decisión | Razón |
- |---------|----------|-------|
- | Stakeholder | Stakeholder | Rol establecido |
+   | Término | Decisión | Razón |
+   |---------|----------|-------|
+   | Stakeholder | Stakeholder | Rol establecido |
 
  2. Buscar todas las instancias:
- grep -r "Stakeholder\|Parte interesada" *.rst
+   grep -r "Stakeholder\|Parte interesada" *.rst
 
  3. Unificar todas a decisión del glosario:
- sed -i 's/Parte interesada/Stakeholder/g' *.rst
+   sed -i 's/Parte interesada/Stakeholder/g' *.rst
 
  4. Verificar consistencia:
- grep -r "Stakeholder" *.rst | wc -l
+   grep -r "Stakeholder" *.rst | wc -l
 
 **Prevención:** Usar MD-004 desde el inicio
 
-----
+
+
 
 Problemas de Formato
 ====================
 
 Tablas no se ven correctamente
--------------------------------
+==============================
 
 **Problema:** Tabla mal formada o alineación incorrecta
 
@@ -335,7 +344,7 @@ Tablas no se ven correctamente
 - Menos errores de formato
 
 Código no tiene syntax highlighting
-------------------------------------
+===================================
 
 **Problema:** Bloque de código sin colores
 
@@ -367,7 +376,7 @@ Código no tiene syntax highlighting
  yaml, rst, latex, html, css, cpp, c, rust, go
 
 Imágenes no se muestran
-------------------------
+=======================
 
 **Problema:** Imagen no aparece en HTML
 
@@ -400,38 +409,39 @@ Imágenes no se muestran
  # [OK] Directiva image
  .. image:: imagen.png
 
-----
+
+
 
 Problemas de Workflow
 =====================
 
 ¿Por dónde empiezo un proyecto grande?
----------------------------------------
+======================================
 
 **Solución - Proceso sistemático:**
 
 .. code-block:: text
 
  Fase 1: Análisis (1 día)
- ========================
+=========================
 
  1. PASO 0 Global:
- [ ] Listar TODOS los archivos
- [ ] Contar total de páginas/líneas
- [ ] Identificar archivos complejos
+   [ ] Listar TODOS los archivos
+   [ ] Contar total de páginas/líneas
+   [ ] Identificar archivos complejos
 
  2. Planificación:
- [ ] Dividir en lotes de 5-10 archivos
- [ ] Estimar tiempo por lote
- [ ] Crear calendario
+   [ ] Dividir en lotes de 5-10 archivos
+   [ ] Estimar tiempo por lote
+   [ ] Crear calendario
 
  3. Preparación:
- [ ] Configurar proyecto Sphinx
- [ ] Crear glosario inicial
- [ ] Preparar herramientas
+   [ ] Configurar proyecto Sphinx
+   [ ] Crear glosario inicial
+   [ ] Preparar herramientas
 
  Fase 2: Ejecución (variable)
- =============================
+=============================
 
  Por cada lote:
  [ ] PASO 0 del lote
@@ -441,7 +451,7 @@ Problemas de Workflow
  [ ] Commit a Git
 
  Fase 3: Integración (1-2 días)
- ===============================
+===============================
 
  [ ] Compilación global
  [ ] Verificar referencias cruzadas
@@ -449,7 +459,7 @@ Problemas de Workflow
  [ ] QA completo
 
 Tardé mucho en un archivo, ¿es normal?
----------------------------------------
+======================================
 
 **Respuesta:** Depende del tipo
 
@@ -494,7 +504,7 @@ Tardé mucho en un archivo, ¿es normal?
  [OK] Solución: Seguir proceso sistemáticamente
 
 Mi equipo tiene velocidades diferentes
----------------------------------------
+======================================
 
 **Normal y esperado**
 
@@ -526,13 +536,14 @@ Mi equipo tiene velocidades diferentes
  -> Ejemplos directos
  -> Velocidad esperada: 2-3 arch/hora
 
-----
+
+
 
 Problemas de Herramientas
-==========================
+=========================
 
 Pandoc genera salida incorrecta
---------------------------------
+===============================
 
 **Problema:** Conversión LaTeX->RST con errores
 
@@ -552,7 +563,7 @@ Pandoc genera salida incorrecta
 **Regla de oro:** Pandoc = 70% del trabajo, 30% manual
 
 Sphinx no encuentra archivos
------------------------------
+============================
 
 **Problema:**
 
@@ -574,7 +585,7 @@ Sphinx no encuentra archivos
  archivo_huérfano
 
 Git merge conflicts en RST
----------------------------
+==========================
 
 **Problema:** Conflictos al mergear ramas
 
@@ -603,13 +614,14 @@ Git merge conflicts en RST
  git add archivo.rst
  git commit -m "Resolve merge conflict"
 
-----
+
+
 
 Problemas de Calidad
 ====================
 
 ¿Cómo sé si mi calidad es suficiente?
---------------------------------------
+=====================================
 
 **Evaluar contra criterios:**
 
@@ -618,24 +630,24 @@ Problemas de Calidad
  Checklist de calidad:
 
  1. Completitud:
- [ ] 100% contenido original presente
- Score: ____%
+   [ ] 100% contenido original presente
+   Score: ____%
 
  2. Precisión:
- [ ] Terminología correcta y consistente
- Score: ____%
+   [ ] Terminología correcta y consistente
+   Score: ____%
 
  3. Enriquecimiento:
- [ ] En rango apropiado según MD-002
- Score: ____%
+   [ ] En rango apropiado según MD-002
+   Score: ____%
 
  4. Compilación:
- [ ] make html exitoso (0 errores críticos)
- Score: ____%
+   [ ] make html exitoso (0 errores críticos)
+   Score: ____%
 
  5. Verificación:
- [ ] Checklist completo aplicado
- Score: ____%
+   [ ] Checklist completo aplicado
+   Score: ____%
 
  TOTAL: Promedio de los 5 criterios
 
@@ -644,7 +656,7 @@ Problemas de Calidad
  [ERROR] < 85% = No aprobar, re-hacer
 
 La revisión indica muchos problemas
-------------------------------------
+===================================
 
 **Normal en primeras traducciones**
 
@@ -675,13 +687,14 @@ La revisión indica muchos problemas
  Archivos 6-15: Errores moderados (mejora)
  Archivos 16+: Pocos errores (dominio)
 
-----
+
+
 
 Solución Rápida (Quick Fix)
-============================
+===========================
 
 Tabla de Referencia
--------------------
+===================
 
 .. list-table::
  :header-rows: 1
@@ -711,7 +724,7 @@ Tabla de Referencia
    - Aplicar PASO 0 completo retrospectivamente
 
 Comandos Útiles
----------------
+===============
 
 .. code-block:: bash
 
@@ -733,13 +746,14 @@ Comandos Útiles
  # Ver warnings específicos
  make html 2>&1 | grep "WARNING"
 
-----
+
+
 
 Cuando Todo Falla
 =================
 
 Reiniciar Proyecto Limpio
---------------------------
+=========================
 
 **Último recurso:**
 
@@ -762,7 +776,7 @@ Reiniciar Proyecto Limpio
  diff -r proyecto proyecto_backup
 
 Pedir Ayuda
------------
+===========
 
 **Información a proveer:**
 
@@ -782,9 +796,11 @@ Pedir Ayuda
  [ERROR] Screenshots de texto (copiar texto)
  [ERROR] Proyecto completo (solo archivo problemático)
 
-----
+
+
 
 .. seealso::
+ 
  * :doc:`faq` - Preguntas frecuentes
  * :doc:`../03_estandares/calidad/checklist_revision` - Checklists de verificación
  * :doc:`../06_casos_practicos/errores_comunes/index` - Errores comunes documentados

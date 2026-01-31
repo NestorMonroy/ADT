@@ -1,13 +1,16 @@
 .. _risks_tip_4:
 
-===============================================================
+
+
+
 Tip 11-4: ¡Analiza los _procesos_ para problemas y riesgos!
-===============================================================
+===========================================================
 
 :Tema: Riesgos en procesos
 :Palabras clave: risk, problem
 
-----
+
+
 
 Algunos problemas y **riesgos** se originan de *procesos* dentro y alrededor del sistema, es decir:
 
@@ -41,10 +44,11 @@ Procesos de Requisitos
 * [OK] Revisión y aprobación de cambios
 * [OK] Análisis de stakeholders temprano
 
-----
+
+
 
 Procesos de Desarrollo
-=======================
+======================
 
 Incluyen **implementación**, **pruebas**, **versionado**, **configuración**.
 
@@ -70,10 +74,11 @@ Incluyen **implementación**, **pruebas**, **versionado**, **configuración**.
    - Config hardcodeada
    - Externalize configuration
 
-----
+
+
 
 Procesos de Build, Release y Deployment
-========================================
+=======================================
 
 **Pueden causar problemas serios para los sistemas.**
 
@@ -112,10 +117,11 @@ Procesos de Build, Release y Deployment
  Manual Approval -> Deploy Production -> Health Check ->
  Rollback if needed
 
-----
+
+
 
 Procesos de Test y Quality Assurance
-=====================================
+====================================
 
 **Riesgos:**
 
@@ -142,10 +148,11 @@ Procesos de Test y Quality Assurance
 * [OK] **Shift-left testing**: Testing temprano en el ciclo
 * [OK] **Test coverage mínimo**: Por ejemplo, 80%
 
-----
+
+
 
 Procesos de Gestión
-====================
+===================
 
 Los procesos de **gestión** y decisiones relacionadas pueden no estar alineados con los requisitos del sistema y/o **objetivos de calidad**.
 
@@ -171,7 +178,8 @@ Los procesos de **gestión** y decisiones relacionadas pueden no estar alineados
    - Código se degrada
    - Reservar 20% para tech debt
 
-----
+
+
 
 **Checklist de Análisis de Procesos:**
 
@@ -201,7 +209,8 @@ Para cada proceso crítico, pregunta:
 
  Si no -> ¿Qué compromiso está haciendo?
 
-----
+
+
 
 **Ejemplo de Riesgo de Proceso:**
 
@@ -228,7 +237,8 @@ Para cada proceso crítico, pregunta:
  3. Implementar blue-green deployment (3 semanas)
  4. Practicar rollback en staging (1 semana)
 
-----
+
+
 
 .. seealso::
  * **Tip 11-1** - Buscar riesgos con stakeholders

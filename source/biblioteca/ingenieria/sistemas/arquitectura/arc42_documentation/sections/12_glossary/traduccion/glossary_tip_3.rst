@@ -1,13 +1,16 @@
 .. _glossary_tip_3:
 
-===============================================================
+
+
+
 Tip 12-3: ¡Enriquece el glosario con un modelo (gráfico)!
-===============================================================
+=========================================================
 
 :Tema: Modelo gráfico de glosario
 :Palabras clave: glossary
 
-----
+
+
 
 Podrías explicar las **relaciones** de términos importantes en un diagrama, y usar ese diagrama como base para explicación o definición textual.
 
@@ -20,10 +23,11 @@ Encuentras un ejemplo a continuación (tomado del proyecto open-source "HtmlSani
 
 (En el ejemplo omitimos la tabla con definiciones apropiadas - estamos bastante seguros de que puedes imaginar cómo debería verse...)
 
-----
+
+
 
 Ventajas del Modelo Gráfico
-============================
+===========================
 
 **Por qué Agregar Diagramas:**
 
@@ -44,7 +48,8 @@ Ventajas del Modelo Gráfico
  * - **Complementa Tabla**
    - Tabla = definiciones, Diagrama = contexto y relaciones
 
-----
+
+
 
 **Tipos de Diagramas para Glosario:**
 
@@ -114,7 +119,8 @@ Ventajas del Modelo Gráfico
  | |
  +----------------------------------------+
 
-----
+
+
 
 **Ejemplo Completo: Sistema de e-Commerce**
 
@@ -186,7 +192,8 @@ Ventajas del Modelo Gráfico
  * - **Fulfillment Center**
    - Almacén físico donde se almacenan Productos y desde donde se envían Pedidos.
 
-----
+
+
 
 **Cómo Crear un Glosario Gráfico:**
 
@@ -224,7 +231,8 @@ Herramientas recomendadas:
 * [OK] Cada término en tabla puede estar en diagrama (opcional)
 * [OK] Definiciones consistentes
 
-----
+
+
 
 **Ejemplo con PlantUML:**
 
@@ -259,7 +267,8 @@ Herramientas recomendadas:
 
  @enduml
 
-----
+
+
 
 **Cuándo Usar Glosario Gráfico:**
 
@@ -280,7 +289,8 @@ Herramientas recomendadas:
  * - Dominio muy técnico
    - [WARNING] **CUIDADO** - Puede intimidar a no-técnicos
 
-----
+
+
 
 **Mantenimiento del Glosario Gráfico:**
 
@@ -296,7 +306,8 @@ Herramientas recomendadas:
  * [LINK] Automatizar generación desde modelo de datos si es posible
  * [OK] Incluir en Definition of Done
 
-----
+
+
 
 .. seealso::
  * **Tip 12-1** - Tomarse el glosario en serio

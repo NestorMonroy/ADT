@@ -1,20 +1,23 @@
 .. _glossary_tip_1:
 
-===============================================================
+
+
+
 Tip 12-1: ¡Tómate el glosario en serio!
-===============================================================
+=======================================
 
 :Tema: Importancia del glosario
 :Palabras clave: glossary, essential
 
-----
+
+
 
 Debes asegurar que todas las personas participantes tengan un entendimiento *común* de la terminología importante de **negocio** (y técnica) que usan en el contexto del sistema.
 
 El **glosario** es una manifestación de la regla general de *"mejor explícito que implícito"*.
 
 Importancia del Glosario
-=========================
+========================
 
 **Por qué es Crítico:**
 
@@ -56,7 +59,8 @@ Importancia del Glosario
  - Administrador: Empleado con acceso al panel admin
  - Soporte: Empleado que asiste a clientes
 
-----
+
+
 
 **Ejemplos de Problemas por Falta de Glosario:**
 
@@ -92,8 +96,8 @@ Importancia del Glosario
 
  Solución en Glosario:
  - Pedido (término oficial)
- Sinónimos: Orden, Solicitud
- Definición: Conjunto de productos que un cliente...
+   Sinónimos: Orden, Solicitud
+   Definición: Conjunto de productos que un cliente...
 
 **Caso 3: Homónimos**
 
@@ -111,7 +115,8 @@ Importancia del Glosario
  - Cliente (negocio): Empresa u organización compradora
  - API Client: Aplicación que consume endpoints
 
-----
+
+
 
 **Cómo Tomarse el Glosario en Serio:**
 
@@ -139,7 +144,8 @@ Importancia del Glosario
  * [OK] Obtener aprobación de negocio
  * [OK] Consenso entre equipos técnicos
 
-----
+
+
 
 **Métricas de Éxito:**
 
@@ -163,7 +169,8 @@ Importancia del Glosario
    - Reducción 40%
    - Menos "¿qué significa X?"
 
-----
+
+
 
 .. seealso::
  * **Tip 12-2** - Documentar glosario como tabla

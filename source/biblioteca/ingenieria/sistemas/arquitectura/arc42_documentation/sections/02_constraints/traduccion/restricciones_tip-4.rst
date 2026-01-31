@@ -1,8 +1,10 @@
 .. _tip-2-4:
 
-================================================================
+
+
+
 Tip 2-4: Documenta las restricciones de diseño y desarrollo
-================================================================
+===========================================================
 
 Además de las restricciones organizacionales (ver :ref:`tip-2-3`), 
 restricciones técnicas probablemente también apliquen al diseño y 
@@ -15,7 +17,8 @@ ajustarse a ellas a tiempo.
 
 Ver también :ref:`tip-2-3` (restricciones organizacionales).
 
-----
+
+
 
 .. seealso::
    
@@ -28,7 +31,7 @@ Ver también :ref:`tip-2-3` (restricciones organizacionales).
    - :term:`Reference Architecture`
    - :term:`Development Team`
    
-   **Tips relacionados:**
+     **Tips relacionados:**
    
    - :ref:`tip-2-3` (restricciones organizacionales)
 

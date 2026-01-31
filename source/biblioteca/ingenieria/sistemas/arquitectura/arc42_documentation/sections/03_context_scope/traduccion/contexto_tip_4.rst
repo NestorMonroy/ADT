@@ -1,18 +1,21 @@
 .. _contexto_tip_4:
 
-===============================================================
+
+
+
 Tip 3-4: ¡Indica explícitamente los riesgos en el contexto!
-===============================================================
+===========================================================
 
 .. tip::
    **Consejo de Contexto arc42**
    
    Algunos ejemplos de riesgos que debes señalar claramente en el contexto.
 
-----
+
+
 
 Tipos de Riesgos a Señalar
-===========================
+==========================
 
 * **Riesgo de disponibilidad:** si sistemas externos influyen en la disponibilidad de tu sistema.
 * **Riesgo de costo:** si usar un sistema externo es costoso, llamadas individuales u otros tipos de uso cuestan dinero. Ejemplos son verificaciones de tarjetas de crédito o servicios de pago/reserva.
@@ -26,15 +29,15 @@ Ejemplo
 
 Ver el siguiente ejemplo, donde un riesgo se marca explícitamente con una etiqueta roja:
 
-.. figure:: ../figuras/03-context-with-risk.png
-   :alt: Contexto HTML Sanity Checker con riesgo marcado
-   :align: center
-   :width: 80%
+.. .. figure:: ../figuras/03-context-with-risk.png
+..       :alt: Contexto HTML Sanity Checker con riesgo marcado
+..       :align: center
+..       :width: 80%
    
-   Contexto con riesgo marcado: "verifica sitios web y recursos externos"
+..       Contexto con riesgo marcado: "verifica sitios web y recursos externos"
 
 Opciones para Documentar Riesgos
-=================================
+================================
 
 Puedes:
 
@@ -42,13 +45,15 @@ Puedes:
 * Usar color de texto en la tabla que explica el diagrama, o
 * Crear una lista explícita de riesgos para riesgos en **interfaces externas** o **sistemas vecinos**
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_03` - Contexto y Alcance
    * :ref:`contexto_tip_1` - Demarcación del sistema
 
-----
+
+
 
 :Tip: 3-4
 :Tema: Riesgos en el contexto

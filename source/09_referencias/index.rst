@@ -1,8 +1,10 @@
 .. _referencias:
 
-===============================================
+
+
+
 Referencias y Recursos
-===============================================
+======================
 
 Documentación de referencia, recursos externos y material complementario.
 
@@ -14,13 +16,13 @@ Documentación de referencia, recursos externos y material complementario.
 
 
 
-----
+
 
 Contenido Disponible
 ====================
 
 Cheatsheets
------------
+===========
 
 **[OK] Cheatsheet RST**
 
@@ -39,7 +41,7 @@ Ver: :doc:`cheatsheets/cheatsheet_rst`
 - Plantillas útiles
 
 Comandos Útiles
----------------
+===============
 
 **[OK] Comandos de Terminal**
 
@@ -57,7 +59,7 @@ Ver: :doc:`comandos_utiles`
 - Automatización
 
 Recursos Externos
------------------
+=================
 
 **[OK] Enlaces y Documentación**
 
@@ -74,7 +76,8 @@ Ver: :doc:`recursos_externos`
 - Hosting y despliegue
 - Comunidad y soporte
 
-----
+
+
 
 Contenido Planeado
 ==================
@@ -88,26 +91,27 @@ Contenido Planeado
  [RUNNING] Patrones de documentación
  [RUNNING] Mejores prácticas de escritura técnica
 
-----
+
+
 
 Uso de las Referencias
-=======================
+======================
 
 Durante el Trabajo
-------------------
+==================
 
 **Mantén abiertas:**
 
 .. code-block:: text
 
  1. cheatsheet_rst.html
- -> Sintaxis RST rápida
+   -> Sintaxis RST rápida
 
  2. comandos_utiles.html
- -> Comandos frecuentes
+   -> Comandos frecuentes
 
  3. FAQ (Sección 07)
- -> Dudas comunes
+   -> Dudas comunes
 
 **Para consultas específicas:**
 
@@ -118,7 +122,7 @@ Durante el Trabajo
  ¿Tutorial externo? -> recursos_externos
 
 Durante el Aprendizaje
------------------------
+======================
 
 **Secuencia recomendada:**
 
@@ -129,7 +133,8 @@ Durante el Aprendizaje
  3. Recursos externos (para profundizar)
  4. Práctica con proyectos reales
 
-----
+
+
 
 Subsecciones
 ============
@@ -144,10 +149,10 @@ Subsecciones
 
 
 
-----
+
 
 Relación con Otras Secciones
-=============================
+============================
 
 **Referencias COMPLEMENTA:**
 
@@ -170,7 +175,8 @@ Relación con Otras Secciones
  v
  RESOLVER Y CONTINUAR
 
-----
+
+
 
 Estado de Desarrollo
 ====================
@@ -198,7 +204,7 @@ Estado de Desarrollo
 
 
 
-----
+
 
 Contribuir Referencias
 ======================
@@ -223,9 +229,11 @@ Si encuentras recursos útiles:
  [OK] Recursos gratuitos o con versión free
  [OK] Enlaces estables (no temporales)
 
-----
+
+
 
 .. seealso::
+ 
  
  * :doc:`../07_guias_uso/faq` - Preguntas frecuentes
  * :doc:`../07_guias_uso/troubleshooting` - Solución de problemas

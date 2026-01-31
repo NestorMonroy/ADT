@@ -1,8 +1,10 @@
 .. _introduccion-tip-23:
 
-===================================================================
+
+
+
 Consejo 1-23: ¡Clasifica por interés e influencia!
-===================================================================
+==================================================
 
 .. meta::
    :layout: post
@@ -16,7 +18,8 @@ Consejo 1-23: ¡Clasifica por interés e influencia!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Gestores de proyecto
 
-----
+
+
 
 Recomendación
 =============
@@ -31,14 +34,15 @@ Tal clasificación se puede hacer de manera muy informal reuniendo al equipo
 alrededor de un rotafolio y colocando el resultado en la documentación según 
 sea necesario.
 
-.. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-stakeholder-prio-EN.png
-   :alt: Diagrama de interés vs influencia
-   :align: center
-   :width: 70%
+.. .. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-stakeholder-prio-EN.png
+..       :alt: Diagrama de interés vs influencia
+..       :align: center
+..       :width: 70%
 
-   Clasificación de stakeholders por interés e influencia
+..       Clasificación de stakeholders por interés e influencia
 
-----
+
+
 
 Categorías
 ==========
@@ -60,7 +64,8 @@ Categorías
    Aquí podrías minimizar tu esfuerzo y solo proporcionar la información que estos 
    stakeholders consumirían cuando sea necesario.
 
-----
+
+
 
 Nota Importante
 ===============
@@ -73,7 +78,8 @@ Idealmente, tienes una tabla de stakeholders más tal clasificación.
    tanto conducir a cierta frustración entre tus stakeholders. En caso de duda, 
    mantenla privada.
 
-----
+
+
 
 .. note::
    **Información de traducción:**

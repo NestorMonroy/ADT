@@ -1,22 +1,27 @@
 .. _quality_ejemplo_tpu_1:
 
-===============================================================
+
+
+
 Ejemplo de Escenarios de Calidad: TrafficPursuitUnit
-===============================================================
+====================================================
 
 :Sistema: TrafficPursuitUnit (TPU)
 :Categoría: Sistema de persecución de tráfico policial
 :Palabras clave: quality, example
 
-----
+
+
 
 Este ejemplo muestra **requisitos de calidad** completos para TrafficPursuitUnit (TPU), incluyendo un **quality tree** detallado y **escenarios de calidad** específicos.
 
-----
+
+
 
 10. Requisitos de Calidad
 
-==========================
+
+
 
 10.1 Quality Tree
 =================
@@ -25,40 +30,38 @@ Este ejemplo muestra **requisitos de calidad** completos para TrafficPursuitUnit
  Los números (1), (2), (3) en la siguiente tabla repiten los **requisitos de calidad** de nivel superior del capítulo 1.2.
 
 Quality Tree Completo
----------------------
+=====================
 
 .. list-table:: Quality Tree - TrafficPursuitUnit
- :header-rows: 1
- :widths: 20 20 35 10
+   :header-rows: 1
+   :widths: 20 20 35 10
 
- * - **Categoría de Calidad**
-   - **Calidad**
-   - **Descripción**
-   - **Escenario**
- * - **Usability (Usabilidad)**
-   - Ease of Use (3)
-   - Facilidad de uso por el policía, especialmente en el caso de uso de perseguir otro coche
-   -
- * -
-   - Ease of Learning
-   - Las funciones estándar deben ser tan fáciles e intuitivas de usar como sea posible sin necesidad de instrucción previa prolongada
-   - SC1
- * - **Performance (Rendimiento)**
-   - Accuracy (1)
-   - Las mediciones y cálculos deben ser correctos y precisos dentro del rango de desviación especificado
-   -
- * -
-   - Comprehensiveness
-   - Los algoritmos usados deben ser tan legalmente herméticos como sea posible y comprensibles
-   -
+   * - **Categoría de Calidad**
+     - **Calidad**
+     - **Descripción**
+     - **Escenario**
+   * - **Usability (Usabilidad)**
+     - Ease of Use (3)
+     - Facilidad de uso por el policía, especialmente en el caso de uso de perseguir otro coche
+     - \-
+   * - \-
+     - Ease of Learning
+     - Las funciones estándar deben ser tan fáciles e intuitivas de usar como sea posible sin necesidad de instrucción previa prolongada
+     - SC1
+   * - **Performance (Rendimiento)**
+     - Accuracy (1)
+     - Las mediciones y cálculos deben ser correctos y precisos dentro del rango de desviación especificado
+     - \-
+   * - \-
+     - Comprehensiveness
+     - Los algoritmos usados deben ser tan legalmente herméticos como sea posible y comprensibles
+     - \-
  * -
    - Precision & Accuracy
    - Si es posible, las inserciones de video deben hacerse con la granularidad de un frame de video
-   -
  * -
    - Robustness (2)
    - El sistema debe trabajar de manera confiable bajo todas las condiciones de entorno y operación especificadas
-   -
  * - **Operational & Environmental**
    - Temperature Range
    - El rango de temperatura en el cual se asegura el funcionamiento correcto del dispositivo debe estar entre -25 grados y +85 grados
@@ -66,11 +69,9 @@ Quality Tree Completo
  * - **Maintainability & Support**
    - Maintenance & Repair
    - Debe ser posible reemplazar componentes fuera de la caja de medición sin afectar la medición correcta dentro de la caja de medición
-   -
  * - **Security (Seguridad)**
    - Integrity
    - La verificabilidad de la autenticidad de los archivos de video debe estar asegurada con un código de verificación
-   -
  * - **Cultural and Regional**
    - Multilanguage
    - Los textos de la interfaz de usuario deben poder convertirse mediante un archivo de traducción a diferentes idiomas con conjunto de caracteres ASCII
@@ -78,20 +79,19 @@ Quality Tree Completo
  * -
    - Local Time Adaptability
    - La diferencia de tiempo con Greenwich debe ser ajustable con una granularidad de 1 minuto
-   -
  * -
    - Local Legal Rules Adaptability
    - El procedimiento de medición debe ser adaptable a la legislación regional
-   -
  * - **Legal (Legal)**
    - Legal Compliance
    - Implementación y aplicación correcta de todos los requisitos legales en la evaluación para los diferentes tipos de persecuciones
    - SC2
 
-----
+
+
 
 10.2 Escenarios de Calidad
-===========================
+==========================
 
 .. list-table:: Escenarios de Calidad Detallados
  :header-rows: 1
@@ -108,10 +108,11 @@ Quality Tree Completo
  * - **SC4**
    - Con archivos de traducción apropiados reemplazando el idioma predeterminado (inglés), todos los textos mostrados e impresos ahora aparecen en este idioma.
 
-----
+
+
 
 Análisis del Quality Tree
-==========================
+=========================
 
 **Distribución de Requisitos por Categoría:**
 
@@ -169,7 +170,8 @@ Análisis del Quality Tree
  * Maintainability: Sin escenarios específicos
  * Security: Sin escenarios de verificación de integridad
 
-----
+
+
 
 **Lecciones Aprendidas:**
 
@@ -194,7 +196,8 @@ Este ejemplo es particularmente útil para:
 * Productos **internacionales** multi-idioma
 * Sistemas de **medición** de alta precisión
 
-----
+
+
 
 .. seealso::
  * **Ejemplo HTMLSC-2** - Escenarios más simples y directos

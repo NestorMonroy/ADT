@@ -1,14 +1,17 @@
 .. _glossary_ejemplo_htmlsc:
 
-===============================================================
+
+
+
 Ejemplo de Glosario: HTML Sanity Checker (Tabular)
-===============================================================
+==================================================
 
 :Sistema: HTML Sanity Checker (HtmlSC)
 :Categoría: Herramienta de validación HTML
 :Palabras clave: glossary, example
 
-----
+
+
 
 Aquí encuentras un ejemplo de un **glosario**.
 
@@ -19,7 +22,8 @@ En el caso de este pequeño ejemplo, los términos dados aquí deberían ser bue
 
 Otra versión se puede encontrar en la sección de conceptos (ya que los términos de dominio son un tipo de conceptos transversales...).
 
-----
+
+
 
 Glosario del Sistema
 ====================
@@ -41,10 +45,11 @@ Glosario del Sistema
  * - **SinglePageResults**
    - Resultados combinados de todas las instancias `Checker` para una sola página HTML.
 
-----
+
+
 
 Análisis del Ejemplo
-=====================
+====================
 
 **Características de este Glosario:**
 
@@ -65,7 +70,8 @@ Análisis del Ejemplo
  * - **Audiencia**
    - Orientado a desarrolladores [OK]
 
-----
+
+
 
 **Expansión Recomendada del Glosario:**
 
@@ -98,7 +104,8 @@ Análisis del Ejemplo
  * - **Severity**
    - Nivel de criticidad de un Finding (ERROR, WARNING, INFO).
 
-----
+
+
 
 **Alternativa: Glosario con Categorías**
 
@@ -137,7 +144,8 @@ Análisis del Ejemplo
    - HTMLPage
    - Documento HTML individual analizado
 
-----
+
+
 
 **Relación con Sección 8 (Conceptos Transversales):**
 
@@ -188,7 +196,8 @@ Análisis del Ejemplo
  | Run Result |
  +-------------+
 
-----
+
+
 
 **Versión Multi-idioma:**
 
@@ -215,7 +224,8 @@ Análisis del Ejemplo
    - Results for single HTML page
    - Einzelseitenergebnis
 
-----
+
+
 
 **Lecciones Aprendidas del Ejemplo:**
 
@@ -238,7 +248,8 @@ Análisis del Ejemplo
  * - **Integración con otras secciones**
    - Referencia a Sección 8 para Domain Model
 
-----
+
+
 
 **Expansión para Equipos Más Grandes:**
 
@@ -269,7 +280,8 @@ Si HtmlSC crece, el glosario podría expandirse:
    - Issue, Problem
    - Severity
 
-----
+
+
 
 .. seealso::
  * **Tip 12-2** - Documentar glosario como tabla

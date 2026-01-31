@@ -7,15 +7,18 @@
 
 .. _introduccion-tip-11:
 
-===================================================================
+
+
+
 Consejo 1-11: ¡Trabaja con requisitos de calidad explícitos!
-===================================================================
+============================================================
 
 :Tema: Requisitos de calidad
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Stakeholders
 
-----
+
+
 
 Recomendación
 =============
@@ -28,7 +31,8 @@ implícitos (y por lo tanto poco claros, inciertos, interpretables...).
 Sin embargo, puedes capturar los atributos de calidad deseados de manera
 relativamente fácil, usando escenarios (ver :ref:`introduccion-tip-12`).
 
-----
+
+
 
 .. note::
  **Información de traducción:**

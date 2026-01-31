@@ -1,8 +1,10 @@
 .. _arc42-glosario-acumulativo:
 
-============================
+
+
+
 Glosario Acumulativo
-============================
+====================
 
 Este glosario consolida todos los términos técnicos y de dominio
 de las 12 secciones de la documentación arc42.
@@ -22,22 +24,22 @@ Términos por Categoría
 ======================
 
 Arquitectura de Software
--------------------------
+========================
 
 *(Pendiente - Se poblará al traducir las secciones)*
 
 Patrones y Diseño
------------------
+=================
 
 *(Pendiente)*
 
 Calidad y Requisitos
---------------------
+====================
 
 *(Pendiente)*
 
 Términos Técnicos
------------------
+=================
 
 *(Pendiente)*
 
@@ -46,7 +48,8 @@ Términos Técnicos
 
 *(Pendiente - Se generará automáticamente)*
 
-----
+
+
 
 :Versión: 1.0.0
 :Fecha: 2026-01-27

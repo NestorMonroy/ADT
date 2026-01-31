@@ -1,30 +1,35 @@
 .. _contexto_ejemplo_negocio_3:
 
-============================================================
+
+
+
 Ejemplo de Contexto de Negocio: TrafficPursuitUnit
-============================================================
+==================================================
 
 .. note::
    **Ejemplo arc42**
    
    Este ejemplo ha sido creado con Enterprise Architect™ como un diagrama de flujo de datos.
 
-----
+
+
 
 3. Vista de Contexto de Negocio
 
-================================
+
+
 
 La siguiente figura muestra las principales entradas y salidas de la unidad de persecución de tráfico - tanto los usuarios humanos como el entorno técnico (sensores, cámaras, ...).
 
-.. figure:: ../figuras/31-tpu-business-context.jpg
-   :alt: Contexto de negocio
-   :align: center
-   :width: 80%
+.. .. figure:: ../figuras/31-tpu-business-context.jpg
+..       :alt: Contexto de negocio
+..       :align: center
+..       :width: 80%
    
-   Diagrama de contexto de negocio de TrafficPursuitUnit
+..       Diagrama de contexto de negocio de TrafficPursuitUnit
 
-----
+
+
 
 Observaciones
 =============
@@ -40,7 +45,8 @@ Este ejemplo muestra un **contexto de negocio** donde:
    * :ref:`seccion_3_1` - Plantilla de Contexto de Negocio
    * :ref:`seccion_03` - Contexto y Alcance completo
 
-----
+
+
 
 :Ejemplo: Contexto de Negocio
 :Sistema: TrafficPursuitUnit

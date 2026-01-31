@@ -1,6 +1,6 @@
-==================================================================================
+
 Estadísticas de la Biblioteca ADT
-==================================================================================
+==================================
 
 :Documento: estadisticas_biblioteca.rst
 :Versión: 1.0.0
@@ -12,7 +12,8 @@ Estadísticas de la Biblioteca ADT
  :depth: 3
  :local:
 
-----
+
+
 
 Resumen Ejecutivo
 =================
@@ -31,13 +32,14 @@ proyecto ADT.
  Términos en Glosarios: 0
  Archivos Procesados: 0
 
-----
+
+
 
 Métricas Generales
 ==================
 
 Libros por Estado
------------------
+=================
 
 .. list-table::
  :header-rows: 1
@@ -69,7 +71,7 @@ Libros por Estado
    - --
 
 Libros por Categoría
---------------------
+====================
 
 .. list-table::
  :header-rows: 1
@@ -97,7 +99,7 @@ Libros por Categoría
    - **0%**
 
 Libros por Subcategoría
-------------------------
+=======================
 
 .. list-table::
  :header-rows: 1
@@ -126,7 +128,7 @@ Libros por Subcategoría
    - --
 
 Libros por Especialidad
-------------------------
+=======================
 
 .. list-table::
  :header-rows: 1
@@ -154,13 +156,14 @@ Libros por Especialidad
    - 0
    - --
 
-----
+
+
 
 Métricas de Traducción
-=======================
+======================
 
 Progreso por Libro
-------------------
+==================
 
 .. list-table::
  :header-rows: 1
@@ -178,7 +181,7 @@ Progreso por Libro
    - Preparación
 
 Progreso Acumulado
-------------------
+==================
 
 .. code-block:: text
 
@@ -192,7 +195,7 @@ Progreso Acumulado
  Capítulos Pendientes: 9
 
 Velocidad de Traducción
-------------------------
+=======================
 
 .. code-block:: text
 
@@ -213,13 +216,14 @@ Velocidad de Traducción
  Proyección Futura (5 págs/día):
  - arc42 Documentation: ~100 días laborales
 
-----
+
+
 
 Métricas de Terminología
-=========================
+========================
 
 Glosarios
----------
+=========
 
 .. list-table::
  :header-rows: 1
@@ -237,7 +241,7 @@ Glosarios
    - Por iniciar
 
 Términos Totales
-----------------
+================
 
 .. code-block:: text
 
@@ -252,22 +256,23 @@ Términos Totales
  Términos Traducidos: 0
 
 Top 10 Términos Más Frecuentes
--------------------------------
+==============================
 
 *Aún sin datos*
 
 Términos por Categoría Temática
---------------------------------
+===============================
 
 *Aún sin datos*
 
-----
+
+
 
 Métricas de Calidad
 ===================
 
 Revisiones y Correcciones
---------------------------
+=========================
 
 .. code-block:: text
 
@@ -280,7 +285,7 @@ Revisiones y Correcciones
  Tasa de Corrección: N/A
 
 Calidad por Libro
------------------
+=================
 
 .. list-table::
  :header-rows: 1
@@ -298,7 +303,7 @@ Calidad por Libro
    - Pendiente
 
 Tipo de Errores (Cuando Aplicable)
------------------------------------
+==================================
 
 .. code-block:: text
 
@@ -308,13 +313,14 @@ Tipo de Errores (Cuando Aplicable)
  Referencias Rotas: 0
  Figuras Faltantes: 0
 
-----
+
+
 
 Métricas de Recursos
 ====================
 
 Archivos y Tamaño
------------------
+=================
 
 .. list-table::
  :header-rows: 1
@@ -332,7 +338,7 @@ Archivos y Tamaño
    - ~100
 
 Totales
--------
+=======
 
 .. code-block:: text
 
@@ -348,7 +354,7 @@ Totales
  Espacio Disponible: >100 GB
 
 Equipo de Traducción
---------------------
+====================
 
 .. code-block:: text
 
@@ -357,13 +363,14 @@ Equipo de Traducción
  Total de Revisores de Estilo: 0
  Total de Especialistas: 0
 
-----
+
+
 
 Métricas Temporales
 ===================
 
 Tiempo de Traducción
----------------------
+====================
 
 .. list-table::
  :header-rows: 1
@@ -381,7 +388,7 @@ Tiempo de Traducción
    - TBD
 
 Duración por Fase
------------------
+=================
 
 .. code-block:: text
 
@@ -394,7 +401,7 @@ Duración por Fase
  Total por Libro: TBD
 
 Proyecciones
-------------
+============
 
 .. code-block:: text
 
@@ -408,13 +415,14 @@ Proyecciones
  - Libros a completar: 3-5 libros
  - Páginas totales: 1,500-2,500 páginas
 
-----
+
+
 
 Tendencias y Gráficos
 =====================
 
 Crecimiento de la Biblioteca
------------------------------
+============================
 
 .. code-block:: text
 
@@ -435,7 +443,7 @@ Crecimiento de la Biblioteca
  +----------------------------+
 
 Distribución por Categoría (Objetivo 2026)
--------------------------------------------
+==========================================
 
 .. code-block:: text
 
@@ -443,13 +451,14 @@ Distribución por Categoría (Objetivo 2026)
  Ingeniería: 30% (4-5 libros)
  Ciencias: 10% (1-2 libros)
 
-----
+
+
 
 Comparativas
 ============
 
 Progreso vs Meta
-----------------
+================
 
 .. code-block:: text
 
@@ -462,7 +471,7 @@ Progreso vs Meta
  Estimado Cumplimiento: ~42%
 
 Benchmark de la Industria
---------------------------
+=========================
 
 .. code-block:: text
 
@@ -472,13 +481,14 @@ Benchmark de la Industria
  Calidad Promedio Industria: 85% (primera revisión)
  Calidad Objetivo ADT: 95% (metodología rigurosa)
 
-----
+
+
 
 Reportes Especiales
 ===================
 
 Libros Críticos
----------------
+===============
 
 .. code-block:: text
 
@@ -489,7 +499,7 @@ Libros Críticos
  - (Libros planificados)
 
 Alertas y Warnings
-------------------
+==================
 
 .. code-block:: text
 
@@ -503,13 +513,14 @@ Alertas y Warnings
  - Sistema de clasificación operativo
  - Herramientas de automatización listas
 
-----
+
+
 
 Proyecciones Futuras
 ====================
 
 Objetivo 2026 Q1
-----------------
+================
 
 .. code-block:: text
 
@@ -519,7 +530,7 @@ Objetivo 2026 Q1
  Calidad Objetivo: 95%
 
 Objetivo 2026 Anual
--------------------
+===================
 
 .. code-block:: text
 
@@ -530,7 +541,7 @@ Objetivo 2026 Anual
  Subcategorías Activas: 10-15
 
 Roadmap
--------
+=======
 
 .. code-block:: text
 
@@ -550,13 +561,14 @@ Roadmap
  [ ] Linear Algebra for ML
  [ ] [5+ libros adicionales]
 
-----
+
+
 
 Apéndices
 =========
 
 Metodología de Cálculo
------------------------
+======================
 
 **Progreso Global:**
 
@@ -586,17 +598,18 @@ Metodología de Cálculo
  )
 
 Fuentes de Datos
-----------------
+================
 
 - Archivos metadata_libro.rst de cada libro
 - Contadores automáticos de archivos
 - Registros de commits en control de versiones
 - Reportes manuales de traductores
 
-----
+
+
 
 Historial de Versiones
-=======================
+======================
 
 .. list-table::
  :widths: 15 15 70
@@ -609,7 +622,8 @@ Historial de Versiones
    - 1.0.0
    - Estadísticas iniciales - 1 libro en preparación
 
-----
+
+
 
 **Documento:** estadisticas_biblioteca.rst
 **Ubicación:** ``/biblioteca/_metadata_biblioteca/``

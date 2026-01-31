@@ -1,8 +1,10 @@
 .. _scripts_verificacion:
 
-===============================================
+
+
+
 Scripts de Verificación Automatizada
-===============================================
+====================================
 
 Scripts bash para verificar la calidad de tus traducciones automáticamente.
 
@@ -10,13 +12,14 @@ Scripts bash para verificar la calidad de tus traducciones automáticamente.
  :depth: 2
  :local:
 
-----
+
+
 
 Script Principal: verificar_traduccion.sh
-==========================================
+=========================================
 
 Descripción
------------
+===========
 
 Script completo que verifica:
 - Completitud del contenido
@@ -26,7 +29,7 @@ Script completo que verifica:
 - Calidad general
 
 Código Completo
-----------------
+===============
 
 .. code-block:: bash
 
@@ -341,7 +344,7 @@ Código Completo
  exit $EXIT_CODE
 
 Uso
----
+===
 
 **Básico:**
 
@@ -357,23 +360,23 @@ Uso
 
 .. code-block:: text
 
- +============================================+
- | Verificador ADT v1.0.0 |
- +============================================+
+   +============================================+
+   | Verificador ADT v1.0.0 |
+   +============================================+
 
- ===========================================
- CHECK 1: Enriquecimiento
- ===========================================
- [TABLE] Líneas:
- Original: 44
- Traducido: 164
- Enriquecimiento: +273%
+   CHECK 1: Enriquecimiento
+   =========================
+   [TABLE] Líneas:
+   Original: 44
+   Traducido: 164
+   Enriquecimiento: +273%
 
- [LIST] Tipo de documento: B (20-50 líneas)
- Rango esperado: +100% a +300%
+   [LIST] Tipo de documento: B (20-50 líneas)
+   Rango esperado: +100% a +300%
  [OK] Enriquecimiento apropiado
 
- ...
+
+
 
  +============================================+
  | RESULTADO FINAL |
@@ -385,15 +388,16 @@ Uso
  [OK] EXCELENTE - Calidad aprobada
  Traducción lista para entrega
 
-----
+
+
 
 Script Auxiliar: verificar_lote.sh
-===================================
+==================================
 
 Para verificar múltiples archivos
 
 Código
-------
+======
 
 .. code-block:: bash
 
@@ -446,15 +450,16 @@ Código
  echo "Por revisar: $RECHAZADOS"
  echo "Tasa de éxito: $(( APROBADOS * 100 / TOTAL ))%"
 
-----
+
+
 
 Script Auxiliar: prevenir_omisiones.sh
-=======================================
+======================================
 
 Verificación específica de PASO 0
 
 Código
-------
+======
 
 .. code-block:: bash
 
@@ -511,13 +516,14 @@ Código
  exit 1
  fi
 
-----
+
+
 
 Integración con Make
 ====================
 
 Agregar a Makefile
-------------------
+==================
 
 .. code-block:: makefile
 
@@ -538,13 +544,14 @@ Agregar a Makefile
  make verificar ORIG=original/file.md TRAD=traduccion/file.rst
  make verificar-lote ORIG_DIR=original/ TRAD_DIR=traduccion/
 
-----
+
+
 
 Personalización
 ===============
 
 Ajustar Umbrales
-----------------
+================
 
 En ``verificar_traduccion.sh``, modifica:
 
@@ -562,7 +569,7 @@ En ``verificar_traduccion.sh``, modifica:
  fi
 
 Agregar Checks Personalizados
-------------------------------
+=============================
 
 .. code-block:: bash
 
@@ -581,13 +588,14 @@ Agregar Checks Personalizados
  fi
  CHECKS_TOTAL=$((CHECKS_TOTAL + 10))
 
-----
+
+
 
 Instalación
 ===========
 
 Paso a Paso
------------
+===========
 
 .. code-block:: bash
 
@@ -610,7 +618,8 @@ Paso a Paso
  # 5. Probar
  verificar_traduccion.sh --help
 
-----
+
+
 
 .. seealso::
  * :doc:`../../03_estandares/calidad/checklist_revision` - Checklists manuales

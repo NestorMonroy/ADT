@@ -1,8 +1,10 @@
 .. _requisitos-calidad-ejemplo-3:
 
-===================================================================
+
+
+
 Ejemplo de Requisitos de Calidad: Unidad de Persecución de Tráfico
-===================================================================
+==================================================================
 
 .. meta::
    :layout: post
@@ -18,10 +20,11 @@ Ejemplo de Requisitos de Calidad: Unidad de Persecución de Tráfico
    los 3 atributos de calidad objetivo principales. Más requisitos de calidad 
    se pueden encontrar en la sección 10.
 
-----
+
+
 
 1.2 Atributos de Calidad Objetivo para la Unidad de Persecución de Tráfico
-===========================================================================
+==========================================================================
 
 .. list-table:: Atributos de Calidad Objetivo
    :header-rows: 1
@@ -45,7 +48,8 @@ Ejemplo de Requisitos de Calidad: Unidad de Persecución de Tráfico
      - Facilidad de uso por parte del policía, especialmente en el caso de 
        uso de perseguir otro coche.
 
-----
+
+
 
 .. note::
    **Información de traducción:**

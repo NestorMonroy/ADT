@@ -1,13 +1,16 @@
 .. _glossary_tip_5:
 
-===============================================================
+
+
+
 Tip 12-5: ¡Mantén el glosario compacto! Evita trivialidades.
-===============================================================
+============================================================
 
 :Tema: Glosario minimalista
 :Palabras clave: glossary, lean
 
-----
+
+
 
 Mantén el número de términos en tu **glosario** bastante pequeño: En nuestra experiencia práctica, **10-30 términos** fueron a menudo suficientes para explicar las *cosas* realmente importantes.
 
@@ -19,7 +22,7 @@ Evita trivialidades, incluye términos *específicos* del espacio de problema y 
 Ni "UML" (abreviatura de "Unified Modeling Language") ni "Java" (lenguaje de programación) necesitan ser explicados en un **glosario**.
 
 Principio de Minimalismo
-=========================
+========================
 
 **El Glosario NO es:**
 
@@ -35,7 +38,8 @@ Principio de Minimalismo
 * [OK] **Definiciones normativas** de conceptos clave
 * [OK] **Disambiguación** de términos ambiguos
 
-----
+
+
 
 **Reglas para Incluir/Excluir Términos:**
 
@@ -83,7 +87,8 @@ Principio de Minimalismo
    - [OK] SÍ
    - Diferente de cliente regular
 
-----
+
+
 
 **Criterios de Inclusión:**
 
@@ -138,7 +143,8 @@ Principio de Minimalismo
  SI -> [OK] Incluir
  NO -> [ERROR] Excluir
 
-----
+
+
 
 **Tamaño Recomendado del Glosario:**
 
@@ -171,7 +177,8 @@ Principio de Minimalismo
 
  **Solución:** Dividir por bounded contexts o subdominios
 
-----
+
+
 
 **Ejemplos de Términos a EXCLUIR:**
 
@@ -207,7 +214,8 @@ Principio de Minimalismo
 
  (No es deployment estándar, tiene proceso específico)
 
-----
+
+
 
 **Ejemplo de Glosario Compacto (15 términos):**
 
@@ -252,7 +260,8 @@ Principio de Minimalismo
 **Todos específicos del dominio de hotelería**
 **Ninguna trivialidad técnica**
 
-----
+
+
 
 **Mantenimiento del Glosario Compacto:**
 
@@ -263,16 +272,16 @@ Principio de Minimalismo
  Preguntas a hacer:
 
  1. ¿Algún término ya no se usa?
- -> ELIMINAR
+   -> ELIMINAR
 
  2. ¿Algún término es ahora obvio para todos?
- -> CONSIDERAR eliminar
+   -> CONSIDERAR eliminar
 
  3. ¿Nuevos términos críticos han emergido?
- -> AGREGAR (máximo 3-5 por trimestre)
+   -> AGREGAR (máximo 3-5 por trimestre)
 
  4. ¿Algún término necesita actualizar definición?
- -> ACTUALIZAR
+   -> ACTUALIZAR
 
 **Proceso de Aprobación para Nuevos Términos:**
 
@@ -281,15 +290,16 @@ Principio de Minimalismo
  Propuesta de nuevo término:
  v
  1. ¿Es específico del dominio? [SI/NO]
- v
+   v
  2. ¿Es crítico para entender sistema? [SI/NO]
- v
+   v
  3. ¿Tiene significado especial aquí? [SI/NO]
- v
- Si 2+ respuestas = SI -> [OK] AGREGAR
- Si <2 respuestas = SI -> [ERROR] RECHAZAR
+   v
+   Si 2+ respuestas = SI -> [OK] AGREGAR
+   Si <2 respuestas = SI -> [ERROR] RECHAZAR
 
-----
+
+
 
 .. seealso::
  * **Tip 12-1** - Tomarse el glosario en serio

@@ -1,21 +1,25 @@
 .. _quality_ejemplo_htmlsc_2:
 
-===============================================================
+
+
+
 Ejemplo de Escenarios de Calidad: HTML Sanity Checker
-===============================================================
+=====================================================
 
 :Sistema: HTML Sanity Checker (HtmlSC)
 :Categoría: Herramienta de validación HTML
 :Palabras clave: quality, example
 
-----
+
+
 
 Este ejemplo muestra **escenarios de calidad** para HTML Sanity Checker (HtmlSC), una herramienta que verifica la sanidad/validez de documentos HTML.
 
-----
+
+
 
 10.2 Escenarios de Calidad
-===========================
+==========================
 
 .. list-table:: Escenarios de Calidad para HTML Sanity Checker
  :header-rows: 1
@@ -38,10 +42,11 @@ Este ejemplo muestra **escenarios de calidad** para HTML Sanity Checker (HtmlSC)
  * - **10.2.7**
    - HtmlSC realiza todas las verificaciones en un archivo HTML de 100kBytes en menos de 10 segundos.
 
-----
+
+
 
 Análisis de los Escenarios
-===========================
+==========================
 
 **Atributos de Calidad Cubiertos:**
 
@@ -93,7 +98,8 @@ Análisis de los Escenarios
  * Inmutabilidad de archivos fuente
  * [OK] Requisito de seguridad fundamental
 
-----
+
+
 
 **Lecciones Aprendidas:**
 
@@ -102,7 +108,8 @@ Análisis de los Escenarios
 * [OK] **Métricas claras**: Tiempo, tamaño, completitud definidos
 * [WARNING] **Priorización implícita**: Podría beneficiarse de prioridades explícitas
 
-----
+
+
 
 .. seealso::
  * **Ejemplo TPU-1** - Quality tree y escenarios más detallados

@@ -1,21 +1,24 @@
 .. _notas-traduccion-02-restricciones:
 
-================================================
+
+
+
 Notas de Traducción: Sección 02 - Restricciones
-================================================
+===============================================
 
 :Sección: 02 - Constraints (Restricciones)
 :Fecha: 2026-01-27
 :Metodología: Método Peshitta + ADT Workflow v1.2.0
 :Fase: FASE 3 - Traducción Inicial
 
-----
+
+
 
 Decisiones de Traducción
-=========================
+========================
 
 Conversiones Markdown -> RST
-----------------------------
+============================
 
 1. **DIV HTML -> .. note::**
 
@@ -33,7 +36,7 @@ Conversiones Markdown -> RST
  SÍ incluir tags y category como metadatos
 
 Terminología
-------------
+============
 
 **Traducidos:**
 
@@ -48,7 +51,7 @@ Terminología
 - Stakeholder (ampliamente usado)
 
 Correcciones
-------------
+============
 
 **Typo corregido:**
 
@@ -76,6 +79,7 @@ Próximos Pasos
 - FASE 6: Revisión
 - FASE 7: Publicación
 
-----
+
+
 
 :Estado: [OK] FASE 3 COMPLETADA

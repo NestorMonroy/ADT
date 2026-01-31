@@ -1,8 +1,10 @@
 .. _introduccion-tip-12:
 
-===================================================================
+
+
+
 Consejo 1-12: ¡Explica requisitos mediante escenarios!
-===================================================================
+======================================================
 
 .. meta::
    :layout: post
@@ -16,7 +18,8 @@ Consejo 1-12: ¡Explica requisitos mediante escenarios!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Stakeholders
 
-----
+
+
 
 Recomendación
 =============
@@ -39,24 +42,25 @@ Hay varias categorías de estos escenarios:
   cuando ocurre un problema grave, como la falla de componentes de hardware o 
   software centrales?
 
-.. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-quality-scenarios-schematic.png
-   :alt: Esquema de escenarios de requisitos de calidad
-   :align: center
-   :width: 80%
+.. .. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-quality-scenarios-schematic.png
+..       :alt: Esquema de escenarios de requisitos de calidad
+..       :align: center
+..       :width: 80%
 
-   Esquema de escenarios de requisitos de calidad
+..       Esquema de escenarios de requisitos de calidad
 
 Los escenarios pueden relacionarse con una variedad de posibles atributos de 
 calidad, que están estructurados jerárquicamente por modelos de calidad actuales 
 (por ejemplo, ISO-25010).
 
-----
+
+
 
 Ejemplos de Escenarios
 ======================
 
 Escenarios de cambio
---------------------
+====================
 
 - Un nuevo algoritmo para el enrutamiento de robots en un almacén de gran altura 
   necesita ser integrado. Un desarrollador puede realizar este cambio dentro de 
@@ -69,7 +73,7 @@ Escenarios de cambio
   Estos cambios se pueden implementar completamente en un máximo de 60 horas-persona.
 
 Escenarios de uso
------------------
+=================
 
 - El sistema selecciona los datos necesarios para el proceso XY en 1 segundo (hasta 
   100 usuarios concurrentes) o en 3 segundos (hasta 1,000 usuarios concurrentes).
@@ -77,7 +81,8 @@ Escenarios de uso
 - Después de encender, toma como máximo 4 segundos hasta que el sistema de navegación 
   acepta entrada desde la GUI.
 
-----
+
+
 
 .. note::
    **Información de traducción:**

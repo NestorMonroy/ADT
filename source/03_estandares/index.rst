@@ -1,15 +1,18 @@
 .. _estandares:
 
-===============================================
+
+
+
 Estándares de Traducción ADT
-===============================================
+============================
 
 Esta sección contiene los **estándares** que definen calidad, formato, terminología y restricciones en el proyecto ADT.
 
 **Base empírica:**
  Estándares derivados de la traducción exitosa de arc42 (196 archivos) y aplicación del Workflow v1.7.2.
 
-----
+
+
 
 Subsecciones
 ============
@@ -23,7 +26,8 @@ Subsecciones
  terminologia/index
  restricciones/index
 
-----
+
+
 
 Propósito
 =========
@@ -35,7 +39,8 @@ Los estándares de ADT aseguran:
 [OK] **Terminología uniforme** en toda la documentación
 [OK] **Formato apropiado** según medio de salida
 
-----
+
+
 
 Uso de esta Sección
 ===================
@@ -52,17 +57,19 @@ Uso de esta Sección
  - Evaluar contra todos los estándares
  - Documentar cumplimiento en checkpoint
 
-----
+
+
 
 Relación con Otras Secciones
-=============================
+============================
 
 * **01_fundamentos** - Base teórica de los estándares
 * **02_procedimientos** - Workflow que implementa estándares
 * **04_reglas_operativas** - Decisiones específicas basadas en estándares
 * **06_casos_practicos** - Ejemplos de aplicación
 
-----
+
+
 
 Estado de Desarrollo
 ====================
@@ -87,7 +94,8 @@ Estado de Desarrollo
    - [RUNNING] Planificado
    - Pendiente
 
-----
+
+
 
 .. note::
  Esta sección está en desarrollo activo. Prioridad actual: completar subsección **calidad/** ([OK] HECHO).

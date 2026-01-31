@@ -1,15 +1,18 @@
 .. _guias_uso:
 
-===============================================
+
+
+
 Guías de Uso del Sistema ADT
-===============================================
+============================
 
 Esta sección contiene **guías prácticas** para facilitar la adopción y uso del sistema ADT.
 
 **Propósito:**
  Permitir que nuevos usuarios comiencen rápidamente y que usuarios experimentados profundicen en el sistema.
 
-----
+
+
 
 Guías Disponibles
 =================
@@ -24,16 +27,18 @@ Guías Disponibles
  troubleshooting
  casos_uso/index
 
-----
+
+
 
 Niveles de Aprendizaje
-=======================
+======================
 
 **Nivel 1: Principiante (15 minutos)**
 
  Lee: :doc:`guia_rapida`
 
  Aprenderás:
+ 
  - Qué es ADT y por qué funciona
  - Workflow en 5 pasos
  - Tu primera traducción simple
@@ -45,6 +50,7 @@ Niveles de Aprendizaje
  Lee: :doc:`tutorial_completo`
 
  Aprenderás:
+ 
  - Fundamentos completos del sistema
  - PASO 0 en profundidad
  - Decisiones de traducción (MD-002, MD-004)
@@ -58,6 +64,7 @@ Niveles de Aprendizaje
  Lee: :doc:`../06_casos_practicos/index`
 
  Aprenderás:
+ 
  - Casos reales de 196 archivos
  - Optimización de procesos
  - Resolución de problemas complejos
@@ -65,10 +72,11 @@ Niveles de Aprendizaje
 
  Resultado: Experto en ADT
 
-----
+
+
 
 Ruta de Aprendizaje Recomendada
-================================
+===============================
 
 **Día 1: Inicio Rápido**
 
@@ -112,7 +120,8 @@ Ruta de Aprendizaje Recomendada
  Optimización de velocidad
  Documentación de casos propios
 
-----
+
+
 
 Uso de esta Sección
 ===================
@@ -157,13 +166,14 @@ Uso de esta Sección
 
  Resultado: Equipo productivo en 1 semana
 
-----
+
+
 
 Contenido de las Guías
 ======================
 
 Guía Rápida (15 Minutos)
-------------------------
+========================
 
 **Contenido:**
 
@@ -181,7 +191,7 @@ Guía Rápida (15 Minutos)
 - Entendimiento rápido del sistema
 
 Tutorial Completo (2-3 Horas)
-------------------------------
+=============================
 
 **Contenido:**
 
@@ -218,7 +228,7 @@ Tutorial Completo (2-3 Horas)
 - Vas a usar ADT frecuentemente
 
 Casos de Uso (Planificado)
----------------------------
+==========================
 
 **Contenido planeado:**
 
@@ -228,10 +238,11 @@ Casos de Uso (Planificado)
  [RUNNING] traducir_documento_markdown.rst
  [RUNNING] traducir_proyecto_sphinx.rst
 
-----
+
+
 
 Relación con Otras Secciones
-=============================
+============================
 
 **Esta sección FACILITA el uso de:**
 
@@ -253,7 +264,8 @@ Relación con Otras Secciones
  v
  APLICAR (Tu proyecto)
 
-----
+
+
 
 Métricas de Aprendizaje
 =======================
@@ -294,7 +306,8 @@ Métricas de Aprendizaje
 
  Retorno: 85% tasa de éxito en proyectos reales
 
-----
+
+
 
 Estado de Desarrollo
 ====================
@@ -316,10 +329,11 @@ Estado de Desarrollo
    - [RUNNING] Planificado
    - Pendiente
 
-----
+
+
 
 Feedback y Mejora Continua
-===========================
+==========================
 
 **Estas guías evolucionan con:**
 
@@ -339,7 +353,8 @@ Feedback y Mejora Continua
  3. Propón mejora concreta
  4. Comparte con equipo ADT
 
-----
+
+
 
 Próximos Pasos
 ==============
@@ -362,9 +377,11 @@ Próximos Pasos
  3. Contribuye con casos de uso adicionales
  4. Optimiza tu proceso personal
 
-----
+
+
 
 .. seealso::
+ 
  * :doc:`../02_procedimientos/workflow_general` - Workflow completo de referencia
  * :doc:`../06_casos_practicos/index` - Casos reales para profundizar
  * :doc:`../03_estandares/calidad/criterios_calidad` - Estándares de calidad

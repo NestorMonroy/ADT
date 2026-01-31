@@ -1,6 +1,6 @@
-==================================================================================
+
 META_BIB_001: Sistema de Clasificación Documental ADT
-==================================================================================
+======================================================
 
 :Código: META_BIB_001
 :Versión: 1.0.0
@@ -18,7 +18,8 @@ META_BIB_001: Sistema de Clasificación Documental ADT
  :depth: 3
  :local:
 
-----
+
+
 
 Resumen Ejecutivo
 =================
@@ -36,7 +37,8 @@ traducidos en el proyecto ADT.
  Ejemplo: INF.PRG.FST.001
  +-- Modern Full-Stack Development (Zammetti)
 
-----
+
+
 
 Categorías Principales
 ======================
@@ -58,10 +60,11 @@ Categorías Principales
    - Ciencias
    - Matemáticas, Estadística, Física, Biología
 
-----
+
+
 
 Subcategorías Informática (INF)
-================================
+===============================
 
 .. list-table::
  :header-rows: 1
@@ -102,7 +105,7 @@ Subcategorías Informática (INF)
    - Estructuras de datos, complejidad
 
 Subcategorías Ingeniería (ING)
-===============================
+==============================
 
 .. list-table::
  :header-rows: 1
@@ -131,7 +134,7 @@ Subcategorías Ingeniería (ING)
    - UML, BPMN, especificación formal
 
 Subcategorías Ciencias (CIE)
-=============================
+============================
 
 .. list-table::
  :header-rows: 1
@@ -153,13 +156,14 @@ Subcategorías Ciencias (CIE)
    - Biología
    - Bioinformática, biología computacional
 
-----
+
+
 
 Especialidades Principales
-===========================
+==========================
 
 Programación (INF.PRG)
-----------------------
+======================
 
 .. code-block:: text
 
@@ -183,7 +187,7 @@ Programación (INF.PRG)
  GEN -> General/Multitecnología
 
 Inteligencia Artificial (INF.IAR)
-----------------------------------
+=================================
 
 .. code-block:: text
 
@@ -194,7 +198,7 @@ Inteligencia Artificial (INF.IAR)
  RFO -> Reinforcement Learning
 
 DevOps y Cloud (INF.DVC)
--------------------------
+========================
 
 .. code-block:: text
 
@@ -209,7 +213,7 @@ DevOps y Cloud (INF.DVC)
  GIT -> Git/GitHub/GitLab
 
 Arquitectura (ING.ARQ)
-----------------------
+======================
 
 .. code-block:: text
 
@@ -220,13 +224,14 @@ Arquitectura (ING.ARQ)
  HEX -> Hexagonal Architecture
  GEN -> General/Múltiples patrones
 
-----
+
+
 
 Proceso de Clasificación
-=========================
+========================
 
 Flujo en 4 Pasos
-----------------
+================
 
 .. code-block:: text
 
@@ -253,7 +258,7 @@ Flujo en 4 Pasos
  CÓDIGO COMPLETO: XXX.XXX.XXX.NNN
 
 Reglas de Clasificación
-------------------------
+=======================
 
 1. **Un libro = Una ubicación** (no clasificación múltiple)
 2. **Códigos SIEMPRE en MAYÚSCULAS**
@@ -263,7 +268,7 @@ Reglas de Clasificación
 6. **Formato del número:** 3 dígitos con ceros a la izquierda (001-999)
 
 Ejemplos de Códigos
---------------------
+===================
 
 .. code-block:: text
 
@@ -280,13 +285,14 @@ Ejemplos de Códigos
  INF.PRG.FST.1 -> Número sin ceros
  INF.PRG.FST.1000 -> Número > 999
 
-----
+
+
 
 Estructura de Carpetas
-=======================
+======================
 
 Jerarquía Completa
-------------------
+==================
 
 .. code-block:: text
 
@@ -319,7 +325,7 @@ Jerarquía Completa
  +-- matematicas/ # SUBCATEGORÍA: MAT
 
 Estructura Interna de Libro
-----------------------------
+===========================
 
 .. code-block:: text
 
@@ -341,13 +347,14 @@ Estructura Interna de Libro
  +-- front_matter/
  +-- back_matter/
 
-----
+
+
 
 Referencias
 ===========
 
 Documentos Relacionados
------------------------
+=======================
 
 - :doc:`META_BIB_002_Guia_Organizacion_1_0_0` - Guía de organización jerárquica
 - :doc:`META_BIB_003_Esquema_Codificacion_1_0_0` - Tabla maestra de códigos
@@ -355,22 +362,23 @@ Documentos Relacionados
 - :doc:`estadisticas_biblioteca` - Métricas y reportes
 
 Documentos Externos
--------------------
+===================
 
 - Guía completa: ``source/docs_maestros/GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL.rst``
 - Resumen ejecutivo: ``source/docs_maestros/RESUMEN_GUIA_CLASIFICACION.md``
 
 Estándares Base
----------------
+===============
 
 - ISO 12620-2:2022 - Gestión de repositorios terminológicos
 - Dewey Decimal Classification
 - Library of Congress Classification
 
-----
+
+
 
 Historial de Versiones
-=======================
+======================
 
 .. list-table::
  :widths: 10 15 15 60
@@ -385,7 +393,8 @@ Historial de Versiones
    - Sistema ADT
    - Versión inicial del sistema de clasificación
 
-----
+
+
 
 **Documento:** META_BIB_001_Sistema_Clasificacion_1_0_0.rst
 **Ubicación:** ``/biblioteca/_metadata_biblioteca/``

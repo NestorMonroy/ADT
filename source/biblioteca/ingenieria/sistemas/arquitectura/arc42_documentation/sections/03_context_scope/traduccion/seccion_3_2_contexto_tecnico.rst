@@ -1,8 +1,10 @@
 .. _seccion_3_2:
 
-=====================================
+
+
+
 3.2 Contexto Técnico
-=====================================
+====================
 
 .. note::
  **Plantilla arc42 - Traducción Arquitectónica (Paso 3.4)**
@@ -13,7 +15,8 @@
  * Transmission media -> Medio de transmisión
  * Technical interface -> Interfaz técnica
 
-----
+
+
 
 Contenidos
 ==========
@@ -35,7 +38,8 @@ Por ejemplo, un diagrama de despliegue UML que describe los canales hacia sistem
 .. seealso::
  Ver ejemplos de contexto técnico en la sección de ejemplos
 
-----
+
+
 
 Plantilla
 =========
@@ -43,29 +47,29 @@ Plantilla
 .. code-block:: text
 
  3.2 Contexto Técnico
- ====================
+=====================
 
  **<inserta diagrama o tabla>**
 
  Descripción de canales técnicos:
 
- +-------------------+----------------------+---------------------------+
- | Canal | Tipo/Protocolo | Descripción |
- +===================+======================+===========================+
- | <nombre canal 1> | <HTTP/REST/MQTT/etc> | <descripción del canal> |
- +-------------------+----------------------+---------------------------+
- | <nombre canal 2> | <protocolo> | <descripción> |
- +-------------------+----------------------+---------------------------+
++-------------------+----------------------+---------------------------+
+| Canal             | Tipo/Protocolo       | Descripción               |
++===================+======================+===========================+
+| <nombre canal 1>  | <HTTP/REST/MQTT/etc> | <descripción del canal>   |
++-------------------+----------------------+---------------------------+
+| <nombre canal 2>  | <protocolo>          | <descripción>             |
++-------------------+----------------------+---------------------------+
 
  **Mapeo de Entrada/Salida a Canales:**
 
- +------------------------+----------------+---------------------------+
- | Entrada/Salida | Canal | Observaciones |
- +========================+================+===========================+
- | <datos de negocio 1> | <canal 1> | <detalles técnicos> |
- +------------------------+----------------+---------------------------+
- | <datos de negocio 2> | <canal 2> | <detalles técnicos> |
- +------------------------+----------------+---------------------------+
++------------------------+----------------+---------------------------+
+| Entrada/Salida         | Canal          | Observaciones             |
++========================+================+===========================+
+| <datos de negocio 1>   | <canal 1>      | <detalles técnicos>       |
++------------------------+----------------+---------------------------+
+| <datos de negocio 2>   | <canal 2>      | <detalles técnicos>       |
++------------------------+----------------+---------------------------+
 
  **(Opcional:) Explicación de las interfaces técnicas**
 
@@ -74,7 +78,8 @@ Plantilla
  <Descripción detallada de la interfaz técnica, protocolos,
  puertos, formatos de serialización, seguridad, etc.>
 
-----
+
+
 
 Referencias
 ===========

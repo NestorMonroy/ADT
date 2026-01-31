@@ -1,8 +1,10 @@
 .. _introduccion-tip-14:
 
-===================================================================
+
+
+
 Consejo 1-14: ¡Usa checklists para requisitos de calidad!
-===================================================================
+=========================================================
 
 .. meta::
    :layout: post
@@ -15,7 +17,8 @@ Consejo 1-14: ¡Usa checklists para requisitos de calidad!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Analistas de calidad
 
-----
+
+
 
 Recomendación
 =============
@@ -27,12 +30,12 @@ Como alternativa más práctica, considera el subproyecto de arc42 "ejemplos de
 requisitos de calidad" (ver :ref:`introduccion-tip-15`) que contiene más de 60 
 ejemplos del mundo real de requisitos de calidad.
 
-.. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-ISO-25010-EN.webp
-   :alt: Calidad de Producto de Software - estándar ISO 25010 - representación jerárquica
-   :align: center
-   :width: 80%
+.. .. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-ISO-25010-EN.webp
+..       :alt: Calidad de Producto de Software - estándar ISO 25010 - representación jerárquica
+..       :align: center
+..       :width: 80%
 
-   Calidad de Producto de Software - estándar ISO 25010
+..       Calidad de Producto de Software - estándar ISO 25010
 
 Algunos "temas de calidad" comunes son:
 
@@ -46,7 +49,8 @@ Algunos "temas de calidad" comunes son:
 - Usabilidad (usability)
 - Testeabilidad (testability)
 
-----
+
+
 
 .. note::
    **Información de traducción:**

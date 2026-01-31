@@ -1,18 +1,21 @@
 .. _risks_tip_3:
 
-===============================================================
+
+
+
 Tip 11-3: ¡Identifica problemas o riesgos por evaluación cualitativa!
-===============================================================
+=====================================================================
 
 :Tema: Evaluación cualitativa de riesgos
 :Palabras clave: risk, technical-debt, problem, atam
 
-----
+
+
 
 Algunos problemas y **riesgos** pueden ser identificados comparando sistemáticamente los **requisitos** (de calidad) con los enfoques de arquitectura e implementación.
 
 Método de Evaluación
-=====================
+====================
 
 **Proceso de Comparación Sistemática:**
 
@@ -39,7 +42,8 @@ Método de Evaluación
  * Enfoques conflictivos -> PROBLEMA
  * Suposiciones no validadas -> RIESGO
 
-----
+
+
 
 **Ejemplo de Evaluación Cualitativa:**
 
@@ -68,7 +72,8 @@ Método de Evaluación
    - Escalar = escalar todo
    - [WARNING] RIESGO: Costos altos de infraestructura
 
-----
+
+
 
 **Herramienta de Análisis: Matriz de Evaluación**
 
@@ -94,7 +99,8 @@ Método de Evaluación
  2. Refactorizar queries N+1 (1 semana)
  3. Implementar query monitoring (3 días)
 
-----
+
+
 
 **Método ATAM Simplificado:**
 
@@ -123,7 +129,8 @@ El **Architecture Tradeoff Analysis Method (ATAM)** es un método formal para es
 
  Ejemplo: Sin replicación -> amenaza disponibilidad
 
-----
+
+
 
 **Plantilla de Análisis Cualitativo:**
 
@@ -144,7 +151,8 @@ El **Architecture Tradeoff Analysis Method (ATAM)** es un método formal para es
    - *<Nivel de riesgo>*
    - *<Mitigación propuesta>*
 
-----
+
+
 
 **Beneficios de Evaluación Cualitativa:**
 
@@ -154,7 +162,8 @@ El **Architecture Tradeoff Analysis Method (ATAM)** es un método formal para es
 * [OK] **Priorización**: Riesgos clasificados por impacto
 * [OK] **Comunicación**: Evidencia clara para stakeholders
 
-----
+
+
 
 Ver También
 ===========
@@ -163,7 +172,8 @@ Ver También
 * **Sección 10.2** - Escenarios de Calidad
 * **Método ATAM** - https://www.sei.cmu.edu/architecture/tools/evaluate/atam.cfm
 
-----
+
+
 
 .. seealso::
  * **Tip 11-1** - Buscar riesgos con diferentes stakeholders

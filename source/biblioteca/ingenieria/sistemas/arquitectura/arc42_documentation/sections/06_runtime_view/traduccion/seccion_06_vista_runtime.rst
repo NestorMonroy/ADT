@@ -1,15 +1,18 @@
 .. _seccion_06:
 
-===============================================================
+
+
+
 Sección 06: Vista de Tiempo de Ejecución (Runtime View)
-===============================================================
+=======================================================
 
 .. tip::
    **Vista de Tiempo de Ejecución arc42**
    
    La **vista de tiempo de ejecución** describe el comportamiento dinámico del sistema: cómo interactúan los **bloques de construcción** en **escenarios de tiempo de ejecución** concretos.
 
-----
+
+
 
 Introducción
 ============
@@ -24,10 +27,11 @@ Los **escenarios** típicos incluyen:
 * **Procesos** de inicio y apagado del sistema
 * Comportamiento ante errores y excepciones
 
-----
+
+
 
 Contenido de la Sección
-========================
+=======================
 
 Esta sección contiene:
 
@@ -37,10 +41,11 @@ Esta sección contiene:
 **Ejemplos de Aplicación (3 ejemplos)**
    Casos reales de **vistas de tiempo de ejecución** en sistemas
 
-----
+
+
 
 Tips de Vista de Tiempo de Ejecución
-=====================================
+====================================
 
 .. toctree::
    :maxdepth: 1
@@ -58,10 +63,11 @@ Tips de Vista de Tiempo de Ejecución
    runtime_tip_10
    runtime_tip_11
 
-----
+
+
 
 Ejemplos de Runtime View
-=========================
+========================
 
 .. toctree::
    :maxdepth: 1
@@ -71,7 +77,8 @@ Ejemplos de Runtime View
    runtime_ejemplo_mama
    runtime_ejemplo_tpu
 
-----
+
+
 
 Motivación
 ==========
@@ -83,7 +90,8 @@ Debes documentar **escenarios de tiempo de ejecución** si:
 * El comportamiento dinámico es crítico para la calidad del sistema
 * Necesitas validar decisiones arquitectónicas contra requisitos funcionales
 
-----
+
+
 
 Forma y Notación
 ================
@@ -102,10 +110,11 @@ Existen varias notaciones para describir **escenarios**:
   * BPMN (Business Process Model and Notation)
   * Descripciones textuales
 
-----
+
+
 
 Relación con Otras Secciones
-=============================
+============================
 
 **Sección 05 (Building Block View)**
    Los **escenarios de tiempo de ejecución** usan **bloques de construcción** definidos en la vista estática
@@ -116,14 +125,16 @@ Relación con Otras Secciones
 **Sección 10 (Requisitos de Calidad)**
    Los **escenarios** ayudan a validar el cumplimiento de requisitos de calidad
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_05` - Vista de Bloques de Construcción
    * :ref:`seccion_08` - Conceptos Transversales
    * :ref:`seccion_10` - Requisitos de Calidad
 
-----
+
+
 
 :Sección: 06
 :Título: Vista de Tiempo de Ejecución

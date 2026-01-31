@@ -1,15 +1,18 @@
 .. _seccion_12:
 
-===============================================================
+
+
+
 Sección 12: Glosario (Glossary)
-===============================================================
+===============================
 
 .. tip::
  **Glosario arc42**
 
  El **glosario** define los términos más importantes del **dominio** y técnicos que los stakeholders usan al discutir el sistema. Es fundamental para mantener un **entendimiento común** y evitar ambigüedades.
 
-----
+
+
 
 Introducción
 ============
@@ -75,23 +78,26 @@ Forma
    - *<término-1>*
    - *<Begriff-1>*
 
-----
+
+
 
 **Plantilla Minimalista:**
 
 *< Inserta aquí tabla de glosario (y opcionalmente tabla de traducción) >*
 
-----
+
+
 
 Relación con Otras Secciones
-=============================
+============================
 
 * **Sección 1 (Introducción y Objetivos):** Los **stakeholders** del glosario
 * **Sección 3 (Contexto del Sistema):** Términos de **dominio** del contexto
 * **Sección 8 (Conceptos Transversales):** Términos técnicos usados en conceptos
 * **Todas las secciones:** El glosario es referenciado desde todas las secciones
 
-----
+
+
 
 Tips y Consejos
 ===============
@@ -107,7 +113,8 @@ Tips y Consejos
  glossary_tip_5
  glossary_tip_6
 
-----
+
+
 
 Ejemplos de Aplicación
 ======================
@@ -118,14 +125,16 @@ Ejemplos de Aplicación
 
  glossary_ejemplo_htmlsc
 
-----
+
+
 
 Referencias
 ===========
 
 * `FAQ arc42 - Sección 12 <https://faq.arc42.org/category_c/#c-sec-12>`_
 
-----
+
+
 
 .. note::
  **Mejores Prácticas para Glosario:**

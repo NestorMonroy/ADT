@@ -1,13 +1,16 @@
 .. _quality_tip_5:
 
-===============================================================
+
+
+
 Tip 10-5: ¡Considera escenarios de uso o aplicación (calidad)!
-===============================================================
+==============================================================
 
 :Tema: Escenarios de uso (usage scenarios)
 :Palabras clave: quality, quality-scenario, scenario
 
-----
+
+
 
 Muchos **escenarios de calidad** estarán relacionados con el uso del sistema (**escenarios de aplicación**, **escenarios de caso de uso**).
 
@@ -38,7 +41,8 @@ Ejemplos
 
  Los administradores pueden modificar los derechos de acceso de usuarios vía GUI con un máximo de cinco clics.
 
-----
+
+
 
 **Características de Buenos Usage Scenarios:**
 
@@ -68,7 +72,8 @@ Ejemplos
 * USER: **Usabilidad**: Facilidad de uso, número de clics
 * [TABLE] **Funcionalidad**: Capacidades del sistema
 
-----
+
+
 
 .. seealso::
  * **Tip 10-6** - Escenarios de cambio

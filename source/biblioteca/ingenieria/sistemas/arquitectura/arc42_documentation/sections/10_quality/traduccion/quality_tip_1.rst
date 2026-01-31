@@ -1,13 +1,16 @@
 .. _quality_tip_1:
 
-===============================================================
+
+
+
 Tip 10-1: ¡Mantén los objetivos de calidad en arc42 sección 1.2 cortos!
-===============================================================
+=======================================================================
 
 :Tema: Objetivos de calidad
 :Palabras clave: quality, quality-scenario, quality-goal
 
-----
+
+
 
 Mueve los detalles, especialmente de los **requisitos de calidad**, a *esta* sección 10.
 
@@ -15,7 +18,8 @@ Aquí tienes el **quality tree** (árbol de calidad) en la sección 10.1 como un
 
 Hemos participado en el desarrollo de varios sistemas que tenían más de 100 **escenarios de calidad** diferentes. En tales casos, la sección 10.2 de arc42 es el lugar correcto para documentar estos (si no están contenidos dentro de documentación de requisitos escrita y fácilmente accesible).
 
-----
+
+
 
 **Aplicación Práctica:**
 
@@ -29,7 +33,8 @@ Hemos participado en el desarrollo de varios sistemas que tenían más de 100 **
 * Proporciona ubicación adecuada para gran cantidad de **requisitos de calidad**
 * Separa overview estratégico de detalles tácticos
 
-----
+
+
 
 .. seealso::
  * **Sección 1.2** - Objetivos de Calidad

@@ -1,15 +1,18 @@
 .. _bloques_tip_21:
 
-===============================================================
+
+
+
 Tip 5-21: ¡Describe o especifica interfaces internas con esfuerzo mínimo!
-===============================================================
+=========================================================================
 
 .. tip::
    **Consejo de Vista de Bloques arc42**
    
    Describe o especifica **interfaces** internas con esfuerzo mínimo: Puedes encontrar detalles arbitrarios de **interfaz** en el código fuente, si lo necesitas.
 
-----
+
+
 
 Describe o especifica **interfaces** internas con esfuerzo mínimo: Puedes encontrar detalles arbitrarios de **interfaz** en el código fuente, si lo necesitas.
 
@@ -17,17 +20,17 @@ Ten especial cuidado con las descripciones gráficas de **interfaces** (como UML
 
 Echa un vistazo al siguiente diagrama, donde ``Blurp`` proporciona un método/servicio ``blurp`` para el consumidor ``FooBar``.
 
-.. figure:: ../figuras/05-interface-simple-variant.png
-   :alt: Diagrama de descripción de interfaz simple
-   :align: center
-   :width: 55%
+.. .. figure:: ../figuras/05-interface-simple-variant.png
+..       :alt: Diagrama de descripción de interfaz simple
+..       :align: center
+..       :width: 55%
    
-   Interfaz simple: Blurp proporciona servicio blurp a FooBar
+..       Interfaz simple: Blurp proporciona servicio blurp a FooBar
 
 Puedes agregar más detalles a este modelo gráfico simple, algunas opciones dadas abajo (con esfuerzo creciente).
 
 Niveles de Detalle de Interfaz
-===============================
+==============================
 
 1. **No explicas esta interfaz**, ya que sabes que el código fuente correspondiente es comprensible o suficientemente simple
 
@@ -55,13 +58,15 @@ Ver También
 
 * Tip 5-22 (documenta interfaces con pruebas unitarias)
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_05` - Vista de Bloques de Construcción
    * :ref:`bloques_tip_22` - Interfaces con unit tests
 
-----
+
+
 
 :Tip: 5-21
 :Tema: Interfaces internas con esfuerzo mínimo

@@ -1,8 +1,10 @@
 .. _MD_001_modo_1_vs_modo_2:
 
-===============================================
+
+
+
 MD-001: Modo 1 vs Modo 2
-===============================================
+========================
 
 :ID: MD-001
 :Tipo: Matriz de Decisión
@@ -14,7 +16,8 @@ MD-001: Modo 1 vs Modo 2
  :depth: 3
  :local:
 
-----
+
+
 
 Pregunta Central
 ================
@@ -29,13 +32,14 @@ Esta es la **primera decisión** que debes tomar en cualquier proyecto de traduc
 - Determina formato de salida
 - Influye en calidad final
 
-----
+
+
 
 Los Dos Modos
 =============
 
 Modo 1: Alta Fidelidad (Preservación)
---------------------------------------
+=====================================
 
 **Filosofía:**
 
@@ -82,7 +86,7 @@ Traducido LaTeX (Modo 1):
 **Nota:** Se traduce SOLO el texto, formato intacto.
 
 Modo 2: Transformación (Conversión)
-------------------------------------
+===================================
 
 **Filosofía:**
 
@@ -112,21 +116,24 @@ Traducido RST (Modo 2):
 
 .. code-block:: rst
 
- ==============
+
+
+
  Introducción
- ==============
+=============
 
  Este documento describe la **arquitectura**.
 
 **Nota:** Se traduce Y se transforma el formato.
 
-----
+
+
 
 Matriz de Decisión
 ==================
 
 Decisión por Tipo de Documento
--------------------------------
+==============================
 
 .. list-table::
  :header-rows: 1
@@ -170,7 +177,7 @@ Decisión por Tipo de Documento
    - **Modo 1**
 
 Decisión por Objetivo
-----------------------
+=====================
 
 .. list-table::
  :header-rows: 1
@@ -199,7 +206,7 @@ Decisión por Objetivo
    - [OK] Simple
 
 Decisión por Restricciones
----------------------------
+==========================
 
 .. list-table::
  :header-rows: 1
@@ -224,13 +231,14 @@ Decisión por Restricciones
    - [ERROR] No
    - [OK] Sí
 
-----
+
+
 
 Árbol de Decisión
 =================
 
 Proceso Paso a Paso
--------------------
+===================
 
 .. code-block:: text
 
@@ -262,7 +270,7 @@ Proceso Paso a Paso
 **Regla de oro:** Cuando dudes, usa **Modo 2** (más flexible).
 
 Ejemplos de Decisión
---------------------
+====================
 
 **Caso 1: Libro de BPM en LaTeX**
 
@@ -320,13 +328,14 @@ Ejemplos de Decisión
  Razón: Cumplimiento de formato
  institucional obligatorio
 
-----
+
+
 
 Comparación Detallada
 =====================
 
 Ventajas y Desventajas
-----------------------
+======================
 
 **Modo 1: Alta Fidelidad**
 
@@ -367,7 +376,7 @@ Ventajas y Desventajas
    - No para todos los tipos
 
 Tiempo de Ejecución
--------------------
+===================
 
 .. list-table::
  :header-rows: 1
@@ -393,7 +402,7 @@ Tiempo de Ejecución
    - **Mayor inicial, menor a largo plazo**
 
 Calidad de Salida
------------------
+=================
 
 .. list-table::
  :header-rows: 1
@@ -421,13 +430,14 @@ Calidad de Salida
    - [STAR][STAR][STAR]
    - [STAR][STAR][STAR][STAR][STAR]
 
-----
+
+
 
 Casos Especiales
 ================
 
 Modo Híbrido (Ambos)
----------------------
+====================
 
 **Cuándo usar:**
 
@@ -451,7 +461,7 @@ Modo Híbrido (Ambos)
 **Costo:** 1.5x-2x el tiempo de un solo modo
 
 Cambio de Modo Durante Proyecto
---------------------------------
+===============================
 
 **Posible pero costoso:**
 
@@ -467,13 +477,14 @@ Cambio de Modo Durante Proyecto
 
 **Recomendación:** Decidir modo ANTES de iniciar proyecto
 
-----
+
+
 
 Recomendaciones Finales
-========================
+=======================
 
 Guía Rápida de Decisión
-------------------------
+=======================
 
 **Usa Modo 1 si:**
 
@@ -509,7 +520,7 @@ Guía Rápida de Decisión
  -> MODO 1 [OK]
 
 Errores Comunes
----------------
+===============
 
 **Error 1: Elegir Modo 1 por familiaridad**
 
@@ -539,7 +550,7 @@ Errores Comunes
  Lección: Decidir ANTES de comenzar
 
 Checklist de Decisión
-----------------------
+=====================
 
 .. code-block:: text
 
@@ -559,13 +570,14 @@ Checklist de Decisión
  [ ] Herramientas preparadas
  [ ] Workflow definido
 
-----
+
+
 
 Casos Reales
 ============
 
 Proyecto arc42 -> Modo 2
-------------------------
+========================
 
 **Contexto:**
 
@@ -591,7 +603,7 @@ Proyecto arc42 -> Modo 2
 **Resultado:** [OK] Éxito total (100% completitud)
 
 Libro BPM Académico -> Modo 1
------------------------------
+=============================
 
 **Contexto:**
 
@@ -616,7 +628,8 @@ Libro BPM Académico -> Modo 1
 
 **Resultado:** [OK] Publicación exitosa
 
-----
+
+
 
 Conclusión
 ==========
@@ -644,7 +657,8 @@ Una vez decidido el modo:
 - Modo 1: Seguir :doc:`../../02_procedimientos/modo_alta_fidelidad/index`
 - Modo 2: Seguir :doc:`../../02_procedimientos/workflow_general`
 
-----
+
+
 
 .. seealso::
  * :doc:`../../02_procedimientos/workflow_general` - Workflow Modo 2

@@ -1,8 +1,10 @@
 .. _requisitos-calidad-ejemplo-1:
 
-===================================================================
+
+
+
 Ejemplo de Requisitos de Calidad: HTML Sanity Checker
-===================================================================
+=====================================================
 
 .. meta::
    :layout: post
@@ -17,10 +19,11 @@ Ejemplo de Requisitos de Calidad: HTML Sanity Checker
    Este ejemplo ha sido creado con Enterprise Architect(TM) como un diagrama 
    de flujo de datos.
 
-----
+
+
 
 1.2 (ejemplo) Requisitos de Calidad para HTML Sanity Checker
-=============================================================
+============================================================
 
 .. list-table:: Atributos de Calidad Objetivo
    :header-rows: 1
@@ -55,14 +58,16 @@ Ejemplo de Requisitos de Calidad: HTML Sanity Checker
      - Verificación de archivo html de 100kB realizada en menos de 10 
        segundos (excluyendo inicio de Gradle)
 
-----
+
+
 
 .. [#duda] Especialmente al verificar enlaces externos, la corrección de los 
    enlaces depende de factores externos, como disponibilidad de red, latencia 
    o configuración del servidor, donde HtmlSC no siempre puede identificar la 
    causa raíz de problemas potenciales.
 
-----
+
+
 
 .. note::
    **Información de traducción:**

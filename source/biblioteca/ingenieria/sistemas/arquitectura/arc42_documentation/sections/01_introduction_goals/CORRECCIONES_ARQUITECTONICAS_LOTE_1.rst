@@ -8,9 +8,11 @@
  :autor: Equipo ADT
  :clasificacion: Interno
 
-====================================================================
+
+
+
 Correcciones Arquitectónicas Aplicadas - Lote 1
-====================================================================
+===============================================
 
 :Fecha: 2026-01-27
 :Sección: 01 - Introducción y Objetivos
@@ -18,7 +20,8 @@ Correcciones Arquitectónicas Aplicadas - Lote 1
 :Documento base: ADT_GUIA_TRADUCCION_ARQUITECTONICA.md
 :Estado: [OK] COMPLETADO
 
-----
+
+
 
 Resumen Ejecutivo
 =================
@@ -29,19 +32,20 @@ reemplazaron traducciones literales por traducciones contextuales arquitectónic
 
 **Resultado:** [OK] Terminología arquitectónica correcta aplicada en 5 archivos
 
-----
+
+
 
 Problema Identificado
 =====================
 
 Traducción Literal vs Contextual
----------------------------------
+================================
 
 La traducción literal de términos arquitectónicos causa **ambigüedad semántica**
 y no refleja el significado real en el contexto de arquitectura de software.
 
 Ejemplo del Problema
-^^^^^^^^^^^^^^^^^^^^
+====================
 
 .. code-block:: rst
 
@@ -59,14 +63,16 @@ Ejemplo del Problema
 - "factores determinantes" captura el concepto arquitectónico correcto
 - Mejora la comprensión para arquitectos de software hispanohablantes
 
-----
+
+
 
 Correcciones Aplicadas
-=======================
+======================
 
 1. Driving Forces -> Factores Determinantes
 
--------------------------------------------
+
+
 
 **Término original:** ``driving forces``
 
@@ -108,11 +114,13 @@ Correcciones Aplicadas
 No son "fuerzas" físicas sino **factores** que determinan y moldean la
 arquitectura. "Factores determinantes" es el término arquitectónico correcto.
 
-----
+
+
 
 2. Quality Goals -> Atributos de Calidad Objetivo
 
--------------------------------------------------
+
+
 
 **Término original:** ``quality goals``
 
@@ -159,11 +167,13 @@ arquitectura. "Factores determinantes" es el término arquitectónico correcto.
 Son atributos de la ARQUITECTURA, no del proyecto. Deben ser específicos y
 medibles. "Atributos de calidad objetivo" refleja mejor esta naturaleza.
 
-----
+
+
 
 3. Stakeholder -> Preservado
 
-----------------------------
+
+
 
 **Término original:** ``stakeholder``
 
@@ -199,13 +209,14 @@ medibles. "Atributos de calidad objetivo" refleja mejor esta naturaleza.
 Término establecido internacionalmente. Traducirlo a "interesado" o "parte
 interesada" reduce precisión técnica.
 
-----
+
+
 
 Glosario Actualizado
 ====================
 
 Entradas Corregidas/Agregadas
-------------------------------
+=============================
 
 1. **Driving forces (Factores determinantes)**
 
@@ -225,10 +236,11 @@ Entradas Corregidas/Agregadas
  - Justificación de preservación en inglés
  - Referencias a estándares internacionales
 
-----
+
+
 
 Archivos Afectados - Resumen
-=============================
+============================
 
 .. list-table:: Archivos con Correcciones
  :header-rows: 1
@@ -258,13 +270,14 @@ Archivos Afectados - Resumen
 
 **Total:** 6 archivos actualizados | **12 correcciones aplicadas**
 
-----
+
+
 
 Metodología de Corrección
-==========================
+=========================
 
 Proceso Seguido
----------------
+===============
 
 1. **Identificación:** Búsqueda de términos problemáticos con grep
 2. **Análisis:** Verificación de contexto arquitectónico
@@ -273,7 +286,7 @@ Proceso Seguido
 5. **Documentación:** Actualización de glosario y notas
 
 Herramientas Utilizadas
------------------------
+=======================
 
 .. code-block:: bash
 
@@ -287,13 +300,14 @@ Herramientas Utilizadas
  # Validación
  grep -rn "factores determinantes" traduccion/*.rst
 
-----
+
+
 
 Impacto de las Correcciones
-============================
+===========================
 
 Mejora en Claridad Arquitectónica
-----------------------------------
+=================================
 
 **Antes (literal):**
 
@@ -312,7 +326,7 @@ Mejora en Claridad Arquitectónica
 - [OK] Coherente con ISO 25010 y SWEBOK
 
 Alineación con Estándares
---------------------------
+=========================
 
 .. list-table:: Conformidad con Estándares
  :header-rows: 1
@@ -331,13 +345,14 @@ Alineación con Estándares
    - IEEE 1471
    - [OK] Alineado
 
-----
+
+
 
 Lecciones Aprendidas
 ====================
 
 Para Futuras Traducciones
---------------------------
+=========================
 
 1. **Consultar Guía Arquitectónica ANTES de traducir**
 
@@ -360,7 +375,7 @@ Para Futuras Traducciones
  - SWEBOK para terminología de ingeniería
 
 Aplicación a Futuros Lotes
----------------------------
+==========================
 
 .. important::
  **Para Lote 2 y siguientes:**
@@ -370,13 +385,14 @@ Aplicación a Futuros Lotes
  3. [OK] NO requerir correcciones post-traducción
  4. [OK] Documentar decisiones en tiempo real
 
-----
+
+
 
 Checklist de Calidad Arquitectónica
-====================================
+===================================
 
 Verificación Post-Corrección
------------------------------
+============================
 
 - [OK] "driving forces" -> "factores determinantes" (NO "fuerzas impulsoras")
 - [OK] "quality goals" -> "atributos de calidad objetivo" (NO solo "objetivos")
@@ -386,30 +402,32 @@ Verificación Post-Corrección
 - [OK] Notas de traducción documentadas
 
 Resultado
----------
+=========
 
 **Calidad arquitectónica:** [OK] **APROBADA**
 
-----
+
+
 
 Referencias
 ===========
 
 Documentos Aplicados
---------------------
+====================
 
 - **ADT_GUIA_TRADUCCION_ARQUITECTONICA.md** (v1.0.0)
 - :doc:`/02_procedimientos/workflow_general` (v1.4.0)
 
 Estándares Consultados
-----------------------
+======================
 
 - ISO/IEC/IEEE 42010 (Architecture description)
 - ISO/IEC 25010 (Systems and software Quality Models)
 - IEEE 1471 (Architectural Description of Software)
 - SWEBOK v3.0 (Software Engineering Body of Knowledge)
 
-----
+
+
 
 Conclusión
 ==========
@@ -424,10 +442,11 @@ de la traducción del Lote 1. La terminología ahora es:
 
 **FASE 4 completada exitosamente para Lote 1.**
 
-----
+
+
 
 Historial de Revisiones
-========================
+=======================
 
 .. list-table::
  :header-rows: 1
@@ -440,7 +459,8 @@ Historial de Revisiones
    - 2026-01-27
    - Correcciones arquitectónicas aplicadas según guía ADT
 
-----
+
+
 
 .. note::
  **Guía aplicada:** ADT_GUIA_TRADUCCION_ARQUITECTONICA.md v1.0.0

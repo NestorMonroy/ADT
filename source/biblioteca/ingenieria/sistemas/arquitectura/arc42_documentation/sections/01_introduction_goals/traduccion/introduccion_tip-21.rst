@@ -7,15 +7,18 @@
 
 .. _introduccion-tip-21:
 
-===================================================================
+
+
+
 Consejo 1-21: ¡Mantén una tabla de stakeholders!
-===================================================================
+================================================
 
 :Tema: Documentación de stakeholders
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Gestores de proyecto
 
-----
+
+
 
 Recomendación
 =============
@@ -23,32 +26,31 @@ Recomendación
 Debes representar explícitamente las expectativas de estos stakeholders (ver arriba)
 con respecto a la arquitectura y su documentación en forma de tabla.
 
-----
+
+
 
 Tabla Mínima de Stakeholders
-=============================
+============================
 
 Puedes encontrar una versión mínima en la tabla a continuación, que solo describe
 las expectativas o artefactos requeridos.
 
 .. list-table:: Tabla de stakeholders con roles y expectativas
- :header-rows: 1
- :widths: 30 70
+   :header-rows: 1
+   :widths: 30 70
 
- * - Rol
-   - Expectativa
- * - Administrador
-   - Vista general de despliegue, detalles de instalación y operaciones, firewalls
- * - Departamento de QA
-   - Descripción de las interfaces para pruebas de carga, posibles puntos de
+   * - Rol
+     - Expectativa
+   * - Administrador
+     - Vista general de despliegue, detalles de instalación y operaciones, firewalls
+   * - Departamento de QA
+     - Descripción de las interfaces para pruebas de carga, posibles puntos de medición para pruebas de rendimiento, concepto técnico para seguridad y confiabilidad
 
- medición para pruebas de rendimiento, concepto técnico para seguridad y
- confiabilidad
 
-----
+
 
 Tabla Detallada de Stakeholders
-================================
+===============================
 
 La tabla a continuación muestra una versión más detallada que incluye la relevancia
 para aprobación e información de contacto.
@@ -78,7 +80,8 @@ departamentos / organización respectivamente.
    - Ninguna
    - Concepto de persistencia y reporting, Detalles interfaz DWH
 
-----
+
+
 
 .. note::
  **Información de traducción:**

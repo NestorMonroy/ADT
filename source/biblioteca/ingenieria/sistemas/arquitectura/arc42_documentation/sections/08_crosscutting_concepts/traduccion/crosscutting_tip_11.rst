@@ -1,6 +1,7 @@
 ====================================================================
+
 Tip 8-11: ¡(Hiper)Enlace entre Bloques de Construcción y Conceptos!
-====================================================================
+===================================================================
 
 .. meta::
    :layout: post
@@ -14,7 +15,7 @@ Los conceptos transversales y los bloques de construcción están íntimamente r
 Establezca enlaces bidireccionales entre ellos:
 
 De Bloques de Construcción a Conceptos
-=======================================
+======================================
 
 En la descripción de un bloque de construcción (Sección 5), mencione qué conceptos
 transversales son relevantes:
@@ -22,7 +23,7 @@ transversales son relevantes:
    *"Este servicio implementa el* **concepto de autenticación** *descrito en la Sección 8.3"*
 
 De Conceptos a Bloques de Construcción
-=======================================
+======================================
 
 En la documentación de un concepto (Sección 8), liste qué bloques de construcción
 lo implementan o se ven afectados por él:

@@ -1,15 +1,15 @@
-============================
+
 Documentación Técnica
-============================
+=====================
 
 Esta sección contiene documentación técnica sobre el desarrollo y configuración
 del proyecto ADT.
 
 Documentos Disponibles
-=======================
+======================
 
 Integración de Frameworks
---------------------------
+=========================
 
 .. toctree::
    :maxdepth: 1
@@ -17,7 +17,7 @@ Integración de Frameworks
    INTEGRACION_FRAMEWORKS
 
 Estado de PhantomJS
--------------------
+===================
 
 .. toctree::
    :maxdepth: 1

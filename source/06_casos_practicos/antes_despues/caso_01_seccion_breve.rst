@@ -1,8 +1,10 @@
 .. _caso_seccion_breve:
 
-===============================================
+
+
+
 Caso Práctico: Traducción de Sección Breve
-===============================================
+==========================================
 
 :Caso: CP-001
 :Tipo: Antes/Después
@@ -14,7 +16,8 @@ Caso Práctico: Traducción de Sección Breve
  :depth: 3
  :local:
 
-----
+
+
 
 Resumen Ejecutivo
 =================
@@ -33,13 +36,14 @@ Resumen Ejecutivo
  - Tips breves requieren alto enriquecimiento
  - Verificación sistemática previene omisiones
 
-----
+
+
 
 Contexto del Caso
 =================
 
 Información del Original
-------------------------
+========================
 
 **Archivo principal:**
 
@@ -85,13 +89,14 @@ Información del Original
  Enriquecimiento esperado: +200% a +300%
  (Basado en tamaño 44 líneas del principal)
 
-----
+
+
 
 PASO 0: Lectura Completa (PRE-TRADUCCIÓN)
-==========================================
+=========================================
 
 Decisión Crítica
-----------------
+================
 
 **[ERROR] ERROR POTENCIAL:**
 
@@ -113,7 +118,7 @@ Decisión Crítica
  Resultado: 0 OMISIONES
 
 Inventario Exhaustivo
----------------------
+=====================
 
 **Lectura línea por línea:**
 
@@ -161,13 +166,14 @@ Inventario Exhaustivo
  [OK] Contenido crítico mapeado: 13 elementos
  [OK] Listo para traducir SIN omisiones
 
-----
+
+
 
 Proceso de Traducción
-======================
+=====================
 
 Lote 1: Archivo Principal
---------------------------
+=========================
 
 **Archivo:** `seccion_12_glosario.rst`
 
@@ -211,55 +217,55 @@ Lote 1: Archivo Principal
 
 .. code-block:: rst
 
- ================================
- 12. Glosario
- ================================
+   12. Glosario
+   =============
 
- .. tip:: Contexto Inicial
- [10 líneas de introducción]
+   .. tip:: Contexto Inicial
+      [10 líneas de introducción]
 
- Introducción
- ============
- [Expansión del concepto]
+   Introducción
+   =============
+   [Expansión del concepto]
 
- Content
- =======
- [Contenido traducido + expandido]
+   Content
+   ========
+   [Contenido traducido + expandido]
 
- Motivation
- ==========
- [Motivación traducida + cita]
+   Motivation
+   ===========
+   [Motivación traducida + cita]
 
- Form
- ====
- [Forma + 2 ejemplos de tabla]
+   Form
+   =====
+   [Forma + 2 ejemplos de tabla]
 
- Plantilla
- =========
- [Plantilla vacía incluida]
+   Plantilla
+   ==========
+   [Plantilla vacía incluida]
 
- Relación con Otras Secciones
- =============================
- [Nueva sección agregada]
+   Relación con Otras Secciones
+   =============================
+   [Nueva sección agregada]
 
- .. toctree::
- :caption: Tips de Glosario
- [6 tips]
+   .. toctree::
+      :caption: Tips de Glosario
+      [6 tips]
 
- .. toctree::
- :caption: Ejemplos
- [1 ejemplo]
+   .. toctree::
+      :caption: Ejemplos
+      [1 ejemplo]
 
- Referencias
- ===========
- [FAQ arc42]
+   Referencias
+   ============
+   [FAQ arc42]
 
 **Tiempo invertido:** 45 minutos
 
-----
+
+
 
 Lote 2: Tips 1-3
-----------------
+================
 
 **Archivos:**
 - `glossary_tip_1.rst`
@@ -272,9 +278,11 @@ Lote 2: Tips 1-3
 
 .. code-block:: text
 
- ---
+
+
+
  title: "Tip 12-1: Take your glossary seriously"
- ---
+================================================
 
  You should take the glossary seriously. Terms must be
  defined and used consistently.
@@ -303,11 +311,11 @@ Lote 2: Tips 1-3
  1. Introducción contextual (15 líneas)
 
  2. Tabla comparativa "Con/Sin Glosario" (20 líneas):
- | Aspecto | Sin Glosario | Con Glosario |
- |---------|--------------|--------------|
- | Comunicación | Ambigua | Precisa |
- | Onboarding | Lento | Rápido |
- | Discusiones | Largas | Eficientes |
+   | Aspecto | Sin Glosario | Con Glosario |
+   |---------|--------------|--------------|
+   | Comunicación | Ambigua | Precisa |
+   | Onboarding | Lento | Rápido |
+   | Discusiones | Largas | Eficientes |
 
  3. Regla "Mejor Explícito que Implícito" (10 líneas)
 
@@ -317,10 +325,10 @@ Lote 2: Tips 1-3
  - Homónimos: "Cuenta" (account vs bill)
 
  5. Cómo Tomarse en Serio (4 Pasos - 35 líneas):
- Paso 1: Crear glosario desde inicio de proyecto
- Paso 2: Revisión en cada sprint
- Paso 3: Asignar responsable (PO/PM)
- Paso 4: Educar al equipo sobre importancia
+   Paso 1: Crear glosario desde inicio de proyecto
+   Paso 2: Revisión en cada sprint
+   Paso 3: Asignar responsable (PO/PM)
+   Paso 4: Educar al equipo sobre importancia
 
  6. Métricas de Éxito (15 líneas):
  - % términos documentados
@@ -354,20 +362,21 @@ Lote 2: Tips 1-3
 
  Tip 12-2: 26 líneas -> 168 líneas (+546%)
  - Agregado: Estructura tabla, ejemplo completo e-commerce,
- mejores prácticas, herramientas
+   mejores prácticas, herramientas
 
  Tip 12-3: 18 líneas -> 175 líneas (+872%)
  - Agregado: Tipos de diagramas (UML/ER/DDD), ejemplo
- completo, código PlantUML, cuándo usar
+   completo, código PlantUML, cuándo usar
 
 **Promedio Lote 2:** +828%
 
 **Tiempo invertido:** 1 hora
 
-----
+
+
 
 Lote 3: Tips 4-6
-----------------
+================
 
 **Similar a Lote 2:**
 
@@ -378,20 +387,21 @@ Lote 3: Tips 4-6
 
  Tip 12-5: 17 líneas -> 220 líneas (+1194%)
  - Principio minimalismo, criterios inclusión/exclusión,
- tamaños recomendados, ejemplo completo
+   tamaños recomendados, ejemplo completo
 
  Tip 12-6: 11 líneas -> 162 líneas (+1373%)
  - Responsable (PO/PM), responsabilidades, proceso gestión,
- RACI matrix, métricas, red flags
+   RACI matrix, métricas, red flags
 
 **Promedio Lote 3:** +1034%
 
 **Tiempo invertido:** 1 hora
 
-----
+
+
 
 Lote 4: Ejemplo
----------------
+===============
 
 **Archivo:** `glossary_ejemplo_htmlsc.rst`
 
@@ -441,13 +451,14 @@ Lote 4: Ejemplo
 
 **Tiempo invertido:** 30 minutos
 
-----
+
+
 
 Verificación Sistemática
 ========================
 
 Script de Verificación
-----------------------
+======================
 
 **Script creado:**
 
@@ -538,22 +549,23 @@ Script de Verificación
 **Resultado:** 13/13 elementos [OK] PRESENTE (100%)
 
 Compilación Sphinx
-------------------
+==================
 
 .. code-block:: bash
 
- $ cd /tmp/ADT
- $ make clean && make html
+   $ cd /tmp/ADT
+   $ make clean && make html
 
- Running Sphinx v8.1.3
- ...
- building [mo]: targets for 0 po files that are out of date
- building [html]: targets for 8 source files that are out of date
- updating environment: [new config] 8 added, 0 changed, 0 removed
- ...
- build succeeded.
+   Running Sphinx v8.1.3
+   ======================
+   building [mo]: targets for 0 po files that are out of date
+   building [html]: targets for 8 source files that are out of date
 
- The HTML pages are in build/html.
+   updating environment: [new config] 8 added, 0 changed, 0 removed
+   =================================================================
+   build succeeded.
+
+   The HTML pages are in build/html.
 
 **Resultado:** [OK] Compilación exitosa
 
@@ -561,18 +573,19 @@ Compilación Sphinx
 
 .. code-block:: text
 
- - 2 warnings de referencias cruzadas (sección 8 no traducida aún)
- - 1 warning de Pygments lexer 'plantuml'
+   - 2 warnings de referencias cruzadas (sección 8 no traducida aún)
+   - 1 warning de Pygments lexer 'plantuml'
 
- TODOS esperados y documentados [OK]
+   TODOS esperados y documentados [OK]
 
-----
+
+
 
 Resultado Final
 ===============
 
 Archivos Traducidos
--------------------
+===================
 
 .. list-table::
  :header-rows: 1
@@ -636,7 +649,7 @@ Archivos Traducidos
  Omisiones: 0
 
 Métricas de Tiempo
-------------------
+==================
 
 .. code-block:: text
 
@@ -653,7 +666,7 @@ Métricas de Tiempo
  (Dentro del rango esperado 2-4 arch/hora)
 
 Cumplimiento de Criterios
---------------------------
+=========================
 
 **Evaluación contra :doc:`../../03_estandares/calidad/criterios_calidad`:**
 
@@ -688,13 +701,14 @@ Cumplimiento de Criterios
 
 **Calidad Total:** 100% [OK]
 
-----
+
+
 
 Análisis de Decisiones
-=======================
+======================
 
 Decisión 1: Alto Enriquecimiento
----------------------------------
+================================
 
 **Pregunta:**
  ¿Por qué +771% promedio cuando el archivo principal solo +273%?
@@ -719,7 +733,7 @@ Decisión 1: Alto Enriquecimiento
  [OK] DECISIÓN CORRECTA según MD-002
 
 Decisión 2: Conservar Términos
--------------------------------
+==============================
 
 **Términos Conservados:**
 
@@ -753,7 +767,7 @@ Decisión 2: Conservar Términos
 **Consistencia:** 100% (0 variaciones)
 
 Decisión 3: Estructura de Salida
----------------------------------
+================================
 
 **Decisión:**
 
@@ -767,13 +781,14 @@ Decisión 3: Estructura de Salida
  [OK] Toctree organizado
  [OK] Coherente con estructura arc42
 
-----
+
+
 
 Lecciones Aprendidas
 ====================
 
 [OK] Lo que Funcionó Perfectamente
----------------------------------
+==================================
 
 1. **PASO 0 Completo**
 
@@ -825,7 +840,7 @@ Lecciones Aprendidas
  De abstracto a concreto
 
 [WARNING] Áreas de Mejora
--------------------
+=========================
 
 1. **Tiempo Inicial Subestimado**
 
@@ -855,7 +870,7 @@ Lecciones Aprendidas
  Ahorraría tiempo en futuro
 
 [TABLE] Aplicabilidad a Otros Proyectos
------------------------------------
+=======================================
 
 **Este caso es modelo para:**
 
@@ -874,7 +889,8 @@ Lecciones Aprendidas
  [ERROR] Código fuente (reglas diferentes)
  [ERROR] Traducciones literales (sin enriquecimiento)
 
-----
+
+
 
 Checkpoint Final
 ================
@@ -915,7 +931,8 @@ Checkpoint Final
  - Tiempo: 3h 40min
  - Velocidad: 2.2 arch/hora
 
-----
+
+
 
 Conclusión
 ==========
@@ -950,7 +967,8 @@ Este caso demuestra que siguiendo el proceso:
 
 ...se logra **100% completitud sin omisiones**.
 
-----
+
+
 
 .. seealso::
  * :doc:`../../03_estandares/calidad/criterios_calidad` - Criterios aplicados

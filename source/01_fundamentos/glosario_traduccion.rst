@@ -1,6 +1,5 @@
-=======================================
 Glosario de Términos de Traducción ADT
-=======================================
+======================================
 
 :Categoría: Fundamentos
 :Ubicación: 01_fundamentos/
@@ -16,7 +15,7 @@ Glosario de Términos de Traducción ADT
 
 
 
-----
+
 
 Introducción
 ============
@@ -28,7 +27,8 @@ Este glosario define los términos fundamentales utilizados en el proyecto ADT.
  - ISO 1087:2019 (Terminology work)
  - Translation Studies
 
-----
+
+
 
 Conceptos Fundamentales
 =======================
@@ -77,7 +77,7 @@ Conceptos Fundamentales
     En ADT: El LaTeX original proporcionado por el autor
 
 Método por Defecto
-===================
+==================
 
 .. glossary::
 
@@ -105,7 +105,7 @@ Método por Defecto
     Excepción: Código fuente (forma = contenido)
 
 Objetivos de Traducción
-========================
+=======================
 
 .. glossary::
 
@@ -142,7 +142,7 @@ Objetivos de Traducción
     Criterio: ¿Añade valor semántico?
 
 Tácticas de Traducción
-=======================
+======================
 
 .. glossary::
 
@@ -184,7 +184,7 @@ Tácticas de Traducción
 
     Uso: Para claridad
 
-    Ejemplo: "[1]" -> "Smith (2020) :cite:`smith2020`"
+    Ejemplo: "[1]" -> "Smith (2020) [smith2020]"
 
   Generalización
     Generalization
@@ -259,7 +259,7 @@ Tácticas de Traducción
     En ADT: Menos relevante (documentación técnica)
 
 Niveles de Análisis
-====================
+===================
 
 .. glossary::
 
@@ -268,6 +268,7 @@ Niveles de Análisis
     Decisiones estratégicas del documento completo.
 
     Ejemplos:
+    
     
     - ¿Modo 1 (Alta Fidelidad) o Modo 2 (Marcado Visual)?
     - ¿Preservar todos los espacios verticales?
@@ -279,12 +280,13 @@ Niveles de Análisis
 
     Ejemplos:
     
+    
     - ¿Este ``\emph{}`` es semántico o estilístico?
     - ¿Preservar este ``\vspace{}`` específico?
     - ¿Esta figura necesita adaptación?
 
 Tipos de Divergencias
-======================
+=====================
 
 .. glossary::
 
@@ -293,6 +295,7 @@ Tipos de Divergencias
     Desviación del método por defecto para lograr un objetivo.
 
     Características:
+    
     
     - Consciente y documentada
     - Justificada por objetivo específico
@@ -306,6 +309,7 @@ Tipos de Divergencias
 
     Tipos:
     
+    
     - Error de lectura
     - Incomprensión del original
     - Error de tipeo
@@ -314,7 +318,7 @@ Tipos de Divergencias
     Solución: Corrección en revisión
 
 Elementos de Documento
-=======================
+======================
 
 .. glossary::
 
@@ -329,7 +333,7 @@ Elementos de Documento
     .. code-block:: rst
 
        Título
-       ======
+=============
 
   Subsección
     Subsection
@@ -342,7 +346,7 @@ Elementos de Documento
     .. code-block:: rst
 
        Título
-       ------
+=============
 
   Figura
     Figure
@@ -373,6 +377,7 @@ Elementos de Documento
     Enumeración de ítems.
 
     Tipos:
+    
     
     - Numerada (enumerate/``1. 2. 3.``)
     - No numerada (itemize/``- - -``)
@@ -429,7 +434,7 @@ Formatos y Medios
     Relación con RST: Más simple, menos potente
 
 Calidad y Validación
-=====================
+====================
 
 .. glossary::
 
@@ -463,6 +468,7 @@ Calidad y Validación
 
     Aspectos:
     
+    
     - Completitud
     - Preservación semántica
     - Calidad visual
@@ -479,6 +485,7 @@ Métodos y Modos
 
     Características:
     
+    
     - Preserva espaciado
     - Preserva orden exacto
     - Mínimas adaptaciones
@@ -491,6 +498,7 @@ Métodos y Modos
 
     Características:
     
+    
     - Marca conceptos clave
     - Añade claridad visual
     - Más adaptaciones
@@ -502,6 +510,7 @@ Métodos y Modos
     Secuencia de pasos para traducir.
 
     Pasos típicos:
+    
     
     1. Análisis
     2. Traducción
@@ -546,10 +555,10 @@ Conceptos Avanzados
 
 
 
-----
+
 
 Uso de Este Glosario
-=====================
+====================
 
 **En documentación:**
 
@@ -569,7 +578,8 @@ Los términos están organizados alfabéticamente dentro de categorías temátic
 
 Este glosario se actualiza conforme se desarrolla el proyecto.
 
-----
+
+
 
 Referencias
 ===========
@@ -579,7 +589,8 @@ Referencias
 - :doc:`/docs_maestros/METODO_TRADUCCION_PESHITTA_ZACHARIAS`
 - ISO 1087:2019 - Terminology work and terminology science
 
-----
+
+
 
 **Versión:** 1.0
 **Fecha:** 2026-01-27

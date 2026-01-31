@@ -1,15 +1,18 @@
 .. _seccion_11:
 
-===============================================================
+
+
+
 Sección 11: Riesgos y Deuda Técnica (Risks and Technical Debt)
-===============================================================
+==============================================================
 
 .. tip::
  **Riesgos y Deuda Técnica arc42**
 
  Los **riesgos** y la **deuda técnica** son parte inevitable de cualquier proyecto. Esta sección documenta los **riesgos técnicos** identificados y la **deuda técnica**, ordenados por prioridad, para facilitar la gestión proactiva.
 
-----
+
+
 
 Introducción
 ============
@@ -66,16 +69,18 @@ Lista de **riesgos** y/o **deudas técnicas**, probablemente incluyendo medidas 
 
 *< Inserta aquí lista o tabla de problemas conocidos, riesgos o deuda técnica >*
 
-----
+
+
 
 Relación con Otras Secciones
-=============================
+============================
 
 * **Sección 1.2 (Objetivos de Calidad):** Los **riesgos** pueden amenazar los objetivos de calidad
 * **Sección 9 (Decisiones de Arquitectura):** Las decisiones pueden introducir **riesgos** o **deuda técnica**
 * **Sección 10.2 (Escenarios de Calidad):** Los **riesgos** pueden expresarse como escenarios negativos
 
-----
+
+
 
 Tips y Consejos
 ===============
@@ -91,7 +96,8 @@ Tips y Consejos
  risks_tip_5
  risks_tip_6
 
-----
+
+
 
 Ejemplos de Aplicación
 ======================
@@ -103,7 +109,8 @@ Ejemplos de Aplicación
  risks_ejemplo_htmlsc
  risks_ejemplo_tpu
 
-----
+
+
 
 Referencias
 ===========
@@ -112,7 +119,8 @@ Referencias
 * Tim Lister: `"Risk Management is Project Management for Grown-Ups" <https://www.infoq.com/presentations/risk-project-management>`_
 * Atlantic Systems Guild
 
-----
+
+
 
 .. note::
  **Gestión Proactiva de Riesgos**

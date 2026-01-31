@@ -1,15 +1,18 @@
 .. _runtime_tip_9:
 
-===============================================================
+
+
+
 Tip 6-9: ¡Usa una notación textual para describir escenarios de tiempo de ejecución!
-===============================================================
+====================================================================================
 
 .. tip::
    **Consejo de Vista de Tiempo de Ejecución arc42**
    
    Usa `PlantUML <https://plantuml.com/>`_ para describir o especificar **escenarios de tiempo de ejecución**. Tiene una sintaxis textual ligera (DSL) para **diagramas de secuencia** y **diagramas de actividad**.
 
-----
+
+
 
 Nuestra sugerencia para equipos de desarrollo: Usa `PlantUML <https://plantuml.com/>`_ para describir o especificar **escenarios de tiempo de ejecución**. Tiene una sintaxis textual ligera (DSL) para **diagramas de secuencia** y **diagramas de actividad** - fácil de entender y una opción ligera para discutir y visualizar actividades y **procesos**.
 
@@ -49,15 +52,15 @@ Nuestra sugerencia para equipos de desarrollo: Usa `PlantUML <https://plantuml.c
 
 El diagrama (renderizado) de esta descripción textual se muestra debajo:
 
-.. figure:: ../figuras/06-textual-sequence.png
-   :alt: Diagrama de secuencia renderizado desde descripción textual
-   :align: center
-   :width: 50%
+.. .. figure:: ../figuras/06-textual-sequence.png
+..       :alt: Diagrama de secuencia renderizado desde descripción textual
+..       :align: center
+..       :width: 50%
    
-   Diagrama de secuencia generado desde notación textual
+..       Diagrama de secuencia generado desde notación textual
 
 El Texto es Más Fácil para Desarrolladores
-===========================================
+==========================================
 
 Tales descripciones textuales (un DSL para **escenarios**) se asemejan a código fuente - lo cual es a menudo fácil para desarrolladores crear y mantener.
 
@@ -67,14 +70,16 @@ Pueden:
 * Mantener las representaciones textuales en herramientas comunes de versionamiento (git, subversion etc), con las opciones establecidas de ramificación y fusión
 * En caso de que tales **escenarios** sean (después...) implementados en código fuente, los diagramas podrían ser eliminados, lo cual resultará en documentación más ligera (ver tip 6-5 (escenarios para discusión, no documentación)).
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_06` - Vista de Tiempo de Ejecución
    * :ref:`runtime_tip_5` - PlantUML para escenarios
    * :ref:`runtime_tip_11` - Diagramas de secuencia
 
-----
+
+
 
 :Tip: 6-9
 :Tema: Notación textual para escenarios

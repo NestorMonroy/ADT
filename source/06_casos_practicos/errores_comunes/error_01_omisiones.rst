@@ -1,8 +1,10 @@
 .. _error_omisiones:
 
-===============================================
+
+
+
 Error Común: Omisiones en Traducción
-===============================================
+====================================
 
 :Caso: EC-001
 :Tipo: Error y Corrección
@@ -15,7 +17,8 @@ Error Común: Omisiones en Traducción
  :depth: 3
  :local:
 
-----
+
+
 
 Resumen Ejecutivo
 =================
@@ -35,13 +38,14 @@ Resumen Ejecutivo
 **Lección:**
  [WARNING] **PASO 0 ES CRÍTICO Y NO NEGOCIABLE**
 
-----
+
+
 
 Contexto del Error
 ==================
 
 Situación Inicial
------------------
+=================
 
 **Tarea:**
 
@@ -64,7 +68,7 @@ Situación Inicial
  Resultado: OMISIONES
 
 Información del Archivo
------------------------
+=======================
 
 **section-07.md (126 líneas):**
 
@@ -84,13 +88,14 @@ Información del Archivo
 
  Omitió: Líneas 51-126 (60% del archivo)
 
-----
+
+
 
 El Error: Versión Inicial
-==========================
+=========================
 
 PASO 0 Incompleto
------------------
+=================
 
 **[ERROR] Lo que se hizo INCORRECTAMENTE:**
 
@@ -124,7 +129,7 @@ PASO 0 Incompleto
  [ERROR] PERO: No identificó TODO el contenido del principal
 
 Traducción Inicial
--------------------
+==================
 
 **Archivos traducidos:**
 
@@ -140,24 +145,26 @@ Traducción Inicial
 
 .. code-block:: rst
 
- ================================
+
+
+
  7. Vista de Despliegue
- ================================
+=======================
 
  Introducción
- ============
+ =============
  [Traducido]
 
  Content
- =======
+ ========
  [Traducido]
 
  Motivation
- ==========
+ ===========
  [Traducido]
 
  Form
- ====
+ =====
  [Traducido]
 
  .. toctree::
@@ -169,7 +176,7 @@ Traducción Inicial
  [3 ejemplos]
 
  Referencias
- ===========
+ ============
  [Traducido]
 
  # FIN [ERROR]
@@ -177,18 +184,19 @@ Traducción Inicial
 **Problema:** Archivo "completo" pero faltaban 6 subsecciones.
 
 Compilación Inicial
--------------------
+===================
 
 .. code-block:: bash
 
- $ make html
+   $ make html
 
- Running Sphinx...
- building [html]: targets for 14 source files
- ...
- build succeeded.
+   Running Sphinx...
 
- [OK] Compilación exitosa
+   building [html]: targets for 14 source files
+   =============================================
+   build succeeded.
+
+   [OK] Compilación exitosa
 
  [ERROR] PERO: Contenido incompleto no detectado
 
@@ -206,13 +214,14 @@ Compilación Inicial
 
  Sphinx no detecta omisiones de contenido
 
-----
+
+
 
 Detección del Error
 ===================
 
 Verificación Manual
--------------------
+===================
 
 **Días después, revisión de calidad:**
 
@@ -229,19 +238,19 @@ Verificación Manual
  Original (pantalla izquierda): Traducido (pantalla derecha):
 
  7. Deployment View 7. Vista de Despliegue
- Content... Content... [OK]
- Motivation... Motivation... [OK]
- Form... Form... [OK]
+   Content... Content... [OK]
+   Motivation... Motivation... [OK]
+   Form... Form... [OK]
 
  7.1 Infrastructure Level 1 [OMITIDO] [ERROR]
  Content...
  Motivation...
 
  7.1.1 Subsection [OMITIDO] [ERROR]
- ...
+===================================
 
  7.2 Infrastructure Level 2 [OMITIDO] [ERROR]
- ...
+=============================================
 
 **Descubrimiento:**
 
@@ -257,7 +266,7 @@ Verificación Manual
  Total: 6 secciones omitidas
 
 Script de Verificación
-----------------------
+======================
 
 **Script creado para confirmar:**
 
@@ -295,26 +304,26 @@ Script de Verificación
  [ERROR] 0/6 subsecciones traducidas
 
 Análisis de Causa Raíz
------------------------
+======================
 
 **5 Porqués:**
 
 .. code-block:: text
 
  1. ¿Por qué se omitieron 6 secciones?
- -> Porque no estaban en el inventario inicial
+   -> Porque no estaban en el inventario inicial
 
  2. ¿Por qué no estaban en el inventario?
- -> Porque el traductor no leyó el archivo completo
+   -> Porque el traductor no leyó el archivo completo
 
  3. ¿Por qué no leyó el archivo completo?
- -> Porque asumió conocer el patrón por secciones previas
+   -> Porque asumió conocer el patrón por secciones previas
 
  4. ¿Por qué asumió conocer el patrón?
- -> Porque no aplicó PASO 0 metódicamente
+   -> Porque no aplicó PASO 0 metódicamente
 
  5. ¿Por qué no aplicó PASO 0?
- -> Porque subestimó su importancia
+   -> Porque subestimó su importancia
 
  CAUSA RAÍZ: Subestimar importancia de PASO 0
 
@@ -328,13 +337,14 @@ Análisis de Causa Raíz
  [ERROR] No usar checklist de PASO 0
  [ERROR] No leer hasta última línea
 
-----
+
+
 
 La Corrección
 =============
 
 PASO 0 Correcto
----------------
+===============
 
 **[OK] Lo que se hizo CORRECTAMENTE:**
 
@@ -406,30 +416,32 @@ PASO 0 Correcto
  Diferencia: 6 elementos omitidos
 
 Traducción Corregida
---------------------
+====================
 
 **Archivo principal actualizado:**
 
 .. code-block:: rst
 
- ================================
+
+
+
  7. Vista de Despliegue
- ================================
+=======================
 
  Introducción
- ============
+ =============
  [Ya existía]
 
  Content
- =======
+ ========
  [Ya existía]
 
  Motivation
- ==========
+ ===========
  [Ya existía]
 
  Form
- ====
+ =====
  [Ya existía]
 
  7.1 Infrastructure Level 1
@@ -437,23 +449,23 @@ Traducción Corregida
  [AGREGADO] [OK]
 
  Content
- -------
+ ========
  [AGREGADO] [OK]
 
  Motivation
- ----------
+ ===========
  [AGREGADO] [OK]
 
  Form
- ----
+ =====
  [AGREGADO] [OK]
 
  7.1.1 Subsección
- ^^^^^^^^^^^^^^^^
+ =================
  [AGREGADO] [OK]
 
  7.1.2 Subsección
- ^^^^^^^^^^^^^^^^
+ =================
  [AGREGADO] [OK]
 
  7.2 Infrastructure Level 2
@@ -461,23 +473,23 @@ Traducción Corregida
  [AGREGADO] [OK]
 
  Content
- -------
+ ========
  [AGREGADO] [OK]
 
  Motivation
- ----------
+ ===========
  [AGREGADO] [OK]
 
  Form
- ----
+ =====
  [AGREGADO] [OK]
 
  7.2.1 Subsección
- ^^^^^^^^^^^^^^^^
+ =================
  [AGREGADO] [OK]
 
  7.2.2 Subsección
- ^^^^^^^^^^^^^^^^
+ =================
  [AGREGADO] [OK]
 
  .. toctree::
@@ -489,7 +501,7 @@ Traducción Corregida
  [3 ejemplos - ya existían]
 
  Referencias
- ===========
+ ============
  [Ya existía]
 
 **Cambios:**
@@ -501,7 +513,7 @@ Traducción Corregida
  Estructura: Ahora completa
 
 Verificación Final
-------------------
+==================
 
 **Script de verificación (corregido):**
 
@@ -541,13 +553,14 @@ Verificación Final
 
 [OK] **Sección 07 ahora 100% completa**
 
-----
+
+
 
 Impacto del Error
 =================
 
 Comparación Antes/Después
---------------------------
+=========================
 
 .. list-table::
  :header-rows: 1
@@ -587,7 +600,7 @@ Comparación Antes/Después
  Ratio: Ahorrar 12 min costó 108 min
 
 Impacto en Calidad
-------------------
+==================
 
 **Versión Inicial:**
 
@@ -610,7 +623,7 @@ Impacto en Calidad
  [OK] APROBADO
 
 Impacto en Proyecto
--------------------
+===================
 
 **Si no se hubiera detectado:**
 
@@ -626,13 +639,14 @@ Impacto en Proyecto
  [ERROR] Desconfianza en traducción
  [ERROR] Pérdida de credibilidad
 
-----
+
+
 
 Lecciones Aprendidas
 ====================
 
 [OK] Lección Principal
---------------------
+======================
 
 **PASO 0 ES CRÍTICO Y NO NEGOCIABLE**
 
@@ -670,7 +684,7 @@ Lecciones Aprendidas
  Resultado correcto pero 2 horas perdidas [ERROR]
 
 Señales de Advertencia
------------------------
+======================
 
 **[ALERT] Estás en riesgo de omisiones si:**
 
@@ -697,7 +711,7 @@ Señales de Advertencia
  Resultado probable: 100% COMPLETITUD
 
 Prevención de Errores
-----------------------
+=====================
 
 **Checklist Anti-Omisiones:**
 
@@ -768,7 +782,7 @@ Prevención de Errores
  [ERROR] DETENTE: Lee el archivo COMPLETO primero
 
 Casos Similares
-----------------
+===============
 
 **Este error es común en:**
 
@@ -789,13 +803,14 @@ Casos Similares
  [OK] Contenido sin estructura anidada
  [OK] Traducciones con verificación automática
 
-----
+
+
 
 Aplicabilidad a Otros Proyectos
-================================
+===============================
 
 Documentación Estructurada
----------------------------
+==========================
 
 **Este error puede ocurrir en:**
 
@@ -818,7 +833,7 @@ Documentación Estructurada
  [OK] Revisión por pares
 
 Traducción Colaborativa
-------------------------
+=======================
 
 **Riesgo Mayor:**
 
@@ -841,7 +856,8 @@ Traducción Colaborativa
  [OK] Revisión cruzada entre traductores
  [OK] Compilación frecuente del proyecto completo
 
-----
+
+
 
 Conclusión
 ==========
@@ -885,7 +901,8 @@ Este error y su corrección son verificables en:
 - Commits Git mostrando correcciones
 - Historial de builds de Sphinx
 
-----
+
+
 
 .. seealso::
  * :doc:`../../02_procedimientos/workflow_general` - PASO 0 detallado

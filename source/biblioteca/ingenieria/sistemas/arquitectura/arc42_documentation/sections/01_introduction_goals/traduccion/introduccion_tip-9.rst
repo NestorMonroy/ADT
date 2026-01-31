@@ -1,8 +1,10 @@
 .. _introduccion-tip-9:
 
-===================================================================
+
+
+
 Consejo 1-9: ¡Usa texto (semi) formal!
-===================================================================
+======================================
 
 .. meta::
    :layout: post
@@ -16,7 +18,8 @@ Consejo 1-9: ¡Usa texto (semi) formal!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Desarrolladores
 
-----
+
+
 
 Recomendación
 =============
@@ -28,7 +31,7 @@ Considera PlantUML de código abierto (https://plantuml.com/) como ejemplo.
 
 Dada la siguiente descripción de actividad, puede crear una versión gráfica:
 
-.. code-block:: plantuml
+.. code-block:: text
 
    @startuml
    start
@@ -50,7 +53,8 @@ Dada la siguiente descripción de actividad, puede crear una versión gráfica:
    
    @enduml
 
-----
+
+
 
 Ventajas
 ========
@@ -61,14 +65,15 @@ representación gráfica.
 
 PlantUML renderiza el código anterior al siguiente diagrama:
 
-.. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-simple-activity.png
-   :alt: Diagrama generado por PlantUML
-   :align: center
-   :width: 40%
+.. .. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-simple-activity.png
+..       :alt: Diagrama generado por PlantUML
+..       :align: center
+..       :width: 40%
 
-   Diagrama de actividad generado por PlantUML
+..       Diagrama de actividad generado por PlantUML
 
-----
+
+
 
 .. note::
    **Información de traducción:**

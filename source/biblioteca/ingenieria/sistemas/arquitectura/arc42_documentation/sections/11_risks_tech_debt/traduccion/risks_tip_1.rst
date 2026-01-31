@@ -1,13 +1,16 @@
 .. _risks_tip_1:
 
-===============================================================
+
+
+
 Tip 11-1: ¡Busca problemas y riesgos con diferentes stakeholders!
-===============================================================
+=================================================================
 
 :Tema: Búsqueda de riesgos con stakeholders
 :Palabras clave: risk, stakeholder, problem
 
-----
+
+
 
 Conduce una búsqueda *breadth first* (primero en amplitud) de problemas y **riesgos**, al menos con representantes de las siguientes categorías de **stakeholders**:
 
@@ -22,7 +25,7 @@ Stakeholders Esenciales
 * **Usuarios finales** (End users)
 
 Grupos Adicionales de Stakeholders Opcionales
-==============================================
+=============================================
 
 Para identificar **riesgos** o problemas adicionales, considera incluir:
 
@@ -35,7 +38,8 @@ Para identificar **riesgos** o problemas adicionales, considera incluir:
 * **Auditores o revisores**
 * ...
 
-----
+
+
 
 **Estrategia Breadth-First:**
 
@@ -59,7 +63,8 @@ Para identificar **riesgos** o problemas adicionales, considera incluir:
 * [OK] **Buy-in**: Stakeholders se sienten escuchados
 * [OK] **Cobertura completa**: No se pierden riesgos críticos
 
-----
+
+
 
 **Ejemplo de Taller de Identificación de Riesgos:**
 
@@ -86,7 +91,8 @@ Para identificar **riesgos** o problemas adicionales, considera incluir:
  - Definir análisis de profundidad
  - Calendario de seguimiento
 
-----
+
+
 
 .. seealso::
  * **Tip 11-2** - Analizar interfaces externas para riesgos

@@ -1,6 +1,8 @@
 .. _deployment_tip_2:
 
-===============================================================
+
+
+
 Tip 7-2: ¡Explica las decisiones de hardware e infraestructura!
 ===============================================================
 
@@ -9,7 +11,8 @@ Tip 7-2: ¡Explica las decisiones de hardware e infraestructura!
    
    Los diagramas de **despliegue** o **infraestructura** soportan el entendimiento general del **hardware** subyacente. Además, es útil entender el razonamiento detrás de las decisiones.
 
-----
+
+
 
 Los diagramas de **despliegue** o **infraestructura** soportan el entendimiento general del **hardware** subyacente.
 
@@ -33,14 +36,16 @@ Nodo <nombre-nodo>
    * - **Razón para la selección**
      - ¿Por qué fue este **hardware** particular seleccionado?
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_07` - Vista de Despliegue
    * :ref:`deployment_tip_1` - Documentar infraestructura técnica
    * :ref:`deployment_tip_8` - Explicar nodos
 
-----
+
+
 
 :Tip: 7-2
 :Tema: Explicar decisiones de hardware

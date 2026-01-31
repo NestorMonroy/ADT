@@ -1,13 +1,16 @@
 .. _quality_tip_7:
 
-===============================================================
+
+
+
 Tip 10-7: ¡¡Considera escenarios de fallo/error/failure (calidad)!!
-===============================================================
+===================================================================
 
 :Tema: Escenarios de manejo de errores y fallos
 :Palabras clave: quality, quality-scenario, scenario
 
-----
+
+
 
 Seguramente conoces la `Ley de Murphy <https://en.wikipedia.org/wiki/Murphy%27s_law>`_: **Las cosas fallarán y los errores ocurrirán.**
 
@@ -24,7 +27,8 @@ Ejemplos
 
    En caso de excepciones de aplicación o runtime no tratables, el sistema creará eventos de logging apropiados que permitan diagnosticar el error, pero que no contengan datos personales de usuario o cuenta (de categoría de seguridad de datos 2 o superior).
 
-----
+
+
 
 **Categorías de Fault/Error/Failure Scenarios:**
 
@@ -60,7 +64,8 @@ Ejemplos
 * **Error**: Manifestación del fault durante ejecución
 * **Failure (Falla)**: El sistema no cumple su especificación observable por usuario
 
-----
+
+
 
 **Estructura Recomendada:**
 
@@ -96,7 +101,8 @@ Ejemplos
      - Volver automáticamente cuando esté disponible
      - Procesar transacciones "pendientes" en batch
 
-----
+
+
 
 **Aspectos Críticos de Seguridad:**
 
@@ -109,7 +115,7 @@ Ejemplos
    * Datos médicos o financieros
    * Claves de encriptación
    
-   **SÍ incluir:**
+     **SÍ incluir:**
    
    * IDs de transacción/sesión (hasheados si necesario)
    * Stack traces (sanitizados)
@@ -117,7 +123,8 @@ Ejemplos
    * Timestamps
    * Información de contexto (sin PII)
 
-----
+
+
 
 .. seealso::
    * **Tip 10-5** - Escenarios de uso/aplicación

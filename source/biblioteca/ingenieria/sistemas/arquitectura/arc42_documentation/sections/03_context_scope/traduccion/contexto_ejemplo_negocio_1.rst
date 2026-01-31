@@ -1,29 +1,33 @@
 .. _contexto_ejemplo_negocio_1:
 
-============================================================
+
+
+
 Ejemplo de Contexto de Negocio: HTML Sanity Checker
-============================================================
+===================================================
 
 .. note::
    **Ejemplo arc42**
    
    Este es un ejemplo muy simple, creado con Enterprise Architect™.
 
-----
+
+
 
 3. Vista de Contexto
 
-====================
 
-.. figure:: ../figuras/3-hsc-business-context.png
-   :alt: Contexto de negocio
-   :align: center
-   :width: 80%
+
+
+.. .. figure:: ../figuras/3-hsc-business-context.png
+..       :alt: Contexto de negocio
+..       :align: center
+..       :width: 80%
    
-   Diagrama de contexto de negocio del HTML Sanity Checker
+..       Diagrama de contexto de negocio del HTML Sanity Checker
 
 Socios de Comunicación
-=======================
+======================
 
 .. list-table:: 
    :header-rows: 1
@@ -44,7 +48,8 @@ Socios de Comunicación
        
        **Riesgo:** Debido a la naturaleza de los sistemas web y las operaciones de red remota involucradas, esta verificación podría necesitar tiempo significativo y podría arrojar resultados inválidos debido a problemas de red y latencia.
 
-----
+
+
 
 Observaciones
 =============
@@ -60,7 +65,8 @@ Este ejemplo muestra un **contexto de negocio** simple donde:
    * :ref:`seccion_3_1` - Plantilla de Contexto de Negocio
    * :ref:`seccion_03` - Contexto y Alcance completo
 
-----
+
+
 
 :Ejemplo: Contexto de Negocio
 :Sistema: HTML Sanity Checker

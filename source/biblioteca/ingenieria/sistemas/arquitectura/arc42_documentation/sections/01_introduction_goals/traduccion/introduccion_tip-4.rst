@@ -1,8 +1,10 @@
 .. _introduccion-tip-4:
 
-===================================================================
+
+
+
 Consejo 1-4: ¡Crea una vista general agrupando requisitos!
-===================================================================
+==========================================================
 
 .. meta::
    :layout: post
@@ -15,7 +17,8 @@ Consejo 1-4: ¡Crea una vista general agrupando requisitos!
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Analistas
 
-----
+
+
 
 Recomendación
 =============
@@ -27,7 +30,8 @@ Para proporcionar una vista general de las funciones de tu sistema, describe en
 tu documentación de arquitectura solo la importancia de estos grupos sin entrar 
 en requisitos individuales detallados.
 
-----
+
+
 
 Ejemplo
 =======
@@ -36,12 +40,12 @@ La figura a continuación muestra un ejemplo: algunas elipses agrupan (clusteriz
 múltiples requisitos, características o casos de uso. Algunos de ellos se pueden 
 encontrar en la tabla.
 
-.. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-requirements-cluster.webp
-   :alt: Cluster de requisitos
-   :align: center
-   :width: 70%
+.. .. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/01_introduction_goals/figuras/01-requirements-cluster.webp
+..       :alt: Cluster de requisitos
+..       :align: center
+..       :width: 70%
 
-   Cluster de requisitos
+..       Cluster de requisitos
 
 .. list-table:: Clusters de Requisitos
    :header-rows: 1
@@ -57,7 +61,8 @@ encontrar en la tabla.
      - Configure-Person, Configure-PrintJob, Configure-ScanOCR, 
        Configure-Reports, ...
 
-----
+
+
 
 .. note::
    **Información de traducción:**

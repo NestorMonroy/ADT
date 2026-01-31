@@ -1,8 +1,10 @@
 .. _guia_rapida:
 
-===============================================
+
+
+
 Guía Rápida ADT (15 Minutos)
-===============================================
+============================
 
 :Tiempo: 15 minutos
 :Objetivo: Iniciar con ADT rápidamente
@@ -13,7 +15,8 @@ Guía Rápida ADT (15 Minutos)
  :depth: 2
  :local:
 
-----
+
+
 
 Bienvenido a ADT
 ================
@@ -36,13 +39,14 @@ Esta guía te permite **comenzar en 15 minutos** con el sistema de traducción A
  [OK] 15 minutos de atención
  [OK] Ganas de aprender
 
-----
+
+
 
 Minutos 1-5: Entender ADT
-==========================
+=========================
 
 ¿Qué es ADT?
-------------
+============
 
 **ADT** = **A**rquitectura de **D**ocumentación **T**écnica
 
@@ -53,7 +57,7 @@ Es un **sistema completo** para traducir documentación técnica con:
 [OK] **Resultados predecibles:** Métricas de 196 archivos
 
 ¿Por qué funciona?
-------------------
+==================
 
 **3 razones:**
 
@@ -94,13 +98,14 @@ Es un **sistema completo** para traducir documentación técnica con:
  [OK] 0 omisiones en secciones 10-12
  [OK] +771% enriquecimiento promedio en tips
 
-----
+
+
 
 Minutos 6-10: El Workflow en 5 Pasos
-=====================================
+====================================
 
 Paso 1: PASO 0 (El Más Crítico)
---------------------------------
+===============================
 
 **Tiempo:** 10-15 minutos
 **Objetivo:** Identificar TODO antes de traducir
@@ -123,6 +128,7 @@ Paso 1: PASO 0 (El Más Crítico)
 **¿Por qué es crítico?**
 
 .. attention::
+ 
  **15 minutos de PASO 0 previenen 2 horas de re-trabajo**
 
  Caso real: Sección 07 de arc42
@@ -130,7 +136,7 @@ Paso 1: PASO 0 (El Más Crítico)
  - Con PASO 0: 0 omisiones -> 0h de corrección
 
 Paso 2: Decidir Enriquecimiento
---------------------------------
+===============================
 
 **Tiempo:** 2 minutos
 **Herramienta:** :doc:`../04_reglas_operativas/matrices_decision/MD_002_cuando_enriquecer`
@@ -156,7 +162,7 @@ Paso 2: Decidir Enriquecimiento
  Traducción esperada: 70 a 140 líneas
 
 Paso 3: Traducir con Checklist
--------------------------------
+==============================
 
 **Tiempo:** Variable (2-4 horas según tamaño)
 **Herramienta:** :doc:`../03_estandares/calidad/checklist_revision`
@@ -187,7 +193,7 @@ Paso 3: Traducir con Checklist
  [OK] Decision -> Decisión
 
 Paso 4: Verificar Sistemáticamente
------------------------------------
+==================================
 
 **Tiempo:** 15-30 minutos
 **Objetivo:** Asegurar 100% completitud
@@ -215,7 +221,7 @@ Paso 4: Verificar Sistemáticamente
  # Deben coincidir
 
 Paso 5: Documentar
-------------------
+==================
 
 **Tiempo:** 10 minutos
 **Objetivo:** Dejar registro del trabajo
@@ -230,13 +236,14 @@ Paso 5: Documentar
  Enriquecimiento: +XXX%
  Tiempo: X horas
 
-----
+
+
 
 Minutos 11-15: Tu Primera Traducción
-=====================================
+====================================
 
 Ejercicio Práctico
-------------------
+==================
 
 **Tarea:** Traducir un tip breve (10-20 líneas)
 
@@ -246,9 +253,11 @@ Ejercicio Práctico
 
  1. Copia este texto a "original.md":
 
- ---
+
+
+
  title: "Keep it simple"
- ---
+========================
 
  Simple architectures are easier to understand,
  maintain, and modify.
@@ -276,15 +285,17 @@ Ejercicio Práctico
 
 .. code-block:: rst
 
- ===================
+
+
+
  Mantén la Simplicidad
- ===================
+======================
 
  :Categoría: Principio Arquitectónico
  :Aplicabilidad: Toda decisión de diseño
 
  Principio
- =========
+==========
 
  Las arquitecturas simples son más fáciles de entender,
  mantener y modificar.
@@ -293,15 +304,15 @@ Ejercicio Práctico
  cuando funcionen.
 
  Comparación
- ===========
+ ============
 
  .. list-table::
- :header-rows: 1
+    :header-rows: 1
 
- * - Aspecto
-   - Simple
-   - Complejo
- * - Entendimiento
+    * - Aspecto
+      - Simple
+      - Complejo
+    * - Entendimiento
    - Rápido (< 1 hora)
    - Lento (días)
  * - Mantenimiento
@@ -315,7 +326,7 @@ Ejercicio Práctico
    - Lento
 
  Ejemplos
- ========
+=========
 
  **Ejemplo 1: Persistencia**
 
@@ -336,7 +347,7 @@ Ejercicio Práctico
  REST API con 3 endpoints
 
  Checklist de Simplicidad
- =========================
+=========================
 
  [ ] ¿Puedo explicarlo en 5 minutos?
  [ ] ¿Un junior podría entenderlo?
@@ -346,7 +357,7 @@ Ejercicio Práctico
  Si alguno es NO -> Simplificar
 
  Referencias
- ===========
+============
 
    - KISS Principle
    - YAGNI (You Aren't Gonna Need It)
@@ -376,26 +387,27 @@ Ejercicio Práctico
 
 **¡Felicidades!** Acabas de hacer tu primera traducción ADT.
 
-----
+
+
 
 Próximos Pasos
 ==============
 
 Ahora que Entiendes lo Básico
-------------------------------
+=============================
 
 **Opción 1: Profundizar**
 
 .. code-block:: text
 
  1. Lee :doc:`../06_casos_practicos/antes_despues/caso_01_seccion_breve`
- -> Ve caso real completo (Sección 12 de arc42)
+   -> Ve caso real completo (Sección 12 de arc42)
 
  2. Lee :doc:`../06_casos_practicos/errores_comunes/error_01_omisiones`
- -> Aprende qué NO hacer
+   -> Aprende qué NO hacer
 
  3. Lee :doc:`../03_estandares/calidad/criterios_calidad`
- -> Entiende criterios de calidad completos
+   -> Entiende criterios de calidad completos
 
 **Opción 2: Aplicar a Tu Proyecto**
 
@@ -418,7 +430,7 @@ Ahora que Entiendes lo Básico
  - Incrementa complejidad gradualmente
 
 Recursos Clave
---------------
+==============
 
 **Los 5 documentos más importantes:**
 
@@ -443,7 +455,7 @@ Recursos Clave
  Caso real completo (Sección 12)
 
 Obtener Ayuda
--------------
+=============
 
 **Si tienes dudas:**
 
@@ -465,14 +477,15 @@ Obtener Ayuda
  -> Verifica todos los elementos
 
 Comunidad
----------
+=========
 
 .. note::
  El proyecto ADT está basado en el Método Peshitta aplicado a traducción técnica.
 
  Todos los datos son verificables en los checkpoints de arc42.
 
-----
+
+
 
 Resumen de 15 Minutos
 =====================
@@ -518,10 +531,11 @@ Resumen de 15 Minutos
  [ ] Conozco los 5 documentos clave
  [ ] Listo para mi primer proyecto real
 
-----
+
+
 
 ¡Éxito en tu Primera Traducción!
-=================================
+================================
 
 **Recuerda:**
 
@@ -539,9 +553,11 @@ Resumen de 15 Minutos
 
 Tu primer documento técnico te espera. Aplica lo aprendido y verás resultados profesionales desde el inicio.
 
-----
+
+
 
 .. seealso::
+ 
  * :doc:`tutorial_completo` - Tutorial paso a paso detallado
  * :doc:`../06_casos_practicos/antes_despues/caso_01_seccion_breve` - Caso real completo
  * :doc:`../02_procedimientos/workflow_general` - Workflow completo

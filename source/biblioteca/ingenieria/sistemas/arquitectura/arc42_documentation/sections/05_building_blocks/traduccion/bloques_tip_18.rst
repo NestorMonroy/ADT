@@ -1,15 +1,18 @@
 .. _bloques_tip_18:
 
-===============================================================
+
+
+
 Tip 5-18: ¡Asegura que **cada** pieza de código fuente pueda localizarse en la vista de bloques de construcción!
-===============================================================
+================================================================================================================
 
 .. tip::
    **Consejo de Vista de Bloques arc42**
    
    La **vista de bloques de construcción** debe tener un *lugar* apropiado para **cada** pieza de código fuente.
 
-----
+
+
 
 La **vista de bloques de construcción** debe tener un *lugar* apropiado para **cada** pieza de código fuente. En otras palabras:
 
@@ -21,21 +24,23 @@ Esta es la única llamada a completitud que proponemos para documentación (ya q
 
 Ver el siguiente diagrama para un ejemplo:
 
-.. figure:: ../figuras/05-infrastructure-in-building-block-view.jpg
-   :alt: Infraestructura en vista de bloques de construcción
-   :align: center
-   :width: 80%
+.. .. figure:: ../figuras/05-infrastructure-in-building-block-view.jpg
+..       :alt: Infraestructura en vista de bloques de construcción
+..       :align: center
+..       :width: 80%
    
-   Generador de código como bloque de construcción
+..       Generador de código como bloque de construcción
 
 El ``Code Generator`` (sombreado en color amarillo en la esquina inferior izquierda) genera otro **bloque de construcción** arquitectónico ("Campaign Data Management").
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_05` - Vista de Bloques de Construcción
 
-----
+
+
 
 :Tip: 5-18
 :Tema: Completitud del código

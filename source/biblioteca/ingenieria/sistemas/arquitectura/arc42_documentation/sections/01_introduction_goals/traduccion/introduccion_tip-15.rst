@@ -7,16 +7,19 @@
 
 .. _introduccion-tip-15:
 
-===================================================================
+
+
+
 Consejo 1-15: ¡Usa ejemplos con stakeholders!
-===================================================================
+=============================================
 
 :Subtítulo: Para elaborar atributos de calidad objetivo
 :Tema: Ejemplos de requisitos de calidad
 :Categoría: Requisitos
 :Audiencia: Arquitectos, Stakeholders
 
-----
+
+
 
 Recomendación
 =============
@@ -28,7 +31,8 @@ definir atributos de calidad objetivo y requisitos de tu sistema.
 .. note::
  Disculpa - esos escenarios actualmente están disponibles solo en idioma alemán.
 
-----
+
+
 
 .. note::
  **Información de traducción:**
@@ -36,5 +40,5 @@ definir atributos de calidad objetivo y requisitos de tu sistema.
  - Archivo original: 2016-03-02-t-1-15.md
  - Método: Peshitta + Terminología arquitectónica (Workflow v1.5.0)
  - Paso 3.4 aplicado: "quality goals" -> "atributos de calidad objetivo",
- "stakeholders" preservado
+   "stakeholders" preservado
  - Fecha: 2026-01-27

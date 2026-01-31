@@ -1,13 +1,16 @@
 .. _quality_tip_6:
 
-===============================================================
+
+
+
 Tip 10-6: ¡¡Considera escenarios de cambio (calidad)!!
-===============================================================
+======================================================
 
 :Tema: Escenarios de cambio (change scenarios)
 :Palabras clave: quality, quality-scenario, scenario
 
-----
+
+
 
 Aparte de los **escenarios de uso o aplicación** (ver :ref:`tip 10-5 <quality_tip_5>`), deberías considerar cambios o modificaciones para **requisitos de calidad**.
 
@@ -39,7 +42,8 @@ Ejemplos
 
  El sistema debe ser usable con los sistemas de base de datos DB2, Oracle y MySQL sin modificaciones al código fuente.
 
-----
+
+
 
 **Tipos de Change Scenarios:**
 
@@ -74,7 +78,8 @@ Ejemplos
 4. **Restricciones**: Sin downtime, sin cambios de código, etc.
 5. **Criterio de éxito**: ¿Cómo se valida?
 
-----
+
+
 
 **Beneficios de Documentar Change Scenarios:**
 
@@ -84,7 +89,8 @@ Ejemplos
 * [OK] **Justificación** de decisiones arquitectónicas
 * [OK] **Comunicación** clara con stakeholders de negocio
 
-----
+
+
 
 .. seealso::
  * **Tip 10-5** - Escenarios de uso/aplicación

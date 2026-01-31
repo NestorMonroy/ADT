@@ -1,27 +1,30 @@
 .. _runtime_tip_6:
 
-===============================================================
+
+
+
 Tip 6-6: ¡Describe extractos de escenarios (escenarios parciales)!
-===============================================================
+==================================================================
 
 .. tip::
    **Consejo de Vista de Tiempo de Ejecución arc42**
    
    Describe solo extractos o partes de **escenarios**. Enfócate en partes riesgosas, difíciles, complicadas o interesantes. No dudes en comenzar en medio de un **proceso** más largo.
 
-----
+
+
 
 Hemos visto demasiados **diagramas de secuencia** que se asemejan al de abajo: **Escenarios** que solo propagan datos sobre varios participantes - usualmente material no interesante.
 
-.. figure:: ../figuras/06-long-and-mostly-boring.png
-   :alt: Diagrama de secuencia aburrido
-   :align: center
-   :width: 40%
+.. .. figure:: ../figuras/06-long-and-mostly-boring.png
+..       :alt: Diagrama de secuencia aburrido
+..       :align: center
+..       :width: 40%
    
-   Diagrama de secuencia largo y mayormente aburrido
+..       Diagrama de secuencia largo y mayormente aburrido
 
 Más Efectivo: Escenarios Parciales
-===================================
+==================================
 
 Describe solo extractos o partes de tales **escenarios**.
 
@@ -31,12 +34,12 @@ Describe solo extractos o partes de tales **escenarios**.
 
 Compara el diagrama (compacto) debajo con la versión (aburrida y mucho más larga) de arriba.
 
-.. figure:: ../figuras/06-short-and-interesting.png
-   :alt: Diagrama de secuencia parcial
-   :align: center
-   :width: 30%
+.. .. figure:: ../figuras/06-short-and-interesting.png
+..       :alt: Diagrama de secuencia parcial
+..       :align: center
+..       :width: 30%
    
-   Diagrama de secuencia corto e interesante (parcial)
+..       Diagrama de secuencia corto e interesante (parcial)
 
 Por cierto: ambos diagramas fueron generados desde una descripción textual PlantUML, el código para el último se da debajo:
 
@@ -57,7 +60,8 @@ Por cierto: ambos diagramas fueron generados desde una descripción textual Plan
    
    @enduml
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_06` - Vista de Tiempo de Ejecución
@@ -65,7 +69,8 @@ Por cierto: ambos diagramas fueron generados desde una descripción textual Plan
    * :ref:`runtime_tip_3` - Escenarios esquemáticos
    * :ref:`runtime_tip_5` - PlantUML para escenarios
 
-----
+
+
 
 :Tip: 6-6
 :Tema: Escenarios parciales

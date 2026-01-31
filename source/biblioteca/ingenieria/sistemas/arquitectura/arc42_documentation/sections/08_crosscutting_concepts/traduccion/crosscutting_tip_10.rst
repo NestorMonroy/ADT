@@ -1,6 +1,7 @@
 =================================================================
+
 Tip 8-10: ¡Use la colección de arc42 como checklist para conceptos!
-=================================================================
+===================================================================
 
 .. meta::
    :layout: post
@@ -11,10 +12,10 @@ Tip 8-10: ¡Use la colección de arc42 como checklist para conceptos!
 
 arc42 proporciona una lista extensa de conceptos transversales potenciales:
 
-.. figure:: {{ site.imageurl }}/8-concepts/08-concepts-EN.drawio.png
-   :alt: Colección de conceptos transversales de arc42
+.. .. figure:: {{ site.imageurl }}/8-concepts/08-concepts-EN.drawio.png
+..       :alt: Colección de conceptos transversales de arc42
    
-   Colección de conceptos transversales de arc42
+..       Colección de conceptos transversales de arc42
 
 Use esta colección como checklist al documentar su arquitectura:
 
@@ -25,7 +26,7 @@ Conceptos de Dominio
 * Reglas de negocio
 
 Conceptos de Experiencia de Usuario
-====================================
+===================================
 
 * Internacionalización
 * Accesibilidad
@@ -49,7 +50,7 @@ Conceptos Técnicos
 * Transacciones
 
 Conceptos de Desarrollo
-========================
+=======================
 
 * Estructura del código
 * Generación de código

@@ -1,15 +1,18 @@
 .. _deployment_tip_7:
 
-===============================================================
+
+
+
 Tip 7-7: ¡¡Usa tablas para documentar el mapeo software/hardware!!
-===============================================================
+==================================================================
 
 .. tip::
    **Consejo de Vista de Despliegue arc42**
    
    Como alternativa (simple) a **mapeo** gráfico con **diagramas de despliegue**, podrías usar tablas para documentar o especificar el **despliegue** de software en **hardware**.
 
-----
+
+
 
 Como una alternativa (simple) a **mapeo** gráfico con **diagramas de despliegue** (ver tip 7-6 (diagramas de despliegue)), podrías usar tablas para documentar o especificar el **despliegue** de software en **hardware**.
 
@@ -44,21 +47,23 @@ Como una alternativa (simple) a **mapeo** gráfico con **diagramas de despliegue
 
 Por favor encuentra el diagrama correspondiente debajo:
 
-.. figure:: ../figuras/07-deployment-diagram.png
-   :alt: Diagrama de despliegue
-   :align: center
-   :width: 60%
+.. .. figure:: ../figuras/07-deployment-diagram.png
+..       :alt: Diagrama de despliegue
+..       :align: center
+..       :width: 60%
    
-   Diagrama de despliegue correspondiente
+..       Diagrama de despliegue correspondiente
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_07` - Vista de Despliegue
    * :ref:`deployment_tip_6` - Diagramas UML de despliegue
    * :ref:`deployment_tip_5` - Mapeo bloques a hardware
 
-----
+
+
 
 :Tip: 7-7
 :Tema: Tablas para mapeo software/hardware

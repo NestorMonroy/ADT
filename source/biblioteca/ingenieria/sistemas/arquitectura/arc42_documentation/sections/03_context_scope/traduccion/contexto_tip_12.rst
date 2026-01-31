@@ -1,15 +1,18 @@
 .. _contexto_tip_12:
 
-===============================================================
+
+
+
 Tip 3-12: ¡Muestra influencias externas en el contexto!
-===============================================================
+=======================================================
 
 .. tip::
    **Consejo de Contexto arc42**
    
    Tu sistema podría necesitar manejar diferentes tipos de dependencias con sistemas externos.
 
-----
+
+
 
 Tipos de Dependencias
 =====================
@@ -34,21 +37,23 @@ Los pasos 3 y 6 son dependencias transitivas (también llamadas indirectas). El 
 
 Algunas de estas dependencias tienen impacto en el logro de los requisitos de calidad para tu sistema - y por lo tanto podrían ser riesgos (ver tip 3-4, Mostrar riesgos en el contexto).
 
-.. figure:: ../figuras/03-context-different-dependencies.webp
-   :alt: Ejemplo de diagrama de dependencias
-   :align: center
-   :width: 90%
+.. .. figure:: ../figuras/03-context-different-dependencies.webp
+..       :alt: Ejemplo de diagrama de dependencias
+..       :align: center
+..       :width: 90%
    
-   Ejemplo: diferentes tipos de dependencias en el contexto
+..       Ejemplo: diferentes tipos de dependencias en el contexto
 
-----
+
+
 
 .. seealso::
    * :ref:`seccion_03` - Contexto y Alcance
    * :ref:`contexto_tip_4` - Riesgos en el contexto
    * :ref:`contexto_tip_13` - Dependencias transitivas
 
-----
+
+
 
 :Tip: 3-12
 :Tema: Influencias externas

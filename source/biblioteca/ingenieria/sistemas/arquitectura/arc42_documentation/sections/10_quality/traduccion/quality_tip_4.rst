@@ -1,13 +1,16 @@
 .. _quality_tip_4:
 
-===============================================================
+
+
+
 Tip 10-4: ¡Usa el quality tree como checklist!
-===============================================================
+==============================================
 
 :Tema: Quality tree como herramienta de verificación
 :Palabras clave: quality-tree, thorough, iso-25010
 
-----
+
+
 
 Encontrarás una noción ligeramente diferente en :ref:`tip 1-14 (checklist para requisitos de calidad) <goals_tip_14>`.
 
@@ -20,12 +23,12 @@ Proceso Paso a Paso
 
 **1. Comienza con algo similar al quality tree de ISO-25010**
 
-.. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/figuras/01-ISO-25010-EN.webp
-   :alt: El quality tree de ISO-25010
-   :align: center
-   :width: 90%
+.. .. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/figuras/01-ISO-25010-EN.webp
+..       :alt: El quality tree de ISO-25010
+..       :align: center
+..       :width: 90%
    
-   El quality tree de ISO-25010 como punto de partida
+..       El quality tree de ISO-25010 como punto de partida
 
 **2. Deja que tus stakeholders creen escenarios de calidad**
 
@@ -39,18 +42,19 @@ Mapea cada **escenario** a una rama específica del árbol (por ejemplo: **Perfo
 
 En caso de que algunas de las ramas principales de tu árbol no tengan escenarios, eso podría ser un indicador de **escenarios faltantes**.
 
-.. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/figuras/10-quality-tree-mindmap-example.png
-   :alt: Mind-map como quality tree
-   :align: center
-   :width: 85%
+.. .. figure:: /biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/sections/10_quality/figuras/10-quality-tree-mindmap-example.png
+..       :alt: Mind-map como quality tree
+..       :align: center
+..       :width: 85%
    
-   Ejemplo: ni **scalability**, ni **robustness**, ni **security** tienen escenarios
+..       Ejemplo: ni **scalability**, ni **robustness**, ni **security** tienen escenarios
 
 **5. Decide relevancia con stakeholders**
 
 Deja que tus stakeholders decidan si estos temas no son relevantes o si los **escenarios** correspondientes simplemente están faltando o han sido olvidados.
 
-----
+
+
 
 **Beneficios del Enfoque:**
 
@@ -71,7 +75,8 @@ Deja que tus stakeholders decidan si estos temas no son relevantes o si los **es
    * - **Priorización visual**
      - Identifica áreas con muchos vs pocos escenarios
 
-----
+
+
 
 **Proceso de Taller Recomendado:**
 
@@ -105,7 +110,8 @@ Deja que tus stakeholders decidan si estos temas no son relevantes o si los **es
    * Identificar top 3-5 para sección 1.2
    * Resto va a sección 10
 
-----
+
+
 
 .. seealso::
    * **Tip 1-14** - Checklist para requisitos de calidad
