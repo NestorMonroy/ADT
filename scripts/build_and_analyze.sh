@@ -23,7 +23,7 @@ REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 BASE_DIR="${REPO_ROOT}"
 LOG_DIR="${BASE_DIR}/.mywork/build-logs"
 TIMESTAMP=$(date +%Y%m%d-%H%M%S)
-LOG_FILE="${LOG_DIR}/build-fase1-${TIMESTAMP}.txt"
+LOG_FILE="${LOG_DIR}/build-log-${TIMESTAMP}.log"
 
 # Flags
 QUIET=0
@@ -133,16 +133,25 @@ run_build() {
     log "Executing make html..."
     log ""
 
+    # Start timer
+    BUILD_START=$(date +%s)
+    dbg "Build start time: $BUILD_START"
+
     if [ "$DRY_RUN" -eq 1 ]; then
         log "[DRY-RUN] Would execute: make html"
         BUILD_EXIT=0
     else
-        make html 2>&1 | tee "$LOG_FILE" | \
-            grep --color=always -E "WARNING:|ERROR:|CRITICAL:|$"
+        # Use tee to save log, and show all output with highlighted warnings/errors
+        # GREP_COLORS highlights matches but shows ALL lines
+        make html 2>&1 | tee "$LOG_FILE"
         BUILD_EXIT=${PIPESTATUS[0]}
     fi
 
-    dbg "Build exit code: $BUILD_EXIT"
+    # End timer
+    BUILD_END=$(date +%s)
+    BUILD_DURATION=$((BUILD_END - BUILD_START))
+    dbg "Build end time: $BUILD_END"
+    dbg "Build duration: $BUILD_DURATION seconds"
 
     log ""
     hsep
@@ -151,7 +160,16 @@ run_build() {
     # Clean ANSI codes from log
     if [ "$DRY_RUN" -eq 0 ]; then
         dbg "Cleaning ANSI codes from log file"
-        sed -i 's/\x1B\[[0-9;]*[JKmsu]//g' "$LOG_FILE"
+        # Remove ANSI escape sequences with ESC character
+        sed -i 's/\x1B\[[0-9;]*[a-zA-Z]//g' "$LOG_FILE"
+        # Remove ANSI sequences without ESC (corrupted or partial)
+        # Pattern: [digits;digits...letter]
+        sed -i 's/\[[0-9]\{1,3\}\(;[0-9]\{1,3\}\)*m//g' "$LOG_FILE"
+        # Remove cursor control codes [2K, [0K, etc.
+        sed -i 's/\[[0-9]\{1,3\}[ABCDKJ]//g' "$LOG_FILE"
+        # Convert CRLF to LF (Windows to Unix line endings)
+        sed -i 's/\r$//' "$LOG_FILE"
+        dbg "Converted line endings from CRLF to LF"
     fi
 
     # Report result
@@ -161,6 +179,10 @@ run_build() {
         log "[FAIL] Build failed with exit code: $BUILD_EXIT"
         log "       (Partial log will be analyzed for diagnostics)"
     fi
+
+    # Display build time
+    log ""
+    log "Build time: ${BUILD_DURATION}s"
 
     log ""
 
@@ -184,10 +206,21 @@ analyze_log() {
         hsep
         log "TOTAL:    0"
     else
-        # Count issues
-        WARNING_COUNT=$(grep -c 'WARNING:' "$LOG_FILE" 2>/dev/null || echo 0)
-        ERROR_COUNT=$(grep -c 'ERROR:' "$LOG_FILE" 2>/dev/null || echo 0)
-        CRITICAL_COUNT=$(grep -c 'CRITICAL:' "$LOG_FILE" 2>/dev/null || echo 0)
+        # Count issues and sanitize values
+        WARNING_COUNT=$(grep -c 'WARNING:' "$LOG_FILE" 2>/dev/null || echo "0")
+        ERROR_COUNT=$(grep -c 'ERROR:' "$LOG_FILE" 2>/dev/null || echo "0")
+        CRITICAL_COUNT=$(grep -c 'CRITICAL:' "$LOG_FILE" 2>/dev/null || echo "0")
+
+        # Remove whitespace and ensure numeric
+        WARNING_COUNT=$(echo "$WARNING_COUNT" | tr -d '[:space:]')
+        ERROR_COUNT=$(echo "$ERROR_COUNT" | tr -d '[:space:]')
+        CRITICAL_COUNT=$(echo "$CRITICAL_COUNT" | tr -d '[:space:]')
+
+        # Default to 0 if empty
+        WARNING_COUNT=${WARNING_COUNT:-0}
+        ERROR_COUNT=${ERROR_COUNT:-0}
+        CRITICAL_COUNT=${CRITICAL_COUNT:-0}
+
         TOTAL_ISSUES=$((WARNING_COUNT + ERROR_COUNT + CRITICAL_COUNT))
 
         dbg "WARNING count: $WARNING_COUNT"
@@ -262,7 +295,7 @@ EXAMPLES:
     $SCRIPT_NAME -n             # Dry-run mode
 
 OUTPUT:
-    Log file: $LOG_DIR/build-fase1-TIMESTAMP.txt
+    Log file: $LOG_DIR/build-log-TIMESTAMP.log
 
 EOF
     exit 0
