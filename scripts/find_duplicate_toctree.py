@@ -1,141 +1,90 @@
-"""Find duplicate toctree references across documentation files."""
-from __future__ import annotations
+#!/usr/bin/env python3
+"""
+Script para encontrar entradas duplicadas en toctree de archivos RST
 
+Ubicación: /tmp/ADT/scripts/find_duplicate_toctree.py
+
+Uso desde /tmp/ADT:
+    python3 scripts/find_duplicate_toctree.py source/**/*.rst
+    python3 scripts/find_duplicate_toctree.py $(rg -l ".. toctree::" source)
+
+Detecta referencias duplicadas en directivas toctree que causan:
+    WARNING: toctree contains reference to document 'X' more than once
+
+Creado: 2026-01-30 (Auditoría de scripts)
+"""
+import sys
+import re
 from collections import defaultdict
-from pathlib import Path
-from typing import Iterable
-import os
 
+def find_duplicate_toctree(filepaths):
+    """Encuentra entradas duplicadas en toctree"""
+    
+    duplicates_found = []
+    
+    for filepath in filepaths:
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            # Buscar bloques toctree
+            toctree_pattern = re.compile(
+                r'\.\. toctree::\s*\n((?:\s+:[^\n]+\n)*)((?:\s+[^\n]+\n)*)',
+                re.MULTILINE
+            )
+            
+            for match in toctree_pattern.finditer(content):
+                options = match.group(1)
+                entries = match.group(2)
+                
+                # Extraer entradas (líneas con indentación que no son opciones)
+                entry_list = []
+                for line in entries.split('\n'):
+                    line = line.strip()
+                    if line and not line.startswith(':'):
+                        entry_list.append(line)
+                
+                # Buscar duplicados
+                seen = {}
+                for entry in entry_list:
+                    if entry in seen:
+                        duplicates_found.append({
+                            'file': filepath,
+                            'entry': entry,
+                            'first': seen[entry],
+                            'duplicate': entry_list.index(entry, seen[entry] + 1)
+                        })
+                    else:
+                        seen[entry] = entry_list.index(entry)
+                        
+        except Exception as e:
+            print(f"⚠️  Error leyendo {filepath}: {e}", file=sys.stderr)
+    
+    return duplicates_found
 
-def _extract_toctree_entries(lines: Iterable[str]) -> list[str]:
-    entries: list[str] = []
-    in_toctree = False
-    base_indent = None
-    in_literal_block = False
-    literal_content_indent = None
-
-    for line in lines:
-        stripped = line.strip()
-        leading_spaces = len(line) - len(line.lstrip(" "))
-        if in_literal_block:
-            if stripped == "":
-                continue
-            if literal_content_indent is None:
-                literal_content_indent = leading_spaces
-                continue
-            if leading_spaces < literal_content_indent:
-                in_literal_block = False
-                literal_content_indent = None
-            else:
-                continue
-        if (stripped.endswith("::") and not stripped.startswith("..")) or stripped.startswith(".. code-block::"):
-            in_literal_block = True
-            literal_content_indent = None
-            continue
-        if stripped.startswith(".. toctree::"):
-            in_toctree = True
-            base_indent = None
-            continue
-        if in_toctree:
-            if stripped == "":
-                if base_indent is None:
-                    continue
-                entries.append("")
-                continue
-            indent = leading_spaces
-            if base_indent is None:
-                if stripped.startswith(":"):
-                    continue
-                if indent == 0:
-                    in_toctree = False
-                    base_indent = None
-                    continue
-                base_indent = indent
-            if stripped.startswith(":"):
-                continue
-            if indent < (base_indent or 0):
-                in_toctree = False
-                base_indent = None
-                continue
-            entries.append(stripped)
-    return [entry for entry in entries if entry]
-
-
-def _normalize_entry(entry: str, file_path: Path, root: Path) -> str | None:
-    normalized = entry.strip()
-    if not normalized or normalized.startswith("http") or normalized.startswith("mailto:"):
-        return None
-    normalized = normalized.lstrip("/")
-    if normalized.endswith((".rst", ".md")):
-        normalized = normalized.rsplit(".", 1)[0]
-    if entry.startswith("/"):
-        resolved = root / normalized
-    else:
-        resolved = file_path.parent / normalized
-    try:
-        return resolved.relative_to(root).as_posix()
-    except ValueError:
-        return resolved.as_posix()
-
-
-def _common_root(paths: Iterable[Path]) -> Path:
-    path_list = [path.resolve() for path in paths]
-    if not path_list:
-        return Path(".")
-    common = os.path.commonpath([str(path.parent) for path in path_list])
-    return Path(common)
-
-
-def find_duplicate_toctree_entries(content_map: dict[str, str]) -> dict[str, list[str]]:
-    """Return entries that appear in more than one toctree."""
-    seen: dict[str, list[str]] = defaultdict(list)
-    paths = [Path(path) for path in content_map]
-    root = _common_root(paths)
-    for path, content in content_map.items():
-        file_path = Path(path)
-        entries = _extract_toctree_entries(content.splitlines())
-        for entry in entries:
-            normalized = _normalize_entry(entry, file_path, root)
-            if not normalized:
-                continue
-            if path not in seen[normalized]:
-                seen[normalized].append(path)
-    return {entry: paths for entry, paths in seen.items() if len(paths) > 1}
-
-
-def _iter_paths(paths: Iterable[str]) -> Iterable[Path]:
-    for raw in paths:
-        path = Path(raw)
-        if path.is_file():
-            yield path
-        else:
-            raise FileNotFoundError(f"File not found: {path}")
-
-
-def main() -> int:
-    import argparse
-    import json
-
-    parser = argparse.ArgumentParser(
-        description="Find duplicate toctree entries across RST files.",
-    )
-    parser.add_argument("paths", nargs="+", help="RST files to scan")
-    parser.add_argument("--json", action="store_true", help="Output as JSON")
-    args = parser.parse_args()
-
-    content_map = {str(path): path.read_text(encoding="utf-8") for path in _iter_paths(args.paths)}
-    duplicates = find_duplicate_toctree_entries(content_map)
-
-    if args.json:
-        print(json.dumps(duplicates, ensure_ascii=False, indent=2))
-    else:
-        for entry, paths in sorted(duplicates.items()):
-            print(f"{entry}:")
-            for path in sorted(paths):
-                print(f"  - {path}")
-
-    return 0
-
+def main():
+    if len(sys.argv) < 2:
+        print("Uso: python3 find_duplicate_toctree.py <archivo1> [archivo2] ...")
+        print("\nEjemplo:")
+        print("  python3 scripts/find_duplicate_toctree.py $(rg -l '.. toctree::' source)")
+        sys.exit(1)
+    
+    files = sys.argv[1:]
+    duplicates = find_duplicate_toctree(files)
+    
+    if not duplicates:
+        print("✅ No se encontraron entradas duplicadas en toctree")
+        return 0
+    
+    print(f"\n⚠️  Encontradas {len(duplicates)} entradas duplicadas en toctree:\n")
+    
+    for dup in duplicates:
+        print(f"Archivo: {dup['file']}")
+        print(f"  Entrada duplicada: '{dup['entry']}'")
+        print()
+    
+    print(f"Total: {len(duplicates)} duplicados")
+    return 1
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    sys.exit(main())

@@ -1,55 +1,129 @@
-"""Replace unknown code-block lexers with text to avoid highlighting warnings."""
-from __future__ import annotations
+#!/usr/bin/env python3
+"""
+Script para corregir lexers desconocidos en code-blocks RST y Markdown
 
-from pathlib import Path
-from typing import Iterable
+Ubicación: /tmp/ADT/scripts/fix_unknown_lexers.py
 
-UNKNOWN_LEXERS = {"plantuml", "atl", "ocl"}
+Uso desde /tmp/ADT:
+    python3 scripts/fix_unknown_lexers.py source/**/*.rst
+    python3 scripts/fix_unknown_lexers.py source/**/*.md
 
+Corrige WARNING:
+    Pygments lexer name 'plantuml' is not known
 
-def fix_unknown_lexers(content: str) -> str:
-    """Replace code-block directives with unknown lexers to `text`."""
-    lines = content.splitlines()
-    output: list[str] = []
+Convierte lexers desconocidos a 'text':
+    - plantuml → text
+    - PlantUML → text
+    - atl → text
+    - ocl → text
 
-    for line in lines:
-        stripped = line.strip()
-        if stripped.startswith(".. code-block::"):
-            parts = stripped.split()
-            if len(parts) >= 3 and parts[2] in UNKNOWN_LEXERS:
-                output.append(".. code-block:: text")
-                continue
-        output.append(line)
+Creado: 2026-01-30 (Auditoría de scripts)
+Basado en: Corrección manual Lexers (Commits 42-45)
+"""
+import sys
+import re
 
-    return "\n".join(output) + ("\n" if content.endswith("\n") else "")
+# Lexers conocidos problemáticos
+UNKNOWN_LEXERS = ['plantuml', 'PlantUML', 'atl', 'ocl', 'ATL', 'OCL']
 
+def fix_unknown_lexers_rst(filepath):
+    """Corrige lexers desconocidos en archivos RST"""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        original_content = content
+        changes = 0
+        
+        # Patrón: .. code-block:: lexer_desconocido
+        for lexer in UNKNOWN_LEXERS:
+            pattern = re.compile(
+                r'\.\. code-block:: ' + re.escape(lexer) + r'\b',
+                re.IGNORECASE
+            )
+            matches = len(pattern.findall(content))
+            if matches > 0:
+                content = pattern.sub('.. code-block:: text', content)
+                changes += matches
+                print(f"  {lexer} → text: {matches} cambios")
+        
+        if content != original_content:
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.write(content)
+            return changes
+        
+        return 0
+        
+    except Exception as e:
+        print(f"  ❌ Error: {e}")
+        return 0
 
-def _iter_paths(paths: Iterable[str]) -> Iterable[Path]:
-    for raw in paths:
-        path = Path(raw)
-        if path.is_file():
-            yield path
+def fix_unknown_lexers_md(filepath):
+    """Corrige lexers desconocidos en archivos Markdown"""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        original_content = content
+        changes = 0
+        
+        # Patrón: ```lexer_desconocido
+        for lexer in UNKNOWN_LEXERS:
+            pattern = re.compile(
+                r'^```' + re.escape(lexer) + r'\b',
+                re.MULTILINE | re.IGNORECASE
+            )
+            matches = len(pattern.findall(content))
+            if matches > 0:
+                content = pattern.sub('```text', content)
+                changes += matches
+                print(f"  {lexer} → text: {matches} cambios")
+        
+        if content != original_content:
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.write(content)
+            return changes
+        
+        return 0
+        
+    except Exception as e:
+        print(f"  ❌ Error: {e}")
+        return 0
+
+def main():
+    if len(sys.argv) < 2:
+        print("Uso: python3 fix_unknown_lexers.py <archivo1> [archivo2] ...")
+        print("\nEjemplo:")
+        print("  python3 scripts/fix_unknown_lexers.py source/**/*.rst")
+        print("  python3 scripts/fix_unknown_lexers.py source/**/*.md")
+        sys.exit(1)
+    
+    files = sys.argv[1:]
+    total_changes = 0
+    files_modified = 0
+    
+    print(f"\n🔧 Procesando {len(files)} archivos...\n")
+    
+    for filepath in files:
+        print(f"📄 {filepath}")
+        
+        if filepath.endswith('.rst'):
+            changes = fix_unknown_lexers_rst(filepath)
+        elif filepath.endswith('.md'):
+            changes = fix_unknown_lexers_md(filepath)
         else:
-            raise FileNotFoundError(f"File not found: {path}")
-
-
-def main() -> int:
-    import argparse
-
-    parser = argparse.ArgumentParser(
-        description="Replace unknown code-block lexers with text.",
-    )
-    parser.add_argument("paths", nargs="+", help="RST files to normalize")
-    args = parser.parse_args()
-
-    for path in _iter_paths(args.paths):
-        content = path.read_text(encoding="utf-8")
-        updated = fix_unknown_lexers(content)
-        if updated != content:
-            path.write_text(updated, encoding="utf-8")
-
+            print("  ⏭️  Tipo de archivo no soportado")
+            continue
+        
+        if changes > 0:
+            print(f"  ✅ {changes} lexers corregidos")
+            total_changes += changes
+            files_modified += 1
+        else:
+            print("  ⏭️  Sin cambios")
+    
+    print(f"\n✅ Resultado: {files_modified} archivos modificados, {total_changes} lexers corregidos")
     return 0
 
-
 if __name__ == "__main__":
-    raise SystemExit(main())
+    sys.exit(main())

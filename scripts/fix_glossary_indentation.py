@@ -1,90 +1,128 @@
-"""Normalize glossary indentation in reStructuredText files."""
-from __future__ import annotations
+#!/usr/bin/env python3
+"""
+Script para corregir indentación en directivas glossary
 
-from pathlib import Path
-from typing import Iterable
+Ubicación: /tmp/ADT/scripts/fix_glossary_indentation.py
 
-UNDERLINE_CHARS = set('=~-^"`:+#<>')
+Uso desde /tmp/ADT:
+    python3 scripts/fix_glossary_indentation.py source/**/*.rst
 
+Corrige indentación en glossary:
+    - Términos: 2 espacios
+    - Definiciones: 4 espacios
 
-def _is_underline(line: str) -> bool:
-    stripped = line.strip()
-    return bool(stripped) and all(char in UNDERLINE_CHARS for char in stripped)
+Problema:
+    .. glossary::
+    
+    Term
+     Definition  ← indentación incorrecta
 
+Solución:
+    .. glossary::
+    
+      Term          ← 2 espacios
+          Definition ← 4 espacios
 
-def fix_glossary_indentation(content: str) -> str:
-    """Normalize indentation inside ``.. glossary::`` directives."""
-    lines = content.splitlines()
-    output: list[str] = []
-    in_glossary = False
-    prev_blank = True
-    in_definition = False
+Creado: 2026-01-30 (Auditoría de scripts)
+"""
+import sys
+import re
 
-    for index, line in enumerate(lines):
-        stripped = line.strip()
-        if stripped.startswith(".. glossary::"):
-            in_glossary = True
-            prev_blank = True
-            output.append(line)
-            continue
-
-        if in_glossary:
-            if stripped and not line.startswith(" "):
-                next_line = lines[index + 1] if index + 1 < len(lines) else ""
-                if _is_underline(next_line):
-                    in_glossary = False
-                    output.append(line)
-                    prev_blank = False
-                    in_definition = False
-                    continue
-
-            if stripped == "":
-                output.append("")
-                prev_blank = True
+def fix_glossary_indentation(filepath):
+    """Corrige indentación en directivas glossary"""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+        
+        modified = False
+        result = []
+        i = 0
+        in_glossary = False
+        
+        while i < len(lines):
+            line = lines[i]
+            
+            # Detectar inicio de glossary
+            if '.. glossary::' in line:
+                result.append(line)
+                in_glossary = True
+                i += 1
+                
+                # Saltar línea en blanco después de glossary
+                if i < len(lines) and lines[i].strip() == '':
+                    result.append(lines[i])
+                    i += 1
+                
+                # Procesar términos y definiciones
+                while i < len(lines):
+                    current = lines[i]
+                    
+                    # Fin del glossary (línea sin indentación o nueva directiva)
+                    if current.strip() and not current.startswith(' '):
+                        in_glossary = False
+                        break
+                    
+                    if current.strip() == '':
+                        result.append(current)
+                        i += 1
+                        continue
+                    
+                    # Detectar si es término o definición
+                    indent = len(current) - len(current.lstrip())
+                    content = current.strip()
+                    
+                    if indent == 0 or (indent > 0 and indent < 3):
+                        # Es un término - debe tener 2 espacios
+                        result.append('  ' + content + '\n')
+                        modified = True if indent != 2 else modified
+                    else:
+                        # Es una definición - debe tener 4 espacios
+                        result.append('    ' + content + '\n')
+                        modified = True if indent != 4 else modified
+                    
+                    i += 1
+                
                 continue
+            
+            result.append(line)
+            i += 1
+        
+        if modified:
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.writelines(result)
+            return True
+        
+        return False
+        
+    except Exception as e:
+        print(f"  ❌ Error: {e}")
+        return False
 
-            is_term = prev_blank and ":" not in stripped and not stripped.endswith((".", "!", "?"))
-            base_indent = 2 if is_term else 4
-            leading_spaces = len(line) - len(line.lstrip(" "))
-            indent_size = max(base_indent, leading_spaces)
-            output.append(f"{' ' * indent_size}{stripped}")
-            prev_blank = False
-            if is_term:
-                in_definition = True
-            continue
-
-        output.append(line)
-        prev_blank = stripped == ""
-
-    return "\n".join(output) + ("\n" if content.endswith("\n") else "")
-
-
-def _iter_paths(paths: Iterable[str]) -> Iterable[Path]:
-    for raw in paths:
-        path = Path(raw)
-        if path.is_file():
-            yield path
+def main():
+    if len(sys.argv) < 2:
+        print("Uso: python3 fix_glossary_indentation.py <archivo1> [archivo2] ...")
+        print("\nEjemplo:")
+        print("  python3 scripts/fix_glossary_indentation.py source/**/*.rst")
+        sys.exit(1)
+    
+    files = sys.argv[1:]
+    files_modified = 0
+    
+    print(f"\n🔧 Procesando {len(files)} archivos...\n")
+    
+    for filepath in files:
+        if filepath.endswith('.rst'):
+            print(f"📄 {filepath}")
+            if fix_glossary_indentation(filepath):
+                print("  ✅ Indentación corregida")
+                files_modified += 1
+            else:
+                print("  ⏭️  Sin cambios")
         else:
-            raise FileNotFoundError(f"File not found: {path}")
-
-
-def main() -> int:
-    import argparse
-
-    parser = argparse.ArgumentParser(
-        description="Normalize indentation inside .. glossary:: directives.",
-    )
-    parser.add_argument("paths", nargs="+", help="RST files to normalize")
-    args = parser.parse_args()
-
-    for path in _iter_paths(args.paths):
-        content = path.read_text(encoding="utf-8")
-        updated = fix_glossary_indentation(content)
-        if updated != content:
-            path.write_text(updated, encoding="utf-8")
-
+            print(f"⏭️  {filepath} (no es RST)")
+    
+    print(f"\n✅ Resultado: {files_modified} archivos modificados")
     return 0
 
-
 if __name__ == "__main__":
-    raise SystemExit(main())
+    sys.exit(main())

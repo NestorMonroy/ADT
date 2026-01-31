@@ -1,68 +1,101 @@
-"""Ensure list-table blocks include a blank line before rows."""
-from __future__ import annotations
+#!/usr/bin/env python3
+"""
+Script para corregir espaciado en directivas list-table
 
-from pathlib import Path
-from typing import Iterable
+Ubicación: /tmp/ADT/scripts/fix_list_table_spacing.py
 
+Uso desde /tmp/ADT:
+    python3 scripts/fix_list_table_spacing.py source/**/*.rst
 
-def fix_list_table_spacing(content: str) -> str:
-    """Insert a blank line between list-table options and the first row."""
-    lines = content.splitlines()
-    output: list[str] = []
-    pending_blank = False
+Añade línea en blanco entre opciones y contenido de list-table
 
-    for line in lines:
-        stripped = line.strip()
-        if stripped.startswith(".. list-table::"):
-            pending_blank = True
-            output.append(line)
-            continue
+Problema:
+    .. list-table::
+       :header-rows: 1
+       * - Col1  ← falta línea en blanco
+       
+Solución:
+    .. list-table::
+       :header-rows: 1
+       
+       * - Col1  ← línea en blanco añadida
 
-        if pending_blank:
-            if stripped.startswith(":"):
-                output.append(line)
+Creado: 2026-01-30 (Auditoría de scripts)
+"""
+import sys
+import re
+
+def fix_list_table_spacing(filepath):
+    """Añade blank line entre opciones y contenido de list-table"""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+        
+        modified = False
+        result = []
+        i = 0
+        
+        while i < len(lines):
+            line = lines[i]
+            result.append(line)
+            
+            # Detectar inicio de list-table
+            if '.. list-table::' in line:
+                i += 1
+                
+                # Procesar opciones (líneas que empiezan con :)
+                while i < len(lines) and lines[i].strip().startswith(':'):
+                    result.append(lines[i])
+                    i += 1
+                
+                # Si la siguiente línea no está vacía y es contenido (* -)
+                if i < len(lines):
+                    next_line = lines[i].strip()
+                    if next_line and next_line.startswith('*'):
+                        # Añadir blank line antes del contenido
+                        if result[-1].strip() != '':
+                            result.append('\n')
+                            modified = True
                 continue
-            if stripped.startswith("*") or stripped.startswith("-"):
-                output.append("")
-                output.append(line)
-                pending_blank = False
-                continue
-            if stripped == "":
-                output.append(line)
-                pending_blank = False
-                continue
+            
+            i += 1
+        
+        if modified:
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.writelines(result)
+            return True
+        
+        return False
+        
+    except Exception as e:
+        print(f"  ❌ Error: {e}")
+        return False
 
-        output.append(line)
-
-    return "\n".join(output) + ("\n" if content.endswith("\n") else "")
-
-
-def _iter_paths(paths: Iterable[str]) -> Iterable[Path]:
-    for raw in paths:
-        path = Path(raw)
-        if path.is_file():
-            yield path
+def main():
+    if len(sys.argv) < 2:
+        print("Uso: python3 fix_list_table_spacing.py <archivo1> [archivo2] ...")
+        print("\nEjemplo:")
+        print("  python3 scripts/fix_list_table_spacing.py source/**/*.rst")
+        sys.exit(1)
+    
+    files = sys.argv[1:]
+    files_modified = 0
+    
+    print(f"\n🔧 Procesando {len(files)} archivos...\n")
+    
+    for filepath in files:
+        if filepath.endswith('.rst'):
+            print(f"📄 {filepath}")
+            if fix_list_table_spacing(filepath):
+                print("  ✅ Espaciado corregido")
+                files_modified += 1
+            else:
+                print("  ⏭️  Sin cambios")
         else:
-            raise FileNotFoundError(f"File not found: {path}")
-
-
-def main() -> int:
-    import argparse
-
-    parser = argparse.ArgumentParser(
-        description="Ensure list-table blocks include a blank line before rows.",
-    )
-    parser.add_argument("paths", nargs="+", help="RST files to normalize")
-    args = parser.parse_args()
-
-    for path in _iter_paths(args.paths):
-        content = path.read_text(encoding="utf-8")
-        updated = fix_list_table_spacing(content)
-        if updated != content:
-            path.write_text(updated, encoding="utf-8")
-
+            print(f"⏭️  {filepath} (no es RST)")
+    
+    print(f"\n✅ Resultado: {files_modified} archivos modificados")
     return 0
 
-
 if __name__ == "__main__":
-    raise SystemExit(main())
+    sys.exit(main())

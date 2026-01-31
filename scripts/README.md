@@ -252,3 +252,50 @@ chmod +x scripts/*.sh
 **Versión:** 1.0.0  
 **Fecha:** 2026-01-27  
 **Estado:** Producción
+
+## Organización (Actualizado 2026-01-30)
+
+### correction/
+Scripts que MODIFICAN archivos RST para corregir errores:
+- `fix_section_structure.py` - Corrige estructura de secciones (CRITICAL)
+- `fix_title_underlines.py` - Corrige underlines de títulos (CRITICAL)
+- `fix_heading_levels.py` - Normaliza niveles de encabezados (339 warnings)
+- `fix_indentation_errors.py` - Corrige indentación (28 errors)
+- `resolve_image_references.py` - Resuelve referencias de imágenes (142 warnings)
+- `fix_list_spacing.py` - Corrige espaciado de listas
+- `fix_list_table_*.py` - Correcciones de tablas
+- `fix_glossary_indentation.py` - Normaliza glosarios
+- etc.
+
+### analysis/
+Scripts que ANALIZAN sin modificar:
+- `analyze_build_log.py` - Analiza logs de build de Sphinx
+- `find_duplicate_labels.py` - Detecta labels duplicados
+- `find_duplicate_toctree.py` - Detecta toctree duplicados
+
+### lib/
+Bibliotecas compartidas:
+- `rst_utils/` - Utilidades para parseo/rendering de RST
+- `regex_patterns.py` - Patrones regex compartidos
+
+## Tests
+
+Los tests están en `/tests/` (hermana de `/scripts/`)
+- `tests/test_correction/` - Tests de scripts de corrección
+- `tests/test_analysis/` - Tests de scripts de análisis
+- `tests/test_lib/` - Tests de bibliotecas
+
+Ejecutar tests:
+```bash
+# Todos los tests
+pytest
+
+# Con coverage
+pytest --cov=scripts --cov-report=html
+
+# Solo tests de corrección
+pytest tests/test_correction/
+
+# Verbose
+pytest -v
+```

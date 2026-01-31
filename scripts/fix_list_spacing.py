@@ -1,94 +1,91 @@
-"""Insert blank lines before bullet/numbered lists after colon lines."""
-from __future__ import annotations
+#!/usr/bin/env python3
+"""
+Script para corregir espaciado antes de listas en RST
 
-from pathlib import Path
-from typing import Iterable
+Ubicación: /tmp/ADT/scripts/fix_list_spacing.py
 
+Uso desde /tmp/ADT:
+    python3 scripts/fix_list_spacing.py source/**/*.rst
 
-def _is_list_item(stripped: str) -> bool:
-    if stripped.startswith(('* -', '- -')):
+Añade línea en blanco antes de listas que siguen a un párrafo con ':'
+
+Problema:
+    Some text:
+    - Item 1  ← falta línea en blanco
+    
+Solución:
+    Some text:
+    
+    - Item 1  ← línea en blanco añadida
+
+Creado: 2026-01-30 (Auditoría de scripts)
+"""
+import sys
+import re
+
+def fix_list_spacing(filepath):
+    """Añade blank line antes de listas RST"""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+        
+        modified = False
+        result = []
+        
+        for i, line in enumerate(lines):
+            result.append(line)
+            
+            # Detectar: línea termina con ':' y siguiente es una lista
+            if i < len(lines) - 1:
+                current_stripped = line.strip()
+                next_stripped = lines[i + 1].strip()
+                
+                # Línea actual termina con ':' y no está vacía
+                if current_stripped and current_stripped.endswith(':'):
+                    # Siguiente línea es un item de lista (-, *, +, o numerado)
+                    if (next_stripped.startswith(('-', '*', '+')) or 
+                        re.match(r'^\d+\.', next_stripped)):
+                        # Añadir línea en blanco si no existe
+                        if line.strip() != '':  # Asegurar que no añadimos duplicados
+                            result.append('\n')
+                            modified = True
+        
+        if modified:
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.writelines(result)
+            return True
+        
         return False
-    if stripped.startswith(('-', '*')):
-        return True
-    if stripped[:1].isdigit() and stripped[1:2] == '.':
-        return True
-    return False
+        
+    except Exception as e:
+        print(f"  ❌ Error: {e}")
+        return False
 
-
-def fix_list_spacing(content: str) -> str:
-    """Ensure a blank line after lines ending with ':' before lists."""
-    lines = content.splitlines()
-    output: list[str] = []
-    prev_non_blank = ""
-    in_literal_block = False
-    literal_content_indent = None
-
-    for line in lines:
-        stripped = line.strip()
-        leading_spaces = len(line) - len(line.lstrip(" "))
-
-        if in_literal_block:
-            if stripped == "":
-                output.append(line)
-                continue
-            if literal_content_indent is None:
-                literal_content_indent = leading_spaces
-                output.append(line)
-                continue
-            if leading_spaces < literal_content_indent:
-                in_literal_block = False
-                literal_content_indent = None
+def main():
+    if len(sys.argv) < 2:
+        print("Uso: python3 fix_list_spacing.py <archivo1> [archivo2] ...")
+        print("\nEjemplo:")
+        print("  python3 scripts/fix_list_spacing.py source/**/*.rst")
+        sys.exit(1)
+    
+    files = sys.argv[1:]
+    files_modified = 0
+    
+    print(f"\n🔧 Procesando {len(files)} archivos...\n")
+    
+    for filepath in files:
+        if filepath.endswith('.rst'):
+            print(f"📄 {filepath}")
+            if fix_list_spacing(filepath):
+                print("  ✅ Espaciado corregido")
+                files_modified += 1
             else:
-                output.append(line)
-                continue
-
-        if (stripped.endswith("::") and not stripped.startswith("..")) or stripped.startswith(".. code-block::"):
-            in_literal_block = True
-            literal_content_indent = None
-            output.append(line)
-            prev_non_blank = stripped
-            continue
-
-        if stripped and _is_list_item(stripped):
-            if prev_non_blank.endswith(":"):
-                output.append(" " * leading_spaces)
-            output.append(line)
-            prev_non_blank = stripped
-            continue
-
-        output.append(line)
-        if stripped:
-            prev_non_blank = stripped
-
-    return "\n".join(output) + ("\n" if content.endswith("\n") else "")
-
-
-def _iter_paths(paths: Iterable[str]) -> Iterable[Path]:
-    for raw in paths:
-        path = Path(raw)
-        if path.is_file():
-            yield path
+                print("  ⏭️  Sin cambios")
         else:
-            raise FileNotFoundError(f"File not found: {path}")
-
-
-def main() -> int:
-    import argparse
-
-    parser = argparse.ArgumentParser(
-        description="Insert blank lines before lists after colon lines.",
-    )
-    parser.add_argument("paths", nargs="+", help="RST files to normalize")
-    args = parser.parse_args()
-
-    for path in _iter_paths(args.paths):
-        content = path.read_text(encoding="utf-8")
-        updated = fix_list_spacing(content)
-        if updated != content:
-            path.write_text(updated, encoding="utf-8")
-
+            print(f"⏭️  {filepath} (no es RST)")
+    
+    print(f"\n✅ Resultado: {files_modified} archivos modificados")
     return 0
 
-
 if __name__ == "__main__":
-    raise SystemExit(main())
+    sys.exit(main())
