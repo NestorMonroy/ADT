@@ -110,10 +110,46 @@ validate_environment() {
 }
 
 # ============================================================
+# CLEAN FUNCTION
+# ============================================================
+
+clean_build() {
+    dbg "Starting clean"
+
+    banner "CLEANING BUILD DIRECTORY"
+
+    cd "$BASE_DIR" || die "Could not change to: $BASE_DIR"
+
+    if [ "$DRY_RUN" -eq 1 ]; then
+        log "[DRY-RUN] Would execute: make clean"
+        return 0
+    fi
+
+    log "Executing make clean..."
+    make clean 2>&1
+    CLEAN_EXIT=$?
+
+    if [ $CLEAN_EXIT -eq 0 ]; then
+        log "[OK] Clean completed"
+    else
+        log "[WARN] Clean failed with exit code: $CLEAN_EXIT"
+    fi
+
+    log ""
+
+    return $CLEAN_EXIT
+}
+
+# ============================================================
 # BUILD FUNCTION
 # ============================================================
 
 run_build() {
+    local build_exit
+    local build_start
+    local build_end
+    local build_duration
+
     dbg "Starting Sphinx build"
 
     banner "STARTING SPHINX BUILD"
@@ -125,68 +161,90 @@ run_build() {
     hsep
     log ""
 
-    # Change to project directory
-    dbg "Changing to directory: $BASE_DIR"
     cd "$BASE_DIR" || die "Could not change to: $BASE_DIR"
 
-    # Build with real-time filtering
     log "Executing make html..."
     log ""
 
-    # Start timer
-    BUILD_START=$(date +%s)
-    dbg "Build start time: $BUILD_START"
+    build_start=$(date +%s)
+    dbg "Build start time: $build_start"
 
     if [ "$DRY_RUN" -eq 1 ]; then
         log "[DRY-RUN] Would execute: make html"
-        BUILD_EXIT=0
+        build_exit=0
     else
-        # Use tee to save log, and show all output with highlighted warnings/errors
-        # GREP_COLORS highlights matches but shows ALL lines
         make html 2>&1 | tee "$LOG_FILE"
-        BUILD_EXIT=${PIPESTATUS[0]}
+        build_exit=${PIPESTATUS[0]}
     fi
 
-    # End timer
-    BUILD_END=$(date +%s)
-    BUILD_DURATION=$((BUILD_END - BUILD_START))
-    dbg "Build end time: $BUILD_END"
-    dbg "Build duration: $BUILD_DURATION seconds"
+    build_end=$(date +%s)
+    build_duration=$((build_end - build_start))
+    dbg "Build end time: $build_end"
+    dbg "Build duration: $build_duration seconds"
 
     log ""
     hsep
     log ""
 
-    # Clean ANSI codes from log
-    if [ "$DRY_RUN" -eq 0 ]; then
-        dbg "Cleaning ANSI codes from log file"
-        # Remove ANSI escape sequences with ESC character
-        sed -i 's/\x1B\[[0-9;]*[a-zA-Z]//g' "$LOG_FILE"
-        # Remove ANSI sequences without ESC (corrupted or partial)
-        # Pattern: [digits;digits...letter]
-        sed -i 's/\[[0-9]\{1,3\}\(;[0-9]\{1,3\}\)*m//g' "$LOG_FILE"
-        # Remove cursor control codes [2K, [0K, etc.
-        sed -i 's/\[[0-9]\{1,3\}[ABCDKJ]//g' "$LOG_FILE"
-        # Convert CRLF to LF (Windows to Unix line endings)
-        sed -i 's/\r$//' "$LOG_FILE"
-        dbg "Converted line endings from CRLF to LF"
-    fi
-
-    # Report result
-    if [ $BUILD_EXIT -eq 0 ]; then
+    if [ $build_exit -eq 0 ]; then
         log "[OK] Build completed successfully"
     else
-        log "[FAIL] Build failed with exit code: $BUILD_EXIT"
+        log "[FAIL] Build failed with exit code: $build_exit"
         log "       (Partial log will be analyzed for diagnostics)"
     fi
 
-    # Display build time
     log ""
-    log "Build time: ${BUILD_DURATION}s"
-
+    log "Build time: ${build_duration}s"
     log ""
 
-    return $BUILD_EXIT
+    return $build_exit
+}
+
+# ============================================================
+# LOG CLEANING FUNCTION (Pure)
+# ============================================================
+
+clean_log_file() {
+    local log_file="$1"
+
+    if [ ! -f "$log_file" ]; then
+        dbg "Log file does not exist: $log_file"
+        return 1
+    fi
+
+    dbg "Cleaning ANSI codes from log file: $log_file"
+
+    # Remove ANSI escape sequences with ESC character
+    sed -i 's/\x1B\[[0-9;]*[a-zA-Z]//g' "$log_file"
+
+    # Remove ANSI sequences without ESC (corrupted or partial)
+    sed -i 's/\[[0-9]\{1,3\}\(;[0-9]\{1,3\}\)*m//g' "$log_file"
+
+    # Remove cursor control codes [2K, [0K, etc.
+    sed -i 's/\[[0-9]\{1,3\}[ABCDKJ]//g' "$log_file"
+
+    # Convert CRLF to LF (Windows to Unix line endings)
+    sed -i 's/\r$//' "$log_file"
+
+    dbg "Log file cleaned successfully"
+
+    return 0
+}
+
+# ============================================================
+# COUNT ISSUES FUNCTION (Pure)
+# ============================================================
+
+count_pattern() {
+    local log_file="$1"
+    local pattern="$2"
+    local count
+
+    count=$(grep -c "$pattern" "$log_file" 2>/dev/null || echo "0")
+    count=$(echo "$count" | tr -d '[:space:]')
+    count=${count:-0}
+
+    echo "$count"
 }
 
 # ============================================================
@@ -194,6 +252,11 @@ run_build() {
 # ============================================================
 
 analyze_log() {
+    local warning_count
+    local error_count
+    local critical_count
+    local total_issues
+
     dbg "Starting log analysis"
 
     banner "ANALYSIS OF RESULTS"
@@ -206,34 +269,26 @@ analyze_log() {
         hsep
         log "TOTAL:    0"
     else
-        # Count issues and sanitize values
-        WARNING_COUNT=$(grep -c 'WARNING:' "$LOG_FILE" 2>/dev/null || echo "0")
-        ERROR_COUNT=$(grep -c 'ERROR:' "$LOG_FILE" 2>/dev/null || echo "0")
-        CRITICAL_COUNT=$(grep -c 'CRITICAL:' "$LOG_FILE" 2>/dev/null || echo "0")
+        # Clean log file first
+        clean_log_file "$LOG_FILE"
 
-        # Remove whitespace and ensure numeric
-        WARNING_COUNT=$(echo "$WARNING_COUNT" | tr -d '[:space:]')
-        ERROR_COUNT=$(echo "$ERROR_COUNT" | tr -d '[:space:]')
-        CRITICAL_COUNT=$(echo "$CRITICAL_COUNT" | tr -d '[:space:]')
+        # Count issues using pure function
+        warning_count=$(count_pattern "$LOG_FILE" "WARNING:")
+        error_count=$(count_pattern "$LOG_FILE" "ERROR:")
+        critical_count=$(count_pattern "$LOG_FILE" "CRITICAL:")
+        total_issues=$((warning_count + error_count + critical_count))
 
-        # Default to 0 if empty
-        WARNING_COUNT=${WARNING_COUNT:-0}
-        ERROR_COUNT=${ERROR_COUNT:-0}
-        CRITICAL_COUNT=${CRITICAL_COUNT:-0}
-
-        TOTAL_ISSUES=$((WARNING_COUNT + ERROR_COUNT + CRITICAL_COUNT))
-
-        dbg "WARNING count: $WARNING_COUNT"
-        dbg "ERROR count: $ERROR_COUNT"
-        dbg "CRITICAL count: $CRITICAL_COUNT"
-        dbg "TOTAL issues: $TOTAL_ISSUES"
+        dbg "WARNING count: $warning_count"
+        dbg "ERROR count: $error_count"
+        dbg "CRITICAL count: $critical_count"
+        dbg "TOTAL issues: $total_issues"
 
         # Display summary
-        log "WARNING:  $WARNING_COUNT"
-        log "ERROR:    $ERROR_COUNT"
-        log "CRITICAL: $CRITICAL_COUNT"
+        log "WARNING:  $warning_count"
+        log "ERROR:    $error_count"
+        log "CRITICAL: $critical_count"
         hsep
-        log "TOTAL:    $TOTAL_ISSUES"
+        log "TOTAL:    $total_issues"
     fi
 
     log ""
@@ -335,6 +390,8 @@ parse_args() {
 # ============================================================
 
 main() {
+    local build_result
+
     dbg "Script started: $SCRIPT_NAME"
     dbg "Script directory: $SCRIPT_DIR"
     dbg "Repository root: $REPO_ROOT"
@@ -343,9 +400,12 @@ main() {
     # Validate environment
     validate_environment
 
+    # Clean build directory
+    clean_build
+
     # Run build
     run_build
-    BUILD_RESULT=$?
+    build_result=$?
 
     # Analyze log
     analyze_log
@@ -355,16 +415,16 @@ main() {
 
     # Final summary
     sep
-    if [ $BUILD_RESULT -eq 0 ]; then
+    if [ $build_result -eq 0 ]; then
         log "[OK] Script completed successfully"
     else
         log "[WARN] Script completed with build errors"
     fi
     sep
 
-    dbg "Script finished with exit code: $BUILD_RESULT"
+    dbg "Script finished with exit code: $build_result"
 
-    exit $BUILD_RESULT
+    exit $build_result
 }
 
 # ============================================================
