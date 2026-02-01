@@ -1,16 +1,49 @@
 ---
 name: sphinx-expert
 description: "Experto en Sphinx, RST y arquitectura documental. Usar para analisis de estructura, resolucion de problemas de build, optimizacion de markup RST, y decisiones sobre organizacion de contenido."
-version: 1.6.1
+version: 1.9.0
 created: 2026-01-29
-updated: 2026-01-31
+updated: 2026-02-01
 ---
 
 # Sphinx Expert
 
-**Versión**: 1.6.1  
+**Versión**: 1.9.0  
 **Ubicación**: `/tmp/ADT/.codex/skills/sphinx-expert/`  
 **Proyecto**: ADT Documentation (ubicado en `/tmp/ADT`)
+
+## 🆕 REORGANIZACIÓN v1.0.0 - Estructura Actualizada
+
+**IMPORTANTE**: El proyecto fue completamente reorganizado (2026-02-01)
+
+### Nueva Estructura de Directorios
+
+**PÚBLICO** (se publica con Sphinx):
+- `source/biblioteca/` → Contenido traducido y público
+  - ciencias/
+  - informatica/
+  - ingenieria/sistemas/arquitectura/arc42_documentation/
+
+**PRIVADO** (NO se publica):
+- `pipeline_docs/` → Procedimientos y metodología del equipo
+  - procedimientos/ (antiguo 01-10)
+  - metodologia/ (antiguo docs_maestros)
+- `pipeline_docs_work/` → Archivos de trabajo
+  - originales/, metadata/, reportes/, trabajo/
+
+**ARCHIVADO** (obsoleto):
+- `archivados/` → diataxis, docs, backups
+
+### Build Sphinx Actualizado
+
+```bash
+make html  # Ahora genera SOLO source/biblioteca/
+```
+
+**NO se publican más**:
+- 01-10 (procedimientos) → movidos a pipeline_docs/
+- docs_maestros (metodología) → movidos a pipeline_docs/
+- diataxis, docs → archivados/
 
 ## ⚠️ RECORDATORIO CRÍTICO
 
@@ -29,6 +62,246 @@ pwd          # Debe mostrar /tmp/ADT
 - Integracion de extensiones
 - Troubleshooting enlaces rotos
 - Performance de generacion
+
+---
+
+## 🔄 Integración con Translation Workflow
+
+**Contexto**: Sphinx Expert se usa en FASE 4 (Validación) del Translation Workflow
+
+### Rol en el Workflow de Traducción
+
+```
+FASE 3: Traducción     FASE 4: Validación        FASE 5: Integración
+(scripts)           → (Sphinx Expert)         → (Publicación)
+                           ↓
+              1. Validar sintaxis RST
+              2. Verificar estructura
+              3. Build limpio (0 errores)
+              4. Revisar warnings (<5)
+```
+
+### Validación de Contenido Traducido
+
+**Proceso en FASE 4**:
+
+```bash
+# 1. Copiar borradores a ubicación temporal
+cp -r pipeline_docs_work/.../trabajo/borradores/02/* \
+      source/biblioteca/.../arc42_documentation/02_constraints/
+
+# 2. Build limpio (OBLIGATORIO)
+cd /tmp/ADT
+make clean
+make html 2>&1 | tee /tmp/build_validation.log
+
+# 3. Verificar resultado
+grep "ERROR:" /tmp/build_validation.log
+# → DEBE ser 0 errores
+
+grep "WARNING:" /tmp/build_validation.log | wc -l
+# → Debe ser < 5 warnings
+
+# 4. Si OK → mover a validaciones/
+# Si NO → corregir errores y repetir
+```
+
+### Criterios de Validación
+
+**OBLIGATORIOS (deben pasar)**:
+- ✅ 0 ERRORES en build
+- ✅ Build completa exitosamente
+- ✅ Archivos .rst con sintaxis correcta
+- ✅ Imágenes referenciadas existen
+- ✅ Enlaces internos funcionan
+
+**DESEABLES (pueden tener <5)**:
+- ⚠️ Warnings de formato (listas, markup)
+- ⚠️ Términos no en glosario
+- ⚠️ Toctree globs vacíos
+
+### Errores Comunes en Traducción
+
+**1. Indentación incorrecta en listas**:
+```rst
+# ❌ MAL (1 espacio)
+ * Item
+
+# ✅ BIEN (3 espacios)
+   * Item
+```
+
+**2. List-table con columnas desalineadas**:
+```rst
+# ❌ MAL
+   * - Col1
+   - Col2    # Falta indentación
+
+# ✅ BIEN
+   * - Col1
+     - Col2  # Alineado con Col1
+```
+
+**3. Directivas sin línea en blanco**:
+```rst
+# ❌ MAL
+.. note::
+   Texto
+Siguiente párrafo
+
+# ✅ BIEN
+.. note::
+   Texto
+
+Siguiente párrafo  # Línea en blanco antes
+```
+
+**4. Enlaces internos incorrectos**:
+```rst
+# ❌ MAL
+Ver :ref:`seccion-no-existe`
+
+# ✅ BIEN
+Ver :ref:`sec-02-constraints`
+```
+
+### Quick Fix para Traducción
+
+Si el build falla en FASE 4:
+
+```bash
+# 1. Identificar archivo problemático
+grep "ERROR:" /tmp/build_validation.log
+
+# 2. Ver error específico
+# Ejemplo: source/biblioteca/.../seccion_02.rst:45: ERROR
+
+# 3. Abrir archivo y corregir línea 45
+# (usar procedimientos de este skill)
+
+# 4. Re-build
+make html 2>&1 | grep "seccion_02"
+
+# 5. Repetir hasta 0 errores
+```
+
+### Integración Completa
+
+**Translation Workflow → Sphinx Expert → Build OK**:
+
+```
+Usuario solicita traducción
+        ↓
+FASE 1-3: Traducir contenido
+        ↓
+FASE 4: Validar con Sphinx Expert ← (este skill)
+        ↓
+  Build limpio?
+    NO → Corregir errores (usar este skill)
+         ↓
+         Repetir build
+    SÍ → FASE 5: Integrar y publicar
+```
+
+**Ver también**: `.codex/skills/translation-workflow/SKILL.md` (FASE 4)
+
+---
+
+## Decision Framework: ¿Qué Tipo de Problema Tengo?
+
+**Usa este framework para identificar qué sección consultar**:
+
+1. **¿El build FALLA (ERROR)?**
+   → Ver sección "Errores Críticos" (ERROR messages)
+
+2. **¿El build pasa pero hay WARNING?**
+   → Ver sección "WARNING Comunes" (categorías específicas)
+
+3. **¿No sé si es ERROR o WARNING?**
+   → Ejecutar `make clean html` y leer output completo
+
+4. **¿Es problema de estructura/organización?**
+   → Ver sección "Arquitectura Documental"
+
+5. **¿Es problema de enlaces rotos?**
+   → Ver sección "Referencias y Enlaces"
+
+6. **¿Es problema de performance (build lento)?**
+   → Ver sección "Optimización"
+
+7. **¿No sé qué tipo de problema tengo?**
+   → Ejecutar build completo primero, luego consultar este skill
+
+**Regla de oro**: Si el build falla → ERROR (crítico). Si pasa con warnings → WARNING (fix incremental).
+
+---
+
+## Trigger Patterns
+
+### Señales Explícitas (100% usar este skill)
+
+- Usuario dice: "el build de Sphinx falla"
+- Usuario dice: "tengo errores de RST"
+- Usuario menciona: "WARNING en el build"
+- Usuario pregunta: "¿cómo arreglo este error de Sphinx?"
+- Build output muestra "ERROR" o "WARNING"
+
+### Señales Implícitas (muy probable)
+
+- Usuario menciona "documentación no se genera"
+- Usuario pregunta sobre "toctree"
+- Usuario menciona "enlaces rotos"
+- Usuario pregunta sobre "directivas RST"
+- Usuario menciona archivos .rst
+
+### Trigger Words Clave
+
+**Palabras Sphinx-específicas**:
+- "Sphinx", "RST", "reStructuredText"
+- "make html", "build", "conf.py"
+- "toctree", "index.rst"
+- "directive", "role", "cross-reference"
+
+**Palabras de problemas**:
+- "ERROR", "WARNING", "falla", "no funciona"
+- "enlaces rotos", "broken links"
+- "documento no incluido", "huérfano"
+- "explicit markup", "malformed"
+
+**Anti-triggers** (NO usar si solo dicen):
+- "¿qué es Sphinx?" (información general, no problema)
+- "¿cómo instalo Sphinx?" (instalación, no troubleshooting)
+
+---
+
+## Self-Check Before Troubleshooting
+
+**OBLIGATORIO antes de pedir ayuda con errores**:
+
+### Pre-Diagnóstico
+- [ ] ¿Estoy en `/tmp/ADT/`? (verificar con `pwd`)
+- [ ] ¿Ejecuté `make clean html` completo?
+- [ ] ¿Tengo el output completo del build?
+- [ ] ¿Identifiqué si es ERROR o WARNING?
+- [ ] ¿Leí el mensaje de error COMPLETO?
+
+**Si NO → Ejecutar build correcto primero**
+
+### Diagnóstico
+- [ ] ¿Identifiqué el archivo que causa el problema?
+- [ ] ¿Identifiqué la línea exacta del error?
+- [ ] ¿Sé qué directiva o syntax está fallando?
+- [ ] ¿Busqué el error en este skill? (Ctrl+F)
+
+**Si NO → Leer output con más cuidado**
+
+### Pre-Fix
+- [ ] ¿Entiendo QUÉ está mal?
+- [ ] ¿Tengo git status limpio?
+- [ ] ¿Voy a hacer backup antes de fix masivo?
+- [ ] ¿Voy a validar después del fix?
+
+**Si NO → STOP antes de aplicar cambios**
 
 ---
 
@@ -532,8 +805,11 @@ rg -A 10 "^\.\. toctree::" source/
 
 ## Referencias
 
-- source/05_herramientas_medios/sphinx/
-- source/07_guias_uso/troubleshooting.rst
+**NOTA**: Reorganización v1.0.0 - estructura actualizada
+
+- pipeline_docs/procedimientos/05_herramientas_medios/sphinx/
+- pipeline_docs/procedimientos/07_guias_uso/troubleshooting.rst
+- source/biblioteca/ → Contenido público traducido
 - https://www.sphinx-doc.org/
 
 ## Notas
@@ -1486,7 +1762,80 @@ Cuando cometas un error nuevo:
 
 ## Changelog
 
-### v1.6.1 - 2026-01-31
+### v1.9.0 - 2026-02-01 - Integración con Translation Workflow
+
+**Nueva sección**: Integración con Translation Workflow (FASE 4 Validación)
+
+✅ **Rol en workflow de traducción**:
+- Sphinx Expert usado en FASE 4 (Validación)
+- Proceso completo: borradores → validación → build limpio
+- Diagrama de integración con fases de traducción
+
+✅ **Criterios de validación documentados**:
+- OBLIGATORIOS: 0 errores, build exitoso, sintaxis correcta
+- DESEABLES: <5 warnings aceptables
+- Quick fix para errores comunes en traducción
+
+✅ **Errores comunes en traducción** (4 nuevos):
+1. Indentación incorrecta en listas
+2. List-table con columnas desalineadas
+3. Directivas sin línea en blanco
+4. Enlaces internos incorrectos
+
+✅ **Proceso de validación**:
+- Comandos específicos para FASE 4
+- Criterios de paso (0 errores) vs fallo
+- Integración con pipeline_docs_work/trabajo/
+- Loop de corrección hasta build limpio
+
+✅ **Quick Fix para traducción**:
+- 5 pasos para identificar y corregir errores
+- Integración con translation-workflow skill
+- Referencias cruzadas entre skills
+
+**Líneas agregadas**: ~150 líneas
+**Beneficio principal**:
+- Claude sabe exactamente cómo validar contenido traducido
+- Integración clara entre translation-workflow y sphinx-expert
+- Reducción de errores en FASE 4 de traducción
+- Proceso de corrección iterativo documentado
+
+### v1.8.0 - 2026-02-01 - Reorganización Estructura ADT
+
+**Cambios por reorganización biblioteca v1.0.0**:
+
+✅ **Estructura actualizada**:
+- `source/` ahora SOLO contiene `biblioteca/` (contenido público)
+- `pipeline_docs/` → Procedimientos y metodología (antiguo 01-10, docs_maestros)
+- `pipeline_docs_work/` → Archivos de trabajo (originales, metadata, reportes)
+- `archivados/` → Contenido obsoleto (diataxis, docs)
+
+✅ **arc42 reorganizado**:
+- Eliminada carpeta `sections/`
+- Nueva estructura por tipo de contenido:
+  - `XX_nombre/secciones/` → Contenido principal
+  - `XX_nombre/tips/` → Consejos prácticos
+  - `XX_nombre/ejemplos/` → Casos prácticos
+  - `XX_nombre/diagramas/` → Visualizaciones
+  - `XX_nombre/figuras/` → Imágenes
+
+✅ **Build Sphinx**:
+- `make html` genera SOLO `source/biblioteca/`
+- NO se publican: procedimientos, metodología, archivos de trabajo
+
+✅ **Índices .rst**:
+- 14 nuevos índices creados (1 general + 13 secciones)
+- Sin emojis en archivos .rst (profesional)
+
+**Breaking Changes**:
+- Rutas en toctree deben actualizarse si referencian 01-10 o docs_maestros
+- Scripts de traducción deben apuntar a nuevas rutas
+- Referencias internas actualizadas a nueva estructura
+
+**Commit**: 727264f - 1,056 archivos afectados
+**Tag**: reorganizacion-biblioteca-v1.0.0
+
+### v1.7.0 - 2026-02-01
 
 **Nueva Sección**: Anti-patrones y Errores Comunes
 
@@ -1821,3 +2170,41 @@ Backup: SKILL_backup_v1.3.0.md
 - Capacidades base de Sphinx expert
 - Troubleshooting común
 - Reglas preventivas
+
+### v1.7.0 (2026-02-01) - FASE 2
+
+**Mejoras de usabilidad y decision-making**:
+
+✅ **Decision Framework** - ¿Qué Tipo de Problema Tengo?
+- 7 preguntas para identificar tipo de problema
+- Regla de oro: ERROR = crítico, WARNING = incremental
+- Mapeo directo a secciones del skill
+
+✅ **Trigger Patterns** - Cuándo usar este skill
+- Señales explícitas (usuario menciona "build falla")
+- Señales implícitas (usuario menciona .rst, toctree)
+- Trigger words Sphinx-específicos
+- Anti-triggers para evitar confusión
+
+✅ **Self-Check Mechanisms** - Checklist antes de troubleshooting
+- Pre-Diagnóstico (build correcto, output completo)
+- Diagnóstico (archivo, línea, directiva identificados)
+- Pre-Fix (entender problema, git limpio, validación)
+
+**Líneas agregadas**: ~80 líneas
+
+**Beneficio principal**:
+- Usuarios identifican su problema más rápido
+- Reducción de troubleshooting erróneo
+- Decision framework mapea a secciones correctas
+
+**Cambios en estructura**:
+- Decision Framework insertado después de "Cuando usar"
+- Trigger Patterns agregados
+- Self-Checks previenen fixes sin diagnóstico
+
+---
+
+**Última actualización**: 2026-02-01  
+**Mantenedor**: ADT Team  
+**Ubicación del Proyecto**: `/tmp/ADT`

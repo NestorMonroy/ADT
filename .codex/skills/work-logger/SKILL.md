@@ -1,9 +1,9 @@
 ---
 name: work-logger
 description: "Sistema de logging estructurado de trabajo. Usar cuando se complete tarea importante, traduccion, o implementacion que deba quedar documentada."
-version: 1.0.0
+version: 1.1.0
 created: 2026-01-29
-updated: 2026-01-30
+updated: 2026-02-01
 ---
 
 # Work Logger - Documentacion de Trabajo
@@ -16,6 +16,108 @@ updated: 2026-01-30
 - Al finalizar feature importante
 - Para registrar decisiones tecnicas
 - Cuando algo debe quedar para referencia futura
+
+---
+
+## Decision Framework: ¿Merece un Work Log?
+
+**Usa este framework para decidir si documentar**:
+
+1. **¿El trabajo tomó >30 minutos?**
+   → Sí, probablemente merece log
+
+2. **¿Es algo que necesitaré recordar en 1 mes?**
+   → Sí, documentar
+
+3. **¿Otros colaboradores se beneficiarían de conocerlo?**
+   → Sí, documentar
+
+4. **¿Resolví un problema complejo o no obvio?**
+   → Sí, definitivamente documentar
+
+5. **¿Tomé decisiones técnicas importantes?**
+   → Sí, documentar las razones
+
+6. **¿Es solo un typo o cambio trivial?**
+   → No, skip work log
+
+7. **¿Puedo explicarlo en una línea de commit?**
+   → Si sí → skip work log
+   → Si no → crear work log
+
+8. **¿No estoy seguro?**
+   → Documentar (mejor exceso que falta)
+
+**Regla de oro**: Si dudas → **documenta**
+
+---
+
+## Trigger Patterns
+
+### Señales Explícitas
+- Usuario dice: "documenta esto"
+- Usuario dice: "crea un work log"
+- Usuario dice: "registra este trabajo"
+- Usuario pregunta: "¿cómo documentamos?"
+- Fin de sesión larga de trabajo (>2h)
+
+### Señales Implícitas
+- Trabajo complejo recién completado
+- Problema resuelto después de debugging
+- Feature implementada con decisiones técnicas
+- Script creado o modificado significativamente
+- Aprendizajes importantes descubiertos
+- Usuario dice "para que no se olvide"
+
+### Trigger Words
+- "documentar", "registrar", "log"
+- "para referencia", "para el futuro"
+- "importante", "crítico", "decisión"
+- "problema resuelto", "bug fixed"
+- "aprendizaje", "lección"
+
+**Anti-triggers** (NO crear work log):
+- Usuario dice "cambio rápido"
+- Usuario dice "solo un typo"
+- Cambio de <10 líneas sin complejidad
+- Update rutinario de dependencias
+- Cambios cosméticos de formato
+
+---
+
+## Self-Check Before Creating Work Log
+
+**OBLIGATORIO antes de crear work log**:
+
+### Pre-Logging Checks
+- [ ] ¿El trabajo está completado?
+- [ ] ¿Tengo toda la información necesaria?
+- [ ] ¿Sé qué archivos afecté?
+- [ ] ¿Tengo commits relacionados identificados?
+- [ ] ¿Hay decisiones que debo documentar?
+
+**Si NO → Completar trabajo antes de documentar**
+
+### During-Logging Checks
+- [ ] ¿Usé el template correcto?
+- [ ] ¿Resumen ejecutivo es claro?
+- [ ] ¿Listé TODOS los archivos afectados?
+- [ ] ¿Documenté decisiones NO obvias?
+- [ ] ¿Incluí comandos/código relevante?
+- [ ] ¿Sin información sensible (passwords, keys)?
+
+**Si NO en alguno → Revisar y completar**
+
+### Post-Logging Checks
+- [ ] ¿El log está en `.mywork/work-logs/`?
+- [ ] ¿Nombre sigue formato YYYY-MM-DD-HH-MM-titulo.md?
+- [ ] ¿El archivo es legible y formateado?
+- [ ] ¿Hice commit del work log?
+- [ ] ¿Tags apropiados agregados?
+
+**Si NO → Corregir antes de cerrar**
+
+---
 
 ## Ubicacion
 
@@ -52,7 +154,7 @@ Ejemplos:
 
 ### 3. Usar Template
 
-Ver: `templates/work-log.md.template`
+Ver: `.codex/skills/work-logger/templates/work-log.md.template`
 
 Secciones principales:
 - Resumen ejecutivo (OBLIGATORIO)
@@ -265,6 +367,37 @@ mv .mywork/work-logs/2025-*.md .mywork/work-logs/archive/2025/
 ---
 
 ## Changelog
+
+### v1.1.0 - 2026-02-01 - FASE 2
+
+**Mejoras de usabilidad y decision-making**:
+
+✅ **Decision Framework** - ¿Merece un Work Log?
+- 8 preguntas para decidir si documentar
+- Regla de oro: "Si dudas → documenta"
+- Clarifica cuándo NO crear work log (typos, cambios triviales)
+
+✅ **Trigger Patterns** - Cuándo crear work log
+- Señales explícitas (usuario dice "documenta")
+- Señales implícitas (trabajo complejo completado)
+- Trigger words específicos
+- Anti-triggers para evitar over-documentation
+
+✅ **Self-Check Mechanisms** - 3 niveles de checks
+- Pre-Logging (trabajo completado, información lista)
+- During-Logging (template, decisiones, sin info sensible)
+- Post-Logging (ubicación, nombre, commit)
+
+✅ **Corrección de referencia a template**
+- De: `templates/work-log.md.template`
+- A: `.codex/skills/work-logger/templates/work-log.md.template`
+
+**Líneas agregadas**: ~95 líneas
+
+**Beneficio principal**:
+- Usuarios deciden correctamente cuándo documentar
+- Checklist previene olvidos de información crítica
+- Referencia correcta al template
 
 ### v1.0.0 - 2026-01-30
 - Versión inicial con versionamiento añadido

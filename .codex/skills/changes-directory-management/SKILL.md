@@ -1,8 +1,9 @@
 ---
 name: changes-directory-management
 description: "Gestión de directorios de trabajo en .mywork/changes/. Usar para crear, renombrar y organizar directorios de proyectos activos."
-version: 1.0.0
+version: 1.1.0
 created: 2026-01-30
+updated: 2026-02-01
 author: ADT Team
 related_skills:
   - work-logger: "Para logs de trabajo completado"
@@ -12,7 +13,7 @@ related_skills:
 
 # Changes Directory Management - Gestión de Directorios de Trabajo
 
-**Versión**: 1.0.0  
+**Versión**: 1.1.0  
 **Ubicación**: `/tmp/ADT/.codex/skills/changes-directory-management/`  
 **Proyecto**: ADT Documentation (ubicado en `/tmp/ADT`)
 
@@ -39,6 +40,110 @@ Usar esta skill cuando:
 - Work logs completados (usar `work-logger` en `.mywork/work-logs/`)
 - Skills (usar `skills-management` en `.codex/skills/`)
 - Documentación permanente (ubicar en `source/`)
+
+---
+
+## Decision Framework: ¿Cómo Nombrar el Directorio?
+
+**Usa este framework para decidir el nombre correcto**:
+
+1. **¿El trabajo es simple y corto (<2 horas)?**
+   → Nombre descriptivo corto: `fix-sphinx-warnings`
+   → NO necesita timestamp
+
+2. **¿El trabajo es complejo o largo (>2 horas)?**
+   → Timestamp OBLIGATORIO: `20260201-143022-implementar-validacion`
+   → Formato: `YYYYMMDD-HHMMSS-descripcion`
+
+3. **¿El trabajo está en progreso activo?**
+   → Usar timestamp actual
+   → Crear PLAN.md dentro
+
+4. **¿El trabajo está pausado/completado?**
+   → Renombrar agregando `_completed` o `_paused`
+   → Mover a subdirectorio `archived/` si es muy viejo
+
+5. **¿Necesito varios directorios para el mismo tema?**
+   → Usar timestamp diferente + descripción específica
+   → Ejemplo: `20260201-120000-sphinx-fase1`, `20260201-140000-sphinx-fase2`
+
+6. **¿No estoy seguro?**
+   → Usar timestamp siempre (más seguro)
+   → Mejor tener timestamp de más que de menos
+
+**Regla de oro**: Cuando dudes → **USA TIMESTAMP**
+
+---
+
+## Trigger Patterns
+
+### Señales Explícitas
+
+- Usuario dice: "voy a trabajar en X"
+- Usuario dice: "vamos a implementar Y"
+- Usuario dice: "necesito planificar Z"
+- Usuario menciona: "crear directorio de trabajo"
+- Usuario pregunta: "¿dónde documento esto?"
+
+### Señales Implícitas
+
+- Usuario describe un cambio complejo
+- Usuario está a punto de empezar trabajo >2 horas
+- Usuario menciona "plan", "diseño", "spec"
+- Usuario usa futuro: "vamos a...", "voy a..."
+- Contexto indica trabajo nuevo comenzando
+
+### Trigger Words
+
+**Palabras de acción**:
+- "implementar", "desarrollar", "crear", "construir"
+- "cambio", "modificación", "refactor"
+- "proyecto", "tarea", "trabajo"
+
+**Palabras de planificación**:
+- "plan", "diseño", "spec", "propuesta"
+- "documentar", "registrar", "tracking"
+
+**Palabras temporales**:
+- "voy a", "vamos a", "empezar", "iniciar"
+- "nuevo", "próximo", "siguiente"
+
+**Anti-triggers** (NO crear directorio si solo dicen):
+- "¿cómo funciona X?" (solo pregunta)
+- "explícame Y" (solo información)
+- Fix trivial de 1 línea (no requiere directorio)
+
+---
+
+## Self-Check Before Creating Directory
+
+**OBLIGATORIO antes de crear directorio en .mywork/changes/**:
+
+### Pre-Creación
+- [ ] ¿Estoy en `/tmp/ADT/`?
+- [ ] ¿El trabajo es >30 min de duración?
+- [ ] ¿Necesito documentar un plan?
+- [ ] ¿El nombre sigue las convenciones?
+- [ ] ¿Ya existe un directorio similar?
+
+**Si NO al trabajo >30 min → Probablemente no necesitas directorio**
+
+### Sobre el Nombre
+- [ ] ¿Usé timestamp si el trabajo es >2 horas?
+- [ ] ¿El nombre es descriptivo?
+- [ ] ¿El nombre es <50 caracteres?
+- [ ] ¿Evité espacios y caracteres especiales?
+- [ ] ¿Usé minúsculas y guiones?
+
+**Si NO → Corregir nombre antes de crear**
+
+### Post-Creación
+- [ ] ¿Creé PLAN.md dentro del directorio?
+- [ ] ¿Documenté el objetivo del trabajo?
+- [ ] ¿Agregué la estructura básica?
+- [ ] ¿Está en la lista de directorios activos?
+
+**Si NO → Completar estructura básica ahora**
 
 ---
 
@@ -529,3 +634,52 @@ find nuevo-directorio/ -name "*.md" -exec sed -i \
 - Timestamp permite trazabilidad temporal precisa
 - Formato estandarizado facilita scripts y búsquedas
 - Mantener consistencia con convenciones del proyecto
+
+---
+
+## Versionamiento
+
+### v1.1.0 (2026-02-01) - FASE 2
+
+**Mejoras de usabilidad y naming**:
+
+✅ **Decision Framework** - ¿Cómo Nombrar el Directorio?
+- 6 preguntas para decidir naming correcto
+- Regla: Simple (<2h) = no timestamp, Complejo (>2h) = timestamp
+- Regla de oro: "Cuando dudes → USA TIMESTAMP"
+
+✅ **Trigger Patterns** - Cuándo crear directorio
+- Señales explícitas (usuario dice "voy a trabajar en X")
+- Señales implícitas (usuario describe cambio complejo)
+- Trigger words de acción y planificación
+- Anti-triggers para evitar directorios innecesarios
+
+✅ **Self-Check Mechanisms** - Checklist antes de crear
+- Pre-Creación (ubicación, duración, necesidad)
+- Sobre el Nombre (timestamp, descriptivo, formato)
+- Post-Creación (PLAN.md, objetivo, estructura)
+
+**Líneas agregadas**: ~90 líneas
+
+**Beneficio principal**:
+- Naming consistente y correcto
+- Usuarios saben cuándo crear directorio
+- Estructura básica garantizada
+
+**Cambios en estructura**:
+- Decision Framework para naming
+- Trigger Patterns agregados
+- Self-Checks previenen naming incorrecto
+
+### v1.0.0 (2026-01-30)
+
+- Versión inicial
+- Convenciones de naming
+- Estructura de directorios
+- Ejemplos de uso
+
+---
+
+**Última actualización**: 2026-02-01  
+**Mantenedor**: ADT Team  
+**Ubicación del Proyecto**: `/tmp/ADT`

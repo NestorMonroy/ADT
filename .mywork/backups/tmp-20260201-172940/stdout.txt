@@ -1,0 +1,233 @@
+sphinx-build -b html -d _build/doctrees   source _build/html
+Running Sphinx v8.2.3
+loading translations [es]... done
+Initializing Spelling Checker 8.0.2
+making output directory... done
+myst v5.0.0: MdParserConfig(commonmark_only=False, gfm_only=False, enable_extensions={'replacements', 'dollarmath', 'smartquotes', 'colon_fence', 'deflist', 'tasklist', 'html_image', 'html_admonition'}, disable_syntax=[], all_links_external=False, links_external_new_tab=False, url_schemes=('http', 'https', 'mailto', 'ftp'), ref_domains=None, fence_as_directive=set(), number_code_blocks=[], title_to_header=False, heading_anchors=3, heading_slug_func=None, html_meta={}, footnote_sort=True, footnote_transition=True, words_per_minute=200, substitutions={}, linkify_fuzzy_links=True, dmath_allow_labels=True, dmath_allow_space=True, dmath_allow_digits=True, dmath_double_inline=False, update_mathjax=True, mathjax_classes='tex2jax_process|mathjax_process|math|output_area', enable_checkboxes=False, suppress_warnings=[], highlight_code_blocks=True)
+building [mo]: targets for 0 po files that are out of date
+writing output... 
+building [html]: targets for 97 source files that are out of date
+updating environment: [new config] 97 added, 0 changed, 0 removed
+reading sources... [  1%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/ejemplos/introduccion_ejemplo-3
+reading sources... [  2%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/ejemplos/introduccion_ejemplo-htmlsc-1
+reading sources... [  3%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/ejemplos/requisitos_calidad_ejemplo-1
+reading sources... [  4%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/ejemplos/requisitos_calidad_ejemplo-3
+reading sources... [  5%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/index
+reading sources... [  6%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_01_introduccion_objetivos
+reading sources... [  7%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_1_requisitos
+reading sources... [  8%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_2_quality_goals
+reading sources... [  9%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_3_stakeholders
+reading sources... [ 10%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-1
+reading sources... [ 11%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-10
+reading sources... [ 12%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-11
+reading sources... [ 13%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-12
+reading sources... [ 14%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-13
+reading sources... [ 15%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-14
+reading sources... [ 16%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-15
+reading sources... [ 18%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-16
+reading sources... [ 19%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-17
+reading sources... [ 20%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-18
+reading sources... [ 21%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-19
+reading sources... [ 22%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-2
+reading sources... [ 23%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-20
+reading sources... [ 24%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-21
+reading sources... [ 25%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-22
+reading sources... [ 26%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-23
+reading sources... [ 27%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-24
+reading sources... [ 28%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-3
+reading sources... [ 29%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-4
+reading sources... [ 30%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-5
+reading sources... [ 31%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-6
+reading sources... [ 32%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-7
+reading sources... [ 33%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-8
+reading sources... [ 34%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-9
+reading sources... [ 35%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/02_constraints/ejemplos/restricciones_ejemplo-1
+reading sources... [ 36%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/02_constraints/index
+reading sources... [ 37%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/02_constraints/tips/restricciones_tip-1
+reading sources... [ 38%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/02_constraints/tips/restricciones_tip-2
+reading sources... [ 39%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/02_constraints/tips/restricciones_tip-3
+reading sources... [ 40%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/02_constraints/tips/restricciones_tip-4
+reading sources... [ 41%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/02_constraints/tips/restricciones_tip-5
+reading sources... [ 42%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/ejemplos/contexto_ejemplo_negocio_1
+reading sources... [ 43%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/ejemplos/contexto_ejemplo_negocio_2
+reading sources... [ 44%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/ejemplos/contexto_ejemplo_negocio_3
+reading sources... [ 45%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/ejemplos/contexto_ejemplo_negocio_4
+reading sources... [ 46%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/ejemplos/contexto_ejemplo_tecnico_1
+reading sources... [ 47%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/ejemplos/contexto_ejemplo_tecnico_4
+reading sources... [ 48%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/index
+reading sources... [ 49%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/secciones/seccion_03_contexto_alcance
+reading sources... [ 51%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/secciones/seccion_3_1_contexto_negocio
+reading sources... [ 52%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/secciones/seccion_3_2_contexto_tecnico
+reading sources... [ 53%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/04_solution_strategy/ejemplos/estrategia_ejemplo_1
+reading sources... [ 54%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/04_solution_strategy/ejemplos/estrategia_ejemplo_2
+reading sources... [ 55%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/04_solution_strategy/index
+reading sources... [ 56%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/04_solution_strategy/secciones/seccion_04_estrategia_solucion
+reading sources... [ 57%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/ejemplos/bloques_ejemplo_hsc
+reading sources... [ 58%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/ejemplos/bloques_ejemplo_status
+reading sources... [ 59%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/ejemplos/bloques_ejemplo_tpu_nivel_1
+reading sources... [ 60%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/ejemplos/bloques_ejemplo_tpu_nivel_2
+reading sources... [ 61%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/index
+reading sources... [ 62%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/secciones/seccion_05_vista_bloques
+reading sources... [ 63%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/secciones/seccion_5_1_whitebox_sistema
+reading sources... [ 64%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/secciones/seccion_5_2_nivel_2
+reading sources... [ 65%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/secciones/seccion_5_3_nivel_3
+reading sources... [ 66%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/06_runtime_view/ejemplos/runtime_ejemplo_htmlsc
+reading sources... [ 67%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/06_runtime_view/ejemplos/runtime_ejemplo_mama
+reading sources... [ 68%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/06_runtime_view/ejemplos/runtime_ejemplo_tpu
+reading sources... [ 69%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/06_runtime_view/index
+reading sources... [ 70%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/06_runtime_view/secciones/seccion_06_vista_runtime
+reading sources... [ 71%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/07_deployment_view/ejemplos/deployment_ejemplo_htmlsc
+reading sources... [ 72%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/07_deployment_view/ejemplos/deployment_ejemplo_tpu_1
+reading sources... [ 73%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/07_deployment_view/ejemplos/deployment_ejemplo_tpu_2
+reading sources... [ 74%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/07_deployment_view/index
+reading sources... [ 75%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/07_deployment_view/secciones/seccion_07_vista_despliegue
+reading sources... [ 76%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/08_concepts/index
+reading sources... [ 77%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/08_crosscutting_concepts/index
+reading sources... [ 78%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/08_crosscutting_concepts/secciones/seccion_08_conceptos_transversales
+reading sources... [ 79%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/09_architecture_decisions/ejemplos/decision_ejemplo_adr
+reading sources... [ 80%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/09_architecture_decisions/ejemplos/decision_ejemplo_htmlsc_1
+reading sources... [ 81%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/09_architecture_decisions/ejemplos/decision_ejemplo_tpu_2
+reading sources... [ 82%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/09_architecture_decisions/index
+reading sources... [ 84%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/09_architecture_decisions/secciones/seccion_09_decisiones_arquitectonicas
+reading sources... [ 85%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/10_quality/ejemplos/quality_ejemplo_htmlsc_2
+reading sources... [ 86%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/10_quality/ejemplos/quality_ejemplo_tpu_1
+reading sources... [ 87%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/10_quality/index
+reading sources... [ 88%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/10_quality/secciones/seccion_10_requisitos_calidad
+reading sources... [ 89%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/11_risks_tech_debt/ejemplos/risks_ejemplo_htmlsc
+reading sources... [ 90%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/11_risks_tech_debt/ejemplos/risks_ejemplo_tpu
+reading sources... [ 91%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/11_risks_tech_debt/index
+reading sources... [ 92%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/11_risks_tech_debt/secciones/seccion_11_riesgos_deuda_tecnica
+reading sources... [ 93%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/12_glossary/ejemplos/glossary_ejemplo_htmlsc
+reading sources... [ 94%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/12_glossary/index
+reading sources... [ 95%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/12_glossary/secciones/seccion_12_glosario
+reading sources... [ 96%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/ANALISIS_ERRORES_SEC3_SEC5
+reading sources... [ 97%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/glosario_acumulativo
+reading sources... [ 98%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/index
+reading sources... [ 99%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro
+reading sources... [100%] index
+
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_1_requisitos.rst: document is referenced in multiple toctrees: ['biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/index', 'biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_01_introduccion_objetivos'], selecting: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_01_introduccion_objetivos <- biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_1_requisitos
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_2_quality_goals.rst: document is referenced in multiple toctrees: ['biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/index', 'biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_01_introduccion_objetivos'], selecting: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_01_introduccion_objetivos <- biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_2_quality_goals
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_3_stakeholders.rst: document is referenced in multiple toctrees: ['biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/index', 'biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_01_introduccion_objetivos'], selecting: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_01_introduccion_objetivos <- biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_3_stakeholders
+done
+preparing documents... done
+copying assets... 
+copying static files... 
+Writing evaluated template result to /tmp/ADT/_build/html/_static/basic.css
+Writing evaluated template result to /tmp/ADT/_build/html/_static/documentation_options.js
+Writing evaluated template result to /tmp/ADT/_build/html/_static/language_data.js
+Writing evaluated template result to /tmp/ADT/_build/html/_static/copybutton.js
+copying static files: done
+copying extra files... 
+copying extra files: done
+copying assets: done
+writing output... [  1%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/ejemplos/introduccion_ejemplo-3
+writing output... [  2%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/ejemplos/introduccion_ejemplo-htmlsc-1
+writing output... [  3%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/ejemplos/requisitos_calidad_ejemplo-1
+writing output... [  4%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/ejemplos/requisitos_calidad_ejemplo-3
+writing output... [  5%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/index
+writing output... [  6%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_01_introduccion_objetivos
+writing output... [  7%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_1_requisitos
+writing output... [  8%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_2_quality_goals
+writing output... [  9%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_3_stakeholders
+writing output... [ 10%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-1
+writing output... [ 11%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-10
+writing output... [ 12%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-11
+writing output... [ 13%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-12
+writing output... [ 14%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-13
+writing output... [ 15%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-14
+writing output... [ 16%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-15
+writing output... [ 18%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-16
+writing output... [ 19%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-17
+writing output... [ 20%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-18
+writing output... [ 21%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-19
+writing output... [ 22%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-2
+writing output... [ 23%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-20
+writing output... [ 24%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-21
+writing output... [ 25%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-22
+writing output... [ 26%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-23
+writing output... [ 27%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-24
+writing output... [ 28%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-3
+writing output... [ 29%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-4
+writing output... [ 30%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-5
+writing output... [ 31%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-6
+writing output... [ 32%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-7
+writing output... [ 33%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-8
+writing output... [ 34%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/tips/introduccion_tip-9
+writing output... [ 35%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/02_constraints/ejemplos/restricciones_ejemplo-1
+writing output... [ 36%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/02_constraints/index
+writing output... [ 37%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/02_constraints/tips/restricciones_tip-1
+writing output... [ 38%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/02_constraints/tips/restricciones_tip-2
+writing output... [ 39%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/02_constraints/tips/restricciones_tip-3
+writing output... [ 40%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/02_constraints/tips/restricciones_tip-4
+writing output... [ 41%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/02_constraints/tips/restricciones_tip-5
+writing output... [ 42%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/ejemplos/contexto_ejemplo_negocio_1
+writing output... [ 43%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/ejemplos/contexto_ejemplo_negocio_2
+writing output... [ 44%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/ejemplos/contexto_ejemplo_negocio_3
+writing output... [ 45%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/ejemplos/contexto_ejemplo_negocio_4
+writing output... [ 46%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/ejemplos/contexto_ejemplo_tecnico_1
+writing output... [ 47%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/ejemplos/contexto_ejemplo_tecnico_4
+writing output... [ 48%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/index
+writing output... [ 49%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/secciones/seccion_03_contexto_alcance
+writing output... [ 51%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/secciones/seccion_3_1_contexto_negocio
+writing output... [ 52%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/secciones/seccion_3_2_contexto_tecnico
+writing output... [ 53%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/04_solution_strategy/ejemplos/estrategia_ejemplo_1
+writing output... [ 54%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/04_solution_strategy/ejemplos/estrategia_ejemplo_2
+writing output... [ 55%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/04_solution_strategy/index
+writing output... [ 56%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/04_solution_strategy/secciones/seccion_04_estrategia_solucion
+writing output... [ 57%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/ejemplos/bloques_ejemplo_hsc
+writing output... [ 58%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/ejemplos/bloques_ejemplo_status
+writing output... [ 59%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/ejemplos/bloques_ejemplo_tpu_nivel_1
+writing output... [ 60%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/ejemplos/bloques_ejemplo_tpu_nivel_2
+writing output... [ 61%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/index
+writing output... [ 62%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/secciones/seccion_05_vista_bloques
+writing output... [ 63%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/secciones/seccion_5_1_whitebox_sistema
+writing output... [ 64%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/secciones/seccion_5_2_nivel_2
+writing output... [ 65%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/secciones/seccion_5_3_nivel_3
+writing output... [ 66%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/06_runtime_view/ejemplos/runtime_ejemplo_htmlsc
+writing output... [ 67%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/06_runtime_view/ejemplos/runtime_ejemplo_mama
+writing output... [ 68%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/06_runtime_view/ejemplos/runtime_ejemplo_tpu
+writing output... [ 69%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/06_runtime_view/index
+writing output... [ 70%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/06_runtime_view/secciones/seccion_06_vista_runtime
+writing output... [ 71%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/07_deployment_view/ejemplos/deployment_ejemplo_htmlsc
+writing output... [ 72%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/07_deployment_view/ejemplos/deployment_ejemplo_tpu_1
+writing output... [ 73%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/07_deployment_view/ejemplos/deployment_ejemplo_tpu_2
+writing output... [ 74%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/07_deployment_view/index
+writing output... [ 75%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/07_deployment_view/secciones/seccion_07_vista_despliegue
+writing output... [ 76%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/08_concepts/index
+writing output... [ 77%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/08_crosscutting_concepts/index
+writing output... [ 78%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/08_crosscutting_concepts/secciones/seccion_08_conceptos_transversales
+writing output... [ 79%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/09_architecture_decisions/ejemplos/decision_ejemplo_adr
+writing output... [ 80%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/09_architecture_decisions/ejemplos/decision_ejemplo_htmlsc_1
+writing output... [ 81%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/09_architecture_decisions/ejemplos/decision_ejemplo_tpu_2
+writing output... [ 82%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/09_architecture_decisions/index
+writing output... [ 84%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/09_architecture_decisions/secciones/seccion_09_decisiones_arquitectonicas
+writing output... [ 85%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/10_quality/ejemplos/quality_ejemplo_htmlsc_2
+writing output... [ 86%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/10_quality/ejemplos/quality_ejemplo_tpu_1
+writing output... [ 87%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/10_quality/index
+writing output... [ 88%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/10_quality/secciones/seccion_10_requisitos_calidad
+writing output... [ 89%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/11_risks_tech_debt/ejemplos/risks_ejemplo_htmlsc
+writing output... [ 90%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/11_risks_tech_debt/ejemplos/risks_ejemplo_tpu
+writing output... [ 91%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/11_risks_tech_debt/index
+writing output... [ 92%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/11_risks_tech_debt/secciones/seccion_11_riesgos_deuda_tecnica
+writing output... [ 93%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/12_glossary/ejemplos/glossary_ejemplo_htmlsc
+writing output... [ 94%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/12_glossary/index
+writing output... [ 95%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/12_glossary/secciones/seccion_12_glosario
+writing output... [ 96%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/ANALISIS_ERRORES_SEC3_SEC5
+writing output... [ 97%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/glosario_acumulativo
+writing output... [ 98%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/index
+writing output... [ 99%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro
+writing output... [100%] index
+
+generating indices... genindex done
+highlighting module code... 
+writing additional pages... search done
+dumping search index in Spanish (code: es)... done
+dumping object inventory... done
+build succeeded, 62 warnings.
+
+The HTML pages are in _build/html.
+
+Construcción finalizada. Los archivos HTML están en _build/html.

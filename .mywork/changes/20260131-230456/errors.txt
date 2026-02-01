@@ -1,0 +1,17 @@
+E:\Proyectos\Translate\ADT\source\02_procedimientos\workflow_general.rst:1211: ERROR: Error parsing content block for the "list-table" directive: exactly one bullet list expected.
+E:\Proyectos\Translate\ADT\source\02_procedimientos\workflow_general.rst:4407: ERROR: Content block expected for the "note" directive; none found. [docutils]
+E:\Proyectos\Translate\ADT\source\03_estandares\calidad\criterios_calidad.rst:144: ERROR: The "list-table" directive is empty; content required.
+E:\Proyectos\Translate\ADT\source\04_reglas_operativas\matrices_decision\MD_002_cuando_enriquecer.rst:247: ERROR: Error parsing content block for the "list-table" directive: exactly one bullet list expected.
+E:\Proyectos\Translate\ADT\source\07_guias_uso\guia_rapida.rst:309: ERROR: Error parsing content block for the "list-table" directive: exactly one bullet list expected.
+source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:2: ERROR: Document or section may not begin with a transition. [docutils]
+source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/metadata_libro.rst:2: ERROR: Document or section may not begin with a transition. [docutils]
+E:\Proyectos\Translate\ADT\source\biblioteca\ingenieria\sistemas\arquitectura\arc42_documentation\sections\10_quality\traduccion\quality_ejemplo_tpu_1.rst:35: ERROR: Error parsing content block for the "list-table" directive: exactly one bullet list expected.
+E:\Proyectos\Translate\ADT\source\biblioteca\ingenieria\sistemas\arquitectura\arc42_documentation\sections\12_glossary\traduccion\glossary_tip_4.rst:163: ERROR: The "list-table" directive is empty; content required.
+E:\Proyectos\Translate\ADT\source\docs_maestros\ARQUITECTURA_DOCUMENTAL_TRADUCCION.md:4: ERROR: Document or section may not begin with a transition. [docutils]
+E:\Proyectos\Translate\ADT\source\docs_maestros\GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL.rst:325: ERROR: Unexpected indentation. [docutils]
+E:\Proyectos\Translate\ADT\source\docs_maestros\GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL.rst:302: ERROR: Error parsing content block for the "list-table" directive: exactly one bullet list expected.
+E:\Proyectos\Translate\ADT\source\docs_maestros\GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL.rst:1281: ERROR: The "list-table" directive is empty; content required.
+E:\Proyectos\Translate\ADT\source\docs_maestros\GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL.rst:1: ERROR: Document or section may not begin with a transition. [docutils]
+E:\Proyectos\Translate\ADT\source\docs_maestros\METODO_TRADUCCION_PESHITTA_ZACHARIAS.md:7: ERROR: Document or section may not begin with a transition. [docutils]
+E:\Proyectos\Translate\ADT\source\docs_maestros\PROMPT_MAESTRO_SPHINX_TRADUCCION.md:4: ERROR: Document or section may not begin with a transition. [docutils]
+E:\Proyectos\Translate\ADT\source\docs_maestros\SINTESIS_METODOLOGICA_ADT.rst:401: ERROR: Unknown target name: "estructura_de_biblioteca". [docutils]

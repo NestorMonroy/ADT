@@ -1,9 +1,9 @@
 ---
 name: commit-helper
 description: "Ayuda a crear commits siguiendo Conventional Commits. Usar cuando el usuario necesite hacer un commit o escribir un mensaje de commit."
-version: 1.0.0
+version: 1.1.0
 created: 2026-01-29
-updated: 2026-01-30
+updated: 2026-02-01
 ---
 
 # Commit Helper - Conventional Commits
@@ -14,6 +14,100 @@ updated: 2026-01-30
 - Se menciona "commit", "guardar cambios", "versionar"
 - Despues de completar tarea
 - Al finalizar traduccion o modificacion
+
+---
+
+## Decision Framework: ¿Qué Tipo de Commit?
+
+**Usa este framework para elegir el tipo correcto**:
+
+1. **¿Es nueva funcionalidad o contenido?**
+   → `feat` (nueva traducción, nuevo capítulo, nueva feature)
+
+2. **¿Corrige un error o bug?**
+   → `fix` (error de traducción, fix build, corrección)
+
+3. **¿Solo cambia documentación del proyecto?**
+   → `docs` (README, CONTRIBUTING, doc files)
+
+4. **¿Solo cambia formato/estilo sin lógica?**
+   → `style` (indentación, espacios, formato)
+
+5. **¿Reorganiza código sin cambiar comportamiento?**
+   → `refactor` (reestructurar sin cambiar función)
+
+6. **¿Actualiza herramientas o build?**
+   → `chore` (dependencias, scripts, config)
+
+7. **¿No estás seguro entre dos tipos?**
+   → Usar el más específico (feat > fix > docs > chore)
+
+**Regla de oro**: Si añade valor → `feat`, si corrige → `fix`
+
+---
+
+## Trigger Patterns
+
+### Señales Explícitas
+- Usuario dice: "haz commit"
+- Usuario dice: "guarda los cambios"
+- Usuario dice: "commitea esto"
+- Usuario pregunta: "¿cómo hago commit?"
+- Usuario menciona: "mensaje de commit"
+
+### Señales Implícitas
+- Trabajo completado exitosamente
+- Build pasa después de cambios
+- Usuario dice "listo" o "terminado"
+- Contexto indica fin de tarea
+- Usuario pregunta "¿qué sigue?"
+
+### Trigger Words
+- "commit", "guardar", "versionar"
+- "git add", "git commit"
+- "mensaje", "commit message"
+- "conventional commits"
+
+**Anti-triggers** (NO hacer commit todavía):
+- Build falla
+- Usuario dice "aún no"
+- Trabajo incompleto
+- Usuario dice "falta X"
+- Cambios experimentales
+
+---
+
+## Self-Check Before Commit
+
+**OBLIGATORIO antes de hacer commit**:
+
+### Pre-Commit Checks
+- [ ] ¿El build pasa? (sphinx-build sin errores críticos)
+- [ ] ¿Los cambios están relacionados? (un cambio lógico)
+- [ ] ¿Revisé los archivos con `git status`?
+- [ ] ¿El tipo de commit es correcto?
+- [ ] ¿El scope es apropiado?
+
+**Si NO → NO hacer commit todavía**
+
+### During-Commit Checks
+- [ ] ¿Mensaje sigue formato conventional commits?
+- [ ] ¿Description <72 caracteres?
+- [ ] ¿Imperativo presente? (add, fix, update NO added, fixed, updated)
+- [ ] ¿Sin punto final en description?
+- [ ] ¿Body explica el "por qué" si necesario?
+
+**Si NO → Corregir mensaje**
+
+### Post-Commit Checks
+- [ ] ¿Commit aparece en `git log`?
+- [ ] ¿Mensaje legible y claro?
+- [ ] ¿Un solo commit por cambio lógico?
+- [ ] ¿Listos para push o más trabajo?
+
+**Si NO → Considerar `git commit --amend`**
+
+---
 
 ## Formato de Commit
 
@@ -171,3 +265,39 @@ Conventional Commits: https://www.conventionalcommits.org/
 - Stagear solo archivos relacionados
 - Nunca usar `git add .` sin revisar
 - Preferir commits frecuentes pequeños sobre grandes
+
+---
+
+## Changelog
+
+### v1.1.0 - 2026-02-01 - FASE 2
+
+**Mejoras de usabilidad y decision-making**:
+
+✅ **Decision Framework** - ¿Qué Tipo de Commit?
+- 7 preguntas para elegir tipo correcto
+- Regla de oro: "Si añade valor → feat, si corrige → fix"
+- Clarifica diferencias entre tipos similares
+
+✅ **Trigger Patterns** - Cuándo hacer commit
+- Señales explícitas (usuario dice "haz commit")
+- Señales implícitas (trabajo completado, build pasa)
+- Trigger words específicos
+- Anti-triggers (build falla, trabajo incompleto)
+
+✅ **Self-Check Mechanisms** - 3 niveles de checks
+- Pre-Commit (build pasa, cambios relacionados, tipo correcto)
+- During-Commit (formato, <72 chars, imperativo)
+- Post-Commit (commit en log, legible, listo para push)
+
+**Líneas agregadas**: ~95 líneas
+
+**Beneficio principal**:
+- Usuarios eligen tipo de commit correcto
+- Previene commits con build roto
+- Mensaje sigue conventional commits automáticamente
+
+### v1.0.0 - 2026-01-30
+- Versión inicial
+- Soporte Conventional Commits
+- Ejemplos y convenciones del proyecto

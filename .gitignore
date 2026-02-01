@@ -120,3 +120,11 @@ tools/_tmp
 
 _archivados/
 _archivados/**
+
+_pipeline_docs/
+_pipeline_docs/**
+
+
+_pipeline_docs_work
+_pipeline_docs_work/**
+

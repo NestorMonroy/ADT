@@ -1,0 +1,85 @@
+DRY-RUN mode enabled
+======================================================================
+FIX CRITICAL TITLES - ALL RST FILES
+======================================================================
+Script: fix_critical_titles.sh
+Version: 2.0.0
+Target: /tmp/ADT/source
+Mode: DRY-RUN
+
+======================================================================
+PRE-EXECUTION VALIDATIONS
+======================================================================
+[OK] Source directory: /tmp/ADT/source
+[OK] Found 303 RST files to process
+[OK] Git repository detected
+[OK] Backup directory: /tmp/ADT/archivados/rst_backups
+
+======================================================================
+PROCESSING RST FILES
+======================================================================
+Total files to scan: 303
+
+
+File: metodo_por_defecto.rst
+  Issues found: 2
+[DRY-RUN] Would fix line 436 in metodo_por_defecto.rst
+[DRY-RUN] Would fix line 471 in metodo_por_defecto.rst
+
+File: index.rst
+  Issues found: 1
+[DRY-RUN] Would fix line 192 in index.rst
+
+File: workflow_general.rst
+  Issues found: 2
+[DRY-RUN] Would fix line 3406 in workflow_general.rst
+[DRY-RUN] Would fix line 3408 in workflow_general.rst
+
+File: error_01_omisiones.rst
+  Issues found: 24
+[DRY-RUN] Would fix line 154 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 158 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 162 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 166 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 178 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 431 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 435 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 439 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 443 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 447 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 451 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 455 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 459 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 463 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 467 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 471 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 475 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 479 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 483 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 487 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 491 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 503 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 672 in error_01_omisiones.rst
+[DRY-RUN] Would fix line 682 in error_01_omisiones.rst
+
+File: guia_rapida.rst
+  Issues found: 1
+[DRY-RUN] Would fix line 306 in guia_rapida.rst
+
+File: seccion_1_2_quality_goals.rst
+  Issues found: 1
+[DRY-RUN] Would fix line 82 in seccion_1_2_quality_goals.rst
+
+======================================================================
+EXECUTION SUMMARY
+======================================================================
+Files scanned:    303
+Files modified:   6
+Total fixes:      0
+
+======================================================================
+DRY-RUN COMPLETED
+======================================================================
+No changes were made
+Run without --dry-run to apply fixes
+

@@ -1,7 +1,7 @@
 ---
 name: skills-management
 description: "Gestión, versionamiento y actualización de skills en .codex/skills/. Usar cuando se necesite crear, actualizar o documentar skills del proyecto."
-version: 1.0.0
+version: 1.1.0
 created: 2026-01-30
 author: ADT Team
 ---
@@ -37,6 +37,97 @@ Usar esta skill cuando:
 - Work logs de trabajo diario (usar `work-logger`)
 - Commits (usar `commit-helper`)
 - Validación de builds (usar `validation-suite`)
+
+---
+
+## Decision Framework: ¿Qué Operación de Skill Necesito?
+
+**Usa este framework para identificar la operación correcta**:
+
+1. **¿Necesito crear skill NUEVA?**
+   → Ver sección "Crear Nueva Skill"
+
+2. **¿Necesito ACTUALIZAR skill existente?**
+   → Ver sección "Actualizar Skill"
+
+3. **¿Necesito DEPRECAR skill obsoleto?**
+   → Ver sección "Deprecar Skills"
+
+4. **¿Solo necesito BUSCAR información en skills?**
+   → Ver sección "Comandos Útiles"
+
+5. **¿Necesito DOCUMENTAR relaciones entre skills?**
+   → Actualizar README.md en `.codex/skills/`
+
+6. **¿No estoy seguro qué operación?**
+   → Leer skill completo primero
+
+**Regla de oro**: **Operación determinada → ir directamente a sección**
+
+---
+
+## Trigger Patterns
+
+### Señales Explícitas
+- Usuario dice: "crear nueva skill"
+- Usuario dice: "actualizar skill X"
+- Usuario pregunta: "¿cómo gestiono skills?"
+- Usuario dice: "necesito documentar metodología nueva"
+
+### Señales Implícitas
+- Usuario menciona metodología nueva no documentada
+- Usuario detecta skill obsoleto o incompleto
+- Necesidad de documentar proceso importante
+- Usuario pregunta dónde documentar algo
+
+### Trigger Words
+- "skill", "metodología", "proceso", "documentar"
+- "crear", "actualizar", "versionar"
+- "gestión", "management"
+- ".codex/skills/"
+
+**Anti-triggers** (NO este skill):
+- Trabajo operacional normal (no gestión de skills)
+- Work logs (usar work-logger)
+- Commits normales (usar commit-helper)
+
+---
+
+## Self-Check Before Skill Operation
+
+**OBLIGATORIO antes de operación en skills**:
+
+### Pre-Operation Checks
+- [ ] ¿Sé qué operación necesito? (crear/actualizar/deprecar)
+- [ ] ¿Estoy en `/tmp/ADT/`?
+- [ ] ¿Tengo backup si voy a actualizar?
+- [ ] ¿Leí documentación relevante?
+
+**Si NO → Preparar antes de operar**
+
+### During Operation Checks
+
+**Si CREAR**:
+- [ ] ¿Sigo estructura SKILL.md estándar?
+- [ ] ¿Tengo frontmatter YAML?
+- [ ] ¿Incluí todas las secciones obligatorias?
+- [ ] ¿Actualicé README.md?
+
+**Si ACTUALIZAR**:
+- [ ] ¿Creé backup primero?
+- [ ] ¿Actualicé version (semver)?
+- [ ] ¿Actualicé campo updated?
+- [ ] ¿Documenté cambios en Changelog?
+
+**Si NO en alguno → PAUSE - Corregir**
+
+### Post-Operation Checks
+- [ ] ¿El skill funciona correctamente?
+- [ ] ¿README.md actualizado?
+- [ ] ¿Versionamiento correcto?
+- [ ] ¿Hice commit de cambios?
+
+**Si NO → COMPLETAR antes de cerrar**
 
 ---
 
@@ -99,7 +190,7 @@ Editar `SKILL.md`:
 ---
 name: skill-name
 version: 1.1.0  # ← Actualizar aquí
-updated: 2026-01-30  # ← Añadir fecha
+updated: 2026-02-01  # ← Añadir fecha
 ---
 ```
 
@@ -183,7 +274,7 @@ cat > SKILL.md <<'EOF'
 ---
 name: nueva-skill
 description: "Descripción breve de qué hace y cuándo usar"
-version: 1.0.0
+version: 1.1.0
 created: 2026-01-30
 author: ADT Team
 related_skills:
@@ -298,7 +389,7 @@ O en sección dedicada:
 ---
 name: nombre-skill
 description: "Descripción concisa (1-2 líneas)"
-version: 1.0.0
+version: 1.1.0
 created: YYYY-MM-DD
 updated: YYYY-MM-DD  # Solo si hay actualizaciones
 author: ADT Team
@@ -580,3 +671,39 @@ done
 - Esta skill es "meta" - documenta cómo gestionar skills
 - Aplicar este mismo proceso a esta skill si necesita actualización
 - Mantener sincronizado con prácticas reales del proyecto
+
+---
+
+## Changelog
+
+### v1.1.0 - 2026-02-01 - FASE 2
+
+**Mejoras de usabilidad y decision-making**:
+
+✅ **Decision Framework** - ¿Qué Operación de Skill Necesito?
+- 6 preguntas para identificar operación correcta
+- Mapeo directo a secciones del skill
+- Regla de oro para navegación eficiente
+
+✅ **Trigger Patterns** - Cuándo usar este skill
+- Señales explícitas (usuario dice "crear skill")
+- Señales implícitas (metodología nueva no documentada)
+- Clarifica que NO es para trabajo operacional
+
+✅ **Self-Check Mechanisms** - Checks por tipo de operación
+- Pre-Operation (preparación, ubicación, backup)
+- During Operation (diferentes para crear/actualizar/deprecar)
+- Post-Operation (funcionalidad, README, commit)
+
+**Líneas agregadas**: ~85 líneas
+
+**Beneficio principal**:
+- Usuarios identifican operación necesaria rápidamente
+- Checklist específico por tipo de operación
+- Previene olvidos en actualización de skills
+
+### v1.0.0 - 2026-01-30
+- Versión inicial
+- Gestión completa de skills
+- Versionamiento semántico
+- Plantillas y ejemplos

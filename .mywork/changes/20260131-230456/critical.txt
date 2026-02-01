@@ -1,0 +1,31 @@
+E:\Proyectos\Translate\ADT\source\02_procedimientos\WORKFLOW_v1_6_0_ACTUALIZACION.rst:634: CRITICAL: Missing matching underline for section title overline.
+E:\Proyectos\Translate\ADT\source\02_procedimientos\workflow_general.rst:1363: CRITICAL: Missing matching underline for section title overline.
+E:\Proyectos\Translate\ADT\source\02_procedimientos\workflow_general.rst:3080: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\02_procedimientos\workflow_general.rst:3083: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\02_procedimientos\workflow_general.rst:3407: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\02_procedimientos\workflow_general.rst:3409: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:155: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:159: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:163: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:167: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:179: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:432: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:436: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:440: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:444: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:448: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:452: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:456: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:460: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:464: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:468: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:472: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:476: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:480: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:484: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:488: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:492: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\06_casos_practicos\errores_comunes\error_01_omisiones.rst:504: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\07_guias_uso\guia_rapida.rst:307: CRITICAL: Unexpected section title.
+E:\Proyectos\Translate\ADT\source\docs_maestros\GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL.rst:2314: CRITICAL: Missing matching underline for section title overline.
+E:\Proyectos\Translate\ADT\source\docs_maestros\GUIA_METODOLOGICA_CLASIFICACION_DOCUMENTAL.rst:2318: CRITICAL: Missing matching underline for section title overline.

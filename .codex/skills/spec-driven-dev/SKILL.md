@@ -1,9 +1,9 @@
 ---
 name: spec-driven-dev
 description: "Desarrollo guiado por especificaciones en 4 fases. Usar para features complejas, cambios arquitectonicos, o cualquier trabajo que requiera planificacion estructurada."
-version: 1.1.0
+version: 1.2.0
 created: 2026-01-29
-updated: 2026-01-30
+updated: 2026-02-01
 ---
 
 # Spec-Driven Development
@@ -15,6 +15,123 @@ updated: 2026-01-30
 - Traducciones grandes (multi-seccion)
 - Refactorings importantes
 - Implementacion de workflows nuevos
+
+---
+
+## Decision Framework: ¿Necesito Spec-Driven Development?
+
+**Usa este framework para decidir si aplicar metodología spec-driven**:
+
+1. **¿El trabajo tomará >2 horas?**
+   → Sí, usar spec-driven (planificación vale la pena)
+
+2. **¿Hay múltiples pasos o fases?**
+   → Sí, spec-driven (estructura 4 fases ayuda)
+
+3. **¿Afecta arquitectura o estructura importante?**
+   → Sí, spec-driven (diseño crítico)
+
+4. **¿Necesitas aprobación o revisión antes de implementar?**
+   → Sí, spec-driven (specs documentadas facilitan)
+
+5. **¿Es cambio simple de 1 archivo <30 min?**
+   → No, hacerlo directamente sin spec-driven
+
+6. **¿Ya sabes exactamente cómo implementar?**
+   → Depende: si complejo aún así usa spec-driven
+
+7. **¿Hay riesgo de regresiones o efectos secundarios?**
+   → Sí, spec-driven (plan de testing)
+
+8. **¿Necesitas tracking de progreso en múltiples sesiones?**
+   → Sí, spec-driven (tasks estructuradas)
+
+**Regla de oro**: **>2 horas O complejo → spec-driven**
+
+---
+
+## Trigger Patterns
+
+### Señales Explícitas
+- Usuario dice: "vamos a implementar X"
+- Usuario dice: "necesito planificar..."
+- Usuario menciona: "feature", "proyecto grande", "cambio arquitectónico"
+- Usuario pregunta: "¿cómo organizo esto?"
+- Trabajo claramente multi-fase o multi-sesión
+
+### Señales Implícitas
+- Usuario describe trabajo complejo
+- Múltiples componentes afectados
+- Usuario usa tiempo futuro ("vamos a...", "implementaremos...")
+- Contexto indica planificación necesaria
+- Usuario menciona riesgos o incertidumbre
+
+### Trigger Words
+- "feature", "proyecto", "implementar", "desarrollar"
+- "planificar", "diseñar", "especificar"
+- "cambio arquitectónico", "refactoring grande"
+- "traducción multi-sección", "workflow nuevo"
+
+**Anti-triggers** (NO usar spec-driven):
+- Hotfix urgente (<30 min)
+- Cambio trivial de 1-2 líneas
+- "fix rápido", "typo", "cambio menor"
+- Usuario ya tiene plan completo claro
+- Experimentación rápida (usar branches temporales)
+
+---
+
+## Self-Check Before Starting Spec-Driven
+
+**OBLIGATORIO antes de iniciar metodología**:
+
+### Pre-Planning Checks
+- [ ] ¿El trabajo tomará >2 horas?
+- [ ] ¿Es suficientemente complejo para justificar planificación?
+- [ ] ¿Tengo tiempo para hacer las 4 fases correctamente?
+- [ ] ¿Creé directorio con timestamp en `.mywork/changes/`?
+- [ ] ¿Tengo claro el objetivo general?
+
+**Si NO a mayoría → Considerar hacerlo directamente sin spec-driven**
+
+### During Spec-Driven Checks
+
+**FASE 1 (Requirements)**:
+- [ ] ¿Documenté contexto y problema?
+- [ ] ¿Definí objetivos claros y medibles?
+- [ ] ¿Listé requisitos funcionales?
+- [ ] ¿Especificé criterios de aceptación?
+
+**FASE 2 (Design)**:
+- [ ] ¿Propuse solución técnica?
+- [ ] ¿Documenté alternativas consideradas?
+- [ ] ¿Identifiqué archivos a modificar/crear?
+- [ ] ¿Tengo plan de implementación?
+
+**FASE 3 (Tasks)**:
+- [ ] ¿Descompuse en tareas atómicas?
+- [ ] ¿Cada tarea tiene criterio de "done"?
+- [ ] ¿Ordené tareas por dependencias?
+- [ ] ¿Estimé tiempos realistas?
+
+**FASE 4 (Implementation)**:
+- [ ] ¿Sigo el plan documentado?
+- [ ] ¿Marco tareas como completadas?
+- [ ] ¿Hago commits por tarea?
+- [ ] ¿Valido después de cada tarea?
+
+**Si NO en cualquier fase → PAUSE - Completar antes de continuar**
+
+### Post-Implementation Checks
+- [ ] ¿Todas las tareas marcadas como done?
+- [ ] ¿Los criterios de aceptación se cumplen?
+- [ ] ¿Documenté decisiones importantes?
+- [ ] ¿Creé work log del proyecto?
+- [ ] ¿El directorio refleja trabajo completado?
+
+**Si NO → COMPLETAR antes de cerrar proyecto**
+
+---
 
 ## Metodologia en 4 Fases
 
@@ -496,3 +613,45 @@ Metodologia basada en:
 - Metodología en 4 fases
 - Templates y ejemplos
 - Proceso de aprobación
+
+---
+
+## Changelog
+
+### v1.2.0 - 2026-02-01 - FASE 2
+
+**Mejoras de usabilidad y decision-making**:
+
+✅ **Decision Framework** - ¿Necesito Spec-Driven Development?
+- 8 preguntas para decidir si usar metodología
+- Regla de oro: ">2 horas O complejo → spec-driven"
+- Clarifica cuándo NO usar (hotfixes, cambios triviales)
+
+✅ **Trigger Patterns** - Cuándo aplicar spec-driven
+- Señales explícitas (usuario dice "vamos a implementar")
+- Señales implícitas (trabajo multi-fase, complejidad)
+- Trigger words específicos
+- Anti-triggers para evitar over-engineering
+
+✅ **Self-Check Mechanisms** - Checks por fase
+- Pre-Planning (justificar metodología, preparación)
+- Durante cada FASE (1-4): checklists específicos
+- Post-Implementation (completitud, criterios cumplidos)
+
+**Líneas agregadas**: ~120 líneas
+
+**Beneficio principal**:
+- Usuarios deciden correctamente cuándo usar spec-driven
+- Cada fase tiene checklist clara
+- Previene planificación excesiva en cambios simples
+- Asegura completitud en proyectos complejos
+
+### v1.1.0 - 2026-01-30
+- Actualización de templates
+- Mejoras en estructura de fases
+- Integración con changes-directory-management
+
+### v1.0.0 - 2026-01-29
+- Versión inicial
+- Metodología en 4 fases
+- Templates para Requirements, Design, Tasks

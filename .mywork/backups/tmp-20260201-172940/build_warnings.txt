@@ -1,0 +1,61 @@
+sphinx-build -b html -d _build/doctrees   source _build/html
+Running Sphinx v8.2.3
+loading translations [es]... done
+Initializing Spelling Checker 8.0.2
+loading pickled environment... The configuration has changed (5 options: 'html_css_files', 'html_js_files', 'html_static_path', 'mathjax3_config', 'pygments_dark_style')
+done
+myst v5.0.0: MdParserConfig(commonmark_only=False, gfm_only=False, enable_extensions={'html_admonition', 'html_image', 'replacements', 'deflist', 'dollarmath', 'colon_fence', 'smartquotes', 'tasklist'}, disable_syntax=[], all_links_external=False, links_external_new_tab=False, url_schemes=('http', 'https', 'mailto', 'ftp'), ref_domains=None, fence_as_directive=set(), number_code_blocks=[], title_to_header=False, heading_anchors=3, heading_slug_func=None, html_meta={}, footnote_sort=True, footnote_transition=True, words_per_minute=200, substitutions={}, linkify_fuzzy_links=True, dmath_allow_labels=True, dmath_allow_space=True, dmath_allow_digits=True, dmath_double_inline=False, update_mathjax=True, mathjax_classes='tex2jax_process|mathjax_process|math|output_area', enable_checkboxes=False, suppress_warnings=[], highlight_code_blocks=True)
+building [mo]: targets for 0 po files that are out of date
+writing output... 
+building [html]: targets for 0 source files that are out of date
+updating environment: 0 added, 10 changed, 0 removed
+reading sources... [ 10%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_01_introduccion_objetivos
+reading sources... [ 20%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/secciones/seccion_03_contexto_alcance
+reading sources... [ 30%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/04_solution_strategy/secciones/seccion_04_estrategia_solucion
+reading sources... [ 40%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/secciones/seccion_05_vista_bloques
+reading sources... [ 50%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/06_runtime_view/secciones/seccion_06_vista_runtime
+reading sources... [ 60%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/07_deployment_view/secciones/seccion_07_vista_despliegue
+reading sources... [ 70%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/10_quality/secciones/seccion_10_requisitos_calidad
+reading sources... [ 80%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/11_risks_tech_debt/secciones/seccion_11_riesgos_deuda_tecnica
+reading sources... [ 90%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/12_glossary/secciones/seccion_12_glosario
+reading sources... [100%] index
+
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... /tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_1_requisitos.rst: document is referenced in multiple toctrees: ['biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/index', 'biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_01_introduccion_objetivos'], selecting: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_01_introduccion_objetivos <- biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_1_requisitos
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_2_quality_goals.rst: document is referenced in multiple toctrees: ['biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/index', 'biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_01_introduccion_objetivos'], selecting: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_01_introduccion_objetivos <- biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_2_quality_goals
+/tmp/ADT/source/biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_3_stakeholders.rst: document is referenced in multiple toctrees: ['biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/index', 'biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_01_introduccion_objetivos'], selecting: biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_01_introduccion_objetivos <- biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_1_3_stakeholders
+done
+preparing documents... done
+copying assets... 
+copying static files... 
+Writing evaluated template result to /tmp/ADT/_build/html/_static/basic.css
+Writing evaluated template result to /tmp/ADT/_build/html/_static/documentation_options.js
+Writing evaluated template result to /tmp/ADT/_build/html/_static/language_data.js
+Writing evaluated template result to /tmp/ADT/_build/html/_static/copybutton.js
+copying static files: done
+copying extra files... 
+copying extra files: done
+copying assets: done
+writing output... [  9%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/index
+writing output... [ 18%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/01_introduction_goals/secciones/seccion_01_introduccion_objetivos
+writing output... [ 27%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/03_context_scope/secciones/seccion_03_contexto_alcance
+writing output... [ 36%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/04_solution_strategy/secciones/seccion_04_estrategia_solucion
+writing output... [ 45%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/05_building_blocks/secciones/seccion_05_vista_bloques
+writing output... [ 55%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/06_runtime_view/secciones/seccion_06_vista_runtime
+writing output... [ 64%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/07_deployment_view/secciones/seccion_07_vista_despliegue
+writing output... [ 73%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/10_quality/secciones/seccion_10_requisitos_calidad
+writing output... [ 82%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/11_risks_tech_debt/secciones/seccion_11_riesgos_deuda_tecnica
+writing output... [ 91%] biblioteca/ingenieria/sistemas/arquitectura/arc42_documentation/12_glossary/secciones/seccion_12_glosario
+writing output... [100%] index
+
+generating indices... genindex done
+highlighting module code... 
+writing additional pages... search done
+dumping search index in Spanish (code: es)... done
+dumping object inventory... done
+build succeeded, 1 warning.
+
+The HTML pages are in _build/html.
+
+Construcción finalizada. Los archivos HTML están en _build/html.
