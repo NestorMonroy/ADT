@@ -1,4 +1,3 @@
-
 Signifiant vs Signifié: Forma vs Contenido
 ==========================================
 
@@ -8,8 +7,8 @@ Signifiant vs Signifié: Forma vs Contenido
 :Aplicación: Decisiones de traducción en ADT
 
 .. contents:: Contenido
- :depth: 2
- :local:
+   :depth: 2
+   :local:
 
 
 
@@ -222,8 +221,8 @@ Aplicación a ADT
 **Adoptamos la misma preferencia:**
 
 .. important::
- En ADT, preferimos **Signifié** (contenido semántico) sobre
- **Signifiant** (forma sintáctica), excepto cuando hay razón específica.
+   En ADT, preferimos **Signifié** (contenido semántico) sobre
+   **Signifiant** (forma sintáctica), excepto cuando hay razón específica.
 
 **Regla General:**
 
@@ -499,9 +498,9 @@ Conclusión
 En ADT, seguimos el principio de Peshitta:
 
 .. important::
- **Preferencia por Signifié (contenido) sobre Signifiant (forma)**
+   **Preferencia por Signifié (contenido) sobre Signifiant (forma)**
 
- Excepción: Cuando preservar forma es necesario para preservar contenido
+   Excepción: Cuando preservar forma es necesario para preservar contenido
 
 **Regla de oro:**
 

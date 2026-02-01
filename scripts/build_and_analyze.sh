@@ -173,8 +173,13 @@ run_build() {
         log "[DRY-RUN] Would execute: make html"
         build_exit=0
     else
+        # Write raw output to log file (no filtering to avoid buffering issues)
         make html 2>&1 | tee "$LOG_FILE"
         build_exit=${PIPESTATUS[0]}
+
+        # Clean ANSI codes AFTER build completes (avoids buffering)
+        dbg "Cleaning ANSI codes from completed log"
+        perl -i -pe 's/\e\[[0-9;]*[a-zA-Z]//g; s/\r$//' "$LOG_FILE"
     fi
 
     build_end=$(date +%s)
@@ -198,37 +203,6 @@ run_build() {
     log ""
 
     return $build_exit
-}
-
-# ============================================================
-# LOG CLEANING FUNCTION (Pure)
-# ============================================================
-
-clean_log_file() {
-    local log_file="$1"
-
-    if [ ! -f "$log_file" ]; then
-        dbg "Log file does not exist: $log_file"
-        return 1
-    fi
-
-    dbg "Cleaning ANSI codes from log file: $log_file"
-
-    # Remove ANSI escape sequences with ESC character
-    sed -i 's/\x1B\[[0-9;]*[a-zA-Z]//g' "$log_file"
-
-    # Remove ANSI sequences without ESC (corrupted or partial)
-    sed -i 's/\[[0-9]\{1,3\}\(;[0-9]\{1,3\}\)*m//g' "$log_file"
-
-    # Remove cursor control codes [2K, [0K, etc.
-    sed -i 's/\[[0-9]\{1,3\}[ABCDKJ]//g' "$log_file"
-
-    # Convert CRLF to LF (Windows to Unix line endings)
-    sed -i 's/\r$//' "$log_file"
-
-    dbg "Log file cleaned successfully"
-
-    return 0
 }
 
 # ============================================================
@@ -269,9 +243,6 @@ analyze_log() {
         hsep
         log "TOTAL:    0"
     else
-        # Clean log file first
-        clean_log_file "$LOG_FILE"
-
         # Count issues using pure function
         warning_count=$(count_pattern "$LOG_FILE" "WARNING:")
         error_count=$(count_pattern "$LOG_FILE" "ERROR:")

@@ -1,8 +1,5 @@
 .. _guia_rapida:
 
-
-
-
 Guía Rápida ADT (15 Minutos)
 ============================
 
@@ -12,556 +9,529 @@ Guía Rápida ADT (15 Minutos)
 :Resultado: Listo para primera traducción
 
 .. contents:: Contenido
- :depth: 2
- :local:
-
-
-
+   :depth: 2
+   :local:
 
 Bienvenido a ADT
 ================
 
 Esta guía te permite **comenzar en 15 minutos** con el sistema de traducción ADT.
 
-**¿Qué aprenderás?**
+¿Qué aprenderás?
+----------------
 
-.. code-block:: text
+- Minutos 1-5: Qué es ADT y por qué funciona
+- Minutos 6-10: El workflow en 5 pasos
+- Minutos 11-15: Tu primera traducción
 
- Minutos 1-5: [OK] Qué es ADT y por qué funciona
- Minutos 6-10: [OK] El workflow en 5 pasos
- Minutos 11-15: [OK] Tu primera traducción
+¿Qué necesitas?
+---------------
 
-**¿Qué necesitas?**
-
-.. code-block:: text
-
- [OK] Un documento técnico para traducir
- [OK] 15 minutos de atención
- [OK] Ganas de aprender
-
-
-
+- Un documento técnico para traducir
+- 15 minutos de atención
+- Ganas de aprender
 
 Minutos 1-5: Entender ADT
 =========================
 
 ¿Qué es ADT?
-============
+------------
 
-**ADT** = **A**rquitectura de **D**ocumentación **T**écnica
+**ADT** = **A**\ rquitectura de **D**\ ocumentación **T**\ écnica
 
 Es un **sistema completo** para traducir documentación técnica con:
 
-[OK] **Calidad garantizada:** 100% completitud, 0 omisiones
-[OK] **Decisiones objetivas:** Basadas en datos reales
-[OK] **Resultados predecibles:** Métricas de 196 archivos
+- **Calidad garantizada:** 100% completitud, 0 omisiones
+- **Decisiones objetivas:** Basadas en datos reales
+- **Resultados predecibles:** Métricas de 196 archivos
 
 ¿Por qué funciona?
-==================
+------------------
 
 **3 razones:**
 
 1. **Proceso sistemático (Workflow v1.7.2)**
 
- .. code-block:: text
-
- PASO 0 -> Leer COMPLETO antes de traducir
- PASO 1-6 -> Traducir sin omitir nada
- PASO 7 -> Verificar sistemáticamente
-
- Resultado: 0 omisiones garantizado
+   - PASO 0: Leer COMPLETO antes de traducir
+   - PASO 1-6: Traducir sin omitir nada
+   - PASO 7: Verificar sistemáticamente
+   - Resultado: 0 omisiones garantizado
 
 2. **Reglas basadas en datos**
 
- .. code-block:: text
-
- MD-002: Cuánto enriquecer (basado en 196 archivos)
- MD-004: Qué traducir (100% consistencia lograda)
-
- Resultado: Decisiones objetivas
+   - MD-002: Cuánto enriquecer (basado en 196 archivos)
+   - MD-004: Qué traducir (100% consistencia lograda)
+   - Resultado: Decisiones objetivas
 
 3. **Casos reales documentados**
 
- .. code-block:: text
+   - Caso 01: Traducción exitosa (8/8 archivos)
+   - Error 01: Omisiones corregidas (6 secciones recuperadas)
+   - Resultado: Aprender de experiencia real
 
- Caso 01: Traducción exitosa (8/8 archivos)
- Error 01: Omisiones corregidas (6 secciones recuperadas)
+Datos verificables
+^^^^^^^^^^^^^^^^^^
 
- Resultado: Aprender de experiencia real
-
-**Datos verificables:**
-
-.. code-block:: text
-
- [OK] 196 archivos traducidos (arc42)
- [OK] 100% completitud en 12 secciones
- [OK] 0 omisiones en secciones 10-12
- [OK] +771% enriquecimiento promedio en tips
-
-
-
+- 196 archivos traducidos (arc42)
+- 100% completitud en 12 secciones
+- 0 omisiones en secciones 10-12
+- +771% enriquecimiento promedio en tips
 
 Minutos 6-10: El Workflow en 5 Pasos
 ====================================
 
 Paso 1: PASO 0 (El Más Crítico)
-===============================
+-------------------------------
 
 **Tiempo:** 10-15 minutos
+
 **Objetivo:** Identificar TODO antes de traducir
 
-**Checklist:**
+Checklist
+^^^^^^^^^
+
+1. Abrir archivo original
+2. Leer desde línea 1 hasta línea N (COMPLETO)
+3. Marcar cada elemento encontrado
+4. Crear lista escrita de archivos
+5. Contar elementos críticos
 
 .. code-block:: text
 
- [ ] 1. Abrir archivo original
- [ ] 2. Leer desde línea 1 hasta línea N (COMPLETO)
- [ ] 3. Marcar cada elemento encontrado
- [ ] 4. Crear lista escrita de archivos
- [ ] 5. Contar elementos críticos
+   Ejemplo:
+   "section-12.md tiene 44 líneas
+   Elementos: Título, Content, Motivation, Form, Plantilla
+   Archivos: 6 tips + 1 ejemplo = 8 archivos totales"
 
- Ejemplo:
- "section-12.md tiene 44 líneas
- Elementos: Título, Content, Motivation, Form, Plantilla
- Archivos: 6 tips + 1 ejemplo = 8 archivos totales"
-
-**¿Por qué es crítico?**
+¿Por qué es crítico?
+^^^^^^^^^^^^^^^^^^^^
 
 .. attention::
- 
- **15 minutos de PASO 0 previenen 2 horas de re-trabajo**
 
- Caso real: Sección 07 de arc42
- - Sin PASO 0: 6 secciones omitidas -> 2h de corrección
- - Con PASO 0: 0 omisiones -> 0h de corrección
+   **15 minutos de PASO 0 previenen 2 horas de re-trabajo**
+
+   Caso real: Sección 07 de arc42
+
+   - Sin PASO 0: 6 secciones omitidas -> 2h de corrección
+   - Con PASO 0: 0 omisiones -> 0h de corrección
 
 Paso 2: Decidir Enriquecimiento
-===============================
+--------------------------------
 
 **Tiempo:** 2 minutos
+
 **Herramienta:** :doc:`../04_reglas_operativas/matrices_decision/MD_002_cuando_enriquecer`
 
-**Regla simple:**
+Regla simple
+^^^^^^^^^^^^
+
+Contar líneas del original:
+
+- < 20 líneas: Enriquecer +300% a +1000%
+- 20-50 líneas: Enriquecer +100% a +300%
+- 50-100 líneas: Enriquecer +80% a +150%
+- > 100 líneas: Enriquecer +50% a +100%
+
+Ejemplo
+^^^^^^^
 
 .. code-block:: text
 
- Contar líneas del original:
-
- < 20 líneas -> Enriquecer +300% a +1000%
- 20-50 líneas -> Enriquecer +100% a +300%
- 50-100 líneas -> Enriquecer +80% a +150%
- > 100 líneas -> Enriquecer +50% a +100%
-
-**Ejemplo:**
-
-.. code-block:: text
-
- Tu documento: 35 líneas
- Rango objetivo: +100% a +300%
-
- Traducción esperada: 70 a 140 líneas
+   Tu documento: 35 líneas
+   Rango objetivo: +100% a +300%
+   Traducción esperada: 70 a 140 líneas
 
 Paso 3: Traducir con Checklist
-==============================
+-------------------------------
 
 **Tiempo:** Variable (2-4 horas según tamaño)
+
 **Herramienta:** :doc:`../03_estandares/calidad/checklist_revision`
 
-**Durante traducción:**
+Durante traducción
+^^^^^^^^^^^^^^^^^^
 
-.. code-block:: text
+- Traducir TODO el contenido (0% omitido)
+- Mantener estructura del original
+- Aplicar enriquecimiento apropiado
+- Usar MD-004 para terminología
+- Compilar frecuentemente
 
- [ ] Traducir TODO el contenido (0% omitido)
- [ ] Mantener estructura del original
- [ ] Aplicar enriquecimiento apropiado
- [ ] Usar MD-004 para terminología
- [ ] Compilar frecuentemente
+Terminología (MD-004)
+^^^^^^^^^^^^^^^^^^^^^
 
-**Terminología (MD-004):**
+**CONSERVAR en inglés:**
 
-.. code-block:: text
+- API, REST, JSON, UML
+- Singleton, Factory, Observer
+- Scrum, ATAM, Kanban
+- Product Owner, Stakeholder
 
- CONSERVAR en inglés:
- [OK] API, REST, JSON, UML
- [OK] Singleton, Factory, Observer
- [OK] Scrum, ATAM, Kanban
- [OK] Product Owner, Stakeholder
+**TRADUCIR al español:**
 
- TRADUCIR al español:
- [OK] Quality -> Calidad
- [OK] Risk -> Riesgo
- [OK] Decision -> Decisión
+- Quality -> Calidad
+- Risk -> Riesgo
+- Decision -> Decisión
 
 Paso 4: Verificar Sistemáticamente
-==================================
+-----------------------------------
 
 **Tiempo:** 15-30 minutos
+
 **Objetivo:** Asegurar 100% completitud
 
-**Checklist de verificación:**
+Checklist de verificación
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: text
+1. Comparar contra original línea por línea
+2. Verificar todos los elementos del PASO 0
+3. Compilar con Sphinx
+4. Revisar HTML generado
+5. Ejecutar script de verificación (si disponible)
 
- [ ] 1. Comparar contra original línea por línea
- [ ] 2. Verificar todos los elementos del PASO 0
- [ ] 3. Compilar con Sphinx
- [ ] 4. Revisar HTML generado
- [ ] 5. Ejecutar script de verificación (si disponible)
-
-**Script simple:**
+Script simple
+^^^^^^^^^^^^^
 
 .. code-block:: bash
 
- # Contar secciones en original
- grep -c "^### " original.md
+   # Contar secciones en original
+   grep -c "^### " original.md
 
- # Contar secciones en traducción
- grep -c "^---" traduccion.rst
+   # Contar secciones en traducción
+   grep -c "^---" traduccion.rst
 
- # Deben coincidir
+   # Deben coincidir
 
 Paso 5: Documentar
-==================
+------------------
 
 **Tiempo:** 10 minutos
+
 **Objetivo:** Dejar registro del trabajo
 
-**Checkpoint mínimo:**
+Checkpoint mínimo
+^^^^^^^^^^^^^^^^^
 
 .. code-block:: text
 
- Fecha: YYYY-MM-DD
- Archivos: X/X completados
- Omisiones: 0
- Enriquecimiento: +XXX%
- Tiempo: X horas
-
-
-
+   Fecha: YYYY-MM-DD
+   Archivos: X/X completados
+   Omisiones: 0
+   Enriquecimiento: +XXX%
+   Tiempo: X horas
 
 Minutos 11-15: Tu Primera Traducción
 ====================================
 
 Ejercicio Práctico
-==================
+------------------
 
 **Tarea:** Traducir un tip breve (10-20 líneas)
 
-**Paso 1 (3 minutos): PASO 0**
+Paso 1 (3 minutos): PASO 0
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. Copia este texto a ``original.md``:
+
+   .. code-block:: markdown
+
+      title: "Keep it simple"
+      ========================
+
+      Simple architectures are easier to understand,
+      maintain, and modify.
+
+      Avoid unnecessary complexity. Use simple
+      solutions when they work.
+
+2. Cuenta líneas: 9 líneas
+3. Identifica elementos: título, 2 párrafos
+4. Objetivo: +300% a +1000% (es <20 líneas)
+
+Paso 2 (1 minuto): Decidir
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: text
 
- 1. Copia este texto a "original.md":
+   Original: 9 líneas
+   Objetivo: 27 a 90 líneas (enriquecido)
 
+   Agregar:
+   - Tabla comparativa (Simple vs Complejo)
+   - 2 ejemplos prácticos
+   - Checklist de simplicidad
 
-
-
- title: "Keep it simple"
-========================
-
- Simple architectures are easier to understand,
- maintain, and modify.
-
- Avoid unnecessary complexity. Use simple
- solutions when they work.
-
- 2. Cuenta líneas: 9 líneas
- 3. Identifica elementos: título, 2 párrafos
- 4. Objetivo: +300% a +1000% (es <20 líneas)
-
-**Paso 2 (1 minuto): Decidir**
-
-.. code-block:: text
-
- Original: 9 líneas
- Objetivo: 27 a 90 líneas (enriquecido)
-
- Agregar:
- - Tabla comparativa (Simple vs Complejo)
- - 2 ejemplos prácticos
- - Checklist de simplicidad
-
-**Paso 3 (7 minutos): Traducir**
+Paso 3 (7 minutos): Traducir
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: rst
 
+   Mantén la Simplicidad
+   ======================
 
+   :Categoría: Principio Arquitectónico
+   :Aplicabilidad: Toda decisión de diseño
 
+   Principio
+   ---------
 
- Mantén la Simplicidad
-======================
+   Las arquitecturas simples son más fáciles de entender,
+   mantener y modificar.
 
- :Categoría: Principio Arquitectónico
- :Aplicabilidad: Toda decisión de diseño
+   Evita la complejidad innecesaria. Usa soluciones simples
+   cuando funcionen.
 
- Principio
-==========
+   Comparación
+   -----------
 
- Las arquitecturas simples son más fáciles de entender,
- mantener y modificar.
+   .. list-table::
+      :header-rows: 1
+      :widths: 30 35 35
 
- Evita la complejidad innecesaria. Usa soluciones simples
- cuando funcionen.
+      * - Aspecto
+        - Simple
+        - Complejo
+      * - Entendimiento
+        - Rápido (< 1 hora)
+        - Lento (días)
+      * - Mantenimiento
+        - Fácil
+        - Difícil
+      * - Errores
+        - Pocos
+        - Muchos
+      * - Onboarding
+        - Rápido
+        - Lento
 
- Comparación
- ============
+   Ejemplos
+   --------
 
- .. list-table::
-    :header-rows: 1
+   Ejemplo 1: Persistencia
+   ~~~~~~~~~~~~~~~~~~~~~~~
 
-    * - Aspecto
-      - Simple
-      - Complejo
-    * - Entendimiento
-   - Rápido (< 1 hora)
-   - Lento (días)
- * - Mantenimiento
-   - Fácil
-   - Difícil
- * - Errores
-   - Pocos
-   - Muchos
- * - Onboarding
-   - Rápido
-   - Lento
+   **ERROR - Complejo:**
 
- Ejemplos
-=========
+   Arquitectura hexagonal + CQRS + Event Sourcing para CRUD simple
 
- **Ejemplo 1: Persistencia**
+   **OK - Simple:**
 
- [ERROR] Complejo:
- Arquitectura hexagonal + CQRS + Event Sourcing
- para CRUD simple
+   Repository pattern + ORM para CRUD
 
- [OK] Simple:
- Repository pattern + ORM para CRUD
+   Ejemplo 2: API
+   ~~~~~~~~~~~~~~
 
- **Ejemplo 2: API**
+   **ERROR - Complejo:**
 
- [ERROR] Complejo:
- GraphQL + Apollo Federation + Gateway
- para 3 endpoints
+   GraphQL + Apollo Federation + Gateway para 3 endpoints
 
- [OK] Simple:
- REST API con 3 endpoints
+   **OK - Simple:**
 
- Checklist de Simplicidad
-=========================
+   REST API con 3 endpoints
 
- [ ] ¿Puedo explicarlo en 5 minutos?
- [ ] ¿Un junior podría entenderlo?
- [ ] ¿Resuelve el problema real?
- [ ] ¿Es la solución más simple que funciona?
+   Checklist de Simplicidad
+   -------------------------
 
- Si alguno es NO -> Simplificar
+   - ¿Puedo explicarlo en 5 minutos?
+   - ¿Un junior podría entenderlo?
+   - ¿Resuelve el problema real?
+   - ¿Es la solución más simple que funciona?
 
- Referencias
-============
+   .. note::
+      Si alguna respuesta es NO, simplificar.
+
+   Referencias
+   -----------
 
    - KISS Principle
    - YAGNI (You Aren't Gonna Need It)
 
-**Paso 4 (2 minutos): Verificar**
+Paso 4 (2 minutos): Verificar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Checklist:
+
+- Título traducido
+- 2 párrafos traducidos
+- Tabla agregada
+- 2 ejemplos agregados
+- Checklist agregado
+
+Resultado:
+
+- Líneas: ~60 líneas (+567%)
+- Objetivo: 27-90 líneas (cumplido)
+
+Paso 5 (1 minuto): Documentar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: text
 
- [OK] Título traducido
- [OK] 2 párrafos traducidos
- [OK] Tabla agregada
- [OK] 2 ejemplos agregados
- [OK] Checklist agregado
-
- Líneas: ~60 líneas (+567%)
- Objetivo: 27-90 líneas [OK]
-
-**Paso 5 (1 minuto): Documentar**
-
-.. code-block:: text
-
- Archivo: keep_it_simple.rst
- Original: 9 líneas
- Traducido: 60 líneas
- Enriquecimiento: +567%
- Estado: [OK] Completo
+   Archivo: keep_it_simple.rst
+   Original: 9 líneas
+   Traducido: 60 líneas
+   Enriquecimiento: +567%
+   Estado: Completo
 
 **¡Felicidades!** Acabas de hacer tu primera traducción ADT.
-
-
-
 
 Próximos Pasos
 ==============
 
 Ahora que Entiendes lo Básico
-=============================
+------------------------------
 
-**Opción 1: Profundizar**
+Opción 1: Profundizar
+^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: text
+1. Lee :doc:`../06_casos_practicos/antes_despues/caso_01_seccion_breve` para ver caso real completo (Sección 12 de arc42)
+2. Lee :doc:`../06_casos_practicos/errores_comunes/error_01_omisiones` para aprender qué NO hacer
+3. Lee :doc:`../03_estandares/calidad/criterios_calidad` para entender criterios de calidad completos
 
- 1. Lee :doc:`../06_casos_practicos/antes_despues/caso_01_seccion_breve`
-   -> Ve caso real completo (Sección 12 de arc42)
+Opción 2: Aplicar a Tu Proyecto
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- 2. Lee :doc:`../06_casos_practicos/errores_comunes/error_01_omisiones`
-   -> Aprende qué NO hacer
+1. Elige documento técnico para traducir
+2. Aplica PASO 0 completo (15 min)
+3. Usa MD-002 para decidir enriquecimiento
+4. Traduce con checklist
+5. Verifica sistemáticamente
+6. Documenta resultado
 
- 3. Lee :doc:`../03_estandares/calidad/criterios_calidad`
-   -> Entiende criterios de calidad completos
+Opción 3: Practicar Más
+^^^^^^^^^^^^^^^^^^^^^^^
 
-**Opción 2: Aplicar a Tu Proyecto**
+Traduce tips adicionales:
 
-.. code-block:: text
-
- 1. Elige documento técnico para traducir
- 2. Aplica PASO 0 completo (15 min)
- 3. Usa MD-002 para decidir enriquecimiento
- 4. Traduce con checklist
- 5. Verifica sistemáticamente
- 6. Documenta resultado
-
-**Opción 3: Practicar Más**
-
-.. code-block:: text
-
- Traduce tips adicionales:
- - arc42 tips (disponibles en proyecto)
- - Tus propios documentos breves
- - Incrementa complejidad gradualmente
+- arc42 tips (disponibles en proyecto)
+- Tus propios documentos breves
+- Incrementa complejidad gradualmente
 
 Recursos Clave
-==============
+--------------
 
-**Los 5 documentos más importantes:**
+Los 5 documentos más importantes:
 
 1. **:doc:`../02_procedimientos/workflow_general`**
 
- Workflow v1.7.2 completo (126 KB)
+   Workflow v1.7.2 completo (126 KB)
 
 2. **:doc:`../04_reglas_operativas/matrices_decision/MD_002_cuando_enriquecer`**
 
- Cuánto enriquecer (decisión más frecuente)
+   Cuánto enriquecer (decisión más frecuente)
 
 3. **:doc:`../04_reglas_operativas/matrices_decision/MD_004_traducir_vs_conservar`**
 
- Qué traducir vs conservar (terminología)
+   Qué traducir vs conservar (terminología)
 
 4. **:doc:`../03_estandares/calidad/checklist_revision`**
 
- Checklist completo de verificación
+   Checklist completo de verificación
 
 5. **:doc:`../06_casos_practicos/antes_despues/caso_01_seccion_breve`**
 
- Caso real completo (Sección 12)
+   Caso real completo (Sección 12)
 
 Obtener Ayuda
-=============
+-------------
 
-**Si tienes dudas:**
+Si tienes dudas
+^^^^^^^^^^^^^^^
 
-.. code-block:: text
+**Pregunta:** ¿Cuánto debo enriquecer este documento de 45 líneas?
 
- Pregunta: "¿Cuánto debo enriquecer este documento de 45 líneas?"
- Respuesta: Consulta MD-002
- -> 20-50 líneas: +100% a +300%
- -> Tu documento: 90 a 180 líneas
+**Respuesta:** Consulta MD-002
 
- Pregunta: "¿Traduzco 'Stakeholder'?"
- Respuesta: Consulta MD-004
- -> Rol establecido: CONSERVAR
- -> "Stakeholder" [OK]
+- 20-50 líneas: +100% a +300%
+- Tu documento: 90 a 180 líneas
 
- Pregunta: "¿Omití algo?"
- Respuesta: Usa checklist de revisión
- -> Compara línea por línea
- -> Verifica todos los elementos
+**Pregunta:** ¿Traduzco 'Stakeholder'?
+
+**Respuesta:** Consulta MD-004
+
+- Rol establecido: CONSERVAR
+- "Stakeholder" (correcto)
+
+**Pregunta:** ¿Omití algo?
+
+**Respuesta:** Usa checklist de revisión
+
+- Compara línea por línea
+- Verifica todos los elementos
 
 Comunidad
-=========
+---------
 
 .. note::
- El proyecto ADT está basado en el Método Peshitta aplicado a traducción técnica.
 
- Todos los datos son verificables en los checkpoints de arc42.
+   El proyecto ADT está basado en el Método Peshitta aplicado a traducción técnica.
 
-
-
+   Todos los datos son verificables en los checkpoints de arc42.
 
 Resumen de 15 Minutos
 =====================
 
-**Lo que aprendiste:**
+Lo que aprendiste
+-----------------
 
-[OK] **ADT es un sistema completo** (estándares + reglas + casos)
-[OK] **Workflow en 5 pasos** (PASO 0 es crítico)
-[OK] **Enriquecimiento basado en datos** (<20 líneas: +300% a +1000%)
-[OK] **Terminología objetiva** (conservar vs traducir)
-[OK] **Verificación sistemática** (previene omisiones)
+- **ADT es un sistema completo** (estándares + reglas + casos)
+- **Workflow en 5 pasos** (PASO 0 es crítico)
+- **Enriquecimiento basado en datos** (<20 líneas: +300% a +1000%)
+- **Terminología objetiva** (conservar vs traducir)
+- **Verificación sistemática** (previene omisiones)
 
-**Los 3 principios más importantes:**
+Los 3 Principios Más Importantes
+---------------------------------
 
 1. **PASO 0 no es negociable**
 
- .. code-block:: text
-
- 15 minutos leyendo completo previenen
- 2 horas de re-trabajo
+   15 minutos leyendo completo previenen 2 horas de re-trabajo
 
 2. **Decisiones basadas en datos**
 
- .. code-block:: text
-
- MD-002 y MD-004 -> Decisiones objetivas
- No "a ojo" -> Resultados predecibles
+   MD-002 y MD-004 dan decisiones objetivas, no "a ojo", con resultados predecibles
 
 3. **Verificación sistemática**
 
- .. code-block:: text
+   Checklist + Script garantizan 100% completitud, no "parece bien"
 
- Checklist + Script -> 100% completitud
- No "parece bien" -> Garantía de calidad
+Tu Checklist de Inicio
+-----------------------
 
-**Tu checklist de inicio:**
+- Entiendo qué es ADT
+- Sé los 5 pasos del workflow
+- Hice mi primera traducción práctica
+- Conozco los 5 documentos clave
+- Listo para mi primer proyecto real
 
-.. code-block:: text
+Éxito en tu Primera Traducción
+===============================
 
- [ ] Entiendo qué es ADT
- [ ] Sé los 5 pasos del workflow
- [ ] Hice mi primera traducción práctica
- [ ] Conozco los 5 documentos clave
- [ ] Listo para mi primer proyecto real
+Recuerda
+--------
 
+Los 5 pasos esenciales:
 
+1. PASO 0 completo (leer TODO)
+2. MD-002 para enriquecimiento
+3. MD-004 para terminología
+4. Verificar sistemáticamente
+5. Documentar resultado
 
+Resultado: **100% completitud garantizada**
 
-¡Éxito en tu Primera Traducción!
-================================
-
-**Recuerda:**
-
-.. code-block:: text
-
- 1. PASO 0 completo (leer TODO)
- 2. MD-002 para enriquecimiento
- 3. MD-004 para terminología
- 4. Verificar sistemáticamente
- 5. Documentar resultado
-
- = 100% completitud garantizada
-
-**Comienza ahora:**
+Comienza ahora
+--------------
 
 Tu primer documento técnico te espera. Aplica lo aprendido y verás resultados profesionales desde el inicio.
 
-
-
-
 .. seealso::
- 
- * :doc:`tutorial_completo` - Tutorial paso a paso detallado
- * :doc:`../06_casos_practicos/antes_despues/caso_01_seccion_breve` - Caso real completo
- * :doc:`../02_procedimientos/workflow_general` - Workflow completo
- * :doc:`../04_reglas_operativas/matrices_decision/MD_002_cuando_enriquecer` - Decisión de enriquecimiento
+
+   - :doc:`tutorial_completo` - Tutorial paso a paso detallado
+   - :doc:`../06_casos_practicos/antes_despues/caso_01_seccion_breve` - Caso real completo
+   - :doc:`../02_procedimientos/workflow_general` - Workflow completo
+   - :doc:`../04_reglas_operativas/matrices_decision/MD_002_cuando_enriquecer` - Decisión de enriquecimiento
 
 .. tip::
- Esta guía está diseñada para 15 minutos. Para profundizar, dedica 2-3 horas leyendo los casos prácticos completos.
+
+   Esta guía está diseñada para 15 minutos. Para profundizar, dedica 2-3 horas leyendo los casos prácticos completos.

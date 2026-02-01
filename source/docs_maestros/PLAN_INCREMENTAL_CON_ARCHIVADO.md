@@ -491,7 +491,7 @@ tar -czf /tmp/ADT_archives/respaldos/ADT42_CONSOLIDADO_$(date +%Y%m%d_%H%M%S).ta
 
 echo "[OK] ADT42 archivado completamente"
 
-# 3. Limpiar archivos de /tmp raíz que ya fueron archivados
+# 3. Limpiar archivos de /tmp raíz que ya fueron _archivados
 # SOLO después de verificar que están en tar.gz
 cd /tmp
 

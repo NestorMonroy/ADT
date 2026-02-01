@@ -184,7 +184,7 @@ exclude_patterns = [
     ".git",
 
     # Carpetas fuera del corpus documental
-    "archivados/**",
+    "_archivados/**",
 
     # Backups / temporales (cualquier extensión)
     "**/*BACKUP*",
