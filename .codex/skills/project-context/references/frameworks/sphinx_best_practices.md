@@ -274,7 +274,7 @@ Sphinx cachea en `build/doctrees/`. No borrar a menos que problemas.
 ### Estandar
 
 ```python
-# conf.d.py
+# conf.py
 extensions = [
  'sphinx.ext.autodoc', # Documentar codigo Python
  'sphinx.ext.intersphinx', # Enlaces a otras docs Sphinx
@@ -339,7 +339,7 @@ SOLUCION:
 
 SUPRIMIR SELECTIVAMENTE:
 ```python
-# conf.d.py
+# conf.py
 suppress_warnings = [
  'image.nonlocal_uri', # URLs de imagenes externas
 ]

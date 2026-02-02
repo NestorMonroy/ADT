@@ -726,7 +726,7 @@ FIX:
 ## Configuracion Sphinx
 
 ```python
-# conf.d.py
+# conf.py
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',

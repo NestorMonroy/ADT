@@ -1,7 +1,7 @@
 ---
 name: commit-helper
 description: "Ayuda a crear commits siguiendo Conventional Commits. Usar cuando el usuario necesite hacer un commit o escribir un mensaje de commit."
-version: 1.1.0
+version: 1.2.0
 created: 2026-01-29
 updated: 2026-02-01
 ---
@@ -268,7 +268,73 @@ Conventional Commits: https://www.conventionalcommits.org/
 
 ---
 
+## Templates
+
+### commit-message.template
+
+**Ubicación**: `templates/commit-message.template`
+
+**Propósito**: Plantilla completa para crear mensajes de commit siguiendo Conventional Commits
+
+**Contenido**:
+- Formato estructurado: type(scope): subject + body + footer
+- Guía completa de types (feat, fix, docs, style, refactor, test, chore, perf)
+- Scopes comunes del proyecto ADT
+- Reglas de formato (imperativo, max 50 chars, sin punto final)
+- Ejemplos completos (simples, con body, con breaking changes)
+- Instrucciones paso a paso
+
+**Cuándo usar**:
+- Primera vez escribiendo commits en el proyecto
+- Necesitas recordar formato Conventional Commits
+- Quieres asegurar calidad del mensaje
+- Trabajas con scopes poco familiares
+
+**Workflow de uso**:
+1. Abrir `templates/commit-message.template`
+2. Copiar contenido a editor
+3. Reemplazar placeholders [type], [scope], [subject], etc.
+4. Eliminar líneas de comentarios (#)
+5. Copiar mensaje final
+6. Usar en `git commit -m "mensaje"` o en editor git
+
+**Ejemplo de uso**:
+```bash
+# Ver template
+cat .codex/skills/commit-helper/templates/commit-message.template
+
+# Usar contenido para crear commit
+git commit -m "feat(skills): add commit-message template"
+```
+
+**Beneficios**:
+- Reduce tiempo recordando formato
+- Asegura consistencia en mensajes
+- Previene errores comunes (punto final, tiempo verbal incorrecto)
+- Incluye scopes específicos del proyecto
+
+---
+
 ## Changelog
+
+### v1.2.0 - 2026-02-01 - Templates
+
+**Agregado**:
+- Template commit-message.template en templates/
+- Sección "Templates" en SKILL.md documentando uso del template
+
+**Contenido del template**:
+- Formato completo Conventional Commits
+- Guía de types (feat, fix, docs, style, refactor, test, chore, perf)
+- Scopes comunes de ADT
+- Reglas de formato (imperativo, max 50 chars)
+- 3 ejemplos completos (simple, con body, con breaking change)
+- Instrucciones paso a paso
+
+**Beneficio**:
+- Usuarios tienen referencia rápida para formato correcto
+- Reduce tiempo creando mensajes de commit
+- Asegura consistencia en todo el proyecto
 
 ### v1.1.0 - 2026-02-01 - FASE 2
 

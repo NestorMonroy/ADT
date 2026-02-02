@@ -1,7 +1,7 @@
 ---
 name: translation-workflow
 description: "Workflow completo de traduccion siguiendo metodologia ADT. Usar cuando el usuario necesite traducir contenido, aplicar modos de traduccion, o ejecutar proceso de transformacion documental."
-version: 1.3.0
+version: 1.4.0
 created: 2026-01-29
 updated: 2026-02-01
 ---
@@ -567,7 +567,103 @@ ARCHIVOS MODIFICADOS:
 
 ---
 
+## Optimización para Documentos Grandes
+
+Para traducción de documentos grandes (arc42 completo, documentación técnica extensa), consultar:
+
+**`.codex/skills/anthropic-best-practices/long-context-tips.md`**
+
+### Cuándo Consultar
+
+**Situaciones donde long-context-tips.md es útil**:
+- Traducir arc42 completo (13 secciones, 25,000 palabras)
+- Trabajar con documentación técnica >5,000 palabras
+- Necesitas preservar cross-references entre múltiples secciones
+- Validar consistencia a través de documento largo
+
+### Técnicas Relevantes de long-context-tips.md
+
+**Estructura Óptima para Traducción**:
+```xml
+<documento-original lang="en">
+  <section id="01-introduction">
+    [contenido completo section 1]
+  </section>
+  <section id="02-constraints">
+    [contenido completo section 2]
+  </section>
+  ...
+</documento-original>
+
+Instrucciones:
+Traducir usando modo Alta Fidelidad.
+Procesar sección por sección con checkpoints.
+```
+
+**Principio clave**: Data at top, query at end → 30% mejora en accuracy.
+
+**Ground Responses in Quotes**:
+Para validar calidad de traducción, pedir que Claude cite original y traducción lado a lado:
+```
+Para cada párrafo:
+Original:
+> [texto original]
+
+Traducción:
+> [texto traducido]
+
+Evaluación: [accuracy, terminología, mejoras]
+```
+
+**Checkpoints Incrementales**:
+```
+Workflow de traducción arc42 completo:
+1. Traducir section 01
+2. CHECKPOINT - validar antes de continuar
+3. Traducir section 02
+4. CHECKPOINT - validar
+...
+```
+
+### Caso de Uso Específico
+
+Ver long-context-tips.md caso de uso **"Traducción de arc42 Completo"** para:
+- Estructura XML completa recomendada
+- Metadata del proyecto
+- Workflow de checkpoints por sección
+- Preservación de labels y referencias
+- Integración con glossary
+
+### Beneficio
+
+Aplicar técnicas de long-context-tips.md en traducciones:
+- 30% mejora en accuracy de traducción
+- Mejor preservación de estructura y referencias
+- Validación incremental previene re-trabajo
+- Consistencia terminológica a través de todo el documento
+
+---
+
 ## Changelog
+
+### v1.4.0 - 2026-02-01 - Integración con anthropic-best-practices
+
+**Agregado**:
+- Sección "Optimización para Documentos Grandes"
+- Referencia a anthropic-best-practices/long-context-tips.md
+- Técnicas relevantes para traducción de docs grandes
+- Caso de uso específico: Traducción de arc42 completo
+
+**Contenido de nueva sección**:
+- Cuándo consultar long-context-tips.md
+- Técnicas relevantes (estructura XML, data at top, ground en quotes, checkpoints)
+- Beneficio cuantificable: 30% mejora en accuracy
+
+**Beneficio**:
+- Usuarios traducen documentos grandes más efectivamente
+- Estructura óptima para arc42 completo (25,000 palabras)
+- Validación incremental previene re-trabajo
+- Mejor preservación de referencias y estructura
 
 ### v1.3.0 - 2026-02-01 - Flujo End-to-End Completo
 

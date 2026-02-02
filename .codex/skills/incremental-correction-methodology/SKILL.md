@@ -1,7 +1,7 @@
 ---
 name: incremental-correction-methodology
 description: "Metodología validada para corrección incremental de issues a gran escala. Incluye thought process, 8 protecciones obligatorias, flujo con análisis completo obligatorio, trade-offs, anti-patrones y métricas. Transferible a cualquier proyecto con 100+ issues."
-version: 1.4.0
+version: 1.5.0
 created: 2026-01-30
 updated: 2026-02-01
 ---
@@ -2462,7 +2462,244 @@ Esta metodología es transferible a:
 
 ---
 
+## Templates Disponibles
+
+Este skill incluye 4 templates para documentar todo el proceso de corrección incremental.
+
+### Directorio templates/
+
+**Ubicación**: `.codex/skills/incremental-correction-methodology/templates/`
+
+**Contenido**:
+- `analysis-phase.md.template` - Análisis inicial de issues
+- `categorization-plan.md.template` - Estrategia y planificación de lotes
+- `execution-log.md.template` - Log detallado de ejecución
+- `final-report.md.template` - Reporte final con resultados y lecciones
+- `README.md` - Guía completa de uso de templates
+
+---
+
+### Workflow con Templates
+
+```
+1. Build con issues detectados
+   ↓
+2. ANALISIS_[descripcion].md (analysis-phase.md.template)
+   - Categorizar todos los issues
+   - Identificar patterns
+   - Calcular métricas iniciales
+   ↓
+3. PLAN_[descripcion].md (categorization-plan.md.template)
+   - Definir estrategia de lotes
+   - Priorizar lotes
+   - Estimar tiempo
+   ↓
+4. LOG_[descripcion].md (execution-log.md.template)
+   - Documentar ejecución de cada lote
+   - Checkpoints de validación
+   - Problemas y decisiones
+   - Actualizar durante todo el proceso
+   ↓
+5. REPORTE_[descripcion].md (final-report.md.template)
+   - Compilar resultados finales
+   - Comparar antes vs después
+   - Lecciones aprendidas
+   - Recomendaciones futuras
+```
+
+---
+
+### 1. analysis-phase.md.template
+
+**Propósito**: Documentar análisis inicial de todos los issues detectados
+
+**Tamaño**: ~75 líneas de estructura
+
+**Contenido principal**:
+- Resumen ejecutivo (total, categorías, severidad)
+- Build output completo
+- Categorización de issues (tipo, severidad, archivo)
+- Análisis de patterns recurrentes
+- Métricas iniciales
+- Issues detallados por tipo
+- Conclusiones y próximos pasos
+
+**Cuándo usar**: Inmediatamente después de detectar issues (FASE 1 de la metodología)
+
+**Corresponde a**: FASE 1 - ANÁLISIS COMPLETO OBLIGATORIO
+
+---
+
+### 2. categorization-plan.md.template
+
+**Propósito**: Planificar estrategia de corrección en lotes
+
+**Tamaño**: ~65 líneas de estructura
+
+**Contenido principal**:
+- Resumen ejecutivo (estrategia, lotes, estimación)
+- Estrategia de categorización elegida
+- Criterios de priorización
+- Definición detallada de cada lote
+- Tabla resumen de lotes
+- Estimación de tiempo por lote
+- Cronograma tentativo
+- Plan de validación
+- Gestión de riesgos
+
+**Cuándo usar**: Después de completar analysis-phase.md (FASE 1 completada)
+
+**Corresponde a**: Transición de FASE 1 a FASE 2
+
+---
+
+### 3. execution-log.md.template
+
+**Propósito**: Log detallado de ejecución de lotes con tracking continuo
+
+**Tamaño**: ~95 líneas de estructura
+
+**Contenido principal**:
+- Estado general y progreso
+- Tabla de tracking general
+- Por cada lote:
+  * Issues abordados (tabla detallada)
+  * Archivos modificados
+  * Comandos ejecutados
+  * Checkpoint de validación (build status)
+  * Problemas encontrados
+  * Decisiones tomadas
+  * Commit realizado
+- Métricas de progreso
+- Desviaciones del plan
+- Aprendizajes y observaciones
+
+**Cuándo usar**: Durante toda la ejecución de FASE 2 y FASE 3, actualizar después de cada lote
+
+**Corresponde a**: FASE 2 (Manual) o FASE 3 (Script) - Ejecución de lotes
+
+---
+
+### 4. final-report.md.template
+
+**Propósito**: Reporte final con resultados, métricas y lecciones aprendidas
+
+**Tamaño**: ~85 líneas de estructura
+
+**Contenido principal**:
+- Resumen ejecutivo con logros
+- Objetivos vs resultados alcanzados
+- Métricas finales (reducción de issues)
+- Tabla comparativa antes vs después
+- Ejecución de lotes (éxitos y dificultades)
+- Problemas críticos encontrados
+- Lecciones aprendidas (qué funcionó, qué no)
+- Issues no resueltos (si aplica)
+- Recomendaciones para futuro
+- Conclusiones y próximos pasos
+
+**Cuándo usar**: Al completar todos los lotes (FASE 4 - Validación Final)
+
+**Corresponde a**: Cierre del proyecto de corrección incremental
+
+---
+
+### README.md del directorio templates/
+
+**Propósito**: Guía completa de uso de los 4 templates con workflow detallado
+
+**Contenido**:
+- Descripción de cada template
+- Workflow completo paso a paso
+- Instrucciones de uso (cómo copiar, completar, validar)
+- Mejores prácticas por template
+- Beneficios de usar la metodología documentada
+- Ejemplo de proyecto real (230 warnings de Sphinx)
+- Integración con otros skills
+- FAQ
+
+**Tamaño**: ~200 líneas
+
+---
+
+## Integración Templates - Metodología
+
+### Mapeo Templates → Fases
+
+| Template | Fase de Metodología | Cuándo Crear |
+|----------|---------------------|--------------|
+| analysis-phase.md | FASE 1 - Análisis Completo | Después de ejecutar build |
+| categorization-plan.md | Transición FASE 1 → 2 | Después de análisis completo |
+| execution-log.md | FASE 2/3 - Ejecución | Durante toda la ejecución |
+| final-report.md | FASE 4 - Validación Final | Al completar todos los lotes |
+
+### Protecciones Reforzadas por Templates
+
+**Protección #2 (Análisis completo)** → analysis-phase.md OBLIGA a documentar análisis exhaustivo
+
+**Protección #3 (Backup)** → execution-log.md documenta commits por lote (fácil rollback)
+
+**Protección #4 (Validación)** → execution-log.md incluye checkpoints obligatorios de build
+
+**Protección #7 (Documentación)** → Los 4 templates ASEGURAN documentación completa
+
+### Beneficios de Usar Templates
+
+**Con templates**:
+- Documentación consistente y completa
+- Fácil trackear progreso
+- Lecciones aprendidas capturadas
+- Métricas antes/después claras
+- Reproducible en futuros proyectos
+
+**Sin templates**:
+- Documentación inconsistente o inexistente
+- Difícil saber progreso real
+- Lecciones se pierden
+- No hay métricas comparativas
+- Cada proyecto empieza de cero
+
+---
+
 ## Changelog
+
+### v1.5.0 - 2026-02-01 - Templates
+
+**Agregado**:
+- 4 templates en templates/ para documentar proceso completo
+- README.md en templates/ con guía de uso detallada (200 líneas)
+- Sección "Templates Disponibles" en SKILL.md (150 líneas)
+- Sección "Integración Templates - Metodología"
+
+**Templates creados**:
+1. **analysis-phase.md.template** (~75 líneas) - Análisis inicial de issues
+2. **categorization-plan.md.template** (~65 líneas) - Estrategia y planificación de lotes
+3. **execution-log.md.template** (~95 líneas) - Log de ejecución detallado con tracking
+4. **final-report.md.template** (~85 líneas) - Reporte final con resultados y lecciones
+
+**README.md incluye**:
+- Workflow completo de 6 pasos (análisis → plan → ejecución → reporte)
+- Instrucciones detalladas para cada template
+- Mejores prácticas por template
+- Ejemplo de proyecto real (230 warnings de Sphinx)
+- Integración con otros skills
+- FAQ
+
+**Integración con metodología**:
+- Templates mapean directamente a FASES de la metodología
+  * analysis-phase → FASE 1 (Análisis Completo)
+  * categorization-plan → Transición FASE 1→2
+  * execution-log → FASE 2/3 (Ejecución)
+  * final-report → FASE 4 (Validación Final)
+- Refuerzan Protecciones #2, #3, #4, #7
+- Aseguran documentación consistente y completa
+
+**Beneficio principal**:
+- Proyectos de corrección incremental ahora tienen documentación sistemática
+- Lecciones aprendidas se capturan y NO se pierden
+- Reproducible: templates se copian y adaptan en cada proyecto
+- Métricas antes/después cuantificables (no solo subjetivas)
+- Facilita justificar tiempo invertido (métricas claras)
 
 ### v1.3.0 - 2026-01-31 (Tarde)
 

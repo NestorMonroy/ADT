@@ -1,7 +1,7 @@
 ---
 name: skills-management
 description: "Gestión, versionamiento y actualización de skills en .codex/skills/. Usar cuando se necesite crear, actualizar o documentar skills del proyecto."
-version: 1.1.0
+version: 1.2.0
 created: 2026-01-30
 author: ADT Team
 ---
@@ -674,7 +674,144 @@ done
 
 ---
 
+## Templates Disponibles
+
+Este skill incluye templates para crear nuevos skills siguiendo best practices.
+
+### Directorio templates/
+
+**Ubicación**: `.codex/skills/skills-management/templates/`
+
+**Contenido**:
+- `SKILL.md.template` - Template completo para crear SKILL.md
+- `README.md` - Guía completa de uso de templates
+
+---
+
+### SKILL.md.template
+
+**Propósito**: Plantilla completa para crear archivos SKILL.md de nuevos skills
+
+**Características**:
+- Frontmatter YAML completo (name, description, version, created, updated)
+- Todas las secciones estándar con placeholders descriptivos
+- Comentarios guía en cada sección
+- Basado en best practices de Anthropic
+- ~260 líneas con instrucciones completas
+
+**Secciones incluidas**:
+- Obligatorias: Descripción, Cuándo Usar, Changelog
+- Opcionales: Decision Framework, Trigger Patterns, Self-Check, Procedimiento, Ejemplos, Relaciones con Otros Skills, Templates, Notas, Referencias
+
+**Workflow de uso**:
+1. Copiar template a nuevo directorio de skill:
+   ```bash
+   cp .codex/skills/skills-management/templates/SKILL.md.template \
+      .codex/skills/[nombre-nuevo-skill]/SKILL.md
+   ```
+
+2. Completar frontmatter (name, description, dates)
+
+3. Reemplazar todos los placeholders [entre corchetes]
+
+4. Completar secciones obligatorias (Descripción, Cuándo Usar, Changelog)
+
+5. Completar secciones opcionales según necesidad
+
+6. Eliminar comentarios y placeholders no usados
+
+7. Validar:
+   - Frontmatter YAML válido
+   - Description incluye "Usar cuando..."
+   - Ejemplos son concretos y específicos
+   - Triggers están claros
+
+**Ejemplo rápido**:
+```bash
+# Crear directorio para nuevo skill
+mkdir -p .codex/skills/mi-nuevo-skill
+
+# Copiar template
+cp .codex/skills/skills-management/templates/SKILL.md.template \
+   .codex/skills/mi-nuevo-skill/SKILL.md
+
+# Editar y completar placeholders
+# ... edición manual del archivo ...
+```
+
+---
+
+### README.md del directorio templates/
+
+**Propósito**: Guía completa de uso de templates con mejores prácticas
+
+**Contenido**:
+- Propósito de cada template
+- Guía paso a paso de uso
+- Mejores prácticas (naming, description, concisión, ejemplos)
+- Integración con anthropic-best-practices
+- Workflow completo
+- FAQ
+
+**Cuándo consultar**:
+- Primera vez creando un skill
+- Dudas sobre cómo completar secciones
+- Necesitas verificar mejores prácticas
+- Quieres optimizar la calidad del skill
+
+---
+
+## Integración con anthropic-best-practices
+
+Para crear skills de alta calidad, este skill se integra con:
+
+**`.codex/skills/anthropic-best-practices/skill-authoring.md`**
+
+Consultar este archivo para:
+- **Principios de skill authoring**: Concisión, degrees of freedom, testing
+- **Skill structure**: Naming conventions, descriptions efectivas
+- **Progressive disclosure**: Cuándo split contenido en archivos separados
+- **Workflows y feedback loops**: Patrones de ejecución paso a paso
+- **Common patterns**: Templates, examples, conditional workflows
+- **Evaluation and iteration**: Cómo mejorar skills iterativamente
+
+**Workflow recomendado**:
+1. Usar `SKILL.md.template` para estructura básica
+2. Consultar `anthropic-best-practices/skill-authoring.md` para optimización
+3. Aplicar principios de concisión y progressive disclosure
+4. Validar con self-checks
+
+**Beneficio**: Skills creados siguen best practices oficiales de Anthropic desde el inicio
+
+---
+
 ## Changelog
+
+### v1.2.0 - 2026-02-01 - Templates
+
+**Agregado**:
+- Template SKILL.md.template en templates/
+- README.md en templates/ con guía completa de uso
+- Sección "Templates Disponibles" en SKILL.md
+- Sección "Integración con anthropic-best-practices"
+
+**Contenido de templates**:
+- SKILL.md.template (~260 líneas con guías completas)
+- Frontmatter YAML, placeholders descriptivos, comentarios guía
+- Secciones obligatorias y opcionales
+- Basado en best practices de Anthropic
+
+**README.md incluye**:
+- Workflow paso a paso
+- Mejores prácticas (naming, description, concisión)
+- Integración con anthropic-best-practices
+- FAQ
+
+**Beneficio**:
+- Crear nuevos skills es más fácil y consistente
+- Skills siguen best practices desde el inicio
+- Reduce tiempo de creación de skill nuevo
+- Asegura calidad y completitud
 
 ### v1.1.0 - 2026-02-01 - FASE 2
 

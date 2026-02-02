@@ -1,7 +1,7 @@
 ---
 name: project-context
 description: "Proporciona contexto metodologico completo del proyecto ADT. Usar cuando el usuario necesite entender metodologia ADT, frameworks (Diataxis, arc42), estructura del proyecto, o terminologia clave."
-version: 1.1.0
+version: 1.2.0
 created: 2026-01-29
 updated: 2026-02-01
 ---
@@ -570,7 +570,78 @@ Ver skill commit-helper para detalles
 
 ---
 
+## Optimización de Prompts y Contexto
+
+Para mejorar cómo proporcionas contexto a Claude o cómo estructuras prompts relacionados con el proyecto ADT, consultar:
+
+**`.codex/skills/anthropic-best-practices/prompting-tips.md`**
+
+### Cuándo Consultar
+
+**Situaciones donde prompting-tips.md es útil**:
+- Necesitas explicar contexto complejo del proyecto a Claude
+- Claude no entiende referencias a metodología ADT
+- Trabajas en tareas multi-paso que requieren contexto del proyecto
+- Quieres mejorar consistencia en cómo se usa terminología
+
+### Técnicas Relevantes de prompting-tips.md
+
+**Agregar Contexto Efectivamente**:
+```
+Contexto del proyecto ADT:
+- Documentación técnica de arquitectura (arc42)
+- Framework: Diataxis para organización de contenido
+- Build system: Sphinx con Python 3.11+
+- Idioma: Español (traducción de docs técnicos inglés→español)
+
+[tu tarea específica]
+```
+
+**Trabajar con Terminología del Proyecto**:
+```
+Usar terminología consistente con glossary de ADT:
+- "Modo Alta Fidelidad" (no "traducción literal")
+- "arc42" (no "plantilla de arquitectura")
+- "Diataxis" (no "framework de documentación")
+
+[tu tarea]
+```
+
+**State Management para Proyectos Largos**:
+- Usar JSON para trackear estado de trabajo en ADT
+- Updates textuales de progreso
+- Checkpoints después de secciones mayores
+
+### Beneficio
+
+Aplicar técnicas de prompting-tips.md cuando trabajas con ADT:
+- Claude entiende mejor el contexto metodológico
+- Terminología se usa consistentemente
+- Tareas complejas se completan con mayor precisión
+- Menos necesidad de re-explicar conceptos del proyecto
+
+---
+
 ## Changelog
+
+### v1.2.0 - 2026-02-01 - Integración con anthropic-best-practices
+
+**Agregado**:
+- Sección "Optimización de Prompts y Contexto"
+- Referencia a anthropic-best-practices/prompting-tips.md
+- Técnicas relevantes para trabajar con contexto ADT
+- Ejemplos de cómo agregar contexto efectivamente
+
+**Contenido de nueva sección**:
+- Cuándo consultar prompting-tips.md
+- Técnicas relevantes (agregar contexto, terminología, state management)
+- Beneficios de aplicar técnicas a proyecto ADT
+
+**Beneficio**:
+- Usuarios saben cómo mejorar prompts relacionados con ADT
+- Contexto del proyecto se comunica más efectivamente
+- Terminología se usa consistentemente
+- Mejor integración entre project-context y prompting best practices
 
 ### v1.1.0 - 2026-02-01 - FASE 2
 
