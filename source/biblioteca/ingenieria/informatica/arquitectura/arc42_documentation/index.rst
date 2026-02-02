@@ -1,5 +1,5 @@
-arc42 Documentation Template
-============================
+Arc42 Documentation
+===================
 
 Plantilla de documentación de arquitectura arc42 en español.
 
@@ -7,9 +7,8 @@ arc42 ofrece una estructura clara para documentar y comunicar arquitecturas de s
 
 .. toctree::
    :maxdepth: 2
-   :caption: Libro arc42
+   :caption: Secciones
 
-   metadata_libro
    01_introduction_goals/index
    02_constraints/index
    03_context_scope/index

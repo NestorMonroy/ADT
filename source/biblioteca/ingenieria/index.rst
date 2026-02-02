@@ -1,9 +1,10 @@
 Ingeniería
 ==========
 
-Documentación técnica organizada por ramas de la ingeniería.
+Colección de materiales por rama de ingeniería.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
+   :caption: Ramas
 
    informatica/index

@@ -6,3 +6,6 @@ y modelado de información.
 
 .. toctree::
    :maxdepth: 2
+   :glob:
+
+   *

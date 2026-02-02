@@ -1,12 +1,12 @@
 Biblioteca
 ==========
 
-Repositorio estructurado de conocimiento técnico traducido,
-organizado por dominio disciplinar.
+Repositorio estructurado de contenido técnico, organizado por disciplina y área.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
+   :caption: Colecciones
 
    _metadata_biblioteca/index
-   ingenieria/index
    ciencias/index
+   ingenieria/index

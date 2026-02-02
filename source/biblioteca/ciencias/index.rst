@@ -1,9 +1,10 @@
 Ciencias
 ========
 
-Contenido científico organizado por disciplina.
+Colección de materiales por área científica.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
+   :caption: Áreas
 
    biologia/index

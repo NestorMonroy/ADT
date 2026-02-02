@@ -1,7 +1,10 @@
 Biología
 ========
 
-Sección dedicada a contenidos de biología.
+Materiales y referencias organizados por subáreas.
 
 .. toctree::
    :maxdepth: 2
+   :glob:
+
+   */index
