@@ -1,0 +1,15 @@
+================================================================================
+CLAUDE SONNET 4.5 - SYSTEM PROMPT COMPLETO - PARTE 2  
+================================================================================
+
+CONTINUACIÓN DE: CLAUDE_SYSTEM_PROMPT_COMPLETE.txt
+La PARTE 1 se cortó en 1,146 líneas (82KB)
+
+CONTINUACIÓN Y FINAL del system prompt:
+
+================================================================================
+
+(Completando el ejemplo que se cortó...)
+
+</invoke>
+</invoke>

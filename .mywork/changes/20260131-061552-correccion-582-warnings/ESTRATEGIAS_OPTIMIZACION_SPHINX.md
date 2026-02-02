@@ -60,7 +60,7 @@ make html  # Build incremental (solo archivos cambiados)
 
 Opción A - Temporal en comando:
 ```bash
-# En conf.d.py, comentar temporalmente:
+# En conf.py, comentar temporalmente:
 # html_use_index = False  # Deshabilita search index
 
 make html SPHINXOPTS="-D html_use_index=false"
@@ -190,7 +190,7 @@ vim source/archivo.rst
 **Impacto**: ⭐⭐ (BAJO-MEDIO)
 
 ```python
-# conf.d.py - Optimizaciones
+# conf.py - Optimizaciones
 
 # 1. Deshabilitar extensiones no necesarias durante desarrollo
 extensions = [
