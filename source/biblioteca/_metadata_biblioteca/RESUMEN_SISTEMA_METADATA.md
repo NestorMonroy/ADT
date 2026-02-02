@@ -45,10 +45,10 @@ Se han creado **7 archivos** en el sistema de metadata de la biblioteca:
 **Uso típico:**
 ```bash
 # Consultar categorías disponibles
-grep "Categoría" META_BIB_001_Sistema_Clasificacion_1_0_0.rst
+grep "Categoría" META_BIB_Sistema_Clasificacion_1_0_0.rst
 
 # Ver subcategorías de Informática
-grep "INF\." META_BIB_001_Sistema_Clasificacion_1_0_0.rst
+grep "INF\." META_BIB_Sistema_Clasificacion_1_0_0.rst
 ```
 
 ---
@@ -70,10 +70,10 @@ grep "INF\." META_BIB_001_Sistema_Clasificacion_1_0_0.rst
 **Uso típico:**
 ```bash
 # Ver estructura recomendada de libro
-grep "Estructura Interna" -A 30 META_BIB_002_Guia_Organizacion_1_0_0.rst
+grep "Estructura Interna" -A 30 META_BIB_Guia_Organizacion_1_0_0.rst
 
 # Consultar archivos obligatorios
-grep "OBLIGATORIO" META_BIB_002_Guia_Organizacion_1_0_0.rst
+grep "OBLIGATORIO" META_BIB_Guia_Organizacion_1_0_0.rst
 ```
 
 ---
@@ -97,13 +97,13 @@ grep "OBLIGATORIO" META_BIB_002_Guia_Organizacion_1_0_0.rst
 **Uso típico:**
 ```bash
 # Buscar código de Python
-grep "PYT" META_BIB_003_Esquema_Codificacion_1_0_0.rst
+grep "PYT" META_BIB_Esquema_Codificacion_1_0_0.rst
 
 # Ver todas las especialidades de programación
-grep "INF.PRG" META_BIB_003_Esquema_Codificacion_1_0_0.rst
+grep "INF.PRG" META_BIB_Esquema_Codificacion_1_0_0.rst
 
 # Consultar índice alfabético
-grep "Índice Alfabético" -A 50 META_BIB_003_Esquema_Codificacion_1_0_0.rst
+grep "Índice Alfabético" -A 50 META_BIB_Esquema_Codificacion_1_0_0.rst
 ```
 
 ---
@@ -308,7 +308,7 @@ Esto te dará un código como: `INF.PRG.PYT.001`
 
 ```bash
 # Ver estructura recomendada
-less META_BIB_002_Guia_Organizacion_1_0_0.rst
+less META_BIB_Guia_Organizacion_1_0_0.rst
 ```
 
 **Paso 3: Crear estructura de directorios**
@@ -473,9 +473,9 @@ También se crearon:
 ls -lh /tmp/ADT/source/biblioteca/_metadata_biblioteca/
 
 # Resultado esperado:
-# -rw-r--r-- 11K META_BIB_001_Sistema_Clasificacion_1_0_0.rst
-# -rw-r--r-- 15K META_BIB_002_Guia_Organizacion_1_0_0.rst
-# -rw-r--r-- 19K META_BIB_003_Esquema_Codificacion_1_0_0.rst
+# -rw-r--r-- 11K META_BIB_Sistema_Clasificacion_1_0_0.rst
+# -rw-r--r-- 15K META_BIB_Guia_Organizacion_1_0_0.rst
+# -rw-r--r-- 19K META_BIB_Esquema_Codificacion_1_0_0.rst
 # -rw-r--r-- 9K catalogo_completo.rst
 # -rw-r--r-- 5.3K catalogo_numeros.txt
 # -rwxr-xr-x 30K clasificador_biblioteca.py
