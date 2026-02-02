@@ -115,7 +115,7 @@ clean:
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
-	@echo "Construcción finalizada. Los archivos HTML están en $(BUILDDIR)/html."
+	@echo "Construccion finalizada. Los archivos HTML estan en $(BUILDDIR)/html."
 
 # Nuevo target para Live Reload (Servidor embebido)
 livehtml:

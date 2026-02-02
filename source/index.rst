@@ -8,7 +8,7 @@ Colección de contenido traducido organizado por disciplina.
 .. toctree::
    :maxdepth: 2
    :caption: Biblioteca
-   
+
    biblioteca/index
 
 Índices y tablas
