@@ -5,14 +5,11 @@ conf.d/theme_furo.py
 Responsabilidad:
 - Configurar el tema HTML (Furo).
 - Definir tokens de color (light / dark) alineados a identidad ADT.
-- Declarar títulos, assets estáticos y archivos CSS/JS.
-- No declarar extensiones.
-- No tocar sidebars (eso va en un módulo separado si se decide).
+- Declarar assets estáticos (css/js).
 
-Principios:
-- Contraste adecuado (WCAG) en light y dark.
-- Tokens coherentes y reutilizables.
-- HTML debe funcionar aunque falten assets custom.
+Regla enterprise:
+- Este módulo NO debe depender de variables definidas en conf.py
+  (por ejemplo: project/version). Conf.py es quien compone html_title.
 """
 
 from __future__ import annotations
@@ -59,20 +56,6 @@ html_theme_options = {
     "sidebar_hide_name": False,
     "navigation_with_keys": True,
 }
-
-
-# ---------------------------------------------------------------------------
-# Títulos del sitio
-# ---------------------------------------------------------------------------
-
-# Estas variables deben existir en conf.py principal:
-# - project
-# - version
-#
-# Se asumen ya definidas antes de importar este módulo.
-
-html_title = f"{project} v{version}"
-html_short_title = "ADT Traducción"
 
 
 # ---------------------------------------------------------------------------

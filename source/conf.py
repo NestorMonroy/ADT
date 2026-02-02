@@ -2,47 +2,87 @@
 """
 Sphinx configuration file (Enterprise Orchestrator)
 
-Este archivo:
-- Orquesta la configuración modular ubicada en source/conf.d/
-- Aplica políticas enterprise vía variables de entorno
-- No contiene lógica de negocio compleja
-- Mantiene separación estricta de responsabilidades
+Importante:
+- La carpeta se llama literalmente: source/conf.d/
+- Python NO puede importarla con "from conf.d import ..." porque interpreta
+  "conf" como paquete y "d" como subpaquete.
+- Por eso este conf.py carga módulos por RUTA usando importlib.
 
 Contrato:
-- Se ejecuta siempre desde el repo root (/ADT)
-- conf.d es un paquete explícito (tiene __init__.py)
+- scripts se ejecutan desde /ADT (repo root)
+- Sphinx invoca este conf.py desde source/
 """
 
 from __future__ import annotations
 
 import os
+import sys
 import warnings
+import importlib.util
 from pathlib import Path
 
 from pygments.lexers.special import TextLexer
 
 
 # =============================================================================
-# 1) Paths determinísticos + sys.path
+# 0) Rutas base (sin depender de imports)
 # =============================================================================
 
-from conf.d import paths as paths_cfg
+SOURCE_DIR = Path(__file__).resolve().parent          # .../ADT/source
+REPO_ROOT = SOURCE_DIR.parent                         # .../ADT
+CONF_D_DIR = SOURCE_DIR / "conf.d"                    # .../ADT/source/conf.d
 
-SOURCE_DIR: Path = paths_cfg.SOURCE_DIR
-REPO_ROOT: Path = paths_cfg.REPO_ROOT
+
+def _load_conf_module(module_name: str, file_path: Path):
+    """
+    Carga un módulo Python desde ruta absoluta y lo retorna.
+    No requiere que el directorio sea un paquete importable.
+    """
+    if not file_path.exists():
+        raise RuntimeError(f"Missing conf.d module file: {file_path}")
+
+    spec = importlib.util.spec_from_file_location(module_name, str(file_path))
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"Could not create import spec for: {file_path}")
+
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)  # type: ignore[attr-defined]
+    return mod
 
 
 # =============================================================================
-# 2) Extensiones + políticas enterprise (profile/strict/offline)
+# 1) sys.path (autodoc) y path determinístico
 # =============================================================================
 
-from conf.d import extensions as ext_cfg
+# Para autodoc: el repo root en sys.path permite importar módulos del proyecto.
+repo_root_str = str(REPO_ROOT)
+if sys.path and sys.path[0] != repo_root_str:
+    if repo_root_str in sys.path:
+        sys.path.remove(repo_root_str)
+    sys.path.insert(0, repo_root_str)
+
+
+# =============================================================================
+# 2) Cargar módulos conf.d por ruta
+# =============================================================================
+
+ext_cfg = _load_conf_module("conf_d_extensions", CONF_D_DIR / "extensions.py")
+theme_cfg = _load_conf_module("conf_d_theme_furo", CONF_D_DIR / "theme_furo.py")
+myst_cfg = _load_conf_module("conf_d_myst", CONF_D_DIR / "myst.py")
+copy_cfg = _load_conf_module("conf_d_copybutton", CONF_D_DIR / "copybutton.py")
+out_cfg = _load_conf_module("conf_d_outputs", CONF_D_DIR / "outputs.py")
+
+# Opcionales (solo si se habilitan por flags y se usan)
+# Se cargan más adelante bajo condición.
+
+
+# =============================================================================
+# 3) Políticas enterprise (extensions + warningiserror)
+# =============================================================================
 
 extensions = ext_cfg.extensions
 warningiserror = ext_cfg.warningiserror
 
-
-# Silenciar warnings conocidos de terceros (ruido no accionable)
 warnings.filterwarnings(
     "ignore",
     message="The str interface for _JavaScript objects is deprecated.",
@@ -51,7 +91,7 @@ warnings.filterwarnings(
 
 
 # =============================================================================
-# 3) Información general del proyecto
+# 4) Metadatos del proyecto
 # =============================================================================
 
 project = "ADT - Procedimientos de Traducción Técnica"
@@ -61,9 +101,12 @@ author = "Equipo ADT"
 version = "1.0"
 release = "1.0.0"
 
+html_title = f"{project} v{version}"
+html_short_title = "ADT Traducción"
+
 
 # =============================================================================
-# 4) Configuración general
+# 5) Configuración general
 # =============================================================================
 
 templates_path = ["_templates"]
@@ -88,11 +131,10 @@ primary_domain = "py"
 
 
 # =============================================================================
-# 5) Resaltado y lexers (blindaje DSLs)
+# 6) Resaltado (Pygments) y lexers de blindaje
 # =============================================================================
 
 pygments_style = "sphinx"
-
 pygments_lexers = {
     "plantuml": TextLexer,
     "atl": TextLexer,
@@ -101,25 +143,19 @@ pygments_lexers = {
 
 
 # =============================================================================
-# 6) Tema (Furo) + assets estáticos
+# 7) Tema (Furo) + assets estáticos
 # =============================================================================
-
-from conf.d import theme_furo as theme_cfg
 
 html_theme = theme_cfg.html_theme
 html_theme_options = theme_cfg.html_theme_options
-html_title = theme_cfg.html_title
-html_short_title = theme_cfg.html_short_title
 html_static_path = theme_cfg.html_static_path
 html_css_files = theme_cfg.html_css_files
 html_js_files = theme_cfg.html_js_files
 
 
 # =============================================================================
-# 7) MyST (Markdown) + smartquotes + suppress_warnings
+# 8) MyST + smartquotes + suppress_warnings
 # =============================================================================
-
-from conf.d import myst as myst_cfg
 
 myst_enable_extensions = myst_cfg.myst_enable_extensions
 myst_heading_anchors = myst_cfg.myst_heading_anchors
@@ -130,7 +166,7 @@ smartquotes_action = myst_cfg.smartquotes_action
 
 suppress_warnings = list(getattr(myst_cfg, "suppress_warnings", []))
 
-# Supresión adicional solo si NO estamos en strict
+# Supresión adicional solo fuera de strict
 if not ext_cfg.STRICT:
     suppress_warnings.extend(
         [
@@ -144,10 +180,8 @@ if not ext_cfg.STRICT:
 
 
 # =============================================================================
-# 8) Copybutton
+# 9) Copybutton
 # =============================================================================
-
-from conf.d import copybutton as copy_cfg
 
 copybutton_exclude = copy_cfg.copybutton_exclude
 copybutton_prompt_text = copy_cfg.copybutton_prompt_text
@@ -156,7 +190,7 @@ copybutton_only_copy_prompt_lines = copy_cfg.copybutton_only_copy_prompt_lines
 
 
 # =============================================================================
-# 9) Autodoc / Napoleon / Todo
+# 10) Autodoc / Napoleon / Todo
 # =============================================================================
 
 autodoc_default_options = {
@@ -183,7 +217,7 @@ todo_include_todos = True
 
 
 # =============================================================================
-# 10) Sidebar custom (opcional, seguro)
+# 11) Sidebar custom (opcional, seguro)
 # =============================================================================
 
 def _has_template(rel_path: str) -> bool:
@@ -210,7 +244,7 @@ if os.environ.get("SPHINX_SIDEBAR_CUSTOM") == "1":
 
 
 # =============================================================================
-# 11) notfound.extension
+# 12) notfound.extension
 # =============================================================================
 
 notfound_urls_prefix = ""
@@ -219,37 +253,32 @@ notfound_no_urls_prefix = False
 
 
 # =============================================================================
-# 12) HTML general
+# 13) HTML general
 # =============================================================================
 
 html_show_sphinx = True
 html_copy_source = False
 
-# html_favicon = "_static/img/favicon.ico"
-# html_logo = "_static/img/logo.svg"
-
 
 # =============================================================================
-# 13) Intersphinx (proxy/offline-safe)
+# 14) Intersphinx (solo si la extensión está activa)
 # =============================================================================
 
 if "sphinx.ext.intersphinx" in extensions:
-    from conf.d.intersphinx import resolve_intersphinx_mapping
-
-    intersphinx_mapping = resolve_intersphinx_mapping(
+    intersphinx_cfg = _load_conf_module("conf_d_intersphinx", CONF_D_DIR / "intersphinx.py")
+    intersphinx_mapping = intersphinx_cfg.resolve_intersphinx_mapping(
         os.environ,
         REPO_ROOT / "tools" / "_downloads",
     )
 
 
 # =============================================================================
-# 14) PlantUML (java portable, no rompe build)
+# 15) PlantUML (solo si la extensión está activa)
 # =============================================================================
 
 if "sphinxcontrib.plantuml" in extensions:
-    from conf.d.plantuml import resolve_plantuml_command
-
-    plantuml_cmd = resolve_plantuml_command(REPO_ROOT)
+    plantuml_cfg = _load_conf_module("conf_d_plantuml", CONF_D_DIR / "plantuml.py")
+    plantuml_cmd = plantuml_cfg.resolve_plantuml_command(REPO_ROOT)
     if plantuml_cmd:
         plantuml = plantuml_cmd
     else:
@@ -257,12 +286,11 @@ if "sphinxcontrib.plantuml" in extensions:
 
 
 # =============================================================================
-# 15) Spelling (solo builder spelling)
+# 16) Spelling (solo si la extensión está activa)
 # =============================================================================
 
 if "sphinxcontrib.spelling" in extensions:
-    from conf.d import spelling as spelling_cfg
-
+    spelling_cfg = _load_conf_module("conf_d_spelling", CONF_D_DIR / "spelling.py")
     spelling_word_list_filename = spelling_cfg.spelling_word_list_filename
     spelling_exclude_patterns = spelling_cfg.spelling_exclude_patterns
     spelling_lang = spelling_cfg.spelling_lang
@@ -270,10 +298,8 @@ if "sphinxcontrib.spelling" in extensions:
 
 
 # =============================================================================
-# 16) Outputs (numfig, LaTeX, man, texinfo)
+# 17) Outputs (numfig, LaTeX, man, texinfo)
 # =============================================================================
-
-from conf.d import outputs as out_cfg
 
 numfig = out_cfg.numfig
 numfig_format = out_cfg.numfig_format
@@ -288,7 +314,7 @@ texinfo_documents = out_cfg.texinfo_documents
 
 
 # =============================================================================
-# 17) i18n
+# 18) i18n
 # =============================================================================
 
 locale_dirs = ["locale/"]
@@ -296,7 +322,7 @@ gettext_compact = False
 
 
 # =============================================================================
-# 18) Metadatos ADT (inertes salvo consumo explícito)
+# 19) Metadatos ADT (inertes salvo consumo explícito)
 # =============================================================================
 
 adt_project_info = {
