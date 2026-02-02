@@ -168,7 +168,7 @@ metadata_libro.rst:116: duplicate label metadata-libro-estado-traduccion
 
 1. **Deshabilitar intersphinx** (2 WARNING)
    ```python
-   # En conf.py
+   # En conf.d.py
    # Comentar o eliminar:
    # intersphinx_mapping = {
    #     'python': ('https://docs.python.org/3', None),
@@ -178,7 +178,7 @@ metadata_libro.rst:116: duplicate label metadata-libro-estado-traduccion
 
 2. **Deshabilitar autosectionlabel** (2 WARNING) - OPCIONAL
    ```python
-   # En conf.py
+   # En conf.d.py
    # Comentar extensión:
    extensions = [
        # 'sphinx.ext.autosectionlabel',  # Genera labels automáticos

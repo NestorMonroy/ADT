@@ -3,7 +3,7 @@ from pathlib import Path
 
 
 def load_conf_module():
-    conf_path = Path(__file__).resolve().parents[1] / "source" / "conf.py"
+    conf_path = Path(__file__).resolve().parents[1] / "source" / "conf.d.py"
     spec = importlib.util.spec_from_file_location("adt_conf", conf_path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)

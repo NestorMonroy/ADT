@@ -1,163 +1,172 @@
 # -*- coding: utf-8 -*-
-# Configuration file for the Sphinx documentation builder.
-#
-# ADT / ADT42 - Arc42-Diátaxis-Traducción
-# Sistema de Traducción Técnica + Documentación estructurada
-# Versión 1.0.0
-#
-# Layout del proyecto (decisión final):
-#
-#   repo_root/
-#   ├─ source/
-#   │  ├─ conf.py
-#   │  ├─ _templates/
-#   │  ├─ _static/
-#   │  └─ index.rst / index.md
-#   ├─ _build/            (se genera aquí)
-#   ├─ Makefile
-#   ├─ scripts/
-#   └─ tools/
-#
-# Nota:
-# - templates_path y html_static_path son relativos al SOURCEDIR (source/).
-# - Este conf.py evita depender del "cwd" (directorio desde donde se ejecuta make).
-# - Incluye extensiones opcionales instaladas por pip.
-# - PlantUML se habilita, pero la configuración está blindada: si no existe el JAR,
-#   no rompe el build (solo imprime WARNING).
+"""
+Sphinx configuration file (Enterprise Orchestrator)
 
-# -- Path setup --------------------------------------------------------------
+Este archivo:
+- Orquesta la configuración modular ubicada en source/conf.d/
+- Aplica políticas enterprise vía variables de entorno
+- No contiene lógica de negocio compleja
+- Mantiene separación estricta de responsabilidades
+
+Contrato:
+- Se ejecuta siempre desde el repo root (/ADT)
+- conf.d es un paquete explícito (tiene __init__.py)
+"""
+
+from __future__ import annotations
+
 import os
-import sys
 import warnings
 from pathlib import Path
+
 from pygments.lexers.special import TextLexer
-# from sphinx.deprecation import RemovedInSphinx90Warning  # Obsoleto en Sphinx 9+
 
 
-def _normalize_inventory_path(value):
-    if value is None:
-        return None
-    normalized = value.strip()
-    if not normalized:
-        return None
-    if normalized.lower() in {"none", "null"}:
-        return None
-    return str(Path(normalized).expanduser())
+# =============================================================================
+# 1) Paths determinísticos + sys.path
+# =============================================================================
+
+from conf.d import paths as paths_cfg
+
+SOURCE_DIR: Path = paths_cfg.SOURCE_DIR
+REPO_ROOT: Path = paths_cfg.REPO_ROOT
 
 
-def _resolve_inventory_path(env, downloads_dir, filenames, env_key):
-    env_value = _normalize_inventory_path(env.get(env_key))
-    if env_value:
-        return env_value
-    if downloads_dir is None:
-        return None
-    for filename in filenames:
-        candidate = Path(downloads_dir) / filename
-        if candidate.exists():
-            return str(candidate)
-    return None
+# =============================================================================
+# 2) Extensiones + políticas enterprise (profile/strict/offline)
+# =============================================================================
+
+from conf.d import extensions as ext_cfg
+
+extensions = ext_cfg.extensions
+warningiserror = ext_cfg.warningiserror
 
 
-def resolve_intersphinx_mapping(env, downloads_dir):
-    if env.get("SPHINX_SKIP_INTERSPHINX") == "1":
-        return {}
-
-    python_base = env.get(
-        "SPHINX_INTERSPHINX_PYTHON",
-        "https://docs.python.org/3/",
-    )
-    sphinx_base = env.get(
-        "SPHINX_INTERSPHINX_SPHINX",
-        "https://www.sphinx-doc.org/en/master/",
-    )
-
-    python_inv = _resolve_inventory_path(
-        env,
-        downloads_dir,
-        ("python-objects.inv", "cpython/Doc/objects.inv"),
-        "SPHINX_INTERSPHINX_PYTHON_INV",
-    )
-    sphinx_inv = _resolve_inventory_path(
-        env,
-        downloads_dir,
-        ("sphinx-objects.inv", "sphinx/doc/objects.inv"),
-        "SPHINX_INTERSPHINX_SPHINX_INV",
-    )
-
-    return {
-        "python": (python_base, python_inv),
-        "sphinx": (sphinx_base, sphinx_inv),
-    }
-
-# Ruta determinística (no depende del directorio desde donde se ejecute Sphinx)
-# source/conf.py -> source/
-SOURCE_DIR = Path(__file__).resolve().parent
-# repo_root = parent de source/
-REPO_ROOT = SOURCE_DIR.parent
-
-# Path setup necesario para autodoc (documentar código Python)
-# Permite importar módulos del proyecto para generar documentación automática
-#
-# Ejemplo (cuando exista código a documentar):
-#   sys.path.insert(0, str(REPO_ROOT / "backend"))
-#
-# Por ahora, insertamos el root del repo como base razonable.
-sys.path.insert(0, str(REPO_ROOT))
-
-# Silenciar warnings conocidos de extensiones de terceros
+# Silenciar warnings conocidos de terceros (ruido no accionable)
 warnings.filterwarnings(
     "ignore",
     message="The str interface for _JavaScript objects is deprecated.",
-    category=DeprecationWarning,  # Actualizado para Sphinx 9+
+    category=DeprecationWarning,
 )
 
-# -- Información General del Proyecto ----------------------------------------
+
+# =============================================================================
+# 3) Información general del proyecto
+# =============================================================================
 
 project = "ADT - Procedimientos de Traducción Técnica"
 copyright = "2026, Equipo ADT"
 author = "Equipo ADT"
 
-# Versión del Proyecto
 version = "1.0"
 release = "1.0.0"
 
-# -- General configuration ---------------------------------------------------
 
-# Add any Sphinx extension names here, as strings
-extensions = [
-    # Extensiones base (navegación, links, calidad de documentación)
-    # "sphinx.ext.intersphinx",       # Link to other projects' documentation (DESHABILITADO: ProxyError 403 en build)
-    "sphinx.ext.todo",              # Support for todo items
-    "sphinx.ext.viewcode",          # Add links to highlighted source code
-    # "sphinx.ext.autosectionlabel",  # Auto-generate section labels (DESHABILITADO: causaba labels duplicados)
+# =============================================================================
+# 4) Configuración general
+# =============================================================================
 
-    # Extensiones para documentar código Python (listas para usarse cuando aplique)
-    "sphinx.ext.autodoc",           # Auto-generate documentation from docstrings
-    "sphinx.ext.napoleon",          # Support for NumPy and Google style docstrings
+templates_path = ["_templates"]
 
-    # Extensiones de interactividad/diseño
-    "sphinx_design",                # Design elements (cards, tabs, etc.)
-    "sphinx_copybutton",            # Copy button for code blocks
-    "sphinx_tabs.tabs",             # Tabs support
-    "sphinx_toolbox.collapse",      # Secciones colapsables
-    "notfound.extension",           # Página 404 personalizada
-    "myst_parser",                  # Markdown support
-    "sphinx_prompt",                # Prompts de consola (ojo: no 'sphinx-prompt')
-    "sphinxcontrib.spelling",       # Corrector ortográfico (requiere tooling extra)
-    "sphinxcontrib.plantuml",       # PlantUML (requiere jar + java)
+exclude_patterns = [
+    "_build",
+    "Thumbs.db",
+    ".DS_Store",
+    ".venv",
+    "venv",
+    ".git",
+    "_archivados/**",
+    "**/*BACKUP*",
+    "**/*backup*",
+    "**/*.bak",
+    "**/*~",
 ]
 
-# -- Configuración de Autodoc ------------------------------------------------
-# Generar automáticamente documentación de miembros
+language = "es"
+html_search_language = "es"
+primary_domain = "py"
+
+
+# =============================================================================
+# 5) Resaltado y lexers (blindaje DSLs)
+# =============================================================================
+
+pygments_style = "sphinx"
+
+pygments_lexers = {
+    "plantuml": TextLexer,
+    "atl": TextLexer,
+    "ocl": TextLexer,
+}
+
+
+# =============================================================================
+# 6) Tema (Furo) + assets estáticos
+# =============================================================================
+
+from conf.d import theme_furo as theme_cfg
+
+html_theme = theme_cfg.html_theme
+html_theme_options = theme_cfg.html_theme_options
+html_title = theme_cfg.html_title
+html_short_title = theme_cfg.html_short_title
+html_static_path = theme_cfg.html_static_path
+html_css_files = theme_cfg.html_css_files
+html_js_files = theme_cfg.html_js_files
+
+
+# =============================================================================
+# 7) MyST (Markdown) + smartquotes + suppress_warnings
+# =============================================================================
+
+from conf.d import myst as myst_cfg
+
+myst_enable_extensions = myst_cfg.myst_enable_extensions
+myst_heading_anchors = myst_cfg.myst_heading_anchors
+myst_ref_domains = getattr(myst_cfg, "myst_ref_domains", ["std", "py"])
+
+smartquotes = myst_cfg.smartquotes
+smartquotes_action = myst_cfg.smartquotes_action
+
+suppress_warnings = list(getattr(myst_cfg, "suppress_warnings", []))
+
+# Supresión adicional solo si NO estamos en strict
+if not ext_cfg.STRICT:
+    suppress_warnings.extend(
+        [
+            "ref.doc",
+            "ref.ref",
+            "toc.not_included",
+            "toc.secnum",
+            "toc",
+        ]
+    )
+
+
+# =============================================================================
+# 8) Copybutton
+# =============================================================================
+
+from conf.d import copybutton as copy_cfg
+
+copybutton_exclude = copy_cfg.copybutton_exclude
+copybutton_prompt_text = copy_cfg.copybutton_prompt_text
+copybutton_prompt_is_regexp = copy_cfg.copybutton_prompt_is_regexp
+copybutton_only_copy_prompt_lines = copy_cfg.copybutton_only_copy_prompt_lines
+
+
+# =============================================================================
+# 9) Autodoc / Napoleon / Todo
+# =============================================================================
+
 autodoc_default_options = {
-    "members": True,               # Documentar miembros
-    "member-order": "bysource",    # Orden según aparecen en el código
-    "special-members": "__init__", # Incluir __init__
-    "undoc-members": False,        # Cambiar a True si quieres incluir sin docstring
+    "members": True,
+    "member-order": "bysource",
+    "special-members": "__init__",
+    "undoc-members": False,
     "exclude-members": "__weakref__",
 }
 
-# Configuración de Napoleon (docstrings estilo Google/NumPy)
 napoleon_google_docstring = True
 napoleon_numpy_docstring = True
 napoleon_include_init_with_doc = True
@@ -170,312 +179,125 @@ napoleon_use_ivar = False
 napoleon_use_param = True
 napoleon_use_rtype = True
 
-# -- Configuración de Archivos -----------------------------------------------
-
-templates_path = ["_templates"]
-
-# List of patterns to ignore
-exclude_patterns = [
-    "_build",
-    "Thumbs.db",
-    ".DS_Store",
-    ".venv",
-    "venv",
-    ".git",
-
-    # Carpetas fuera del corpus documental
-    "archivados/**",
-
-    # Backups / temporales (cualquier extensión)
-    "**/*BACKUP*",
-    "**/*backup*",
-    "**/*.bak",
-    "**/*~",
-]
+todo_include_todos = True
 
 
-# Si usas .md y .rst mezclados (opcional):
-# source_suffix = {
-#     ".rst": "restructuredtext",
-#     ".md": "markdown",
-# }
+# =============================================================================
+# 10) Sidebar custom (opcional, seguro)
+# =============================================================================
 
-# -- Configuración de Lenguaje -----------------------------------------------
-
-language = "es"
-html_search_language = "es"
-
-# Dominio primario (útil para documentación de APIs / roles de Python)
-primary_domain = "py"
-
-# -- Estética y Resaltado ----------------------------------------------------
-
-pygments_style = "sphinx"
-
-# Comillas tipográficas inteligentes
-smartquotes = True
-smartquotes_action = "De"  # (D)ashes y (e)llipses
-
-# -- Options for HTML output -------------------------------------------------
-
-html_theme = "furo"
-
-html_theme_options = {
-    "light_css_variables": {
-        "color-background-primary": "#F2F6F8",  # --adt-color-bg
-        "color-foreground-primary": "#2A2F33",  # --adt-color-text
-
-        "color-brand-primary": "#104E5E",       # --adt-color-primary-text (permitido para texto)
-        "color-brand-content": "#104E5E",
-
-        "color-background-border": "rgba(42, 47, 51, 0.15)",
-        "color-background-secondary": "#E8EFF3",
-
-        # IMPORTANTE: fuera el verde-lima
-        "color-code-background": "rgba(11, 60, 73, 0.06)",
-        "color-code-foreground": "#2A2F33",
-    },
-    "dark_css_variables": {
-        "color-background-primary": "#0B3C49",  # --adt-color-petroleum-800
-        "color-foreground-primary": "#F2F6F8",
-
-        "color-brand-primary": "#6FAEC7",       # --adt-color-accent-500 (OK en oscuro)
-        "color-brand-content": "#6FAEC7",
-
-        "color-background-border": "rgba(111, 174, 199, 0.35)",
-        "color-background-secondary": "rgba(255, 255, 255, 0.04)",
-
-        "color-code-background": "rgba(242, 246, 248, 0.08)",
-        "color-code-foreground": "#F2F6F8",
-    },
-    "sidebar_hide_name": False,
-    "navigation_with_keys": True,
-}
+def _has_template(rel_path: str) -> bool:
+    candidate = SOURCE_DIR / "_templates" / rel_path
+    return candidate.exists() and candidate.is_file()
 
 
-
-html_title = f"{project} v{version}"
-html_short_title = "ADT Traducción"
-
-html_static_path = ["_static"]
-
-# Archivos CSS y JS personalizados (si existen)
-html_css_files = [
-    "css/custom.css",
-]
-html_js_files = [
-    "js/custom.js",
-]
-
-# Custom sidebar templates
-# IMPORTANTE:
-#   Si se mantiene esta configuración, deben existir:
-#     source/_templates/sidebar/brand.html
-#     source/_templates/sidebar/search.html
-#     source/_templates/sidebar/scroll-start.html
-#     source/_templates/sidebar/navigation.html
-#     source/_templates/sidebar/scroll-end.html
-#
-# Si aún no existen esos archivos, comenta html_sidebars para usar defaults del tema.
-html_sidebars = {
-    "**": [
+if os.environ.get("SPHINX_SIDEBAR_CUSTOM") == "1":
+    required = [
         "sidebar/brand.html",
         "sidebar/search.html",
         "sidebar/scroll-start.html",
         "sidebar/navigation.html",
         "sidebar/scroll-end.html",
     ]
-}
+    if all(_has_template(p) for p in required):
+        html_sidebars = {"**": required}
+    else:
+        missing = [p for p in required if not _has_template(p)]
+        print(
+            "[conf.py] WARNING: Sidebars custom deshabilitados; faltan templates:",
+            ", ".join(missing),
+        )
 
 
+# =============================================================================
+# 11) notfound.extension
+# =============================================================================
 
-notfound_urls_prefix = ""  # o el prefijo real si publicas en /repo/
+notfound_urls_prefix = ""
 notfound_template = "404.html"
 notfound_no_urls_prefix = False
-# Mostrar información de Sphinx
-html_show_sphinx = True
 
-# No copiar archivos fuente al build
+
+# =============================================================================
+# 12) HTML general
+# =============================================================================
+
+html_show_sphinx = True
 html_copy_source = False
 
-# Logo y Favicon (descomentar cuando existan archivos)
 # html_favicon = "_static/img/favicon.ico"
 # html_logo = "_static/img/logo.svg"
 
-# -- Extension configuration -------------------------------------------------
 
-# sphinx.ext.autosectionlabel
-autosectionlabel_prefix_document = True
-autosectionlabel_maxdepth = 3
+# =============================================================================
+# 13) Intersphinx (proxy/offline-safe)
+# =============================================================================
 
-# sphinx.ext.todo
-todo_include_todos = True
+if "sphinx.ext.intersphinx" in extensions:
+    from conf.d.intersphinx import resolve_intersphinx_mapping
 
-# sphinx.ext.intersphinx (DESHABILITADO: ProxyError 403 en build)
-# Variables disponibles:
-# - SPHINX_INTERSPHINX_PYTHON / SPHINX_INTERSPHINX_SPHINX (URL base)
-# - SPHINX_INTERSPHINX_PYTHON_INV / SPHINX_INTERSPHINX_SPHINX_INV (ruta local)
-# - Inventarios detectados en tools/_downloads:
-#   - python-objects.inv o cpython/Doc/objects.inv
-#   - sphinx-objects.inv o sphinx/doc/objects.inv
-# - SPHINX_SKIP_INTERSPHINX=1 para deshabilitar el mapping
-# intersphinx_mapping = resolve_intersphinx_mapping(
-#     os.environ,
-#     REPO_ROOT / "tools" / "_downloads",
-# )
-
-# Alias de lexers para evitar warnings por lenguajes desconocidos
-pygments_lexers = {
-    "plantuml": TextLexer,
-    "atl": TextLexer,
-    "ocl": TextLexer,
-}
-
-# sphinx-copybutton
-# Excluir prompts y salidas de consola
-copybutton_exclude = ".linenos, .gp, .go"
-
-# Configuración de prompts (regex)
-copybutton_prompt_text = r">>> |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: "
-copybutton_prompt_is_regexp = True
-copybutton_only_copy_prompt_lines = True
-
-# myst_parser
-myst_enable_extensions = [
-    "colon_fence",
-    "deflist",
-    "dollarmath",
-    "html_admonition",
-    "html_image",
-    "replacements",
-    "smartquotes",
-    "tasklist",
-]
-myst_heading_anchors = 3
-
-# Supresion temporal de warnings masivos hasta normalizar contenido
-suppress_warnings = [
-    "ref.doc",
-    "ref.ref",
-    "toc.not_included",
-    "toc.secnum",
-    "toc",
-    "myst.xref_missing",
-]
-
-# -- Configuración del Corrector Ortográfico ---------------------------------
-# Nota:
-#   sphinxcontrib-spelling puede requerir tooling extra (pyenchant/diccionarios).
-#   Se deja configurado; si falla el builder de spelling, ajusta el entorno.
-spelling_word_list_filename = "spelling_wordlist.txt"
-spelling_exclude_patterns = []
-
-# -- PlantUML configuration ---------------------------------------------------
-# Contrato del proyecto:
-#   - Java portable: tools/java/jdk-17/
-#   - PlantUML jar : tools/plantuml.jar
-#
-# Objetivo:
-#   No depender de JAVA_HOME/PATH global.
-#
-# Comportamiento:
-#   - Si existe tools/plantuml.jar, se configura "plantuml".
-#   - Si no existe, no se rompe el build (solo WARNING).
-
-TOOLS_DIR = REPO_ROOT / "tools"
-PLANTUML_JAR = TOOLS_DIR / "plantuml.jar"
-JAVA_WIN = TOOLS_DIR / "java" / "jdk-17" / "bin" / "java.exe"
-JAVA_NIX = TOOLS_DIR / "java" / "jdk-17" / "bin" / "java"
-
-def _q(p: Path) -> str:
-    # Cita paths con espacios (Windows)
-    return f'"{str(p)}"'
-
-if PLANTUML_JAR.exists():
-    if JAVA_WIN.exists():
-        java_bin = _q(JAVA_WIN)
-    elif JAVA_NIX.exists():
-        java_bin = _q(JAVA_NIX)
-    else:
-        # Fallback a java del sistema (si existe)
-        java_bin = "java"
-
-    plantuml = f"{java_bin} -jar {_q(PLANTUML_JAR)}"
-else:
-    print(f"[conf.py] WARNING: No existe {PLANTUML_JAR}. PlantUML deshabilitado.")
-
-# -- Custom configuration ----------------------------------------------------
-
-# Numeración de figuras y tablas
-numfig = True
-numfig_format = {
-    "figure": "Figura %s",
-    "table": "Tabla %s",
-    "code-block": "Listado %s",
-    "section": "Sección %s",
-}
-
-# -- Options for LaTeX output ------------------------------------------------
-
-latex_elements = {
-    "papersize": "letterpaper",
-    "pointsize": "10pt",
-    "preamble": "",
-    "figure_align": "htbp",
-}
-
-latex_engine = "pdflatex"
-latex_use_xindy = False
-
-latex_elements["preamble"] = r"""
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[spanish]{babel}
-\usepackage{lmodern}
-"""
-
-latex_documents = [
-    (
-        "index",
-        "ADT-Traduccion.tex",
-        "ADT - Procedimientos de Traducción Técnica",
-        "Equipo ADT",
-        "manual",
-    ),
-]
-
-# -- Configuración de Salida Man Pages ---------------------------------------
-
-man_pages = [
-    (
-        "index",
-        "adt-traduccion",
-        "ADT - Procedimientos de Traducción Técnica",
-        ["Equipo ADT"],
-        1,
+    intersphinx_mapping = resolve_intersphinx_mapping(
+        os.environ,
+        REPO_ROOT / "tools" / "_downloads",
     )
-]
 
-# -- Configuración de Salida Texinfo -----------------------------------------
 
-texinfo_documents = [
-    (
-        "index",
-        "ADT-Traduccion",
-        "ADT - Procedimientos de Traducción Técnica",
-        "Equipo ADT",
-        "ADT-Traduccion",
-        "Sistema de traducción técnica.",
-        "Miscellaneous",
-    ),
-]
+# =============================================================================
+# 14) PlantUML (java portable, no rompe build)
+# =============================================================================
 
-# -- Configuración de traducción / i18n --------------------------------------
+if "sphinxcontrib.plantuml" in extensions:
+    from conf.d.plantuml import resolve_plantuml_command
+
+    plantuml_cmd = resolve_plantuml_command(REPO_ROOT)
+    if plantuml_cmd:
+        plantuml = plantuml_cmd
+    else:
+        print("[conf.py] WARNING: PlantUML deshabilitado; falta tools/plantuml.jar")
+
+
+# =============================================================================
+# 15) Spelling (solo builder spelling)
+# =============================================================================
+
+if "sphinxcontrib.spelling" in extensions:
+    from conf.d import spelling as spelling_cfg
+
+    spelling_word_list_filename = spelling_cfg.spelling_word_list_filename
+    spelling_exclude_patterns = spelling_cfg.spelling_exclude_patterns
+    spelling_lang = spelling_cfg.spelling_lang
+    spelling_show_suggestions = spelling_cfg.spelling_show_suggestions
+
+
+# =============================================================================
+# 16) Outputs (numfig, LaTeX, man, texinfo)
+# =============================================================================
+
+from conf.d import outputs as out_cfg
+
+numfig = out_cfg.numfig
+numfig_format = out_cfg.numfig_format
+
+latex_engine = out_cfg.latex_engine
+latex_use_xindy = out_cfg.latex_use_xindy
+latex_elements = out_cfg.latex_elements
+latex_documents = out_cfg.latex_documents
+
+man_pages = out_cfg.man_pages
+texinfo_documents = out_cfg.texinfo_documents
+
+
+# =============================================================================
+# 17) i18n
+# =============================================================================
 
 locale_dirs = ["locale/"]
 gettext_compact = False
 
-# -- Configuración personalizada ADT -----------------------------------------
+
+# =============================================================================
+# 18) Metadatos ADT (inertes salvo consumo explícito)
+# =============================================================================
 
 adt_project_info = {
     "name": "ADT",
@@ -489,10 +311,8 @@ adt_project_info = {
     },
 }
 
-# Configuración de glosarios
 glossary_term_types = ["term", "technical-term", "acronym", "concept"]
 
-# Configuración de referencias
 ref_patterns = {
     "procedimiento": r"PROC_\d{3}",
     "estandar": r"STD_\d{3}",
@@ -500,7 +320,6 @@ ref_patterns = {
     "escenario": r"ESC_\d{3}",
 }
 
-# Configuración de traducción
 translation_config = {
     "source_language": "en",
     "target_language": "es-MX",

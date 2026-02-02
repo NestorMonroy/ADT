@@ -43,7 +43,7 @@ PAPER           =
 # ------------------------------------------------------------------------------
 # Directorios del proyecto Sphinx (layout clásico)
 #
-# - conf.py vive en: source/conf.py
+# - conf.d.py vive en: source/conf.d.py
 # - build vive en:   _build/   (mismo nivel que source/)
 # ------------------------------------------------------------------------------
 SOURCEDIR       = source
@@ -63,7 +63,7 @@ PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
 
 # Opciones generales que usan la mayoría de los builders.
-# NOTA: conf.py vive en $(SOURCEDIR), por lo que NO se requiere -c.
+# NOTA: conf.d.py vive en $(SOURCEDIR), por lo que NO se requiere -c.
 ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) $(SOURCEDIR)
 
 # El builder de internacionalización (i18n) no puede compartir doctrees con los demás.

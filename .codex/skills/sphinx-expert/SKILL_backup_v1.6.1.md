@@ -453,7 +453,7 @@ FIX:
 ## Configuracion Sphinx
 
 ```python
-# conf.py
+# conf.d.py
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
